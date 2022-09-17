@@ -1,0 +1,15 @@
+.bottom_bar{
+    color: white;
+    background-color: darkslateblue;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.bottom_bar_text{
+    font-size: 20px;
+    margin-left: 20px;
+}

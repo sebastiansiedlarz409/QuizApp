@@ -4,10 +4,12 @@ function NavBar(props){
     return( 
         <div className='nav_bar'>
             {/* Title */}
-            <h5 className='nav_bar_title'>QuizApp</h5>
+            <span className='nav_bar_title'>QuizApp</span>
             {/* Menu options */}
-            <h5 className='nav_bar_item'>Losowe pytanie</h5>
-            <h5 className='nav_bar_item'>Zestaw 20 pytań</h5>
+            <div className='nav_bar_menu'>
+                <span className='nav_bar_item'>Losowe pytanie</span>
+                <span className='nav_bar_item'>Zestaw 20 pytań</span>
+            </div>
         </div>
     );
 }
