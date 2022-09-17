@@ -3,14 +3,23 @@ import React, {useEffect} from 'react';
 
 function QuestionItem(props){
     useEffect(() => {
-        let ul = document.getElementById("answers");
-        for (var i = ul.children.length; i >= 0; i--) {
-            ul.appendChild(ul.children[Math.random() * i | 0]);
-        }
         //check if ABCD or TF
         if(props.question.type === "2A"){
             document.getElementById("C").style.display = "none";
             document.getElementById("D").style.display = "none";
+        }
+        let ans = document.getElementById("answers");
+        for (let i = ans.children.length; i >= 0; i--) {
+            ans.appendChild(ans.children[Math.random() * i | 0]);
+        }
+        let j = 0;
+        for (let i = 0; i < ans.children.length; i++) {
+            if(ans.children[i].style.display === "none"){
+                continue;
+            }
+            ans.children[i].getElementsByClassName("answer_button")[0].innerHTML=
+            String.fromCharCode('A'.charCodeAt(0)+j);
+            j++;
         }
     });
 
@@ -28,17 +37,17 @@ function QuestionItem(props){
             <h2>{props.question.question} ({props.question.tag})</h2>
             <hr></hr>
             <div id="answers" className='question_answers'>
-                <div id="A" className="answer">
-                    <input type="radio" name="answer" onChange={()=>mark("A", 1)}/><span>{props.question.a1}</span>
+                <div id="A" className="answer" onClick={()=>mark("A", 1)}>
+                    <button className='answer_button A'>A</button><span>{props.question.a1}</span>
                 </div>
-                <div id="B" className="answer">                
-                    <input type="radio" name="answer" onChange={()=>mark("B", 0)}/><span>{props.question.a2}</span>
+                <div id="B" className="answer" onClick={()=>mark("B", 0)}>                
+                    <button className='answer_button B'>B</button><span>{props.question.a2}</span>
                 </div>
-                <div id="C" className="answer">
-                    <input type="radio" name="answer" onChange={()=>mark("C", 0)} /><span>{props.question.a3}</span>
+                <div id="C" className="answer" onClick={()=>mark("C", 0)}>
+                    <button className='answer_button C'>C</button><span>{props.question.a3}</span>
                 </div>
-                <div id="D" className="answer">
-                    <input type="radio" name="answer" onChange={()=>mark("D", 0)} /><span>{props.question.a4}</span>
+                <div id="D" className="answer" onClick={()=>mark("D", 0)}>
+                    <button className='answer_button D'>D</button><span>{props.question.a4}</span>
                 </div>
             </div>
         </div>

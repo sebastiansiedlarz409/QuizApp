@@ -15,4 +15,40 @@
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
+    text-align: left;
+}
+
+#A:hover,#B:hover,#C:hover,#D:hover{
+    background-color: rgba(255, 204, 204, 120);
+}
+
+.answer_button{
+    margin: 2px;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.answer:nth-child(1) .answer_button{
+    background-color: dodgerblue;
+    border-radius: 20px;
+    width: 38px;
+}
+
+.answer:nth-child(2) .answer_button{
+    background-color: gold;
+    border-radius: 20px;
+    width: 38px;
+}
+
+.answer:nth-child(3) .answer_button{
+    background-color: chocolate;
+    border-radius: 20px;
+    width: 38px;
+}
+
+.answer:nth-child(4) .answer_button{
+    background-color: green;
+    border-radius: 20px;
+    width: 38px;
 }

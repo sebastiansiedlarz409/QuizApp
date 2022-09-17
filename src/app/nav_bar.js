@@ -8,7 +8,7 @@ function NavBar(props){
             {/* Menu options */}
             <div className='nav_bar_menu'>
                 <span className='nav_bar_item' onClick={() => props.setView(0)}>Losowe pytanie</span>
-                <span className='nav_bar_item' onClick={() => props.setView(1)}>Zestaw 20 pytań</span>
+                <span className='nav_bar_item' onClick={() => props.setView(1)}>Test</span>
             </div>
         </div>
     );

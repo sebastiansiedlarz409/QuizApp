@@ -1,4 +1,4 @@
-.question_view{
+.test_view{
     margin: 100px;
     margin-left: 25%;
     margin-right: 25%;
@@ -9,7 +9,7 @@
     border-radius: 20px;
 }
 
-.question{
+.test{
     margin-top: 40px;
 }
 

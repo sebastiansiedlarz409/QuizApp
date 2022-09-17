@@ -2,11 +2,12 @@ import './main_page.css';
 import NavBar from './nav_bar.js';
 import BottomBar from './bottom_bar';
 
-import './questions.js';
+import QuestionView from './question_view';
+import TestView from './test_view';
 
 import React, {useState} from 'react';
+
 import questions from './questions.js';
-import QuestionView from './question_view';
 
 function MainPage(props){
     const [view, setView] = useState(0); //switch views
@@ -20,7 +21,7 @@ function MainPage(props){
             return <QuestionView questions={questions}></QuestionView>;
         }
         else if(view === 1){
-            return "QWE";
+            return <TestView questions={questions}></TestView>;
         }
     }
 
