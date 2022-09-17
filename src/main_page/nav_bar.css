@@ -1,0 +1,20 @@
+.nav_bar{
+    color: white;
+    background-color: darkslateblue;
+}
+
+.nav_bar_title{
+    margin-left: 10px;
+    margin-right: 20px;
+    float: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav_bar_item{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    float: left;
+    font-size: 20px;
+}
