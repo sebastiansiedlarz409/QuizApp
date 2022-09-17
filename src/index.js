@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import './index.css';
-import MainPage from './main_page/main_page';
+import MainPage from './app/main_page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

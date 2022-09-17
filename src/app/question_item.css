@@ -1,0 +1,18 @@
+.question_item{
+    margin:auto;
+}
+
+.question_answers{
+
+}
+
+.answer{
+    font-size: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}

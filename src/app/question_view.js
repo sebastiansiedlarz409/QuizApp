@@ -4,10 +4,18 @@ import QuestionItem from './question_item';
 import React, {useState} from 'react';
 
 function QuestionView(props){
+    const [render, setRender] = useState(true);
+    const [id, setId] = useState(0);
     const [question, setQuestion] = useState(props.questions[0]);
 
     const randomQuestion = () => {
-        setQuestion(props.questions[Math.floor(Math.random() * props.questions.length)]);
+        setRender(!render);
+        setId(Math.floor(Math.random() * props.questions.length));
+        setQuestion(props.questions[id]);
+    }
+
+    const returnQuestionItem = () => {
+        return <QuestionItem key={render} question={question}></QuestionItem>
     }
 
     return(
@@ -17,7 +25,7 @@ function QuestionView(props){
             </center>
             <div className='question'>
                 <center>
-                    <QuestionItem question={question}></QuestionItem>
+                    {returnQuestionItem()}
                 </center>
             </div>
         </div>
