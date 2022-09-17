@@ -2,13 +2,14 @@ import './main_page.css';
 import NavBar from './nav_bar.js';
 import BottomBar from './bottom_bar';
 
+import './questions.js';
+
 import React, {useState} from 'react';
+import questions from './questions.js';
+import QuestionView from './question_view';
 
 function MainPage(props){
     const [view, setView] = useState(0); //switch views
-
-    const questionView = "ASD";
-    const testView = "QWE";
 
     const updateView = (v) => {
         setView(v);
@@ -16,10 +17,10 @@ function MainPage(props){
 
     const returnView = () =>{
         if(view === 0){
-            return questionView;
+            return <QuestionView questions={questions}></QuestionView>;
         }
         else if(view === 1){
-            return testView;
+            return "QWE";
         }
     }
 
@@ -29,7 +30,7 @@ function MainPage(props){
 
             {returnView()}
             
-            <BottomBar></BottomBar>
+            <BottomBar questionsCount={questions.length}></BottomBar>
         </div>
     );
 }

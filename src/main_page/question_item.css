@@ -1,0 +1,7 @@
+.question_item{
+    margin:auto;
+}
+
+.question_answers{
+    align-content: flex-start;
+}
