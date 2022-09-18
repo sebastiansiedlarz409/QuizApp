@@ -1,4 +1,5 @@
 const questions = [
+    //C/C++
     {
         "question":"Jaki typ służy do przechowywania wartości TRUE/FALSE?",
         "url":"",
@@ -269,6 +270,127 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A"
     },
+    {
+        "question":"Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?",
+        "url":"",
+        "a1": "Console.Write(\"Hello world\");",
+        "a2": "printf(\"Hello world\");",
+        "a3": "std::cout<<\"Hello world\";",
+        "a4": "cout<<\"Hello world\";",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Komentarze jednolinijkowe w C/C++ rozpoczynamy od?",
+        "url":"",
+        "a1": "//",
+        "a2": "/*",
+        "a3": "\\\\",
+        "a4": "#",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą klasy std::string zwracającą długość łańcuch tekstowego jest?",
+        "url":"",
+        "a1": "length()",
+        "a2": "len()",
+        "a3": "size()",
+        "a4": "count()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Łańcuch tekstowy w C/C++ może zostać umieszcony między apostrofami?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    }, 
+    {
+        "question":"Klasa std::string przeciąża operator []?",
+        "url":"https://i.stack.imgur.com/LD3as.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
+        "url":"https://cdn.educba.com/academy/wp-content/uploads/2020/12/C-Stack-vs-Heap-1.jpg",
+        "a1": "MyClass* myObj = new MyClass();",
+        "a2": "MyClass myObj = new MyClass();",
+        "a3": "MyClass myObj = MyClass();",
+        "a4": "MyClass* myObj = MyClass();",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Operatory & oraz && są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Instrukcje ++a oraz a++ są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Operatory ^ oraz ~ są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Operator ^ to operator potęgowania?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Słowo kluczowe const oznacza stałą?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Instrukcja \"#define\" służy do tworzenia makr preprocesora?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //numeric systems
     {
         "question":"Liczba 0xAA to w systemie binarnym?",
         "url":"",

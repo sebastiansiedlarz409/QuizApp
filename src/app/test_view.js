@@ -6,7 +6,7 @@ import QuestionItem from './question_item';
 function TestView(props){
     const [test, setTest] = useState([]);
     let answers = [];
-    let question_count = 4;
+    let question_count = 20;
 
     const randomTest = () => {
         let q = [];
@@ -25,7 +25,7 @@ function TestView(props){
     }
 
     const answerCallback = (id, answer) =>{
-        answers[id] = answer;
+        answers.push(answer);
 
         console.log(answers);
         if(answers.length === question_count){
