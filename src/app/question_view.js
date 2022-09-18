@@ -13,7 +13,7 @@ function QuestionView(props){
     }
 
     const returnQuestionItem = () => {
-        return <QuestionItem key={question.id} question={question}></QuestionItem>
+        return <QuestionItem key={question.id} question={question} child={-1}></QuestionItem>
     }
 
     return(

@@ -2,6 +2,8 @@ import './question_item.css';
 import React, {useEffect} from 'react';
 
 function QuestionItem(props){
+    let answer = false;
+
     useEffect(() => {
         //clear mark
         document.getElementById(props.question.id+"A").style.backgroundColor = "transparent";
@@ -24,6 +26,7 @@ function QuestionItem(props){
         for (let i = ans.children.length; i >= 0; i--) {
             ans.appendChild(ans.children[Math.random() * i | 0]);
         }
+
         //set A B C D letters
         let j = 0;
         for (let i = 0; i < ans.children.length; i++) {
@@ -43,6 +46,17 @@ function QuestionItem(props){
         document.getElementById(props.question.id+"D").style.backgroundColor = "transparent";
 
         document.getElementById(id).style.backgroundColor = positive === 0 ? "red" : "green";
+
+        if(positive){
+            answer = true;
+        }
+        else{
+            answer = false;
+        }
+
+        if(props.child !== -1){
+            props.answerCallback(props.child, answer);
+        }
     }
 
     return(
