@@ -27,6 +27,7 @@ function TestView(props){
 
         for(let i = 0;i<test.length;i++){
             ret.push(<QuestionItem key={test[i].id} question={test[i]}></QuestionItem>);
+            ret.push(<hr/>);
         }
 
         return ret;

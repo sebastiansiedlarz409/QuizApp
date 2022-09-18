@@ -3,14 +3,21 @@ import React, {useEffect} from 'react';
 
 function QuestionItem(props){
     useEffect(() => {
+        //clear mark
         document.getElementById(props.question.id+"A").style.backgroundColor = "transparent";
         document.getElementById(props.question.id+"B").style.backgroundColor = "transparent";
         document.getElementById(props.question.id+"C").style.backgroundColor = "transparent";
         document.getElementById(props.question.id+"D").style.backgroundColor = "transparent";
+
         //check if ABCD or TF
         if(props.question.type === "2A"){
             document.getElementById(props.question.id+"C").style.display = "none";
             document.getElementById(props.question.id+"D").style.display = "none";
+        }
+
+        //hide image field if there is no link
+        if(props.question.url.length === 0){
+            document.getElementById(props.question.id+"IMG").style.display = "none";
         }
 
         let ans = document.getElementById("answers");
@@ -41,7 +48,7 @@ function QuestionItem(props){
     return(
         <div className='question_item'>
             <h2>{props.question.question} ({props.question.tag})</h2>
-            <hr></hr>
+            <img id={props.question.id+"IMG"} src={props.question.url} alt=""/>
             <div id="answers" className='question_answers'>
                 <div id={props.question.id+"A"} className="answer" onClick={()=>mark(props.question.id+"A", 1)}>
                     <button className='answer_button A'>A</button><span>{props.question.a1}</span>

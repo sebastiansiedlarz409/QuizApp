@@ -3,8 +3,8 @@
     margin-left: 25%;
     margin-right: 25%;
     padding: 20px;
-    background: rgb(142,157,237);
-    background: radial-gradient(circle, rgba(142,157,237,1) 0%, rgba(251,97,129,1) 100%);
+    background: rgb(253,183,29);
+    background: linear-gradient(90deg, rgba(253,183,29,1) 50%, rgba(252,127,69,1) 100%);
     box-shadow: 0 8px 10px rgb(0 0 0 / 0.7);
     border-radius: 20px;
 }
