@@ -22,7 +22,7 @@ function QuestionItem(props){
             document.getElementById(props.question.id+"IMG").style.display = "none";
         }
 
-        let ans = document.getElementById("answers");
+        let ans = document.getElementById(props.question.id+"answers");
         for (let i = ans.children.length; i >= 0; i--) {
             ans.appendChild(ans.children[Math.random() * i | 0]);
         }
@@ -63,7 +63,7 @@ function QuestionItem(props){
         <div className='question_item'>
             <h2>{props.question.question} ({props.question.tag})</h2>
             <img id={props.question.id+"IMG"} src={props.question.url} alt=""/>
-            <div id="answers" className='question_answers'>
+            <div id={props.question.id+"answers"} className='question_answers'>
                 <div id={props.question.id+"A"} className="answer" onClick={()=>mark(props.question.id+"A", 1)}>
                     <button className='answer_button A'>A</button><span>{props.question.a1}</span>
                 </div>
