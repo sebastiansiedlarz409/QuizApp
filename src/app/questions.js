@@ -341,7 +341,7 @@ const questions = [
         "type": "4A"
     },
     {
-        "question":"Łańcuch tekstowy w C/C++ może zostać umieszcony między apostrofami?",
+        "question":"Łańcuch tekstowy w C/C++ może zostać umieszczony między apostrofami?",
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
@@ -1124,12 +1124,534 @@ const questions = [
     {
         "question":"Liczba -1 to w systemie binarnym?",
         "url":"",
-        "a1": "0x11111111",
-        "a2": "0x10000000",
-        "a3": "0x01111111",
+        "a1": "0b11111111",
+        "a2": "0b10000000",
+        "a3": "0b01111111",
+        "a4": "0b00000001",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0b10100000>>4 to?",
+        "url":"",
+        "a1": "0b00001010",
+        "a2": "0b01010000",
+        "a3": "0b00000010",
+        "a4": "0b00000001",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0b10110000<<2 to?",
+        "url":"",
+        "a1": "0b11000000",
+        "a2": "0b11000010",
+        "a3": "0b11000010",
+        "a4": "0b00001011",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xA0>>4 to?",
+        "url":"",
+        "a1": "0x0A",
+        "a2": "0x12",
+        "a3": "0x00",
+        "a4": "0xA0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xABCDEF98<<8 to?",
+        "url":"",
+        "a1": "0xCDEF9800",
+        "a2": "0xCDEF90AB",
+        "a3": "0xBCDEF98A",
+        "a4": "0x00ABCDEF",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 8>>1 to?",
+        "url":"",
+        "a1": "4",
+        "a2": "2",
+        "a3": "3",
+        "a4": "1",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 2<<3 to?",
+        "url":"",
+        "a1": "16",
+        "a2": "8",
+        "a3": "32",
+        "a4": "64",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 2^5 (potęga) to?",
+        "url":"",
+        "a1": "32",
+        "a2": "64",
+        "a3": "16",
+        "a4": "13",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 2^10 to?",
+        "url":"",
+        "a1": "1024",
+        "a2": "2048",
+        "a3": "512",
+        "a4": "0xFF",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0b10100000&0b1 to?",
+        "url":"",
+        "a1": "0",
+        "a2": "1",
+        "a3": "2",
+        "a4": "0b10100000",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xFF&0x80 to?",
+        "url":"",
+        "a1": "0x80",
+        "a2": "0b10000000",
+        "a3": "128",
+        "a4": "wszystkie pozostałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xFF|0x00 to?",
+        "url":"",
+        "a1": "0xFF",
+        "a2": "0x00",
+        "a3": "0x0F",
+        "a4": "0xF0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0b10101010|0b01010000 to?",
+        "url":"",
+        "a1": "0b11111010",
+        "a2": "0b00001111",
+        "a3": "0x10101111",
+        "a4": "0x10101010",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0b00000001|0b1 to?",
+        "url":"",
+        "a1": "0x00000010",
+        "a2": "0x00000001",
+        "a3": "0x00000011",
         "a4": "0x00000001",
         "tag": "NIEOFICJALNE",
         "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia ~0xF0 to?",
+        "url":"",
+        "a1": "0b00001111",
+        "a2": "0x0F",
+        "a3": "15",
+        "a4": "wszystkie pozostałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0x10101010^0b11110000 to?",
+        "url":"",
+        "a1": "0b01011010",
+        "a2": "0b11001100",
+        "a3": "0b10100000",
+        "a4": "0b10101010",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xF&&0x0 to?",
+        "url":"",
+        "a1": "0",
+        "a2": "fałsz",
+        "a3": "0x0",
+        "a4": "wszystkie pozostałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xFFAABBCC || 0x00000001 to?",
+        "url":"",
+        "a1": "true",
+        "a2": "false",
+        "a3": "0",
+        "a4": "0xFFAABBCD",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia !0b111111110 to?",
+        "url":"",
+        "a1": "false",
+        "a2": "true",
+        "a3": "1",
+        "a4": "0xE",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wartość wyrażenia 0xDEADC0DE jest zapisana w systemie oznaczanym jako?",
+        "url":"",
+        "a1": "HEX",
+        "a2": "DEC",
+        "a3": "OCT",
+        "a4": "BIN",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jak sprawdzić czy 21 bit liczby typu int jest ustawiony na 1?",
+        "url":"",
+        "a1": "((a&(1<<21))>>21)",
+        "a2": "((a&(1>>21))>>21)",
+        "a3": "((a&(1>>21))<<21)",
+        "a4": "(a&(1<<21))",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jak ustawić 4 bit liczby unsigned char na 1 bez względu na jego obecny stan?",
+        "url":"",
+        "a1": "a|(1<<4)",
+        "a2": "a|(1>>4)",
+        "a3": "a&(1<<4)",
+        "a4": "a&(1>>4)",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //algorytmy
+    {
+        "question":"Złożość obliczeniowa to głównych operacji do wykonania względem ilości danych wejściowych?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Przykładem algorytmu typu dziel i zwyciężaj jest?",
+        "url":"",
+        "a1": "quick-sort",
+        "a2": "insert-sort",
+        "a3": "alg. dijkstra",
+        "a4": "alg kruskala",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Stopień grafu na obrazku to?",
+        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0123_08.gif",
+        "a1": "3",
+        "a2": "2",
+        "a3": "1",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Czy graf na obrazku jest skierowany?",
+        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0123_08.gif",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy graf na obrazku jest skierowany?",
+        "url":"https://brain.fuw.edu.pl/edu/images/0/03/Directed_acyclic_graph_2.svg",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy graf na obrazku da się utworzyć cykl komiwojazera?",
+        "url":"https://mattomatti.com/RES/a0173/i00.svg",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy graf na obrazku jest drzewem?",
+        "url":"https://i.stack.imgur.com/kWdCq.png",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy na obrazku kolorem czerwonym zaznaczono krawędź?",
+        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0141_02.gif",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy graf na obrazku jest drzewem?",
+        "url":"https://www.researchgate.net/profile/Timothy-Lethbridge/publication/3959969/figure/fig1/AS:670005062553607@1536753063795/Compacted-directed-acyclic-graph-of-a-tree.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Algorytmem grafowym nie jest?",
+        "url":"",
+        "a1": "Algorytm Węgierski",
+        "a2": "Algorytm Dijkstry",
+        "a3": "Algorytm Kruskala",
+        "a4": "Algorytm Prima",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Cykl, który musi przejśc po wszystkich krawędziach grafu jest?",
+        "url":"",
+        "a1": "Cykl Eulera",
+        "a2": "Cykl Hamiltona",
+        "a3": "Cykl Komiwojazera",
+        "a4": "Żaden z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?",
+        "url":"",
+        "a1": "Elipsy",
+        "a2": "Prostokątu",
+        "a3": "Równoległoboku",
+        "a4": "Trójkąta",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najgorszą z punktu widzenia wydajności złożonością algorytmu jest?",
+        "url":"",
+        "a1": "O(n!)",
+        "a2": "O(n^2)",
+        "a3": "O(1)",
+        "a4": "O(n)",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najlepszą z punktu widzenia wydajności złożonością algorytmu jest?",
+        "url":"",
+        "a1": "O(1)",
+        "a2": "O(n^2)",
+        "a3": "O(n^3)",
+        "a4": "O(nlogn)",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bloczek z ilustracji to blok?",
+        "url":"https://quizizz.com/_media/questions/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVwZnJVWXoxTTZzbWROOHBPbUZHamE4OUY4WnFSaGtpQVhHRHktWDBwMmMwTjRtVUVvZ1UwTHducEM5dWd6bXNGWVlJZTYwZDU5b2duZU9XQllXUWllWnBkNVB0UjBsdjl5QzdVVE1lZFh4dzlqMmhxVS5URkFHa1JZSHc5T0tMdzZo_900_900",
+        "a1": "warunku",
+        "a2": "operacji",
+        "a3": "petli",
+        "a4": "wejścia-wyjścia",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Algorytm można przedstawić za pomocą?",
+        "url":"",
+        "a1": "Każdym z wymienionych sposobów",
+        "a2": "Tylko słownie",
+        "a3": "Tylko pseudokodem",
+        "a4": "Tylko schematem blokowym",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najpopularniejszym sposobem zapisu grafu w programie jest tablica 2D?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //programowanie obiektowe
+    {
+        "question":"Zasadą programowania obiektowego, która mówi by trzymać jaknajwięcej elementów klasy jako prywatne jest?",
+        "url":"",
+        "a1": "Hermetyzacja",
+        "a2": "Abstrakcja",
+        "a3": "Polimorfizm",
+        "a4": "Przyjaźń",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wielopostaciowość nazywana jest?",
+        "url":"",
+        "a1": "Polimorfizmem",
+        "a2": "Dziedziczeniem",
+        "a3": "Abstrakcją",
+        "a4": "Wirtualizacją",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zależnością klasy jest?",
+        "url":"",
+        "a1": "Inna klasa",
+        "a2": "Każde pole klasy",
+        "a3": "Każda metoda klasy",
+        "a4": "Żadne z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda abstrakcyjna musi być zaimplementowana przez klasę dziedziczącą?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Można utworzyć obiekt klasy abstrakcyjnej?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Można utworzyć referencje typu klasy abstrakcyjnej?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Z ilu klas może dziedziczyć klasa w C#/Java/Python?",
+        "url":"",
+        "a1": "1",
+        "a2": "2",
+        "a3": "dowolnej ilości",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Z ilu klas może dziedziczyć klasa w C++?",
+        "url":"",
+        "a1": "dowolnej ilości",
+        "a2": "2",
+        "a3": "1",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Przekazywanie zależności do klasy poprzez konstruktor nazywamy?",
+        "url":"",
+        "a1": "wstrzykiwaniem zależności",
+        "a2": "odwracaniem zależności",
+        "a3": "dziedziczeniem zależności",
+        "a4": "żadnym z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Interfejs to konstrukcja znana np. z języka C# Jest ona podobna do?",
+        "url":"",
+        "a1": "klasy abstrakcyjnej",
+        "a2": "zwykłej klasy",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Programowanie strukturalne i funkcyjne to to samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Obiekt to instancja klasy?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Słowo kluczowe \"sealed\" w C# blokuje możliwość dziedziczenia z klasy?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Słowo kluczowe \"virtual\" oznacza metodę jako zależną od typu obiektu a nie typu referencji?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
     },
 ]
 
