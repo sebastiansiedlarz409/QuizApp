@@ -80,7 +80,7 @@ const questions = [
         "type": "4A"
     },
     {
-        "question":"Deficją własnego typu jest?",
+        "question":"Definicją własnego typu jest?",
         "url":"",
         "a1": "Klasa i struktura",
         "a2": "Klasa",

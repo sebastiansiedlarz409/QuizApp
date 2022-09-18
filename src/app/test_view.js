@@ -6,11 +6,12 @@ import QuestionItem from './question_item';
 function TestView(props){
     const [test, setTest] = useState([]);
     let answers = [];
+    let question_count = 4;
 
     const randomTest = () => {
         let q = [];
 
-        for(let i = 0;i<3;i++){
+        for(let i = 0;i<question_count;i++){
             let v = props.questions[Math.floor(Math.random() * props.questions.length)];
             if(q.filter(t=>t.question === v.question).length > 0){
                 i--;
@@ -24,8 +25,20 @@ function TestView(props){
     }
 
     const answerCallback = (id, answer) =>{
-        console.log(answer);
         answers[id] = answer;
+
+        console.log(answers);
+        if(answers.length === question_count){
+            let count = 0;
+            for(let i = 0;i<question_count;i++){
+                if(answers[i] === true){
+                    count++;
+                }
+            }
+            let result = (count/question_count)*100;
+            
+            alert("Twój wynik to: " + result + "% (" + count + "/" + question_count +")");   
+        }
     }
 
     const returnTest = () =>{
