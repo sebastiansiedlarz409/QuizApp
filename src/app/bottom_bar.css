@@ -1,7 +1,7 @@
 .bottom_bar{
     color: white;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 20px;
