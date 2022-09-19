@@ -691,7 +691,7 @@ const questions = [
         "type": "2A"
     },
     {
-        "question":"Wartość wyrażenia \"'A'+10\" wynosi?",
+        "question":"Wartość wyrażenia \"'A'+10\" w C/C++ wynosi?",
         "url":"",
         "a1": "wszystkie z pozostałych",
         "a2": "'K'",
@@ -1070,6 +1070,16 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A"
     },
+    {
+        "question":"Instrukcja \"mov eax, ebx\"?",
+        "url":"",
+        "a1": "kopiuje zawartość ebx do eax",
+        "a2": "przenosi zawartość ebx do eax",
+        "a3": "kopiuje zawartość eax do ebx",
+        "a4": "przenosi zawartość eax do ebx",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
     //numeric systems
     {
         "question":"Liczba 0xAA to w systemie binarnym?",
@@ -1322,6 +1332,16 @@ const questions = [
         "type": "4A"
     },
     {
+        "question":"Wartość wyrażenia \"0xDEADC0DE == DEADC0DEh\" to?",
+        "url":"",
+        "a1": "true",
+        "a2": "false",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
         "question":"Jak sprawdzić czy 21 bit liczby typu int jest ustawiony na 1?",
         "url":"",
         "a1": "((a&(1<<21))>>21)",
@@ -1393,7 +1413,17 @@ const questions = [
         "type": "4A"
     },
     {
-        "question":"Stopień grafu na obrazku to?",
+        "question":"Przykładem algorytmu zachłannego jest?",
+        "url":"",
+        "a1": "alg. dijkstra",
+        "a2": "insert-sort",
+        "a3": "select-sort",
+        "a4": "quick-sort",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Maksymalny rząd wierzchołka grafu na obrazku to?",
         "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0123_08.gif",
         "a1": "3",
         "a2": "2",
@@ -1533,6 +1563,26 @@ const questions = [
         "type": "4A"
     },
     {
+        "question":"Rodzajem algorytmu nie jest?",
+        "url":"",
+        "a1": "alg. kroczący",
+        "a2": "alg. sekwencyjny",
+        "a3": "alg. iteracyjny",
+        "a4": "alg. rekurencyjny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Algorytm na obrazku to?",
+        "url":"data:image/png;base64,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",
+        "a1": "alg. iteracyjny",
+        "a2": "alg. sekwencyjny",
+        "a3": "alg. blokowy",
+        "a4": "alg. rekurencyjny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
         "question":"Najpopularniejszym sposobem zapisu grafu w programie jest tablica 2D?",
         "url":"",
         "a1": "TAK",
@@ -1634,6 +1684,86 @@ const questions = [
         "type": "4A"
     },
     {
+        "question":"Obiekt klasy może być przekazany do funckji przez (C++)?",
+        "url":"",
+        "a1": "wartość/referencje/wskaźnik",
+        "a2": "wartość/wskaźnik",
+        "a3": "wartość/referencje",
+        "a4": "wartość",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda ustawiająca prywatne pole to?",
+        "url":"",
+        "a1": "setter",
+        "a2": "getter",
+        "a3": "metoda wirtualna",
+        "a4": "metoda abstrakcyjna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Konstruktor?",
+        "url":"",
+        "a1": "w typowych przypadkach powinien być funkcją typu public",
+        "a2": "może być funkcja wirtualną",
+        "a3": "lista argumentów musi być zawsze pusta",
+        "a4": "a dostęp tylko do danych prywatnych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Operacje powodujące wystąpienie wyjątku",
+        "url":"",
+        "a1": "powinny być umieszczone w bloku try",
+        "a2": "powinny być umieszczone w bloku exception",
+        "a3": "powinny być umieszczone w bloku throw",
+        "a4": "powinny być umieszczone w bloku catch",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jak nazywamy składniki, z których zbudowane są obiekty?",
+        "url":"",
+        "a1": "Pola i metody",
+        "a2": "Klasy i metody",
+        "a3": "Metody i funkcje",
+        "a4": "Funkcje i stałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Na czym polega hermetyzacja?",
+        "url":"",
+        "a1": "Na zabezpieczeniu składników obiektu przez ich bezpośrednią modyfikacją",
+        "a2": "Na zabezpieczeniu konstruktora klasy przed niepowołanym wywołaniem",
+        "a3": "Na zabezpieczaniu składników klasy przed niepotrzebnym zajmowaniem pamięci",
+        "a4": "Na deklarowaniu obiektów danej klasy przy pomocy metod wirtualnych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Na czym polega dziedziczenie w programowaniu obiektowym?",
+        "url":"",
+        "a1": "Na tworzeniu nowej klasy na podstawie jednej lub kilku już istniejących klas",
+        "a2": "Na łączeniu obiektów",
+        "a3": "Na kopiowaniu cech obiektu przez metodę wirtualną",
+        "a4": "Na usunięciu z istniejącej klasy zbędnych elementów",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Czy pole i właściwość w terminologi C# to to samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
         "question":"Interfejs to konstrukcja znana np. z języka C# Jest ona podobna do?",
         "url":"",
         "a1": "klasy abstrakcyjnej",
@@ -1682,6 +1812,246 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A"
+    },
+    {
+        "question":"Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Klasy oferują możliwość przeciążania wszystkich operatorów?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Gdy argumentem funkcji jest struktura/obiekt?",
+        "url":"",
+        "a1": "aby funkcja zmieniła oryginał, argumentem musi być wskaźnik do struktury/obiektu",
+        "a2": "funkcja może zmienić oryginał struktury/obiektu",
+        "a3": "funkcja może zmienić tylko kopię struktury/obiektu",
+        "a4": "żadna z pozostałych odpowiedzi nie jest poprawna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jaką klasę nazywamy abstrakcyjną?",
+        "url":"",
+        "a1": "Zawierająca przynajmniej jedną metodę czysto wirtualną",
+        "a2": "Taką, która jest jednocześnie klasą bazową i pochodną",
+        "a3": "Zawierającą wszystkie trzy specyfikatory dostępu",
+        "a4": "Zawierającą 2 wersje przeciążonego konstruktora",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda wirtualna…",
+        "url":"",
+        "a1": "Może być przedefiniowana w klasie pochodnej",
+        "a2": "Nie posiada definicji",
+        "a3": "Nigdy nie jest dziedziczona",
+        "a4": "Zawsze korzysta z rekurencji",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda czysto wirtualna…",
+        "url":"",
+        "a1": "Nie posiada definicji",
+        "a2": "Nie zwraca",
+        "a3": "Nigdy nie jest dziedziczona",
+        "a4": "Zawsze korzysta z rekurencji",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jak wywołać metodę obiekty za pomocą wskaźnika?",
+        "url":"",
+        "a1": "wskaźnik->metoda();",
+        "a2": "wskaźnik.metoda();",
+        "a3": "metoda->wskaźnik();",
+        "a4": "metoda.wskaźnik();",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Na czym polega polimorfizm?",
+        "url":"",
+        "a1": "Wskaźnik/Referencję klasy bazowej można powiązać z obiektami klas pochodnych",
+        "a2": "Konstruktor klasy bazowej staje się wirtualny",
+        "a3": "Klasy pochodne są czysto abstrakcyjne",
+        "a4": "Wskaźnik klasy bazowej jest dziedziczony przez klasy pochodne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Czy klasa pochodna dziedziczy z klasy bazowej konstruktor?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAk",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy klasa pochodna dziedziczy z klasy bazowej destruktor?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAk",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy elementy statyczne klasy mają dostęp do elementów niestatycznych?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy elementy niestatyczne klasy mają dostęp do elementów statycznych?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy setter może wykonywać dodatkową logikę oprócz ustawiania pola?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy getter może wykonywać dodatkową logikę oprócz zwracania pola?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy klasa może dziedziczyć sama z siebie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy interfejs może zawierać pola?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy słowo kluczowe this może mieć wartość NULL?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy słowa kluczowego \"this\" można użyć w metodzie statycznej?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy klasa może dziedziczyć sama z siebie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Ile pól zawiera klasa na obrazku?",
+        "url":"https://quizizz.com/media/resource/gs/quizizz-media/quizzes/51fb2ff6-fd68-4fa3-911b-067fa8b551a1?w=600&h=600",
+        "a1": "4",
+        "a2": "2",
+        "a3": "1",
+        "a4": "3",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Językiem obsługującym wieloklasowe dziedziczenie jest?",
+        "url":"",
+        "a1": "C++",
+        "a2": "C",
+        "a3": "C#",
+        "a4": "Javascript",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Cztery filary programowania obiektowego to?",
+        "url":"",
+        "a1": "Dziedziczenie, Polimorfizm, Hermetyzacja, Abstrakcja",
+        "a2": "Public, Protected, Private, Interface",
+        "a3": "Public, Protected, Private, Implementation",
+        "a4": "Constructor, Destructor, Abstractor, Iterator",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W języku Java mamy operator == oraz funkcję equals(). Na czym polega różnica między nimi w C#/Java?",
+        "url":"",
+        "a1": "Operator == porównuje tylko referencje a Equals() także zawartość obiektu",
+        "a2": "Operator == porówuje zawartość obiektu a Equals() referencje",
+        "a3": "Obie metody porównania są identyczne",
+        "a4": "Operator == to skrócona wersja Equals()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najważniejszą cechą klasy abstrakcyjnej jest:",
+        "url":"",
+        "a1": "Brak możliwości stworzenia obiektu tej klasy.",
+        "a2": "Brak możliwości dziedziczenia tej klasy.",
+        "a3": "Brak nazwy klasy.",
+        "a4": "Utrudnione kopiowanie obiektów tej klasy.",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
     },
 ]
 
