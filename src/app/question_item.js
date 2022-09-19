@@ -2,7 +2,7 @@ import './question_item.css';
 import React, {useEffect} from 'react';
 
 function QuestionItem(props){
-    let answer = false;
+    let answer = -1;
 
     useEffect(() => {
         //clear mark
@@ -40,6 +40,10 @@ function QuestionItem(props){
     });
 
     const mark = (id, positive) => {
+        if(answer !== -1){
+            return;
+        }
+
         document.getElementById(props.question.id+"A").style.backgroundColor = "transparent";
         document.getElementById(props.question.id+"B").style.backgroundColor = "transparent";
         document.getElementById(props.question.id+"C").style.backgroundColor = "transparent";
