@@ -6,10 +6,10 @@ function QuestionItem(props){
 
     useEffect(() => {
         //clear mark
-        document.getElementById(props.question.id+"A").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"B").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"C").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"D").style.backgroundColor = "transparent";
+        document.getElementById(props.question.id+"A").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"B").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"C").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
 
         //check if ABCD or TF
         if(props.question.type === "2A"){
@@ -44,10 +44,10 @@ function QuestionItem(props){
             return;
         }
 
-        document.getElementById(props.question.id+"A").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"B").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"C").style.backgroundColor = "transparent";
-        document.getElementById(props.question.id+"D").style.backgroundColor = "transparent";
+        document.getElementById(props.question.id+"A").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"B").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"C").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
 
         document.getElementById(id).style.backgroundColor = positive === 0 ? "red" : "green";
 

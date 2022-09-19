@@ -1068,7 +1068,7 @@ const questions = [
         "a3": "do deklaracji ciała funckji",
         "a4": "do niczego konkretnego",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "4A"
     },
     {
         "question":"Instrukcja \"mov eax, ebx\"?",
@@ -1078,7 +1078,7 @@ const questions = [
         "a3": "kopiuje zawartość eax do ebx",
         "a4": "przenosi zawartość eax do ebx",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "4A"
     },
     //numeric systems
     {
@@ -1274,10 +1274,10 @@ const questions = [
     {
         "question":"Wartość wyrażenia ~0xF0 to?",
         "url":"",
-        "a1": "0b00001111",
-        "a2": "0x0F",
-        "a3": "15",
-        "a4": "wszystkie pozostałe",
+        "a1": "wszystkie pozostałe",
+        "a2": "0b00001111",
+        "a3": "0x0F",
+        "a4": "15",
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
@@ -2052,6 +2052,847 @@ const questions = [
         "a4": "Utrudnione kopiowanie obiektów tej klasy.",
         "tag": "NIEOFICJALNE",
         "type": "4A"
+    },
+    //C#
+    {
+        "question":"Firmą odpowiedzialną za język C# jest",
+        "url":"",
+        "a1": "Microsoft",
+        "a2": "Google",
+        "a3": "Meta",
+        "a4": "Apple",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Język C# jest podobny do języka?",
+        "url":"https://miro.medium.com/max/620/1*nIwkpZkz0FdyBoHx6mOr7g.jpeg",
+        "a1": "Java",
+        "a2": "Javascript",
+        "a3": "C",
+        "a4": "C++",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Każdy program napisany w C# musi mieć funkcję main?",
+        "url":"https://miro.medium.com/max/620/1*nIwkpZkz0FdyBoHx6mOr7g.jpeg",
+        "a1": "Od .NET 6 nie każdy",
+        "a2": "Od .NET 6 każdy",
+        "a3": "Każdy oprócz programu webowego",
+        "a4": "Każdy oprócz programu konsolowego",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"C# oferuje obsługę wskaźników?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# funkcja main jest statyczna?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# typy referencyjne są usuwane z pamięci manualnie przez programistę?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# typy referencyjne są usuwane z pamięci manualnie przez garbage collector?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Plik źródłowy języka C# ma rozszerzenie?",
+        "url":"",
+        "a1": ".cs",
+        "a2": ".cc",
+        "a3": ".c",
+        "a4": ".sc",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W C# da się napisać metodę poza klasą?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Typem z języka C# niedostępnym w innych językach jest?",
+        "url":"",
+        "a1": "IntPtr",
+        "a2": "string",
+        "a3": "bool",
+        "a4": "StringBuilder",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Każda zmienna w C# przekazywana jest przez wartość do funckji itp?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# klasy i struktury są równoznaczne i zachowują się tak samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Struktura definuje typ referencyjny w języku C#?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# \"Console.Write()\" wstawia enter na końcu?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Klasa definuje typ referencyjny w języku C#?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Delegaty w C# to mechanizm podobny do wskaźników na funkcję?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Delegaty w C# to typy referencyjne?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# delegat \"Func<int, double, bool>\" zwraca?",
+        "url":"",
+        "a1": "bool",
+        "a2": "double",
+        "a3": "int",
+        "a4": "nic",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# delegat \"Action<string, int, int>\" zwraca?",
+        "url":"",
+        "a1": "nic",
+        "a2": "bool",
+        "a3": "int",
+        "a4": "string",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Delegat C# \"Predicate<int> DodatnieDelegat = (a) => a >= 0 ? true : false;\" jest poprawny?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# delegat \"Predicate<int>\" zwraca?",
+        "url":"",
+        "a1": "bool",
+        "a2": "double",
+        "a3": "int",
+        "a4": "nic",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Typem danych wykrzystywanym do precyzyjnego przechowywania liczb ułamkowych w C# jest?",
+        "url":"",
+        "a1": "decimal",
+        "a2": "double",
+        "a3": "float",
+        "a4": "dynamic",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Istnieje w C# różnica między zmienną typu \"var\" a \"dynamic\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Istnieje w C# różnica między zmienną typu \"const\" a \"readonly\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Oznaczenie w C# klasy jako \"sealed\" blokuje możliwość dziedziczenia z niej?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli chcemy w C# parsować na double string z liczbą ułamkową to ma znaczenie czy użyjemy w niej kropki czy przecinka?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby poznać długość stringa w C# należy posłużyć się?",
+        "url":"",
+        "a1": ".Length",
+        "a2": ".Length()",
+        "a3": ".Count",
+        "a4": ".Count()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Konstrukcja alokująca tablicę w C# to?",
+        "url":"",
+        "a1": "int[] tablica = new int[5];",
+        "a2": "int tablica[] = new int[5];",
+        "a3": "int[] tablica = new int(5);",
+        "a4": "int tablica[] = new int(5);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Konstrukcja alokująca tablicę 2D w C# to?",
+        "url":"",
+        "a1": "int[,] tablica2 = new int[5,2];",
+        "a2": "int[][] tablica2 = new[5][2] int;",
+        "a3": "int[][] tablica2 = new int[5,2];",
+        "a4": "int[][] tablica2 = new[5][2] int;",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Tablica postrzępiona w C# to?",
+        "url":"",
+        "a1": "Tablica 2D gdzie każda podtablica jest innego rozmiaru",
+        "a2": "Tablica 2D gdzie każda podtablica jest równa",
+        "a3": "Tablica 2D gdzie każda podtablica ma nieparzystą ilość elementów",
+        "a4": "Każda tablica",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"String w C# jest typem referencyjnym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Tablica w C# jest typem referencyjnym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"List<T> w C# jest typem referencyjnym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Span<T> w C# jest typem referencyjnym?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Enum w C# jest typem referencyjnym?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# typy referencyjne alokowane są na stercie a wartościowe na stosie?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# referencja na typ referencyjny i tak jest na stosie?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# typ wartościowy staje się typem referencyjnym jeżeli jest składową typu referencyjnego?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Boxing to proces sztuczengo opakowania typu wartościowego w typ referencyjny?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Właściwość w C# to odpowiednik gettera i settera z innych języków?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Mechanizm pozwalający programowi czytać inforamcje o samym sobie to?",
+        "url":"",
+        "a1": "Refleksja",
+        "a2": "Lustro",
+        "a3": "Asemblacja",
+        "a4": "Instancjonowanie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Mechanizm pozwalający pisać w C# wydajne zapytania do kolekcji nazywany jest?",
+        "url":"",
+        "a1": "LINQ",
+        "a2": "LI",
+        "a3": "Enumerator",
+        "a4": "Enumerable",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klasa w C# służąca do tworznia stringów to?",
+        "url":"",
+        "a1": "StringBuilder",
+        "a2": "BuildString",
+        "a3": "String",
+        "a4": "Strings",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"List<T> w C# nie dziedziczy z?",
+        "url":"",
+        "a1": "IEnumerator",
+        "a2": "IList",
+        "a3": "IEnumerable",
+        "a4": "ICollection",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Parametry generyczne umieszczamy zazwyczaj w?",
+        "url":"",
+        "a1": "<>",
+        "a2": "()",
+        "a3": "[]",
+        "a4": "{}",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W C# interfejsy nazywa się zaczynając od litery I?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# List<T> nie różni się niczym od zwykłej tablicy?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# ArrayList oraz tablica to to samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Metoda LINQ First() działa tak samo jak FirstOrDefault()?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# List<T> to to samo co IEnumerable<T>?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Do czego służy metoda ToString() w C#?",
+        "url":"",
+        "a1": "Zwrócenia reprezentacji tekstowej obiektu",
+        "a2": "Parsowania obiektu na tekst",
+        "a3": "Zwrócenia nazwy obiektu",
+        "a4": "Zwrócenia typu obiektu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda klasy string, która sprawdza czy napis jest nullem lub jest pusty to?",
+        "url":"",
+        "a1": "IsNullOrEmpty()",
+        "a2": "NullOrEmpty()",
+        "a3": "IsEmpty()",
+        "a4": "IsNull()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Gdy \"a = null\" instrukcja \"Console.WriteLine(a is { });\"?",
+        "url":"",
+        "a1": "false",
+        "a2": "true",
+        "a3": "0",
+        "a4": "kompilacja skończy się błędem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
+        "url":"",
+        "a1": "override",
+        "a2": "virtual",
+        "a3": "extern",
+        "a4": "static",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Słowo kluczowe języka C# \"async\" w nagłówku funkcji oznacza?",
+        "url":"",
+        "a1": "operację asynchroniczą",
+        "a2": "operację synchroniczną",
+        "a3": "funkcję wywołania zwrotnego",
+        "a4": "funckję dotykającą UI",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Słowo kluczowe języka C# \"await\" automatycznie powoduje?",
+        "url":"",
+        "a1": "że metoda staje się asynchroniczna",
+        "a2": "że metoda w danym miejscu może się zakończyć",
+        "a3": "że metoda otwiera w danym miejscu połączenie sieciowe",
+        "a4": "że metoda staje się synchroniczną",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W C# typem zwracanym z metod asynchronicznych jest?",
+        "url":"",
+        "a1": "Task<T>",
+        "a2": "Future<T>",
+        "a3": "Promise<T>",
+        "a4": "Thread<T>",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Język C# kompilowany jest w pierwszej kolejności do _ a dopiero później do kodu maszynowego?",
+        "url":"",
+        "a1": "Intermediate Language",
+        "a2": "Just In Time Runtime",
+        "a3": "Opcodes",
+        "a4": "Abstract Syntax Tree",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Typy wartościowe można przekazać w formie referencji za pomocą?",
+        "url":"",
+        "a1": "słowa kluczowego \"ref\"",
+        "a2": "słowa kluczowego \"out\"",
+        "a3": "boxingu",
+        "a4": "wszystkie pozostałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W C# konwencja nazw stosuje zazwyczaj?",
+        "url":"",
+        "a1": "odmiany cammelCase",
+        "a2": "odmiany snake_case",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Skrót \"WPF\" oznacza?",
+        "url":"",
+        "a1": "Windows Presentation Foundation",
+        "a2": "Windows Power Framework",
+        "a3": "Windows Presentation Framework",
+        "a4": "Windows Power Foundation",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Frameworkiem do tworzenia stron interentowych powiązanym z C# nie jest?",
+        "url":"",
+        "a1": "Flask",
+        "a2": "ASP.NET",
+        "a3": "Blazor",
+        "a4": "Razor",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Xamarin pozwal tworzyć aplikację na?",
+        "url":"",
+        "a1": "iOS oraz Androida",
+        "a2": "Androida oraz Windows",
+        "a3": "Tylko Andorida",
+        "a4": "Tylko Windows",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Popularną klasą C# odpowiedzialną za operacje komunikacji z REST API jest?",
+        "url":"",
+        "a1": "HttpClient",
+        "a2": "Http",
+        "a3": "HttpOk",
+        "a4": "Socket",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Aby użyć wskaźników w C# należy oznaczyć funkcję słowem kluczowym?",
+        "url":"",
+        "a1": "unsafe",
+        "a2": "volatile",
+        "a3": "virtual",
+        "a4": "static",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klasą nadrzędną dla wyjątków w C# jest?",
+        "url":"",
+        "a1": "Exception",
+        "a2": "Throwable",
+        "a3": "Except",
+        "a4": "Error",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Pojęcie statycznego polimorfizmu oznacza?",
+        "url":"",
+        "a1": "Przeciążanie funkcji",
+        "a2": "Nadpisywanie funckji",
+        "a3": "Dziedziczenie",
+        "a4": "Wielokrotne dziedziczenie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
+        "url":"",
+        "a1": "override",
+        "a2": "virtual",
+        "a3": "extern",
+        "a4": "static",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Referencja w porównaniu do wskaźnika?",
+        "url":"",
+        "a1": "nie pozwala na arytmetykę na adresie",
+        "a2": "pozwala na arytmetykę na adresie",
+        "a3": "jest konstrukcją składniową",
+        "a4": "oznacza obiekt jako stałą",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Która pętla nie jest dostępna w C#?",
+        "url":"",
+        "a1": "for(auto el in collection){}",
+        "a2": "foreach(var el in collection){}",
+        "a3": "while(a > 0) {}",
+        "a4": "for(int i = 0;i<10;i++){}",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Breakpoint pozwala?",
+        "url":"",
+        "a1": "zatrzymać program we wskazanym miejscu",
+        "a2": "zakończyć program we wskazanym miejscu",
+        "a3": "zakończyć nagle pętle",
+        "a4": "zakończyć nagle funkcję",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Adres w pamięci ma każdy?",
+        "url":"",
+        "a1": "bajt",
+        "a2": "bit",
+        "a3": "kilobajt",
+        "a4": "megabajt",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Do budowania układu siatki w WPF i Xamarin służy tag?",
+        "url":"",
+        "a1": "GRID",
+        "a2": "TABLE",
+        "a3": "COLUMN",
+        "a4": "ROW",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W WPF oraz Xamarin do elementów interfejsu odwołujemy się za pomocą?",
+        "url":"",
+        "a1": "atrybutu name",
+        "a2": "atrybutu id",
+        "a3": "atrybutu class",
+        "a4": "atrybutu title",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Język do budowania interfejsu użytkownika w WPF oraz Xamarin nazywa się?",
+        "url":"",
+        "a1": "XAML",
+        "a2": "XML",
+        "a3": "Blazor",
+        "a4": "Razor",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Windows Forms to to samo co WPF?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"C# obsługuje mechanizm null-safety?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Skrót LINQ oznacza?",
+        "url":"",
+        "a1": "Language Integrated Query",
+        "a2": "Link List Inner Query",
+        "a3": "Lazy Integration Query",
+        "a4": "Linked Integrated Query",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metoda rozszerzająca to metoda?",
+        "url":"",
+        "a1": "statyczna, która zachowuje się jakby była częścią obiektu",
+        "a2": "zwykła metoda, która zachowuje się jakby była częścią obiektu",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Na obrazku zaznaczono",
+        "url":"https://www.kiltandcode.com/assets/img/2020/05/attributes-for-unit-tests.png",
+        "a1": "atrybuty",
+        "a2": "modyfikatory",
+        "a3": "tagi",
+        "a4": "tokeny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W C# za operacje na plikach odpowiada między innymi klasa \"File\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# za operacje na katalogach odpowiada między innymi klasa \"Directory\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# występuje pojęcie przestrzeni nazw?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
     },
 ]
 

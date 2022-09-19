@@ -13,12 +13,13 @@
     font-size: 23px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
-    text-align: left;
+    text-align: justify;
+    background-color: rgb(255,255,255,0.3);
     border: 3px solid transparent;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .answer:nth-child(4) .answer_button{
-    background-color: green;
+    background-color: limegreen;
     border-radius: 20px;
     width: 38px;
 }
