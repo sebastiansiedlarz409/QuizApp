@@ -18,10 +18,12 @@
 .nav_bar_item{
     margin-left: 20px;
     padding: 0px;
-    padding-top: 5px;
+    padding-top: 2px;
     padding-bottom: 5px;
-    float: left;
+    float: right;
     font-size: 20px;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 .nav_bar_item:hover{
@@ -30,6 +32,6 @@
 }
 
 .nav_bar_menu{
-    margin-left: 40px;
-    float: left;
+    margin-right: 40px;
+    float: right;
 }

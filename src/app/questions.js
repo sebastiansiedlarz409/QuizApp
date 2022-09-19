@@ -1224,10 +1224,10 @@ const questions = [
     {
         "question":"Wartość wyrażenia 0xFF&0x80 to?",
         "url":"",
-        "a1": "0x80",
+        "a1": "wszystkie pozostałe",
         "a2": "0b10000000",
         "a3": "128",
-        "a4": "wszystkie pozostałe",
+        "a4": "0x80",
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
@@ -1305,7 +1305,7 @@ const questions = [
         "question":"Wartość wyrażenia !0b111111110 to?",
         "url":"",
         "a1": "false",
-        "a2": "true",
+        "a2": "undefined",
         "a3": "1",
         "a4": "0xE",
         "tag": "NIEOFICJALNE",
@@ -1340,6 +1340,36 @@ const questions = [
         "a4": "a&(1>>4)",
         "tag": "NIEOFICJALNE",
         "type": "4A"
+    },
+    {
+        "question":"Kodowanie liczb ujemnych odbywa się za pomocą metody",
+        "url":"",
+        "a1": "Dopełnień do 2",
+        "a2": "Dopełnień do 1",
+        "a3": "Znak moduł",
+        "a4": "IEEE 754",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kodowanie liczb zmiennoprzecinkowych odbywa się za pomocą standardu",
+        "url":"",
+        "a1": "IEEE 754",
+        "a2": "IEEE 1284",
+        "a3": "IEEE 1394",
+        "a4": "U2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jeżeli najstarszy bit liczby \"signed\" jest ustawiony na 1 to liczba jest?",
+        "url":"",
+        "a1": "ujemna",
+        "a2": "dodatnia",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
     },
     //algorytmy
     {

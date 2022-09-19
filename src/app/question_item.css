@@ -1,6 +1,8 @@
 .question_item{
     margin:auto;
-    margin-bottom: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 
 .question_answers{
@@ -17,10 +19,11 @@
     padding-bottom: 5px;
     border-radius: 8px;
     text-align: left;
+    border: 3px solid transparent;
 }
 
-#A:hover,#B:hover,#C:hover,#D:hover{
-    background-color: rgba(255, 204, 204, 120);
+.answer:hover{
+    border: 3px solid white;
 }
 
 .answer_button{
