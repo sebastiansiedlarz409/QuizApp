@@ -3429,6 +3429,26 @@ const questions = [
         "type": "4A"
     },
     {
+        "question":"Skrót SPA oznacza?",
+        "url":"",
+        "a1": "Single-Page Application",
+        "a2": "Simple-Page Application",
+        "a3": "Super-Page Application",
+        "a4": "Super-Pure Application",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Strona typu SPA bazuje na?",
+        "url":"",
+        "a1": "przeładowywaniu pojedynczych elementów strony",
+        "a2": "zakładkach i podstronach",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
         "question":"Skrót ORM rozwija się?",
         "url":"",
         "a1": "Object Relational Mapping",
@@ -3479,7 +3499,7 @@ const questions = [
         "type": "2A"
     },
     {
-        "question":"Kompozycja jest bardziej moblina i elastyczna niż dziedziczenie?",
+        "question":"Kompozycja jest bardziej mobilna i elastyczna niż dziedziczenie?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -3609,6 +3629,528 @@ const questions = [
         "type": "4A"
     },
     //http rest ect
+    {
+        "question":"Protokoły HTTP/HTTPS są protokołami warstwy _ ISO/OSI?",
+        "url":"",
+        "a1": "7",
+        "a2": "6",
+        "a3": "5",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Skrót HTTP rozwija się?",
+        "url":"",
+        "a1": "Hypertext Transfer Protocol",
+        "a2": "Hypermarkup Transfer Protocol",
+        "a3": "HTML Transfer Protocol",
+        "a4": "Hyper Transfer Protocol",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokół HTTP pracuje na porcie?",
+        "url":"",
+        "a1": "80",
+        "a2": "60",
+        "a3": "21",
+        "a4": "100",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokoły TCP oraz UDP są protokołami warstwy _ ISO/OSI?",
+        "url":"",
+        "a1": "4",
+        "a2": "6",
+        "a3": "5",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokoły IPv4 oraz IPv6 są protokołami warstwy _ ISO/OSI?",
+        "url":"",
+        "a1": "3",
+        "a2": "6",
+        "a3": "5",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Dane przekazywane do protokoły HTTP/HTTPS są w formacie?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "JSON",
+        "a3": "XML",
+        "a4": "zwykłego tekstu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Dane otrzymywane poprzez protokoły HTTP/HTTPS są w formacie?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "JSON",
+        "a3": "XML",
+        "a4": "zwykłego tekstu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS nie jest?",
+        "url":"",
+        "a1": "REMOVE",
+        "a2": "DELETE",
+        "a3": "POST",
+        "a4": "PATCH",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS nie jest?",
+        "url":"",
+        "a1": "MOVE",
+        "a2": "DELETE",
+        "a3": "POST",
+        "a4": "GET",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za pobieranie danych jest?",
+        "url":"",
+        "a1": "GET",
+        "a2": "PUT",
+        "a3": "POST",
+        "a4": "HEAD",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za wysyłanie danych jest?",
+        "url":"",
+        "a1": "POST",
+        "a2": "PUT",
+        "a3": "GET",
+        "a4": "HEAD",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za aktualizowanie danych jest?",
+        "url":"",
+        "a1": "PUT",
+        "a2": "POST",
+        "a3": "GET",
+        "a4": "HEAD",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za usuwanie danych jest?",
+        "url":"",
+        "a1": "DELETE",
+        "a2": "REMOVE",
+        "a3": "POST",
+        "a4": "PATCH",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kody sukcesu zwracane przez HTTP/HTTPS znajdują się w zakresie?",
+        "url":"",
+        "a1": "200-299",
+        "a2": "100-199",
+        "a3": "300-399",
+        "a4": "500-599",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kody oznaczające błąd serwera zwracane przez HTTP/HTTPS znajdują się w zakresie?",
+        "url":"",
+        "a1": "500-599",
+        "a2": "100-199",
+        "a3": "300-399",
+        "a4": "200-299",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kody zwracane przez HTTP/HTTPS znajdują się w zakresie?",
+        "url":"",
+        "a1": "100-599",
+        "a2": "0-599",
+        "a3": "200-599",
+        "a4": "100-699",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kod sukcesu HTTP/HTTPS to?",
+        "url":"",
+        "a1": "200",
+        "a2": "300",
+        "a3": "400",
+        "a4": "500",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kod \"nie znaleziono\" HTTP/HTTPS to?",
+        "url":"",
+        "a1": "404",
+        "a2": "202",
+        "a3": "400",
+        "a4": "102",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kod \"Internal Server Error\" HTTP/HTTPS to?",
+        "url":"",
+        "a1": "500",
+        "a2": "202",
+        "a3": "400",
+        "a4": "102",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kod \"Unauthorized\" HTTP/HTTPS to?",
+        "url":"",
+        "a1": "401",
+        "a2": "402",
+        "a3": "400",
+        "a4": "403",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"JWT to skrót od?",
+        "url":"",
+        "a1": "JSON Web Token",
+        "a2": "JavaScript Web Token",
+        "a3": "Java Web Token",
+        "a4": "JavaScript Web Type",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"API typu REST wymienia dane w formacie zwanym?",
+        "url":"",
+        "a1": "JSON",
+        "a2": "XML",
+        "a3": "HTML",
+        "a4": "JWT",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Poprzednikiem API typu REST było API typu?",
+        "url":"",
+        "a1": "SOAP",
+        "a2": "WinAPI",
+        "a3": "ARP",
+        "a4": "MAC",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"API typu SOAP bazuje na technologii?",
+        "url":"",
+        "a1": "XML",
+        "a2": "JSON",
+        "a3": "JWT",
+        "a4": "HTML",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"REST to skrót od?",
+        "url":"",
+        "a1": "Representational State Transfer",
+        "a2": "Representational Schema Transfer",
+        "a3": "Representational State Transmision",
+        "a4": "Representational Schema Transmision",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokołem bezpołączeniowym warstwy 4 ISO OSI jest?",
+        "url":"",
+        "a1": "UDP",
+        "a2": "TCP",
+        "a3": "UPC",
+        "a4": "TPC",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokołem połączeniowym warstwy 4 ISO OSI jest?",
+        "url":"",
+        "a1": "TCP",
+        "a2": "UDP",
+        "a3": "UPC",
+        "a4": "TPC",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Programem do testowania REST API jest?",
+        "url":"",
+        "a1": "Postman",
+        "a2": "TeamViewer",
+        "a3": "Putty",
+        "a4": "HxDView",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Programem do testowania REST API jest?",
+        "url":"",
+        "a1": "curl",
+        "a2": "netstat",
+        "a3": "ping",
+        "a4": "tracert",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Protokół HTTPS to HTTP stosujący szyfrowanie?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //technologie webowe
+    {
+        "question":"Technologią/Frameworkiem wykorzystywanym tylko w programowaniu webowym jest?",
+        "url":"",
+        "a1": "ASP.NET",
+        "a2": "React",
+        "a3": "Flutter",
+        "a4": "MAUI",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Technologia ASP.NET bazuje na języku?",
+        "url":"",
+        "a1": "C#",
+        "a2": "C++",
+        "a3": "C",
+        "a4": "Java",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Framework Spring bazuje na języku?",
+        "url":"",
+        "a1": "JAVA",
+        "a2": "C#",
+        "a3": "C++",
+        "a4": "Python",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Framework Django bazuje na języku?",
+        "url":"",
+        "a1": "Python",
+        "a2": "C#",
+        "a3": "C++",
+        "a4": "Java",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"React to framework bazujący na języku JavaScript/TypeScript?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Język PHP do pracy potrzebuje serwera?",
+        "url":"",
+        "a1": "Apache",
+        "a2": "IIS",
+        "a3": "Mysql",
+        "a4": ".Net",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Języka JavaScript można używać jako języka back-endowego dzięki?",
+        "url":"",
+        "a1": "NodeJS",
+        "a2": ".NET CORE",
+        "a3": "JIT",
+        "a4": "Apache",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bazą danych nierelacyjną jest?",
+        "url":"",
+        "a1": "MongoDB",
+        "a2": "MS-SQL",
+        "a3": "PostgreSQL",
+        "a4": "MySQL",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //javascript
+    {
+        "question":"W JS wynikiem operacji \"console.log(\"This is a string.\" instanceof String);\" będzie?",
+        "url":"",
+        "a1": "false",
+        "a2": "true",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(0.1 + 0.2 == 0.3);\" będzie?",
+        "url":"",
+        "a1": "false",
+        "a2": "true",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(1 +  \"2\" + \"2\");\" będzie?",
+        "url":"",
+        "a1": "122",
+        "a2": "32",
+        "a3": "NaN",
+        "a4": "NaN2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(typeof typeof 1);\" będzie?",
+        "url":"",
+        "a1": "string",
+        "a2": "number",
+        "a3": "false",
+        "a4": "true",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(018 - 015);\" będzie?",
+        "url":"",
+        "a1": "5",
+        "a2": "3",
+        "a3": "8",
+        "a4": "NaN",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(('b' + 'a' + + 'a' + 'a').toLowerCase());\" będzie?",
+        "url":"",
+        "a1": "banana",
+        "a2": "baaa",
+        "a3": "ananas",
+        "a4": "bananaa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS wynikiem operacji \"console.log(3 > 2 > 1);\" będzie?",
+        "url":"",
+        "a1": "false",
+        "a2": "true",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"JavaScript wchodzi w standard ECMAScript",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"JavaScript pozwala przypisać funckję do zmiennej?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy funkcja eval() jest bezpieczna?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W JS \"NaN\" jest typu?",
+        "url":"",
+        "a1": "number",
+        "a2": "null",
+        "a3": "NaN",
+        "a4": "undefined",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS typami prymitywnymi są",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "String",
+        "a3": "Number",
+        "a4": "Boolean",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS wartość null oznacza",
+        "url":"",
+        "a1": "brak wartości",
+        "a2": "wartość nieznaną",
+        "a3": "pusty string",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Która linia kodu jest niepoprawna z punktu widzenia JavaScript?",
+        "url":"",
+        "a1": "var obj = {name = \"Sebastian\" };",
+        "a2": "var obj = {name: \"Sebastian\" };",
+        "a3": "var obj = new Object();",
+        "a4": "var obj = {};",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
 ]
 
 export default questions;
