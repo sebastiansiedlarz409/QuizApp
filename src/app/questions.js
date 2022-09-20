@@ -1292,12 +1292,12 @@ const questions = [
         "type": "4A"
     },
     {
-        "question":"Wartość wyrażenia 0xF&&0x0 to?",
+        "question":"Wartość wyrażenia 0xF&&0x0 w C/C++ to?",
         "url":"",
-        "a1": "0",
-        "a2": "fałsz",
-        "a3": "0x0",
-        "a4": "wszystkie pozostałe",
+        "a1": "wszystkie pozostałe",
+        "a2": "0",
+        "a3": "fałsz",
+        "a4": "0x0",
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
@@ -2647,10 +2647,10 @@ const questions = [
     {
         "question":"Typy wartościowe można przekazać w formie referencji za pomocą?",
         "url":"",
-        "a1": "słowa kluczowego \"ref\"",
-        "a2": "słowa kluczowego \"out\"",
-        "a3": "boxingu",
-        "a4": "wszystkie pozostałe",
+        "a1": "wszystkie pozostałe",
+        "a2": "słowa kluczowego \"ref\"",
+        "a3": "słowa kluczowego \"out\"",
+        "a4": "boxingu",
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
@@ -2894,6 +2894,721 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A"
     },
+    //GIT
+    {
+        "question":"Polecenie \"git reset --hard\" oraz git reset --soft\" działają tak samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jakiego przełącznika należy użyć z poleceniem \"git reset\" aby cofnięte zmiany wylądowały na \"stage\"?",
+        "url":"",
+        "a1": "--soft",
+        "a2": "--mixed",
+        "a3": "--hard",
+        "a4": "--medium",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Polecenie \"git rebase\" oraz git merge\" działają tak samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Polecenie \"git stash\" cofa projekt do ostatniego commita a zmiany są tracone?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby w systemie git przeglądać historie commitów należy posłużyć się poleceniem?",
+        "url":"",
+        "a1": "git log",
+        "a2": "git status",
+        "a3": "git stash",
+        "a4": "git diff",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu GIT dodające wszystkie pliki na stage to?",
+        "url":"",
+        "a1": "git add .",
+        "a2": "git add *",
+        "a3": "git add $",
+        "a4": "git add all",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Aby w systemie git przeglądać historie commitów w formie list należy dodać do \"git log\"?",
+        "url":"",
+        "a1": "--oneline",
+        "a2": "--verbose",
+        "a3": "--overview",
+        "a4": "--list",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Aby w systemie git stwierdzić jakie pliki zostały zmodyfikowane od ostatniego commita należy użyć polecenia?",
+        "url":"",
+        "a1": "git status",
+        "a2": "git log",
+        "a3": "git stash",
+        "a4": "git rebase",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Inicjalizacja repozytorium lokalnego git odbywa się poleceniem?",
+        "url":"",
+        "a1": "git init",
+        "a2": "git start",
+        "a3": "git add",
+        "a4": "git rebase",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Commita w systemie GIT wykonujemu poleceniem?",
+        "url":"",
+        "a1": "git commit -m \"Message\"",
+        "a2": "git commit -log \"Message\"",
+        "a3": "git commit message \"Message\"",
+        "a4": "git add commit -m \"Message\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Nową gałąź w systemie GIT tworzymy poleceniem?",
+        "url":"",
+        "a1": "git branch \"nazwa\"",
+        "a2": "git checkout \"nazwa\"",
+        "a3": "git link \"nazwa\"",
+        "a4": "git add branch \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Gałąź w systemie GIT usuwamy poleceniem?",
+        "url":"",
+        "a1": "git branch -d \"nazwa\"",
+        "a2": "git delete \"nazwa\"",
+        "a3": "git drop \"nazwa\"",
+        "a4": "git gone \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Przełączanie gałęzi w systemie git odbywa się za pomocą?",
+        "url":"",
+        "a1": "git checkout \"nazwa\"",
+        "a2": "git branch \"nazwa\"",
+        "a3": "git switch \"nazwa\"",
+        "a4": "git load \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W git odnośnik do zdalnego repozytorium dodajemy poleceniem?",
+        "url":"",
+        "a1": "git remote add origin \"nazwa\"",
+        "a2": "git remote add \"nazwa\"",
+        "a3": "git add remote \"nazwa\"",
+        "a4": "git add remote origin \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W git odnośnik do zdalnego repozytorium usuwamy poleceniem?",
+        "url":"",
+        "a1": "git remote remove origin",
+        "a2": "git remote remove",
+        "a3": "git remove remote",
+        "a4": "git remove remote origin",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wypychanie zmian do zdalnego repozytorium z poziomu konsoli GIT odbywa się poleceniem?",
+        "url":"",
+        "a1": "git push origin",
+        "a2": "git push",
+        "a3": "git pull origin",
+        "a4": "git remote push",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Cofanie zmian wprowadzonych w konretnym commicie odbywa się poleceniem?",
+        "url":"",
+        "a1": "git revert",
+        "a2": "git restore",
+        "a3": "git reset",
+        "a4": "git rewind",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Portal github to to samo co GIT?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Pojęcie \"fork\" oznacza w terminologi GIT połączenie dwóch gałęzi?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby połączyć gałęzie w GIT należy użyć polecenia?",
+        "url":"",
+        "a1": "git merge \"nazwa\"",
+        "a2": "git rebase \"nazwa\"",
+        "a3": "git checkout \"nazwa\"",
+        "a4": "git load \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //kompilacja i interpretacja
+    {
+        "question":"Kompilacja to część funkcjonalnosci interpretera?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Parsowanie jest częścią zarówno kompilatora jak i interpretera?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Język PHP jest językiem interpretowanym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Język Python jest językiem interpretowanym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Język C jest językiem kompilowanym?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //testy jednostkowe
+    {
+        "question":"Testy jednostkowe to?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "kod testujący inny kod",
+        "a3": "kod werfikujący wynik działania metod",
+        "a4": "kod wywołujący testowany kod w kontrolowanych warunkach",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Testy jednostkowe powinny być?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "szybkie",
+        "a3": "niezależne od siebie",
+        "a4": "powtarzalne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Testy jednostkowe składają się z trzech głównych faz w kolejności?",
+        "url":"",
+        "a1": "arrange/act/assert",
+        "a2": "assert/arrange/act",
+        "a3": "assert/act/arrange",
+        "a4": "act/assery/arrange",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Frameworkiem do pisania testów jednostkowych w języku JAVA jest?",
+        "url":"",
+        "a1": "JUnit",
+        "a2": "NUnit",
+        "a3": "XUnit",
+        "a4": "Google Tests",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Modułem umożliwiającym testy w jezyku Javascript i środowisku NodeJS jest?",
+        "url":"",
+        "a1": "jest",
+        "a2": "jtest",
+        "a3": "ntest",
+        "a4": "google tests",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Błędnym stwierdzeniem o klasie Assert w języku C# jest to, że?",
+        "url":"",
+        "a1": "Refaktoryzuje kod",
+        "a2": "Sprawdza prawdziwość danego wyrażenia",
+        "a3": "Wykorzystuje się ją przy testowaniu",
+        "a4": "Udostępnia metody statyczne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"TDD (Test Driven Development) to?",
+        "url":"https://programonaut.b-cdn.net/wp-content/uploads/2021/08/TDD.png",
+        "a1": "Metodologia pisania oprogramowania gdzie testy pisze się przed kodem testowanym",
+        "a2": "Wzorzec projektowy",
+        "a3": "Metodologia pisania oprogramowania gdzie testy wykorzystuje się do dokumentowania kodu",
+        "a4": "Żadne z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W TDD najpierw piszemy testy a później testowany kod?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"\"Mock\" to pojęcie określające?",
+        "url":"",
+        "a1": "atrapę obiektu",
+        "a2": "pewien rodzaj asercji",
+        "a3": "tag oznaczający metodę jako test",
+        "a4": "żaden z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Nie powinno się testować automatycznie kontrolerów MVC?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Każda metoda klasy powinna być przetestowana automatycznie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //wzorce i zasady programowania
+    {
+        "question":"Skrót zasady, mówiącej o tym by nie powtarzać się w kodzie to?",
+        "url":"",
+        "a1": "DRY",
+        "a2": "KISS",
+        "a3": "YAGNI",
+        "a4": "SOLID",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprosztszej formie to?",
+        "url":"",
+        "a1": "KISS",
+        "a2": "DRY",
+        "a3": "YAGNI",
+        "a4": "SOLID",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Skrót zasady, mówiącej o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
+        "url":"",
+        "a1": "YAGNI",
+        "a2": "KISS",
+        "a3": "DRY",
+        "a4": "SOLID",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zbiór pięciu zasad dobrego kodu obiektowego to?",
+        "url":"",
+        "a1": "SOLID",
+        "a2": "TCP/IP",
+        "a3": "YAGNI",
+        "a4": "TTDSE",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Pierwsza zasada SOLID mówi o tym by?",
+        "url":"",
+        "a1": "każda metoda/klasa zajmowała się jedną konretną rzeczą",
+        "a2": "referencje miały typ bazowy a nie typ pochodny",
+        "a3": "każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację",
+        "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Druga zasada SOLID mówi o tym by?",
+        "url":"",
+        "a1": "każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację",
+        "a2": "każda metoda/klasa zajmowała się jedną konretną rzeczą",
+        "a3": "referencje miały typ bazowy a nie typ pochodny",
+        "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Piąta zasada SOLID mówi o tym by?",
+        "url":"",
+        "a1": "interfejsy polimorficzne utrzymywać jak najmniejsze",
+        "a2": "każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację",
+        "a3": "każda metoda/klasa zajmowała się jedną konretną rzeczą",
+        "a4": "referencje miały typ bazowy a nie typ pochodny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Piąta zasada SOLID nazywana jest?",
+        "url":"",
+        "a1": "dependency inversion",
+        "a2": "dependency injection",
+        "a3": "dependency infection",
+        "a4": "dependency isolation",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zasada SOLID mówiąca, że zamiast jednej klasy zawierającej 2000 linii kodu lepsze jest 20 małych klas?",
+        "url":"",
+        "a1": "S",
+        "a2": "L",
+        "a3": "I",
+        "a4": "O",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem kreacyjnym jest?",
+        "url":"",
+        "a1": "singleton",
+        "a2": "kompozyt",
+        "a3": "adapter",
+        "a4": "obserwator",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem kreacyjnym jest?",
+        "url":"",
+        "a1": "fabryka abstrakcyjna",
+        "a2": "kompozyt",
+        "a3": "adapter",
+        "a4": "obserwator",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem strukturalnym nie jest?",
+        "url":"",
+        "a1": "fabryka",
+        "a2": "dekorator",
+        "a3": "fasada",
+        "a4": "kompozyt",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem strukturalnym nie jest?",
+        "url":"",
+        "a1": "budowniczy",
+        "a2": "dekorator",
+        "a3": "fasada",
+        "a4": "kompozyt",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem projektowym, który agreguje funkcjonalności mniejszych klas w jedną jest?",
+        "url":"",
+        "a1": "fasada",
+        "a2": "dekorator",
+        "a3": "odwiedzający",
+        "a4": "iterator",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wzorcem projektowym służącym do adaptacji nowego api w stare jest?",
+        "url":"",
+        "a1": "adapter",
+        "a2": "dekorator",
+        "a3": "fasada",
+        "a4": "singleton",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"We wzorcu MVC na akcje użytkownika reaguje?",
+        "url":"",
+        "a1": "kontroler",
+        "a2": "widok",
+        "a3": "model",
+        "a4": "UI",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Pochodną wzorca MVC jest?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "MVVM Model View ViewModel",
+        "a3": "HMVC Hierarchical Model View Controller",
+        "a4": "MVP Model View Presenter",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Skrót ORM rozwija się?",
+        "url":"",
+        "a1": "Object Relational Mapping",
+        "a2": "Object Reconstruct Mapping",
+        "a3": "Object Relational Model",
+        "a4": "Object Relational Macro",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zasada \"dependency injection\" mówi, żeby zależności wstrzykiwać z zewnątrz przez?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "konstruktor",
+        "a3": "setter",
+        "a4": "pole",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Na obrazku klasa Repository jest dla klasy Server?",
+        "url":"https://assets.alexandria.raywenderlich.com/books/512d0f29088c76daad57b9c3569733021775483b2ca319fa56c99a07dd996d4e/images/68a83fc039147e07a42c5bb8eab3dbd95e8958f22088184e133a06e2c3647b0c/original.png",
+        "a1": "Zależnością miękką",
+        "a2": "Zależnością twardą",
+        "a3": "Klasą pochodną",
+        "a4": "żadne z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Na obrazku klasa RepositoryMock jest dla klasy Repository?",
+        "url":"https://assets.alexandria.raywenderlich.com/books/512d0f29088c76daad57b9c3569733021775483b2ca319fa56c99a07dd996d4e/images/68a83fc039147e07a42c5bb8eab3dbd95e8958f22088184e133a06e2c3647b0c/original.png",
+        "a1": "Klasą pochodną",
+        "a2": "Zależnością miękką",
+        "a3": "Zależnością twardą",
+        "a4": "żadne z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Typ ButtonServer może zostać określony mianem typu abstrakcyjnego?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Kompozycja jest bardziej moblina i elastyczna niż dziedziczenie?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"UML to skrót od?",
+        "url":"",
+        "a1": "Unified Modeling Language",
+        "a2": "Unified Mapping Language",
+        "a3": "Universal Modeling Language",
+        "a4": "Universal Mapping Language",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML przedstawiający relacje między klasami to",
+        "url":"",
+        "a1": "Diagram klas",
+        "a2": "Diagram ERD",
+        "a3": "Diagram sekwencji",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML przedstawiający relacje między tabelami bazy danych to",
+        "url":"",
+        "a1": "Diagram ERD",
+        "a2": "Diagram klas",
+        "a3": "Diagram sekwencji",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML przedstawiający przepływ sterowania w klasach to",
+        "url":"",
+        "a1": "Diagram sekwencji",
+        "a2": "Diagram ERD",
+        "a3": "Diagram klas",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML przedstawiający funkcjonalności projektu to",
+        "url":"",
+        "a1": "Diagram przypadków użycia",
+        "a2": "Diagram ERD",
+        "a3": "Diagram klas",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML na ilustracji to?",
+        "url":"https://d2slcw3kip6qmk.cloudfront.net/marketing/discovery/UML_use_case_diagram.png",
+        "a1": "Diagram przypadków użycia",
+        "a2": "Diagram ERD",
+        "a3": "Diagram klas",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Diagram UML na ilustracji to?",
+        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0O_RKRTsVweHZ4hfGDUJpJibDzz4mp4NpngofNZJWpgBXKoxJdYEeeK03SOnxn67XqNc&usqp=CAU",
+        "a1": "Diagram sekwencji",
+        "a2": "Diagram ERD",
+        "a3": "Diagram klas",
+        "a4": "Diagram aktywności",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Języki, w których programista definuje co chce uzyskać to języki?",
+        "url":"",
+        "a1": "deklaratywne",
+        "a2": "imperatywne",
+        "a3": "obiektowe",
+        "a4": "proceduralne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Języki, w których programista definuje jak chce uzyskać wynik to języki?",
+        "url":"",
+        "a1": "imperatywne",
+        "a2": "deklaratywne",
+        "a3": "obiektowe",
+        "a4": "proceduralne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W diagramie klas UML pola protected oznacza się symbolem?",
+        "url":"",
+        "a1": "#",
+        "a2": "-",
+        "a3": "+",
+        "a4": "@",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W diagramie klas UML pola private oznacza się symbolem?",
+        "url":"",
+        "a1": "-",
+        "a2": "#",
+        "a3": "+",
+        "a4": "@",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W diagramie klas UML pola public oznacza się symbolem?",
+        "url":"",
+        "a1": "+",
+        "a2": "#",
+        "a3": "-",
+        "a4": "@",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //http rest ect
 ]
 
 export default questions;
