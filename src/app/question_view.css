@@ -1,10 +1,9 @@
 .question_view{
     margin: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 20px;
-    background: rgb(253,183,29);
-    background: linear-gradient(90deg, rgba(253,183,29,1) 50%, rgba(252,127,69,1) 100%);
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     box-shadow: 0 8px 10px rgb(0 0 0 / 0.7);
     border-radius: 20px;
 }
@@ -15,7 +14,7 @@
 
 .button_style {
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-color: rgba(256, 69, 0, 0.5);
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;

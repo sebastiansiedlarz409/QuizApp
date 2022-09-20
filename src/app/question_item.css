@@ -9,12 +9,24 @@
 
 }
 
+.question_image{
+    max-width: 600px;
+    max-height: 300px;
+}
+
+.question_content{
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .answer{
     font-size: 23px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 8px;
@@ -35,25 +47,25 @@
 }
 
 .answer:nth-child(1) .answer_button{
-    background-color: dodgerblue;
-    border-radius: 20px;
-    width: 38px;
-}
-
-.answer:nth-child(2) .answer_button{
-    background-color: gold;
-    border-radius: 20px;
-    width: 38px;
-}
-
-.answer:nth-child(3) .answer_button{
     background-color: chocolate;
     border-radius: 20px;
     width: 38px;
 }
 
+.answer:nth-child(2) .answer_button{
+    background-color: peru;
+    border-radius: 20px;
+    width: 38px;
+}
+
+.answer:nth-child(3) .answer_button{
+    background-color: darkgoldenrod;
+    border-radius: 20px;
+    width: 38px;
+}
+
 .answer:nth-child(4) .answer_button{
-    background-color: limegreen;
+    background-color: goldenrod;
     border-radius: 20px;
     width: 38px;
 }

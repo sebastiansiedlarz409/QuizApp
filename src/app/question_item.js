@@ -49,7 +49,7 @@ function QuestionItem(props){
         document.getElementById(props.question.id+"C").style.backgroundColor = "rgb(255,255,255,0.3)";
         document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
 
-        document.getElementById(id).style.backgroundColor = positive === 0 ? "red" : "green";
+        document.getElementById(id).style.backgroundColor = positive === 0 ? "crimson" : "green";
 
         if(positive){
             answer = true;
@@ -65,8 +65,8 @@ function QuestionItem(props){
 
     return(
         <div className='question_item'>
-            <h2>{props.question.question} ({props.question.tag})</h2>
-            <img id={props.question.id+"IMG"} src={props.question.url} alt=""/>
+            <h2 className='question_content'>{props.question.question} ({props.question.tag})</h2>
+            <img id={props.question.id+"IMG"} className='question_image' src={props.question.url} alt=""/>
             <div id={props.question.id+"answers"} className='question_answers'>
                 <div id={props.question.id+"A"} className="answer" onClick={()=>mark(props.question.id+"A", 1)}>
                     <button className='answer_button A'>A</button><span>{props.question.a1}</span>
