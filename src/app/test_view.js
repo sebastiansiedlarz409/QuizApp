@@ -50,8 +50,6 @@ function TestView(props){
             }
             result = (count/question_count)*100;
             resultSetResult({"result":result, "count":count, "questions":question_count});
-
-            //alert("Twój wynik to: " + result + "% (" + count + "/" + question_count +")");   
         }
     }
 
@@ -61,13 +59,16 @@ function TestView(props){
 
         for(let i = 0;i<test.length;i++){
             ret.push(<QuestionItem key={test[i].id} question={test[i]} child={i} answerCallback={answerCallback}></QuestionItem>);
+            if(i === test.length-1){
+                ret.push(<button className="button_style"><a href="#top">DO GÓRY</a></button>);
+            }
         }
 
         return ret;
     }
 
     return(
-        <div className='test_view'>
+        <div id="top" className='test_view'>
             <center>
                 <button className="button_style" onClick={() => {randomTest()}}>Losuj test!</button>
             </center>
