@@ -31,7 +31,7 @@ function TestView(props){
             }
             q.push(v);
 
-            resultSetResult(false);
+            resultSetResult(null);
             setTest(q);
         }
     }
@@ -49,7 +49,7 @@ function TestView(props){
                 }
             }
             result = (count/question_count)*100;
-            resultSetResult(true);
+            resultSetResult({"result":result, "count":count, "questions":question_count});
 
             //alert("Twój wynik to: " + result + "% (" + count + "/" + question_count +")");   
         }
@@ -73,7 +73,7 @@ function TestView(props){
             </center>
             <div className='test'>
                 <center>
-                <ResultBar result={result} count={count} questions={question_count} moveState={(setResult) => {resultSetResult = setResult}}></ResultBar>
+                <ResultBar moveState={(setResult) => {resultSetResult = setResult}}></ResultBar>
                     {returnTest()}
                 </center>
             </div>

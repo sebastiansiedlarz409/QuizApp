@@ -3,22 +3,29 @@ import './result_bar.css';
 import React, {useState} from 'react';
 
 function ResultBar(props){
-    const [result, setResult] = useState(false);
+    const [result, setResult] = useState(null);
 
     props.moveState(setResult);
 
-    if(result){
-        document.getElementById("result").style.display = "block";
+    if(result != null){
+        /*if(result > 50){
+            document.getElementById("result").style.backgroundColor = "green";
+        }
+        else{
+            document.getElementById("result").style.backgroundColor = "crimson";
+        }*/
+        
+        return(
+            <div id="result" className='result_bar' style={{backgroundColor: result >= 50 ? "green" : "crimson"}}>
+                Twój wynik to {result["result"]}% ({result["count"]}/{result["questions"]})
+            </div>
+        );
     }
     else{
-        document.getElementById("result").style.display = "none";
+        return(
+            <div></div>
+        );
     }
-
-    return(
-        <div id="result" className='result_bar'>
-            Twój wynik to {props.result}% ({props.count}/{props.questions})
-        </div>
-    );
 }
 
 export default ResultBar;
