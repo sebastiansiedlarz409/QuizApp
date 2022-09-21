@@ -1,13 +1,25 @@
 import './test_view.css';
 
 import React, {useState} from 'react';
+
 import QuestionItem from './question_item';
+import ResultBar from './result_bar';
 
 function TestView(props){
+    //this is use to refresh test
     const [test, setTest] = useState([]);
-    let answers = [];
-    let question_count = 20;
 
+    //answers returned from each child
+    let answers = [];
+
+    //max questions
+    let question_count = 4;
+ 
+    let result = 0;
+    let count = 0;
+    let resultSetResult;
+
+    //random questions and refresh view
     const randomTest = () => {
         let q = [];
 
@@ -19,28 +31,31 @@ function TestView(props){
             }
             q.push(v);
 
+            resultSetResult(false);
             setTest(q);
         }
-        console.log(q);
     }
 
+    //this is called by child when answer is choosen
     const answerCallback = (id, answer) =>{
         answers.push(answer);
 
-        console.log(answers);
+        //if every question is answered return result
         if(answers.length === question_count){
-            let count = 0;
+            count = 0;
             for(let i = 0;i<question_count;i++){
                 if(answers[i] === true){
                     count++;
                 }
             }
-            let result = (count/question_count)*100;
-            
-            alert("Twój wynik to: " + result + "% (" + count + "/" + question_count +")");   
+            result = (count/question_count)*100;
+            resultSetResult(true);
+
+            //alert("Twój wynik to: " + result + "% (" + count + "/" + question_count +")");   
         }
     }
 
+    //return list of questions
     const returnTest = () =>{
         let ret = [];
 
@@ -58,6 +73,7 @@ function TestView(props){
             </center>
             <div className='test'>
                 <center>
+                <ResultBar result={result} count={count} questions={question_count} moveState={(setResult) => {resultSetResult = setResult}}></ResultBar>
                     {returnTest()}
                 </center>
             </div>

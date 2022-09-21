@@ -4151,6 +4151,107 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
+    //bazy danych
+    {
+        "question":"Krotka w bazach relacyjnych to",
+        "url":"",
+        "a1": "wiersz tabeli",
+        "a2": "kolumna tabeli",
+        "a3": "komórka tabeli",
+        "a4": "cała tabela",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Atrybut w relacyjnych bazach danych to",
+        "url":"",
+        "a1": "kolumna tabeli",
+        "a2": "wiersz tabeli",
+        "a3": "komórka tabeli",
+        "a4": "cała tabela",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kolumna/Kolumny jednoznacznie identyfikujące rekord w tabeli relacyjnej bazy danych to",
+        "url":"",
+        "a1": "klucz podstawowy",
+        "a2": "klucz obcy",
+        "a3": "klucz naturalny",
+        "a4": "klucz sztuczny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kolumna wykorzystywana do tworzenia relacji w relacyjnych bazach danych to",
+        "url":"",
+        "a1": "klucz obcy",
+        "a2": "klucz podstawowy",
+        "a3": "klucz naturalny",
+        "a4": "klucz sztuczny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klucz naturalny w bazach relacyjnych to",
+        "url":"",
+        "a1": "kolumna, która jest naturalnym atrybutem przechowywanej encji",
+        "a2": "kolumna, która została dodana by jednoznacznie identyfikować rekord",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Relacja wiele do wielu wymaga",
+        "url":"",
+        "a1": "trzeciej tabeli łączącej",
+        "a2": "dwóch kluczy obcych",
+        "a3": "dwóch kluczy podstawowych",
+        "a4": "dwóch kluczy sztucznych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"O tym, że każda komórka tabeli w bazie relacyjnej musi przchowywać jedną wartość mówi",
+        "url":"",
+        "a1": "Pierwsza postać normalna",
+        "a2": "Druga postać normalna",
+        "a3": "Trzecia postać normalna",
+        "a4": "Czwarta postać normalna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"O tym, że każda kolumna tabeli musi zależeć od klucza głównego mówi",
+        "url":"",
+        "a1": "Druga postać normalna",
+        "a2": "Pierwsza postać normalna",
+        "a3": "Trzecia postać normalna",
+        "a4": "Czwarta postać normalna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"O tym, że każda kolumna może być zależna tylko od klucza głównego mówi",
+        "url":"",
+        "a1": "Trzecia postać normalna",
+        "a2": "Pierwsza postać normalna",
+        "a3": "Druga postać normalna",
+        "a4": "Czwarta postać normalna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Krotka w bazach relacyjnych to",
+        "url":"",
+        "a1": "wiersz tabeli",
+        "a2": "kolumna tabeli",
+        "a3": "komórka tabeli",
+        "a4": "cała tabela",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
 ]
 
 export default questions;
