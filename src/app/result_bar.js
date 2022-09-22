@@ -8,15 +8,8 @@ function ResultBar(props){
     props.moveState(setResult);
 
     if(result != null){
-        /*if(result > 50){
-            document.getElementById("result").style.backgroundColor = "green";
-        }
-        else{
-            document.getElementById("result").style.backgroundColor = "crimson";
-        }*/
-        
         return(
-            <div id="result" className='result_bar' style={{backgroundColor: result >= 50 ? "green" : "crimson"}}>
+            <div id="result" className='result_bar' style={{backgroundColor: result["result"] >= 50 ? "green" : "crimson"}}>
                 Twój wynik to {result["result"]}% ({result["count"]}/{result["questions"]})
             </div>
         );

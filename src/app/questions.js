@@ -621,36 +621,6 @@ const questions = [
         "type": "2A"
     },
     {
-        "question":"Adres zapisany we wskaźniku \"int* ptr = (int*)((char*)&mylong+3);\" to?",
-        "url":"https://cplusplus.com/doc/tutorial/pointers/pointer_arithmetics.png",
-        "a1": "3003",
-        "a2": "3002",
-        "a3": "3001",
-        "a4": "3004",
-        "tag": "NIEOFICJALNE",
-        "type": "4A"
-    },
-    {
-        "question":"Adres zapisany we wskaźniku \"int* ptr = (int*)(&mylong+1);\" to?",
-        "url":"https://cplusplus.com/doc/tutorial/pointers/pointer_arithmetics.png",
-        "a1": "3004",
-        "a2": "3002",
-        "a3": "3001",
-        "a4": "3003",
-        "tag": "NIEOFICJALNE",
-        "type": "4A"
-    },
-    {
-        "question":"Adres zapisany we wskaźniku \"int* ptr = (int*)(&myshort+2);\" to?",
-        "url":"https://cplusplus.com/doc/tutorial/pointers/pointer_arithmetics.png",
-        "a1": "2004",
-        "a2": "2002",
-        "a3": "2001",
-        "a4": "2003",
-        "tag": "NIEOFICJALNE",
-        "type": "4A"
-    },
-    {
         "question":"Wartość \"NULL\" to?",
         "url":"",
         "a1": "adres 0",
@@ -1340,26 +1310,6 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A"
-    },
-    {
-        "question":"Jak sprawdzić czy 21 bit liczby typu int jest ustawiony na 1?",
-        "url":"",
-        "a1": "((a&(1<<21))>>21)",
-        "a2": "((a&(1>>21))>>21)",
-        "a3": "((a&(1>>21))<<21)",
-        "a4": "(a&(1<<21))",
-        "tag": "NIEOFICJALNE",
-        "type": "4A"
-    },
-    {
-        "question":"Jak ustawić 4 bit liczby unsigned char na 1 bez względu na jego obecny stan?",
-        "url":"",
-        "a1": "a|(1<<4)",
-        "a2": "a|(1>>4)",
-        "a3": "a&(1<<4)",
-        "a4": "a&(1>>4)",
-        "tag": "NIEOFICJALNE",
-        "type": "4A"
     },
     {
         "question":"Kodowanie liczb ujemnych odbywa się za pomocą metody",
@@ -2232,7 +2182,7 @@ const questions = [
         "a3": "int",
         "a4": "nic",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "4A"
     },
     {
         "question":"W C# delegat \"Action<string, int, int>\" zwraca?",
@@ -2242,7 +2192,7 @@ const questions = [
         "a3": "int",
         "a4": "string",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "4A"
     },
     {
         "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -3914,7 +3864,7 @@ const questions = [
         "url":"",
         "a1": "curl",
         "a2": "netstat",
-        "a3": "ping",
+        "a3": "nslookup",
         "a4": "tracert",
         "tag": "NIEOFICJALNE",
         "type": "4A"
@@ -3996,7 +3946,7 @@ const questions = [
         "a1": "NodeJS",
         "a2": ".NET CORE",
         "a3": "JIT",
-        "a4": "Apache",
+        "a4": "Web Assembly",
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
@@ -4092,7 +4042,17 @@ const questions = [
         "type": "2A"
     },
     {
-        "question":"JavaScript pozwala przypisać funckję do zmiennej?",
+        "question":"TypeScript jest nadzbiorem JavaScript",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"JavaScript pozwala przypisać funkcję do zmiennej?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -4140,6 +4100,56 @@ const questions = [
         "a4": "0",
         "tag": "NIEOFICJALNE",
         "type": "4A"
+    },
+    {
+        "question":"W JS wartość null oznacza",
+        "url":"",
+        "a1": "brak wartości",
+        "a2": "wartość nieznaną",
+        "a3": "pusty string",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W JS zmienna zadeklarowana jako \"var\" jest przypisana do przestrzeni funkcji",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W JS zmienna zadeklarowana jako \"let\" jest przypisana do przestrzeni funkcji",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Kod języka JavaScript zawsze wykonuje się po stronie klienta w przeglądarce",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W JS operatory \"===\" oraz \"==\" działają tak samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
     },
     {
         "question":"Która linia kodu jest niepoprawna z punktu widzenia JavaScript?",
@@ -4252,6 +4262,379 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A"
     },
+    {
+        "question":"Każda relacja w relacyjnych bazach danych wymaga klucza obcego?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Filtorowanie w językach SQL odywa się za pomocą klauzuli",
+        "url":"",
+        "a1": "where",
+        "a2": "like",
+        "a3": "filter",
+        "a4": "if",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Funkcją agregującą SQL nie jest?",
+        "url":"",
+        "a1": "distinct()",
+        "a2": "sum()",
+        "a3": "avg()",
+        "a4": "max()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Typy varchar oraz char w bazach danych są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Typy text oraz varchar w bazach danych są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Procedura i funkcja to to samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli usuniemy z bazy rekord to jego klucz główny (ID) może zostać użyty ponownie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Bazy danych pozwalają automatyzować generowanie klucza głównego za pomocą...",
+        "url":"",
+        "a1": "sekwencji",
+        "a2": "procedur",
+        "a3": "funkcji",
+        "a4": "wyzwalaczy",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Tak zwane aplikacje CRUDowe to",
+        "url":"",
+        "a1": "aplikacje skupiające się na dodawaniu/czytaniu/aktualizowaniu/usuwaniu danych z bazy",
+        "a2": "aplikacje oparte na REST API",
+        "a3": "aplikacje typowo frontendowe",
+        "a4": "aplikacje tworzące strukture bazy danych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Mechanizem pozwalającym szybko modyfikować bazę danych i migrować dane między jej wersjami w czasie dewelopmentu to",
+        "url":"",
+        "a1": "migracje",
+        "a2": "transakcje",
+        "a3": "encje",
+        "a4": "sekwencje",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zestaw czynności na bazie danych, które stanowią pewną nierozerwalną całość to",
+        "url":"",
+        "a1": "transakcje",
+        "a2": "migracje",
+        "a3": "procedury",
+        "a4": "funkcje",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Zapytanie typu SELECT zawsze musi mieć klauzule FROM?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"ENUM oraz SET jako typy kolumn są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
+        "url":"",
+        "a1": "alter",
+        "a2": "update",
+        "a3": "modify",
+        "a4": "change",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klauzula SQL służąca do usuwania tabel to?",
+        "url":"",
+        "a1": "drop",
+        "a2": "delete",
+        "a3": "remove",
+        "a4": "erase",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
+        "url":"",
+        "a1": "alter",
+        "a2": "update",
+        "a3": "modify",
+        "a4": "change",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Klauzula \"limit\" w SQL przyjmuje do _ parametrów?",
+        "url":"",
+        "a1": "2",
+        "a2": "3",
+        "a3": "1",
+        "a4": "4",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W SQL sortowanie malejące oznaczamy?",
+        "url":"",
+        "a1": "ASC",
+        "a2": "DESC",
+        "a3": "UP",
+        "a4": "DOWN",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jeżeli przechowujemy w tablii cenę brutto, netto i tara jednocześnie to łamiemy?",
+        "url":"",
+        "a1": "Trzecią postać normalną",
+        "a2": "Drugą postać normalną",
+        "a3": "Pierwszą postać normalną",
+        "a4": "Wszystko jest w porządku",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najbardziej prawdopodobna relacja między tabelami Osoba oraz Adres to relacja?",
+        "url":"",
+        "a1": "wiele do wielu",
+        "a2": "jeden do wielu",
+        "a3": "wiele do jednego",
+        "a4": "jeden do jeden",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Najbardziej prawdopodobna relacja między tabelami Student oraz ContactData to relacja?",
+        "url":"",
+        "a1": "jeden do jeden",
+        "a2": "jeden do wielu",
+        "a3": "wiele do jednego",
+        "a4": "wiele do wielu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Aby w SQL uzyskać wyniki gdzie wartość kolumny n na drugim miejscu ma literkę \"r\" trzeba użyć klauzuli?",
+        "url":"",
+        "a1": "like '_r%'",
+        "a2": "like '?r%'",
+        "a3": "like '*r%'",
+        "a4": "like '+r%'",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Operator \"OR\" w SQL zwraca prawdę jeżeli?",
+        "url":"",
+        "a1": "minimum jedna ze stron warunku jest prawdziwa",
+        "a2": "obie strony warunku są prawdziwe",
+        "a3": "żadan ze stron warunku nie jest prawdziwa",
+        "a4": "żadne z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //php
+    {
+        "question":"Rozszerzenie plików PHP to?",
+        "url":"",
+        "a1": "*.php",
+        "a2": "*.p",
+        "a3": "*.pp",
+        "a4": "*.html",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"\"index.php\" ma większy priorytet niż \"index.html\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"\"\" oraz '' w PHP działają tak samo?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Bezpieczniejszą metodą przesyłania fomularzy jest metoda?",
+        "url":"",
+        "a1": "POST",
+        "a2": "GET",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Instrukcja, która w PHP posłuży do napisania programu typu HelloWorld to?",
+        "url":"",
+        "a1": "echo",
+        "a2": "print",
+        "a3": "write",
+        "a4": "put",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Która z poniższych stałych nie jest dostępna w PHP?",
+        "url":"",
+        "a1": "__DATE__",
+        "a2": "__FILE__",
+        "a3": "__LINE__",
+        "a4": "__CLASS__",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Operatorem konkatenacjii w PHP jest?",
+        "url":"",
+        "a1": ".",
+        "a2": "+",
+        "a3": "^",
+        "a4": "|",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Operatorem potęgowania w PHP jest?",
+        "url":"",
+        "a1": "**",
+        "a2": "*",
+        "a3": "^",
+        "a4": "!",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    //python
+    {
+        "question":"Rozszerzenie plików źródłowych języka Python to?",
+        "url":"",
+        "a1": "*.py",
+        "a2": "*.p",
+        "a3": "*.pp",
+        "a4": "*.ph",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Python bazuje na języku?",
+        "url":"",
+        "a1": "C",
+        "a2": "C++",
+        "a3": "C#",
+        "a4": "F#",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Odpowiednikiem słowa kluczowgo \"this\" w Pythonie jest?",
+        "url":"",
+        "a1": "self",
+        "a2": "me",
+        "a3": "base",
+        "a4": "ptr",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kolekcja o nazwie \"tuple\" w Pythonie jest mutowalna?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Kolekcja o nazwie \"list\" w Pythonie jest mutowalna?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Konstruktor klasy w języku Python ma nazwę?",
+        "url":"",
+        "a1": "__init__",
+        "a2": "__create__",
+        "a3": "__self__",
+        "a4": "taką jak nazwa klasy",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+
 ]
 
 export default questions;

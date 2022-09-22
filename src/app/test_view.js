@@ -7,34 +7,18 @@ import ResultBar from './result_bar';
 
 function TestView(props){
     //this is use to refresh test
-    const [test, setTest] = useState([]);
+    const [questions, setQuestions] = useState([]);
 
     //answers returned from each child
     let answers = [];
 
     //max questions
-    let question_count = 4;
+    let question_count = 20;
  
     let result = 0;
     let count = 0;
-    let resultSetResult;
-
-    //random questions and refresh view
-    const randomTest = () => {
-        let q = [];
-
-        for(let i = 0;i<question_count;i++){
-            let v = props.questions[Math.floor(Math.random() * props.questions.length)];
-            if(q.filter(t=>t.question === v.question).length > 0){
-                i--;
-                continue;
-            }
-            q.push(v);
-
-            resultSetResult(null);
-            setTest(q);
-        }
-    }
+    
+    let resultSetResult; //callback which refresh result component
 
     //this is called by child when answer is choosen
     const answerCallback = (id, answer) =>{
@@ -53,18 +37,35 @@ function TestView(props){
         }
     }
 
+    //random questions and refresh view
+    const randomTest = () => {
+        let q = [];
+
+        for(let i = 0;i<question_count;i++){
+            let v = props.questions[Math.floor(Math.random() * props.questions.length)];
+            if(q.filter(t=>t.question === v.question).length > 0){
+                i--;
+                continue;
+            }
+            q.push(v);
+
+            resultSetResult(null);
+            setQuestions(q);
+        }
+    }
+
     //return list of questions
     const returnTest = () =>{
-        let ret = [];
+        let test = [];
 
-        for(let i = 0;i<test.length;i++){
-            ret.push(<QuestionItem key={test[i].id} question={test[i]} child={i} answerCallback={answerCallback}></QuestionItem>);
-            if(i === test.length-1){
-                ret.push(<button className="button_style"><a href="#top">DO GÓRY</a></button>);
+        for(let i = 0;i<questions.length;i++){
+            test.push(<QuestionItem key={questions[i].id} question={questions[i]} child={i} answerCallback={answerCallback}></QuestionItem>);
+            if(i === questions.length-1){
+                test.push(<button key={i+1} className="button_style"><a href="#top">Do Góry</a></button>);
             }
         }
 
-        return ret;
+        return test;
     }
 
     return(
