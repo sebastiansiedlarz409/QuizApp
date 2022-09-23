@@ -18,8 +18,9 @@
     border-radius: 8px;
     text-align: justify;
     background-color: rgb(255,255,255,0.3);
-    border: 3px solid chocolate;
+    border: 5px solid chocolate;
     display: none;
+    color: white;
 }
 
 .question_image{

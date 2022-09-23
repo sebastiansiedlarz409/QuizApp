@@ -42,7 +42,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Decimal to bardziej złożony typ, który służy do przechowywania liczb ułamkowych bez obawy o utratę precyzji lub inne dziwne zachowania."
     },
     {
         "question":"Czy pętle do..while oraz while są identyczne?",
@@ -53,7 +53,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pętla do..while wykona się zawsze przynajmniej raz, ponieważ najpierw wykonywana jest iteracja a dopiero po niej sprawdzany jest warunek."
     },
     {
         "question":"Strukturą FILO jest?",
@@ -64,7 +64,7 @@ const questions = [
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"FILO - First In Last Out"
+        "desc":"FILO - First In Last Out. Taką strukturą jest stos."
     },
     {
         "question":"Strukturą FIFO jest?",
@@ -75,7 +75,7 @@ const questions = [
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"FIFO - First In First Out"
+        "desc":"FIFO - First In First Out. Taką strukturą jest kolejka."
     },
     {
         "question":"Strukturą liniową (elementy nie są jeden za drugim w pamięci) NIE jest?",
@@ -97,7 +97,7 @@ const questions = [
         "a4": "Tablica",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Zarówno klasa jak i struktura służy do definicji własnego typu złożonego, który składa się z typów prostych lub innych typów złożonych."
     },
     {
         "question":"Typ wyliczeniowy to?",
@@ -130,7 +130,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Void oznacza, że funkcja nic nie zwraca, ale nie wyklucza istnienia w jej ciele słowa kluczowego return"
     },
     {
         "question":"Rozmiar typu int w pamięci to?",
@@ -207,7 +207,7 @@ const questions = [
         "a4": "Lambdą",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Adres to liczba, każdy bajt pamięci ma swój adres."
     },
     {
         "question":"Instrukcja C++ \"cout\" znajduje się w namespace?",
@@ -218,7 +218,7 @@ const questions = [
         "a4": "system",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"std::cout, std::cin itd"
     },
     {
         "question":"Najnowszym wydanym standardem C++ jest?",
@@ -229,7 +229,7 @@ const questions = [
         "a4": "C++11",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Standard wychodzi co 3 lata. Aktualny to 2020, który oznaczany jest jako 2a."
     },
     {
         "question":"Dynamicznie linkowana biblioteka ma rozszerzenie?",
@@ -251,7 +251,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie może. Możliwe jest jednak nazwanie funkcji wejściowej inaczej."
     },
     {
         "question":"Funkcja main w C/C++ przyjmuje jakieś parametry?",
@@ -262,7 +262,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywan jest jako string w tej tablicy."
     },
     {
         "question":"Słowo kluczowe \"this\" w C/C++ jest wskaźnikiem?",
@@ -273,7 +273,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak, a do wartości odwołujemy się operatorem \"->\""
+        "desc":"Tak, a do wartości odwołujemy się operatorem \"->\" np this->name"
     },
     {
         "question":"W C/C++ możliwe jest umieszczenie w klasie tylko jednego destruktora?",
@@ -295,7 +295,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Pusty nawias oznacza nieznaną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy. Jeżeli w nawiasie jest \"void\" to nie ma parametrów."
+        "desc":"Pusty nawias oznacza nieznaną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy. Jeżeli w nawiasie jest \"void\" to nie ma parametrów np. void make(void){}"
     },
     {
         "question":"W strukurze C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -306,7 +306,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak i to jest jedyna różnica względem klas w C++ (!)"
     },
     {
         "question":"W klasie C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -328,7 +328,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Oczywiście. Klasy abstrakcyjne są po to by z nich dziedziczyć. Obiektu nie da się utworzyć."
     },
     {
         "question":"Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?",
@@ -339,7 +339,7 @@ const questions = [
         "a4": "cout<<\"Hello world\";",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Console.Write to konstrukcja z języka C#"
     },
     {
         "question":"Komentarze jednolinijkowe w C/C++ rozpoczynamy od?",
@@ -383,7 +383,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak. Zwraca on znak na danym indeksie."
+        "desc":"Tak. Zwraca on znak pod danym indeksem. Stringi to gdzieś pod spodem tablice znaków."
     },
     {
         "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
@@ -405,7 +405,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
     },
     {
         "question":"Instrukcje ++a oraz a++ są równoznaczne?",
@@ -416,7 +416,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli zrobimy b = a++ oraz b = ++a to zobaczymy różnice. W pierwszym przypakdu najpierw do b przypiszemy a, a potem zwiększymy a. W drugim najpierw następuje inkrementacja a później przypisanie."
     },
     {
         "question":"Operatory ^ oraz ~ są równoznaczne?",
@@ -427,7 +427,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pierwszy to bitowa różnica symetryczna (XOR) a drugi to negacja (NOT)."
     },
     {
         "question":"Operator ^ to operator potęgowania?",
@@ -438,7 +438,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jest to operator różnicy symetrycznej (bitowy XOR)"
     },
     {
         "question":"Słowo kluczowe \"const\" oznacza stałą?",
@@ -460,7 +460,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Przed kompilacją wszystkie miejsca gdzie wykorzystaliśmy makro są podmieniane na jego wartość."
     },
     {
         "question":"Które słowo jest słowem kluczowym C/C++?",
@@ -504,7 +504,7 @@ const questions = [
         "a4": "new",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Z wyżej wymienionej listy najważniejszy jest ::"
     },
     {
         "question":"Operatorem C++ nie jest",
@@ -515,7 +515,7 @@ const questions = [
         "a4": "sizeof",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wszystkie słowa kluczowe oprócz extern, które też jest dostępne w C++ uznaje się za operatory."
     },
     {
         "question":"Operator _ wykonuje operację różnicy symetrycznej.",
@@ -537,7 +537,7 @@ const questions = [
         "a4": "volatile",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"volatile to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane."
     },
     {
         "question":"Który rodzaj operatora wymaga trzech operandów?",
@@ -614,7 +614,7 @@ const questions = [
         "a4": "while(!0){}",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Pętla for wymaga w nawiasie minimum dwóch średników."
     },
     {
         "question":"Pętlą dostępną w C/C++ nie jest?",
