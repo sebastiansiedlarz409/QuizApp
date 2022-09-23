@@ -1,5 +1,21 @@
-.main_body{
-    height: 100%;
-    display: flex;
-    flex-flow: column;  
+.main_body {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  background-color: #f2efee;
+}
+
+.bottom_margin_desktop {
+  min-height: 100px;
+  background-color: #f2efee;
+}
+
+@media (min-width: 768px) {
+  .main_body {
+    background-color: #fff;
+  }
+
+  .bottom_margin_desktop {
+    background-color: #fff;
+  }
 }
