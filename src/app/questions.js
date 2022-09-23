@@ -636,7 +636,7 @@ const questions = [
         "a4": "void",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"IntPtr to typ na wskaźniki dostępny w języku C#."
     },
     {
         "question":"Kompilatorem języka C/C++ nie jest?",
@@ -658,7 +658,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Wszystkie elementy C są dostępne w C++."
     },
     {
         "question":"Wartość \"NULL\" to?",
@@ -702,7 +702,7 @@ const questions = [
         "a4": "0x4B",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Znak to pod spodem liczba. Dodając n przesuwamy się w tablicy ASCII o n pozycji."
     },
     {
         "question":"Wartość wyrażenia \"'0'+1\" wynosi?",
@@ -713,7 +713,7 @@ const questions = [
         "a4": "0b1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Znak to pod spodem liczba. Dodając n przesuwamy się w tablicy ASCII o n pozycji."
     },
     {
         "question":"Wartość wyrażenia \"!true\" w C/C++ jest równoznaczna?",
@@ -724,7 +724,7 @@ const questions = [
         "a4": "undefined",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Negacja logiczna prawdy to fałsz."
     },
     {
         "question":"Wartość wyrażenia \"1&&0\" w C/C++ jest równoznaczna?",
@@ -735,7 +735,7 @@ const questions = [
         "a4": "1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Wartość 0 to fałsz. Każda inna wartość w C/C++ to prawda."
+        "desc":"Wartość 0 to fałsz. Każda inna wartość w C/C++ to prawda. Prawda && Fałsz daje Fałsz."
     },
     {
         "question":"Ile razy wykona się pętla \"while(999999)\" w C/C++?",
@@ -757,7 +757,7 @@ const questions = [
         "a4": "wystąpi błąd",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najpierw wykonane zostanie przypisanie a potem inkrementacja oryginalnej zmiennej."
     },
     {
         "question":"Zakładając, że \"int a = 2;\" wartość przypisana do zmiennej wynosi \"int b = ++a;\"?",
@@ -823,7 +823,7 @@ const questions = [
         "a4": "std::deque",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Kolejka jak w sklepie."
     },
     {
         "question":"Iterator to obiekt, który ułatwia przemieszczanie się po kontenerze?",
@@ -845,7 +845,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak. Jeżeli plik w C nazywał się stdio.h to w C++ jego odpowiednikiem jest cstdio"
     },
     {
         "question":"W języku C i C++ możliwe jest pobranie adresu funckji i zapisanie go we wskaźniku?",
@@ -999,7 +999,7 @@ const questions = [
         "a4": "catch",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C++ jest to throw. W C# podobnie. Python używa słowa raise."
     },
     {
         "question":"Konstruktor kopiujący jest automatycznie generowany przez kompilator w C++?",
@@ -1010,7 +1010,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Kompilatory generują tylko pusty podstawowy konstruktor bez argumentów."
     },
     {
         "question":"Konstruktor posiada typ zwracany?",
@@ -1021,7 +1021,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Konstruktor to metoda o nazwie takiej jak klasa bez typu zwracanego. W pythonie konstruktor to __init__(self)"
     },
     {
         "question":"Metoda oznaczona jako \"friend\" ma dostęp do prywatnych pól klasy?",
@@ -1043,7 +1043,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak są, ale ich dostępnośc ulega zmianie na prywatną w klasie pochodnej."
     },
     {
         "question":"Struktura w C i C++ działa tak samo i ma te same możliwości?",
@@ -1054,7 +1054,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W C struktura nie może mieć metod. W C++ już tak. Struktury zostały w C++ tylko dla kompatybilności wstecznej. Mają takie same możliwości jak klasy."
     },
     {
         "question":"W C++ każda zmienna domyslnie przekazywana jest przez wartość?",
@@ -1142,7 +1142,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"x86 ma swój zestaw, ARM ma swój, MIPS swój, RISCV swój itd"
     },
     {
         "question":"Komputer 32 bitowy może zaadresować tylko 4GB pamięci?",
@@ -1187,7 +1187,7 @@ const questions = [
         "a4": "0b01010101",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każda cyfra w hex to nybel. Każdy nybel to 4 bity w systemie binarnym. 0xA == 0b1010 więc 0xAA to 0x10101010"
     },
     {
         "question":"Liczba 0xFF to w systemie binarnym?",
@@ -1198,7 +1198,7 @@ const questions = [
         "a4": "0b01000100",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"0xFF to maksymalna wartość do zapisania w unsigned char/byte."
     },
     {
         "question":"Liczba 256 to w systemie szesnastkowym?",
@@ -1209,7 +1209,7 @@ const questions = [
         "a4": "0x255",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przekraczamy maksymalną wartość unsigned bajtu (0xFF). Jeżeli typem jest unsigned bajt wpisanie do niego 256 da 0. Jeżeli jest to większy typ normalnie zobaczmy 0x100"
     },
     {
         "question":"Liczba 0b10000000 to w systemie szesnastkowym?",
@@ -1220,7 +1220,7 @@ const questions = [
         "a4": "0x89",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jest to często używana liczba. Dobrze pamiętać. 0x80 to 0b10000000 a 0x7F to 0b01111111."
     },
     {
         "question":"Jeżeli najmniej znaczący bit w liczbie jest ustawiony na 1 to liczba jest parzysta.",
@@ -1242,7 +1242,7 @@ const questions = [
         "a4": "0b00000001",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Uzywany jest tu system dopełnień do 2."
     },
     {
         "question":"Wartość wyrażenia 0b10100000>>4 to?",
@@ -1396,7 +1396,7 @@ const questions = [
         "a4": "15",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Negujemy tutaj bity."
     },
     {
         "question":"Wartość wyrażenia 0x10101010^0b11110000 to?",
@@ -1407,7 +1407,7 @@ const questions = [
         "a4": "0b10101010",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Tam gdzie bity są różne dostajemy 1 a gdzie takie same 0."
     },
     {
         "question":"Wartość wyrażenia 0xF&&0x0 w C/C++ to?",
@@ -1440,7 +1440,7 @@ const questions = [
         "a4": "0xE",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każda liczba inna niż 0 to prawda. ! to logiczna negacja. Z całości wychodzi 0 czyli fałsz."
     },
     {
         "question":"Wartość wyrażenia 0xDEADC0DE jest zapisana w systemie oznaczanym jako?",
@@ -1473,7 +1473,7 @@ const questions = [
         "a4": "IEEE 754",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"U2 to najlepsza metoda zapisu liczb ujemnych. IEEE 754 to standard zapis liczb ułamkowych."
     },
     {
         "question":"Kodowanie liczb zmiennoprzecinkowych odbywa się za pomocą standardu",
@@ -1495,7 +1495,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W liczbach signed bit najbardziej na prawo to bit znaku. 1 oznacza liczbę ujemną a 0 dodatnią."
     },
     {
         "question":"Jeżeli najstarszy bit liczby \"unsigned\" jest ustawiony na 1 to liczba jest?",
@@ -1562,7 +1562,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Strzałki na krawędziach mówią czy graf jest skierowany."
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
@@ -1573,7 +1573,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Strzałki na krawędziach mówią czy graf jest skierowany."
     },
     {
         "question":"Czy graf na obrazku da się utworzyć cykl komiwojazera?",
@@ -1584,7 +1584,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Cykl komiwojażera to przejście po każdym wierzchołku raz i powrót w to samo miejsce. Droga musi być jak najmniejsza. Jeżeli graf ma wierzchołki stopnia 1 to oczywiste jest, że nie da się wykonać takiego cyklu."
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
@@ -1595,7 +1595,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego."
     },
     {
         "question":"Czy na obrazku kolorem czerwonym zaznaczono krawędź?",
@@ -1617,7 +1617,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego."
     },
     {
         "question":"Algorytmem grafowym nie jest?",
@@ -1639,7 +1639,7 @@ const questions = [
         "a4": "Żaden z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Cykl Eulera musi przejść po wszytkich krawędziach maksymalnie raz. Cykl Hamiltona przechodzi po wierzchołkach maksymalnie raz. Komiwojażer dodaje do cyklu Hamiltona konieczność wygenerowania najkrótszej łącznej drogi."
     },
     {
         "question":"Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?",
@@ -1661,7 +1661,7 @@ const questions = [
         "a4": "O(n)",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najlepiej wyobrazić sobie wykresy tych funkcji. Im bardziej płaski tym lepiej."
     },
     {
         "question":"Najlepszą z punktu widzenia wydajności złożonością algorytmu jest?",
@@ -1672,7 +1672,7 @@ const questions = [
         "a4": "O(nlogn)",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najlepiej wyobrazić sobie wykresy tych funkcji. Im bardziej płaski tym lepiej."
     },
     {
         "question":"Bloczek z ilustracji to blok?",
@@ -1738,7 +1738,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Można zrobić listę obiektów typu (start, koniec, waga). Zależnie od algorytmu jedno albo drugie będzie wygodniejsze."
     },
     //programowanie obiektowe
     {
@@ -1750,7 +1750,7 @@ const questions = [
         "a4": "Przyjaźń",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Na zewnątrz wystawiamy najmniejsze konieczne API klasy."
     },
     {
         "question":"Wielopostaciowość nazywana jest?",
@@ -1783,7 +1783,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Metoda abstrakcyjna lub czysto wirtualna nie ma ciała. Musi być zatem zaimplementowana."
     },
     {
         "question":"Można utworzyć obiekt klasy abstrakcyjnej?",
@@ -1794,7 +1794,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie można, ponieważ klasa taka ma metody bez ciała."
     },
     {
         "question":"Można utworzyć referencje typu klasy abstrakcyjnej?",
@@ -1816,7 +1816,7 @@ const questions = [
         "a4": "0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Dokładnie z jednej"
+        "desc":"Dokładnie z jednej. Ma to znaczenie przy plimorfiźmie."
     },
     {
         "question":"Z ilu klas może dziedziczyć klasa w C++?",
@@ -1827,7 +1827,7 @@ const questions = [
         "a4": "0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C++ można dziedziczyć z wielu klas, ale utrudnia to temat polimorfizmu."
     },
     {
         "question":"Przekazywanie zależności do klasy poprzez konstruktor nazywamy?",
@@ -1860,7 +1860,7 @@ const questions = [
         "a4": "metoda abstrakcyjna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C# można do tego celu wykorzystać właściwość (konstrukcja z get i set)"
     },
     {
         "question":"Konstruktor?",
@@ -1871,7 +1871,7 @@ const questions = [
         "a4": "a dostęp tylko do danych prywatnych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Możliwe jest utworznie konstruktora prywatnego chociaży w celu utworznia singletona."
     },
     {
         "question":"Operacje powodujące wystąpienie wyjątku",
