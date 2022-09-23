@@ -2036,7 +2036,7 @@ const questions = [
         "a4": "Zawsze korzysta z rekurencji",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Metoda wirtualna to metoda, która może zostać nadpisana, ale nie musi."
     },
     {
         "question":"Metoda czysto wirtualna…",
@@ -2047,7 +2047,7 @@ const questions = [
         "a4": "Zawsze korzysta z rekurencji",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jest to metoda abstrakcyjna bez ciała. Metoda wirtualana może mieć ciało, które będzie nadpisane bądź nie."
     },
     {
         "question":"Jak wywołać metodę obiekty za pomocą wskaźnika?",
@@ -2058,7 +2058,7 @@ const questions = [
         "a4": "metoda.wskaźnik();",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli mamy do czynnienia ze wskaźnikiem to do jego składowych odwołujemy się za pomocą operatora \"->\""
     },
     {
         "question":"Na czym polega polimorfizm?",
@@ -2080,7 +2080,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Konstruktory i destruktory nie są dziedziczone. Jednak klasa pochodna ma do nich dostęp (może je wywołać co jest zalecane)."
     },
     {
         "question":"Czy klasa pochodna dziedziczy z klasy bazowej destruktor?",
@@ -2091,7 +2091,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Konstruktory i destruktory nie są dziedziczone. Jednak klasa pochodna ma do nich dostęp (może je wywołać co jest zalecane)."
     },
     {
         "question":"Czy elementy statyczne klasy mają dostęp do elementów niestatycznych?",
@@ -2102,7 +2102,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Aby odwołać się do zwykłego elementu klasy element statyczny potrzebuje instancji. Sam z siebie nie ma takiej możliwości."
     },
     {
         "question":"Czy elementy niestatyczne klasy mają dostęp do elementów statycznych?",
@@ -2113,7 +2113,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak jest to możliwe. Elementy statyczne są przypisane do klasy."
     },
     {
         "question":"Czy setter może wykonywać dodatkową logikę oprócz ustawiania pola?",
@@ -2124,7 +2124,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak. Przykład z cenami. Mamy prywatne pole cena brutto. Do niego mamy trzy gettery (netto, brutto, tara), które oprócz przypisania."
     },
     {
         "question":"Czy getter może wykonywać dodatkową logikę oprócz zwracania pola?",
@@ -2135,7 +2135,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak. Przykład z cenami. Mamy prywatne pole cena brutto. Do niego mamy trzy gettery (netto, brutto, tara), które oprócz zwrócenia wykonują odpowiednie przeliczenie."
     },
     {
         "question":"Czy klasa może dziedziczyć sama z siebie?",
@@ -2146,7 +2146,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Oczywiście, że nie."
     },
     {
         "question":"Czy interfejs może zawierać pola?",
@@ -2157,7 +2157,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie może. W C# interfejs oprócz metod może zwierać właściwości."
     },
     {
         "question":"Czy słowo kluczowe this może mieć wartość NULL?",
@@ -2168,7 +2168,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie jest to możliwe."
     },
     {
         "question":"Czy słowa kluczowego \"this\" można użyć w metodzie statycznej?",
@@ -2179,7 +2179,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Słowo kluczowe \"this\" odnosi się do danej instancji klasy. W przypadku statycznośc operujemy na elementach przypisanych do klasy a nie do obiektu. Nie ma więc mowy o this."
     },
     {
         "question":"Czy klasa może dziedziczyć sama z siebie?",
@@ -2212,7 +2212,7 @@ const questions = [
         "a4": "Javascript",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Tylko C++ obsługuje wieloklasowe dziedziczenie."
     },
     {
         "question":"Cztery filary programowania obiektowego to?",
@@ -2268,7 +2268,7 @@ const questions = [
         "a4": "C++",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"C# to w wielu miejscach kopiuj wklej z Javy i odwrotnie."
     },
     {
         "question":"Każdy program napisany w C# musi mieć funkcję main?",
@@ -2301,7 +2301,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak jest. Przyjmuje argument w formie tablicy parametrów podawanych po spacji przy wywołaniu z konsoli nazwa.exe param1 param2 itd"
     },
     {
         "question":"W C# typy referencyjne są usuwane z pamięci manualnie przez programistę?",
@@ -2323,7 +2323,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Garbage Collector liczy ile jest aktywnych referencji na dany obiekt w pamięci. Jeżeli nie ma żadnej to go usuwa."
     },
     {
         "question":"Plik źródłowy języka C# ma rozszerzenie?",
@@ -2345,7 +2345,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"C# jest typowo obiektowym językiem. Nie da się napisać funkcji poza klasą."
     },
     {
         "question":"W C# da się napisać klasę w klasie?",
@@ -2356,7 +2356,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej."
     },
     {
         "question":"Typem z języka C# niedostępnym w innych językach jest?",
@@ -2367,7 +2367,7 @@ const questions = [
         "a4": "StringBuilder",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"IntPtr to typ wskaźników w C#"
     },
     {
         "question":"Każda zmienna w C# przekazywana jest przez wartość do funkcji itp?",
@@ -2378,7 +2378,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W C# istnieją typy wartościowe oraz typy referencyjne. Jeżeli typ jest wartościowy to jego zmienna jest przekazywana przez wartość."
     },
     {
         "question":"W C# klasy i struktury są równoznaczne i zachowują się tak samo?",
@@ -2411,7 +2411,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Console.WriteLine() wstawia enter na końcu. Możemy jednak wrzucić do Write() string ze znakiem \"\\n\""
     },
     {
         "question":"Klasa definuje typ referencyjny w języku C#?",
@@ -2433,7 +2433,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc": "Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję."
     },
     {
         "question":"Delegaty w C# to typy referencyjne?",
@@ -2477,7 +2477,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jako parametr spodziewamy się inta, zwracamy zaś typ logiczny bool."
     },
     {
         "question":"Delegat C# \"Predicate<int> DodatnieDelegat = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -2499,7 +2499,7 @@ const questions = [
         "a4": "nic",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Predicate zawsze zwraca typ bool."
     },
     {
         "question":"Typem danych wykorzystywanym do precyzyjnego przechowywania liczb ułamkowych w C# jest?",
@@ -2543,7 +2543,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Słowo kluczowe \"sealed\" blokuje możliwość dziedziczenia z klasy."
     },
     {
         "question":"Jeżeli chcemy w C# parsować na double string z liczbą ułamkową to ma znaczenie czy użyjemy w niej kropki czy przecinka?",
@@ -2587,7 +2587,7 @@ const questions = [
         "a4": "int[][] tablica2 = new[5][2] int;",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"[,] konstrukcja jest poprawna w C#. W C++ była by to konstrukcja [][]."
     },
     {
         "question":"Tablica postrzępiona w C# to?",
@@ -2598,7 +2598,7 @@ const questions = [
         "a4": "Każda tablica",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli podtablice tablicy dwuwymiarowej mają różne rozmiary to jest to tablica postrzępiona."
     },
     {
         "question":"String w C# jest typem referencyjnym?",
@@ -2620,7 +2620,7 @@ const questions = [
         "a4": "mutowalny byt podobny do klasy, który przechowuje tylko dane we właściwościach",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Rekordy to klasy na dane, których nie da się modyfikować po zainicjowaniu."
     },
     {
         "question":"Tablica w C# jest typem referencyjnym?",
@@ -2642,7 +2642,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"List to klasa a klasy definiują typy referencyjne."
     },
     {
         "question":"Span<T> w C# jest typem referencyjnym?",
@@ -2653,7 +2653,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Span to struktura a struktury definiują typy wartościowe."
     },
     {
         "question":"Enum w C# jest typem referencyjnym?",
