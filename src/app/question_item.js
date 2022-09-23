@@ -18,6 +18,7 @@ function QuestionItem(props){
         document.getElementById(props.question.id+"B").style.color = "black";
         document.getElementById(props.question.id+"C").style.color = "black";
         document.getElementById(props.question.id+"D").style.color = "black";
+        document.getElementById(props.question.id+"DESC").style.display = "none";
 
         //check if ABCD or TF
         if(props.question.type === "2A"){

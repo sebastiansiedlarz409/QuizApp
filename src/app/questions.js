@@ -273,7 +273,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak, a do wartości odwołujemy się operatorem \"->\""
     },
     {
         "question":"W C/C++ możliwe jest umieszczenie w klasie tylko jednego destruktora?",
@@ -295,7 +295,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pusty nawias oznacza nieznaną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy. Jeżeli w nawiasie jest \"void\" to nie ma parametrów."
     },
     {
         "question":"W strukurze C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -372,7 +372,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pojedynczy znak można umieścić między apostrofami. String tylko w cudzysłowiach."
     }, 
     {
         "question":"Klasa std::string przeciąża operator []?",
@@ -383,7 +383,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak. Zwraca on znak na danym indeksie."
     },
     {
         "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
@@ -493,7 +493,7 @@ const questions = [
         "a4": "operator tryanrny ?:",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W internecie łatwo znaleźć tabelkę z kolejnością operatorów. Jest to mega istotne ze względu na kolejność wykonywanie działań. I nie chodzi tu tylko o proste operatory jak te arytmetyczne."
     },
     {
         "question":"Operatorem o najniższym priorytecie w C++ jest",
@@ -570,7 +570,7 @@ const questions = [
         "a4": "><",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"\"<=>\" jest operatorem statku kosmiczengo. Został wprowadzony w C++20 i służy do porównywania obiektów klas."
     },
     {
         "question":"Pliki źródłowe języka C++ mają rozszerzenie?",
@@ -581,7 +581,7 @@ const questions = [
         "a4": ".h",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Tak, *.cc to rozszerzenie plików C++, ale i tak każdy pisze *.cpp"
     },
     {
         "question":"Pliki źródłowe języka C mają rozszerzenie?",
@@ -647,7 +647,7 @@ const questions = [
         "a4": "Clang",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"IL to skrót od Intermediate language czyli języka pośredniego dla C#/F#/Visual Basic"
     },
     {
         "question":"Język C++ jest nadzbiorem języka C?",
@@ -669,7 +669,7 @@ const questions = [
         "a4": "pusta wartość",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"NULL w C to makro na liczbę 0"
     },
     {
         "question":"Wartość \"nullptr\" to dokładnie to samo co \"NULL\"?",
@@ -680,7 +680,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"NULL to tak naprawdę liczba 0, nullptr to specjalny typ, który ma zastąpić NULL. Ma to znaczenie przy przeciążaniu funckji, gdyż NULL może zostać potraktowany jako int a nie jako wskaźnik."
     },
     {
         "question":"Zapis \"const char* a;\" oraz \"char* const a\" są równoznaczne?",
@@ -691,7 +691,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W pierwszym przypadku stała jest wartość, na którą wskazuje wskaźnik. W drugim stały jest adres w zmiennej wskaźnikowej."
     },
     {
         "question":"Wartość wyrażenia \"'A'+10\" w C/C++ wynosi?",
@@ -735,7 +735,7 @@ const questions = [
         "a4": "1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wartość 0 to fałsz. Każda inna wartość w C/C++ to prawda."
     },
     {
         "question":"Ile razy wykona się pętla \"while(999999)\" w C/C++?",
@@ -746,7 +746,7 @@ const questions = [
         "a4": "999999",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każda wartość inna niż false/0 to prawda. Pętla wykona się nieskończenie wiele razy. To to samo co while(true){}."
     },
     {
         "question":"Zakładając, że \"int a = 2;\" wartość przypisana do zmiennej wynosi \"int b = a++;\"?",
@@ -779,7 +779,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Unia to struktura, która przyjmuje rozmiar największego elementu składowego. Pozostałe się na niego nakładają."
     },
     {
         "question":"Słowo kluczowe new alokuje pamięć w miejscu określanym mianem?",
@@ -790,7 +790,7 @@ const questions = [
         "a4": "zbioru",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W kazdym języku alokujemy na stercie/heapie."
     },
     {
         "question":"Referencja to to samo co wskaźnik?",
@@ -801,7 +801,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Referencja to wskaźnik z okrojonymi możliwościami. Jest bezpieczniejsza, ponieważ nie da się na niej wykonywać działaj arytmetycznych"
     },
     {
         "question":"Kontenerem STL, najbardziej podobnym do tablicy jest?",
@@ -812,7 +812,7 @@ const questions = [
         "a4": "std::deque",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Z wyżej wymienionych elementów jest to vector. Vector jest jak tablica z opcją automatycznego rozszerzania się."
     },
     {
         "question":"Kontenerem STL w przypadku, którego dane dodajemy na koniec a pobieramy z frontu?",
@@ -856,7 +856,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Isteniej w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: \"int add(int a, int b);\" wskaźnik: \"int(addPtr*)(int,int) = add;\""
     },
     {
         "question":"Operatorem bitowym nie jest?",
@@ -933,7 +933,7 @@ const questions = [
         "a4": "1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"3, ponieważ 2 do potęgi 3 to 8. Aby zakodować 7 wartości też będzie to 3. Marnujemy w prawdzie jedną wartość, ale to najlepsza możliwość."
     },
     {
         "question":"Ile unikalnych wartości zakodować można w bajcie?",
@@ -944,7 +944,7 @@ const questions = [
         "a4": "0x1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Bajt ma 8 bitów. Liczba 2 do potęgi 8 daje nam 256. W bajcie można zapisać liczby z zakresu 0 do 255, czyli dokłanie 256 sztuk."
     },
     {
         "question":"Czy kod: \"int size = 10; int tablica[size];\" jest poprawny?",
@@ -955,7 +955,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Przy takiej definicji tablicy rozmiar musi być stałą."
     },
     {
         "question":"Czy kod: \"int size = 10; int* tablica = new int[size];\" jest poprawny?",
@@ -966,7 +966,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Przy dynamicznej alokacji tablicy rozmiar może być zmienny."
     },
     {
         "question":"Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?",
@@ -977,7 +977,7 @@ const questions = [
         "a4": "nic się nie stanie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Za tablicą w pamięci coś się zapewne znajuje. Jest mała szansa na błąd, jeżeli trafimy na granicę strony pamięci."
     },
     {
         "question":"Który z typów jest niedostępny w języku C?",
@@ -988,7 +988,7 @@ const questions = [
         "a4": "short",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C nie ma bool. Trzeba sobie radzić liczbami 0 i 1."
     },
     {
         "question":"Do rzucania wyjątków w C++ służy słowo kluczowe?",
@@ -1065,7 +1065,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &."
     },
     {
         "question":"Konstruktor kopiujący powinien przyjmować obiekt kopiowany jako referencje na stałą \"const T&\"?",
@@ -1076,7 +1076,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Referencja powoduje, że nie jest tworzona zbędna kopia obiektu, a \"cons\"t informuje, że nie musimy się martwić o to, że obiekt kopiowany zostanie przypadkiem zmodyfikowany."
     },
     {
         "question":"W C++ każda definicja klasy musi być zakończona nie tylko klamrą, ale też średnikiem?",
@@ -1087,7 +1087,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak, ponieważ po klamrze kończącej klasę możemy odrazu tworzyć jej instancje."
     },
     {
         "question":"C++ oferuje mechanizm null safety?",
@@ -1098,7 +1098,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Null safety czyli mechanizm lepszej kontroli czy zmienna przechowuje wartość czy też null. Dostępne w nowszych językach."
     },
     {
         "question":"C++ jest językiem interpretowanym?",
@@ -1120,7 +1120,7 @@ const questions = [
         "a4": "do niczego konkretnego",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"[] pozwala przechwycić zmienne z otaczającego lambdę zakresu i używać ich jakby były zmiennymi lokalnymi w wyrażeniu lambda."
     },
     {
         "question":"Instrukcja \"mov eax, ebx\"?",
@@ -1131,7 +1131,7 @@ const questions = [
         "a4": "przenosi zawartość eax do ebx",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Instrukcja ta mimo swojej nazwy kopiuje. Najpierw podajemy cel a potem źródło."
     },
     {
         "question":"Każda rodzina procesorów ma własny zestaw instrukcji?",
@@ -1153,7 +1153,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokadnie 4GB."
     },
     {
         "question":"Pętla \"while(file->EOF){}\" będzie wykonywać się do momentu?",
@@ -1164,7 +1164,7 @@ const questions = [
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"EOF to skrót od End Of File"
     },
     {
         "question":"W C++ wartość liczbową można wypisać w systemie szesnastkowym za pomocą \"cout\":",
@@ -1231,7 +1231,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli bit najbardziej po prawej jest 1 to liczba jest nieparzysta."
     },
     {
         "question":"Liczba \"char a = -1\" to w systemie binarnym?",
@@ -1253,7 +1253,7 @@ const questions = [
         "a4": "0b00000001",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przesuwamy się o 4 bity w prawo."
     },
     {
         "question":"Wartość wyrażenia 0b10110000<<2 to?",
@@ -1264,7 +1264,7 @@ const questions = [
         "a4": "0b00001011",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przesuwamy się o 2 bity w lewo. Bity są tracone chyba, że użyjemy większego typu"
     },
     {
         "question":"Wartość wyrażenia 0xA0>>4 to?",
@@ -1275,7 +1275,7 @@ const questions = [
         "a4": "0xA0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jedna cyfra w HEX to 4 bity. Przesuwając się o 4 bity przesuwamy się o jedną pozycję w hex. Cyfra w hex to \"nybbel\"."
     },
     {
         "question":"Wartość wyrażenia 0xABCDEF98<<8 to?",
@@ -1462,7 +1462,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W niektórych językach h na końcu pozwala kodować liczby szesnastkowe."
     },
     {
         "question":"Kodowanie liczb ujemnych odbywa się za pomocą metody",
@@ -1551,7 +1551,7 @@ const questions = [
         "a4": "0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jest to maksymalna ilość krawędzi wychodzących/wchodzących do wierzchołka."
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
@@ -1628,7 +1628,7 @@ const questions = [
         "a4": "Algorytm Prima",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Algorytm Węgierski służy do gospodarowania zadaniami i pracownikami."
     },
     {
         "question":"Cykl, który musi przejśc po wszystkich krawędziach grafu jest?",
@@ -1772,7 +1772,7 @@ const questions = [
         "a4": "Żadne z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Zależność to inna klasa. W klasie umieszcza się obiekt innej klasy (jej zależności) by ta mogła skorzystać z jej możliwości."
     },
     {
         "question":"Metoda abstrakcyjna musi być zaimplementowana przez klasę dziedziczącą?",
@@ -1805,7 +1805,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Mamy tu na mysli zmienną typu abstrakcyjnego, do której przypisywany jest obiekt normalnej klasy dziedziczącej z tej abstrakcyjnej."
     },
     {
         "question":"Z ilu klas może dziedziczyć klasa w C#/Java/Python?",
@@ -1816,7 +1816,7 @@ const questions = [
         "a4": "0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dokładnie z jednej"
     },
     {
         "question":"Z ilu klas może dziedziczyć klasa w C++?",
@@ -1838,10 +1838,10 @@ const questions = [
         "a4": "żadnym z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jest to Dependency Injection."
     },
     {
-        "question":"Obiekt klasy może być przekazany do funckji przez (C++)?",
+        "question":"Obiekt klasy może być przekazany do funkcji przez (C++)?",
         "url":"",
         "a1": "wartość/referencje/wskaźnik",
         "a2": "wartość/wskaźnik",
@@ -1882,7 +1882,7 @@ const questions = [
         "a4": "powinny być umieszczone w bloku catch",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W bloku \"catch\" decydujemy co zrobić gdy ten wyjątek nastąpi."
     },
     {
         "question":"Jak nazywamy składniki, z których zbudowane są obiekty?",
@@ -1937,7 +1937,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Interfejs to taki jakby konstrakt, mówiący jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działą tak samo z tym, że on może mieć już część metod zaimplementowaną."
     },
     {
         "question":"Programowanie strukturalne i funkcyjne to to samo?",
@@ -1948,7 +1948,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Programowanie funkcyjne opiera się na traktowaniu funkcji jak obiektów."
     },
     {
         "question":"Obiekt to instancja klasy?",
@@ -1981,7 +1981,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"To słowo kluczowe jest istotne z punktu widzenia polimorfizmu."
     },
     {
         "question":"Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?",
@@ -2025,7 +2025,7 @@ const questions = [
         "a4": "Zawierającą 2 wersje przeciążonego konstruktora",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Metoda czysto wirtualna to metoda bez implementacji/ciała."
     },
     {
         "question":"Metoda wirtualna…",
@@ -2190,7 +2190,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Oczywiście, że nie"
     },
     {
         "question":"Ile pól zawiera klasa na obrazku?",
@@ -2279,7 +2279,7 @@ const questions = [
         "a4": "Każdy oprócz programu konsolowego",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W .NET 6 trochę na siłe uprościli zapis i nie ma już funkcji main. Plik bazowy wygląda jak np. skrypt w pytonie czy javascript."
     },
     {
         "question":"C# oferuje obsługę wskaźników?",
@@ -2290,7 +2290,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak, ale kod taki trzeba oznaczyć słowem kluczowym \"unsafe\""
     },
     {
         "question":"W C# funkcja main jest statyczna?",
@@ -2312,7 +2312,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Usuwaniem takich obiektów zajmuje się Garbage Collector."
     },
     {
         "question":"W C# typy referencyjne są usuwane z pamięci przez garbage collector?",
