@@ -2375,6 +2375,16 @@ const questions = [
         "type": "2A"
     },
     {
+        "question":"Rekord w C# to?",
+        "url":"",
+        "a1": "niemutowalny byt podobny do klasy, który przechowuje tylko dane we właściwościach",
+        "a2": "byt podobny do klasy, który przechowuje tylko dane we właściwościach",
+        "a3": "niemutowalny byt podobny do klasy, który przechowuje tylko metody",
+        "a4": "mutowalny byt podobny do klasy, który przechowuje tylko dane we właściwościach",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
         "question":"Tablica w C# jest typem referencyjnym?",
         "url":"",
         "a1": "TAK",
@@ -2456,6 +2466,36 @@ const questions = [
     },
     {
         "question":"Właściwość w C# to odpowiednik gettera i settera z innych języków?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję get to jest tylko getterem?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję set to jest tylko setterem?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli właściwość w C# ma słowo kluczowe \"init\" w miejscu \"set\" oznacza to, że może ona być użyta jako setter raz w czasie inicjalizacji?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -2835,10 +2875,40 @@ const questions = [
         "type": "2A"
     },
     {
+        "question":"W C# wyjątek \"DirectoryNotFoundException\" rzucany np. przez \"File.Create()\" oznacza?",
+        "url":"",
+        "a1": "że nie można znaleźć katalogu, składowego scieżki",
+        "a2": "ścieżka jest w niepoprawnym formacie",
+        "a3": "ścieżka jest nullem",
+        "a4": "plik już istnieje",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
         "question":"W C# za operacje na katalogach odpowiada między innymi klasa \"Directory\"?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Dobrą praktyką jest sprawdzenie czy katalog/plik istnieje przed wykonaniem na nim operacji?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Czy deklarowanie zmiennych jako \"var\" w C# to dobra praktyka?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
@@ -2853,6 +2923,16 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A"
+    },
+    {
+        "question":"W C# wyjątek \"NullReferenceException\" oznacza, że?",
+        "url":"",
+        "a1": "zmienna referencyjna, na której wykonaliśmy operację jest nullem",
+        "a2": "zmienna referencyjna, na której wykonaliśmy operację jest 0",
+        "a3": "zmienna wartościowa, na której wykonaliśmy operację jest nullem",
+        "a4": "zmienna wartościowa, na której wykonaliśmy operację jest 0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
     },
     //WPF i XAMARIN
     {
@@ -2890,6 +2970,66 @@ const questions = [
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W WPF niedostępny jest layout typu?",
+        "url":"",
+        "a1": "TablePanel",
+        "a2": "StackPanel",
+        "a3": "DockPanel",
+        "a4": "Wszystkie wymienione",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"W WPF dostępnym typem layoutu jest?",
+        "url":"",
+        "a1": "Wszystkie wymienione",
+        "a2": "CanvasPanel",
+        "a3": "StackPanel",
+        "a4": "DockPanel",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Aby w WPF można było przypisać element do pola siatki GRID element musi być umiesczony wewnątrz bloku <Grid></Grid>?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby w WPF można było przypisać element do kolumny siatki należy posłużyć się atrybutem \"Grid.Column\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby w WPF można było połączyć kolumny siatki należy posłużyć się atrybutem \"Grid.ColSpan\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Aby w WPF można było połączyć wierwsze saitki należy posłużyć się atrybutem \"Grid.RowSpan\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
@@ -3146,6 +3286,66 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A"
+    },
+    {
+        "question":"Visual Studio jest kompilatorem?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Dev C++ jest kompilatorem?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Który z wymienionych programów nie jest kompilatorem?",
+        "url":"",
+        "a1": "gcc",
+        "a2": "g++",
+        "a3": "gdb",
+        "a4": "clang",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Który z wymienionych programów nie jest programem typu IDE?",
+        "url":"",
+        "a1": "HxD",
+        "a2": "Eclipse",
+        "a3": "Intelij",
+        "a4": "Code-Blocks",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Kolejne etapy kompilacji to?",
+        "url":"",
+        "a1": "analiza leksykalna/analiza składniowa/analiza semantyczna/optymalizacja/generowanie kodu",
+        "a2": "analiza semantyczna/analiza składniowa/analiza leksykalna/optymalizacja/generowanie kodu",
+        "a3": "analiza składniowa/analiza leksykalna/analiza semantyczna/optymalizacja/generowanie kodu",
+        "a4": "analiza leksykalna/analiza semantyczna/analiza składniowa/optymalizacja/generowanie kodu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Etapem kompilacji, który nie jest etapem pracy interpretera jest?",
+        "url":"",
+        "a1": "generowanie kodu",
+        "a2": "analiza semantyczna",
+        "a3": "analiza składniowa",
+        "a4": "analiza leksykalna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
     },
     //testy jednostkowe
     {
@@ -5026,7 +5226,7 @@ const questions = [
         "type": "4A"
     },
     {
-        "question":"Polecenie systemu linux zmieniające właściciela zasobu to?",
+        "question":"Polecenie systemu linux pozwalające zmienić właściciela zasobu to?",
         "url":"",
         "a1": "chown",
         "a2": "chmod",
@@ -5034,6 +5234,807 @@ const questions = [
         "a4": "own",
         "tag": "NIEOFICJALNE",
         "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu linux pozwalające usunąć plik lub katalog to?",
+        "url":"",
+        "a1": "rm",
+        "a2": "remove",
+        "a3": "rd",
+        "a4": "del",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu linux pozwalające zmienić nazwę pliku to?",
+        "url":"",
+        "a1": "mv",
+        "a2": "rm",
+        "a3": "chn",
+        "a4": "rename",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu linux pozwalające przenieść plik to?",
+        "url":"",
+        "a1": "mv",
+        "a2": "rm",
+        "a3": "cp",
+        "a4": "ls",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu windows pozwalające przenieść plik to?",
+        "url":"",
+        "a1": "move",
+        "a2": "mv",
+        "a3": "cp",
+        "a4": "dir",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu linux pozwalające skopiować plik to?",
+        "url":"",
+        "a1": "cp",
+        "a2": "rm",
+        "a3": "mv",
+        "a4": "ls",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie systemu windows pozwalające skopiować plik to?",
+        "url":"",
+        "a1": "copy",
+        "a2": "rm",
+        "a3": "cp",
+        "a4": "ls",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Polecenie \"help\" wyświetla pomoc wiersza poleceń Windows?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Polecenie \"man\" wyświetla pomoc wiersza poleceń Linux?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    //pytania ogólne
+    {
+        "question":"Funkcja użytkownika wywoływana przez funkcję biblioteczną to?",
+        "url":"",
+        "a1": "callback",
+        "a2": "funkcja wirtualna",
+        "a3": "funkcja abstrakcyjna",
+        "a4": "funkcja rozszerzająca",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jak przekazać callback do funkcji w C#?",
+        "url":"",
+        "a1": "trzeba posłuzyć się odpowiednim delegatem",
+        "a2": "trzeba posłuzyć się odpowiednim wskaźnikiem",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jak przekazać callback do funkcji w C/C++?",
+        "url":"",
+        "a1": "trzeba posłuzyć się odpowiednim wskaźnikiem",
+        "a2": "trzeba posłuzyć się odpowiednim delegatem",
+        "a3": "poprzez referencje",
+        "a4": "poprzez wartość",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Lamda jest dobrym narzędziem do tworzenia krótkich callbacków?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W C# funkcję LINQ bardzo często przyjmują callbacki w parametrze?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Znak \"\\n\" oznacza?",
+        "url":"",
+        "a1": "znak nowej linii",
+        "a2": "znak powrotu kursora",
+        "a3": "znak tabulacji",
+        "a4": "znak ucieczki",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Znak \"\\r\" oznacza?",
+        "url":"",
+        "a1": "znak powrotu kursora",
+        "a2": "znak nowej linii",
+        "a3": "znak tabulacji",
+        "a4": "znak ucieczki",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"System kodowania znaków, który przypisuje liczbą od 0 do 127 znaki to?",
+        "url":"",
+        "a1": "ASCII",
+        "a2": "UTF",
+        "a3": "ISO",
+        "a4": "PID",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Dodając do znaku \"char a = 'A'\" liczbę 32 uzyskamy?",
+        "url":"https://www.asciitable.com/asciifull.gif",
+        "a1": "a",
+        "a2": "#",
+        "a3": "_",
+        "a4": "Z",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jednostka wykonująca kod to?",
+        "url":"",
+        "a1": "wątek",
+        "a2": "proces",
+        "a3": "task",
+        "a4": "konsola",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Synchronizacja wątków polega na?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "kontrolowaniu wymiany danych między wątkami",
+        "a3": "kontrolowaniu co i kiedy robi dany wątek",
+        "a4": "poczekaniu aż wątek zakończy działanie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Które z poniższych stwierdzeń o procesie i wątku jest prawdziwe?",
+        "url":"",
+        "a1": "Proces to zbiór zwierający miminum jeden wątek",
+        "a2": "Watek to zbiór zawierający minimum jeden proces",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Programista może programowo otworzyć wiele wątków w trakcie trawania programu?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Każdy program ma minimum jeden wątek?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Tylko wątek główny programu może dotykać elementów UI?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli wątek główny zakończy się (return w main zostanie osiągnięty) to program czeka na pozostałe wątki?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Od programisty zależy czy wątek główny poczeka na zakończenie wątków dodatkowych?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Zrównoleglenie polega na?",
+        "url":"",
+        "a1": "podzieleniu zadania na części i wykonaniu każdej z nich na innym wątku",
+        "a2": "podzieleniu zadania na części i wykonaniu każdej z nich w innym procesie",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Wymiana danych między watkami przebiega swobodnie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Każdy wątek a swoje ID?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Każdy proces ma swoje ID?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Jeżeli aplikacja A oraz B czytają/zapisuje dane na adresie 0xA to przeszkadzają sobie wzajemnie?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Biblioteką języka C++ do tworzenia wątków jest?",
+        "url":"",
+        "a1": "std::thread",
+        "a2": "Thread",
+        "a3": "Task",
+        "a4": "threading",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Biblioteką języka C# do tworzenia wątków jest?",
+        "url":"",
+        "a1": "Task",
+        "a2": "std::thread",
+        "a3": "Promise",
+        "a4": "threading",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Flagą, która blokuje inne wątki gdy jeden z nich ją ustawi jest?",
+        "url":"",
+        "a1": "mutex",
+        "a2": "spinlock",
+        "a3": "await",
+        "a4": "wszystkie pozostałe",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Adres 0xA w każdej aplikacji to inne miejsce w pamięci fizycznej?",
+        "url":"",
+        "a1": "tak dzięki zastosowaniu stronnicowania",
+        "a2": "tak dzięki zastosowaniu segmentacji",
+        "a3": "tak dzięki losowaniu adresów",
+        "a4": "nie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Rejestr procesora to?",
+        "url":"",
+        "a1": "komórka pamięci w procesorze",
+        "a2": "cache procesora",
+        "a3": "instrukcja procesora",
+        "a4": "rdzeń procesora",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Część procesora nazywana ALU to?",
+        "url":"",
+        "a1": "jednostka arytmetyczno logiczna",
+        "a2": "jednostka sterująca",
+        "a3": "kontroler pamięci",
+        "a4": "kooprocesor",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Część procesora nazywana CU to?",
+        "url":"",
+        "a1": "jednostka sterująca",
+        "a2": "jednostka arytmetyczno logiczna",
+        "a3": "kontroler pamięci",
+        "a4": "kooprocesor",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Część procesora nazywana FPU to?",
+        "url":"",
+        "a1": "kooprocesor",
+        "a2": "jednostka sterująca",
+        "a3": "jednostka arytmetyczno logiczna",
+        "a4": "kontroler pamięci",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Część procesora odpowiedzialna za operacje zmiennoprzecinkowe to?",
+        "url":"",
+        "a1": "kooprocesor",
+        "a2": "jednostka licząca",
+        "a3": "jednostka arytmetyczno logiczna",
+        "a4": "mostek północny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Jeżeli zapomnimy użyć delete w C/C++ i zamkniemy program to tracimy trochę pamięci?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Rodzajem bramki logicznej nie jest?",
+        "url":"",
+        "a1": "XAND",
+        "a2": "XOR",
+        "a3": "OR",
+        "a4": "AND",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bramką logiczną, która wykonuje różnice symetryczą jest?",
+        "url":"",
+        "a1": "XOR",
+        "a2": "XNOR",
+        "a3": "NOT",
+        "a4": "OR",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bramką logiczną, która ma tylko jedno wejście jest?",
+        "url":"",
+        "a1": "NOT",
+        "a2": "OR",
+        "a3": "AND",
+        "a4": "NAND",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bramką logiczną na obrazku jest?",
+        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nand-gate-en.svg/1200px-Nand-gate-en.svg.png",
+        "a1": "NAND",
+        "a2": "OR",
+        "a3": "AND",
+        "a4": "NOR",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Bramką logiczną na obrazku jest?",
+        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/NOR_ANSI.svg/1200px-NOR_ANSI.svg.png",
+        "a1": "NAND",
+        "a2": "OR",
+        "a3": "AND",
+        "a4": "NOR",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Prędkość taktowania wyrażamy w?",
+        "url":"",
+        "a1": "Hz",
+        "a2": "sekundach",
+        "a3": "bitach na sekunde",
+        "a4": "bajtach na sekunde",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Prędkość transmisji wyrażamy w?",
+        "url":"",
+        "a1": "bitach na sekunde",
+        "a2": "Hz",
+        "a3": "sekundach",
+        "a4": "bajtach na sekunde",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Popularniejszym rodzajem transmisji jest?",
+        "url":"",
+        "a1": "transmisja szeregowa",
+        "a2": "transmisja równoległa",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Transmisja synchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
+        "url":"https://images.squarespace-cdn.com/content/v1/5f283b4a5fd0073706fbf137/1626364945021-I8VF8PHBRETXI01GV0RD/spi.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Transmisja asynchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
+        "url":"https://images.squarespace-cdn.com/content/v1/5f283b4a5fd0073706fbf137/1626364945021-I8VF8PHBRETXI01GV0RD/spi.png",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W transmisji asynchronicznej występuje sygnał zegarowy?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"W transmisji synchronicznej długość bitu zależu od zegara a w asynchronicznej każdy bit ma z góry ustalony czas trwania?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Pamięć RAM typu DDR3 jest kompatybilna wstecznie z pamięcią DDR2?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"USB 3 jest kompatybilne z portami USB 2",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Technologią wykorzystywaną najczęściej do komunikacji z dyskami twardymi jest?",
+        "url":"",
+        "a1": "SATA",
+        "a2": "PCI",
+        "a3": "AGP",
+        "a4": "USB",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Technologią wykorzystywaną najczęściej do komunikacji z kartami graficznymi jest?",
+        "url":"",
+        "a1": "PCI Express",
+        "a2": "PCI",
+        "a3": "AGP",
+        "a4": "ISA",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Wtyczka/Gniazdo RJ45 (sieciowe) ma 8 pinów?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Dobierając procesor do płyty głównej znaczenie ma?",
+        "url":"",
+        "a1": "wszystko wymienione",
+        "a2": "chipset",
+        "a3": "podstawka",
+        "a4": "moc sekcji zasilania",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Dobierając RAM do komputera znaczenia nie ma?",
+        "url":"",
+        "a1": "moc zasilacza",
+        "a2": "chiset",
+        "a3": "procesor",
+        "a4": "płyta główna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Chcąc przesłać pliki strony interentowej na hosting posłużymy się technologią?",
+        "url":"",
+        "a1": "FTP",
+        "a2": "HTTP",
+        "a3": "SSH",
+        "a4": "Telnet",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"HTTP działa na porcie?",
+        "url":"",
+        "a1": "80",
+        "a2": "90",
+        "a3": "20",
+        "a4": "60",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Pierwsza warstwa ISO/OSI to?",
+        "url":"",
+        "a1": "fizyczna",
+        "a2": "łącza danych",
+        "a3": "sieci",
+        "a4": "transportowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Druga warstwa ISO/OSI to?",
+        "url":"",
+        "a1": "łącza danych",
+        "a2": "fizyczna",
+        "a3": "sieci",
+        "a4": "transportowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Trzecia warstwa ISO/OSI to?",
+        "url":"",
+        "a1": "sieci",
+        "a2": "łącza danych",
+        "a3": "fizyczna",
+        "a4": "transportowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Czwarta warstwa ISO/OSI to?",
+        "url":"",
+        "a1": "transportowa",
+        "a2": "sieci",
+        "a3": "łącza danych",
+        "a4": "fizyczna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Adresacja MAC działa na warstwie ISO/OSI?",
+        "url":"",
+        "a1": "łącza danych",
+        "a2": "sieci",
+        "a3": "fizyczna",
+        "a4": "transportowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Adresacja IP działa na warstwie ISO/OSI?",
+        "url":"",
+        "a1": "sieci",
+        "a2": "łącza danych",
+        "a3": "fizyczna",
+        "a4": "transportowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Identyfikacja portów działa na warstwie ISO/OSI?",
+        "url":"",
+        "a1": "transportowa",
+        "a2": "sieci",
+        "a3": "łącza danych",
+        "a4": "fizyczna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"IPv4 składa się z _ bajtów?",
+        "url":"",
+        "a1": "4",
+        "a2": "3",
+        "a3": "2",
+        "a4": "5",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"IPv6 składa się z _ bajtów?",
+        "url":"",
+        "a1": "16",
+        "a2": "12",
+        "a3": "8",
+        "a4": "6",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Adres MAC składa się z _ bajtów?",
+        "url":"",
+        "a1": "6",
+        "a2": "4",
+        "a3": "2",
+        "a4": "8",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Każde urządzenie sieciowe ma unikalny adres MAC?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Narzędziem do podglądania ruchu sieciowego jest?",
+        "url":"",
+        "a1": "WireShark",
+        "a2": "NetStat",
+        "a3": "Curl",
+        "a4": "Putty",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Narzędziem do sprawdzania adresu IP, do którego prowadzi domena jest?",
+        "url":"",
+        "a1": "nslookup",
+        "a2": "netstat",
+        "a3": "curl",
+        "a4": "arp",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Normy to dokumenty określające zasady postępowania, przepisy, wzory, wytyczne lub charakterystyki do powszechnego i wielokrotnego stosowania?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
+    },
+    {
+        "question":"Normy powinny być?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "oparte na podstawach naukowych oraz danych sprawdzonych pod względem słuszności technicznej",
+        "a3": "uwzględniać aktualny stan wiedzy oraz poziom techniki osiągnięty lub możliwy do osiągnięcia w najbliższym czasie",
+        "a4": "być możliwe do realizacji oraz absolutnie sprawdzalne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Celem normalizacji krajowej jest?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "racjonalizacji produkcji i usług poprzez stosowanie uznanych reguł",
+        "a3": "usuwania barier technicznych w handlu i zapobiegania ich powstawaniu",
+        "a4": "zapewnienia jakości i niezawodności wyrobów, procesów i usług",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Celem normalizacji krajowej jest?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "zapewnienia ochrony życia, zdrowia, środowiska i interesu konsumentów oraz bezpieczeństwa pracy",
+        "a3": "poprawy funkcjonalności, kompatybilności i zamienności wyrobów, procesów i usług",
+        "a4": "ułatwiania porozumiewania się przez określanie terminów, definicji, oznaczeń i symboli do powszechnego stosowania",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
+        "url":"",
+        "a1": "Jira",
+        "a2": "MS-Project",
+        "a3": "Github",
+        "a4": "Git",
+        "tag": "NIEOFICJALNE",
+        "type": "4A"
+    },
+    {
+        "question":"Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?",
+        "url":"",
+        "a1": "bezpieczeństwo",
+        "a2": "obsługa baz SQL",
+        "a3": "obsługa REST API",
+        "a4": "szyfrowanie haseł metodą SHA256",
+        "tag": "NIEOFICJALNE",
+        "type": "2A"
     },
 ]
 

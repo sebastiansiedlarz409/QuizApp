@@ -10,6 +10,14 @@ function QuestionItem(props){
         document.getElementById(props.question.id+"B").style.backgroundColor = "rgb(255,255,255,0.3)";
         document.getElementById(props.question.id+"C").style.backgroundColor = "rgb(255,255,255,0.3)";
         document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"A").style.border = "5px solid transparent";
+        document.getElementById(props.question.id+"B").style.border = "5px solid transparent";
+        document.getElementById(props.question.id+"C").style.border = "5px solid transparent";
+        document.getElementById(props.question.id+"D").style.border = "5px solid transparent";
+        document.getElementById(props.question.id+"A").style.color = "black";
+        document.getElementById(props.question.id+"B").style.color = "black";
+        document.getElementById(props.question.id+"C").style.color = "black";
+        document.getElementById(props.question.id+"D").style.color = "black";
 
         //check if ABCD or TF
         if(props.question.type === "2A"){
@@ -45,6 +53,9 @@ function QuestionItem(props){
         }
 
         document.getElementById(props.question.id+"A").style.backgroundColor = "rgb(255,255,255,0.3)";
+        document.getElementById(props.question.id+"A").style.border = "5px solid green";
+        document.getElementById(props.question.id+"A").style.color = "white";
+
         document.getElementById(props.question.id+"B").style.backgroundColor = "rgb(255,255,255,0.3)";
         document.getElementById(props.question.id+"C").style.backgroundColor = "rgb(255,255,255,0.3)";
         document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
