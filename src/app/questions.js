@@ -2400,7 +2400,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W C# struktury i klasy różnią się właśnie tym, że struktura definuje typ wartościowy a klasa referencyjny. Jeżeli zależy nam na przekazywaniu przez wartość to używamy struktur. Jeżeli chcemy referencje to klas."
     },
     {
         "question":"W C# \"Console.Write()\" wstawia enter na końcu?",
@@ -2455,7 +2455,7 @@ const questions = [
         "a4": "nic",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Func to delegat do funkcji, które coś zwracają. Ostatni parametr generyczny mówi jaki to typ. Pozostałe typy to typy argumentów."
     },
     {
         "question":"W C# delegat \"Action<string, int, int>\" zwraca?",
@@ -2466,7 +2466,7 @@ const questions = [
         "a4": "string",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Action to delegat do funckji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów."
     },
     {
         "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -2488,7 +2488,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Predicate to typ delegatu, który przechowuje funkcję zwracającą bool czyli to samo co \"Func<...., bool>\"."
     },
     {
         "question":"W C# delegat \"Predicate<int>\" zwraca?",
@@ -2521,7 +2521,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"\"var\" jest podmieniane na odpowiedni typ w momencie kompilacji. \"dynamic\" powala dynamicznie określić typ jak program już działa\"."
     },
     {
         "question":"Istnieje w C# różnica między zmienną typu \"const\" a \"readonly\"?",
@@ -2532,7 +2532,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Zmienna \"readonly\" może zostać podmieniona przez konstruktor. To słowo kluczowe stosuje się do pól z zależnościami."
     },
     {
         "question":"Oznaczenie w C# klasy jako \"sealed\" blokuje możliwość dziedziczenia z niej?",
@@ -2554,7 +2554,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Funkcji parsującej trzeba wskazać rodzaj separatora."
     },
     {
         "question":"Aby poznać długość stringa w C# należy posłużyć się?",
@@ -2675,7 +2675,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Obiekt klasy zostanie zaalokowany za stercie, a obiekt struktury na stosie."
     },
     {
         "question":"W C# referencja na typ referencyjny i tak jest na stosie?",
@@ -2708,7 +2708,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Możemy na przykład zapakować inta do tablicy typu object[1], a później wypakować z pod indeksu 0"
     },
     {
         "question":"Właściwość w C# to odpowiednik gettera i settera z innych języków?",
@@ -2763,7 +2763,7 @@ const questions = [
         "a4": "Instancjonowanie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Reflekcje pozwalają na wiele jak np. czytanie prywatnych pól, czytanie listy plików w projekcie itp."
     },
     {
         "question":"Mechanizm pozwalający pisać w C# wydajne zapytania do kolekcji nazywany jest?",
@@ -2807,7 +2807,7 @@ const questions = [
         "a4": "{}",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Parametrem generycznym jest zawsze typ. Np. \"Func<int, int>\""
     },
     {
         "question":"W C# interfejsy nazywa się zaczynając od litery I?",
@@ -2851,7 +2851,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli kolekcja będzie pusta First() spowoduje błąd, a FirstOrDefault() zwróci domyślną wartość danego typu czyli np. 0 albo null."
     },
     {
         "question":"W C# List<T> to to samo co IEnumerable<T>?",
@@ -2873,7 +2873,7 @@ const questions = [
         "a4": "Zwrócenia typu obiektu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"TO NIE JEST PARSOWANIE NA STRING"
     },
     {
         "question":"Metoda klasy string, która sprawdza czy napis jest nullem lub jest pusty to?",
@@ -2895,7 +2895,7 @@ const questions = [
         "a4": "kompilacja skończy się błędem",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"\"a is {}\" to odpowiednik \"a != null\""
     },
     {
         "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
@@ -2939,7 +2939,7 @@ const questions = [
         "a4": "Thread<T>",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C# jest to Task, w Dart Future, w JS Promise."
     },
     {
         "question":"Język C# kompilowany jest w pierwszej kolejności do _ a dopiero później do kodu maszynowego?",
@@ -2994,7 +2994,7 @@ const questions = [
         "a4": "Razor",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Flask to framework na Pythonie."
     },
     {
         "question":"Xamarin pozwal tworzyć aplikację na?",
@@ -3049,7 +3049,7 @@ const questions = [
         "a4": "Wielokrotne dziedziczenie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o zwykłe przeciążanie funkcji (ta sama nazwa, różne argumenty)."
     },
     {
         "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
@@ -3137,7 +3137,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jest to metoda zdefiniowana w innej klasie jako statyczna, ale wyświetla się jako składowa klasy, którą rozszerza."
     },
     {
         "question":"Na obrazku zaznaczono",
@@ -3148,7 +3148,7 @@ const questions = [
         "a4": "tokeny",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Atrybut, atrybuty takie można deifniować samemu."
     },
     {
         "question":"W C# za operacje na plikach odpowiada między innymi klasa \"File\"?",
@@ -3225,7 +3225,7 @@ const questions = [
         "a4": "zmienna wartościowa, na której wykonaliśmy operację jest 0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli do stringa przypiszemy null i sprawdzimy jego długość za pomocą .Length() to dostaniemy ten wyjątek. Jeżeli nam taki wyjątek leci to znaczy, że próbujemy wykonać jakąś akcje na wartości null."
     },
     //WPF i XAMARIN
     {
@@ -3348,7 +3348,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Hard powoduje całkowitą utratę zmian. Soft zostawia zmiany jako dodane. Mixed zostawia zmiany jako do dodania."
     },
     {
         "question":"Jakiego przełącznika należy użyć z poleceniem \"git reset\" aby cofnięte zmiany wylądowały na \"stage\"?",
@@ -3370,7 +3370,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Merge łączy gałęzie. Rebase pozwala zmienić commit na bazie którego został utworzony dany branch."
     },
     {
         "question":"Polecenie \"git stash\" cofa projekt do ostatniego commita a zmiany są tracone?",
@@ -3569,7 +3569,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Kompilator generuje plik wykonywalny/binarny a interpreter uruchamia kod. Interpretery są do języków skryptowych."
     },
     {
         "question":"Parsowanie jest częścią zarówno kompilatora jak i interpretera?",
@@ -3624,7 +3624,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"IDE to nie kompilator!"
     },
     {
         "question":"Dev C++ jest kompilatorem?",
@@ -3635,7 +3635,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"IDE to nie kompilator!"
     },
     {
         "question":"Który z wymienionych programów nie jest kompilatorem?",
@@ -3646,7 +3646,7 @@ const questions = [
         "a4": "clang",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"GDB to debugger dołączany do zestawu razem z GCC oraz G++"
     },
     {
         "question":"Który z wymienionych programów nie jest programem typu IDE?",
@@ -3657,7 +3657,7 @@ const questions = [
         "a4": "Code-Blocks",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"HXD to program typu hex editor."
     },
     {
         "question":"Kolejne etapy kompilacji to?",
@@ -3679,7 +3679,7 @@ const questions = [
         "a4": "analiza leksykalna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Interpreter wykonuje skrypt, więc nie generuje kodu maszynowego do pliku wykonywalnego."
     },
     //testy jednostkowe
     {
@@ -3768,7 +3768,7 @@ const questions = [
         "a4": "Udostępnia metody statyczne",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Assert to zestaw metod porównujących/testujących."
     },
     {
         "question":"TDD (Test Driven Development) to?",
@@ -3779,7 +3779,7 @@ const questions = [
         "a4": "Żadne z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"TDD to takie na pierwszy rzut oka dziwne podejście, które polega na tym by najpierw wymyślić test do nieistniejącego kodu a późnej sam kod. Jak się tego poużywa to nabiera to więcej sensu."
     },
     {
         "question":"W TDD najpierw piszemy testy a później testowany kod?",
@@ -3812,7 +3812,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Metody kontrolera przyjmują żądanie, wywołują jakąś logike i zwracają status lub widok. Testujemy bezpośrednio logikę."
     },
     {
         "question":"Każda metoda klasy powinna być przetestowana automatycznie?",
@@ -3823,7 +3823,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Im więcej testów tym lepiej. Ale nie testujemy prywatnych rzeczy oraz metod, które są trywialne."
     },
     {
         "question":"Da się przetestować bezpośrednio metody prywatne?",
@@ -3834,7 +3834,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie powinno się testować metod prywatnych bezpośrednio, co nie oznacza, że się nie da."
     },
     //wzorce i zasady programowania
     {
@@ -3846,7 +3846,7 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"DRY - Dont Repeat Yourself"
     },
     {
         "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprosztszej formie to?",
@@ -3857,7 +3857,7 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"KISS - Keep It Simple Stupid"
     },
     {
         "question":"Skrót zasady, mówiącej o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
@@ -3868,7 +3868,7 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"YAGNI - You Arent Gona Need It"
     },
     {
         "question":"Zbiór pięciu zasad dobrego kodu obiektowego to?",
@@ -4044,7 +4044,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API."
     },
     {
         "question":"Skrót ORM rozwija się?",
@@ -4121,7 +4121,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jak już coś odziedziczymy to nie da się tego \"oddziedziczyć\" i zmienić na coś innego. Jeżeli komponujemy zależności klasy to możemy je zmieniać za pomocą setterów i wsktrzykiwania zależności."
     },
     {
         "question":"UML to skrót od?",
@@ -4562,7 +4562,7 @@ const questions = [
         "a4": "HxDView",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Postman to wygodne narzędzie do testowania API."
     },
     {
         "question":"Programem do testowania REST API jest?",
@@ -4881,7 +4881,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Trzeba mocno weryfikować co jej podajemy, żeby ktoś nie wstrzyknął tam jakiegoś swojego kodu."
     },
     {
         "question":"W JS \"NaN\" jest typu?",
@@ -5866,7 +5866,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Np do metody FirstOrDefault() w Linq podajemy lambde, która jest predykatem (Predicate). "
     },
     {
         "question":"Jak przekazać callback do funkcji w C/C++?",
@@ -5965,7 +5965,7 @@ const questions = [
         "a4": "poczekaniu aż wątek zakończy działanie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli pracujemy na wielu wątkach, każdy z nich pracuje w swoim tempie. Jeżeli chcemy, żeby ze sobą gadły i wymieniały się danymi to musimy to zrobić w odpowiednim momencie. Nie chcemy pobrać z wątku wyniku, jeżeli wątek ten jest dopiero w połowie pętli."
     },
     {
         "question":"Które z poniższych stwierdzeń o procesie i wątku jest prawdziwe?",
@@ -5976,7 +5976,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Proces jest uruchamiany przez system z jednym wątkiem. Programista może uruchomić więcej wątków i robić z nimi co chce."
     },
     {
         "question":"Programista może programowo otworzyć wiele wątków w trakcie trawania programu?",
@@ -6020,7 +6020,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli wyjdziemy z funkcji main (program się zakończy) to każdy wątek jest zabijany."
     },
     {
         "question":"Od programisty zależy czy wątek główny poczeka na zakończenie wątków dodatkowych?",
@@ -6086,7 +6086,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Każdy proces dostaje swoją przestrzeń adresową. W każdej adres 0xA jest przypisany do innego fizycznego adresu."
     },
     {
         "question":"Biblioteką języka C++ do tworzenia wątków jest?",
@@ -6119,7 +6119,7 @@ const questions = [
         "a4": "wszystkie pozostałe",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeden wątek może zablokować mutex. Inne muszą czekać na swoją kolej. Dochodzi do wyścigu, kto pierwszy uzyska dostęp i zablokuje mutex."
     },
     {
         "question":"Adres 0xA w każdej aplikacji to inne miejsce w pamięci fizycznej?",
@@ -6130,7 +6130,7 @@ const questions = [
         "a4": "nie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Tak. Aplikacje dostają pamięć wirtualną, która jest realizowana za pomocą stronicowania. 4KB pamięci to jedna strona. Strona 5 dla procesu A to fizycznie strona 10, strona 5 dla procesu B to fizycznie strona 8."
     },
     {
         "question":"Rejestr procesora to?",
@@ -6196,7 +6196,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"System wszystko czyści. Wycieki są groźne tylko wtedy gdy proces działa ciągle np. w pętli. Tak czy inaczej zwalnianie pamięci jest wskazane."
     },
     {
         "question":"Rodzajem bramki logicznej nie jest?",
@@ -6295,7 +6295,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W transmisji synchronicznej w konfiguracji podaje się szybkość zegara. Jeden bit trwa tyle ile jeden cykl zegara."
     },
     {
         "question":"Transmisja asynchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
@@ -6306,7 +6306,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W transmisji asynchroncznej w konfiguracji podaje się długość trawnia bitu."
     },
     {
         "question":"W transmisji asynchronicznej występuje sygnał zegarowy?",
