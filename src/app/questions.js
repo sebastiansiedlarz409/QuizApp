@@ -1926,7 +1926,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Właściwości to konstrukcje z get/set. Pełnią one role getterów i setterów na pola."
     },
     {
         "question":"Interfejs to konstrukcja znana np. z języka C# Jest ona podobna do?",
@@ -1992,7 +1992,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Ma dostęp do elementów publicznych oraz chronionych."
     },
     {
         "question":"Klasy oferują możliwość przeciążania wszystkich operatorów?",
@@ -2003,7 +2003,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie da się przeciążyć operatora trynarnego ?:"
     },
     {
         "question":"Gdy argumentem funkcji jest struktura/obiekt?",
@@ -3640,9 +3640,9 @@ const questions = [
     {
         "question":"Który z wymienionych programów nie jest kompilatorem?",
         "url":"",
-        "a1": "gcc",
+        "a1": "gdb",
         "a2": "g++",
-        "a3": "gdb",
+        "a3": "gcc",
         "a4": "clang",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -6400,7 +6400,7 @@ const questions = [
         "question":"Dobierając RAM do komputera znaczenia nie ma?",
         "url":"",
         "a1": "moc zasilacza",
-        "a2": "chiset",
+        "a2": "chipset",
         "a3": "procesor",
         "a4": "płyta główna",
         "tag": "NIEOFICJALNE",
