@@ -4,7 +4,7 @@ function BottomBar(props){
     return( 
         <div className='bottom_bar'>
             <span className='bottom_bar_text'>Ilość dostępnych pytań: {props.questionsCount}</span>
-            <span className='bottom_bar_text_right'>Ostatnia zmiana: 22.09.2022 10:00</span>
+            <span className='bottom_bar_text_right'>Ostatnia zmiana: 22.09.2022 15:15</span>
         </div>
     );
 }

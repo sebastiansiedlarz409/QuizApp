@@ -1,11 +1,13 @@
 import './test_view.css';
 
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 
 import QuestionItem from './question_item';
 import ResultBar from './result_bar';
 
 function TestView(props){
+    const ref = useRef(null);
+
     //this is use to refresh test
     const [questions, setQuestions] = useState([]);
 
@@ -34,6 +36,7 @@ function TestView(props){
             }
             result = (count/question_count)*100;
             resultSetResult({"result":result, "count":count, "questions":question_count});
+            ref.current?.scrollIntoView({behavior: 'smooth'});
         }
     }
 
@@ -70,7 +73,7 @@ function TestView(props){
 
     return(
         <div id="top" className='test_view'>
-            <center>
+            <center ref={ref}>
                 <button className="button_style" onClick={() => {randomTest()}}>Losuj test!</button>
             </center>
             <div className='test'>
