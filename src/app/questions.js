@@ -8,7 +8,8 @@ const questions = [
         "a3": "char",
         "a4": "decimal",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"Typ \"bool\" jest natywnym typem do przechowywania wartości prawda/fałsz mimo, że równie dobrze moglibyśmy się posłużyć 0 i 1 np. w zmiennej całkowitej."
     },
     {
         "question":"Jaki typ służy do przechowywania wartości całkowitych z zakresu 0 do 255?",
@@ -18,7 +19,8 @@ const questions = [
         "a3": "char",
         "a4": "short",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"W pytaniu tym chodzi o zakresy typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255."
     },
     {
         "question":"Czy typy float i double są identyczne?",
@@ -28,7 +30,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":"Typ \"double\" przechowuje dane w 8bajtach a float tylko w 4."
     },
     {
         "question":"Czy typy decimal służy do zapisu liczb ułamkowych?",
@@ -38,7 +41,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy pętle do..while oraz while są identyczne?",
@@ -48,7 +52,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Strukturą FILO jest?",
@@ -58,7 +63,8 @@ const questions = [
         "a3": "Lista",
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"FILO - First In Last Out"
     },
     {
         "question":"Strukturą FIFO jest?",
@@ -68,7 +74,8 @@ const questions = [
         "a3": "Lista",
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"FIFO - First In First Out"
     },
     {
         "question":"Strukturą liniową (elementy nie są jeden za drugim w pamięci) NIE jest?",
@@ -78,7 +85,8 @@ const questions = [
         "a3": "Wektor",
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"Struktura liniowa - kolekcja, w której dane przechowywane są jeden za drugim w pamięci. W liście każdy element jest gdzie idziej w pamięci oraz posiada wskaźnik na poprzednika i następce."
     },
     {
         "question":"Definicją własnego typu jest?",
@@ -88,7 +96,8 @@ const questions = [
         "a3": "Struktura",
         "a4": "Tablica",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Typ wyliczeniowy to?",
@@ -98,7 +107,8 @@ const questions = [
         "a3": "tuple",
         "a4": "dictionary",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości."
     },
     {
         "question":"Jeżeli jako typ zwracany podamy \"void*\" oznacza to, że nic nie zwracamy?",
@@ -108,7 +118,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":"Void* to wskaźnik na typ nie określony. Funkcja taka zwraca wskaźnik."
     },
     {
         "question":"Jeżeli jako typ zwracany podamy \"void\" oznacza to, że nic nie zwracamy?",
@@ -118,7 +129,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Rozmiar typu int w pamięci to?",
@@ -128,7 +140,8 @@ const questions = [
         "a3": "2B",
         "a4": "8B",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Rozmiar typu unsigned long long w pamięci to?",
@@ -138,7 +151,8 @@ const questions = [
         "a3": "2B",
         "a4": "4B",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Rozmiar typu bool w pamięci to?",
@@ -148,7 +162,8 @@ const questions = [
         "a3": "2B",
         "a4": "8B",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wywołanie funkcji przez samą siebie to?",
@@ -158,7 +173,8 @@ const questions = [
         "a3": "Referencja",
         "a4": "Wyłuskanie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe pomijające bieżącą iterację to?",
@@ -168,7 +184,8 @@ const questions = [
         "a3": "return",
         "a4": "skip",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czy w funkcji zwracającej \"void\" można użyć słowa kluczowego return?",
@@ -178,7 +195,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":"Może. Po słowie return nie pada żadna wartość/zmienna."
     },
     {
         "question":"Adres w pamięci nazywany jest",
@@ -188,7 +206,8 @@ const questions = [
         "a3": "Delegatem",
         "a4": "Lambdą",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Instrukcja C++ \"cout\" znajduje się w namespace?",
@@ -198,7 +217,8 @@ const questions = [
         "a3": "stp",
         "a4": "system",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najnowszym wydanym standardem C++ jest?",
@@ -208,7 +228,8 @@ const questions = [
         "a3": "C++14",
         "a4": "C++11",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Dynamicznie linkowana biblioteka ma rozszerzenie?",
@@ -218,7 +239,8 @@ const questions = [
         "a3": ".exe",
         "a4": ".elf",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":"DLL - dynamic link library, LIB - statycznie linkowana biblioteka czyli tak, której zawartość jest doklejana do pliku EXE."
     },
     {
         "question":"W programie C/C++ może znajdować się więcej niż jedna funkcja main?",
@@ -228,7 +250,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Funkcja main w C/C++ przyjmuje jakieś parametry?",
@@ -238,7 +261,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe \"this\" w C/C++ jest wskaźnikiem?",
@@ -248,7 +272,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C/C++ możliwe jest umieszczenie w klasie tylko jednego destruktora?",
@@ -258,7 +283,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pusty nawias na parametry funckji oznacza brak parametrów w C?",
@@ -268,7 +294,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W strukurze C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -278,7 +305,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W klasie C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -288,7 +316,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C/C++ możliwe jest dziedziczenie z klasy abstrakcyjnej?",
@@ -298,7 +327,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?",
@@ -308,7 +338,8 @@ const questions = [
         "a3": "std::cout<<\"Hello world\";",
         "a4": "cout<<\"Hello world\";",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Komentarze jednolinijkowe w C/C++ rozpoczynamy od?",
@@ -318,7 +349,8 @@ const questions = [
         "a3": "\\\\",
         "a4": "#",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą klasy std::string zwracającą długość łańcuch tekstowego jest?",
@@ -328,7 +360,8 @@ const questions = [
         "a3": "size()",
         "a4": "count()",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Łańcuch tekstowy w C/C++ może zostać umieszczony między apostrofami?",
@@ -338,7 +371,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     }, 
     {
         "question":"Klasa std::string przeciąża operator []?",
@@ -348,7 +382,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
@@ -358,7 +393,8 @@ const questions = [
         "a3": "MyClass myObj = MyClass();",
         "a4": "MyClass* myObj = MyClass();",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatory & oraz && są równoznaczne?",
@@ -368,7 +404,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Instrukcje ++a oraz a++ są równoznaczne?",
@@ -378,7 +415,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Operatory ^ oraz ~ są równoznaczne?",
@@ -388,7 +426,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Operator ^ to operator potęgowania?",
@@ -398,7 +437,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe \"const\" oznacza stałą?",
@@ -408,7 +448,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Instrukcja \"#define\" służy do tworzenia makr preprocesora?",
@@ -418,7 +459,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Które słowo jest słowem kluczowym C/C++?",
@@ -428,7 +470,8 @@ const questions = [
         "a3": "peek",
         "a4": "broke",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operator _ wykonuje operację modulo",
@@ -438,7 +481,8 @@ const questions = [
         "a3": "!",
         "a4": "^",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem o najwyższym priorytecie w C++ jest",
@@ -448,7 +492,8 @@ const questions = [
         "a3": "operator statku kosmiczengo",
         "a4": "operator tryanrny ?:",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem o najniższym priorytecie w C++ jest",
@@ -458,7 +503,8 @@ const questions = [
         "a3": "::",
         "a4": "new",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem C++ nie jest",
@@ -468,7 +514,8 @@ const questions = [
         "a3": "delete",
         "a4": "sizeof",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operator _ wykonuje operację różnicy symetrycznej.",
@@ -478,7 +525,8 @@ const questions = [
         "a3": "!",
         "a4": "|",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Które słowo NIE jest słowem kluczowym C/C++?",
@@ -488,7 +536,8 @@ const questions = [
         "a3": "extern",
         "a4": "volatile",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Który rodzaj operatora wymaga trzech operandów?",
@@ -498,7 +547,8 @@ const questions = [
         "a3": "unarny",
         "a4": "żaden z powyższych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operator indeksowania to?",
@@ -508,7 +558,8 @@ const questions = [
         "a3": "{}",
         "a4": "<>",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operator statku kosmicznego to?",
@@ -518,7 +569,8 @@ const questions = [
         "a3": "<>",
         "a4": "><",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pliki źródłowe języka C++ mają rozszerzenie?",
@@ -528,7 +580,8 @@ const questions = [
         "a3": ".cs",
         "a4": ".h",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pliki źródłowe języka C mają rozszerzenie?",
@@ -538,7 +591,8 @@ const questions = [
         "a3": ".cs",
         "a4": ".cpp",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pliki nagłówkowe języka C/C++ mają rozszerzenie?",
@@ -548,7 +602,8 @@ const questions = [
         "a3": ".cs",
         "a4": ".cpp",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Błędnym składniowo zapisem w C/C++ jest?",
@@ -558,7 +613,8 @@ const questions = [
         "a3": "while(1){}",
         "a4": "while(!0){}",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pętlą dostępną w C/C++ nie jest?",
@@ -568,7 +624,8 @@ const questions = [
         "a3": "while",
         "a4": "do..while",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Typem nie dostępnym w C/C++ jest?",
@@ -578,7 +635,8 @@ const questions = [
         "a3": "char",
         "a4": "void",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kompilatorem języka C/C++ nie jest?",
@@ -588,7 +646,8 @@ const questions = [
         "a3": "Visual C++",
         "a4": "Clang",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Język C++ jest nadzbiorem języka C?",
@@ -598,7 +657,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Wartość \"NULL\" to?",
@@ -608,7 +668,8 @@ const questions = [
         "a3": "specjalna wartość języka",
         "a4": "pusta wartość",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość \"nullptr\" to dokładnie to samo co \"NULL\"?",
@@ -618,7 +679,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Zapis \"const char* a;\" oraz \"char* const a\" są równoznaczne?",
@@ -628,7 +690,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia \"'A'+10\" w C/C++ wynosi?",
@@ -638,7 +701,8 @@ const questions = [
         "a3": "75",
         "a4": "0x4B",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia \"'0'+1\" wynosi?",
@@ -648,7 +712,8 @@ const questions = [
         "a3": "0x1",
         "a4": "0b1",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia \"!true\" w C/C++ jest równoznaczna?",
@@ -658,7 +723,8 @@ const questions = [
         "a3": "true",
         "a4": "undefined",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia \"1&&0\" w C/C++ jest równoznaczna?",
@@ -668,7 +734,8 @@ const questions = [
         "a3": "true",
         "a4": "1",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Ile razy wykona się pętla \"while(999999)\" w C/C++?",
@@ -678,7 +745,8 @@ const questions = [
         "a3": "1",
         "a4": "999999",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zakładając, że \"int a = 2;\" wartość przypisana do zmiennej wynosi \"int b = a++;\"?",
@@ -688,7 +756,8 @@ const questions = [
         "a3": "0",
         "a4": "wystąpi błąd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zakładając, że \"int a = 2;\" wartość przypisana do zmiennej wynosi \"int b = ++a;\"?",
@@ -698,7 +767,8 @@ const questions = [
         "a3": "0",
         "a4": "wystąpi błąd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Struktura i unia w C/C++ to to samo?",
@@ -708,7 +778,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe new alokuje pamięć w miejscu określanym mianem?",
@@ -718,7 +789,8 @@ const questions = [
         "a3": "mapy",
         "a4": "zbioru",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Referencja to to samo co wskaźnik?",
@@ -728,7 +800,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Kontenerem STL, najbardziej podobnym do tablicy jest?",
@@ -738,7 +811,8 @@ const questions = [
         "a3": "std::queue",
         "a4": "std::deque",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kontenerem STL w przypadku, którego dane dodajemy na koniec a pobieramy z frontu?",
@@ -748,7 +822,8 @@ const questions = [
         "a3": "std::stack",
         "a4": "std::deque",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Iterator to obiekt, który ułatwia przemieszczanie się po kontenerze?",
@@ -758,7 +833,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pliki nagłówkowe pochodzące z języka C w mogą być używane w C++?",
@@ -768,7 +844,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W języku C i C++ możliwe jest pobranie adresu funckji i zapisanie go we wskaźniku?",
@@ -778,7 +855,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Operatorem bitowym nie jest?",
@@ -788,7 +866,8 @@ const questions = [
         "a3": "|",
         "a4": "^",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem logicznym nie jest?",
@@ -798,7 +877,8 @@ const questions = [
         "a3": "||",
         "a4": "!",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem logicznym nie jest?",
@@ -808,7 +888,8 @@ const questions = [
         "a3": ">=",
         "a4": "<",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem zasięgu jest?",
@@ -818,7 +899,8 @@ const questions = [
         "a3": "->",
         "a4": ".",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem trynarnym jest?",
@@ -828,7 +910,8 @@ const questions = [
         "a3": "->",
         "a4": "<=>",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem unarnym jest?",
@@ -838,7 +921,8 @@ const questions = [
         "a3": "<=",
         "a4": "==",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Ile bitów potrzebne jest by zakodować 8 wartości?",
@@ -848,7 +932,8 @@ const questions = [
         "a3": "8",
         "a4": "1",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Ile unikalnych wartości zakodować można w bajcie?",
@@ -858,7 +943,8 @@ const questions = [
         "a3": "0xFF",
         "a4": "0x1",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czy kod: \"int size = 10; int tablica[size];\" jest poprawny?",
@@ -868,7 +954,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy kod: \"int size = 10; int* tablica = new int[size];\" jest poprawny?",
@@ -878,7 +965,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?",
@@ -888,7 +976,8 @@ const questions = [
         "a3": "wystąpi błąd runtime",
         "a4": "nic się nie stanie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Który z typów jest niedostępny w języku C?",
@@ -898,7 +987,8 @@ const questions = [
         "a3": "char",
         "a4": "short",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Do rzucania wyjątków w C++ służy słowo kluczowe?",
@@ -908,7 +998,8 @@ const questions = [
         "a3": "raise",
         "a4": "catch",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Konstruktor kopiujący jest automatycznie generowany przez kompilator w C++?",
@@ -918,7 +1009,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Konstruktor posiada typ zwracany?",
@@ -928,7 +1020,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Metoda oznaczona jako \"friend\" ma dostęp do prywatnych pól klasy?",
@@ -938,7 +1031,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pola oznaczone w klasie jako chronione są dziedziczone w C++?",
@@ -948,7 +1042,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Struktura w C i C++ działa tak samo i ma te same możliwości?",
@@ -958,7 +1053,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C++ każda zmienna domyslnie przekazywana jest przez wartość?",
@@ -968,7 +1064,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Konstruktor kopiujący powinien przyjmować obiekt kopiowany jako referencje na stałą \"const T&\"?",
@@ -978,7 +1075,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C++ każda definicja klasy musi być zakończona nie tylko klamrą, ale też średnikiem?",
@@ -988,7 +1086,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"C++ oferuje mechanizm null safety?",
@@ -998,7 +1097,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"C++ jest językiem interpretowanym?",
@@ -1008,7 +1108,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Do czego służy nawias [] w deklaracji funckji lambda (C++)?",
@@ -1018,7 +1119,8 @@ const questions = [
         "a3": "do deklaracji ciała funckji",
         "a4": "do niczego konkretnego",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Instrukcja \"mov eax, ebx\"?",
@@ -1028,7 +1130,8 @@ const questions = [
         "a3": "kopiuje zawartość eax do ebx",
         "a4": "przenosi zawartość eax do ebx",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Każda rodzina procesorów ma własny zestaw instrukcji?",
@@ -1038,7 +1141,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Komputer 32 bitowy może zaadresować tylko 4GB pamięci?",
@@ -1048,7 +1152,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pętla \"while(file->EOF){}\" będzie wykonywać się do momentu?",
@@ -1058,7 +1163,8 @@ const questions = [
         "a3": "aż wskaźnik pozycji w pliku wskaże koniec aktualnej linii",
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C++ wartość liczbową można wypisać w systemie szesnastkowym za pomocą \"cout\":",
@@ -1068,7 +1174,8 @@ const questions = [
         "a3": "std::cout << std::oct << n << '\\n';",
         "a4": "std::cout << std::bin << n << '\\n';",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //numeric systems
     {
@@ -1079,7 +1186,8 @@ const questions = [
         "a3": "0b00110011",
         "a4": "0b01010101",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Liczba 0xFF to w systemie binarnym?",
@@ -1089,7 +1197,8 @@ const questions = [
         "a3": "0b10111011",
         "a4": "0b01000100",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Liczba 256 to w systemie szesnastkowym?",
@@ -1099,7 +1208,8 @@ const questions = [
         "a3": "0x100",
         "a4": "0x255",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Liczba 0b10000000 to w systemie szesnastkowym?",
@@ -1109,7 +1219,8 @@ const questions = [
         "a3": "0x88",
         "a4": "0x89",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jeżeli najmniej znaczący bit w liczbie jest ustawiony na 1 to liczba jest parzysta.",
@@ -1119,7 +1230,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Liczba \"char a = -1\" to w systemie binarnym?",
@@ -1129,7 +1241,8 @@ const questions = [
         "a3": "0b01111111",
         "a4": "0b00000001",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0b10100000>>4 to?",
@@ -1139,7 +1252,8 @@ const questions = [
         "a3": "0b00000010",
         "a4": "0b00000001",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0b10110000<<2 to?",
@@ -1149,7 +1263,8 @@ const questions = [
         "a3": "0b11000010",
         "a4": "0b00001011",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xA0>>4 to?",
@@ -1159,7 +1274,8 @@ const questions = [
         "a3": "0x00",
         "a4": "0xA0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xABCDEF98<<8 to?",
@@ -1169,7 +1285,8 @@ const questions = [
         "a3": "0xBCDEF98A",
         "a4": "0x00ABCDEF",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 8>>1 to?",
@@ -1179,7 +1296,8 @@ const questions = [
         "a3": "3",
         "a4": "1",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 2<<3 to?",
@@ -1189,7 +1307,8 @@ const questions = [
         "a3": "32",
         "a4": "64",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 2^5 (potęga) to?",
@@ -1199,7 +1318,8 @@ const questions = [
         "a3": "16",
         "a4": "13",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 2^10 to?",
@@ -1209,7 +1329,8 @@ const questions = [
         "a3": "512",
         "a4": "0xFF",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0b10100000&0b1 to?",
@@ -1219,7 +1340,8 @@ const questions = [
         "a3": "2",
         "a4": "0b10100000",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xFF&0x80 to?",
@@ -1229,7 +1351,8 @@ const questions = [
         "a3": "128",
         "a4": "0x80",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xFF|0x00 to?",
@@ -1239,7 +1362,8 @@ const questions = [
         "a3": "0x0F",
         "a4": "0xF0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0b10101010|0b01010000 to?",
@@ -1249,7 +1373,8 @@ const questions = [
         "a3": "0x10101111",
         "a4": "0x10101010",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0b00000001|0b1 to?",
@@ -1259,7 +1384,8 @@ const questions = [
         "a3": "0x00000011",
         "a4": "0x00000001",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia ~0xF0 to?",
@@ -1269,7 +1395,8 @@ const questions = [
         "a3": "0x0F",
         "a4": "15",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0x10101010^0b11110000 to?",
@@ -1279,7 +1406,8 @@ const questions = [
         "a3": "0b10100000",
         "a4": "0b10101010",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xF&&0x0 w C/C++ to?",
@@ -1289,7 +1417,8 @@ const questions = [
         "a3": "fałsz",
         "a4": "0x0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xFFAABBCC || 0x00000001 to?",
@@ -1299,7 +1428,8 @@ const questions = [
         "a3": "0",
         "a4": "0xFFAABBCD",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia !0b111111110 to?",
@@ -1309,7 +1439,8 @@ const questions = [
         "a3": "1",
         "a4": "0xE",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia 0xDEADC0DE jest zapisana w systemie oznaczanym jako?",
@@ -1319,7 +1450,8 @@ const questions = [
         "a3": "OCT",
         "a4": "BIN",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wartość wyrażenia \"0xDEADC0DE == DEADC0DEh\" to?",
@@ -1329,7 +1461,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Kodowanie liczb ujemnych odbywa się za pomocą metody",
@@ -1339,7 +1472,8 @@ const questions = [
         "a3": "Znak moduł",
         "a4": "IEEE 754",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kodowanie liczb zmiennoprzecinkowych odbywa się za pomocą standardu",
@@ -1349,7 +1483,8 @@ const questions = [
         "a3": "IEEE 1394",
         "a4": "U2",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jeżeli najstarszy bit liczby \"signed\" jest ustawiony na 1 to liczba jest?",
@@ -1359,7 +1494,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli najstarszy bit liczby \"unsigned\" jest ustawiony na 1 to liczba jest?",
@@ -1369,7 +1505,8 @@ const questions = [
         "a3": "ujemna",
         "a4": "parzysta",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //algorytmy
     {
@@ -1380,7 +1517,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Przykładem algorytmu typu dziel i zwyciężaj jest?",
@@ -1390,7 +1528,8 @@ const questions = [
         "a3": "alg. dijkstra",
         "a4": "alg kruskala",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Przykładem algorytmu zachłannego jest?",
@@ -1400,7 +1539,8 @@ const questions = [
         "a3": "select-sort",
         "a4": "quick-sort",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Maksymalny rząd wierzchołka grafu na obrazku to?",
@@ -1410,7 +1550,8 @@ const questions = [
         "a3": "1",
         "a4": "0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
@@ -1420,7 +1561,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
@@ -1430,7 +1572,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy graf na obrazku da się utworzyć cykl komiwojazera?",
@@ -1440,7 +1583,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
@@ -1450,7 +1594,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy na obrazku kolorem czerwonym zaznaczono krawędź?",
@@ -1460,7 +1605,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
@@ -1470,7 +1616,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Algorytmem grafowym nie jest?",
@@ -1480,7 +1627,8 @@ const questions = [
         "a3": "Algorytm Kruskala",
         "a4": "Algorytm Prima",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Cykl, który musi przejśc po wszystkich krawędziach grafu jest?",
@@ -1490,7 +1638,8 @@ const questions = [
         "a3": "Cykl Komiwojazera",
         "a4": "Żaden z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?",
@@ -1500,7 +1649,8 @@ const questions = [
         "a3": "Równoległoboku",
         "a4": "Trójkąta",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najgorszą z punktu widzenia wydajności złożonością algorytmu jest?",
@@ -1510,7 +1660,8 @@ const questions = [
         "a3": "O(1)",
         "a4": "O(n)",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najlepszą z punktu widzenia wydajności złożonością algorytmu jest?",
@@ -1520,7 +1671,8 @@ const questions = [
         "a3": "O(n^3)",
         "a4": "O(nlogn)",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bloczek z ilustracji to blok?",
@@ -1530,7 +1682,8 @@ const questions = [
         "a3": "petli",
         "a4": "wejścia-wyjścia",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Algorytm można przedstawić za pomocą?",
@@ -1540,7 +1693,8 @@ const questions = [
         "a3": "Tylko pseudokodem",
         "a4": "Tylko schematem blokowym",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Co oznacza bloczek na obrazku?",
@@ -1550,7 +1704,8 @@ const questions = [
         "a3": "Łącznik",
         "a4": "Dołączenie podprogramu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Rodzajem algorytmu nie jest?",
@@ -1560,7 +1715,8 @@ const questions = [
         "a3": "alg. iteracyjny",
         "a4": "alg. rekurencyjny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Algorytm na obrazku to?",
@@ -1570,7 +1726,8 @@ const questions = [
         "a3": "alg. blokowy",
         "a4": "alg. rekurencyjny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najpopularniejszym sposobem zapisu grafu w programie jest tablica 2D?",
@@ -1580,7 +1737,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //programowanie obiektowe
     {
@@ -1591,7 +1749,8 @@ const questions = [
         "a3": "Polimorfizm",
         "a4": "Przyjaźń",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wielopostaciowość nazywana jest?",
@@ -1601,7 +1760,8 @@ const questions = [
         "a3": "Abstrakcją",
         "a4": "Wirtualizacją",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zależnością klasy jest?",
@@ -1611,7 +1771,8 @@ const questions = [
         "a3": "Każda metoda klasy",
         "a4": "Żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda abstrakcyjna musi być zaimplementowana przez klasę dziedziczącą?",
@@ -1621,7 +1782,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Można utworzyć obiekt klasy abstrakcyjnej?",
@@ -1631,7 +1793,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Można utworzyć referencje typu klasy abstrakcyjnej?",
@@ -1641,7 +1804,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Z ilu klas może dziedziczyć klasa w C#/Java/Python?",
@@ -1651,7 +1815,8 @@ const questions = [
         "a3": "dowolnej ilości",
         "a4": "0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Z ilu klas może dziedziczyć klasa w C++?",
@@ -1661,7 +1826,8 @@ const questions = [
         "a3": "1",
         "a4": "0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Przekazywanie zależności do klasy poprzez konstruktor nazywamy?",
@@ -1671,7 +1837,8 @@ const questions = [
         "a3": "dziedziczeniem zależności",
         "a4": "żadnym z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Obiekt klasy może być przekazany do funckji przez (C++)?",
@@ -1681,7 +1848,8 @@ const questions = [
         "a3": "wartość/referencje",
         "a4": "wartość",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda ustawiająca prywatne pole to?",
@@ -1691,7 +1859,8 @@ const questions = [
         "a3": "metoda wirtualna",
         "a4": "metoda abstrakcyjna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Konstruktor?",
@@ -1701,7 +1870,8 @@ const questions = [
         "a3": "lista argumentów musi być zawsze pusta",
         "a4": "a dostęp tylko do danych prywatnych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operacje powodujące wystąpienie wyjątku",
@@ -1711,7 +1881,8 @@ const questions = [
         "a3": "powinny być umieszczone w bloku throw",
         "a4": "powinny być umieszczone w bloku catch",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jak nazywamy składniki, z których zbudowane są obiekty?",
@@ -1721,7 +1892,8 @@ const questions = [
         "a3": "Metody i funkcje",
         "a4": "Funkcje i stałe",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Na czym polega hermetyzacja?",
@@ -1731,7 +1903,8 @@ const questions = [
         "a3": "Na zabezpieczaniu składników klasy przed niepotrzebnym zajmowaniem pamięci",
         "a4": "Na deklarowaniu obiektów danej klasy przy pomocy metod wirtualnych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Na czym polega dziedziczenie w programowaniu obiektowym?",
@@ -1741,7 +1914,8 @@ const questions = [
         "a3": "Na kopiowaniu cech obiektu przez metodę wirtualną",
         "a4": "Na usunięciu z istniejącej klasy zbędnych elementów",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czy pole i właściwość w terminologi C# to to samo?",
@@ -1751,7 +1925,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Interfejs to konstrukcja znana np. z języka C# Jest ona podobna do?",
@@ -1761,7 +1936,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Programowanie strukturalne i funkcyjne to to samo?",
@@ -1771,7 +1947,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Obiekt to instancja klasy?",
@@ -1781,7 +1958,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe \"sealed\" w C# blokuje możliwość dziedziczenia z klasy?",
@@ -1791,7 +1969,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe \"virtual\" oznacza metodę jako zależną od typu obiektu a nie typu referencji?",
@@ -1801,7 +1980,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?",
@@ -1811,7 +1991,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Klasy oferują możliwość przeciążania wszystkich operatorów?",
@@ -1821,7 +2002,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Gdy argumentem funkcji jest struktura/obiekt?",
@@ -1831,7 +2013,8 @@ const questions = [
         "a3": "funkcja może zmienić tylko kopię struktury/obiektu",
         "a4": "żadna z pozostałych odpowiedzi nie jest poprawna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jaką klasę nazywamy abstrakcyjną?",
@@ -1841,7 +2024,8 @@ const questions = [
         "a3": "Zawierającą wszystkie trzy specyfikatory dostępu",
         "a4": "Zawierającą 2 wersje przeciążonego konstruktora",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda wirtualna…",
@@ -1851,7 +2035,8 @@ const questions = [
         "a3": "Nigdy nie jest dziedziczona",
         "a4": "Zawsze korzysta z rekurencji",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda czysto wirtualna…",
@@ -1861,7 +2046,8 @@ const questions = [
         "a3": "Nigdy nie jest dziedziczona",
         "a4": "Zawsze korzysta z rekurencji",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jak wywołać metodę obiekty za pomocą wskaźnika?",
@@ -1871,7 +2057,8 @@ const questions = [
         "a3": "metoda->wskaźnik();",
         "a4": "metoda.wskaźnik();",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Na czym polega polimorfizm?",
@@ -1881,7 +2068,8 @@ const questions = [
         "a3": "Klasy pochodne są czysto abstrakcyjne",
         "a4": "Wskaźnik klasy bazowej jest dziedziczony przez klasy pochodne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czy klasa pochodna dziedziczy z klasy bazowej konstruktor?",
@@ -1891,7 +2079,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy klasa pochodna dziedziczy z klasy bazowej destruktor?",
@@ -1901,7 +2090,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy elementy statyczne klasy mają dostęp do elementów niestatycznych?",
@@ -1911,7 +2101,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy elementy niestatyczne klasy mają dostęp do elementów statycznych?",
@@ -1921,7 +2112,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy setter może wykonywać dodatkową logikę oprócz ustawiania pola?",
@@ -1931,7 +2123,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy getter może wykonywać dodatkową logikę oprócz zwracania pola?",
@@ -1941,7 +2134,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy klasa może dziedziczyć sama z siebie?",
@@ -1951,7 +2145,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy interfejs może zawierać pola?",
@@ -1961,7 +2156,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy słowo kluczowe this może mieć wartość NULL?",
@@ -1971,7 +2167,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy słowa kluczowego \"this\" można użyć w metodzie statycznej?",
@@ -1981,7 +2178,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy klasa może dziedziczyć sama z siebie?",
@@ -1991,7 +2189,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Ile pól zawiera klasa na obrazku?",
@@ -2001,7 +2200,8 @@ const questions = [
         "a3": "1",
         "a4": "3",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Językiem obsługującym wieloklasowe dziedziczenie jest?",
@@ -2011,7 +2211,8 @@ const questions = [
         "a3": "C#",
         "a4": "Javascript",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Cztery filary programowania obiektowego to?",
@@ -2021,7 +2222,8 @@ const questions = [
         "a3": "Public, Protected, Private, Implementation",
         "a4": "Constructor, Destructor, Abstractor, Iterator",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W języku Java mamy operator == oraz funkcję equals(). Na czym polega różnica między nimi w C#/Java?",
@@ -2031,7 +2233,8 @@ const questions = [
         "a3": "Obie metody porównania są identyczne",
         "a4": "Operator == to skrócona wersja Equals()",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najważniejszą cechą klasy abstrakcyjnej jest:",
@@ -2041,7 +2244,8 @@ const questions = [
         "a3": "Brak nazwy klasy.",
         "a4": "Utrudnione kopiowanie obiektów tej klasy.",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //C#
     {
@@ -2052,7 +2256,8 @@ const questions = [
         "a3": "Meta",
         "a4": "Apple",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Język C# jest podobny do języka?",
@@ -2062,7 +2267,8 @@ const questions = [
         "a3": "C",
         "a4": "C++",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Każdy program napisany w C# musi mieć funkcję main?",
@@ -2072,7 +2278,8 @@ const questions = [
         "a3": "Każdy oprócz programu webowego",
         "a4": "Każdy oprócz programu konsolowego",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"C# oferuje obsługę wskaźników?",
@@ -2082,7 +2289,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# funkcja main jest statyczna?",
@@ -2092,7 +2300,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# typy referencyjne są usuwane z pamięci manualnie przez programistę?",
@@ -2102,7 +2311,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# typy referencyjne są usuwane z pamięci przez garbage collector?",
@@ -2112,7 +2322,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Plik źródłowy języka C# ma rozszerzenie?",
@@ -2122,7 +2333,8 @@ const questions = [
         "a3": ".c",
         "a4": ".sc",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# da się napisać metodę poza klasą?",
@@ -2132,7 +2344,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# da się napisać klasę w klasie?",
@@ -2142,7 +2355,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Typem z języka C# niedostępnym w innych językach jest?",
@@ -2152,7 +2366,8 @@ const questions = [
         "a3": "bool",
         "a4": "StringBuilder",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Każda zmienna w C# przekazywana jest przez wartość do funkcji itp?",
@@ -2162,7 +2377,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# klasy i struktury są równoznaczne i zachowują się tak samo?",
@@ -2172,7 +2388,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Struktura definuje typ referencyjny w języku C#?",
@@ -2182,7 +2399,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# \"Console.Write()\" wstawia enter na końcu?",
@@ -2192,7 +2410,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Klasa definuje typ referencyjny w języku C#?",
@@ -2202,7 +2421,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Delegaty w C# to mechanizm podobny do wskaźników na funkcję?",
@@ -2212,7 +2432,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Delegaty w C# to typy referencyjne?",
@@ -2222,7 +2443,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# delegat \"Func<int, double, bool>\" zwraca?",
@@ -2232,7 +2454,8 @@ const questions = [
         "a3": "int",
         "a4": "nic",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# delegat \"Action<string, int, int>\" zwraca?",
@@ -2242,7 +2465,8 @@ const questions = [
         "a3": "int",
         "a4": "string",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -2252,7 +2476,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Delegat C# \"Predicate<int> DodatnieDelegat = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -2262,7 +2487,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# delegat \"Predicate<int>\" zwraca?",
@@ -2272,7 +2498,8 @@ const questions = [
         "a3": "int",
         "a4": "nic",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Typem danych wykorzystywanym do precyzyjnego przechowywania liczb ułamkowych w C# jest?",
@@ -2282,7 +2509,8 @@ const questions = [
         "a3": "float",
         "a4": "dynamic",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Istnieje w C# różnica między zmienną typu \"var\" a \"dynamic\"?",
@@ -2292,7 +2520,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Istnieje w C# różnica między zmienną typu \"const\" a \"readonly\"?",
@@ -2302,7 +2531,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Oznaczenie w C# klasy jako \"sealed\" blokuje możliwość dziedziczenia z niej?",
@@ -2312,7 +2542,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli chcemy w C# parsować na double string z liczbą ułamkową to ma znaczenie czy użyjemy w niej kropki czy przecinka?",
@@ -2322,7 +2553,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby poznać długość stringa w C# należy posłużyć się?",
@@ -2332,7 +2564,8 @@ const questions = [
         "a3": ".Count",
         "a4": ".Count()",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Konstrukcja alokująca tablicę w C# to?",
@@ -2342,7 +2575,8 @@ const questions = [
         "a3": "int[] tablica = new int(5);",
         "a4": "int tablica[] = new int(5);",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Konstrukcja alokująca tablicę 2D w C# to?",
@@ -2352,7 +2586,8 @@ const questions = [
         "a3": "int[][] tablica2 = new int[5,2];",
         "a4": "int[][] tablica2 = new[5][2] int;",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Tablica postrzępiona w C# to?",
@@ -2362,7 +2597,8 @@ const questions = [
         "a3": "Tablica 2D gdzie każda podtablica ma nieparzystą ilość elementów",
         "a4": "Każda tablica",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"String w C# jest typem referencyjnym?",
@@ -2372,7 +2608,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Rekord w C# to?",
@@ -2382,7 +2619,8 @@ const questions = [
         "a3": "niemutowalny byt podobny do klasy, który przechowuje tylko metody",
         "a4": "mutowalny byt podobny do klasy, który przechowuje tylko dane we właściwościach",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Tablica w C# jest typem referencyjnym?",
@@ -2392,7 +2630,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"List<T> w C# jest typem referencyjnym?",
@@ -2402,7 +2641,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Span<T> w C# jest typem referencyjnym?",
@@ -2412,7 +2652,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Enum w C# jest typem referencyjnym?",
@@ -2422,7 +2663,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# typy referencyjne alokowane są na stercie a wartościowe na stosie?",
@@ -2432,7 +2674,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# referencja na typ referencyjny i tak jest na stosie?",
@@ -2442,7 +2685,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# typ wartościowy staje się typem referencyjnym jeżeli jest składową typu referencyjnego?",
@@ -2452,7 +2696,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Boxing to proces sztuczengo opakowania typu wartościowego w typ referencyjny?",
@@ -2462,7 +2707,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Właściwość w C# to odpowiednik gettera i settera z innych języków?",
@@ -2472,7 +2718,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję get to jest tylko getterem?",
@@ -2482,7 +2729,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję set to jest tylko setterem?",
@@ -2492,7 +2740,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli właściwość w C# ma słowo kluczowe \"init\" w miejscu \"set\" oznacza to, że może ona być użyta jako setter raz w czasie inicjalizacji?",
@@ -2502,7 +2751,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Mechanizm pozwalający programowi czytać inforamcje o samym sobie to?",
@@ -2512,7 +2762,8 @@ const questions = [
         "a3": "Asemblacja",
         "a4": "Instancjonowanie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Mechanizm pozwalający pisać w C# wydajne zapytania do kolekcji nazywany jest?",
@@ -2522,7 +2773,8 @@ const questions = [
         "a3": "Enumerator",
         "a4": "Enumerable",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klasa w C# służąca do tworznia stringów to?",
@@ -2532,7 +2784,8 @@ const questions = [
         "a3": "String",
         "a4": "Strings",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"List<T> w C# nie dziedziczy z?",
@@ -2542,7 +2795,8 @@ const questions = [
         "a3": "IEnumerable",
         "a4": "ICollection",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Parametry generyczne umieszczamy zazwyczaj w?",
@@ -2552,7 +2806,8 @@ const questions = [
         "a3": "[]",
         "a4": "{}",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# interfejsy nazywa się zaczynając od litery I?",
@@ -2562,7 +2817,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# List<T> nie różni się niczym od zwykłej tablicy?",
@@ -2572,7 +2828,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# ArrayList oraz tablica to to samo?",
@@ -2582,7 +2839,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Metoda LINQ First() działa tak samo jak FirstOrDefault()?",
@@ -2592,7 +2850,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# List<T> to to samo co IEnumerable<T>?",
@@ -2602,7 +2861,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Do czego służy metoda ToString() w C#?",
@@ -2612,7 +2872,8 @@ const questions = [
         "a3": "Zwrócenia nazwy obiektu",
         "a4": "Zwrócenia typu obiektu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda klasy string, która sprawdza czy napis jest nullem lub jest pusty to?",
@@ -2622,7 +2883,8 @@ const questions = [
         "a3": "IsEmpty()",
         "a4": "IsNull()",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Gdy \"a = null\" instrukcja \"Console.WriteLine(a is { });\" wypisze?",
@@ -2632,7 +2894,8 @@ const questions = [
         "a3": "0",
         "a4": "kompilacja skończy się błędem",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
@@ -2642,7 +2905,8 @@ const questions = [
         "a3": "extern",
         "a4": "static",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe języka C# \"async\" w nagłówku funkcji oznacza?",
@@ -2652,7 +2916,8 @@ const questions = [
         "a3": "funkcję wywołania zwrotnego",
         "a4": "funckję dotykającą UI",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe języka C# \"await\" automatycznie powoduje?",
@@ -2662,7 +2927,8 @@ const questions = [
         "a3": "że metoda otwiera w danym miejscu połączenie sieciowe",
         "a4": "że metoda staje się synchroniczną",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# typem zwracanym z metod asynchronicznych jest?",
@@ -2672,7 +2938,8 @@ const questions = [
         "a3": "Promise<T>",
         "a4": "Thread<T>",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Język C# kompilowany jest w pierwszej kolejności do _ a dopiero później do kodu maszynowego?",
@@ -2682,7 +2949,8 @@ const questions = [
         "a3": "Opcodes",
         "a4": "Abstract Syntax Tree",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Typy wartościowe można przekazać w formie referencji za pomocą?",
@@ -2692,7 +2960,8 @@ const questions = [
         "a3": "słowa kluczowego \"out\"",
         "a4": "boxingu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# konwencja nazw stosuje zazwyczaj?",
@@ -2702,7 +2971,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Skrót \"WPF\" oznacza?",
@@ -2712,7 +2982,8 @@ const questions = [
         "a3": "Windows Presentation Framework",
         "a4": "Windows Power Foundation",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Frameworkiem do tworzenia stron interentowych powiązanym z C# nie jest?",
@@ -2722,7 +2993,8 @@ const questions = [
         "a3": "Blazor",
         "a4": "Razor",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Xamarin pozwal tworzyć aplikację na?",
@@ -2732,7 +3004,8 @@ const questions = [
         "a3": "iOS oraz Windows Phone",
         "a4": "Tylko Windows Phone",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Popularną klasą C# odpowiedzialną za operacje komunikacji z REST API jest?",
@@ -2742,7 +3015,8 @@ const questions = [
         "a3": "HttpOk",
         "a4": "Socket",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Aby użyć wskaźników w C# należy oznaczyć funkcję słowem kluczowym?",
@@ -2752,7 +3026,8 @@ const questions = [
         "a3": "virtual",
         "a4": "static",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klasą nadrzędną dla wyjątków w C# jest?",
@@ -2762,7 +3037,8 @@ const questions = [
         "a3": "Except",
         "a4": "Error",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pojęcie statycznego polimorfizmu oznacza?",
@@ -2772,7 +3048,8 @@ const questions = [
         "a3": "Dziedziczenie",
         "a4": "Wielokrotne dziedziczenie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
@@ -2782,7 +3059,8 @@ const questions = [
         "a3": "extern",
         "a4": "static",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Referencja w porównaniu do wskaźnika?",
@@ -2792,7 +3070,8 @@ const questions = [
         "a3": "jest konstrukcją składniową",
         "a4": "oznacza obiekt jako stałą",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Która pętla nie jest dostępna w C#?",
@@ -2802,7 +3081,8 @@ const questions = [
         "a3": "while(a > 0) {}",
         "a4": "for(int i = 0;i<10;i++){}",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Breakpoint pozwala?",
@@ -2812,7 +3092,8 @@ const questions = [
         "a3": "zakończyć nagle pętle",
         "a4": "zakończyć nagle funkcję",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Adres w pamięci ma każdy?",
@@ -2822,7 +3103,8 @@ const questions = [
         "a3": "kilobajt",
         "a4": "megabajt",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"C# obsługuje mechanizm null-safety?",
@@ -2832,7 +3114,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Skrót LINQ oznacza?",
@@ -2842,7 +3125,8 @@ const questions = [
         "a3": "Lazy Integration Query",
         "a4": "Linked Integrated Query",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metoda rozszerzająca to metoda?",
@@ -2852,7 +3136,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Na obrazku zaznaczono",
@@ -2862,7 +3147,8 @@ const questions = [
         "a3": "tagi",
         "a4": "tokeny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# za operacje na plikach odpowiada między innymi klasa \"File\"?",
@@ -2872,7 +3158,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# wyjątek \"DirectoryNotFoundException\" rzucany np. przez \"File.Create()\" oznacza?",
@@ -2882,7 +3169,8 @@ const questions = [
         "a3": "ścieżka jest nullem",
         "a4": "plik już istnieje",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W C# za operacje na katalogach odpowiada między innymi klasa \"Directory\"?",
@@ -2892,7 +3180,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Dobrą praktyką jest sprawdzenie czy katalog/plik istnieje przed wykonaniem na nim operacji?",
@@ -2902,7 +3191,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy deklarowanie zmiennych jako \"var\" w C# to dobra praktyka?",
@@ -2912,7 +3202,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# występuje pojęcie przestrzeni nazw?",
@@ -2922,7 +3213,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# wyjątek \"NullReferenceException\" oznacza, że?",
@@ -2932,7 +3224,8 @@ const questions = [
         "a3": "zmienna wartościowa, na której wykonaliśmy operację jest nullem",
         "a4": "zmienna wartościowa, na której wykonaliśmy operację jest 0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //WPF i XAMARIN
     {
@@ -2943,7 +3236,8 @@ const questions = [
         "a3": "COLUMN",
         "a4": "ROW",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W WPF oraz Xamarin do elementów interfejsu odwołujemy się za pomocą?",
@@ -2953,7 +3247,8 @@ const questions = [
         "a3": "atrybutu class",
         "a4": "atrybutu title",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Język do budowania interfejsu użytkownika w WPF oraz Xamarin nazywa się?",
@@ -2963,7 +3258,8 @@ const questions = [
         "a3": "Blazor",
         "a4": "Razor",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Windows Forms to to samo co WPF?",
@@ -2973,7 +3269,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W WPF niedostępny jest layout typu?",
@@ -2983,7 +3280,8 @@ const questions = [
         "a3": "DockPanel",
         "a4": "Wszystkie wymienione",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W WPF dostępnym typem layoutu jest?",
@@ -2993,7 +3291,8 @@ const questions = [
         "a3": "StackPanel",
         "a4": "DockPanel",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Aby w WPF można było przypisać element do pola siatki GRID element musi być umiesczony wewnątrz bloku <Grid></Grid>?",
@@ -3003,7 +3302,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby w WPF można było przypisać element do kolumny siatki należy posłużyć się atrybutem \"Grid.Column\"?",
@@ -3013,7 +3313,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby w WPF można było połączyć kolumny siatki należy posłużyć się atrybutem \"Grid.ColSpan\"?",
@@ -3023,7 +3324,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby w WPF można było połączyć wierwsze saitki należy posłużyć się atrybutem \"Grid.RowSpan\"?",
@@ -3033,7 +3335,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //GIT
     {
@@ -3044,7 +3347,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jakiego przełącznika należy użyć z poleceniem \"git reset\" aby cofnięte zmiany wylądowały na \"stage\"?",
@@ -3054,7 +3358,8 @@ const questions = [
         "a3": "--hard",
         "a4": "--medium",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Polecenie \"git rebase\" oraz git merge\" działają tak samo?",
@@ -3064,7 +3369,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Polecenie \"git stash\" cofa projekt do ostatniego commita a zmiany są tracone?",
@@ -3074,7 +3380,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby w systemie git przeglądać historie commitów należy posłużyć się poleceniem?",
@@ -3084,7 +3391,8 @@ const questions = [
         "a3": "git stash",
         "a4": "git diff",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu GIT dodające wszystkie pliki na stage to?",
@@ -3094,7 +3402,8 @@ const questions = [
         "a3": "git add $",
         "a4": "git add all",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Aby w systemie git przeglądać historie commitów w formie list należy dodać do \"git log\"?",
@@ -3104,7 +3413,8 @@ const questions = [
         "a3": "--overview",
         "a4": "--list",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Aby w systemie git stwierdzić jakie pliki zostały zmodyfikowane od ostatniego commita należy użyć polecenia?",
@@ -3114,7 +3424,8 @@ const questions = [
         "a3": "git stash",
         "a4": "git rebase",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Inicjalizacja repozytorium lokalnego git odbywa się poleceniem?",
@@ -3124,7 +3435,8 @@ const questions = [
         "a3": "git add",
         "a4": "git rebase",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Commita w systemie GIT wykonujemu poleceniem?",
@@ -3134,7 +3446,8 @@ const questions = [
         "a3": "git commit message \"Message\"",
         "a4": "git add commit -m \"Message\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Nową gałąź w systemie GIT tworzymy poleceniem?",
@@ -3144,7 +3457,8 @@ const questions = [
         "a3": "git link \"nazwa\"",
         "a4": "git add branch \"nazwa\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Gałąź w systemie GIT usuwamy poleceniem?",
@@ -3154,7 +3468,8 @@ const questions = [
         "a3": "git drop \"nazwa\"",
         "a4": "git gone \"nazwa\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Przełączanie gałęzi w systemie git odbywa się za pomocą?",
@@ -3164,7 +3479,8 @@ const questions = [
         "a3": "git switch \"nazwa\"",
         "a4": "git load \"nazwa\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W git odnośnik do zdalnego repozytorium dodajemy poleceniem?",
@@ -3174,7 +3490,8 @@ const questions = [
         "a3": "git add remote \"nazwa\"",
         "a4": "git add remote origin \"nazwa\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W git odnośnik do zdalnego repozytorium usuwamy poleceniem?",
@@ -3184,7 +3501,8 @@ const questions = [
         "a3": "git remove remote",
         "a4": "git remove remote origin",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wypychanie zmian do zdalnego repozytorium z poziomu konsoli GIT odbywa się poleceniem?",
@@ -3194,7 +3512,8 @@ const questions = [
         "a3": "git pull origin",
         "a4": "git remote push",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Cofanie zmian wprowadzonych w konretnym commicie odbywa się poleceniem?",
@@ -3204,7 +3523,8 @@ const questions = [
         "a3": "git reset",
         "a4": "git rewind",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Portal github to to samo co GIT?",
@@ -3214,7 +3534,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pojęcie \"fork\" oznacza w terminologi GIT połączenie dwóch gałęzi?",
@@ -3224,7 +3545,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Aby połączyć gałęzie w GIT należy użyć polecenia?",
@@ -3234,7 +3556,8 @@ const questions = [
         "a3": "git checkout \"nazwa\"",
         "a4": "git load \"nazwa\"",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //kompilacja i interpretacja
     {
@@ -3245,7 +3568,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Parsowanie jest częścią zarówno kompilatora jak i interpretera?",
@@ -3255,7 +3579,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Język PHP jest językiem interpretowanym?",
@@ -3265,7 +3590,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Język Python jest językiem interpretowanym?",
@@ -3275,7 +3601,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Język C jest językiem kompilowanym?",
@@ -3285,7 +3612,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Visual Studio jest kompilatorem?",
@@ -3295,7 +3623,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Dev C++ jest kompilatorem?",
@@ -3305,7 +3634,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Który z wymienionych programów nie jest kompilatorem?",
@@ -3315,7 +3645,8 @@ const questions = [
         "a3": "gdb",
         "a4": "clang",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Który z wymienionych programów nie jest programem typu IDE?",
@@ -3325,7 +3656,8 @@ const questions = [
         "a3": "Intelij",
         "a4": "Code-Blocks",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kolejne etapy kompilacji to?",
@@ -3335,7 +3667,8 @@ const questions = [
         "a3": "analiza składniowa/analiza leksykalna/analiza semantyczna/optymalizacja/generowanie kodu",
         "a4": "analiza leksykalna/analiza semantyczna/analiza składniowa/optymalizacja/generowanie kodu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Etapem kompilacji, który nie jest etapem pracy interpretera jest?",
@@ -3345,7 +3678,8 @@ const questions = [
         "a3": "analiza składniowa",
         "a4": "analiza leksykalna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //testy jednostkowe
     {
@@ -3356,7 +3690,8 @@ const questions = [
         "a3": "kod werfikujący wynik działania metod",
         "a4": "kod wywołujący testowany kod w kontrolowanych warunkach",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Testy jednostkowe powinny być?",
@@ -3366,7 +3701,8 @@ const questions = [
         "a3": "niezależne od siebie",
         "a4": "powtarzalne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Akronim FIRST oznacza?",
@@ -3376,7 +3712,8 @@ const questions = [
         "a3": "Fast/Iterable/Repeatable/Self-validating/Timely",
         "a4": "Fast/Isolated/Repeatable/Self-validating/Throwable",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Testy jednostkowe składają się z trzech głównych faz w kolejności?",
@@ -3386,7 +3723,8 @@ const questions = [
         "a3": "assert/act/arrange",
         "a4": "act/assery/arrange",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Frameworkiem do pisania testów jednostkowych w języku JAVA jest?",
@@ -3396,7 +3734,8 @@ const questions = [
         "a3": "XUnit",
         "a4": "Google Tests",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Frameworkiem do pisania testów jednostkowych w języku C# jest?",
@@ -3406,7 +3745,8 @@ const questions = [
         "a3": "JUnit",
         "a4": "Google Tests",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Modułem umożliwiającym testy w jezyku JavaScript i środowisku NodeJS jest?",
@@ -3416,7 +3756,8 @@ const questions = [
         "a3": "ntest",
         "a4": "google tests",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Błędnym stwierdzeniem o klasie Assert w języku C# jest to, że?",
@@ -3426,7 +3767,8 @@ const questions = [
         "a3": "Wykorzystuje się ją przy testowaniu",
         "a4": "Udostępnia metody statyczne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"TDD (Test Driven Development) to?",
@@ -3436,7 +3778,8 @@ const questions = [
         "a3": "Metodologia pisania oprogramowania gdzie testy wykorzystuje się do dokumentowania kodu",
         "a4": "Żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W TDD najpierw piszemy testy a później testowany kod?",
@@ -3446,7 +3789,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"\"Mock\" to pojęcie określające?",
@@ -3456,7 +3800,8 @@ const questions = [
         "a3": "tag oznaczający metodę jako test",
         "a4": "żaden z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Nie powinno się testować automatycznie kontrolerów MVC?",
@@ -3466,7 +3811,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Każda metoda klasy powinna być przetestowana automatycznie?",
@@ -3476,7 +3822,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Da się przetestować bezpośrednio metody prywatne?",
@@ -3486,7 +3833,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //wzorce i zasady programowania
     {
@@ -3497,7 +3845,8 @@ const questions = [
         "a3": "YAGNI",
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprosztszej formie to?",
@@ -3507,7 +3856,8 @@ const questions = [
         "a3": "YAGNI",
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Skrót zasady, mówiącej o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
@@ -3517,7 +3867,8 @@ const questions = [
         "a3": "DRY",
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zbiór pięciu zasad dobrego kodu obiektowego to?",
@@ -3527,7 +3878,8 @@ const questions = [
         "a3": "YAGNI",
         "a4": "CQRS",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pierwsza zasada SOLID mówi o tym by?",
@@ -3537,7 +3889,8 @@ const questions = [
         "a3": "każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację",
         "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Druga zasada SOLID mówi o tym by?",
@@ -3547,7 +3900,8 @@ const questions = [
         "a3": "referencje miały typ bazowy a nie typ pochodny",
         "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Piąta zasada SOLID mówi o tym by?",
@@ -3557,7 +3911,8 @@ const questions = [
         "a3": "każda metoda/klasa zajmowała się jedną konretną rzeczą",
         "a4": "referencje miały typ bazowy a nie typ pochodny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Piąta zasada SOLID nazywana jest?",
@@ -3567,7 +3922,8 @@ const questions = [
         "a3": "dependency infection",
         "a4": "dependency isolation",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zasada SOLID mówiąca, że zamiast jednej klasy zawierającej 2000 linii kodu lepsze jest 20 małych klas?",
@@ -3577,7 +3933,8 @@ const questions = [
         "a3": "I",
         "a4": "O",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem kreacyjnym jest?",
@@ -3587,7 +3944,8 @@ const questions = [
         "a3": "adapter",
         "a4": "obserwator",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem kreacyjnym jest?",
@@ -3597,7 +3955,8 @@ const questions = [
         "a3": "adapter",
         "a4": "obserwator",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem strukturalnym nie jest?",
@@ -3607,7 +3966,8 @@ const questions = [
         "a3": "fasada",
         "a4": "kompozyt",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem strukturalnym nie jest?",
@@ -3617,7 +3977,8 @@ const questions = [
         "a3": "fasada",
         "a4": "kompozyt",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem projektowym, który agreguje funkcjonalności mniejszych klas w jedną jest?",
@@ -3627,7 +3988,8 @@ const questions = [
         "a3": "odwiedzający",
         "a4": "iterator",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wzorcem projektowym służącym do adaptacji nowego api w stare jest?",
@@ -3637,7 +3999,8 @@ const questions = [
         "a3": "fasada",
         "a4": "singleton",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"We wzorcu MVC na akcje użytkownika reaguje?",
@@ -3647,7 +4010,8 @@ const questions = [
         "a3": "model",
         "a4": "UI",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pochodną wzorca MVC jest?",
@@ -3657,7 +4021,8 @@ const questions = [
         "a3": "HMVC Hierarchical Model View Controller",
         "a4": "MVP Model View Presenter",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Skrót SPA oznacza?",
@@ -3667,7 +4032,8 @@ const questions = [
         "a3": "Super-Page Application",
         "a4": "Super-Pure Application",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Strona typu SPA bazuje na?",
@@ -3677,7 +4043,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Skrót ORM rozwija się?",
@@ -3687,7 +4054,8 @@ const questions = [
         "a3": "Object Relational Model",
         "a4": "Object Relational Macro",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Przykładem biblioteki typu ORM nie jest?",
@@ -3697,7 +4065,8 @@ const questions = [
         "a3": "NHiberante",
         "a4": "PDO",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zasada \"dependency injection\" mówi, żeby zależności wstrzykiwać z zewnątrz przez?",
@@ -3707,7 +4076,8 @@ const questions = [
         "a3": "setter",
         "a4": "pole",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Na obrazku klasa Repository jest dla klasy Server?",
@@ -3717,7 +4087,8 @@ const questions = [
         "a3": "Klasą pochodną",
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Na obrazku klasa RepositoryMock jest dla klasy Repository?",
@@ -3727,7 +4098,8 @@ const questions = [
         "a3": "Zależnością twardą",
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Typ Repository może zostać określony mianem typu abstrakcyjnego?",
@@ -3737,7 +4109,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Kompozycja jest bardziej mobilna i elastyczna niż dziedziczenie?",
@@ -3747,7 +4120,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"UML to skrót od?",
@@ -3757,7 +4131,8 @@ const questions = [
         "a3": "Universal Modeling Language",
         "a4": "Universal Mapping Language",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML przedstawiający relacje między klasami to",
@@ -3767,7 +4142,8 @@ const questions = [
         "a3": "Diagram sekwencji",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML przedstawiający relacje między tabelami bazy danych to",
@@ -3777,7 +4153,8 @@ const questions = [
         "a3": "Diagram sekwencji",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML przedstawiający przepływ sterowania w klasach to",
@@ -3787,7 +4164,8 @@ const questions = [
         "a3": "Diagram klas",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML przedstawiający funkcjonalności projektu to",
@@ -3797,7 +4175,8 @@ const questions = [
         "a3": "Diagram klas",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML na ilustracji to?",
@@ -3807,7 +4186,8 @@ const questions = [
         "a3": "Diagram klas",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Diagram UML na ilustracji to?",
@@ -3817,7 +4197,8 @@ const questions = [
         "a3": "Diagram klas",
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W diagramie klas UML pola protected oznacza się symbolem?",
@@ -3827,7 +4208,8 @@ const questions = [
         "a3": "+",
         "a4": "@",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W diagramie klas UML pola private oznacza się symbolem?",
@@ -3837,7 +4219,8 @@ const questions = [
         "a3": "+",
         "a4": "@",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W diagramie klas UML pola public oznacza się symbolem?",
@@ -3847,7 +4230,8 @@ const questions = [
         "a3": "-",
         "a4": "@",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Języki, w których programista definuje co chce uzyskać to języki?",
@@ -3857,7 +4241,8 @@ const questions = [
         "a3": "obiektowe",
         "a4": "proceduralne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Języki, w których programista definuje jak chce uzyskać wynik to języki?",
@@ -3867,7 +4252,8 @@ const questions = [
         "a3": "obiektowe",
         "a4": "proceduralne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //http rest ect
     {
@@ -3878,7 +4264,8 @@ const questions = [
         "a3": "5",
         "a4": "2",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Skrót HTTP rozwija się?",
@@ -3888,7 +4275,8 @@ const questions = [
         "a3": "HTML Transfer Protocol",
         "a4": "Hyper Transfer Protocol",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokół HTTP pracuje na porcie?",
@@ -3898,7 +4286,8 @@ const questions = [
         "a3": "21",
         "a4": "100",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokoły TCP oraz UDP są protokołami warstwy _ ISO/OSI?",
@@ -3908,7 +4297,8 @@ const questions = [
         "a3": "5",
         "a4": "2",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokoły IPv4 oraz IPv6 są protokołami warstwy _ ISO/OSI?",
@@ -3918,7 +4308,8 @@ const questions = [
         "a3": "5",
         "a4": "2",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Dane przekazywane do protokoły HTTP/HTTPS są w formacie?",
@@ -3928,7 +4319,8 @@ const questions = [
         "a3": "XML",
         "a4": "zwykłego tekstu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Dane otrzymywane poprzez protokoły HTTP/HTTPS są w formacie?",
@@ -3938,7 +4330,8 @@ const questions = [
         "a3": "XML",
         "a4": "zwykłego tekstu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS nie jest?",
@@ -3948,7 +4341,8 @@ const questions = [
         "a3": "POST",
         "a4": "PATCH",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS nie jest?",
@@ -3958,7 +4352,8 @@ const questions = [
         "a3": "POST",
         "a4": "GET",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za pobieranie danych jest?",
@@ -3968,7 +4363,8 @@ const questions = [
         "a3": "POST",
         "a4": "HEAD",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za wysyłanie danych jest?",
@@ -3978,7 +4374,8 @@ const questions = [
         "a3": "GET",
         "a4": "HEAD",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za aktualizowanie danych jest?",
@@ -3988,7 +4385,8 @@ const questions = [
         "a3": "GET",
         "a4": "HEAD",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za usuwanie danych jest?",
@@ -3998,7 +4396,8 @@ const questions = [
         "a3": "POST",
         "a4": "PATCH",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kody sukcesu zwracane przez HTTP/HTTPS znajdują się w zakresie?",
@@ -4008,7 +4407,8 @@ const questions = [
         "a3": "300-399",
         "a4": "500-599",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kody oznaczające błąd serwera zwracane przez HTTP/HTTPS znajdują się w zakresie?",
@@ -4018,7 +4418,8 @@ const questions = [
         "a3": "300-399",
         "a4": "200-299",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kody zwracane przez HTTP/HTTPS znajdują się w zakresie?",
@@ -4028,7 +4429,8 @@ const questions = [
         "a3": "200-599",
         "a4": "100-699",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kod sukcesu HTTP/HTTPS to?",
@@ -4038,7 +4440,8 @@ const questions = [
         "a3": "400",
         "a4": "500",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kod \"nie znaleziono\" HTTP/HTTPS to?",
@@ -4048,7 +4451,8 @@ const questions = [
         "a3": "400",
         "a4": "102",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kod \"Internal Server Error\" HTTP/HTTPS to?",
@@ -4058,7 +4462,8 @@ const questions = [
         "a3": "400",
         "a4": "102",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kod \"Unauthorized\" HTTP/HTTPS to?",
@@ -4068,7 +4473,8 @@ const questions = [
         "a3": "400",
         "a4": "403",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"JWT to skrót od?",
@@ -4078,7 +4484,8 @@ const questions = [
         "a3": "Java Web Token",
         "a4": "JavaScript Web Type",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"API typu REST wymienia dane w formacie zwanym?",
@@ -4088,7 +4495,8 @@ const questions = [
         "a3": "HTML",
         "a4": "JWT",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Poprzednikiem API typu REST było API typu?",
@@ -4098,7 +4506,8 @@ const questions = [
         "a3": "ARP",
         "a4": "MAC",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"API typu SOAP bazuje na technologii?",
@@ -4108,7 +4517,8 @@ const questions = [
         "a3": "JWT",
         "a4": "HTML",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"REST to skrót od?",
@@ -4118,7 +4528,8 @@ const questions = [
         "a3": "Representational State Transmision",
         "a4": "Representational Schema Transmision",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokołem bezpołączeniowym warstwy 4 ISO OSI jest?",
@@ -4128,7 +4539,8 @@ const questions = [
         "a3": "UPC",
         "a4": "TPC",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokołem połączeniowym warstwy 4 ISO OSI jest?",
@@ -4138,7 +4550,8 @@ const questions = [
         "a3": "UPC",
         "a4": "TPC",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Programem do testowania REST API jest?",
@@ -4148,7 +4561,8 @@ const questions = [
         "a3": "Putty",
         "a4": "HxDView",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Programem do testowania REST API jest?",
@@ -4158,7 +4572,8 @@ const questions = [
         "a3": "nslookup",
         "a4": "tracert",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Protokół HTTPS to HTTP stosujący szyfrowanie?",
@@ -4168,7 +4583,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //technologie webowe
     {
@@ -4179,7 +4595,8 @@ const questions = [
         "a3": "Flutter",
         "a4": "MAUI",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Technologia ASP.NET bazuje na języku?",
@@ -4189,7 +4606,8 @@ const questions = [
         "a3": "C",
         "a4": "Java",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Framework Spring bazuje na języku?",
@@ -4199,7 +4617,8 @@ const questions = [
         "a3": "C++",
         "a4": "Python",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Framework Django bazuje na języku?",
@@ -4209,7 +4628,8 @@ const questions = [
         "a3": "C++",
         "a4": "Java",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"React to framework bazujący na języku JavaScript/TypeScript?",
@@ -4219,7 +4639,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Język PHP do pracy potrzebuje serwera?",
@@ -4229,7 +4650,8 @@ const questions = [
         "a3": "Mysql",
         "a4": ".Net",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Języka JavaScript można używać jako języka back-endowego dzięki?",
@@ -4239,7 +4661,8 @@ const questions = [
         "a3": "JIT",
         "a4": "Web Assembly",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bazą danych nierelacyjną jest?",
@@ -4249,7 +4672,8 @@ const questions = [
         "a3": "PostgreSQL",
         "a4": "MySQL",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pojęcie \"crawling\" w programowaniu to?",
@@ -4257,7 +4681,8 @@ const questions = [
         "a1": "przeszukiwanie portali w poszukiwaniu treści",
         "a2": "szukanie luk zabezpieczeń",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Wirus, który podszywa się pod legalny i bezpieczny program to?",
@@ -4267,7 +4692,8 @@ const questions = [
         "a3": "Ransomware",
         "a4": "Spyware",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Atakiem na strony internetowe polegającym na ociążeniu serwera dużą ilością zapytań jest",
@@ -4277,7 +4703,8 @@ const questions = [
         "a3": "Hijacking",
         "a4": "Phishing",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Podatność stron internetowych polegająca na wstrzykiwaniu własnego kodu do strony to?",
@@ -4287,7 +4714,8 @@ const questions = [
         "a3": "Hijacking",
         "a4": "Session poisoning",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Dodanie zapytania SQL do istniejącego już zapytania nazywane jest?",
@@ -4297,7 +4725,8 @@ const questions = [
         "a3": "Hijacking",
         "a4": "Session poisoning",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Atakiem polegającym na zmuszeniu przeglądarki ofiary do wykonania pewnej akcji jest?",
@@ -4307,7 +4736,8 @@ const questions = [
         "a3": "CQRS",
         "a4": "ASMAX",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Językiem typowo server-side jest?",
@@ -4317,7 +4747,8 @@ const questions = [
         "a3": "C#",
         "a4": "CSS",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //javascript
     {
@@ -4328,7 +4759,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(0.1 + 0.2 == 0.3);\" będzie?",
@@ -4338,7 +4770,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(1 +  \"2\" + \"2\");\" będzie?",
@@ -4348,7 +4781,8 @@ const questions = [
         "a3": "NaN",
         "a4": "NaN2",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(typeof typeof 1);\" będzie?",
@@ -4358,7 +4792,8 @@ const questions = [
         "a3": "false",
         "a4": "true",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(018 - 015);\" będzie?",
@@ -4368,7 +4803,8 @@ const questions = [
         "a3": "8",
         "a4": "NaN",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(('b' + 'a' + + 'a' + 'a').toLowerCase());\" będzie?",
@@ -4378,7 +4814,8 @@ const questions = [
         "a3": "ananas",
         "a4": "bananaa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"console.log(3 > 2 > 1);\" będzie?",
@@ -4388,7 +4825,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS wynikiem operacji \"['1', '7', '11'].map(parseInt)\" będzie?",
@@ -4398,7 +4836,8 @@ const questions = [
         "a3": "[0, 6, 10]",
         "a4": "[NaN, NaN, NaN]",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"JavaScript wchodzi w standard ECMAScript",
@@ -4408,7 +4847,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"TypeScript jest nadzbiorem JavaScript",
@@ -4418,7 +4858,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"JavaScript pozwala przypisać funkcję do zmiennej?",
@@ -4428,7 +4869,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Czy funkcja eval() jest bezpieczna?",
@@ -4438,7 +4880,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS \"NaN\" jest typu?",
@@ -4448,7 +4891,8 @@ const questions = [
         "a3": "NaN",
         "a4": "undefined",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS typami prymitywnymi są",
@@ -4458,7 +4902,8 @@ const questions = [
         "a3": "Number",
         "a4": "Boolean",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS wartość null oznacza",
@@ -4468,7 +4913,8 @@ const questions = [
         "a3": "pusty string",
         "a4": "0",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W JS zmienna zadeklarowana jako \"var\" jest przypisana do przestrzeni funkcji",
@@ -4478,7 +4924,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS zmienna zadeklarowana jako \"let\" jest przypisana do przestrzeni funkcji",
@@ -4488,7 +4935,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Kod języka JavaScript zawsze wykonuje się po stronie klienta w przeglądarce",
@@ -4498,7 +4946,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W JS operatory \"===\" oraz \"==\" działają tak samo?",
@@ -4508,7 +4957,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Która linia kodu jest niepoprawna z punktu widzenia JavaScript?",
@@ -4518,7 +4968,8 @@ const questions = [
         "a3": "var obj = new Object();",
         "a4": "var obj = {};",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //REACT
     {
@@ -4529,7 +4980,8 @@ const questions = [
         "a3": "npm serve",
         "a4": "npm build",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie npm, które tworzy projekt React jest",
@@ -4539,7 +4991,8 @@ const questions = [
         "a3": "npx create-react-app",
         "a4": "pm create-react-app",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Domyślnym portem używanym przez React do otwarcia serwera jest?",
@@ -4549,7 +5002,8 @@ const questions = [
         "a3": "8080",
         "a4": "5000",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W React \"props\" służy do?",
@@ -4559,7 +5013,8 @@ const questions = [
         "a3": "ustawiania stanu rodzica przez komponent potomny",
         "a4": "wszystkie pozostałe",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Nazwy komponentów React, muszą nazywać się z dużych liter?",
@@ -4569,7 +5024,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //bazy danych
     {
@@ -4580,7 +5036,8 @@ const questions = [
         "a3": "komórka tabeli",
         "a4": "cała tabela",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Atrybut w relacyjnych bazach danych to",
@@ -4590,7 +5047,8 @@ const questions = [
         "a3": "komórka tabeli",
         "a4": "cała tabela",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kolumna/Kolumny jednoznacznie identyfikujące rekord w tabeli relacyjnej bazy danych to",
@@ -4600,7 +5058,8 @@ const questions = [
         "a3": "klucz naturalny",
         "a4": "klucz sztuczny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kolumna wykorzystywana do tworzenia relacji w relacyjnych bazach danych to",
@@ -4610,7 +5069,8 @@ const questions = [
         "a3": "klucz naturalny",
         "a4": "klucz sztuczny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klucz naturalny w bazach relacyjnych to",
@@ -4620,7 +5080,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Relacja wiele do wielu wymaga",
@@ -4630,7 +5091,8 @@ const questions = [
         "a3": "dwóch kluczy podstawowych",
         "a4": "dwóch kluczy sztucznych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"O tym, że każda komórka tabeli w bazie relacyjnej musi przchowywać jedną wartość mówi",
@@ -4640,7 +5102,8 @@ const questions = [
         "a3": "Trzecia postać normalna",
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"O tym, że każda kolumna tabeli musi zależeć od klucza głównego mówi",
@@ -4650,7 +5113,8 @@ const questions = [
         "a3": "Trzecia postać normalna",
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"O tym, że każda kolumna może być zależna tylko od klucza głównego mówi",
@@ -4660,7 +5124,8 @@ const questions = [
         "a3": "Druga postać normalna",
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Krotka w bazach relacyjnych to",
@@ -4670,7 +5135,8 @@ const questions = [
         "a3": "komórka tabeli",
         "a4": "cała tabela",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Każda relacja w relacyjnych bazach danych wymaga klucza obcego?",
@@ -4680,7 +5146,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Filtorowanie w językach SQL odywa się za pomocą klauzuli",
@@ -4690,7 +5157,8 @@ const questions = [
         "a3": "filter",
         "a4": "if",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Funkcją agregującą SQL nie jest?",
@@ -4700,7 +5168,8 @@ const questions = [
         "a3": "avg()",
         "a4": "max()",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Typy varchar oraz char w bazach danych są równoznaczne?",
@@ -4710,7 +5179,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Typy text oraz varchar w bazach danych są równoznaczne?",
@@ -4720,7 +5190,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Procedura i funkcja to to samo?",
@@ -4730,7 +5201,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli usuniemy z bazy rekord to jego klucz główny (ID) może zostać użyty ponownie?",
@@ -4740,7 +5212,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Bazy danych pozwalają automatyzować generowanie klucza głównego za pomocą...",
@@ -4750,7 +5223,8 @@ const questions = [
         "a3": "funkcji",
         "a4": "wyzwalaczy",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Tak zwane aplikacje CRUDowe to",
@@ -4760,7 +5234,8 @@ const questions = [
         "a3": "aplikacje typowo frontendowe",
         "a4": "aplikacje tworzące strukture bazy danych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Mechanizem pozwalającym szybko modyfikować bazę danych i migrować dane między jej wersjami w czasie dewelopmentu to",
@@ -4770,7 +5245,8 @@ const questions = [
         "a3": "encje",
         "a4": "sekwencje",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zestaw czynności na bazie danych, które stanowią pewną nierozerwalną całość to",
@@ -4780,7 +5256,8 @@ const questions = [
         "a3": "procedury",
         "a4": "funkcje",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Zapytanie typu SELECT zawsze musi mieć klauzule FROM?",
@@ -4790,7 +5267,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"ENUM oraz SET jako typy kolumn są równoznaczne?",
@@ -4800,7 +5278,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
@@ -4810,7 +5289,8 @@ const questions = [
         "a3": "modify",
         "a4": "change",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klauzula SQL służąca do usuwania tabel to?",
@@ -4820,7 +5300,8 @@ const questions = [
         "a3": "remove",
         "a4": "erase",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
@@ -4830,7 +5311,8 @@ const questions = [
         "a3": "modify",
         "a4": "change",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Klauzula \"limit\" w SQL przyjmuje do _ parametrów?",
@@ -4840,7 +5322,8 @@ const questions = [
         "a3": "1",
         "a4": "4",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"W SQL sortowanie malejące oznaczamy?",
@@ -4850,7 +5333,8 @@ const questions = [
         "a3": "UP",
         "a4": "DOWN",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jeżeli przechowujemy w tablii cenę brutto, netto i tara jednocześnie to łamiemy?",
@@ -4860,7 +5344,8 @@ const questions = [
         "a3": "Pierwszą postać normalną",
         "a4": "Wszystko jest w porządku",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najbardziej prawdopodobna relacja między tabelami Osoba oraz Adres to relacja?",
@@ -4870,7 +5355,8 @@ const questions = [
         "a3": "wiele do jednego",
         "a4": "jeden do jeden",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Najbardziej prawdopodobna relacja między tabelami Student oraz ContactData to relacja?",
@@ -4880,7 +5366,8 @@ const questions = [
         "a3": "wiele do jednego",
         "a4": "wiele do wielu",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Aby w SQL uzyskać wyniki gdzie wartość kolumny n na drugim miejscu ma literkę \"r\" trzeba użyć klauzuli?",
@@ -4890,7 +5377,8 @@ const questions = [
         "a3": "like '*r%'",
         "a4": "like '+r%'",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operator \"OR\" w SQL zwraca prawdę jeżeli?",
@@ -4900,7 +5388,8 @@ const questions = [
         "a3": "żadan ze stron warunku nie jest prawdziwa",
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //php
     {
@@ -4911,7 +5400,8 @@ const questions = [
         "a3": "*.pp",
         "a4": "*.html",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"\"index.php\" ma większy priorytet niż \"index.html\"?",
@@ -4921,7 +5411,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"\"\" oraz '' w PHP działają tak samo?",
@@ -4931,7 +5422,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Bezpieczniejszą metodą przesyłania fomularzy jest metoda?",
@@ -4941,7 +5433,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Instrukcja, która w PHP posłuży do napisania programu typu HelloWorld to?",
@@ -4951,7 +5444,8 @@ const questions = [
         "a3": "write",
         "a4": "put",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Która z poniższych stałych nie jest dostępna w PHP?",
@@ -4961,7 +5455,8 @@ const questions = [
         "a3": "__LINE__",
         "a4": "__CLASS__",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem konkatenacjii w PHP jest?",
@@ -4971,7 +5466,8 @@ const questions = [
         "a3": "^",
         "a4": "|",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Operatorem potęgowania w PHP jest?",
@@ -4981,7 +5477,8 @@ const questions = [
         "a3": "^",
         "a4": "!",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //python
     {
@@ -4992,7 +5489,8 @@ const questions = [
         "a3": "*.pp",
         "a4": "*.ph",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Python bazuje na języku?",
@@ -5002,7 +5500,8 @@ const questions = [
         "a3": "C#",
         "a4": "F#",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Odpowiednikiem słowa kluczowgo \"this\" w Pythonie jest?",
@@ -5012,7 +5511,8 @@ const questions = [
         "a3": "base",
         "a4": "ptr",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Kolekcja o nazwie \"tuple\" w Pythonie jest mutowalna?",
@@ -5022,7 +5522,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Kolekcja o nazwie \"list\" w Pythonie jest mutowalna?",
@@ -5032,7 +5533,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Konstruktor klasy w języku Python ma nazwę?",
@@ -5042,7 +5544,8 @@ const questions = [
         "a3": "__self__",
         "a4": "taką jak nazwa klasy",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     //windows/linux cmd
     {
@@ -5053,7 +5556,8 @@ const questions = [
         "a3": "ls",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do wyświetlania zawartości katalogów to?",
@@ -5063,7 +5567,8 @@ const questions = [
         "a3": "dir",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące do przełączania katalogów to?",
@@ -5073,7 +5578,8 @@ const questions = [
         "a3": "ls",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do przełączania katalogów to?",
@@ -5083,7 +5589,8 @@ const questions = [
         "a3": "dir",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące do tworzenia katalogów to?",
@@ -5093,7 +5600,8 @@ const questions = [
         "a3": "cd",
         "a4": "dir",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do tworzenia katalogów to?",
@@ -5103,7 +5611,8 @@ const questions = [
         "a3": "ls",
         "a4": "dir",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące do cofania się w strukturze katalogów to?",
@@ -5113,7 +5622,8 @@ const questions = [
         "a3": "ls",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do cofania się w strukturze katalogów to?",
@@ -5123,7 +5633,8 @@ const questions = [
         "a3": "cd.",
         "a4": "bd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące wyświetlenia aktualnej ścieżki to?",
@@ -5133,7 +5644,8 @@ const questions = [
         "a3": "ls",
         "a4": "pwd",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do cofania się w strukturze katalogów to?",
@@ -5143,7 +5655,8 @@ const questions = [
         "a3": "chmod",
         "a4": "ls",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące do czyszczenia okna konsoli to?",
@@ -5153,7 +5666,8 @@ const questions = [
         "a3": "c",
         "a4": "clearis",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do czyszczenia okna konsoli to?",
@@ -5163,7 +5677,8 @@ const questions = [
         "a3": "c",
         "a4": "clearis",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące do sprawdzenia adresacji IP to?",
@@ -5173,7 +5688,8 @@ const questions = [
         "a3": "iconfig",
         "a4": "netstat",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux służące do sprawdzenia adresacji IP to?",
@@ -5183,7 +5699,8 @@ const questions = [
         "a3": "iconfig",
         "a4": "netstat",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie wiersza poleceń Linux chmod 777 nada każdemu maksymalne uprawnienia do zasobu?",
@@ -5193,7 +5710,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Liczba 6 podana do polecenia chmod nadaje uprawnienie?",
@@ -5203,7 +5721,8 @@ const questions = [
         "a3": "write-execute",
         "a4": "wszystkie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Liczba 3 podana do polecenia chmod nadaje uprawnienie?",
@@ -5213,7 +5732,8 @@ const questions = [
         "a3": "read-write",
         "a4": "wszystkie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Parametr r-xrwx--- podany do polecenia chmod systemu linux nadaje uprawnienie?",
@@ -5223,7 +5743,8 @@ const questions = [
         "a3": "do zapisu użytkownikowi",
         "a4": "do odczytu wszystkim",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu linux pozwalające zmienić właściciela zasobu to?",
@@ -5233,7 +5754,8 @@ const questions = [
         "a3": "mod",
         "a4": "own",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu linux pozwalające usunąć plik lub katalog to?",
@@ -5243,7 +5765,8 @@ const questions = [
         "a3": "rd",
         "a4": "del",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu linux pozwalające zmienić nazwę pliku to?",
@@ -5253,7 +5776,8 @@ const questions = [
         "a3": "chn",
         "a4": "rename",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu linux pozwalające przenieść plik to?",
@@ -5263,7 +5787,8 @@ const questions = [
         "a3": "cp",
         "a4": "ls",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu windows pozwalające przenieść plik to?",
@@ -5273,7 +5798,8 @@ const questions = [
         "a3": "cp",
         "a4": "dir",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu linux pozwalające skopiować plik to?",
@@ -5283,7 +5809,8 @@ const questions = [
         "a3": "mv",
         "a4": "ls",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie systemu windows pozwalające skopiować plik to?",
@@ -5293,7 +5820,8 @@ const questions = [
         "a3": "cp",
         "a4": "ls",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Polecenie \"help\" wyświetla pomoc wiersza poleceń Windows?",
@@ -5303,7 +5831,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Polecenie \"man\" wyświetla pomoc wiersza poleceń Linux?",
@@ -5313,7 +5842,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     //pytania ogólne
     {
@@ -5324,7 +5854,8 @@ const questions = [
         "a3": "funkcja abstrakcyjna",
         "a4": "funkcja rozszerzająca",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jak przekazać callback do funkcji w C#?",
@@ -5334,7 +5865,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jak przekazać callback do funkcji w C/C++?",
@@ -5344,7 +5876,8 @@ const questions = [
         "a3": "poprzez referencje",
         "a4": "poprzez wartość",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Lamda jest dobrym narzędziem do tworzenia krótkich callbacków?",
@@ -5354,7 +5887,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W C# funkcję LINQ bardzo często przyjmują callbacki w parametrze?",
@@ -5364,7 +5898,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Znak \"\\n\" oznacza?",
@@ -5374,7 +5909,8 @@ const questions = [
         "a3": "znak tabulacji",
         "a4": "znak ucieczki",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Znak \"\\r\" oznacza?",
@@ -5384,7 +5920,8 @@ const questions = [
         "a3": "znak tabulacji",
         "a4": "znak ucieczki",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"System kodowania znaków, który przypisuje liczbą od 0 do 127 znaki to?",
@@ -5394,7 +5931,8 @@ const questions = [
         "a3": "ISO",
         "a4": "PID",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Dodając do znaku \"char a = 'A'\" liczbę 32 uzyskamy?",
@@ -5404,7 +5942,8 @@ const questions = [
         "a3": "_",
         "a4": "Z",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jednostka wykonująca kod to?",
@@ -5414,7 +5953,8 @@ const questions = [
         "a3": "task",
         "a4": "konsola",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Synchronizacja wątków polega na?",
@@ -5424,7 +5964,8 @@ const questions = [
         "a3": "kontrolowaniu co i kiedy robi dany wątek",
         "a4": "poczekaniu aż wątek zakończy działanie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Które z poniższych stwierdzeń o procesie i wątku jest prawdziwe?",
@@ -5434,7 +5975,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Programista może programowo otworzyć wiele wątków w trakcie trawania programu?",
@@ -5444,7 +5986,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Każdy program ma minimum jeden wątek?",
@@ -5454,7 +5997,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Tylko wątek główny programu może dotykać elementów UI?",
@@ -5464,7 +6008,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli wątek główny zakończy się (return w main zostanie osiągnięty) to program czeka na pozostałe wątki?",
@@ -5474,7 +6019,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Od programisty zależy czy wątek główny poczeka na zakończenie wątków dodatkowych?",
@@ -5484,7 +6030,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Zrównoleglenie polega na?",
@@ -5494,7 +6041,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Wymiana danych między watkami przebiega swobodnie?",
@@ -5504,7 +6052,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Każdy wątek a swoje ID?",
@@ -5514,7 +6063,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Każdy proces ma swoje ID?",
@@ -5524,7 +6074,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Jeżeli aplikacja A oraz B czytają/zapisuje dane na adresie 0xA to przeszkadzają sobie wzajemnie?",
@@ -5534,7 +6085,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Biblioteką języka C++ do tworzenia wątków jest?",
@@ -5544,7 +6096,8 @@ const questions = [
         "a3": "Task",
         "a4": "threading",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Biblioteką języka C# do tworzenia wątków jest?",
@@ -5554,7 +6107,8 @@ const questions = [
         "a3": "Promise",
         "a4": "threading",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Flagą, która blokuje inne wątki gdy jeden z nich ją ustawi jest?",
@@ -5564,7 +6118,8 @@ const questions = [
         "a3": "await",
         "a4": "wszystkie pozostałe",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Adres 0xA w każdej aplikacji to inne miejsce w pamięci fizycznej?",
@@ -5574,7 +6129,8 @@ const questions = [
         "a3": "tak dzięki losowaniu adresów",
         "a4": "nie",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Rejestr procesora to?",
@@ -5584,7 +6140,8 @@ const questions = [
         "a3": "instrukcja procesora",
         "a4": "rdzeń procesora",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Część procesora nazywana ALU to?",
@@ -5594,7 +6151,8 @@ const questions = [
         "a3": "kontroler pamięci",
         "a4": "kooprocesor",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Część procesora nazywana CU to?",
@@ -5604,7 +6162,8 @@ const questions = [
         "a3": "kontroler pamięci",
         "a4": "kooprocesor",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Część procesora nazywana FPU to?",
@@ -5614,7 +6173,8 @@ const questions = [
         "a3": "jednostka arytmetyczno logiczna",
         "a4": "kontroler pamięci",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Część procesora odpowiedzialna za operacje zmiennoprzecinkowe to?",
@@ -5624,7 +6184,8 @@ const questions = [
         "a3": "jednostka arytmetyczno logiczna",
         "a4": "mostek północny",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Jeżeli zapomnimy użyć delete w C/C++ i zamkniemy program to tracimy trochę pamięci?",
@@ -5634,7 +6195,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Rodzajem bramki logicznej nie jest?",
@@ -5644,7 +6206,8 @@ const questions = [
         "a3": "OR",
         "a4": "AND",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bramką logiczną, która wykonuje różnice symetryczą jest?",
@@ -5654,7 +6217,8 @@ const questions = [
         "a3": "NOT",
         "a4": "OR",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bramką logiczną, która ma tylko jedno wejście jest?",
@@ -5664,7 +6228,8 @@ const questions = [
         "a3": "AND",
         "a4": "NAND",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bramką logiczną na obrazku jest?",
@@ -5674,7 +6239,8 @@ const questions = [
         "a3": "AND",
         "a4": "NOR",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bramką logiczną na obrazku jest?",
@@ -5684,7 +6250,8 @@ const questions = [
         "a3": "AND",
         "a4": "NOR",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Prędkość taktowania wyrażamy w?",
@@ -5694,7 +6261,8 @@ const questions = [
         "a3": "bitach na sekunde",
         "a4": "bajtach na sekunde",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Prędkość transmisji wyrażamy w?",
@@ -5704,7 +6272,8 @@ const questions = [
         "a3": "sekundach",
         "a4": "bajtach na sekunde",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Popularniejszym rodzajem transmisji jest?",
@@ -5714,7 +6283,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Transmisja synchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
@@ -5724,7 +6294,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Transmisja asynchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
@@ -5734,7 +6305,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W transmisji asynchronicznej występuje sygnał zegarowy?",
@@ -5744,7 +6316,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"W transmisji synchronicznej długość bitu zależu od zegara a w asynchronicznej każdy bit ma z góry ustalony czas trwania?",
@@ -5754,7 +6327,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Pamięć RAM typu DDR3 jest kompatybilna wstecznie z pamięcią DDR2?",
@@ -5764,7 +6338,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"USB 3 jest kompatybilne z portami USB 2",
@@ -5774,7 +6349,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Technologią wykorzystywaną najczęściej do komunikacji z dyskami twardymi jest?",
@@ -5784,7 +6360,8 @@ const questions = [
         "a3": "AGP",
         "a4": "USB",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Technologią wykorzystywaną najczęściej do komunikacji z kartami graficznymi jest?",
@@ -5794,7 +6371,8 @@ const questions = [
         "a3": "AGP",
         "a4": "ISA",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Wtyczka/Gniazdo RJ45 (sieciowe) ma 8 pinów?",
@@ -5804,7 +6382,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Dobierając procesor do płyty głównej znaczenie ma?",
@@ -5814,7 +6393,8 @@ const questions = [
         "a3": "podstawka",
         "a4": "moc sekcji zasilania",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Dobierając RAM do komputera znaczenia nie ma?",
@@ -5824,7 +6404,8 @@ const questions = [
         "a3": "procesor",
         "a4": "płyta główna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Chcąc przesłać pliki strony interentowej na hosting posłużymy się technologią?",
@@ -5834,7 +6415,8 @@ const questions = [
         "a3": "SSH",
         "a4": "Telnet",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"HTTP działa na porcie?",
@@ -5844,7 +6426,8 @@ const questions = [
         "a3": "20",
         "a4": "60",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Pierwsza warstwa ISO/OSI to?",
@@ -5854,7 +6437,8 @@ const questions = [
         "a3": "sieci",
         "a4": "transportowa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Druga warstwa ISO/OSI to?",
@@ -5864,7 +6448,8 @@ const questions = [
         "a3": "sieci",
         "a4": "transportowa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Trzecia warstwa ISO/OSI to?",
@@ -5874,7 +6459,8 @@ const questions = [
         "a3": "fizyczna",
         "a4": "transportowa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Czwarta warstwa ISO/OSI to?",
@@ -5884,7 +6470,8 @@ const questions = [
         "a3": "łącza danych",
         "a4": "fizyczna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Adresacja MAC działa na warstwie ISO/OSI?",
@@ -5894,7 +6481,8 @@ const questions = [
         "a3": "fizyczna",
         "a4": "transportowa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Adresacja IP działa na warstwie ISO/OSI?",
@@ -5904,7 +6492,8 @@ const questions = [
         "a3": "fizyczna",
         "a4": "transportowa",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Identyfikacja portów działa na warstwie ISO/OSI?",
@@ -5914,7 +6503,8 @@ const questions = [
         "a3": "łącza danych",
         "a4": "fizyczna",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"IPv4 składa się z _ bajtów?",
@@ -5924,7 +6514,8 @@ const questions = [
         "a3": "2",
         "a4": "5",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"IPv6 składa się z _ bajtów?",
@@ -5934,7 +6525,8 @@ const questions = [
         "a3": "8",
         "a4": "6",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Adres MAC składa się z _ bajtów?",
@@ -5944,7 +6536,8 @@ const questions = [
         "a3": "2",
         "a4": "8",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Każde urządzenie sieciowe ma unikalny adres MAC?",
@@ -5954,7 +6547,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Narzędziem do podglądania ruchu sieciowego jest?",
@@ -5964,7 +6558,8 @@ const questions = [
         "a3": "Curl",
         "a4": "Putty",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Narzędziem do sprawdzania adresu IP, do którego prowadzi domena jest?",
@@ -5974,7 +6569,8 @@ const questions = [
         "a3": "curl",
         "a4": "arp",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Normy to dokumenty określające zasady postępowania, przepisy, wzory, wytyczne lub charakterystyki do powszechnego i wielokrotnego stosowania?",
@@ -5984,7 +6580,8 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
     {
         "question":"Normy powinny być?",
@@ -5994,7 +6591,8 @@ const questions = [
         "a3": "uwzględniać aktualny stan wiedzy oraz poziom techniki osiągnięty lub możliwy do osiągnięcia w najbliższym czasie",
         "a4": "być możliwe do realizacji oraz absolutnie sprawdzalne",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Celem normalizacji krajowej jest?",
@@ -6004,7 +6602,8 @@ const questions = [
         "a3": "usuwania barier technicznych w handlu i zapobiegania ich powstawaniu",
         "a4": "zapewnienia jakości i niezawodności wyrobów, procesów i usług",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Celem normalizacji krajowej jest?",
@@ -6014,7 +6613,8 @@ const questions = [
         "a3": "poprawy funkcjonalności, kompatybilności i zamienności wyrobów, procesów i usług",
         "a4": "ułatwiania porozumiewania się przez określanie terminów, definicji, oznaczeń i symboli do powszechnego stosowania",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
@@ -6024,7 +6624,8 @@ const questions = [
         "a3": "Github",
         "a4": "Git",
         "tag": "NIEOFICJALNE",
-        "type": "4A"
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?",
@@ -6034,7 +6635,8 @@ const questions = [
         "a3": "obsługa REST API",
         "a4": "szyfrowanie haseł metodą SHA256",
         "tag": "NIEOFICJALNE",
-        "type": "2A"
+        "type": "2A",
+        "desc":""
     },
 ]
 

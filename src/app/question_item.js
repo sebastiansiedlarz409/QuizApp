@@ -61,6 +61,10 @@ function QuestionItem(props){
         document.getElementById(props.question.id+"D").style.backgroundColor = "rgb(255,255,255,0.3)";
 
         document.getElementById(id).style.backgroundColor = positive === 0 ? "crimson" : "green";
+        
+        if(document.getElementById(props.question.id+"DESC").innerHTML.length > 0){
+            document.getElementById(props.question.id+"DESC").style.display = "block";
+        }
 
         if(positive){
             answer = true;
@@ -91,6 +95,9 @@ function QuestionItem(props){
                 <div id={props.question.id+"D"} className="answer" onClick={()=>mark(props.question.id+"D", 0)}>
                     <button className='answer_button D'>D</button><span>{props.question.a4}</span>
                 </div>
+            </div>
+            <div id={props.question.id+"DESC"} class="question_description">
+                {props.question.desc}
             </div>
         </div>
     );
