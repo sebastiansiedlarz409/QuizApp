@@ -287,7 +287,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Pusty nawias na parametry funckji oznacza brak parametrów w C?",
+        "question":"Pusty nawias na parametry funkcji oznacza brak parametrów w C?",
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
@@ -680,7 +680,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"NULL to tak naprawdę liczba 0, nullptr to specjalny typ, który ma zastąpić NULL. Ma to znaczenie przy przeciążaniu funckji, gdyż NULL może zostać potraktowany jako int a nie jako wskaźnik."
+        "desc":"NULL to tak naprawdę liczba 0, nullptr to specjalny typ, który ma zastąpić NULL. Ma to znaczenie przy przeciążaniu funkcji, gdyż NULL może zostać potraktowany jako int a nie jako wskaźnik."
     },
     {
         "question":"Zapis \"const char* a;\" oraz \"char* const a\" są równoznaczne?",
@@ -848,7 +848,7 @@ const questions = [
         "desc":"Tak. Jeżeli plik w C nazywał się stdio.h to w C++ jego odpowiednikiem jest cstdio"
     },
     {
-        "question":"W języku C i C++ możliwe jest pobranie adresu funckji i zapisanie go we wskaźniku?",
+        "question":"W języku C i C++ możliwe jest pobranie adresu funkcji i zapisanie go we wskaźniku?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -1112,11 +1112,11 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Do czego służy nawias [] w deklaracji funckji lambda (C++)?",
+        "question":"Do czego służy nawias [] w deklaracji funkcji lambda (C++)?",
         "url":"",
         "a1": "do przechwytywania zmiennych",
         "a2": "do deklaracji parametrów",
-        "a3": "do deklaracji ciała funckji",
+        "a3": "do deklaracji ciała funkcji",
         "a4": "do niczego konkretnego",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -1169,8 +1169,8 @@ const questions = [
     {
         "question":"W C++ wartość liczbową można wypisać w systemie szesnastkowym za pomocą \"cout\":",
         "url":"",
-        "a1": "std::cout << std::dec << n << '\\n';",
-        "a2": "std::cout << std::hex << n << '\\n';",
+        "a1": "std::cout << std::hex << n << '\\n';",
+        "a2": "std::cout << std::dec << n << '\\n';",
         "a3": "std::cout << std::oct << n << '\\n';",
         "a4": "std::cout << std::bin << n << '\\n';",
         "tag": "NIEOFICJALNE",
@@ -1937,7 +1937,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Interfejs to taki jakby konstrakt, mówiący jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działą tak samo z tym, że on może mieć już część metod zaimplementowaną."
+        "desc":"Interfejs można porównać do kontraktu, który mówi jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działa tak samo z tym, że ona może mieć już część metod zaimplementowaną."
     },
     {
         "question":"Programowanie strukturalne i funkcyjne to to samo?",
@@ -1959,7 +1959,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Albo struktury."
     },
     {
         "question":"Słowo kluczowe \"sealed\" w C# blokuje możliwość dziedziczenia z klasy?",
@@ -2050,7 +2050,7 @@ const questions = [
         "desc":"Jest to metoda abstrakcyjna bez ciała. Metoda wirtualana może mieć ciało, które będzie nadpisane bądź nie."
     },
     {
-        "question":"Jak wywołać metodę obiekty za pomocą wskaźnika?",
+        "question":"Jak wywołać metodę obiektu za pomocą wskaźnika wskazującego na ten obiekt?",
         "url":"",
         "a1": "wskaźnik->metoda();",
         "a2": "wskaźnik.metoda();",
@@ -2389,7 +2389,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Klasy definują typy referencyjne. Struktury definują typy wartościowe."
     },
     {
         "question":"Struktura definuje typ referencyjny w języku C#?",
@@ -2466,7 +2466,7 @@ const questions = [
         "a4": "string",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Action to delegat do funckji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów."
+        "desc":"Action to delegat do funkcji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów."
     },
     {
         "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
@@ -2525,14 +2525,14 @@ const questions = [
     },
     {
         "question":"Istnieje w C# różnica między zmienną typu \"const\" a \"readonly\"?",
-        "url":"",
+        "url":"https://servocode.com/assets/src/images/blog/DI3.png",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Zmienna \"readonly\" może zostać podmieniona przez konstruktor. To słowo kluczowe stosuje się do pól z zależnościami."
+        "desc":"Zmienna \"readonly\" może zostać podmieniona przez konstruktor. To słowo kluczowe stosuje się do pól przechowujących obiekty zależności klasy (obrazek)."
     },
     {
         "question":"Oznaczenie w C# klasy jako \"sealed\" blokuje możliwość dziedziczenia z niej?",
@@ -2686,7 +2686,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Obiekt typu referencyjnego tworzony jest na stercie, ale zmienna z adresem jest i tak na stosie jeżeli jest utworzona w funkcji."
     },
     {
         "question":"W C# typ wartościowy staje się typem referencyjnym jeżeli jest składową typu referencyjnego?",
@@ -2701,14 +2701,14 @@ const questions = [
     },
     {
         "question":"Boxing to proces sztuczengo opakowania typu wartościowego w typ referencyjny?",
-        "url":"",
+        "url":"data:image/png;base64,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",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Możemy na przykład zapakować inta do tablicy typu object[1], a później wypakować z pod indeksu 0"
+        "desc":"Możemy na przykład zapakować inta do typu object. Dostajemy dzięki temu obiekt referencyjny."
     },
     {
         "question":"Właściwość w C# to odpowiednik gettera i settera z innych języków?",
@@ -2719,7 +2719,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Właściwości to \"syntactic sugar\" na zwykłe funkcyjne gettery i settery."
     },
     {
         "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję get to jest tylko getterem?",
@@ -2730,7 +2730,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli w dymku z podowiedzią widzimy tylko get to jest to tylko getter."
     },
     {
         "question":"Jeżeli właściwość w C# ma tylko zadeklarowaną opcję set to jest tylko setterem?",
@@ -2741,7 +2741,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli w dymku z podowiedzią widzimy tylko set to jest to tylko setter."
     },
     {
         "question":"Jeżeli właściwość w C# ma słowo kluczowe \"init\" w miejscu \"set\" oznacza to, że może ona być użyta jako setter raz w czasie inicjalizacji?",
@@ -2785,7 +2785,7 @@ const questions = [
         "a4": "Strings",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"StringBuilder buduje string w bardziej optymalny sposób. Ma to duże znaczenie gdy np. doklejamy coś do stringa w pętli."
     },
     {
         "question":"List<T> w C# nie dziedziczy z?",
@@ -2796,7 +2796,7 @@ const questions = [
         "a4": "ICollection",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Lista nie dziedziczy z IEnumeratora. W Visual Studio istenieje taka opcja jak \"Peek definition\". Dzięki niej można odszukać definicję typów/zmiennych."
     },
     {
         "question":"Parametry generyczne umieszczamy zazwyczaj w?",
@@ -2818,7 +2818,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Taką konwencję przyjeli programiści C#."
     },
     {
         "question":"W C# List<T> nie różni się niczym od zwykłej tablicy?",
@@ -2829,7 +2829,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Lista to typ na wyższym poziomie abstrakcji. Oferuje bogatsze API niż zwykła tablica."
     },
     {
         "question":"W C# ArrayList oraz tablica to to samo?",
@@ -2840,7 +2840,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"ArrayList to lista typu object w C#. W C# wszystko dziedziczy z typu \"object\" więc możliwe jest wrzucenie do takiej listy wszystkiego. Obecnie lepiej używać kolekcji typu List<T>"
     },
     {
         "question":"Metoda LINQ First() działa tak samo jak FirstOrDefault()?",
@@ -2851,7 +2851,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Jeżeli kolekcja będzie pusta First() spowoduje błąd, a FirstOrDefault() zwróci domyślną wartość danego typu czyli np. 0 albo null."
+        "desc":"Jeżeli kolekcja typu T będzie pusta First() spowoduje błąd, a FirstOrDefault() zwróci domyślną wartość danego typu T czyli np. 0 dla int albo null dla typu referencyjnego."
     },
     {
         "question":"W C# List<T> to to samo co IEnumerable<T>?",
@@ -2862,7 +2862,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"List dziedziczy z interfejsu IEnumerable. Jeżeli posługujemy się referencją typu IEnumerable możliwe jest odłożenie w czasie pewnych operacji na kolecji."
     },
     {
         "question":"Do czego służy metoda ToString() w C#?",
@@ -2884,7 +2884,7 @@ const questions = [
         "a4": "IsNull()",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"IsNullOrEmpty() to statuczna składowa typu String. Dzięki niej nie musimy pisać ifów sprawdzających czy zmienna jest nullem lub ma długość 0"
     },
     {
         "question":"Gdy \"a = null\" instrukcja \"Console.WriteLine(a is { });\" wypisze?",
@@ -2898,7 +2898,7 @@ const questions = [
         "desc":"\"a is {}\" to odpowiednik \"a != null\""
     },
     {
-        "question":"Słowo kluczowe służące do napisywania metod klasy bazowej to?",
+        "question":"Słowo kluczowe służące do nadpisywania metod klasy bazowej to?",
         "url":"",
         "a1": "override",
         "a2": "virtual",
@@ -2917,7 +2917,7 @@ const questions = [
         "a4": "funckję dotykającą UI",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Metoda taka jest asynchroniczna."
     },
     {
         "question":"Słowo kluczowe języka C# \"await\" automatycznie powoduje?",
@@ -2928,7 +2928,7 @@ const questions = [
         "a4": "że metoda staje się synchroniczną",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli w metodzie pada słowo kluczowe \"await\" to metoda staje się asynchroniczna. Trzeba ją oznaczyć jako metodę \"async\" albo popraostu zwrócić typ Task<T>."
     },
     {
         "question":"W C# typem zwracanym z metod asynchronicznych jest?",
@@ -2950,7 +2950,7 @@ const questions = [
         "a4": "Abstract Syntax Tree",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wszystkie języki .NET (C#/F#/Visual Basic) są kompilowane do wspólnej postaci pośrdeniej a później do kodu maszynowego."
     },
     {
         "question":"Typy wartościowe można przekazać w formie referencji za pomocą?",
@@ -2972,7 +2972,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Testy w C# nazywa się snake_casem. cammelCase jest słabym rozwiązaniem gdy nazwa składa się z dużej ilości słów."
     },
     {
         "question":"Skrót \"WPF\" oznacza?",
@@ -2986,7 +2986,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Frameworkiem do tworzenia stron interentowych powiązanym z C# nie jest?",
+        "question":"Frameworkiem do tworzenia stron internetowych powiązanym z C# nie jest?",
         "url":"",
         "a1": "Flask",
         "a2": "ASP.NET",
@@ -3016,7 +3016,7 @@ const questions = [
         "a4": "Socket",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C# jest to HttpClient."
     },
     {
         "question":"Aby użyć wskaźników w C# należy oznaczyć funkcję słowem kluczowym?",
@@ -3027,7 +3027,7 @@ const questions = [
         "a4": "static",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najczęściej dopisuje się \"unsafe\" do nagłówka funkcji np. \"public static unsafe void Main(){}\""
     },
     {
         "question":"Klasą nadrzędną dla wyjątków w C# jest?",
@@ -3038,13 +3038,13 @@ const questions = [
         "a4": "Error",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chcąc stworzyć własny wyjątek budujemy klasę dziedziczącą z Exceptions."
     },
     {
         "question":"Pojęcie statycznego polimorfizmu oznacza?",
         "url":"",
         "a1": "Przeciążanie funkcji",
-        "a2": "Nadpisywanie funckji",
+        "a2": "Nadpisywanie funkcji",
         "a3": "Dziedziczenie",
         "a4": "Wielokrotne dziedziczenie",
         "tag": "NIEOFICJALNE",
@@ -3071,7 +3071,7 @@ const questions = [
         "a4": "oznacza obiekt jako stałą",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Referencja jest dużo bezpieczniejsza. Większość błędów bezpieczeństwa w oprogramowaniu wywodzi się z niepoprawnego użycia wskaźników lub innego niedopatrzenia z nimi związanego."
     },
     {
         "question":"Która pętla nie jest dostępna w C#?",
@@ -3104,7 +3104,7 @@ const questions = [
         "a4": "megabajt",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każda komórka czyli bajt pamięci ma swój adres."
     },
     {
         "question":"C# obsługuje mechanizm null-safety?",
@@ -3115,7 +3115,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"NULL SAFETY zostało dodane do C# w jednej z nowszych iteracji tego języka. W całym tym mechaniźmie chodzi o to by poprawić świadomość programisty na temat tego czy dana zmienna może być nullem czy nie."
     },
     {
         "question":"Skrót LINQ oznacza?",
@@ -3148,7 +3148,7 @@ const questions = [
         "a4": "tokeny",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Atrybut, atrybuty takie można deifniować samemu."
+        "desc":"Atrybut, atrybuty takie w C# można definiować samemu poprzez stworzenie klasy dziedziczącej z \"System.Attribute\"."
     },
     {
         "question":"W C# za operacje na plikach odpowiada między innymi klasa \"File\"?",
@@ -3192,7 +3192,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie każda funkcja zrobi to za nas, a jeżeli tego nie zrobi to możemy spodziewać się wyjątku."
     },
     {
         "question":"Czy deklarowanie zmiennych jako \"var\" w C# to dobra praktyka?",
@@ -3203,7 +3203,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Powinno się pisać typ precyzyjnie. Ułatwia to później analizę kodu."
     },
     {
         "question":"W C# występuje pojęcie przestrzeni nazw?",
@@ -3214,7 +3214,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Zasada działania jest podobna do przestrzeni nazw z C++. Cały ten mechanizm ma zadanie czysto organizacyjne. No i pozwala używać wiele razy tych samych nazw."
     },
     {
         "question":"W C# wyjątek \"NullReferenceException\" oznacza, że?",
@@ -3325,10 +3325,10 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Analogia do tabel w HTML."
     },
     {
-        "question":"Aby w WPF można było połączyć wierwsze saitki należy posłużyć się atrybutem \"Grid.RowSpan\"?",
+        "question":"Aby w WPF można było połączyć wierwsze siatki należy posłużyć się atrybutem \"Grid.RowSpan\"?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -3336,7 +3336,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Analogia do tabel w HTML."
     },
     //GIT
     {
@@ -3348,7 +3348,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Hard powoduje całkowitą utratę zmian. Soft zostawia zmiany jako dodane. Mixed zostawia zmiany jako do dodania."
+        "desc":"Hard powoduje całkowitą utratę zmian. Soft zostawia zmiany jako \"dodane\". Mixed zostawia zmiany jako \"do dodania.\""
     },
     {
         "question":"Jakiego przełącznika należy użyć z poleceniem \"git reset\" aby cofnięte zmiany wylądowały na \"stage\"?",
@@ -3359,7 +3359,7 @@ const questions = [
         "a4": "--medium",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Hard powoduje całkowitą utratę zmian. Soft zostawia zmiany jako \"dodane\". Mixed zostawia zmiany jako \"do dodania\"."
     },
     {
         "question":"Polecenie \"git rebase\" oraz git merge\" działają tak samo?",
@@ -3403,7 +3403,7 @@ const questions = [
         "a4": "git add all",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Nie zaleca się używania \"git add .\" jeżeli w projekcie nie ma pliku \".gitignore\"."
     },
     {
         "question":"Aby w systemie git przeglądać historie commitów w formie list należy dodać do \"git log\"?",
@@ -3527,7 +3527,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Portal github to to samo co GIT?",
+        "question":"Portal GITHUB to to samo co GIT?",
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
@@ -3535,7 +3535,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"GITHUB to portal do przechowywania repozytoriów. Dzięki portalą takim jak GITHUB możliwa jest współpraca wielu programistów poprzez GIT."
     },
     {
         "question":"Pojęcie \"fork\" oznacza w terminologi GIT połączenie dwóch gałęzi?",
@@ -3546,7 +3546,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pojęcie \"fork\" oznacza stworznie własnej kopi projektu na bazie czyjegoś repozytorium na githubie."
     },
     {
         "question":"Aby połączyć gałęzie w GIT należy użyć polecenia?",
@@ -3613,7 +3613,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"C to jeden z niskopoziomowych języków. Na jego bazie powstało wiele obecnie znanych języków."
     },
     {
         "question":"Visual Studio jest kompilatorem?",
@@ -3724,7 +3724,7 @@ const questions = [
         "a4": "act/assery/arrange",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Arrange przygotowuje kod testowany, Act wykonuje testowaną akcję, Assert porównuje wynik z wartością oczekiwaną."
     },
     {
         "question":"Frameworkiem do pisania testów jednostkowych w języku JAVA jest?",
@@ -3746,7 +3746,7 @@ const questions = [
         "a4": "Google Tests",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Można jeszcze używać NUnita."
     },
     {
         "question":"Modułem umożliwiającym testy w jezyku JavaScript i środowisku NodeJS jest?",
@@ -3790,7 +3790,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W TDD najpierw piszemy test do kodu, który nie istnieje a później sam kod. Nabiera to więcej sensu jak się w tym troche popisze :)"
     },
     {
         "question":"\"Mock\" to pojęcie określające?",
@@ -3801,7 +3801,7 @@ const questions = [
         "a4": "żaden z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się."
     },
     {
         "question":"Nie powinno się testować automatycznie kontrolerów MVC?",
@@ -3846,10 +3846,10 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"DRY - Dont Repeat Yourself"
+        "desc":"DRY - Dont Repeat Yourself, KISS - Keep It Simple Stupid, YAGNI - You Arent Gona Need It, SOLID - 5 zasad programowania obiektowego"
     },
     {
-        "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprosztszej formie to?",
+        "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprostszej formie to?",
         "url":"",
         "a1": "KISS",
         "a2": "DRY",
@@ -3857,7 +3857,7 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"KISS - Keep It Simple Stupid"
+        "desc":"KISS - Keep It Simple Stupid, DRY - Dont Repeat Yourself, YAGNI - You Arent Gona Need It, SOLID - 5 zasad programowania obiektowego"
     },
     {
         "question":"Skrót zasady, mówiącej o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
@@ -3868,7 +3868,7 @@ const questions = [
         "a4": "SOLID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"YAGNI - You Arent Gona Need It"
+        "desc":"YAGNI - You Arent Gona Need It, KISS - Keep It Simple Stupid, DRY - Dont Repeat Yourself, SOLID - 5 zasad programowania"
     },
     {
         "question":"Zbiór pięciu zasad dobrego kodu obiektowego to?",
@@ -3934,7 +3934,7 @@ const questions = [
         "a4": "O",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Single Responsiblity Principle"
     },
     {
         "question":"Wzorcem kreacyjnym jest?",
@@ -4011,7 +4011,7 @@ const questions = [
         "a4": "UI",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Kontroler zajmuje się sterowaniem i przetwarzaniem żądań."
     },
     {
         "question":"Pochodną wzorca MVC jest?",
@@ -4055,7 +4055,7 @@ const questions = [
         "a4": "Object Relational Macro",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"ORM to biblioteka, która mapuje tabele na klasy a rekordy na obiekty. W wyniku zapytania SELECT dostajemy listę obiektów odpowiedniej klasy."
     },
     {
         "question":"Przykładem biblioteki typu ORM nie jest?",
@@ -4066,7 +4066,7 @@ const questions = [
         "a4": "PDO",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"NSubstitude to biblioteka do tworzenia mocków w C#."
     },
     {
         "question":"Zasada \"dependency injection\" mówi, żeby zależności wstrzykiwać z zewnątrz przez?",
@@ -4077,7 +4077,7 @@ const questions = [
         "a4": "pole",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najczęściej konstruktory, ale można również wstrzykiwać zależności przez setter lub pole (łamiemy zasadę hermetyzacji)."
     },
     {
         "question":"Na obrazku klasa Repository jest dla klasy Server?",
@@ -4265,7 +4265,7 @@ const questions = [
         "a4": "2",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o warstwę aplikacji."
     },
     {
         "question":"Skrót HTTP rozwija się?",
@@ -4298,7 +4298,7 @@ const questions = [
         "a4": "2",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o warstwę transportową."
     },
     {
         "question":"Protokoły IPv4 oraz IPv6 są protokołami warstwy _ ISO/OSI?",
@@ -4309,7 +4309,7 @@ const questions = [
         "a4": "2",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o warstwę sieciową."
     },
     {
         "question":"Dane przekazywane do protokoły HTTP/HTTPS są w formacie?",
@@ -4320,7 +4320,7 @@ const questions = [
         "a4": "zwykłego tekstu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dane obierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia."
     },
     {
         "question":"Dane otrzymywane poprzez protokoły HTTP/HTTPS są w formacie?",
@@ -4331,7 +4331,7 @@ const questions = [
         "a4": "zwykłego tekstu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dane obierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia."
     },
     {
         "question":"Metodą protokołu HTTP/HTTPS nie jest?",
@@ -4485,7 +4485,7 @@ const questions = [
         "a4": "JavaScript Web Type",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"JWT służy do autoryzacji/logowania do stron za pomocą REST API."
     },
     {
         "question":"API typu REST wymienia dane w formacie zwanym?",
@@ -4496,7 +4496,7 @@ const questions = [
         "a4": "JWT",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o format JSON, który jest dużo lżejszy niż XML."
     },
     {
         "question":"Poprzednikiem API typu REST było API typu?",
@@ -4507,7 +4507,7 @@ const questions = [
         "a4": "MAC",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"SOAP to taki REST bazujący na XML."
     },
     {
         "question":"API typu SOAP bazuje na technologii?",
@@ -4540,7 +4540,7 @@ const questions = [
         "a4": "TPC",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"TCP w momencie nie dotarcia pakietu wyśle go jeszcze raz. UDP zignoruje ten pakiet. Niektóre protokoły warstw wyższych wolą UDP, a niektóre TCP."
     },
     {
         "question":"Protokołem połączeniowym warstwy 4 ISO OSI jest?",
@@ -4551,7 +4551,7 @@ const questions = [
         "a4": "TPC",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"TCP w momencie nie dotarcia pakietu wyśle go jeszcze raz. UDP zignoruje ten pakiet. Niektóre protokoły warstw wyższych wolą UDP, a niektóre TCP."
     },
     {
         "question":"Programem do testowania REST API jest?",
@@ -4584,7 +4584,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W zwykłym HTTP wszystko wysyłane jest gołym tekstem. Narzędzia takie jak WireShark pozwalają podejrzeć zawartość pakietu."
     },
     //technologie webowe
     {
@@ -4682,7 +4682,7 @@ const questions = [
         "a2": "szukanie luk zabezpieczeń",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Polega to na skanowaniu drzewa HTML i wyszukiwaniu wartościowych danych."
     },
     {
         "question":"Wirus, który podszywa się pod legalny i bezpieczny program to?",
@@ -4715,7 +4715,7 @@ const questions = [
         "a4": "Session poisoning",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli nie filtrujemy odpowiednio danych wejsciowych ktoś może podać w formularzu kod JavaScript, który w pewnych sytuacjach/zależnie od logiki aplikacji może coś zrobić."
     },
     {
         "question":"Dodanie zapytania SQL do istniejącego już zapytania nazywane jest?",
@@ -4726,7 +4726,7 @@ const questions = [
         "a4": "Session poisoning",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Bardzo trudny atak do wykonania w dzisiejszych czasach. Wyobraźmy sobie, że hasło z formularza HTML jest doklejane jako string do zapytania SQL w klauzuli WHERE. Co się stanie jak ktoś wpisze w pole z hasłem jakieś dziwne zapytanie SQL?"
     },
     {
         "question":"Atakiem polegającym na zmuszeniu przeglądarki ofiary do wykonania pewnej akcji jest?",
@@ -4748,7 +4748,7 @@ const questions = [
         "a4": "CSS",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, poniważ mamy XAMPA oraz UsbWebServer."
     },
     //javascript
     {
@@ -4837,7 +4837,7 @@ const questions = [
         "a4": "[NaN, NaN, NaN]",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Indeksy oryginalnej tablicy są interpretowane jako podstawy systemów liczbowych. Jedynka jest parsowana do systemu o podstawie 0, 7 do systemu o podstawie 1 a 11 do systemu o podstawie 2. Cyfry 7 nie ma systemie liczbowym o podstawie 1."
     },
     {
         "question":"JavaScript wchodzi w standard ECMAScript",
@@ -4859,7 +4859,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"TypeScript dodaje tylko i wyłącznie statycznie typowanie do języka JavaScript."
     },
     {
         "question":"JavaScript pozwala przypisać funkcję do zmiennej?",
@@ -4870,7 +4870,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Oczywiście np. w formie wyrażenia lambda."
     },
     {
         "question":"Czy funkcja eval() jest bezpieczna?",
@@ -4947,7 +4947,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W czasach przed NodeJs tak było."
     },
     {
         "question":"W JS operatory \"===\" oraz \"==\" działają tak samo?",
@@ -5081,7 +5081,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Kluczem sztucznym jest np. Id, ponieważ nie ma ono nic wspólnego z encją przechowywaną w tabeli. Kluczem naturanym będzie np. PESEL, ponieważ jest powiązany z przechowywaną encją (np. studentem) i jest unikalną wartością jednoznacznie identyfikującą rekord."
     },
     {
         "question":"Relacja wiele do wielu wymaga",
@@ -5103,10 +5103,10 @@ const questions = [
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przykład: Mamy tabele Oceny. Kolumna Ocena przechowuje zawsze jedną ocene, a nie oceny po przecinku. Jeżeli uczeń dostał koleją ocene to pojawia się nowy rekord w tabeli."
     },
     {
-        "question":"O tym, że każda kolumna tabeli musi zależeć od klucza głównego mówi",
+        "question":"O tym, że każda tabela musi przechowywać dane tylko tej konkretnej encji mówi",
         "url":"",
         "a1": "Druga postać normalna",
         "a2": "Pierwsza postać normalna",
@@ -5114,7 +5114,7 @@ const questions = [
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli tabela nazywa się Students to nie przechowuje ich adresów czy ocen."
     },
     {
         "question":"O tym, że każda kolumna może być zależna tylko od klucza głównego mówi",
@@ -5125,7 +5125,7 @@ const questions = [
         "a4": "Czwarta postać normalna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przykład z brutto, netto i tara. Nie ma sensu trzymać w bazie wszystkich trzech wartości jak dwie da się wyliczyć na bazie trzeciej. Nie ma sensu trzymać w bazie daty urodzenia jeżeli da się ją wyciągnąć z numeru PESEL."
     },
     {
         "question":"Krotka w bazach relacyjnych to",
@@ -5169,7 +5169,7 @@ const questions = [
         "a4": "max()",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Distinct to nawet nie jest funkcja a zwykła klauzula służąca do pobierania unikalnych rekordów."
     },
     {
         "question":"Typy varchar oraz char w bazach danych są równoznaczne?",
@@ -5180,7 +5180,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"char(n) alokuje n miejsca od razu, varchar(n) alokuje tyle ile potrzeba w danym momencie aż do osiągnięcia n"
     },
     {
         "question":"Typy text oraz varchar w bazach danych są równoznaczne?",
@@ -5191,7 +5191,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W przypadku varchara możemy podać maksymalną długość łańcucha znakowego."
     },
     {
         "question":"Procedura i funkcja to to samo?",
@@ -5202,7 +5202,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Procedura nie zwraca wartości."
     },
     {
         "question":"Jeżeli usuniemy z bazy rekord to jego klucz główny (ID) może zostać użyty ponownie?",
@@ -5213,7 +5213,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Nie może. Jeżeli gdzieś przypadkiem zostały by jakieś resztki z relacji usuniętego rekordu nowy rekord mógłby zostać przez przypadek powiązany z tą relacją."
     },
     {
         "question":"Bazy danych pozwalają automatyzować generowanie klucza głównego za pomocą...",
@@ -5224,7 +5224,7 @@ const questions = [
         "a4": "wyzwalaczy",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Sekwencja przy każdym wywołaniu zwraca następną wartość np. następną liczbę. Sekwencją możemy wypełniać klucz główny jeżeli nie mamy auto increment."
     },
     {
         "question":"Tak zwane aplikacje CRUDowe to",
@@ -5235,7 +5235,7 @@ const questions = [
         "a4": "aplikacje tworzące strukture bazy danych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Aplikacje crudowe to aplikacje, które nie wykonują za dużo logiki a jednynie zapisują i odczytują dane z bazy."
     },
     {
         "question":"Mechanizem pozwalającym szybko modyfikować bazę danych i migrować dane między jej wersjami w czasie dewelopmentu to",
@@ -5246,7 +5246,7 @@ const questions = [
         "a4": "sekwencje",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Migracja modyfikuje tabele, na bazie klas \"podejście codefirst\" i sama migruje dane do nowej struktury. Przydatne gdy piszemy aplikację i często modyfikujemy strukture tabel."
     },
     {
         "question":"Zestaw czynności na bazie danych, które stanowią pewną nierozerwalną całość to",
@@ -5257,7 +5257,7 @@ const questions = [
         "a4": "funkcje",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W przypadku transakcji albo wykona się wszystko albo nic. Jeżeli robimy operację, która wymaga kilku zapytań wykonujmy ją za pomocą transakcji. Unikniemy sytuacji gdzy 4 zapytania przeszły a jedno nie, bo co w takiej sytuacji zrobić?"
     },
     {
         "question":"Zapytanie typu SELECT zawsze musi mieć klauzule FROM?",
@@ -5268,7 +5268,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Oczywiście. Możemy nawet śmiało powiedzieć, że wykonywanie zapytania bez klauzuli WHERE jest wysoce niezalecane."
     },
     {
         "question":"ENUM oraz SET jako typy kolumn są równoznaczne?",
@@ -5279,7 +5279,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"W przypadku enuma, musimy wybrać jedną konkretną wartość. W przypadku zbioru możemy do pola wstawić kilka opcji zdefiniowanych w zbiorze."
     },
     {
         "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
@@ -5323,7 +5323,7 @@ const questions = [
         "a4": "4",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wiele osób nie wie, że limit przyjmuje opcjonalny parametr, którym jest offset w tabeli. \"limit 2, 6\" oznacza weź 6 elementów, ale zacznij od trzeciego."
     },
     {
         "question":"W SQL sortowanie malejące oznaczamy?",
@@ -5345,7 +5345,7 @@ const questions = [
         "a4": "Wszystko jest w porządku",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Netto i Tara da się policzyć na bazie brutto, więc przechowywanie tych danych marnuje pamięć."
     },
     {
         "question":"Najbardziej prawdopodobna relacja między tabelami Osoba oraz Adres to relacja?",
@@ -5356,7 +5356,7 @@ const questions = [
         "a4": "jeden do jeden",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jedna osoba może być zameldowana pod wieloma adresami. Pod jednym adresem może mieszkać kilka osób."
     },
     {
         "question":"Najbardziej prawdopodobna relacja między tabelami Student oraz ContactData to relacja?",
@@ -5367,7 +5367,7 @@ const questions = [
         "a4": "wiele do wielu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każdy student ma raczej jeden wpis w tabeli z danymi kontaktowymi."
     },
     {
         "question":"Aby w SQL uzyskać wyniki gdzie wartość kolumny n na drugim miejscu ma literkę \"r\" trzeba użyć klauzuli?",
@@ -5378,7 +5378,7 @@ const questions = [
         "a4": "like '+r%'",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"\"_\" oznacza dowolny jeden znak, \"%\" oznacza dowolną ilość znaków."
     },
     {
         "question":"Operator \"OR\" w SQL zwraca prawdę jeżeli?",
@@ -5389,7 +5389,7 @@ const questions = [
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"OR = LUB, więc jedno lub drugie musi być prawdą by uzyskać prawdę :)"
     },
     //php
     {
@@ -5412,7 +5412,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Pliki php mają większy priorytet."
     },
     {
         "question":"\"\" oraz '' w PHP działają tak samo?",
@@ -5423,7 +5423,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Cudzysłowia pozwalają na umieszczanie w stringu dodatkowych specjalnych wartości."
     },
     {
         "question":"Bezpieczniejszą metodą przesyłania fomularzy jest metoda?",
@@ -5467,7 +5467,7 @@ const questions = [
         "a4": "|",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Może to być niespodzianka, ale łącznie stringów odbywa się za pomocą \".\""
     },
     {
         "question":"Operatorem potęgowania w PHP jest?",
@@ -5501,7 +5501,7 @@ const questions = [
         "a4": "F#",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najczęściej mamy do czynienia z implementacją CPython."
     },
     {
         "question":"Odpowiednikiem słowa kluczowgo \"this\" w Pythonie jest?",
@@ -5512,7 +5512,7 @@ const questions = [
         "a4": "ptr",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi o słowo kluczowe \"self\" przekazywane jako argument do każdej metody klasy. W C++ this jest też przekazywane jako pierwszy argument, ale nie widać tego w kodzie."
     },
     {
         "question":"Kolekcja o nazwie \"tuple\" w Pythonie jest mutowalna?",
@@ -5523,7 +5523,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tuple typu () nie pozwala po zainicjowaniu modyfikować swojej zawartości."
     },
     {
         "question":"Kolekcja o nazwie \"list\" w Pythonie jest mutowalna?",
@@ -5534,7 +5534,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"List typu [] pozwala po zainicjowaniu modyfikować swoją zawartość."
     },
     {
         "question":"Konstruktor klasy w języku Python ma nazwę?",
@@ -5634,7 +5634,7 @@ const questions = [
         "a4": "bd",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Spacja po cd jest istotna :)"
     },
     {
         "question":"Polecenie wiersza poleceń Windows służące wyświetlenia aktualnej ścieżki to?",
@@ -5711,7 +5711,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Polecenie chmod pozwala nadać uprawnienia do pliku i katalogu odpowiednio użytkownikowi, grupie, wszystkim."
     },
     {
         "question":"Liczba 6 podana do polecenia chmod nadaje uprawnienie?",
@@ -5722,7 +5722,7 @@ const questions = [
         "a4": "wszystkie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Polecenie chmod pozwala nadać uprawnienia do pliku i katalogu odpowiednio użytkownikowi, grupie, wszystkim."
     },
     {
         "question":"Liczba 3 podana do polecenia chmod nadaje uprawnienie?",
@@ -5733,7 +5733,7 @@ const questions = [
         "a4": "wszystkie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Polecenie chmod pozwala nadać uprawnienia do pliku i katalogu odpowiednio użytkownikowi, grupie, wszystkim."
     },
     {
         "question":"Parametr r-xrwx--- podany do polecenia chmod systemu linux nadaje uprawnienie?",
@@ -5744,7 +5744,7 @@ const questions = [
         "a4": "do odczytu wszystkim",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Polecenie chmod pozwala nadać uprawnienia do pliku i katalogu odpowiednio użytkownikowi, grupie, wszystkim."
     },
     {
         "question":"Polecenie systemu linux pozwalające zmienić właściciela zasobu to?",
@@ -5777,7 +5777,7 @@ const questions = [
         "a4": "rename",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jak zmienić nazwę pliku? Przenieść go w to samo miejsce pod inną nazwą."
     },
     {
         "question":"Polecenie systemu linux pozwalające przenieść plik to?",
@@ -5843,7 +5843,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"man - od manual np. \"man ls\""
     },
     //pytania ogólne
     {
@@ -5855,7 +5855,7 @@ const questions = [
         "a4": "funkcja rozszerzająca",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Callback - wywołanie zwrotne. Normalnie to programista wywołuje funkcje biblioteki. Callback pozwala dać innej funkcji swoją funkcję do wywołania kiedyś tam."
     },
     {
         "question":"Jak przekazać callback do funkcji w C#?",
@@ -5871,8 +5871,8 @@ const questions = [
     {
         "question":"Jak przekazać callback do funkcji w C/C++?",
         "url":"",
-        "a1": "trzeba posłuzyć się odpowiednim wskaźnikiem",
-        "a2": "trzeba posłuzyć się odpowiednim delegatem",
+        "a1": "trzeba posłużyć się odpowiednim wskaźnikiem",
+        "a2": "trzeba posłużyć się odpowiednim delegatem",
         "a3": "poprzez referencje",
         "a4": "poprzez wartość",
         "tag": "NIEOFICJALNE",
@@ -5880,7 +5880,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Lamda jest dobrym narzędziem do tworzenia krótkich callbacków?",
+        "question":"Lambda jest dobrym narzędziem do tworzenia krótkich callbacków?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -5891,7 +5891,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"W C# funkcję LINQ bardzo często przyjmują callbacki w parametrze?",
+        "question":"W C# funkcje LINQ bardzo często przyjmują callbacki w parametrze?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -5899,7 +5899,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Funkcje te często dostają w parametrze wyrażenia lambda na bazie, których mają dokonać wyboru jakie elementy wybrać."
     },
     {
         "question":"Znak \"\\n\" oznacza?",
@@ -5910,7 +5910,7 @@ const questions = [
         "a4": "znak ucieczki",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W teorii znak ten przenosi kursor w pionie linie niżej, ale nie cofa do początku wiersza. W praktyce zostało to uproszczone i znak ten wykonuje obie operacje."
     },
     {
         "question":"Znak \"\\r\" oznacza?",
@@ -5921,7 +5921,7 @@ const questions = [
         "a4": "znak ucieczki",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Znak ten przenosi kursor do początku wiersza."
     },
     {
         "question":"System kodowania znaków, który przypisuje liczbą od 0 do 127 znaki to?",
@@ -5932,7 +5932,7 @@ const questions = [
         "a4": "PID",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najbardziej podstawowy rodzaj kodowania znaków to ASCII. UTF to ogromne rozszerzenie zawierające znaki specjalne każdego języka oraz wiele innych symboli."
     },
     {
         "question":"Dodając do znaku \"char a = 'A'\" liczbę 32 uzyskamy?",
@@ -5943,7 +5943,7 @@ const questions = [
         "a4": "Z",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"32 to różnica między dużą i małą literą A. Można dzięki temu szybko zaimplementować metodę toLowerCase lub toUpperCase."
     },
     {
         "question":"Jednostka wykonująca kod to?",
@@ -5954,7 +5954,7 @@ const questions = [
         "a4": "konsola",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wątek jest jednostką wykonującą kod. Każdy program dostaje minimum jeden wątek. Każdy wątek ma swój context czyli stan procesora. Zamiana wątku na inny podmienia context na procesorze."
     },
     {
         "question":"Synchronizacja wątków polega na?",
@@ -6009,7 +6009,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Bardzo dobrze widać to w C#. Dotykanie UI w metodzie asynchronicznej zwracającej Task kończy się rzuceniem wyjątku."
     },
     {
         "question":"Jeżeli wątek główny zakończy się (return w main zostanie osiągnięty) to program czeka na pozostałe wątki?",
@@ -6031,7 +6031,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Wątek główny powinien czekać na zakończenie wątków pobocznych lub sam zlecić ich zabicie."
     },
     {
         "question":"Zrównoleglenie polega na?",
@@ -6053,7 +6053,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Wątki wykonują zadania. Nie możemy odpytywać wątku o dane lub coś innego w dowolnym momencie. W najlepszym przypadku dostaniemy zły wynik, albo wynik nie pełny."
     },
     {
         "question":"Każdy wątek a swoje ID?",
@@ -6064,7 +6064,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak, jest to TID - Thread ID."
     },
     {
         "question":"Każdy proces ma swoje ID?",
@@ -6075,7 +6075,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tak, jest to PID - Process ID."
     },
     {
         "question":"Jeżeli aplikacja A oraz B czytają/zapisuje dane na adresie 0xA to przeszkadzają sobie wzajemnie?",
@@ -6097,7 +6097,7 @@ const questions = [
         "a4": "threading",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"std::thread to banalna w użyciu biblioteka obiektowa do tworzenia wątków."
     },
     {
         "question":"Biblioteką języka C# do tworzenia wątków jest?",
@@ -6108,7 +6108,7 @@ const questions = [
         "a4": "threading",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Task<T> to typ, służący do tworzenia wątków w C#."
     },
     {
         "question":"Flagą, która blokuje inne wątki gdy jeden z nich ją ustawi jest?",
@@ -6141,7 +6141,7 @@ const questions = [
         "a4": "rdzeń procesora",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Rejestr to mała komórka pamięci w procesorze o rozmiarze np jednego inta. Jest to najszybsza pamięć w komputerze."
     },
     {
         "question":"Część procesora nazywana ALU to?",
@@ -6152,7 +6152,7 @@ const questions = [
         "a4": "kooprocesor",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"ALU - Arithmetic Logic Unit"
     },
     {
         "question":"Część procesora nazywana CU to?",
@@ -6163,7 +6163,7 @@ const questions = [
         "a4": "kooprocesor",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"CU - Control Unit"
     },
     {
         "question":"Część procesora nazywana FPU to?",
@@ -6174,7 +6174,7 @@ const questions = [
         "a4": "kontroler pamięci",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jest to kooprocesor. FPU - Floating Point Unit."
     },
     {
         "question":"Część procesora odpowiedzialna za operacje zmiennoprzecinkowe to?",
@@ -6185,7 +6185,7 @@ const questions = [
         "a4": "mostek północny",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dawniej kooprocesor był osobnym układem. Dziś jest częścią procesora. Ma on swój zestaw instrukcji."
     },
     {
         "question":"Jeżeli zapomnimy użyć delete w C/C++ i zamkniemy program to tracimy trochę pamięci?",
@@ -6284,7 +6284,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Większość obecnych technologi przesyłania danych działa szeregowo czyli bit po bicie."
     },
     {
         "question":"Transmisja synchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
@@ -6339,7 +6339,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Fizycznie kość jest tak skonstruowana, że nie da się jej podłączyć do innego gniazda."
     },
     {
         "question":"USB 3 jest kompatybilne z portami USB 2",
@@ -6350,7 +6350,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Tworzymy wąskie gardło, ale jest kompatybilne."
     },
     {
         "question":"Technologią wykorzystywaną najczęściej do komunikacji z dyskami twardymi jest?",
@@ -6361,7 +6361,7 @@ const questions = [
         "a4": "USB",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeszcze jest to SATA. Coraz częściej wykorzystuje się do dysków magistralę PCI."
     },
     {
         "question":"Technologią wykorzystywaną najczęściej do komunikacji z kartami graficznymi jest?",
@@ -6372,7 +6372,7 @@ const questions = [
         "a4": "ISA",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Obecnie PCI Express. AGP to już zabytek a ISA to już prehistoria :)"
     },
     {
         "question":"Wtyczka/Gniazdo RJ45 (sieciowe) ma 8 pinów?",
@@ -6383,7 +6383,18 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jest to wtyk 8P8C (8 pinów 8 styków). Tylko cztery są wykorzystywane."
+    },
+    {
+        "question":"Które pary przewodów wtyczk RJ45 (sieciowe) są wykorzystywane do transmisji?",
+        "url":"",
+        "a1": "zielone i pomarańczowe",
+        "a2": "zielone i niebieskie",
+        "a3": "zielone i brązowe",
+        "a4": "pomarańczowe i niebieskie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jest to wtyk 8P8C (8 pinów 8 styków). Tylko cztery są wykorzystywane - zielone i pomarańczowe."
     },
     {
         "question":"Dobierając procesor do płyty głównej znaczenie ma?",
@@ -6393,8 +6404,8 @@ const questions = [
         "a3": "podstawka",
         "a4": "moc sekcji zasilania",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
+        "type": "4A",
+        "desc":"Moc zasilacza to kwestia oczywista. Różne generacje procesorów mają różne podstawki. Kompatybilna podstawka jednak nie wystarczy. Potrzebujemy kompatybilnej płyty czyli kompatybilnego chipsetu, który jest sercem płyty głównej."
     },
     {
         "question":"Dobierając RAM do komputera znaczenia nie ma?",
@@ -6405,7 +6416,7 @@ const questions = [
         "a4": "płyta główna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Ma bardzo znikome znaczenie, więc można powiedzieć, że nie ma. Pamięć RAM nie wymaga dużej mocy do działania."
     },
     {
         "question":"Chcąc przesłać pliki strony interentowej na hosting posłużymy się technologią?",
@@ -6416,7 +6427,29 @@ const questions = [
         "a4": "Telnet",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"FTP - File Transfer Protocol"
+    },
+    {
+        "question":"Protokołem zamieniającym nazwy domenowe na adresy IP jest?",
+        "url":"",
+        "a1": "DNS",
+        "a2": "ARP",
+        "a3": "DHCP",
+        "a4": "Telnet",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"DNS - Domain Names Server"
+    },
+    {
+        "question":"Protokołem przydzielającym każdemu urządzeniu adres IP dynamicznie jest?",
+        "url":"",
+        "a1": "DHCP",
+        "a2": "ARP",
+        "a3": "DNS",
+        "a4": "FTP",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"DHCP - Dynamic Host Configuration Protocol - protokół ten jest zazwyczaj domyślnie włączony. Przydziela on adres IP, maskę, adres bramy domyślnej i serwerów DNS."
     },
     {
         "question":"HTTP działa na porcie?",
@@ -6432,10 +6465,10 @@ const questions = [
     {
         "question":"Pierwsza warstwa ISO/OSI to?",
         "url":"",
-        "a1": "fizyczna",
-        "a2": "łącza danych",
-        "a3": "sieci",
-        "a4": "transportowa",
+        "a1": "w. fizyczna",
+        "a2": "w. łącza danych",
+        "a3": "w. sieci",
+        "a4": "w. transportowa",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6443,10 +6476,10 @@ const questions = [
     {
         "question":"Druga warstwa ISO/OSI to?",
         "url":"",
-        "a1": "łącza danych",
-        "a2": "fizyczna",
-        "a3": "sieci",
-        "a4": "transportowa",
+        "a1": "w. łącza danych",
+        "a2": "w. fizyczna",
+        "a3": "w. sieci",
+        "a4": "w. transportowa",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6454,10 +6487,10 @@ const questions = [
     {
         "question":"Trzecia warstwa ISO/OSI to?",
         "url":"",
-        "a1": "sieci",
-        "a2": "łącza danych",
-        "a3": "fizyczna",
-        "a4": "transportowa",
+        "a1": "w. sieci",
+        "a2": "w. łącza danych",
+        "a3": "w. fizyczna",
+        "a4": "w. transportowa",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6465,46 +6498,46 @@ const questions = [
     {
         "question":"Czwarta warstwa ISO/OSI to?",
         "url":"",
-        "a1": "transportowa",
-        "a2": "sieci",
-        "a3": "łącza danych",
-        "a4": "fizyczna",
+        "a1": "w. transportowa",
+        "a2": "w. sieci",
+        "a3": "w. łącza danych",
+        "a4": "w. fizyczna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
     },
     {
-        "question":"Adresacja MAC działa na warstwie ISO/OSI?",
+        "question":"Adresacja MAC działa na _ warstwie ISO/OSI?",
         "url":"",
         "a1": "łącza danych",
-        "a2": "sieci",
-        "a3": "fizyczna",
-        "a4": "transportowa",
+        "a2": "sieciowej",
+        "a3": "fizycznej",
+        "a4": "transportowej",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Adresacja MAC realizowana jest na drugiej warstwie ISO/OSI czyli warstwie łącza danych"
     },
     {
-        "question":"Adresacja IP działa na warstwie ISO/OSI?",
+        "question":"Adresacja IP działa na _ warstwie ISO/OSI?",
         "url":"",
-        "a1": "sieci",
+        "a1": "sieciowej",
         "a2": "łącza danych",
-        "a3": "fizyczna",
-        "a4": "transportowa",
+        "a3": "fizycznej",
+        "a4": "transportowej",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Adresacja IP realizowana jest na trzeciej warstwie ISO/OSI czyli warstwie sieciowej"
     },
     {
-        "question":"Identyfikacja portów działa na warstwie ISO/OSI?",
+        "question":"Identyfikacja portów działa w _ warstwie ISO/OSI?",
         "url":"",
-        "a1": "transportowa",
-        "a2": "sieci",
+        "a1": "transportowej",
+        "a2": "sieciowej",
         "a3": "łącza danych",
-        "a4": "fizyczna",
+        "a4": "fizycznej",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Porty są identyfikowane przez protokoły TCP i UDP."
     },
     {
         "question":"IPv4 składa się z _ bajtów?",
@@ -6515,7 +6548,7 @@ const questions = [
         "a4": "5",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"192.168.1.1 to przykład - jak widać każda liczba mieści się w przedziale 0 255"
     },
     {
         "question":"IPv6 składa się z _ bajtów?",
@@ -6526,7 +6559,7 @@ const questions = [
         "a4": "6",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"2001:0db8:0000:0000:0000:0000:1428:57ab to przykład"
     },
     {
         "question":"Adres MAC składa się z _ bajtów?",
@@ -6537,7 +6570,7 @@ const questions = [
         "a4": "8",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Adres MAC ma format xx-xx-xx-xx-xx-xx zapisany w systemie szesnastkowym."
     },
     {
         "question":"Każde urządzenie sieciowe ma unikalny adres MAC?",
@@ -6548,18 +6581,18 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"MAC ma format xx-xx-xx-xx-xx-xx gdzie pierwsze 3 bajty to identyfikator producenta a kolejne 3 to identyfikator urządzenia."
     },
     {
         "question":"Narzędziem do podglądania ruchu sieciowego jest?",
-        "url":"",
+        "url":"https://networkvisibility.files.wordpress.com/2015/01/http_response_time.png",
         "a1": "WireShark",
         "a2": "NetStat",
         "a3": "Curl",
         "a4": "Putty",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Program WireShark nasłuchuje sieć lokalną i pozwala podejrzeć zawartość pakietu."
     },
     {
         "question":"Narzędziem do sprawdzania adresu IP, do którego prowadzi domena jest?",
@@ -6570,7 +6603,7 @@ const questions = [
         "a4": "arp",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Polecenie \"nslookup onet.pl\" wyświetli adres IP serwera, do którego zaprowadzi nas przeglądarka po wpisaniu adresu \"onet.pl\""
     },
     {
         "question":"Normy to dokumenty określające zasady postępowania, przepisy, wzory, wytyczne lub charakterystyki do powszechnego i wielokrotnego stosowania?",
@@ -6625,7 +6658,7 @@ const questions = [
         "a4": "Git",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jira to narzędzie pod metodologię SCRUM. Pozwala dzielić projekt na etapy oraz zadania."
     },
     {
         "question":"Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?",
@@ -6636,7 +6669,7 @@ const questions = [
         "a4": "szyfrowanie haseł metodą SHA256",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach."
     },
 ]
 
