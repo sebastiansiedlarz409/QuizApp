@@ -1,7 +1,6 @@
 import "./main_page.css";
-import NavBar from "./nav_bar.js";
-// import BottomBar from "./bottom_bar";
 
+import NavBar from "./nav_bar.js";
 import QuestionView from "./question_view";
 import TestView from "./test_view";
 
@@ -36,7 +35,6 @@ function MainPage(props) {
 
       <div className="bottom_margin_desktop"></div>
 
-      {/* <BottomBar questionsCount={questions.length}></BottomBar> */}
     </div>
   );
 }
