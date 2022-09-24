@@ -3005,7 +3005,7 @@ const questions = [
         "a4": "IsNull()",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"IsNullOrEmpty() to statuczna składowa typu String. Dzięki niej nie musimy pisać ifów sprawdzających czy zmienna jest nullem lub ma długość 0"
+        "desc":"IsNullOrEmpty() to statyczna składowa typu String. Dzięki niej nie musimy pisać ifów sprawdzających czy zmienna jest nullem lub ma długość 0"
     },
     {
         "question":"Gdy \"a = null\" instrukcja \"Console.WriteLine(a is { });\" wypisze?",
@@ -6871,6 +6871,227 @@ const questions = [
         "type": "4A",
         "desc":""
     },
+    //bhp
+    {
+        "question":"Natężenie światła na stanowisku pracy powinno oscylować koło?",
+        "url":"",
+        "a1": "500 lx",
+        "a2": "400 lx",
+        "a3": "600 lx",
+        "a4": "700 lx",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Temperatura powietrza przy stanowisku pracy nie powinna być niższa niż?",
+        "url":"",
+        "a1": "18 stopni C",
+        "a2": "17 stopni C",
+        "a3": "19 stopni C",
+        "a4": "16 stopni C",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Wilgotoność przy stanowisku komputerowym nie może być niższa niż?",
+        "url":"",
+        "a1": "40%",
+        "a2": "50%",
+        "a3": "60%",
+        "a4": "30%",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Powierzchnia przypadająca na stanowisko pracy nie powinna być mniejsza niż?",
+        "url":"",
+        "a1": "2m2",
+        "a2": "3m2",
+        "a3": "1m2",
+        "a4": "2.5m2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Kategorią zagrożeń na stanowisku pracy nie są?",
+        "url":"",
+        "a1": "zagrożenia biologiczne",
+        "a2": "zagrożenia chemiczne",
+        "a3": "zagrożenia psychofizyczne",
+        "a4": "zagrożenia fizyczne",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Kategorie: fizyczne, chemiczne, psychofizyczne."
+    },
+    {
+        "question":"Zagrożeniem w środowiku pracy przypadającym do kategori zagrożeń chemicznych jest?",
+        "url":"",
+        "a1": "alergia",
+        "a2": "niedostateczne oświetlenie",
+        "a3": "oparzenie",
+        "a4": "porażenie prądem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Do zagrożeń chemicznych należy np. alergia na środki czystości"
+    },
+    {
+        "question":"Zagrożeniem w środowiku pracy przypadającym do kategori zagrożeń psychofizycznych jest?",
+        "url":"",
+        "a1": "stres",
+        "a2": "hałas",
+        "a3": "szkodliwe działanie monitorów",
+        "a4": "porażenie prądem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W tej kategori mamy do czynienia głównie ze stresem i przemęczeniem."
+    },
+    {
+        "question":"Zagrożeniem w środowiku pracy przypadającym do kategori zagrożeń fizycznych jest",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "hałas",
+        "a3": "pożar",
+        "a4": "upadek",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W tej kategori mamy do czynienia jeszcze z porażeniem prądem, niedostatecznym oświetleniem, szkodliwym działaniem monitorów oraz skaleczeniem."
+    },
+    {
+        "question":"Pracując przy komputerze należy?",
+        "url":"",
+        "a1": "robić przerwę 5 minut co godzinę",
+        "a2": "robić przerwę 5 minut co dwie godziny",
+        "a3": "robić przerwę 10 minut co godzinę",
+        "a4": "robić przerwę 10 minut co dwie godziny",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Odległość twarzy od monitora powinna wynosić minimum?",
+        "url":"",
+        "a1": "40cm",
+        "a2": "50cm",
+        "a3": "60cm",
+        "a4": "70cm",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Odległość między pracownikami siedzącymi tyłem do siebie powinna wynosić minimum?",
+        "url":"",
+        "a1": "80cm",
+        "a2": "90cm",
+        "a3": "100cm",
+        "a4": "120cm",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Minimalna odległośc klawiatury od krawędzi blatu to?",
+        "url":"",
+        "a1": "10cm",
+        "a2": "15cm",
+        "a3": "5cm",
+        "a4": "20cm",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Stół powinien spełniać warunek?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "wysokość stołu powinna pozwalać na swobodną pozycję z zachowaniem kąta prostego między ramieniem i przedramieniem",
+        "a3": "kolana i uda siedzącego nie powinny dotykać blatu",
+        "a4": "powierzchnia blatu powinna być jasna i matowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Fotel powinien spełniać warunek?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "powinien być stabilny z możliwością obrotu o 350 stopni",
+        "a3": "powinien pozwalać na swobodne poruszanie się",
+        "a4": "powinien posiadać podłokietniki",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Poza tym powienien mieć regulowaną wysokość i wyprofilowane oparcie."
+    },
+    {
+        "question":"Informatykowi na stanowisku pracy nie wolno?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "spożywać posiłków",
+        "a3": "palić tytoniu",
+        "a4": "zastawiać otworów wentylacyjnych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Do środków ochrony zbiorowej zaliczamy?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "oświetlenie",
+        "a3": "wentylację i klimatyzację",
+        "a4": "oddymianie i instalację odgromową",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Do środków ochrony indywidualnej zaliczamy?",
+        "url":"",
+        "a1": "środki ochrony głowy",
+        "a2": "wszelkiego rodzaju klimatyzacje",
+        "a3": "oddymianie",
+        "a4": "wentylacje",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Do środków ochrony indywidualnej zaliczamy?",
+        "url":"",
+        "a1": "wszystkie wymienione",
+        "a2": "środki ochrony głowy",
+        "a3": "środki ochrony kończyn",
+        "a4": "środki ochrony słuchu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Poza tym: środki ochrony twarzy i oczy oraz środki ochrony układu oddechowego."
+    },
+    {
+        "question":"Zabezpieczenie nadprądowe (poularny ES) chronii?",
+        "url":"",
+        "a1": "przed nadmiernym wzrostem przepływającego w obwodzie prądu",
+        "a2": "przed porażeniem prądem wykrywając różnice prądu wpływającego do obwodu i tego w nim płynącego",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Zabezpieczenie nadprądowe mówi się, że chroni sprzęt, a róznicówka chroni użytkownika."
+    },
+    {
+        "question":"Zabezpieczenie różnicowoprądowe chronii?",
+        "url":"",
+        "a1": "przed porażeniem prądem wykrywając różnice prądu wpływającego do obwodu i tego w nim płynącego",
+        "a2": "przed nadmiernym wzrostem przepływającego w obwodzie prądu",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Zabezpieczenie nadprądowe mówi się, że chroni sprzęt, a róznicówka chroni użytkownika."
+    },
     //optymalizacja i dobre praktyki
     {
         "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
@@ -6903,7 +7124,7 @@ const questions = [
         "a4": "zwykłe pliki txt",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Baza sqlite to świetne narzędzi do lokalnego przechowywania plików. Bazuje na języku SQL a dane przechowuje na dysku w pliku *.db"
+        "desc":"Baza sqlite to świetne narzędzi do lokalnego przechowywania danych. Bazuje na języku SQL a dane przechowuje na dysku w pliku *.db"
     },
     {
         "question":"Powinno się unikać częstego komunikowania się z bazą danych?",
