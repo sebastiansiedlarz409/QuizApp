@@ -25,6 +25,16 @@ function QuestionView(props) {
   return (
     <div className="question_view">
       <center>
+      <div className="welcome_text">
+          <h1>Witaj przyszły programisto!</h1>
+          <p>
+            Ta strona została utworzona z myślą o osobach zdających egzamin
+            INF04. Liczba pytań w bazie to <b>{props.questions.length}</b>.
+            Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
+            nauki :)
+          </p>
+          <p>Ostatnia aktualizacja: 24.09.2022 17:00</p>
+        </div>
         <button className="button_style" onClick={() => randomQuestion()}>
           Losuj inne pytanie!
         </button>

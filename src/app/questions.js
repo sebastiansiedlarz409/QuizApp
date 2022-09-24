@@ -9,7 +9,7 @@ const questions = [
         "a4": "decimal",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Typ \"bool\" jest natywnym typem do przechowywania wartości prawda/fałsz mimo, że równie dobrze moglibyśmy się posłużyć 0 i 1 np. w zmiennej całkowitej."
+        "desc":"Typ \"bool\" jest natywnym typem do przechowywania wartości prawda/fałsz mimo, że równie dobrze moglibyśmy się posłużyć 0 i 1 np. w zmiennej całkowitej. W części języków typ ten może nazywać się \"boolean\"."
     },
     {
         "question":"Jaki typ służy do przechowywania wartości całkowitych z zakresu 0 do 255?",
@@ -20,7 +20,7 @@ const questions = [
         "a4": "short",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"W pytaniu tym chodzi o zakresy typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255."
+        "desc":"W pytaniu tym chodzi o zakresy typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255. Świadomość zakresów i tego, że są inne typy danych niż \"int\" dobrze świadczy o programiście."
     },
     {
         "question":"Czy typy float i double są identyczne?",
@@ -31,7 +31,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Typ \"double\" przechowuje dane w 8bajtach a float tylko w 4."
+        "desc":"Typ \"double\" przechowuje dane w 8 bajtach a float tylko w 4bajtach."
     },
     {
         "question":"Czy typy decimal służy do zapisu liczb ułamkowych?",
@@ -53,7 +53,18 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Pętla do..while wykona się zawsze przynajmniej raz, ponieważ najpierw wykonywana jest iteracja a dopiero po niej sprawdzany jest warunek."
+        "desc":"Pętla do...while wykona się zawsze przynajmniej raz, ponieważ najpierw wykonywana jest iteracja a dopiero po niej sprawdzany jest warunek."
+    },
+    {
+        "question":"Biblioteka C/C++ stdint.h/cstdint zawiera pewne typy całkowite?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "uint8_t/uint16_t/uint32_t",
+        "a3": "int8_t/int16_t/int32_t",
+        "a4": "uint_fast8_t/uint_fast16_t/uint_fast32_t",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Przyjmuje się, że rozmiar inta to 4B, jednak na innych architekturach może być innaczej. Jak ktoś programował np. Arduino to wie o co chodzi. Korzystając np. z uin32_t mamy zawsze pewność co do rozmiaru/zakresu typu. Dodatkowo zapis jest krótszy."
     },
     {
         "question":"Strukturą FILO jest?",
@@ -86,7 +97,7 @@ const questions = [
         "a4": "Sterta",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Struktura liniowa - kolekcja, w której dane przechowywane są jeden za drugim w pamięci. W liście każdy element jest gdzie idziej w pamięci oraz posiada wskaźnik na poprzednika i następce."
+        "desc":"Struktura liniowa - kolekcja, w której dane przechowywane są jeden za drugim w pamięci. W liście każdy element jest gdzie idziej w pamięci (każdy posiada wskaźnik na poprzednika i następce dzięki czemu możliwe jest przesuwanie się po liście)."
     },
     {
         "question":"Definicją własnego typu jest?",
@@ -108,7 +119,7 @@ const questions = [
         "a4": "dictionary",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości."
+        "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej."
     },
     {
         "question":"Jeżeli jako typ zwracany podamy \"void*\" oznacza to, że nic nie zwracamy?",
@@ -119,7 +130,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Void* to wskaźnik na typ nie określony. Funkcja taka zwraca wskaźnik."
+        "desc":"Void* to wskaźnik na typ nie określony. Funkcja zwracająca \"void*\" zwraca wskaźnik."
     },
     {
         "question":"Jeżeli jako typ zwracany podamy \"void\" oznacza to, że nic nie zwracamy?",
@@ -131,6 +142,39 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Void oznacza, że funkcja nic nie zwraca, ale nie wyklucza istnienia w jej ciele słowa kluczowego return"
+    },
+    {
+        "question":"Operator \"new T[10]\" w C++ alokuje?",
+        "url":"",
+        "a1": "alokuje miejsce na 10 elementów typu T",
+        "a2": "alokuje miejsce na 10 bajtów",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Operator new T[n] alokuje miejsce na n elementów typu T."
+    },
+    {
+        "question":"Funkcja \"malloc(10)\" w C/C++ alokuje?",
+        "url":"",
+        "a1": "alokuje miejsce na 10 bajtów",
+        "a2": "alokuje miejsce na 10 intów",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Funkcja malloc przyjmuje ilość bajtów do zaalokowania A NIE ILOŚĆ ELEMENTÓW. Chcąc zaalokować jednego inta trzeba napisać \"malloc(4)\" lub malloc(1*sizeof(int))\"."
+    },
+    {
+        "question":"Chcąc zwolnić pamięć w C++ zaalokowaną operatorem new posłużyć się musimy instrukcją?",
+        "url":"",
+        "a1": "delete wskaznik/delete[] wskaznik",
+        "a2": "free(wskaznik)",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jeżeli alokowaliśmy za pomocą malloc to zwalniamy za pomocą free. Jeżeli alokowaliśmy za pomocą new to zwalniamy za pomocą delete. Dopisek \"[]\" informuje kompilator, że alokowaliśmy więcej niż jeden element danego typu."
     },
     {
         "question":"Rozmiar typu int w pamięci to?",
@@ -174,7 +218,7 @@ const questions = [
         "a4": "Wyłuskanie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W przypadku rekurencji ważne jest by kontrolować ilość zagłębień. Stosując rekurencje bardzo łatwo jest przekroczyć rozmiar stosu, ponieważ każda instancja funkcji alokuje tam swoje zmienne lokalne."
     },
     {
         "question":"Słowo kluczowe pomijające bieżącą iterację to?",
@@ -199,6 +243,17 @@ const questions = [
         "desc":"Może. Po słowie return nie pada żadna wartość/zmienna."
     },
     {
+        "question":"Na obrazku widzimy?",
+        "url":"https://media.geeksforgeeks.org/wp-content/uploads/20220719131329/syntaxofFunction-660x214.png",
+        "a1": "deklaracje funkcji",
+        "a2": "definicję funkcji",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Deklaracja to poinformowanie kompilatora, że gdzieś będzie zdefiniowana dana funkcja/zmienna. Definicja zawiera już ciało lub przypisanie wartości w przypadku zmiennych."
+    },
+    {
         "question":"Adres w pamięci nazywany jest",
         "url":"http://www.exforsys.com/images/cpp/cp01.png",
         "a1": "Wskaźnikiem",
@@ -207,7 +262,7 @@ const questions = [
         "a4": "Lambdą",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Adres to liczba, każdy bajt pamięci ma swój adres."
+        "desc":"Adres to po prostu liczba. Każdy bajt pamięci ma swój adres."
     },
     {
         "question":"Instrukcja C++ \"cout\" znajduje się w namespace?",
@@ -273,7 +328,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak, a do wartości odwołujemy się operatorem \"->\" np this->name"
+        "desc":"Tak, a do wartości odwołujemy się operatorem \"->\" np. \"this->name\""
     },
     {
         "question":"W C/C++ możliwe jest umieszczenie w klasie tylko jednego destruktora?",
@@ -287,7 +342,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Pusty nawias na parametry funkcji oznacza brak parametrów w C?",
+        "question":"Czy destruktory mogą przyjmować parametry?",
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
@@ -295,7 +350,18 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Pusty nawias oznacza nieznaną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy. Jeżeli w nawiasie jest \"void\" to nie ma parametrów np. void make(void){}"
+        "desc":""
+    },
+    {
+        "question":"Pusty nawias na parametry funkcji w języku C oznacza, że funkcja nie przyjmuje żadnego argumentu?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pusty nawias oznacza nieokreśloną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy a później się do nich w odpowiedni sposób odwołać. Jeżeli w nawiasie jest \"void\" to nie ma parametrów np. void make(void){}"
     },
     {
         "question":"W strukurze C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -306,7 +372,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak i to jest jedyna różnica względem klas w C++ (!)"
+        "desc":"To jest jedyna różnica względem klas w C++. W C# różnice są dużo większe (!)"
     },
     {
         "question":"W klasie C/C++ wszystkie elementy są domyślnie prywatne?",
@@ -317,7 +383,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"To jest jedyna różnica względem klas w C++. W C# różnice są dużo większe (!)"
     },
     {
         "question":"W C/C++ możliwe jest dziedziczenie z klasy abstrakcyjnej?",
@@ -394,7 +460,7 @@ const questions = [
         "a4": "MyClass* myObj = MyClass();",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Operator \"new\" zwraca wskaźnik!"
     },
     {
         "question":"Operatory & oraz && są równoznaczne?",
@@ -449,7 +515,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Kompilatory czasami w ramach optymalizacji same oznaczają zmienne jako stałe gdy zobaczą, że dany obiekt jest tylko czytany."
     },
     {
         "question":"Instrukcja \"#define\" służy do tworzenia makr preprocesora?",
@@ -460,7 +526,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Przed kompilacją wszystkie miejsca gdzie wykorzystaliśmy makro są podmieniane na jego wartość."
+        "desc":"Przed kompilacją w trakcie działania preprocesora wszystkie miejsca gdzie wykorzystaliśmy makro są podmieniane na jego wartość."
     },
     {
         "question":"Które słowo jest słowem kluczowym C/C++?",
@@ -504,7 +570,7 @@ const questions = [
         "a4": "new",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Z wyżej wymienionej listy najważniejszy jest ::"
+        "desc":"Z wyżej wymienionej listy najważniejszy jest :: a przecinek jest najmniej ważny."
     },
     {
         "question":"Operatorem C++ nie jest",
@@ -515,7 +581,7 @@ const questions = [
         "a4": "sizeof",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Wszystkie słowa kluczowe oprócz extern, które też jest dostępne w C++ uznaje się za operatory."
+        "desc":"Wszystkie opcje to słowa kluczowe C++. Operatorem nie jest tylko \"extern\"."
     },
     {
         "question":"Operator _ wykonuje operację różnicy symetrycznej.",
@@ -537,7 +603,7 @@ const questions = [
         "a4": "volatile",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"volatile to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane."
+        "desc":"\"volatile\" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane."
     },
     {
         "question":"Który rodzaj operatora wymaga trzech operandów?",
@@ -548,7 +614,7 @@ const questions = [
         "a4": "żaden z powyższych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jak sama nazwa wskazuje :)"
     },
     {
         "question":"Operator indeksowania to?",
@@ -559,7 +625,7 @@ const questions = [
         "a4": "<>",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W Javie często stosuje się metody do pobierania wartości z pod danego indeksu np. \"kolekcja.get(2)\"."
     },
     {
         "question":"Operator statku kosmicznego to?",
@@ -625,7 +691,7 @@ const questions = [
         "a4": "do..while",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Co nie oznacza, że nie ma w nim pętli o podobnym charakterze: \"for(auto x in collection){}\""
     },
     {
         "question":"Typem nie dostępnym w C/C++ jest?",
@@ -669,7 +735,7 @@ const questions = [
         "a4": "pusta wartość",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"NULL w C to makro na liczbę 0"
+        "desc":"NULL w C to makro na liczbę 0. Ze względu na to, że adres 0 jest wykorzystany do specjalnego celu jakim jest wartość NULL, nie można alokować pamięci na adresie 0."
     },
     {
         "question":"Wartość \"nullptr\" to dokładnie to samo co \"NULL\"?",
@@ -768,7 +834,7 @@ const questions = [
         "a4": "wystąpi błąd",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najpierw następuje inkrementacja a później przypisanie (kłania się kolejność operatorów)."
     },
     {
         "question":"Struktura i unia w C/C++ to to samo?",
@@ -834,7 +900,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Iterator to obiekt pewnej klasy, który ma ułatwić poruszanie się po kolekcji. Dostarcza np. takie metody jak next(), prev(). Iterator to taka nakładka abstrakcji, która ma ułatwić i poprawić uniwersalność kodu."
     },
     {
         "question":"Pliki nagłówkowe pochodzące z języka C w mogą być używane w C++?",
@@ -856,7 +922,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Isteniej w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: \"int add(int a, int b);\" wskaźnik: \"int(addPtr*)(int,int) = add;\""
+        "desc":"Istnieje w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: \"int add(int a, int b);\" wskaźnik: \"int(addPtr*)(int,int) = add;\""
     },
     {
         "question":"Operatorem bitowym nie jest?",
@@ -925,6 +991,17 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Operatorem unarnym jest?",
+        "url":"",
+        "a1": "~",
+        "a2": "%",
+        "a3": "<=",
+        "a4": "!=",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Ile bitów potrzebne jest by zakodować 8 wartości?",
         "url":"",
         "a1": "3",
@@ -955,7 +1032,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Przy takiej definicji tablicy rozmiar musi być stałą."
+        "desc":"Przy takiej definicji tablicy rozmiar musi być stałą. Próbujemy tu zdefiniować tablicę statyczną. Jej rozmiar musi być znany w czasie KOMPILACJI."
     },
     {
         "question":"Czy kod: \"int size = 10; int* tablica = new int[size];\" jest poprawny?",
@@ -966,7 +1043,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Przy dynamicznej alokacji tablicy rozmiar może być zmienny."
+        "desc":"Przy dynamicznej alokacji tablicy rozmiar może być zmienny. Próbujemy tu zdefiniować tablicę dynamiczną."
     },
     {
         "question":"Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?",
@@ -1032,7 +1109,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Funkcja zaprzyjaźniona zachowuje się jak składowa klasy."
     },
     {
         "question":"Pola oznaczone w klasie jako chronione są dziedziczone w C++?",
@@ -1142,7 +1219,40 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"x86 ma swój zestaw, ARM ma swój, MIPS swój, RISCV swój itd"
+        "desc":"x86 ma swój zestaw, ARM ma swój, MIPS swój, RISCV swój itd."
+    },
+    {
+        "question":"Procesory, których instrukcje mają równy rozmiar należą do grupy?",
+        "url":"",
+        "a1": "RISC",
+        "a2": "CISC",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"RISC - Reduced Instruction Set Computing - mało instrukcji, instrukcje są dosyć ogólne i mają stały rozmiar np. 4 bajty (przykładem jest ARM), CISC - Complex Instruction Set Computing - dużo drobnych instrukcji różnego rozmiaru (przykładem jest x86 znane z komputerów PC)"
+    },
+    {
+        "question":"Liczba 0xABCDEF98 zapisana w pamięci będzie w formacie?",
+        "url":"",
+        "a1": "98 EF CD AB",
+        "a2": "AB CD EF 98",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Wartości w pamięci zapisuje się za pomocą metodologi \"Little Endian\". Polega ona na odwracaniu kolejności bajtów. \"Big Endian\" to normalna kolejność (stosuje się ją w sieciach)."
+    },
+    {
+        "question":"Zapis odwracający kolejność bajtów danej wartości to?",
+        "url":"",
+        "a1": "Little Endian",
+        "a2": "Big Endian",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Wartości w pamięci zapisuje się za pomocą metodologi \"Little Endian\". Polega ona na odwracaniu kolejności bajtów. \"Big Endian\" to normalna kolejność (stosuje się ją w sieciach)."
     },
     {
         "question":"Komputer 32 bitowy może zaadresować tylko 4GB pamięci?",
@@ -1154,6 +1264,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokadnie 4GB."
+    },
+    {
+        "question":"Komputer 64 bitowy może przyjąć dowolną ilość ramu?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Komputery 64 bitowe też mają limit, jednak jest on tak duży, że ludzie zaczeli twierdzić, że go nie ma. W teorii możemy uzyskać 2 ^ 64 (potęga) bajtów."
     },
     {
         "question":"Pętla \"while(file->EOF){}\" będzie wykonywać się do momentu?",
@@ -1341,7 +1462,7 @@ const questions = [
         "a4": "0b10100000",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Mamy tu do czynnienia z bitowym OR."
     },
     {
         "question":"Wartość wyrażenia 0xFF&0x80 to?",
@@ -1352,7 +1473,7 @@ const questions = [
         "a4": "0x80",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Mamy tu do czynnienia z bitowym AND."
     },
     {
         "question":"Wartość wyrażenia 0xFF|0x00 to?",
@@ -1363,7 +1484,7 @@ const questions = [
         "a4": "0xF0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Mamy tu do czynnienia z bitowym OR."
     },
     {
         "question":"Wartość wyrażenia 0b10101010|0b01010000 to?",
@@ -1374,18 +1495,18 @@ const questions = [
         "a4": "0x10101010",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Mamy tu do czynnienia z bitowym OR."
     },
     {
         "question":"Wartość wyrażenia 0b00000001|0b1 to?",
         "url":"",
-        "a1": "0x00000010",
-        "a2": "0x00000001",
+        "a1": "0x00000001",
+        "a2": "0x00000010",
         "a3": "0x00000011",
         "a4": "0x00000001",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Mamy tu do czynnienia z bitowym OR."
     },
     {
         "question":"Wartość wyrażenia ~0xF0 to?",
@@ -1418,7 +1539,7 @@ const questions = [
         "a4": "0x0",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Prawda i fałsz daje fałsz. W C/C++ każda wartość inna niż 0/false to prawda."
     },
     {
         "question":"Wartość wyrażenia 0xFFAABBCC || 0x00000001 to?",
@@ -1429,7 +1550,7 @@ const questions = [
         "a4": "0xFFAABBCD",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Prawda lub prawda to prawda. W C/C++ każda wartość inna niż 0/false to prawda."
     },
     {
         "question":"Wartość wyrażenia !0b111111110 to?",
@@ -1451,7 +1572,7 @@ const questions = [
         "a4": "BIN",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Prefix 0x służy do zapisu liczb szesnastkowych. Prefix 0b służy do zapisu liczb binarnych. Liczby w systemie ósemkowym poprzedza się poprostu cyfrą 0."
     },
     {
         "question":"Wartość wyrażenia \"0xDEADC0DE == DEADC0DEh\" to?",
@@ -1484,7 +1605,7 @@ const questions = [
         "a4": "U2",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"IEEE 1284 to standard starego złącza LPT. IEEE 1394 to standard starego złącza FireWire. U2 to system usupełnień do 2 służący do zapisu liczb ujemnych."
     },
     {
         "question":"Jeżeli najstarszy bit liczby \"signed\" jest ustawiony na 1 to liczba jest?",
@@ -1505,7 +1626,7 @@ const questions = [
         "a3": "ujemna",
         "a4": "parzysta",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":""
     },
     //algorytmy
@@ -1529,7 +1650,7 @@ const questions = [
         "a4": "alg kruskala",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Algorytm quick-sort dzieli zbiór danych na mniejsze części i je sortuje."
     },
     {
         "question":"Przykładem algorytmu zachłannego jest?",
@@ -1606,7 +1727,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Zaznaczono krawędź o wadze 1 łączącą wierzchołki 4 oraz 6."
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
@@ -1650,7 +1771,7 @@ const questions = [
         "a4": "Trójkąta",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Prostokąty zawierają operacje. Równoległoboki zawierają operacje wejścia wyjścia. Trójkątów jako tako nie stosuje się w schematach blokowych algorytmów."
     },
     {
         "question":"Najgorszą z punktu widzenia wydajności złożonością algorytmu jest?",
@@ -1694,7 +1815,7 @@ const questions = [
         "a4": "Tylko schematem blokowym",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Pseudokod to mnie lub bardziej podobna do rzeczywistego kodu forma zapisu."
     },
     {
         "question":"Co oznacza bloczek na obrazku?",
@@ -1843,10 +1964,10 @@ const questions = [
     {
         "question":"Obiekt klasy może być przekazany do funkcji przez (C++)?",
         "url":"",
-        "a1": "wartość/referencje/wskaźnik",
-        "a2": "wartość/wskaźnik",
-        "a3": "wartość/referencje",
-        "a4": "wartość",
+        "a1": "wszystkie pozostałe",
+        "a2": "wartość",
+        "a3": "referencje",
+        "a4": "wskaźnik",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -1893,7 +2014,7 @@ const questions = [
         "a4": "Funkcje i stałe",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"W C# dochodzą nam jeszcze właściwości (get, set)."
     },
     {
         "question":"Na czym polega hermetyzacja?",
@@ -2075,7 +2196,7 @@ const questions = [
         "question":"Czy klasa pochodna dziedziczy z klasy bazowej konstruktor?",
         "url":"",
         "a1": "NIE",
-        "a2": "TAk",
+        "a2": "TAK",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
@@ -2498,7 +2619,7 @@ const questions = [
         "a3": "int",
         "a4": "nic",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Predicate zawsze zwraca typ bool."
     },
     {
@@ -2597,7 +2718,7 @@ const questions = [
         "a3": "Tablica 2D gdzie każda podtablica ma nieparzystą ilość elementów",
         "a4": "Każda tablica",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Jeżeli podtablice tablicy dwuwymiarowej mają różne rozmiary to jest to tablica postrzępiona."
     },
     {
@@ -3270,7 +3391,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Windows Forms to starsza technologia, jednak w ciąż mocno używana. Windows Forms opiera się o graficzny edytor a nie o język XAML."
     },
     {
         "question":"W WPF niedostępny jest layout typu?",
@@ -3373,6 +3494,17 @@ const questions = [
         "desc":"Merge łączy gałęzie. Rebase pozwala zmienić commit na bazie którego został utworzony dany branch."
     },
     {
+        "question":"Plik służący do tworzenia listy plików/katalogów, które są ignorowane przez system kontroli wersji git jest?",
+        "url":"",
+        "a1": ".gitignore",
+        "a2": ".gitatribute",
+        "a3": ".gitsettings",
+        "a4": ".gitconfig",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
         "question":"Polecenie \"git stash\" cofa projekt do ostatniego commita a zmiany są tracone?",
         "url":"",
         "a1": "NIE",
@@ -3381,7 +3513,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Zmiany są odkładane na bok, możemy je przywrócić poleceniem \"git stash pop\"."
     },
     {
         "question":"Aby w systemie git przeglądać historie commitów należy posłużyć się poleceniem?",
@@ -3425,7 +3557,7 @@ const questions = [
         "a4": "git rebase",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Ewentualnie polecenie \"git diff\" może nam pokazać precyzyjnie co i gdzie zostało zmienione."
     },
     {
         "question":"Inicjalizacja repozytorium lokalnego git odbywa się poleceniem?",
@@ -3485,10 +3617,10 @@ const questions = [
     {
         "question":"W git odnośnik do zdalnego repozytorium dodajemy poleceniem?",
         "url":"",
-        "a1": "git remote add origin \"nazwa\"",
-        "a2": "git remote add \"nazwa\"",
-        "a3": "git add remote \"nazwa\"",
-        "a4": "git add remote origin \"nazwa\"",
+        "a1": "git remote add origin \"link\"",
+        "a2": "git remote add \"link\"",
+        "a3": "git add remote \"link\"",
+        "a4": "git add remote origin \"link\"",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -3507,10 +3639,10 @@ const questions = [
     {
         "question":"Wypychanie zmian do zdalnego repozytorium z poziomu konsoli GIT odbywa się poleceniem?",
         "url":"",
-        "a1": "git push origin",
-        "a2": "git push",
-        "a3": "git pull origin",
-        "a4": "git remote push",
+        "a1": "git push origin nazwa_brancha",
+        "a2": "git push nazwa_brancha",
+        "a3": "git pull origin nazwa_brancha",
+        "a4": "git remote push nazwa_brancha",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -3651,7 +3783,7 @@ const questions = [
     {
         "question":"Który z wymienionych programów nie jest programem typu IDE?",
         "url":"",
-        "a1": "HxD",
+        "a1": "Visual C++",
         "a2": "Eclipse",
         "a3": "Intelij",
         "a4": "Code-Blocks",
@@ -3890,7 +4022,7 @@ const questions = [
         "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Każda metoda powinna zajmować się jedną konretną rzeczą, na którą wskazuje jej nazwa. Podobnie sytuacja wygląda z całymi klasami."
     },
     {
         "question":"Druga zasada SOLID mówi o tym by?",
@@ -3901,7 +4033,7 @@ const questions = [
         "a4": "interfejsy polimorficzne utrzymywać jak najmniejsze",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Rozszerzając klasę/metodę o nowe funkcjonalności nie powinniśmy modyfikować istniejących już w niej elementów. Jeżeli musimy to zrobić to trzeba wziąźć pod uwagę fakt, że coś można było zrobić lepiej."
     },
     {
         "question":"Piąta zasada SOLID mówi o tym by?",
@@ -3912,7 +4044,7 @@ const questions = [
         "a4": "referencje miały typ bazowy a nie typ pochodny",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli klasa B dziedziczy z klasy A to obiekt powinniśmy trzymać w referencji typu A np. \"A obj = new B()\"."
     },
     {
         "question":"Piąta zasada SOLID nazywana jest?",
@@ -3923,7 +4055,7 @@ const questions = [
         "a4": "dependency isolation",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Chodzi w tym przypadku o inwersję a nie wstrzykiwanie."
     },
     {
         "question":"Zasada SOLID mówiąca, że zamiast jednej klasy zawierającej 2000 linii kodu lepsze jest 20 małych klas?",
@@ -3934,7 +4066,7 @@ const questions = [
         "a4": "O",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Single Responsiblity Principle"
+        "desc":"Single Responsiblity Principle - zasad pojedynczej odpowiedzialności"
     },
     {
         "question":"Wzorcem kreacyjnym jest?",
@@ -3945,7 +4077,7 @@ const questions = [
         "a4": "obserwator",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wzorce kreacyjne ułatwiają proces tworzenia obiektu danej klasy."
     },
     {
         "question":"Wzorcem kreacyjnym jest?",
@@ -3956,7 +4088,7 @@ const questions = [
         "a4": "obserwator",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wzorce kreacyjne ułatwiają proces tworzenia obiektu danej klasy."
     },
     {
         "question":"Wzorcem strukturalnym nie jest?",
@@ -3967,7 +4099,7 @@ const questions = [
         "a4": "kompozyt",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wzorce strukturalne opisują relację między klasami/obiektami."
     },
     {
         "question":"Wzorcem strukturalnym nie jest?",
@@ -3978,7 +4110,29 @@ const questions = [
         "a4": "kompozyt",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Wzorce strukturalne opisują relację między klasami/obiektami."
+    },
+    {
+        "question":"Wzorcem czynnościowym nie jest?",
+        "url":"",
+        "a1": "budowniczy",
+        "a2": "obserwator",
+        "a3": "odwiedzający",
+        "a4": "metoda szablonowa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wzorce czynnościowe opisują zachowanie klas i obiektów między sobą."
+    },
+    {
+        "question":"Wzorcem czynnościowym jest?",
+        "url":"",
+        "a1": "obserwator",
+        "a2": "fasada",
+        "a3": "kompozyt",
+        "a4": "dekorator",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wzorce czynnościowe opisują zachowanie klas i obiektów między sobą."
     },
     {
         "question":"Wzorcem projektowym, który agreguje funkcjonalności mniejszych klas w jedną jest?",
@@ -4033,7 +4187,7 @@ const questions = [
         "a4": "Super-Pure Application",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API."
     },
     {
         "question":"Strona typu SPA bazuje na?",
@@ -4067,6 +4221,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"NSubstitude to biblioteka do tworzenia mocków w C#."
+    },
+    {
+        "question":"Zawsze najpierw projektuje się bazę danych a później kod do niej?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"ORMy pozwalają wygenerować bazę danych na bazie zestawu podanych im klas. Podejście takie nazywa się \"code-first\". Jeżeli budujemy aplikacje do istniejącej już bazy mamy do czynnienia z \"database-first\"."
     },
     {
         "question":"Zasada \"dependency injection\" mówi, żeby zależności wstrzykiwać z zewnątrz przez?",
@@ -4132,7 +4297,7 @@ const questions = [
         "a4": "Universal Mapping Language",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"UML to standard wielu diagramów, które służą do projektowania i dokumentowania oprogramowania."
     },
     {
         "question":"Diagram UML przedstawiający relacje między klasami to",
@@ -4143,7 +4308,7 @@ const questions = [
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Diagram ERD służy do przedstawiania budowy baz danych. Diagram sekwencji i aktywności opisuje działanie aplikacji."
     },
     {
         "question":"Diagram UML przedstawiający relacje między tabelami bazy danych to",
@@ -4154,7 +4319,7 @@ const questions = [
         "a4": "Diagram aktywności",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Diagram klas przedstawia relacje między klasami. Diagram sekwencji i aktywności opisuje działanie aplikacji."
     },
     {
         "question":"Diagram UML przedstawiający przepływ sterowania w klasach to",
@@ -4209,7 +4374,7 @@ const questions = [
         "a4": "@",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"+ oznacza elementy publiczne, # elementy chronione, - elementy prywatne"
     },
     {
         "question":"W diagramie klas UML pola private oznacza się symbolem?",
@@ -4220,7 +4385,7 @@ const questions = [
         "a4": "@",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"+ oznacza elementy publiczne, # elementy chronione, - elementy prywatne"
     },
     {
         "question":"W diagramie klas UML pola public oznacza się symbolem?",
@@ -4231,7 +4396,7 @@ const questions = [
         "a4": "@",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"+ oznacza elementy publiczne, # elementy chronione, - elementy prywatne"
     },
     {
         "question":"Języki, w których programista definuje co chce uzyskać to języki?",
@@ -4287,7 +4452,18 @@ const questions = [
         "a4": "100",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"HTTPS pracuje na 443"
+    },
+    {
+        "question":"Protokół HTTPS używa do szyfrowania?",
+        "url":"",
+        "a1": "TLS/SSL",
+        "a2": "MD5/SHA256",
+        "a3": "DES/AES",
+        "a4": "AES/RSA",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"HTTPS pracuje na 443"
     },
     {
         "question":"Protokoły TCP oraz UDP są protokołami warstwy _ ISO/OSI?",
@@ -4310,6 +4486,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Chodzi o warstwę sieciową."
+    },
+    {
+        "question":"Rysunek przedstawia proces?",
+        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/420px-UDP_encapsulation.svg.png",
+        "a1": "enkapsulacji",
+        "a2": "hermetyzacji",
+        "a3": "kompresji",
+        "a4": "strukturyzowania",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wysyłając pakiet HTTP w górnych warstwach przechodzi on w kierunku warstw dolnych gdzie na każdym etapie podlega enkapsulacji przez odpowiedni protokół. Odbiór pakietu przebiega w odwrotną stronę."
     },
     {
         "question":"Dane przekazywane do protokoły HTTP/HTTPS są w formacie?",
@@ -4676,10 +4863,23 @@ const questions = [
         "desc":""
     },
     {
+        "question":"W zapisie RGB każda składowa ma rozmiar jednego bajtu?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"#FFAABB to trzy bajty. Jeden na kolor czerwony, jeden na kolor zielony, jeden na kolor niebieski. Dwie cyfry/nybble wartości szesnastkowej to bajt."
+    },
+    {
         "question":"Pojęcie \"crawling\" w programowaniu to?",
         "url":"",
         "a1": "przeszukiwanie portali w poszukiwaniu treści",
         "a2": "szukanie luk zabezpieczeń",
+        "a3":"",
+        "a4":"",
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Polega to na skanowaniu drzewa HTML i wyszukiwaniu wartościowych danych."
@@ -4749,6 +4949,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, poniważ mamy XAMPA oraz UsbWebServer."
+    },
+    {
+        "question":"Solenie hasła polega na?",
+        "url":"",
+        "a1": "dodaniu do hasła przed wykonaniem hashu pewnego dodatkowego stringa",
+        "a2": "odwróceniu znaków w haśle",
+        "a3": "przesunięciu znaków w haśle",
+        "a4": "hashowaniu hasła",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Solenie hasła polega na dodaniu do niego jakiegoś losowego ciągu znaków. Skompikuje to hash uzyskany z funkcji skrótu przez co utrudni ataki typu słownikowego."
     },
     //javascript
     {
@@ -5146,7 +5357,7 @@ const questions = [
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
+        "type": "2A",
         "desc":""
     },
     {
@@ -5844,6 +6055,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"man - od manual np. \"man ls\""
+    },
+    {
+        "question":"Interpreterem poleceń w systemie Linux jest?",
+        "url":"",
+        "a1": "bash",
+        "a2": "cmd",
+        "a3": "PowerShell",
+        "a4": "dosbox",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Bash jest interpreterem poleceń w systemie Linux, cmd oraz PowerShell to interpretery dla Windowsa."
     },
     //pytania ogólne
     {
@@ -6649,6 +6871,7 @@ const questions = [
         "type": "4A",
         "desc":""
     },
+    //optymalizacja i dobre praktyki
     {
         "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
         "url":"",
@@ -6668,8 +6891,63 @@ const questions = [
         "a3": "obsługa REST API",
         "a4": "szyfrowanie haseł metodą SHA256",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach."
+    },
+    {
+        "question":"Jaki magazyn danych wybrać w przypadku jeżeli aplikacja musi działać na stanowisku z ograniczonym dostępem do sieci?",
+        "url":"",
+        "a1": "sqlite",
+        "a2": "lokalne pliki XML",
+        "a3": "lokalne pliki CSV",
+        "a4": "zwykłe pliki txt",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Baza sqlite to świetne narzędzi do lokalnego przechowywania plików. Bazuje na języku SQL a dane przechowuje na dysku w pliku *.db"
+    },
+    {
+        "question":"Powinno się unikać częstego komunikowania się z bazą danych?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie odpytujemy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych."
+    },
+    {
+        "question":"Skrót LTS oznacza?",
+        "url":"",
+        "a1": "Long Term Supported",
+        "a2": "Long Time Supported",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Powinno się stawiać na wersje frameworków/narzędzi/bibliotek oznaczonych jako wspierane przez długi okres."
+    },
+    {
+        "question":"Biblioteka ORM czyli Object Relational Mapping jest wydajniejsza niż czyste zapytanie SQL?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"ORM wiele rzeczy ułatwia i automatyzuje, ale nigdy nie wiem jakie zapytanie wysłał pod spodem do bazy danych."
+    },
+    {
+        "question":"Powinno się unikać korzystania ze wskaźników?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Wskaźniki są głównym źródłem błędów i luk w oprogramowaniu. Nowoczesne języki takie jak RUST podchodzą do tematu pamięci bardzo rygorystycznie i ograniczają możliwości wskaźników do potrzebnego minimum."
     },
 ]
 
