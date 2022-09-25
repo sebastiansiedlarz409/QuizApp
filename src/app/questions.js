@@ -34,6 +34,17 @@ const questions = [
         "desc":"Typ \"double\" przechowuje dane w 8 bajtach a float tylko w 4bajtach."
     },
     {
+        "question":"Funkcja main w C/C++ zawsze musi zwrócić wartość 0?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powino zwracać coś innego."
+    },
+    {
         "question":"Czy typy decimal służy do zapisu liczb ułamkowych?",
         "url":"",
         "a1": "TAK",
@@ -7554,7 +7565,7 @@ const questions = [
         "a3": "SHA256",
         "a4": "ADLER32",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
     },
     {
@@ -7591,6 +7602,171 @@ const questions = [
         "desc":"Podpis cyfrowy bazuje na szyfrowaniu asymetrycznym. Autor danych szyfruje dane swoim własnym kluczem prywatnym, który jest tajny. Odbioraca szyfruje dokument kluczem publicznym i porównuje zaszyfrowane dane."
     },
     //pytania do kody na obrazku
+    {
+        "question":"Kod C++ na obrazku wyświetli na ekranie napis?",
+        "url":"/images/noseed.png",
+        "a1": "Hello World",
+        "a2": "Goodby World",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Aby losowanie zwracało różne wyniki należy je poprawnie zainicjować za pomocą \"seed(time(NULL));\""
+    },
+    {
+        "question":"Program na obrazku wywołany poleceniem \"program.exe ASD QWE\" wyświetli na ekranie napis?",
+        "url":"/images/mainargs.png",
+        "a1": "ASD",
+        "a2": "QWE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pod indeksem 0 tablicy argv znajduje się nazwa pliku wykonywalnego czyli \"program.exe\"."
+    },
+    {
+        "question":"Gdy wywołamy program na obrazku poleceniem \"program.exe ASD QWE\" zmienna argc będzie miała wartość?",
+        "url":"/images/mainargs.png",
+        "a1": "3",
+        "a2": "2",
+        "a3": "1",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Pod indeksem 0 tablicy argv znajduje się nazwa pliku wykonywalnego czyli \"program.exe\"."
+    },
+    {
+        "question":"IDE w poniższym fragmencie programu pokazuje błąd, ponieważ",
+        "url":"/images/staticarrayvar.png",
+        "a1": "size nie jest stałą",
+        "a2": "nie da się zaalokować tak dużej tablicy",
+        "a3": "size musi być zmienną bez znaku",
+        "a4": "składnia definicji tablicy jest błędna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Rozmiar podany podczas inicjalizacji tablicy statycznej musi być stałą."
+    },
+    {
+        "question":"Na poniższym obrazku widzimy",
+        "url":"/images/alloc2darray.png",
+        "a1": "proces alokowania tablicy 2D gdzie oba wymiary równe są \"size\"",
+        "a2": "proces alokowania tablicy gdzie wymiar to \"size\"",
+        "a3": "proces alokowania tablicy 2D gdzie każda podtablica ma inny wymiar",
+        "a4": "proces zwalniania pamięci, która była przeznaczona na tablicę 2D",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Alokujemy tutaj tablicę 2D, która w obu wymiarach ma ten sam rozmiar."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/ucharcircle1.png",
+        "a1": "0",
+        "a2": "256",
+        "a3": "-128",
+        "a4": "program zakończy się błędem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Przekraczamy zakres unsigned chara, więc następuje powrót na początek zakresu."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/ucharcircle2.png",
+        "a1": "255",
+        "a2": "-1",
+        "a3": "0",
+        "a4": "program zakończy się błędem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Przekraczamy zakres unsigned chara, więc następuje powrót na koniec zakresu."
+    },
+    {
+        "question":"Ile razy zobaczymy napis \"Hello world!\" na ekranie?",
+        "url":"/images/infinitewhile.png",
+        "a1": "nieskończenie wiele, ponieważ pętla jest nieskończona",
+        "a2": "2",
+        "a3": "1",
+        "a4": "ani razu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++."
+    },
+    {
+        "question":"Ile razy zobaczymy napis \"Hello world!\" na ekranie?",
+        "url":"/images/nowhile.png",
+        "a1": "ani razu",
+        "a2": "nieskończenie wiele, ponieważ pętla jest nieskończona",
+        "a3": "2",
+        "a4": "1",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++."
+    },
+    {
+        "question":"Co zobaczymy na ekranie po wykonaniu poniższego programu?",
+        "url":"/images/printcharfromint.png",
+        "a1": "B",
+        "a2": "66",
+        "a3": "A",
+        "a4": "wystąpi błąd programu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zgodnie z tablicą ASCII pod liczbę 66 podmapowany jest znak 'B'. Specyfikator \"%c\" nakazuje interpretacje liczby jako znak."
+    },
+    {
+        "question":"Ile razy zobaczymy napis \"LOOP\" na ekranie?",
+        "url":"/images/infinitedowhile.png",
+        "a1": "żadna z pozostałych opcji nie jest poprawna",
+        "a2": "0",
+        "a3": "1",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W momencie sprawdzenia warunku licznik będzie miał wartość -1. Następnie -2, -3 itd. Tylko 0 to logiczny fałsz."
+    },
+    {
+        "question":"Ile razy zobaczymy napis \"LOOP\" na ekranie?",
+        "url":"/images/dowhile.png",
+        "a1": "1",
+        "a2": "0",
+        "a3": "3",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W momencie sprawdzenia warunku licznik będzie miał wartość 0 co daje fałsz, ale pętla do while najpierw wykonuje iteracje a później sprawdza warunek. Pętla do while zawsze wykona się minimum raz."
+    },
+    {
+        "question":"Ile razy zobaczymy napis \"LOOP\" na ekranie?",
+        "url":"/images/while.png",
+        "a1": "0",
+        "a2": "1",
+        "a3": "3",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W momencie sprawdzenia warunku licznik będzie miał wartość 0 co daje fałsz."
+    },
+    {
+        "question":"Jaką wartość zobaczymy na ekranie?",
+        "url":"/images/macro.png",
+        "a1": "5",
+        "a2": "6",
+        "a3": "4",
+        "a4": "7",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Macro TO NIE FUNKCJA! Marco SUM(1,2) zostanie przed kompilacją podmienione na 1 + 2 co w konsekwencji da 1 + 2 * 2."
+    },
+    {
+        "question":"Jaką wartość zobaczymy na ekranie?",
+        "url":"/images/passtofunc.png",
+        "a1": "1 2 2",
+        "a2": "1 1 1",
+        "a3": "1 2 1",
+        "a4": "1 1 2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Przekazywanie parametru do funkcji przez wartość, referencje i wskaźnik. Sposób na zwracanie wartości z funkcji bez słowa kluczowego \"return\"."
+    },
 ]
 
 export default questions;
