@@ -67,6 +67,61 @@ const questions = [
         "desc":"Przyjmuje się, że rozmiar inta to 4B, jednak na innych architekturach może być innaczej. Jak ktoś programował np. Arduino to wie o co chodzi. Korzystając np. z uin32_t mamy zawsze pewność co do rozmiaru/zakresu typu. Dodatkowo zapis jest krótszy."
     },
     {
+        "question":"Aby wypisać znak za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
+        "url":"",
+        "a1": "%c",
+        "a2": "%u",
+        "a3": "%d",
+        "a4": "%f",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
+    },
+    {
+        "question":"Aby wypisać string za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
+        "url":"",
+        "a1": "%s",
+        "a2": "%u",
+        "a3": "%d",
+        "a4": "%c",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
+    },
+    {
+        "question":"Aby wypisać liczbę całkowitą ze znakiem za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
+        "url":"",
+        "a1": "%d",
+        "a2": "%c",
+        "a3": "%d",
+        "a4": "%f",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
+    },
+    {
+        "question":"Aby wypisać liczbę całkowitą bez znaku za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
+        "url":"",
+        "a1": "%u",
+        "a2": "%c",
+        "a3": "%d",
+        "a4": "%f",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
+    },
+    {
+        "question":"Aby wypisać liczbę zmiennoprzecinkową za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
+        "url":"",
+        "a1": "%f",
+        "a2": "%u",
+        "a3": "%d",
+        "a4": "%c",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
+    },
+    {
         "question":"Strukturą FILO jest?",
         "url":"",
         "a1": "Stos",
@@ -7169,6 +7224,150 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Wskaźniki są głównym źródłem błędów i luk w oprogramowaniu. Nowoczesne języki takie jak RUST podchodzą do tematu pamięci bardzo rygorystycznie i ograniczają możliwości wskaźników do potrzebnego minimum."
+    },
+    //szyfry i kodowania
+    {
+        "question":"Wartość zakodowaną za pomocą \"base64\" da się odkodować?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"Które zdanie o funkcji skrótu jest nieprawdziwe?",
+        "url":"",
+        "a1": "\"hash\" uzyskany z funkcji skrótu jest odwracalny",
+        "a2": "\"hash\" uzyskany z funkcji skrótu jest nieodwracalny",
+        "a3": "wynik funkcji skrótu to takzwany \"hash\"",
+        "a4": "funkcja skrótu przypisuje dowolnie dużej wartości krótką wartość o stałym rozmiarze",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Funkcją skrótu nie jest?",
+        "url":"",
+        "a1": "base64",
+        "a2": "adler32",
+        "a3": "md5",
+        "a4": "sha-x",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Kolizaja w przypadku funkcji skrótu to?",
+        "url":"",
+        "a1": "sytuacja gdy dla dwóch lub więcej wiadomości uzyskujem ten sam skrót",
+        "a2": "sytuacja gdy dla jakieś wartości wejściowej algorytm nie jest w stanie policzyć funkcji skrótu",
+        "a3": "sytuacja gdy dla jakieś wartości wejściowej algorytm wpada w nieskończoną pętle i nie jest w stanie zwrócić wartości skrótu",
+        "a4": "sytuacja gdy dla jedenj wartości wejściowej możliwe jest uzyskanie więcej niż jednej wartości skrótu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Algorytm MD5 jest podatny na kolizję. Nie powinno się nim hashować haseł w bazie. Dzięki temu, że możliwe jest uzyskanie tego samego skrótu dla więcej niż jednego hasła metoda łamania słownikowego ma większe szanse powodzenia."
+    },
+    {
+        "question":"Suma kontrolna to?",
+        "url":"",
+        "a1": "wartość obliczana na bazie danych, służąca do oceny czy dane te nie zostały uszkodzone lub zmodyfikowane",
+        "a2": "zwykła funkcja skrótu",
+        "a3": "synonim do słowa \"hash\"",
+        "a4": "algorytm szyfrujący",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Suma kontrolna to specjalna wartość liczona z pewnej porcji danych. Służy do weryfikacji ich poprawności. Jeżeli transmitujemy coś np. przez bluetooth oprócz danych wysyłamy też do drugiego urządzenia sumę kontrolną tych danych. Drugie urządzenie liczy swoją sumę i porównuje ją z tą otrzymaną dzięki czemu wie czy dane zostały uszkodzone w drodze."
+    },
+    {
+        "question":"Szyfr różni się od funckji skrótu tym, iż?",
+        "url":"",
+        "a1": "da się go odwrócić",
+        "a2": "nie da się go odwrócić",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Szyfr da się odwrócić. Szyfrogram to zaszyfrowana wiadomość."
+    },
+    {
+        "question":"Szyfry asymetryczne i symetryczne różnią się?",
+        "url":"",
+        "a1": "ilością stosowanych kluczy",
+        "a2": "złożonością",
+        "a3": "rodzajem zastosowanego algorytmu",
+        "a4": "budową szyfrogramu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Szyfry symetryczne stosują jeden klucz do szyfrowania i deszyfrowania. Szyfry asymetryczne stosują dwa osobne klucze do kodowania i dekodowania."
+    },
+    {
+        "question":"Przykładem szyfru symetrycznego jest?",
+        "url":"",
+        "a1": "AES",
+        "a2": "RSA",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
+    },
+    {
+        "question":"Przykładem szyfru asymetrycznego jest?",
+        "url":"",
+        "a1": "RSA",
+        "a2": "AES",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
+    },
+    {
+        "question":"W przypadku, którego algorytmu kryptograficznego da się odzyskać oryginalne dane?",
+        "url":"",
+        "a1": "RSA",
+        "a2": "MD5",
+        "a3": "SHA256",
+        "a4": "ADLER32",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
+    },
+    {
+        "question":"W przypadku szyfrowania asymetrycznego klucz publiczny służy do?",
+        "url":"",
+        "a1": "szyfrowania",
+        "a2": "deszyfrowania",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Klucz publiczny może być faktycznie publiczny, ponieważ służy do szyfrowania. Klucz deszyfrujący nazywany jest kluczem prywatnym i on musi być chroniony."
+    },
+    {
+        "question":"W przypadku szyfrowania asymetrycznego klucz prywatny służy do?",
+        "url":"",
+        "a1": "deszyfrowania",
+        "a2": "szyfrowania",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Klucz publiczny może być faktycznie publiczny, poniważ służy do szyfrowania. Klucz deszyfrujący nazywany jest kluczem prywatnym i on musi być chroniony."
+    },
+    {
+        "question":"Podpis cyfrowy to?",
+        "url":"",
+        "a1": "sposób potwierdzania autentyczności danych",
+        "a2": "kolejna metodologia szyforwania danych",
+        "a3": "forma sumy konstrolnej",
+        "a4": "specjalny certyfikat przyznany konkretnym danym",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Podpis cyfrowy bazuje na szyfrowaniu asymetrycznym. Autor danych szyfruje dane swoim własnym kluczem prywatnym, który jest tajny. Odbioraca szyfruje dokument kluczem publicznym i porównuje zaszyfrowane dane."
     },
 ]
 

@@ -98,7 +98,7 @@ function TestView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 24.09.2022 19:30</p>
+          <p>Ostatnia aktualizacja: 25.09.2022 11:45</p>
         </div>
         <button
           className="button_style"
