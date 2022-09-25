@@ -15,7 +15,7 @@ function TestView(props) {
   let answers = [];
 
   //max questions
-  let question_count = 4;
+  let question_count = 20;
 
   let result = 0;
   let count = 0;
@@ -48,11 +48,11 @@ function TestView(props) {
   const randomTest = () => {
     let q = [];
 
-    for (let i = 0; i < question_count; i++) {
+    while(q.length < question_count) {
       let v =
         props.questions[Math.floor(Math.random() * props.questions.length)];
+
       if (q.filter((t) => t.question === v.question).length > 0) {
-        i--;
         continue;
       }
       q.push(v);
@@ -77,7 +77,7 @@ function TestView(props) {
       );
       if (i === questions.length - 1) {
         test.push(
-          <button key={i + 1} className="button_style">
+          <button key={props.questions.length} className="button_style">
             <a href="#top">Do Góry</a>
           </button>
         );
@@ -105,7 +105,7 @@ function TestView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 25.09.2022 15:00</p>
+          <p>Ostatnia aktualizacja: 25.09.2022 16:30</p>
         </div>
         <button
           className="button_style"

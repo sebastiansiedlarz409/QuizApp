@@ -1697,7 +1697,7 @@ const questions = [
     },
     //algorytmy
     {
-        "question":"Złożość obliczeniowa to głównych operacji do wykonania względem ilości danych wejściowych?",
+        "question":"Złożość obliczeniowa to ilość głównych operacji do wykonania względem ilości danych wejściowych?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -1705,7 +1705,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Przez pojęcie głównych operacji rozumiemy zazwyczaj ilość iteracji lub przejść funkcji."
     },
     {
         "question":"Przykładem algorytmu typu dziel i zwyciężaj jest?",
@@ -1929,7 +1929,7 @@ const questions = [
     },
     //programowanie obiektowe
     {
-        "question":"Zasadą programowania obiektowego, która mówi by trzymać jaknajwięcej elementów klasy jako prywatne jest?",
+        "question":"Zasadą programowania obiektowego, która mówi by trzymać jak najwięcej elementów klasy jako prywatne jest?",
         "url":"",
         "a1": "Hermetyzacja",
         "a2": "Abstrakcja",
@@ -2543,7 +2543,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej."
+        "desc":"Tak, możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej."
     },
     {
         "question":"Typem z języka C# niedostępnym w innych językach jest?",
@@ -4058,7 +4058,7 @@ const questions = [
     },
     //wzorce i zasady programowania
     {
-        "question":"Skrót zasady, mówiącej o tym by nie powtarzać się w kodzie to?",
+        "question":"Zasada, mówiąca o tym by unikać powtórzeń w kodzie to?",
         "url":"",
         "a1": "DRY",
         "a2": "KISS",
@@ -4069,7 +4069,7 @@ const questions = [
         "desc":"DRY - Dont Repeat Yourself, KISS - Keep It Simple Stupid, YAGNI - You Arent Gona Need It, SOLID - 5 zasad programowania obiektowego"
     },
     {
-        "question":"Skrót zasady, mówiącej o tym by utrzymywać kod w jak najprostszej formie to?",
+        "question":"Zasada mówiąca o tym by utrzymywać kod w jak najprostszej formie to?",
         "url":"",
         "a1": "KISS",
         "a2": "DRY",
@@ -4080,7 +4080,7 @@ const questions = [
         "desc":"KISS - Keep It Simple Stupid, DRY - Dont Repeat Yourself, YAGNI - You Arent Gona Need It, SOLID - 5 zasad programowania obiektowego"
     },
     {
-        "question":"Skrót zasady, mówiącej o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
+        "question":"Zasada mówiąca o tym by nie zostawiać w kodzie nieużywanych fragmentów implementacji?",
         "url":"",
         "a1": "YAGNI",
         "a2": "KISS",
@@ -5017,7 +5017,7 @@ const questions = [
         "desc":"PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, poniważ mamy XAMPA oraz UsbWebServer."
     },
     {
-        "question":"Solenie hasła polega na?",
+        "question":"Zasalanie hasła polega na?",
         "url":"",
         "a1": "dodaniu do hasła przed wykonaniem hashu pewnego dodatkowego stringa",
         "a2": "odwróceniu znaków w haśle",
@@ -5025,7 +5025,7 @@ const questions = [
         "a4": "hashowaniu hasła",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Solenie hasła polega na dodaniu do niego jakiegoś losowego ciągu znaków. Skompikuje to hash uzyskany z funkcji skrótu przez co utrudni ataki typu słownikowego."
+        "desc":"Solenie hasła polega na dodaniu do niego jakiegoś losowego ciągu znaków. Skomplikuje to hash uzyskany z funkcji skrótu przez co utrudni ataki typu słownikowego."
     },
     //css and bootstrap
     {
@@ -7766,6 +7766,72 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Przekazywanie parametru do funkcji przez wartość, referencje i wskaźnik. Sposób na zwracanie wartości z funkcji bez słowa kluczowego \"return\"."
+    },
+    {
+        "question":"Jaką wartość zobaczymy na ekranie?",
+        "url":"/images/lambda.png",
+        "a1": "10 20 99",
+        "a2": "0 0 99",
+        "a3": "0 10 20",
+        "a4": "program zakończy się błędem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Nawias kwadratowy w lambdach języka C++ służy do przechwytywania zmiennych z otaczającego lambdę zakresu."
+    },
+    {
+        "question":"Jaką wartość zobaczymy na ekranie?",
+        "url":"/images/policpp.png",
+        "a1": "BAZOWA/ChildA/ChildB/ChildA/ChildB",
+        "a2": "BAZOWA/ChildA/ChildB/BAZOWA/BAZOWA",
+        "a3": "BAZOWA/ChildA/ChildB/ChildA/BAZOWA",
+        "a4": "BAZOWA/ChildA/ChildB/BAZOWA/ChildB",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe \"virtual\" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora \"new\"."
+    },
+    {
+        "question":"Jaką wartość zobaczymy na ekranie?",
+        "url":"/images/policpp2.png",
+        "a1": "ChildA/ChildB/ChildA",
+        "a2": "BAZOWA/BAZOWA/BAZOWA",
+        "a3": "BAZOWA/ChildA/BAZOWA",
+        "a4": "BAZOWA/ChildA/ChildB",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe \"virtual\" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora \"new\"."
+    },
+    {
+        "question":"Na obrazku dostrzec można?",
+        "url":"/images/kompozycja.png",
+        "a1": "wzorzec kompozyt",
+        "a2": "wzorzec fasada",
+        "a3": "wzorzec budowniczy",
+        "a4": "wzorzec singleton",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Klasa Point jest zależnością klasy MyApp. Jej obiekt jest wkomponowany w pole klasy MyApp."
+    },
+    {
+        "question":"Na obrazku dostrzec można?",
+        "url":"/images/kompozycja.png",
+        "a1": "dependency injection",
+        "a2": "dependency inversion",
+        "a3": "polimorfizm",
+        "a4": "dekorację",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Klasa Point jest zależnością klasy MyApp. Jej obiekt jest wkomponowany w pole klasy MyApp za pomocą dependency injection."
+    },
+    {
+        "question":"Na obrazku dostrzec można?",
+        "url":"/images/singleton.png",
+        "a1": "wzorzec singleton",
+        "a2": "wzorzec kompozyt",
+        "a3": "wzorzec prototyp",
+        "a4": "wzorzec most",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Na obrazku widać klasyczne podejście do budowy wzorca singleton. Elementy charakterystyczne to prywatny konstruktor oraz statyczne pole na samego siebie."
     },
 ]
 
