@@ -8,8 +8,9 @@ function QuestionView(props) {
   const [question, setQuestion] = useState(props.questions[0]);
 
   const randomQuestion = () => {
-    setId(Math.floor(Math.random() * props.questions.length));
-    setQuestion(props.questions[id]);
+    let i = Math.floor(Math.random() * props.questions.length);
+    setId(i);
+    setQuestion(props.questions[i]);
   };
 
   const returnQuestionItem = () => {
@@ -21,6 +22,10 @@ function QuestionView(props) {
       ></QuestionItem>
     );
   };
+
+  if(id === 0){
+    randomQuestion();
+  }
 
   return (
     <div className="question_view">

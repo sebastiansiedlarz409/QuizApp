@@ -3552,11 +3552,11 @@ const questions = [
         "question":"Plik służący do tworzenia listy plików/katalogów, które są ignorowane przez system kontroli wersji git jest?",
         "url":"",
         "a1": ".gitignore",
-        "a2": ".gitatribute",
+        "a2": ".gitattribute",
         "a3": ".gitsettings",
         "a4": ".gitconfig",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":""
     },
     {

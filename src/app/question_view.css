@@ -5,11 +5,6 @@
   border-radius: 0;
 }
 
-.question_view .question_item {
-  padding: 0;
-  border: 0;
-}
-
 .button_style {
   align-items: center;
   background-color: #f18805;

@@ -1,6 +1,6 @@
 import "./test_view.css";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 import QuestionItem from "./question_item";
 import ResultBar from "./result_bar";
@@ -86,6 +86,13 @@ function TestView(props) {
 
     return test;
   };
+
+  
+  useEffect(()=>{
+    if(questions.length === 0){
+      randomTest();
+    }
+  });
 
   return (
     <div id="top" className="test_view">
