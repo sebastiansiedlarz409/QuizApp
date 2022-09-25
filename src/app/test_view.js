@@ -15,7 +15,7 @@ function TestView(props) {
   let answers = [];
 
   //max questions
-  let question_count = 20;
+  let question_count = 4;
 
   let result = 0;
   let count = 0;
@@ -36,7 +36,7 @@ function TestView(props) {
       }
       result = (count / question_count) * 100;
       resultSetResult({
-        result: result,
+        result: result.toFixed(2),
         count: count,
         questions: question_count,
       });
@@ -105,7 +105,7 @@ function TestView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 25.09.2022 11:45</p>
+          <p>Ostatnia aktualizacja: 25.09.2022 15:00</p>
         </div>
         <button
           className="button_style"

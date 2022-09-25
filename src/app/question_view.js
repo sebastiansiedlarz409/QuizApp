@@ -38,7 +38,7 @@ function QuestionView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 25.09.2022 11:45</p>
+          <p>Ostatnia aktualizacja: 25.09.2022 15:00</p>
         </div>
         <button className="button_style" onClick={() => randomQuestion()}>
           Losuj inne pytanie!

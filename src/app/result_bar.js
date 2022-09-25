@@ -12,7 +12,7 @@ function ResultBar(props) {
       <div
         id="result"
         className="result_bar"
-        style={{ backgroundColor: result >= 50 ? "#92ca5f" : "#ed2d33" }}
+        style={{ backgroundColor: result["result"] >= 50 ? "#92ca5f" : "#ed2d33" }}
       >
         Twój wynik to {result["result"]}% ({result["count"]}/
         {result["questions"]})

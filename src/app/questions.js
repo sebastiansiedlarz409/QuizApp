@@ -1339,7 +1339,7 @@ const questions = [
         "a3": "aż wskaźnik pozycji w pliku wskaże koniec aktualnej linii",
         "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"EOF to skrót od End Of File"
     },
     {
@@ -1350,7 +1350,7 @@ const questions = [
         "a3": "std::cout << std::oct << n << '\\n';",
         "a4": "std::cout << std::bin << n << '\\n';",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":""
     },
     //numeric systems
@@ -1517,7 +1517,7 @@ const questions = [
         "a4": "0b10100000",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Mamy tu do czynnienia z bitowym OR."
+        "desc":"Mamy tu do czynnienia z bitowym AND."
     },
     {
         "question":"Wartość wyrażenia 0xFF&0x80 to?",
@@ -3471,7 +3471,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Aby w WPF można było przypisać element do pola siatki GRID element musi być umiesczony wewnątrz bloku <Grid></Grid>?",
+        "question":"Aby w WPF można było przypisać element do pola siatki GRID element musi być umieszczony wewnątrz bloku <Grid></Grid>?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -3514,6 +3514,28 @@ const questions = [
         "type": "2A",
         "desc":"Analogia do tabel w HTML."
     },
+    {
+        "question":"Rozszerzenie pliku, w którym definiujemy interfejs użytkownika dla aplikacji Xamarin/WPF to?",
+        "url":"",
+        "a1": "*.xaml",
+        "a2": "*.xml",
+        "a3": "*.xml.cs",
+        "a4": "*.xaml.cs",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Ile rodzajów bindowania danych dostępne jest w XAML?",
+        "url":"",
+        "a1": "4",
+        "a2": "3",
+        "a3": "2",
+        "a4": "1",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Chodzi o: OneWay, TwoWay, OneWayToSource, OneTime"
+    },
     //GIT
     {
         "question":"Polecenie \"git reset --hard\" oraz git reset --soft\" działają tak samo?",
@@ -3534,8 +3556,8 @@ const questions = [
         "a3": "--hard",
         "a4": "--medium",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Hard powoduje całkowitą utratę zmian. Soft zostawia zmiany jako \"dodane\". Mixed zostawia zmiany jako \"do dodania\"."
+        "type": "4A",
+        "desc":"Przełącznik \"--hard\" powoduje całkowitą utratę zmian. \"--soft\" zostawia zmiany jako \"dodane na stage\". \"--mixed\" zostawia zmiany jako \"do dodania na stage\"."
     },
     {
         "question":"Polecenie \"git rebase\" oraz git merge\" działają tak samo?",
@@ -3568,7 +3590,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Zmiany są odkładane na bok, możemy je przywrócić poleceniem \"git stash pop\"."
+        "desc":"Polecenie to cofa do ostatniego commita, ale zmiany są odkładane na bok, możemy je przywrócić poleceniem \"git stash pop\"."
     },
     {
         "question":"Aby w systemie git przeglądać historie commitów należy posłużyć się poleceniem?",
@@ -3634,7 +3656,7 @@ const questions = [
         "a4": "git add commit -m \"Message\"",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Jeżeli nie użyjemy przełącznika \"-m\" GIT użyje domyślnego edytora tekstu aby zapytać nas o komentarz."
     },
     {
         "question":"Nową gałąź w systemie GIT tworzymy poleceniem?",
@@ -4697,28 +4719,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Kod \"Internal Server Error\" HTTP/HTTPS to?",
-        "url":"",
-        "a1": "500",
-        "a2": "202",
-        "a3": "400",
-        "a4": "102",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Kod \"Unauthorized\" HTTP/HTTPS to?",
-        "url":"",
-        "a1": "401",
-        "a2": "402",
-        "a3": "400",
-        "a4": "403",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"JWT to skrót od?",
         "url":"",
         "a1": "JSON Web Token",
@@ -4760,7 +4760,7 @@ const questions = [
         "a4": "HTML",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"SOAP to już zapomniana technologia bazująca na XML."
     },
     {
         "question":"REST to skrót od?",
@@ -5016,7 +5016,184 @@ const questions = [
         "type": "4A",
         "desc":"Solenie hasła polega na dodaniu do niego jakiegoś losowego ciągu znaków. Skompikuje to hash uzyskany z funkcji skrótu przez co utrudni ataki typu słownikowego."
     },
+    //css and bootstrap
+    {
+        "question":"Selektor styli CSS zaczynający się od \".\" to?",
+        "url":"",
+        "a1": "selektor klas",
+        "a2": "selektor id",
+        "a3": "selektor tagu",
+        "a4": "selektor atrybutu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Selektor styli CSS zaczynający się od \"#\" to?",
+        "url":"",
+        "a1": "selektor id",
+        "a2": "selektor klas",
+        "a3": "selektor tagu",
+        "a4": "selektor atrybutu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Bootstrap to?",
+        "url":"",
+        "a1": "framework z gotowymi stylami CSS",
+        "a2": "framework do sprawniejszego manipulowania elementami drzewa DOM",
+        "a3": "framework do operacji asynchronicznych w JS",
+        "a4": "framework do operacji na REST API w JS",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Bootstrap bazuje na selektorach?",
+        "url":"",
+        "a1": "klasy",
+        "a2": "id",
+        "a3": "nazwy",
+        "a4": "atrybutu",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap kontenerem ze stałą szerokością jest?",
+        "url":"",
+        "a1": ".container",
+        "a2": ".container-fixed",
+        "a3": ".container-fluid",
+        "a4": ".container-static",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap system siatki bazuje na _ kolumnach?",
+        "url":"",
+        "a1": "12",
+        "a2": "16",
+        "a3": "12",
+        "a4": "10",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap klasą nadającą tabeli tak zwany styl zebry (w paski) jest?",
+        "url":"",
+        "a1": ".table-striped",
+        "a2": ".table-zebra",
+        "a3": ".table-bordered",
+        "a4": ".table-mixed",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Chodzi o styl, gdzie co drugi wiersz ma delikatni mocniejszy cień."
+    },
+    {
+        "question":"W BootStrap klasą nadającą tabeli obramowanie jest?",
+        "url":"",
+        "a1": ".table-bordered",
+        "a2": ".table-bold",
+        "a3": ".table-striped",
+        "a4": ".table-border",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap klasą nadającą elementowy <div> styl przypominający powiadomienie jest?",
+        "url":"",
+        "a1": ".alert-xxx",
+        "a2": ".notice-xxx",
+        "a3": ".warning-xxx",
+        "a4": ".info-xxx",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap klasą tworzącą ciemny pasek nawigacyjny jest?",
+        "url":"",
+        "a1": ".navbar-inverse",
+        "a2": ".navbar-dark",
+        "a3": ".navbar-black",
+        "a4": ".navbar-default",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap pluginem do tworzenia wyskakujących okienek jest?",
+        "url":"",
+        "a1": "Modal",
+        "a2": "MessageBox",
+        "a3": "Window",
+        "a4": "Popup",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap klasa tworząca przycisk w kolorze czerwonym to?",
+        "url":"",
+        "a1": "btn-danger",
+        "a2": "btn-warning",
+        "a3": "btn-secondary",
+        "a4": "btn-primary",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap klasa tworząca przycisk z samym obramowaniem to?",
+        "url":"",
+        "a1": ".btn-outline-primary",
+        "a2": ".btn-primary-outline",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"W BootStrap wymaga do działania biblioteki jQuery?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Obecne wersje radzą sobie bez jQuery"
+    },
     //javascript
+    {
+        "question":"Biblioteką Javascript, która służy do asynchronicznej komunikacji z serwerem?",
+        "url":"",
+        "a1": "AJAX",
+        "a2": "jQuery",
+        "a3": "Vue.js",
+        "a4": "Angular",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Biblioteką Javascript, która ułatwia manipulowanie drzewem DOM jest?",
+        "url":"",
+        "a1": "jQuery",
+        "a2": "AJAX",
+        "a3": "React",
+        "a4": "Angular",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
     {
         "question":"W JS wynikiem operacji \"console.log(\"This is a string.\" instanceof String);\" będzie?",
         "url":"",
@@ -5294,6 +5471,17 @@ const questions = [
         "desc":""
     },
     //bazy danych
+    {
+        "question":"Co to jest DBMS",
+        "url":"",
+        "a1": "system zarządzania bazą danych",
+        "a2": "obiektowy język programowania",
+        "a3": "kaskadowy arkusz styli",
+        "a4": "strukturalny język zapytań do bazy danych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"DBMS - DataBase Management System, MySQL jest przykładem DBMS"
+    },
     {
         "question":"Krotka w bazach relacyjnych to",
         "url":"",
@@ -6928,6 +7116,28 @@ const questions = [
     },
     //bhp
     {
+        "question":"Natężenie dźwięku na stanowisku pracy w biurze nie może przekraczać?",
+        "url":"",
+        "a1": "45 dB",
+        "a2": "55 dB",
+        "a3": "50 dB",
+        "a4": "40 dB",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Natężenie dźwięku na stanowisku pracy nie może przekraczać?",
+        "url":"",
+        "a1": "75 dB",
+        "a2": "55 dB",
+        "a3": "60 dB",
+        "a4": "65 dB",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Natężenie światła na stanowisku pracy powinno oscylować koło?",
         "url":"",
         "a1": "500 lx",
@@ -7149,6 +7359,17 @@ const questions = [
     },
     //optymalizacja i dobre praktyki
     {
+        "question":"Łapanie w C# za pomocą bloku \"catch\" wyjątku typu \"Exception\" to dobra praktyka?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Powinno się łapać precyzyjnie konkretny wyjątek np. \"ArgumentNullException\". Łapiąc \"Exception\" łapiemy jednym catchem wszystkie wyjątki z niego dziedziczące, a jak wiemy w C# wszystkie wyjątki dziedziczą z \"Exception\". Sytuacja ta spowoduje, że nie wiemy jaki wyjątek tak naprawdę został rzucowny."
+    },
+    {
         "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
         "url":"",
         "a1": "Jira",
@@ -7369,6 +7590,7 @@ const questions = [
         "type": "4A",
         "desc":"Podpis cyfrowy bazuje na szyfrowaniu asymetrycznym. Autor danych szyfruje dane swoim własnym kluczem prywatnym, który jest tajny. Odbioraca szyfruje dokument kluczem publicznym i porównuje zaszyfrowane dane."
     },
+    //pytania do kody na obrazku
 ]
 
 export default questions;
