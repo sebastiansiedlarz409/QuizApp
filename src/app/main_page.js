@@ -1,8 +1,8 @@
 import "./main_page.css";
 
 import NavBar from "./nav_bar.js";
-import QuestionView from "./question_view";
 import TestView from "./test_view";
+import { QuestionView, RandomQuestionView } from "./question_view";
 
 import React, { useState } from "react";
 
@@ -21,8 +21,12 @@ function MainPage(props) {
 
   const returnView = () => {
     if (view === 0) {
+      return <RandomQuestionView questions={questions}></RandomQuestionView>;
+    } 
+    else if (view === 1){
       return <QuestionView questions={questions}></QuestionView>;
-    } else if (view === 1) {
+    }
+    else if (view === 2) {
       return <TestView questions={questions}></TestView>;
     }
   };
