@@ -4,6 +4,7 @@ import React, { useState, useRef, useEffect } from "react";
 
 import QuestionItem from "./question_item";
 import ResultBar from "./result_bar";
+import Welcome from "./welcome";
 
 function TestView(props) {
   const ref = useRef(null);
@@ -98,14 +99,7 @@ function TestView(props) {
     <div id="top" className="test_view">
       <center ref={ref}>
         <div className="welcome_text">
-          <h1>Witaj przyszły programisto!</h1>
-          <p>
-            Ta strona została utworzona z myślą o osobach zdających egzamin
-            INF04. Liczba pytań w bazie to <b>{props.questions.length}</b>.
-            Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
-            nauki :)
-          </p>
-          <p>Ostatnia aktualizacja: 26.09.2022 12:00</p>
+          <Welcome questions={props.questions}></Welcome>
         </div>
         <button
           className="button_style"

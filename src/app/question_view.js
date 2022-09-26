@@ -2,6 +2,7 @@ import "./question_view.css";
 import QuestionItem from "./question_item";
 
 import React, { useState } from "react";
+import Welcome from "./welcome";
 
 function RandomQuestionView(props) {
   const [id, setId] = useState(0);
@@ -31,14 +32,7 @@ function RandomQuestionView(props) {
     <div className="question_view">
       <center>
       <div className="welcome_text">
-          <h1>Witaj przyszły programisto!</h1>
-          <p>
-            Ta strona została utworzona z myślą o osobach zdających egzamin
-            INF04. Liczba pytań w bazie to <b>{props.questions.length}</b>.
-            Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
-            nauki :)
-          </p>
-          <p>Ostatnia aktualizacja: 26.09.2022 12:00</p>
+          <Welcome questions={props.questions}></Welcome>
         </div>
         <button className="button_style" onClick={() => randomQuestion()}>
           Losuj inne pytanie!
@@ -81,14 +75,7 @@ function QuestionView(props) {
     <div className="question_view">
       <center>
       <div className="welcome_text">
-          <h1>Witaj przyszły programisto!</h1>
-          <p>
-            Ta strona została utworzona z myślą o osobach zdających egzamin
-            INF04. Liczba pytań w bazie to <b>{props.questions.length}</b>.
-            Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
-            nauki :)
-          </p>
-          <p>Ostatnia aktualizacja: 26.09.2022 12:00</p>
+          <Welcome questions={props.questions}></Welcome>
         </div>
         <button className="button_style" onClick={() => switchQuestion(-1)}>
           Poprzednie pytanie!
