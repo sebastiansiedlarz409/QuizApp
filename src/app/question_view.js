@@ -8,7 +8,7 @@ function QuestionView(props) {
   const [question, setQuestion] = useState(props.questions[0]);
 
   const randomQuestion = () => {
-    let i = props.questions.length-1; //Math.floor(Math.random() * props.questions.length);
+    let i = Math.floor(Math.random() * props.questions.length);
     setId(i);
     setQuestion(props.questions[i]);
   };
@@ -38,7 +38,7 @@ function QuestionView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 25.09.2022 16:30</p>
+          <p>Ostatnia aktualizacja: 26.09.2022 09:30</p>
         </div>
         <button className="button_style" onClick={() => randomQuestion()}>
           Losuj inne pytanie!
