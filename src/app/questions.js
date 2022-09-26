@@ -144,6 +144,17 @@ const questions = [
         "desc":"FIFO - First In First Out. Taką strukturą jest kolejka."
     },
     {
+        "question":"Struktura typu FILO to to samo co LIFO?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"FIFO - First In First Out. LIFO - Last In First Out."
+    },
+    {
         "question":"Strukturą liniową (elementy nie są jeden za drugim w pamięci) NIE jest?",
         "url":"https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/simplified-study-of-data-structure/Images/image002.png",
         "a1": "Lista",
@@ -248,6 +259,17 @@ const questions = [
         "a1": "continue",
         "a2": "break",
         "a3": "return",
+        "a4": "skip",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Słowo kluczowe przerywające pętle to?",
+        "url":"",
+        "a1": "break",
+        "a2": "continue",
+        "a3": "static",
         "a4": "skip",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -496,6 +518,17 @@ const questions = [
         "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
     },
     {
+        "question":"Operatory | oraz || są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
+    },
+    {
         "question":"Instrukcje ++a oraz a++ są równoznaczne?",
         "url":"",
         "a1": "NIE",
@@ -575,9 +608,9 @@ const questions = [
     {
         "question":"Operatorem o najwyższym priorytecie w C++ jest",
         "url":"",
-        "a1": "operator castowania",
+        "a1": "operator castowania (type)",
         "a2": "operator dodawania +",
-        "a3": "operator statku kosmiczengo",
+        "a3": "operator statku kosmiczengo <=>",
         "a4": "operator tryanrny ?:",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -716,15 +749,15 @@ const questions = [
         "desc":"Co nie oznacza, że nie ma w nim pętli o podobnym charakterze: \"for(auto x in collection){}\""
     },
     {
-        "question":"Typem nie dostępnym w C/C++ jest?",
+        "question":"Typem, który nie jest dostępny w C/C++ jest?",
         "url":"",
-        "a1": "IntPtr",
+        "a1": "number",
         "a2": "int",
         "a3": "char",
         "a4": "void",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"IntPtr to typ na wskaźniki dostępny w języku C#."
+        "desc":""
     },
     {
         "question":"Kompilatorem języka C/C++ nie jest?",
@@ -735,7 +768,7 @@ const questions = [
         "a4": "Clang",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"IL to skrót od Intermediate language czyli języka pośredniego dla C#/F#/Visual Basic"
+        "desc":"IL to skrót od Intermediate Language czyli języka pośredniego dla C#/F#/Visual Basic. Pozostałe programy to kompilatory często używane pod spodem przez IDE."
     },
     {
         "question":"Język C++ jest nadzbiorem języka C?",
@@ -753,7 +786,7 @@ const questions = [
         "url":"",
         "a1": "adres 0",
         "a2": "adres 0xFFFFFFFF",
-        "a3": "specjalna wartość języka",
+        "a3": "wartość specjalna",
         "a4": "pusta wartość",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -793,21 +826,21 @@ const questions = [
         "desc":"Negacja logiczna prawdy to fałsz."
     },
     {
-        "question":"Wartość wyrażenia \"1&&0\" w C/C++ jest równoznaczna?",
-        "url":"",
-        "a1": "false",
-        "a2": "10",
-        "a3": "true",
-        "a4": "1",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Wartość 0 to fałsz. Każda inna wartość w C/C++ to prawda. Prawda && Fałsz daje Fałsz."
-    },
-    {
         "question":"Ile razy wykona się pętla \"while(999999)\" w C/C++?",
         "url":"",
         "a1": "nieskończenie wiele",
         "a2": "ani razu",
+        "a3": "1",
+        "a4": "999999",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Każda wartość inna niż false/0 to prawda. Pętla wykona się nieskończenie wiele razy. To to samo co while(true){}."
+    },
+    {
+        "question":"Ile razy wykona się pętla \"while(0)\" w C/C++?",
+        "url":"",
+        "a1": "ani razu",
+        "a2": "nieskończenie wiele",
         "a3": "1",
         "a4": "999999",
         "tag": "NIEOFICJALNE",
@@ -903,7 +936,7 @@ const questions = [
         "desc":"Iterator to obiekt pewnej klasy, który ma ułatwić poruszanie się po kolekcji. Dostarcza np. takie metody jak next(), prev(). Iterator to taka nakładka abstrakcji, która ma ułatwić i poprawić uniwersalność kodu."
     },
     {
-        "question":"Pliki nagłówkowe pochodzące z języka C w mogą być używane w C++?",
+        "question":"Pliki nagłówkowe pochodzące z języka C mogą być używane w C++?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -911,7 +944,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Tak. Jeżeli plik w C nazywał się stdio.h to w C++ jego odpowiednikiem jest cstdio"
+        "desc":"Tak. C++ to nadzbiór C. Jeżeli plik w C nazywał się stdio.h to w C++ jego odpowiednikiem jest cstdio"
     },
     {
         "question":"W języku C i C++ możliwe jest pobranie adresu funkcji i zapisanie go we wskaźniku?",
@@ -923,6 +956,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Istnieje w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: \"int add(int a, int b);\" wskaźnik: \"int(addPtr*)(int,int) = add;\""
+    },
+    {
+        "question":"Operatorem pobrania adresu w C/C++ jest?",
+        "url":"",
+        "a1": "&",
+        "a2": "&&",
+        "a3": "|",
+        "a4": "*",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Operatorem wyłuskania w C/C++ jest?",
+        "url":"",
+        "a1": "*",
+        "a2": "&",
+        "a3": "|",
+        "a4": "%",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wyłuskanie to pobranie wartości, na którą wskazuje wskaźnik: \"int a = *a_ptr;\""
     },
     {
         "question":"Operatorem bitowym nie jest?",
@@ -1002,15 +1057,15 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Ile unikalnych wartości zakodować można w bajcie?",
+        "question":"Słowem kluczowym służący do zwalniania zaalokowanej pamięci w C++ jest?",
         "url":"",
-        "a1": "256",
-        "a2": "255",
-        "a3": "0xFF",
-        "a4": "0x1",
+        "a1": "delete",
+        "a2": "free",
+        "a3": "volatile",
+        "a4": "static",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Bajt ma 8 bitów. Liczba 2 do potęgi 8 daje nam 256. W bajcie można zapisać liczby z zakresu 0 do 255, czyli dokłanie 256 sztuk."
+        "desc":""
     },
     {
         "question":"Czy kod: \"int size = 10; int tablica[size];\" jest poprawny?",
@@ -1033,6 +1088,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Przy dynamicznej alokacji tablicy rozmiar może być zmienny. Próbujemy tu zdefiniować tablicę dynamiczną."
+    },
+    {
+        "question":"W C++ tablica statyczna alokowana jest w następujący sposób?",
+        "url":"",
+        "a1": "int tablica[10];",
+        "a2": "int* tablica = new int[10];",
+        "a3": "int** tablica = new int*[10];",
+        "a4": "int* tablica = new int[10];",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Tablica statyczna nazywana jest statyczną, ponieważ ze względu na miejsce gdzie jest alokowana w pamięci jej rozmiar musi być znany w momencie kompilacji."
     },
     {
         "question":"Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?",
@@ -1066,6 +1132,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"W C++ jest to throw. W C# podobnie. Python używa słowa raise."
+    },
+    {
+        "question":"Konstrukcja języka C++ służąca do łapania rzucanych wyjątków to?",
+        "url":"",
+        "a1": "try..catch..",
+        "a2": "try..except..",
+        "a3": "try..handle..",
+        "a4": "try..finally..",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W C++, C#, Javie służy do tego blok \"try...catch...\". W pythonie zamiast catch wystepuje except."
+    },
+    {
+        "question":"Pusty konstruktor jest automatycznie generowany przez kompilator w C++?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Kompilatory generują tylko pusty podstawowy konstruktor bez argumentów."
     },
     {
         "question":"Konstruktor kopiujący jest automatycznie generowany przez kompilator w C++?",
@@ -1200,17 +1288,6 @@ const questions = [
         "desc":"x86 ma swój zestaw, ARM ma swój, MIPS swój, RISCV swój itd."
     },
     {
-        "question":"Procesory, których instrukcje mają równy rozmiar należą do grupy?",
-        "url":"",
-        "a1": "RISC",
-        "a2": "CISC",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"RISC - Reduced Instruction Set Computing - mało instrukcji, instrukcje są dosyć ogólne i mają stały rozmiar np. 4 bajty (przykładem jest ARM), CISC - Complex Instruction Set Computing - dużo drobnych instrukcji różnego rozmiaru (przykładem jest x86 znane z komputerów PC)"
-    },
-    {
         "question":"Komputer 32 bitowy może zaadresować tylko 4GB pamięci?",
         "url":"",
         "a1": "TAK",
@@ -1253,6 +1330,50 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
+    },
+    {
+        "question":"Jaki plik nagłówkowy trzeba dołączyć do kodu by można było użyć \"cout\" i \"cin\"?",
+        "url":"",
+        "a1": "iostream",
+        "a2": "string",
+        "a3": "stdio",
+        "a4": "cstdio",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Jaki plik nagłówkowy trzeba dołączyć do kodu by można było użyć w C++ stringów",
+        "url":"",
+        "a1": "string",
+        "a2": "cstring",
+        "a3": "stdlib",
+        "a4": "stdint",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W C++ przepływne sterowania programu NIE można sterować instrukcją?",
+        "url":"",
+        "a1": "jump",
+        "a2": "goto",
+        "a3": "if",
+        "a4": "switch",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Nie ma takiej instrukcji jak \"jump\" w C++."
+    },
+    {
+        "question":"W C++ aby wylosować liczbę z zakresu 1 do 100 należy posłużyć się instrukcją?",
+        "url":"",
+        "a1": "rand() % 100 + 1;",
+        "a2": "rand() % 100;",
+        "a3": "rand() % 99 + 1;",
+        "a4": "rand() % 99;",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Nie ma takiej instrukcji jak \"jump\" w C++."
     },
     //numeric systems
     {
@@ -1341,7 +1462,7 @@ const questions = [
         "a4": "1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najlepiej zamienić sobie liczbę na system binarny i przesunąć o n bitów."
     },
     {
         "question":"Wartość wyrażenia 2<<3 to?",
@@ -1352,7 +1473,7 @@ const questions = [
         "a4": "64",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Najlepiej zamienić sobie liczbę na system binarny i przesunąć o n bitów."
     },
     {
         "question":"Wartość wyrażenia 2^5 (potęga) to?",
@@ -1377,37 +1498,15 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Wartość wyrażenia 0b10100000&0b1 to?",
+        "question":"Wartość wyrażenia 0b1010&0b0001 to?",
         "url":"",
-        "a1": "0",
-        "a2": "1",
-        "a3": "2",
-        "a4": "0b10100000",
+        "a1": "0b1011",
+        "a2": "0b1100",
+        "a3": "0b1010",
+        "a4": "0b0000",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Mamy tu do czynnienia z bitowym AND."
-    },
-    {
-        "question":"Wartość wyrażenia 0xFF&0x80 to?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "0b10000000",
-        "a3": "128",
-        "a4": "0x80",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Mamy tu do czynnienia z bitowym AND."
-    },
-    {
-        "question":"Wartość wyrażenia 0xFF|0x00 to?",
-        "url":"",
-        "a1": "0xFF",
-        "a2": "0x00",
-        "a3": "0x0F",
-        "a4": "0xF0",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Mamy tu do czynnienia z bitowym OR."
     },
     {
         "question":"Wartość wyrażenia 0b00000001|0b1 to?",
@@ -3561,28 +3660,6 @@ const questions = [
     },
     //kompilacja i interpretacja
     {
-        "question":"Kompilacja to część funkcjonalnosci interpretera?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Kompilator generuje plik wykonywalny/binarny a interpreter uruchamia kod. Interpretery są do języków skryptowych."
-    },
-    {
-        "question":"Parsowanie jest częścią zarówno kompilatora jak i interpretera?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
         "question":"Język PHP jest językiem interpretowanym?",
         "url":"",
         "a1": "TAK",
@@ -5683,6 +5760,17 @@ const questions = [
         "desc":"List typu [] pozwala po zainicjowaniu modyfikować swoją zawartość."
     },
     {
+        "question":"Wersja 3 języka python to tylko aktualizacja do wersji 2?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Python 2 jest już praktycznie martwy. Wersja trzecia wprowadza ogrom zmian."
+    },
+    {
         "question":"Konstruktor klasy w języku Python ma nazwę?",
         "url":"",
         "a1": "__init__",
@@ -5692,6 +5780,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
+    },
+    {
+        "question":"W języku Python aby dodać element na koniec listy należy posłużyć się metodą?",
+        "url":"",
+        "a1": "append()",
+        "a2": "add()",
+        "a3": "push()",
+        "a4": "insert()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python domyślna wartość typów referencyjnych to?",
+        "url":"",
+        "a1": "None",
+        "a2": "Null",
+        "a3": "null",
+        "a4": "none",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"\"None\" to odpowiednik \"null\" z innych języków."
     },
     //windows/linux cmd
     {
@@ -6202,28 +6312,6 @@ const questions = [
         "desc":"Task<T> to typ, służący do tworzenia wątków w C#."
     },
     {
-        "question":"Flagą, która blokuje inne wątki gdy jeden z nich ją ustawi jest?",
-        "url":"",
-        "a1": "mutex",
-        "a2": "spinlock",
-        "a3": "await",
-        "a4": "wszystkie pozostałe",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Jeden wątek może zablokować mutex. Inne muszą czekać na swoją kolej. Dochodzi do wyścigu, kto pierwszy uzyska dostęp i zablokuje mutex."
-    },
-    {
-        "question":"Adres 0xA w każdej aplikacji to inne miejsce w pamięci fizycznej?",
-        "url":"",
-        "a1": "tak dzięki zastosowaniu stronnicowania",
-        "a2": "tak dzięki zastosowaniu segmentacji",
-        "a3": "tak dzięki losowaniu adresów",
-        "a4": "nie",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Tak. Aplikacje dostają pamięć wirtualną, która jest realizowana za pomocą stronicowania. 4KB pamięci to jedna strona. Strona 5 dla procesu A to fizycznie strona 10, strona 5 dla procesu B to fizycznie strona 8."
-    },
-    {
         "question":"Rejestr procesora to?",
         "url":"",
         "a1": "komórka pamięci w procesorze",
@@ -6367,160 +6455,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Popularniejszym rodzajem transmisji jest?",
-        "url":"",
-        "a1": "transmisja szeregowa",
-        "a2": "transmisja równoległa",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Większość obecnych technologi przesyłania danych działa szeregowo czyli bit po bicie."
-    },
-    {
-        "question":"Transmisja synchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
-        "url":"https://images.squarespace-cdn.com/content/v1/5f283b4a5fd0073706fbf137/1626364945021-I8VF8PHBRETXI01GV0RD/spi.png",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"W transmisji synchronicznej w konfiguracji podaje się szybkość zegara. Jeden bit trwa tyle ile jeden cykl zegara."
-    },
-    {
-        "question":"Transmisja asynchroniczna transmituje/odbiera bity zgodnie z cyklem zegara?",
-        "url":"https://images.squarespace-cdn.com/content/v1/5f283b4a5fd0073706fbf137/1626364945021-I8VF8PHBRETXI01GV0RD/spi.png",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"W transmisji asynchroncznej w konfiguracji podaje się długość trawnia bitu."
-    },
-    {
-        "question":"W transmisji asynchronicznej występuje sygnał zegarowy?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"W transmisji synchronicznej długość bitu zależu od zegara a w asynchronicznej każdy bit ma z góry ustalony czas trwania?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Pamięć RAM typu DDR3 jest kompatybilna wstecznie z pamięcią DDR2?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Fizycznie kość jest tak skonstruowana, że nie da się jej podłączyć do innego gniazda."
-    },
-    {
-        "question":"USB 3 jest kompatybilne z portami USB 2",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Tworzymy wąskie gardło, ale jest kompatybilne."
-    },
-    {
-        "question":"Technologią wykorzystywaną najczęściej do komunikacji z dyskami twardymi jest?",
-        "url":"",
-        "a1": "SATA",
-        "a2": "PCI",
-        "a3": "AGP",
-        "a4": "USB",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Jeszcze jest to SATA. Coraz częściej wykorzystuje się do dysków magistralę PCI."
-    },
-    {
-        "question":"Technologią wykorzystywaną najczęściej do komunikacji z kartami graficznymi jest?",
-        "url":"",
-        "a1": "PCI Express",
-        "a2": "PCI",
-        "a3": "AGP",
-        "a4": "ISA",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Obecnie PCI Express. AGP to już zabytek a ISA to już prehistoria :)"
-    },
-    {
-        "question":"Wtyczka/Gniazdo RJ45 (sieciowe) ma 8 pinów?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jest to wtyk 8P8C (8 pinów 8 styków). Tylko cztery są wykorzystywane."
-    },
-    {
-        "question":"Które pary przewodów wtyczk RJ45 (sieciowe) są wykorzystywane do transmisji?",
-        "url":"",
-        "a1": "zielone i pomarańczowe",
-        "a2": "zielone i niebieskie",
-        "a3": "zielone i brązowe",
-        "a4": "pomarańczowe i niebieskie",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Jest to wtyk 8P8C (8 pinów 8 styków). Tylko cztery są wykorzystywane - zielone i pomarańczowe."
-    },
-    {
-        "question":"Dobierając procesor do płyty głównej znaczenie ma?",
-        "url":"",
-        "a1": "wszystko wymienione",
-        "a2": "chipset",
-        "a3": "podstawka",
-        "a4": "moc sekcji zasilania",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Moc zasilacza to kwestia oczywista. Różne generacje procesorów mają różne podstawki. Kompatybilna podstawka jednak nie wystarczy. Potrzebujemy kompatybilnej płyty czyli kompatybilnego chipsetu, który jest sercem płyty głównej."
-    },
-    {
-        "question":"Dobierając RAM do komputera znaczenia nie ma?",
-        "url":"",
-        "a1": "moc zasilacza",
-        "a2": "chipset",
-        "a3": "procesor",
-        "a4": "płyta główna",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Ma bardzo znikome znaczenie, więc można powiedzieć, że nie ma. Pamięć RAM nie wymaga dużej mocy do działania."
-    },
-    {
-        "question":"Chcąc przesłać pliki strony interentowej na hosting posłużymy się technologią?",
-        "url":"",
-        "a1": "FTP",
-        "a2": "HTTP",
-        "a3": "SSH",
-        "a4": "Telnet",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"FTP - File Transfer Protocol"
-    },
-    {
         "question":"Protokołem zamieniającym nazwy domenowe na adresy IP jest?",
         "url":"",
         "a1": "DNS",
@@ -6596,39 +6530,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    {
-        "question":"Adresacja MAC działa na _ warstwie ISO/OSI?",
-        "url":"",
-        "a1": "łącza danych",
-        "a2": "sieciowej",
-        "a3": "fizycznej",
-        "a4": "transportowej",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Adresacja MAC realizowana jest na drugiej warstwie ISO/OSI czyli warstwie łącza danych"
-    },
-    {
-        "question":"Adresacja IP działa na _ warstwie ISO/OSI?",
-        "url":"",
-        "a1": "sieciowej",
-        "a2": "łącza danych",
-        "a3": "fizycznej",
-        "a4": "transportowej",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Adresacja IP realizowana jest na trzeciej warstwie ISO/OSI czyli warstwie sieciowej"
-    },
-    {
-        "question":"Identyfikacja portów działa w _ warstwie ISO/OSI?",
-        "url":"",
-        "a1": "transportowej",
-        "a2": "sieciowej",
-        "a3": "łącza danych",
-        "a4": "fizycznej",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Porty są identyfikowane przez protokoły TCP i UDP."
     },
     {
         "question":"IPv4 składa się z _ bajtów?",
@@ -7051,6 +6952,17 @@ const questions = [
         "desc":"Powinno się stawiać na wersje frameworków/narzędzi/bibliotek oznaczonych jako wspierane przez długi okres."
     },
     {
+        "question":"Skrót RC oznacza?",
+        "url":"",
+        "a1": "Release Candidate",
+        "a2": "Renew Condition",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Kandydat do wypuszczenia jako stablina wersja. Jedna z ostatnich wersji beta przed wypuszczeniem softu."
+    },
+    {
         "question":"Biblioteka ORM czyli Object Relational Mapping jest wydajniejsza niż czyste zapytanie SQL?",
         "url":"",
         "a1": "NIE",
@@ -7107,17 +7019,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Kolizaja w przypadku funkcji skrótu to?",
-        "url":"",
-        "a1": "sytuacja gdy dla dwóch lub więcej wiadomości uzyskujem ten sam skrót",
-        "a2": "sytuacja gdy dla jakieś wartości wejściowej algorytm nie jest w stanie policzyć funkcji skrótu",
-        "a3": "sytuacja gdy dla jakieś wartości wejściowej algorytm wpada w nieskończoną pętle i nie jest w stanie zwrócić wartości skrótu",
-        "a4": "sytuacja gdy dla jedenj wartości wejściowej możliwe jest uzyskanie więcej niż jednej wartości skrótu",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Algorytm MD5 jest podatny na kolizję. Nie powinno się nim hashować haseł w bazie. Dzięki temu, że możliwe jest uzyskanie tego samego skrótu dla więcej niż jednego hasła metoda łamania słownikowego ma większe szanse powodzenia."
-    },
-    {
         "question":"Suma kontrolna to?",
         "url":"",
         "a1": "wartość obliczana na bazie danych, służąca do oceny czy dane te nie zostały uszkodzone lub zmodyfikowane",
@@ -7129,7 +7030,7 @@ const questions = [
         "desc":"Suma kontrolna to specjalna wartość liczona z pewnej porcji danych. Służy do weryfikacji ich poprawności. Jeżeli transmitujemy coś np. przez bluetooth oprócz danych wysyłamy też do drugiego urządzenia sumę kontrolną tych danych. Drugie urządzenie liczy swoją sumę i porównuje ją z tą otrzymaną dzięki czemu wie czy dane zostały uszkodzone w drodze."
     },
     {
-        "question":"Szyfr różni się od funckji skrótu tym, iż?",
+        "question":"Szyfr różni się od funkcji skrótu tym, iż?",
         "url":"",
         "a1": "da się go odwrócić",
         "a2": "nie da się go odwrócić",
@@ -7138,72 +7039,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Szyfr da się odwrócić. Szyfrogram to zaszyfrowana wiadomość."
-    },
-    {
-        "question":"Szyfry asymetryczne i symetryczne różnią się?",
-        "url":"",
-        "a1": "ilością stosowanych kluczy",
-        "a2": "złożonością",
-        "a3": "rodzajem zastosowanego algorytmu",
-        "a4": "budową szyfrogramu",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Szyfry symetryczne stosują jeden klucz do szyfrowania i deszyfrowania. Szyfry asymetryczne stosują dwa osobne klucze do kodowania i dekodowania."
-    },
-    {
-        "question":"Przykładem szyfru symetrycznego jest?",
-        "url":"",
-        "a1": "AES",
-        "a2": "RSA",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
-    },
-    {
-        "question":"Przykładem szyfru asymetrycznego jest?",
-        "url":"",
-        "a1": "RSA",
-        "a2": "AES",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
-    },
-    {
-        "question":"W przypadku, którego algorytmu kryptograficznego da się odzyskać oryginalne dane?",
-        "url":"",
-        "a1": "RSA",
-        "a2": "MD5",
-        "a3": "SHA256",
-        "a4": "ADLER32",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"AES - Advanced Encription Standard, RSA - Algorytm Rivesta-Shamira-Adlemana"
-    },
-    {
-        "question":"W przypadku szyfrowania asymetrycznego klucz publiczny służy do?",
-        "url":"",
-        "a1": "szyfrowania",
-        "a2": "deszyfrowania",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Klucz publiczny może być faktycznie publiczny, ponieważ służy do szyfrowania. Klucz deszyfrujący nazywany jest kluczem prywatnym i on musi być chroniony."
-    },
-    {
-        "question":"W przypadku szyfrowania asymetrycznego klucz prywatny służy do?",
-        "url":"",
-        "a1": "deszyfrowania",
-        "a2": "szyfrowania",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Klucz publiczny może być faktycznie publiczny, poniważ służy do szyfrowania. Klucz deszyfrujący nazywany jest kluczem prywatnym i on musi być chroniony."
     },
     {
         "question":"Podpis cyfrowy to?",

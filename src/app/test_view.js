@@ -15,7 +15,7 @@ function TestView(props) {
   let answers = [];
 
   //max questions
-  let question_count = 20;
+  let question_count = 40;
 
   let result = 0;
   let count = 0;
@@ -105,7 +105,7 @@ function TestView(props) {
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
           </p>
-          <p>Ostatnia aktualizacja: 26.09.2022 09:30</p>
+          <p>Ostatnia aktualizacja: 26.09.2022 12:00</p>
         </div>
         <button
           className="button_style"
