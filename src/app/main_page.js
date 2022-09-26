@@ -9,7 +9,7 @@ import React, { useState } from "react";
 import questions from "./questions.js";
 
 function MainPage(props) {
-  const [view, setView] = useState(1); //switch views
+  const [view, setView] = useState(0); //switch views
 
   for (let i = 0; i < questions.length; i++) {
     questions[i]["id"] = i;

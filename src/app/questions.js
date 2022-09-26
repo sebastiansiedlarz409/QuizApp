@@ -34,6 +34,17 @@ const questions = [
         "desc":"Typ \"double\" przechowuje dane w 8 bajtach a float tylko w 4bajtach."
     },
     {
+        "question":"Czy typy \"int\" i \"signed int\" są identyczne?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Zazwyczaj typy są domyślnie \"signed\". Jeżeli chcemy \"unsigend\" musimy to napiać."
+    },
+    {
         "question":"Funkcja main w C/C++ zawsze musi zwrócić wartość 0?",
         "url":"",
         "a1": "NIE",
@@ -56,8 +67,41 @@ const questions = [
         "desc":"Decimal to bardziej złożony typ, który służy do przechowywania liczb ułamkowych bez obawy o utratę precyzji lub inne dziwne zachowania."
     },
     {
+        "question":"Rozmiar typu int w pamięci to?",
+        "url":"",
+        "a1": "4B",
+        "a2": "1B",
+        "a3": "2B",
+        "a4": "8B",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Rozmiar typu unsigned long long w pamięci to?",
+        "url":"",
+        "a1": "8B",
+        "a2": "1B",
+        "a3": "2B",
+        "a4": "4B",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Rozmiar typu bool w pamięci to?",
+        "url":"",
+        "a1": "1B",
+        "a2": "4B",
+        "a3": "2B",
+        "a4": "8B",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Czy pętle do..while oraz while są identyczne?",
-        "url":"https://howtoimages.webucator.com/1611.png",
+        "url":"/images/dowhilewhile.png",
         "a1": "NIE",
         "a2": "TAK",
         "a3": "",
@@ -93,7 +137,7 @@ const questions = [
         "url":"",
         "a1": "%d",
         "a2": "%c",
-        "a3": "%d",
+        "a3": "%u",
         "a4": "%f",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -156,7 +200,7 @@ const questions = [
     },
     {
         "question":"Strukturą liniową (elementy nie są jeden za drugim w pamięci) NIE jest?",
-        "url":"https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/simplified-study-of-data-structure/Images/image002.png",
+        "url":"collections.png",
         "a1": "Lista",
         "a2": "Kolejka",
         "a3": "Wektor",
@@ -168,10 +212,10 @@ const questions = [
     {
         "question":"Definicją własnego typu jest?",
         "url":"",
-        "a1": "Klasa i struktura",
+        "a1": "Wszystkie pozostałe",
         "a2": "Klasa",
         "a3": "Struktura",
-        "a4": "Tablica",
+        "a4": "Typ wyliczeniowy",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Zarówno klasa jak i struktura służy do definicji własnego typu złożonego, który składa się z typów prostych lub innych typów złożonych."
@@ -183,6 +227,17 @@ const questions = [
         "a2": "list",
         "a3": "tuple",
         "a4": "dictionary",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej."
+    },
+    {
+        "question":"Elementem języka, który pozwala zdefiniować możliwe wartości jakie można przypisać do zmiennej jest?",
+        "url":"",
+        "a1": "enum",
+        "a2": "set",
+        "a3": "tuple",
+        "a4": "makro",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej."
@@ -210,44 +265,44 @@ const questions = [
         "desc":"Void oznacza, że funkcja nic nie zwraca, ale nie wyklucza istnienia w jej ciele słowa kluczowego return"
     },
     {
-        "question":"Rozmiar typu int w pamięci to?",
+        "question":"Czy w C/C++ możliwe jest zwrócienie z funkcji wartości jeżeli ta funckja ma typ zwracany void?",
         "url":"",
-        "a1": "4B",
-        "a2": "1B",
-        "a3": "2B",
-        "a4": "8B",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
+        "type": "2A",
+        "desc":"Jeżeli użyjemy referencji lub wskaźnika do przekazania argumentu to możliwe jest oddanie na zewnątrz policzonej wartości i to nie jednej."
     },
     {
-        "question":"Rozmiar typu unsigned long long w pamięci to?",
+        "question":"Czy w funkcji zwracającej \"void\" można użyć słowa kluczowego return?",
         "url":"",
-        "a1": "8B",
-        "a2": "1B",
-        "a3": "2B",
-        "a4": "4B",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
+        "type": "2A",
+        "desc":"Może. Po słowie return nie pada żadna wartość/zmienna."
     },
     {
-        "question":"Rozmiar typu bool w pamięci to?",
-        "url":"",
-        "a1": "1B",
-        "a2": "4B",
-        "a3": "2B",
-        "a4": "8B",
+        "question":"W C++ każda zmienna domyslnie przekazywana jest przez wartość?",
+        "url":"/images/copy.jpg",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
+        "type": "2A",
+        "desc":"Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &."
     },
     {
         "question":"Wywołanie funkcji przez samą siebie to?",
         "url":"",
         "a1": "Rekurencja",
         "a2": "Iteracja",
-        "a3": "Referencja",
+        "a3": "Callback",
         "a4": "Wyłuskanie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -276,30 +331,19 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Czy w funkcji zwracającej \"void\" można użyć słowa kluczowego return?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Może. Po słowie return nie pada żadna wartość/zmienna."
-    },
-    {
         "question":"Na obrazku widzimy?",
-        "url":"https://media.geeksforgeeks.org/wp-content/uploads/20220719131329/syntaxofFunction-660x214.png",
+        "url":"/images/decl.png",
         "a1": "deklaracje funkcji",
         "a2": "definicję funkcji",
-        "a3": "",
-        "a4": "",
+        "a3": "wywołanie funkcji",
+        "a4": "definicję wskaźnika na funkcję",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Deklaracja to poinformowanie kompilatora, że gdzieś będzie zdefiniowana dana funkcja/zmienna. Definicja zawiera już ciało lub przypisanie wartości w przypadku zmiennych."
     },
     {
         "question":"Adres w pamięci nazywany jest",
-        "url":"http://www.exforsys.com/images/cpp/cp01.png",
+        "url":"/images/ptr.png",
         "a1": "Wskaźnikiem",
         "a2": "Referencją",
         "a3": "Delegatem",
@@ -310,6 +354,17 @@ const questions = [
     },
     {
         "question":"Instrukcja C++ \"cout\" znajduje się w namespace?",
+        "url":"",
+        "a1": "std",
+        "a2": "chrono",
+        "a3": "stp",
+        "a4": "system",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"std::cout, std::cin itd"
+    },
+    {
+        "question":"Instrukcja C++ \"cin\" znajduje się w namespace?",
         "url":"",
         "a1": "std",
         "a2": "chrono",
@@ -350,7 +405,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Nie może. Możliwe jest jednak nazwanie funkcji wejściowej inaczej."
+        "desc":"Nie może. Możliwe jest jednak nazwanie funkcji wejściowej inaczej i wykorzystanie funkcji main do innego celu."
     },
     {
         "question":"Funkcja main w C/C++ przyjmuje jakieś parametry?",
@@ -375,14 +430,25 @@ const questions = [
         "desc":"Tak, a do wartości odwołujemy się operatorem \"->\" np. \"this->name\""
     },
     {
-        "question":"W C/C++ możliwe jest umieszczenie w klasie tylko jednego destruktora?",
+        "question":"Ile konstruktorów można umieścić w klasie C++?",
         "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
+        "a1": "dowolną ilość",
+        "a2": "1",
+        "a3": "2",
+        "a4": "3",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Ile destruktorów można umieścić w klasie C++?",
+        "url":"",
+        "a1": "1",
+        "a2": "2",
+        "a3": "3",
+        "a4": "dowolną ilość",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
         "desc":""
     },
     {
@@ -397,14 +463,14 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Pusty nawias na parametry funkcji w języku C oznacza, że funkcja nie przyjmuje żadnego argumentu?",
+        "question":"Jeżeli w języku C deklarując/definiując funkcję nawias na parametry zostawimy pusty?",
         "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
+        "a1": "funkcja ta przyjmuje nieokreśloną z góry ilość argumentów",
+        "a2": "funkcja nie przyjmuje żadnych arguemntów",
+        "a3": "funckja przyjmuje jeden parametr",
+        "a4": "jest to błąd składniowy",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Pusty nawias oznacza nieokreśloną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy a później się do nich w odpowiedni sposób odwołać. Jeżeli w nawiasie jest \"void\" to nie ma parametrów np. void make(void){}"
     },
     {
@@ -431,7 +497,7 @@ const questions = [
     },
     {
         "question":"W C/C++ możliwe jest dziedziczenie z klasy abstrakcyjnej?",
-        "url":"https://docs.microsoft.com/pl-pl/visualstudio/ide/reference/media/abstract-highlight-cs.png?view=vs-2022",
+        "url":"/images/abstract-highlight-cs.png",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -486,7 +552,7 @@ const questions = [
     }, 
     {
         "question":"Klasa std::string przeciąża operator []?",
-        "url":"https://i.stack.imgur.com/LD3as.png",
+        "url":"",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -497,7 +563,7 @@ const questions = [
     },
     {
         "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
-        "url":"https://cdn.educba.com/academy/wp-content/uploads/2020/12/C-Stack-vs-Heap-1.jpg",
+        "url":"/images/stackheap.jpg",
         "a1": "MyClass* myObj = new MyClass();",
         "a2": "MyClass myObj = new MyClass();",
         "a3": "MyClass myObj = MyClass();",
@@ -505,6 +571,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Operator \"new\" zwraca wskaźnik!"
+    },
+    {
+        "question":"W C++ dla każdego wystąpienia operatora \"new\" powinno pojawić się wystąpienie operatora \"delete\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jeżeli nie zwolnimy pamięci dynamicznie alokowanej to następuje jej wyciek. Nie zawsze jest to groźne, ale zwalnianie pamięci powinno być obowiązkowym nawykiem."
     },
     {
         "question":"Operatory & oraz && są równoznaczne?",
@@ -606,6 +683,17 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Operator _ wykonuje operację różnicy symetrycznej.",
+        "url":"",
+        "a1": "^",
+        "a2": "~",
+        "a3": "!",
+        "a4": "|",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Operatorem o najwyższym priorytecie w C++ jest",
         "url":"",
         "a1": "operator castowania (type)",
@@ -639,17 +727,6 @@ const questions = [
         "desc":"Wszystkie opcje to słowa kluczowe C++. Operatorem nie jest tylko \"extern\"."
     },
     {
-        "question":"Operator _ wykonuje operację różnicy symetrycznej.",
-        "url":"",
-        "a1": "^",
-        "a2": "~",
-        "a3": "!",
-        "a4": "|",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Które słowo NIE jest słowem kluczowym C/C++?",
         "url":"",
         "a1": "peek",
@@ -669,7 +746,7 @@ const questions = [
         "a4": "żaden z powyższych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Jak sama nazwa wskazuje :)"
+        "desc":"Jak sama nazwa wskazuje :) Przykład: \"int a = b == 2 ? 1 : 4;\""
     },
     {
         "question":"Operator indeksowania to?",
@@ -702,7 +779,7 @@ const questions = [
         "a4": ".h",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Tak, *.cc to rozszerzenie plików C++, ale i tak każdy pisze *.cpp"
+        "desc":"Tak, *.cc to również rozszerzenie plików C++, ale i tak każdy pisze *.cpp"
     },
     {
         "question":"Pliki źródłowe języka C mają rozszerzenie?",
@@ -772,7 +849,7 @@ const questions = [
     },
     {
         "question":"Język C++ jest nadzbiorem języka C?",
-        "url":"https://cdn.educba.com/academy/wp-content/uploads/2019/12/C-vs-C.jpg",
+        "url":"/images/ccpp.jpg",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -784,10 +861,10 @@ const questions = [
     {
         "question":"Wartość \"NULL\" to?",
         "url":"",
-        "a1": "adres 0",
-        "a2": "adres 0xFFFFFFFF",
-        "a3": "wartość specjalna",
-        "a4": "pusta wartość",
+        "a1": "makro na liczbę 0",
+        "a2": "makro na liczbę 0xFFFFFFFF",
+        "a3": "specjalna zarezerwowana wartość",
+        "a4": "makro na liczbę -1",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"NULL w C to makro na liczbę 0. Ze względu na to, że adres 0 jest wykorzystany do specjalnego celu jakim jest wartość NULL, nie można alokować pamięci na adresie 0."
@@ -966,7 +1043,7 @@ const questions = [
         "a4": "*",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Przykład: \"int* a_ptr = &a;\""
     },
     {
         "question":"Operatorem wyłuskania w C/C++ jest?",
@@ -1101,6 +1178,17 @@ const questions = [
         "desc":"Tablica statyczna nazywana jest statyczną, ponieważ ze względu na miejsce gdzie jest alokowana w pamięci jej rozmiar musi być znany w momencie kompilacji."
     },
     {
+        "question":"W C++ tablica dynamiczna alokowana jest w następujący sposób?",
+        "url":"",
+        "a2": "int* tablica = new int[10];",
+        "a1": "int tablica[10];",
+        "a3": "int* tablica = new[10];",
+        "a4": "int tablica = new int[10];",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Tablica dynamiczna alokowana jest na stercie. Tak zaalokowaną pamięć trzeba zwalniać."
+    },
+    {
         "question":"Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?",
         "url":"",
         "a1": "otrzymamy jakieś dane",
@@ -1143,6 +1231,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"W C++, C#, Javie służy do tego blok \"try...catch...\". W pythonie zamiast catch wystepuje except."
+    },
+    {
+        "question":"Operacje powodujące wystąpienie wyjątku",
+        "url":"",
+        "a1": "powinny być umieszczone w bloku try",
+        "a2": "powinny być umieszczone w bloku exception",
+        "a3": "powinny być umieszczone w bloku throw",
+        "a4": "powinny być umieszczone w bloku catch",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W bloku \"catch\" decydujemy co zrobić gdy ten wyjątek nastąpi."
     },
     {
         "question":"Pusty konstruktor jest automatycznie generowany przez kompilator w C++?",
@@ -1209,17 +1308,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"W C struktura nie może mieć metod. W C++ już tak. Struktury zostały w C++ tylko dla kompatybilności wstecznej. Mają takie same możliwości jak klasy."
-    },
-    {
-        "question":"W C++ każda zmienna domyslnie przekazywana jest przez wartość?",
-        "url":"https://www.microsoftpressstore.com/content/images/chap8_9781509301041/elementLinks/08fig01.jpg",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &."
     },
     {
         "question":"Konstruktor kopiujący powinien przyjmować obiekt kopiowany jako referencje na stałą \"const T&\"?",
@@ -1422,7 +1510,7 @@ const questions = [
     },
     {
         "question":"Jeżeli najmniej znaczący bit w liczbie jest ustawiony na 1 to liczba jest parzysta.",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptH7mv3klJsXgV2cTzbNTpsa6gkI6D6ifLUxu9UgGL295wu_qqIWCexFYC50JJIAm_w&usqp=CAU",
+        "url":"/images/msblsb.png",
         "a1": "NIE",
         "a2": "TAK",
         "a3": "",
@@ -1484,7 +1572,7 @@ const questions = [
         "a4": "13",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dobrze jest kojarzyć te początkowe potęgi: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024"
     },
     {
         "question":"Wartość wyrażenia 2^10 to?",
@@ -1495,7 +1583,7 @@ const questions = [
         "a4": "0xFF",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":""
+        "desc":"Dobrze jest kojarzyć te początkowe potęgi: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024"
     },
     {
         "question":"Wartość wyrażenia 0b1010&0b0001 to?",
@@ -1506,7 +1594,7 @@ const questions = [
         "a4": "0b0000",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Mamy tu do czynnienia z bitowym AND."
+        "desc":"Mamy tu do czynnienia z bitowym AND. Wykonujemy bramkę AND w każdej kolumnie ustawiając liczby jedna pod drugą."
     },
     {
         "question":"Wartość wyrażenia 0b00000001|0b1 to?",
@@ -1517,7 +1605,7 @@ const questions = [
         "a4": "0x00000001",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Mamy tu do czynnienia z bitowym OR."
+        "desc":"Mamy tu do czynnienia z bitowym OR. Wykonujemy bramkę OR w każdej kolumnie ustwiając liczby jedna pod drugą."
     },
     {
         "question":"Wartość wyrażenia 0xF&&0x0 w C/C++ to?",
@@ -1610,7 +1698,7 @@ const questions = [
     },
     {
         "question":"Maksymalny rząd wierzchołka grafu na obrazku to?",
-        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0123_08.gif",
+        "url":"/images/rzadgrafu.png",
         "a1": "3",
         "a2": "2",
         "a3": "1",
@@ -1621,7 +1709,7 @@ const questions = [
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
-        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0123_08.gif",
+        "url":"/images/rzadgrafu.png",
         "a1": "NIE",
         "a2": "TAK",
         "a3": "",
@@ -1632,7 +1720,7 @@ const questions = [
     },
     {
         "question":"Czy graf na obrazku jest skierowany?",
-        "url":"https://brain.fuw.edu.pl/edu/images/0/03/Directed_acyclic_graph_2.svg",
+        "url":"/images/grag.svg",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -1643,7 +1731,7 @@ const questions = [
     },
     {
         "question":"Czy graf na obrazku da się utworzyć cykl komiwojazera?",
-        "url":"https://mattomatti.com/RES/a0173/i00.svg",
+        "url":"/images/graf2.svg",
         "a1": "NIE",
         "a2": "TAK",
         "a3": "",
@@ -1654,7 +1742,7 @@ const questions = [
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
-        "url":"https://i.stack.imgur.com/kWdCq.png",
+        "url":"/images/notree.png",
         "a1": "NIE",
         "a2": "TAK",
         "a3": "",
@@ -1665,7 +1753,7 @@ const questions = [
     },
     {
         "question":"Czy na obrazku kolorem czerwonym zaznaczono krawędź?",
-        "url":"https://eduinf.waw.pl/inf/alg/001_search/images/0141_02.gif",
+        "url":"/images/edge.gif",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -1676,7 +1764,7 @@ const questions = [
     },
     {
         "question":"Czy graf na obrazku jest drzewem?",
-        "url":"https://www.researchgate.net/profile/Timothy-Lethbridge/publication/3959969/figure/fig1/AS:670005062553607@1536753063795/Compacted-directed-acyclic-graph-of-a-tree.png",
+        "url":"/images/tree.png",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -1695,17 +1783,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Algorytm Węgierski służy do gospodarowania zadaniami i pracownikami."
-    },
-    {
-        "question":"Cykl, który musi przejśc po wszystkich krawędziach grafu jest?",
-        "url":"",
-        "a1": "Cykl Eulera",
-        "a2": "Cykl Hamiltona",
-        "a3": "Cykl Komiwojazera",
-        "a4": "Żaden z wymienionych",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Cykl Eulera musi przejść po wszytkich krawędziach maksymalnie raz. Cykl Hamiltona przechodzi po wierzchołkach maksymalnie raz. Komiwojażer dodaje do cyklu Hamiltona konieczność wygenerowania najkrótszej łącznej drogi."
     },
     {
         "question":"Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?",
@@ -1742,7 +1819,7 @@ const questions = [
     },
     {
         "question":"Bloczek z ilustracji to blok?",
-        "url":"https://quizizz.com/_media/questions/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVwZnJVWXoxTTZzbWROOHBPbUZHamE4OUY4WnFSaGtpQVhHRHktWDBwMmMwTjRtVUVvZ1UwTHducEM5dWd6bXNGWVlJZTYwZDU5b2duZU9XQllXUWllWnBkNVB0UjBsdjl5QzdVVE1lZFh4dzlqMmhxVS5URkFHa1JZSHc5T0tMdzZo_900_900",
+        "url":"/images/warunek.png",
         "a1": "warunku",
         "a2": "operacji",
         "a3": "petli",
@@ -1764,7 +1841,7 @@ const questions = [
     },
     {
         "question":"Co oznacza bloczek na obrazku?",
-        "url":"https://quizizz.com/_media/questions/L2FwcGhvc3RpbmdfcHJvZC9ibG9icy9BRW5CMlVveFljTnQ2Qjl0UFNfYVFHYnBFNzIwQ2RqSTctNzFJX2M3S0hPT0tLTHBzR2dfN1E5SnJyc1R4djdhZXpfTWMtZktNTGpmZ29NQlJHV1ppZHB4UDF0b0ZBb2hMS1FTSWlaMVI1OW5ERnhVYzlLRmpLYy5pY0EyN1Y5amg2dDVNb3k5_900_900",
+        "url":"/images/warunek.png",
         "a1": "Warunek logiczny",
         "a2": "Wprowadzenie danych",
         "a3": "Łącznik",
@@ -1832,7 +1909,7 @@ const questions = [
     {
         "question":"Zależnością klasy jest?",
         "url":"",
-        "a1": "Inna klasa",
+        "a1": "Inna klase w formie obiektu tej klasy",
         "a2": "Każde pole klasy",
         "a3": "Każda metoda klasy",
         "a4": "Żadne z wymienionych",
@@ -1938,17 +2015,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Możliwe jest utworznie konstruktora prywatnego chociaży w celu utworznia singletona."
-    },
-    {
-        "question":"Operacje powodujące wystąpienie wyjątku",
-        "url":"",
-        "a1": "powinny być umieszczone w bloku try",
-        "a2": "powinny być umieszczone w bloku exception",
-        "a3": "powinny być umieszczone w bloku throw",
-        "a4": "powinny być umieszczone w bloku catch",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"W bloku \"catch\" decydujemy co zrobić gdy ten wyjątek nastąpi."
     },
     {
         "question":"Jak nazywamy składniki, z których zbudowane są obiekty?",
@@ -2215,7 +2281,7 @@ const questions = [
         "desc":"Oczywiście, że nie."
     },
     {
-        "question":"Czy interfejs może zawierać pola?",
+        "question":"Czy w C# interfejs może zawierać pola?",
         "url":"",
         "a1": "NIE",
         "a2": "TAK",
@@ -2260,7 +2326,7 @@ const questions = [
     },
     {
         "question":"Ile pól zawiera klasa na obrazku?",
-        "url":"https://quizizz.com/media/resource/gs/quizizz-media/quizzes/51fb2ff6-fd68-4fa3-911b-067fa8b551a1?w=600&h=600",
+        "url":"/images/classtemplate.png",
         "a1": "4",
         "a2": "2",
         "a3": "1",
@@ -2327,7 +2393,7 @@ const questions = [
     },
     {
         "question":"Język C# jest podobny do języka?",
-        "url":"https://miro.medium.com/max/620/1*nIwkpZkz0FdyBoHx6mOr7g.jpeg",
+        "url":"/images/csharp.jpeg",
         "a1": "Java",
         "a2": "Javascript",
         "a3": "C",
@@ -2337,8 +2403,8 @@ const questions = [
         "desc":"C# to w wielu miejscach kopiuj wklej z Javy i odwrotnie."
     },
     {
-        "question":"Każdy program napisany w C# musi mieć funkcję main?",
-        "url":"https://miro.medium.com/max/620/1*nIwkpZkz0FdyBoHx6mOr7g.jpeg",
+        "question":"Każdy program napisany w C# musi mieć funkcję Main?",
+        "url":"/images/csharp.jpeg",
         "a1": "Od .NET 6 nie każdy",
         "a2": "Od .NET 6 każdy",
         "a3": "Każdy oprócz programu webowego",
@@ -2403,6 +2469,28 @@ const questions = [
         "desc":""
     },
     {
+        "question":"W C# \"Console.Write()\" wstawia enter na końcu?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Console.WriteLine() wstawia enter na końcu. Możemy jednak wrzucić do Write() string ze znakiem \"\\n\""
+    },
+    {
+        "question":"W C# \"Console.WriteLine()\" wstawia enter na końcu?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Console.WriteLine() wstawia enter na końcu. "
+    },
+    {
         "question":"W C# da się napisać metodę poza klasą?",
         "url":"",
         "a1": "NIE",
@@ -2428,8 +2516,8 @@ const questions = [
         "question":"Typem z języka C# niedostępnym w innych językach jest?",
         "url":"",
         "a1": "IntPtr",
-        "a2": "string",
-        "a3": "bool",
+        "a2": "String",
+        "a3": "List",
         "a4": "StringBuilder",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -2469,17 +2557,6 @@ const questions = [
         "desc":"W C# struktury i klasy różnią się właśnie tym, że struktura definuje typ wartościowy a klasa referencyjny. Jeżeli zależy nam na przekazywaniu przez wartość to używamy struktur. Jeżeli chcemy referencje to klas."
     },
     {
-        "question":"W C# \"Console.Write()\" wstawia enter na końcu?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Console.WriteLine() wstawia enter na końcu. Możemy jednak wrzucić do Write() string ze znakiem \"\\n\""
-    },
-    {
         "question":"Klasa definuje typ referencyjny w języku C#?",
         "url":"",
         "a1": "TAK",
@@ -2489,6 +2566,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":""
+    },
+    {
+        "question":"Delegat w języku C# to?",
+        "url":"",
+        "a1": "specjalny typ do przechowywania referencji na funckję",
+        "a2": "specjalny typ do przechowywania typów prostych",
+        "a3": "sepcjalny typ pełniący rolę iteratora po kolekcji",
+        "a4": "specjalny typ pełniący rolę wskaźnika do poruszania się po pliku",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Delegat to mechaniz podobny do wskaźników na funkcję w C/C++."
     },
     {
         "question":"Delegaty w C# to mechanizm podobny do wskaźników na funkcję?",
@@ -2508,6 +2596,17 @@ const questions = [
         "a2": "NIE",
         "a3": "",
         "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"Typem delegata w C# NIE jest?",
+        "url":"",
+        "a1": "Task<T>",
+        "a2": "Action<T>",
+        "a3": "Func<T>",
+        "a4": "Predicate<T>",
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":""
@@ -2591,7 +2690,7 @@ const questions = [
     },
     {
         "question":"Istnieje w C# różnica między zmienną typu \"const\" a \"readonly\"?",
-        "url":"https://servocode.com/assets/src/images/blog/DI3.png",
+        "url":"/images/readonly",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -2711,17 +2810,6 @@ const questions = [
         "desc":"List to klasa a klasy definiują typy referencyjne."
     },
     {
-        "question":"Span<T> w C# jest typem referencyjnym?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Span to struktura a struktury definiują typy wartościowe."
-    },
-    {
         "question":"Enum w C# jest typem referencyjnym?",
         "url":"",
         "a1": "NIE",
@@ -2763,11 +2851,11 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":""
+        "desc":"Jeżeli int jako typ prosty zostaje umieszczony w formie pola wewnątrz klasy to naturalnie staje się typem referencyjnym."
     },
     {
         "question":"Boxing to proces sztuczengo opakowania typu wartościowego w typ referencyjny?",
-        "url":"data:image/png;base64,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",
+        "url":"/images/boxing.png",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -2852,17 +2940,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"StringBuilder buduje string w bardziej optymalny sposób. Ma to duże znaczenie gdy np. doklejamy coś do stringa w pętli."
-    },
-    {
-        "question":"List<T> w C# nie dziedziczy z?",
-        "url":"",
-        "a1": "IEnumerator",
-        "a2": "IList",
-        "a3": "IEnumerable",
-        "a4": "ICollection",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Lista nie dziedziczy z IEnumeratora. W Visual Studio istenieje taka opcja jak \"Peek definition\". Dzięki niej można odszukać definicję typów/zmiennych."
     },
     {
         "question":"Parametry generyczne umieszczamy zazwyczaj w?",
@@ -3041,39 +3118,6 @@ const questions = [
         "desc":"Testy w C# nazywa się snake_casem. cammelCase jest słabym rozwiązaniem gdy nazwa składa się z dużej ilości słów."
     },
     {
-        "question":"Skrót \"WPF\" oznacza?",
-        "url":"",
-        "a1": "Windows Presentation Foundation",
-        "a2": "Windows Power Framework",
-        "a3": "Windows Presentation Framework",
-        "a4": "Windows Power Foundation",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Frameworkiem do tworzenia stron internetowych powiązanym z C# nie jest?",
-        "url":"",
-        "a1": "Flask",
-        "a2": "ASP.NET",
-        "a3": "Blazor",
-        "a4": "Razor",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Flask to framework na Pythonie."
-    },
-    {
-        "question":"Xamarin pozwal tworzyć aplikację na?",
-        "url":"",
-        "a1": "iOS oraz Androida",
-        "a2": "Androida oraz Windows Phone",
-        "a3": "iOS oraz Windows Phone",
-        "a4": "Tylko Windows Phone",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Popularną klasą C# odpowiedzialną za operacje komunikacji z REST API jest?",
         "url":"",
         "a1": "HttpClient",
@@ -3207,7 +3251,7 @@ const questions = [
     },
     {
         "question":"Na obrazku zaznaczono",
-        "url":"https://www.kiltandcode.com/assets/img/2020/05/attributes-for-unit-tests.png",
+        "url":"/images/attribute.png",
         "a1": "atrybuty",
         "a2": "modyfikatory",
         "a3": "tagi",
@@ -3286,14 +3330,58 @@ const questions = [
         "question":"W C# wyjątek \"NullReferenceException\" oznacza, że?",
         "url":"",
         "a1": "zmienna referencyjna, na której wykonaliśmy operację jest nullem",
-        "a2": "zmienna referencyjna, na której wykonaliśmy operację jest 0",
-        "a3": "zmienna wartościowa, na której wykonaliśmy operację jest nullem",
-        "a4": "zmienna wartościowa, na której wykonaliśmy operację jest 0",
+        "a2": "zmienna referencyjna, na której wykonujemy operacje jest typu, który nie przyjmuje wartości null",
+        "a3": "zmienna referencyjna, na której wykonujemy operacje jest typu, który przyjmuje wartości null",
+        "a4": "zmienna referencyjna właśnie została ustawiona na null",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Jeżeli do stringa przypiszemy null i sprawdzimy jego długość za pomocą .Length() to dostaniemy ten wyjątek. Jeżeli nam taki wyjątek leci to znaczy, że próbujemy wykonać jakąś akcje na wartości null."
     },
+    {
+        "question":"W C# wyjątek \"ArgumentNullException\" oznacza, że?",
+        "url":"",
+        "a1": "zmienna podana do funkcji jest nullem",
+        "a2": "zmienna podana do funkcji jest typu, który może przyjąć null",
+        "a3": "zmienna podana do funkcji została w pewnym momencie jej wykonania ustawiona na null",
+        "a4": "zmienna podana do funkcji jest typu, który nie przyjmuje wartości null",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Korzystając z funkcji, które dostarcza język lub jakaś biblioteka musimy wziąść pod uwagę, że ich parametry mogą przyjmować null lub nie."
+    },
     //WPF i XAMARIN
+    {
+        "question":"Skrót \"WPF\" oznacza?",
+        "url":"",
+        "a1": "Windows Presentation Foundation",
+        "a2": "Windows Power Framework",
+        "a3": "Windows Presentation Framework",
+        "a4": "Windows Power Foundation",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Frameworkiem do tworzenia stron internetowych powiązanym z C# nie jest?",
+        "url":"",
+        "a1": "Flask",
+        "a2": "ASP.NET",
+        "a3": "Blazor",
+        "a4": "Razor",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Flask to framework na Pythonie."
+    },
+    {
+        "question":"Xamarin pozwal tworzyć aplikację na?",
+        "url":"",
+        "a1": "iOS oraz Androida",
+        "a2": "Androida oraz Windows Phone",
+        "a3": "iOS oraz Windows Phone",
+        "a4": "Tylko Windows Phone",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
     {
         "question":"Do budowania układu siatki w WPF i Xamarin służy tag?",
         "url":"",
@@ -3827,7 +3915,7 @@ const questions = [
     },
     {
         "question":"TDD (Test Driven Development) to?",
-        "url":"https://programonaut.b-cdn.net/wp-content/uploads/2021/08/TDD.png",
+        "url":"/images/TDD.png",
         "a1": "Metodologia pisania oprogramowania gdzie testy pisze się przed kodem testowanym",
         "a2": "Wzorzec projektowy",
         "a3": "Metodologia pisania oprogramowania gdzie testy wykorzystuje się do dokumentowania kodu",
@@ -4169,7 +4257,7 @@ const questions = [
     },
     {
         "question":"Na obrazku klasa Repository jest dla klasy Server?",
-        "url":"https://assets.alexandria.raywenderlich.com/books/512d0f29088c76daad57b9c3569733021775483b2ca319fa56c99a07dd996d4e/images/68a83fc039147e07a42c5bb8eab3dbd95e8958f22088184e133a06e2c3647b0c/original.png",
+        "url":"/images/repo.png",
         "a1": "Zależnością miękką",
         "a2": "Zależnością twardą",
         "a3": "Klasą pochodną",
@@ -4180,7 +4268,7 @@ const questions = [
     },
     {
         "question":"Na obrazku klasa RepositoryMock jest dla klasy Repository?",
-        "url":"https://assets.alexandria.raywenderlich.com/books/512d0f29088c76daad57b9c3569733021775483b2ca319fa56c99a07dd996d4e/images/68a83fc039147e07a42c5bb8eab3dbd95e8958f22088184e133a06e2c3647b0c/original.png",
+        "url":"/images/repo.png",
         "a1": "Klasą pochodną",
         "a2": "Zależnością miękką",
         "a3": "Zależnością twardą",
@@ -4191,7 +4279,7 @@ const questions = [
     },
     {
         "question":"Typ Repository może zostać określony mianem typu abstrakcyjnego?",
-        "url":"https://assets.alexandria.raywenderlich.com/books/512d0f29088c76daad57b9c3569733021775483b2ca319fa56c99a07dd996d4e/images/68a83fc039147e07a42c5bb8eab3dbd95e8958f22088184e133a06e2c3647b0c/original.png",
+        "url":"/images/repo.png",
         "a1": "TAK",
         "a2": "NIE",
         "a3": "",
@@ -4268,7 +4356,7 @@ const questions = [
     },
     {
         "question":"Diagram UML na ilustracji to?",
-        "url":"https://d2slcw3kip6qmk.cloudfront.net/marketing/discovery/UML_use_case_diagram.png",
+        "url":"/images/usagediagram.png",
         "a1": "Diagram przypadków użycia",
         "a2": "Diagram ERD",
         "a3": "Diagram klas",
@@ -4279,7 +4367,7 @@ const questions = [
     },
     {
         "question":"Diagram UML na ilustracji to?",
-        "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0O_RKRTsVweHZ4hfGDUJpJibDzz4mp4NpngofNZJWpgBXKoxJdYEeeK03SOnxn67XqNc&usqp=CAU",
+        "url":"/images/sekdiagram.png",
         "a1": "Diagram sekwencji",
         "a2": "Diagram ERD",
         "a3": "Diagram klas",
@@ -4378,28 +4466,6 @@ const questions = [
         "desc":"HTTPS pracuje na 443"
     },
     {
-        "question":"Protokół HTTPS używa do szyfrowania?",
-        "url":"",
-        "a1": "TLS/SSL",
-        "a2": "MD5/SHA256",
-        "a3": "DES/AES",
-        "a4": "AES/RSA",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"HTTPS pracuje na 443"
-    },
-    {
-        "question":"Rysunek przedstawia proces?",
-        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/420px-UDP_encapsulation.svg.png",
-        "a1": "enkapsulacji",
-        "a2": "hermetyzacji",
-        "a3": "kompresji",
-        "a4": "strukturyzowania",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Wysyłając pakiet HTTP w górnych warstwach przechodzi on w kierunku warstw dolnych gdzie na każdym etapie podlega enkapsulacji przez odpowiedni protokół. Odbiór pakietu przebiega w odwrotną stronę."
-    },
-    {
         "question":"Dane przekazywane do protokoły HTTP/HTTPS są w formacie?",
         "url":"",
         "a1": "wszystkie wymienione",
@@ -4411,7 +4477,7 @@ const questions = [
         "desc":"Dane obierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia."
     },
     {
-        "question":"Dane otrzymywane poprzez protokoły HTTP/HTTPS są w formacie?",
+        "question":"Dane otrzymywane poprzez protokoły HTTP/HTTPS mogą być w formacie?",
         "url":"",
         "a1": "wszystkie wymienione",
         "a2": "JSON",
@@ -4483,17 +4549,6 @@ const questions = [
         "a2": "REMOVE",
         "a3": "POST",
         "a4": "PATCH",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Kody sukcesu zwracane przez HTTP/HTTPS znajdują się w zakresie?",
-        "url":"",
-        "a1": "200-299",
-        "a2": "100-199",
-        "a3": "300-399",
-        "a4": "500-599",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -5803,6 +5858,28 @@ const questions = [
         "type": "4A",
         "desc":"\"None\" to odpowiednik \"null\" z innych języków."
     },
+    {
+        "question":"W języku Python aby utworzyć obiekt klasy ABC należy posłużyć się zapisem?",
+        "url":"",
+        "a1": "obj = ABC()",
+        "a2": "obj = new ABC()",
+        "a3": "obj = ABC",
+        "a4": "obj = new ABC",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python szybszą pętlą jest?",
+        "url":"",
+        "a1": "for x in range(...)",
+        "a2": "while",
+        "a3": "do...while",
+        "a4": "nie ma różnicy",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wbrew temu co mogło by się wydawać pętla for jest najszybsza. Zazwyczaj przyjmuje się mówić, że wywołanie funkcji jest wolne. W tym przypadku range() jest szybsze niż zwykłe inkrementowanie, ponieważ funkcja ta jest napisana w C jak cały Python."
+    },
     //windows/linux cmd
     {
         "question":"Polecenie wiersza poleceń Windows służące do wyświetlania zawartości katalogów to?",
@@ -6137,7 +6214,7 @@ const questions = [
     },
     {
         "question":"Dodając do znaku \"char a = 'A'\" liczbę 32 uzyskamy?",
-        "url":"https://www.asciitable.com/asciifull.gif",
+        "url":"/images/ascii.gif",
         "a1": "a",
         "a2": "#",
         "a3": "_",
@@ -6412,7 +6489,7 @@ const questions = [
     },
     {
         "question":"Bramką logiczną na obrazku jest?",
-        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Nand-gate-en.svg/1200px-Nand-gate-en.svg.png",
+        "url":"/images/nand.png",
         "a1": "NAND",
         "a2": "OR",
         "a3": "AND",
@@ -6423,7 +6500,7 @@ const questions = [
     },
     {
         "question":"Bramką logiczną na obrazku jest?",
-        "url":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/NOR_ANSI.svg/1200px-NOR_ANSI.svg.png",
+        "url":"/images/nor.png",
         "a1": "NAND",
         "a2": "OR",
         "a3": "AND",
@@ -6455,78 +6532,12 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Protokołem zamieniającym nazwy domenowe na adresy IP jest?",
-        "url":"",
-        "a1": "DNS",
-        "a2": "ARP",
-        "a3": "DHCP",
-        "a4": "Telnet",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"DNS - Domain Names Server"
-    },
-    {
-        "question":"Protokołem przydzielającym każdemu urządzeniu adres IP dynamicznie jest?",
-        "url":"",
-        "a1": "DHCP",
-        "a2": "ARP",
-        "a3": "DNS",
-        "a4": "FTP",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"DHCP - Dynamic Host Configuration Protocol - protokół ten jest zazwyczaj domyślnie włączony. Przydziela on adres IP, maskę, adres bramy domyślnej i serwerów DNS."
-    },
-    {
         "question":"HTTP działa na porcie?",
         "url":"",
         "a1": "80",
         "a2": "90",
         "a3": "20",
         "a4": "60",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Pierwsza warstwa ISO/OSI to?",
-        "url":"",
-        "a1": "w. fizyczna",
-        "a2": "w. łącza danych",
-        "a3": "w. sieci",
-        "a4": "w. transportowa",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Druga warstwa ISO/OSI to?",
-        "url":"",
-        "a1": "w. łącza danych",
-        "a2": "w. fizyczna",
-        "a3": "w. sieci",
-        "a4": "w. transportowa",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Trzecia warstwa ISO/OSI to?",
-        "url":"",
-        "a1": "w. sieci",
-        "a2": "w. łącza danych",
-        "a3": "w. fizyczna",
-        "a4": "w. transportowa",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Czwarta warstwa ISO/OSI to?",
-        "url":"",
-        "a1": "w. transportowa",
-        "a2": "w. sieci",
-        "a3": "w. łącza danych",
-        "a4": "w. fizyczna",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6574,17 +6585,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"MAC ma format xx-xx-xx-xx-xx-xx gdzie pierwsze 3 bajty to identyfikator producenta a kolejne 3 to identyfikator urządzenia."
-    },
-    {
-        "question":"Narzędziem do podglądania ruchu sieciowego jest?",
-        "url":"https://networkvisibility.files.wordpress.com/2015/01/http_response_time.png",
-        "a1": "WireShark",
-        "a2": "NetStat",
-        "a3": "Curl",
-        "a4": "Putty",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Program WireShark nasłuchuje sieć lokalną i pozwala podejrzeć zawartość pakietu."
     },
     {
         "question":"Narzędziem do sprawdzania adresu IP, do którego prowadzi domena jest?",
