@@ -1951,7 +1951,7 @@ const questions = [
     },
     {
         "question":"Algorytm na obrazku to?",
-        "url":"data:image/png;base64,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",
+        "url":"/images/algsek.png",
         "a1": "alg. iteracyjny",
         "a2": "alg. sekwencyjny",
         "a3": "alg. blokowy",
@@ -2438,20 +2438,20 @@ const questions = [
         "question":"Cztery filary programowania obiektowego to?",
         "url":"",
         "a1": "Dziedziczenie, Polimorfizm, Hermetyzacja, Abstrakcja",
-        "a2": "Public, Protected, Private, Interface",
-        "a3": "Public, Protected, Private, Implementation",
-        "a4": "Constructor, Destructor, Abstractor, Iterator",
+        "a2": "Public, Protected, Private, Interfejs",
+        "a3": "Public, Protected, Private, Implementacja",
+        "a4": "Konstruktor, Destruktor, Abstrakcja, Iteracja",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
     },
     {
-        "question":"W języku Java mamy operator == oraz funkcję equals(). Na czym polega różnica między nimi w C#/Java?",
+        "question":"W języku Java mamy operator == oraz funkcję Equals(). Na czym polega różnica między nimi w C#?",
         "url":"",
-        "a1": "Operator == porównuje tylko referencje a Equals() także zawartość obiektu",
-        "a2": "Operator == porówuje zawartość obiektu a Equals() referencje",
-        "a3": "Obie metody porównania są identyczne",
-        "a4": "Operator == to skrócona wersja Equals()",
+        "a1": "operator == porównuje tylko referencje a Equals() także zawartość obiektu",
+        "a2": "operator == porówuje zawartość obiektu a Equals() referencje",
+        "a3": "obie metody porównania są identyczne",
+        "a4": "wszystkie pozostałe",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -3336,6 +3336,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Jest to metoda zdefiniowana w innej klasie jako statyczna, ale wyświetla się jako składowa klasy, którą rozszerza."
+    },
+    {
+        "question":"Interpolacji stringów w C# można dokonać składnią?",
+        "url":"",
+        "a1": "$\"Ala ma {count} kotów!\"",
+        "a2": "f\"Ala ma {count} kotów!\"",
+        "a3": "#\"Ala ma {count} kotów!\"",
+        "a4": "&\"Ala ma {count} kotów!\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jest to element języka eliminujący formatowanie stringów za pomocą ich konkatenacji ze zmiennymi."
     },
     {
         "question":"Na obrazku zaznaczono",
@@ -4521,17 +4532,6 @@ const questions = [
     },
     //http rest ect
     {
-        "question":"Protokoły HTTP/HTTPS są protokołami warstwy _ ISO/OSI?",
-        "url":"",
-        "a1": "7",
-        "a2": "6",
-        "a3": "5",
-        "a4": "2",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Chodzi o warstwę aplikacji."
-    },
-    {
         "question":"Skrót HTTP rozwija się?",
         "url":"",
         "a1": "Hypertext Transfer Protocol",
@@ -4843,12 +4843,12 @@ const questions = [
     {
         "question":"Pojęcie \"crawling\" w programowaniu to?",
         "url":"",
-        "a1": "przeszukiwanie portali w poszukiwaniu treści",
-        "a2": "szukanie luk zabezpieczeń",
-        "a3":"",
-        "a4":"",
+        "a1": "szukanie treści siłą w ciele strony",
+        "a2": "szukanie treści siłą w bazie danych",
+        "a3": "szukanie treści w API strony",
+        "a4": "szukanie dziór w stronie",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Polega to na skanowaniu drzewa HTML i wyszukiwaniu wartościowych danych."
     },
     {
@@ -5968,6 +5968,17 @@ const questions = [
         "type": "4A",
         "desc":"Wbrew temu co mogło by się wydawać pętla for jest najszybsza. Zazwyczaj przyjmuje się mówić, że wywołanie funkcji jest wolne. W tym przypadku range() jest szybsze niż zwykłe inkrementowanie, ponieważ funkcja ta jest napisana w C jak cały Python."
     },
+    {
+        "question":"Interpolacji stringów w języku python można dokonać składnią?",
+        "url":"",
+        "a1": "f\"Ala ma {count} kotów!\"",
+        "a2": "$\"Ala ma {count} kotów!\"",
+        "a3": "#\"Ala ma {count} kotów!\"",
+        "a4": "&\"Ala ma {count} kotów!\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jest to element języka eliminujący formatowanie stringów za pomocą ich konkatenacji ze zmiennymi."
+    },
     //windows/linux cmd
     {
         "question":"Polecenie wiersza poleceń Windows służące do wyświetlania zawartości katalogów to?",
@@ -6620,72 +6631,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"HTTP działa na porcie?",
-        "url":"",
-        "a1": "80",
-        "a2": "90",
-        "a3": "20",
-        "a4": "60",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"IPv4 składa się z _ bajtów?",
-        "url":"",
-        "a1": "4",
-        "a2": "3",
-        "a3": "2",
-        "a4": "5",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"192.168.1.1 to przykład - jak widać każda liczba mieści się w przedziale 0 255"
-    },
-    {
-        "question":"IPv6 składa się z _ bajtów?",
-        "url":"",
-        "a1": "16",
-        "a2": "12",
-        "a3": "8",
-        "a4": "6",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"2001:0db8:0000:0000:0000:0000:1428:57ab to przykład"
-    },
-    {
-        "question":"Adres MAC składa się z _ bajtów?",
-        "url":"",
-        "a1": "6",
-        "a2": "4",
-        "a3": "2",
-        "a4": "8",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Adres MAC ma format xx-xx-xx-xx-xx-xx zapisany w systemie szesnastkowym."
-    },
-    {
-        "question":"Każde urządzenie sieciowe ma unikalny adres MAC?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"MAC ma format xx-xx-xx-xx-xx-xx gdzie pierwsze 3 bajty to identyfikator producenta a kolejne 3 to identyfikator urządzenia."
-    },
-    {
-        "question":"Narzędziem do sprawdzania adresu IP, do którego prowadzi domena jest?",
-        "url":"",
-        "a1": "nslookup",
-        "a2": "netstat",
-        "a3": "curl",
-        "a4": "arp",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Polecenie \"nslookup onet.pl\" wyświetli adres IP serwera, do którego zaprowadzi nas przeglądarka po wpisaniu adresu \"onet.pl\""
-    },
-    {
         "question":"Normy to dokumenty określające zasady postępowania, przepisy, wzory, wytyczne lub charakterystyki do powszechnego i wielokrotnego stosowania?",
         "url":"",
         "a1": "TAK",
@@ -7029,6 +6974,17 @@ const questions = [
         "desc":"Nie odpytujemy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych."
     },
     {
+        "question":"Powinno się unikać częstego komunikowania się z zewnętrznym API?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie odpytujemy API w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza lub serwera z API"
+    },
+    {
         "question":"Skrót LTS oznacza?",
         "url":"",
         "a1": "Long Term Supported",
@@ -7071,6 +7027,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Wskaźniki są głównym źródłem błędów i luk w oprogramowaniu. Nowoczesne języki takie jak RUST podchodzą do tematu pamięci bardzo rygorystycznie i ograniczają możliwości wskaźników do potrzebnego minimum."
+    },
+    {
+        "question":"Powinno się przekazywać parametry funkcji przez referencje jeżeli nie potrzebujemy kopii wartości?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jeżeli przekazujemy coś do funkcji a nie potrzebujemy by ta wykonała swoją kopię tej wartości to przekazujmy parametry przez referencję. Unikniemy wtedy zbędnych kopii w pamięci."
     },
     //szyfry i kodowania
     {
