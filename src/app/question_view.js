@@ -49,6 +49,20 @@ function QuestionView(props) {
   const [id, setId] = useState(0);
   const [question, setQuestion] = useState(props.questions[0]);
 
+  const goQuestion = () => {
+    let number = parseInt(prompt("Podaj numer pytania:"));
+
+    if(isNaN(number)){
+      return 0;
+    }
+
+    if(number>=props.questions.length){
+      number = props.questions.length-1;
+    }
+
+    return number - id;
+  }
+
   const switchQuestion = (m) => {
     let i = id+m;
     if(i >= props.questions.length){
@@ -74,11 +88,14 @@ function QuestionView(props) {
   return (
     <div className="question_view">
       <center>
-      <div className="welcome_text">
+        <div className="welcome_text">
           <Welcome questions={props.questions}></Welcome>
         </div>
         <button className="button_style" onClick={() => switchQuestion(-1)}>
           Poprzednie pytanie!
+        </button>
+        <button className="button_style" onClick={() => switchQuestion(goQuestion())}>
+          Idź do pytania
         </button>
         <button className="button_style" onClick={() => switchQuestion(1)}>
           Następne pytanie!
