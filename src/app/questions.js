@@ -212,10 +212,10 @@ const questions = [
     {
         "question":"Definicją własnego typu jest?",
         "url":"",
-        "a1": "Wszystkie pozostałe",
-        "a2": "Klasa",
-        "a3": "Struktura",
-        "a4": "Typ wyliczeniowy",
+        "a1": "wszystkie pozostałe",
+        "a2": "klasa",
+        "a3": "struktura",
+        "a4": "typ wyliczeniowy",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Zarówno klasa jak i struktura służy do definicji własnego typu złożonego, który składa się z typów prostych lub innych typów złożonych."
@@ -300,10 +300,10 @@ const questions = [
     {
         "question":"Wywołanie funkcji przez samą siebie to?",
         "url":"",
-        "a1": "Rekurencja",
-        "a2": "Iteracja",
-        "a3": "Callback",
-        "a4": "Wyłuskanie",
+        "a1": "rekurencja",
+        "a2": "iteracja",
+        "a3": "callback",
+        "a4": "przeciążenie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"W przypadku rekurencji ważne jest by kontrolować ilość zagłębień. Stosując rekurencje bardzo łatwo jest przekroczyć rozmiar stosu, ponieważ każda instancja funkcji alokuje tam swoje zmienne lokalne."
@@ -356,8 +356,8 @@ const questions = [
         "question":"Instrukcja C++ \"cout\" znajduje się w namespace?",
         "url":"",
         "a1": "std",
-        "a2": "chrono",
-        "a3": "stp",
+        "a2": "console",
+        "a3": "common",
         "a4": "system",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -367,8 +367,8 @@ const questions = [
         "question":"Instrukcja C++ \"cin\" znajduje się w namespace?",
         "url":"",
         "a1": "std",
-        "a2": "chrono",
-        "a3": "stp",
+        "a2": "console",
+        "a3": "common",
         "a4": "system",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -378,23 +378,12 @@ const questions = [
         "question":"Typ \"string\" C++ znajduje się w namespace?",
         "url":"",
         "a1": "std",
-        "a2": "chrono",
-        "a3": "stp",
+        "a2": "string",
+        "a3": "common",
         "a4": "system",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"std::cout, std::cin itd"
-    },
-    {
-        "question":"Najnowszym wydanym standardem C++ jest?",
-        "url":"",
-        "a1": "C++2a",
-        "a2": "C++17",
-        "a3": "C++14",
-        "a4": "C++11",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Standard wychodzi co 3 lata. Aktualny to 2020, który oznaczany jest jako 2a."
     },
     {
         "question":"Dynamicznie linkowana biblioteka ma rozszerzenie?",
@@ -551,6 +540,28 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Metodą klasy std::string zwracającą podłańcuch łańcucha tekstowego jest?",
+        "url":"",
+        "a1": "substr()",
+        "a2": "substring()",
+        "a3": "slice()",
+        "a4": "cut()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Metodą klasy std::string zwracającą indeks pierwszego wystąpienia połańcucha w łańcuchu tekstowym jest?",
+        "url":"",
+        "a1": "find()",
+        "a2": "rfind()",
+        "a3": "compare()",
+        "a4": "filtr()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Łańcuch tekstowy w C/C++ może zostać umieszczony między apostrofami?",
         "url":"",
         "a1": "NIE",
@@ -573,50 +584,6 @@ const questions = [
         "desc":"Tak. Zwraca on znak pod danym indeksem. Stringi to gdzieś pod spodem tablice znaków."
     },
     {
-        "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
-        "url":"/images/stackheap.jpg",
-        "a1": "MyClass* myObj = new MyClass();",
-        "a2": "MyClass myObj = new MyClass();",
-        "a3": "MyClass myObj = MyClass();",
-        "a4": "MyClass* myObj = MyClass();",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Operator \"new\" zwraca wskaźnik!"
-    },
-    {
-        "question":"W C++ dla każdego wystąpienia operatora \"new\" powinno pojawić się wystąpienie operatora \"delete\"?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jeżeli nie zwolnimy pamięci dynamicznie alokowanej to następuje jej wyciek. Nie zawsze jest to groźne, ale zwalnianie pamięci powinno być obowiązkowym nawykiem."
-    },
-    {
-        "question":"Operatory & oraz && są równoznaczne?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
-    },
-    {
-        "question":"Operatory | oraz || są równoznaczne?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
-    },
-    {
         "question":"Instrukcje ++a oraz a++ są równoznaczne?",
         "url":"",
         "a1": "NIE",
@@ -626,28 +593,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Jeżeli zrobimy b = a++ oraz b = ++a to zobaczymy różnice. W pierwszym przypakdu najpierw do b przypiszemy a, a potem zwiększymy a. W drugim najpierw następuje inkrementacja a później przypisanie."
-    },
-    {
-        "question":"Operatory ^ oraz ~ są równoznaczne?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Pierwszy to bitowa różnica symetryczna (XOR) a drugi to negacja (NOT)."
-    },
-    {
-        "question":"Operator ^ to operator potęgowania?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jest to operator różnicy symetrycznej (bitowy XOR)"
     },
     {
         "question":"Słowo kluczowe \"const\" oznacza stałą?",
@@ -672,15 +617,59 @@ const questions = [
         "desc":"Przed kompilacją w trakcie działania preprocesora wszystkie miejsca gdzie wykorzystaliśmy makro są podmieniane na jego wartość."
     },
     {
-        "question":"Które słowo jest słowem kluczowym C/C++?",
+        "question":"Makra preprocesora działają w C/C++ tak samo jak stałe?",
         "url":"",
-        "a1": "switch",
-        "a2": "key",
-        "a3": "peek",
-        "a4": "broke",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
+        "type": "2A",
+        "desc":"Makro to nie jest zmienna/stała. Przykład: \"#define PI 3.13\". Wszystkie wystąpienia PI w kodzie zostaną podmienione na 3.14 jeszcze przed właściwą kompilacją."
+    },
+    {
+        "question":"Operatory & oraz && są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
+    },
+    {
+        "question":"Operatory | oraz || są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pierwszy to operator bitowy a drugi to operator logiczny."
+    },
+    {
+        "question":"Operatory ^ oraz ~ są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Pierwszy to bitowa różnica symetryczna (XOR) a drugi to negacja (NOT)."
+    },
+    {
+        "question":"Operator ^ to operator potęgowania?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jest to operator różnicy symetrycznej (bitowy XOR)"
     },
     {
         "question":"Operator _ wykonuje operację modulo",
@@ -736,17 +725,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Wszystkie opcje to słowa kluczowe C++. Operatorem nie jest tylko \"extern\"."
-    },
-    {
-        "question":"Które słowo NIE jest słowem kluczowym C/C++?",
-        "url":"",
-        "a1": "peek",
-        "a2": "if",
-        "a3": "extern",
-        "a4": "volatile",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"\"volatile\" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane."
     },
     {
         "question":"Który rodzaj operatora wymaga trzech operandów?",
@@ -846,6 +824,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
+    },
+    {
+        "question":"Które słowo jest słowem kluczowym C/C++?",
+        "url":"",
+        "a1": "switch",
+        "a2": "ref",
+        "a3": "out",
+        "a4": "dynamic",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Które słowo NIE jest słowem kluczowym C/C++?",
+        "url":"",
+        "a1": "peek",
+        "a2": "if",
+        "a3": "extern",
+        "a4": "volatile",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"\"volatile\" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane."
     },
     {
         "question":"Kompilatorem języka C/C++ nie jest?",
@@ -1145,6 +1145,17 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Słowo kluczowe \"static\" w C/C++?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "powoduje, że element klasy jest wspólny dla wszystkich obiektów i jest przypisany do klasy",
+        "a3": "powoduje, że zmienna lokalna zachowuje się jak zmienna globalna",
+        "a4": "powoduje, że element globalny (zmienna, funkcja) jest widoczna tylko w pliku gdzie została zdefiniowana",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Słowo kluczowe \"static\" ma trzy funkcje."
+    },
+    {
         "question":"Słowem kluczowym służący do zwalniania zaalokowanej pamięci w C++ jest?",
         "url":"",
         "a1": "delete",
@@ -1156,15 +1167,26 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Słowo kluczowe \"static\" w C/C++?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "powoduje, że element klasy jest wspólny dla wszystkich obiektów i jest przypisany do klasy",
-        "a3": "powoduje, że zmienna lokalna zachowuje się jak zmienna globalna",
-        "a4": "powoduje, że element globalny (zmienna, funkcja) jest widoczna tylko w pliku gdzie została zdefiniowana",
+        "question":"Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?",
+        "url":"/images/stackheap.jpg",
+        "a1": "MyClass* myObj = new MyClass();",
+        "a2": "MyClass myObj = new MyClass();",
+        "a3": "MyClass myObj = MyClass();",
+        "a4": "MyClass* myObj = MyClass();",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Słowo kluczowe \"static\" ma trzy funkcje."
+        "desc":"Operator \"new\" zwraca wskaźnik!"
+    },
+    {
+        "question":"W C++ dla każdego wystąpienia operatora \"new\" powinno pojawić się wystąpienie operatora \"delete\"?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jeżeli nie zwolnimy pamięci dynamicznie alokowanej to następuje jej wyciek. Nie zawsze jest to groźne, ale zwalnianie pamięci powinno być obowiązkowym nawykiem."
     },
     {
         "question":"Czy kod: \"int size = 10; int tablica[size];\" jest poprawny?",
@@ -1206,6 +1228,17 @@ const questions = [
         "a1": "int tablica[10];",
         "a3": "int* tablica = new[10];",
         "a4": "int tablica = new int[10];",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Tablica dynamiczna alokowana jest na stercie. Tak zaalokowaną pamięć trzeba zwalniać."
+    },
+    {
+        "question":"W C++ tablica dynamiczna zwalniana jest w następujący sposób?",
+        "url":"",
+        "a2": "delete[] tablica;",
+        "a1": "delete tablica;",
+        "a3": "free[] tablica;",
+        "a4": "free tablica;",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Tablica dynamiczna alokowana jest na stercie. Tak zaalokowaną pamięć trzeba zwalniać."
@@ -1352,17 +1385,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Tak, ponieważ po klamrze kończącej klasę możemy odrazu tworzyć jej instancje."
-    },
-    {
-        "question":"C++ oferuje mechanizm null safety?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Null safety czyli mechanizm lepszej kontroli czy zmienna przechowuje wartość czy też null. Dostępne w nowszych językach."
     },
     {
         "question":"C++ jest językiem interpretowanym?",
@@ -1541,6 +1563,17 @@ const questions = [
         "desc":"Funkcja strlen zwraca długość stringa nie licząc tego 0 na końcu!"
     },
     {
+        "question":"Aby użyć funkcji \"strlen()\" do pobrania długości c-style string należy dołączyć?",
+        "url":"",
+        "a1": "cstring",
+        "a2": "string",
+        "a3": "cstdlib",
+        "a4": "cstdio",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja ta znajuje się w \"cstring\". Przypominamy, że pliki poprzedzone literką c pochodzą z języka C!"
+    },
+    {
         "question":"Co to jest funkcja inline w C++?",
         "url":"",
         "a1": "funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania",
@@ -1550,6 +1583,50 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Jest to funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania. Normalne wywołanie wiąże się ze skokiem, alokacją stosu itp. Małe funkcje można ustawić na inline."
+    },
+    {
+        "question":"W C++ funkcja biblioteki \"cmath\" służąca do potęgowania to?",
+        "url":"",
+        "a1": "pow(x,y);",
+        "a2": "power(x,y);",
+        "a3": "power(x);",
+        "a4": "pow(x);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja pow w pierwszym parametrze przyjmuje wartość a w drugim stopień potęgi."
+    },
+    {
+        "question":"W C++ funkcja biblioteki \"cmath\" służąca do obliczania wartości logarytmu naturalnego to?",
+        "url":"",
+        "a1": "log(x);",
+        "a2": "l(x);",
+        "a3": "hypot(x);",
+        "a4": "cbrt(x);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W C++ funkcja biblioteki \"cmath\" służąca do obliczania wartości bezwzględnej to?",
+        "url":"",
+        "a1": "abs(x);",
+        "a2": "aps(x);",
+        "a3": "mod(x);",
+        "a4": "unsigned(x);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W C++ funkcje biblioteki \"cmath\" \"ceil()\" oraz \"floor()\" są równoznaczne?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"\"ceil\" zaokrągla do najbliższej liczby całkowitej w góre natomiast \"floor\" zaokrągla do najbliższej liczby całkowitej mniejszej niż podana wartość."
     },
     //numeric systems
     {
@@ -1875,10 +1952,10 @@ const questions = [
     {
         "question":"Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?",
         "url":"",
-        "a1": "Elipsy",
-        "a2": "Prostokątu",
-        "a3": "Równoległoboku",
-        "a4": "Trójkąta",
+        "a1": "elipsy",
+        "a2": "prostokątu",
+        "a3": "równoległoboku",
+        "a4": "trójkąta",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Prostokąty zawierają operacje. Równoległoboki zawierają operacje wejścia wyjścia. Trójkątów jako tako nie stosuje się w schematach blokowych algorytmów."
@@ -1919,10 +1996,10 @@ const questions = [
     {
         "question":"Algorytm można przedstawić za pomocą?",
         "url":"",
-        "a1": "Każdym z wymienionych sposobów",
-        "a2": "Tylko słownie",
-        "a3": "Tylko pseudokodem",
-        "a4": "Tylko schematem blokowym",
+        "a1": "każdym z wymienionych sposobów",
+        "a2": "opisem słownym",
+        "a3": "pseudokodem",
+        "a4": "schematem blokowym",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Pseudokod to mnie lub bardziej podobna do rzeczywistego kodu forma zapisu."
@@ -1930,10 +2007,10 @@ const questions = [
     {
         "question":"Co oznacza bloczek na obrazku?",
         "url":"/images/warunek.png",
-        "a1": "Warunek logiczny",
-        "a2": "Wprowadzenie danych",
-        "a3": "Łącznik",
-        "a4": "Dołączenie podprogramu",
+        "a1": "warunek logiczny",
+        "a2": "wprowadzenie danych",
+        "a3": "łącznik",
+        "a4": "dołączenie podprogramu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -1986,10 +2063,10 @@ const questions = [
     {
         "question":"Wielopostaciowość nazywana jest?",
         "url":"",
-        "a1": "Polimorfizmem",
-        "a2": "Dziedziczeniem",
-        "a3": "Abstrakcją",
-        "a4": "Wirtualizacją",
+        "a1": "polimorfizmem",
+        "a2": "dziedziczeniem",
+        "a3": "abstrakcją",
+        "a4": "wirtualizacją",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -1997,10 +2074,10 @@ const questions = [
     {
         "question":"Zależnością klasy jest?",
         "url":"",
-        "a1": "Inna klase w formie obiektu tej klasy",
-        "a2": "Każde pole klasy",
-        "a3": "Każda metoda klasy",
-        "a4": "Żadne z wymienionych",
+        "a1": "inna klasa w formie obiektu tej klasy",
+        "a2": "każde pole klasy",
+        "a3": "każda metoda klasy",
+        "a4": "żadne z wymienionych",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Zależność to inna klasa. W klasie umieszcza się obiekt innej klasy (jej zależności) by ta mogła skorzystać z jej możliwości."
@@ -2028,7 +2105,7 @@ const questions = [
         "desc":"Nie można, ponieważ klasa taka ma metody bez ciała."
     },
     {
-        "question":"Można utworzyć referencje typu klasy abstrakcyjnej?",
+        "question":"Można utworzyć referencje/wskaźnik typu klasy abstrakcyjnej?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -2094,6 +2171,17 @@ const questions = [
         "desc":"W C# można do tego celu wykorzystać właściwość (konstrukcja z get i set)"
     },
     {
+        "question":"Metoda zwracająca prywatne pole to?",
+        "url":"",
+        "a1": "getter",
+        "a2": "setter",
+        "a3": "metoda wirtualna",
+        "a4": "metoda abstrakcyjna",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W C# można do tego celu wykorzystać właściwość (konstrukcja z get i set)"
+    },
+    {
         "question":"Konstruktor?",
         "url":"",
         "a1": "w typowych przypadkach powinien być funkcją typu public",
@@ -2107,10 +2195,10 @@ const questions = [
     {
         "question":"Jak nazywamy składniki, z których zbudowane są obiekty?",
         "url":"",
-        "a1": "Pola i metody",
-        "a2": "Klasy i metody",
-        "a3": "Metody i funkcje",
-        "a4": "Funkcje i stałe",
+        "a1": "pola i metody",
+        "a2": "klasy i metody",
+        "a3": "metody i funkcje",
+        "a4": "funkcje i stałe",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"W C# dochodzą nam jeszcze właściwości (get, set)."
@@ -2153,10 +2241,10 @@ const questions = [
         "url":"",
         "a1": "klasy abstrakcyjnej",
         "a2": "zwykłej klasy",
-        "a3": "",
-        "a4": "",
+        "a3": "uni",
+        "a4": "struktury",
         "tag": "NIEOFICJALNE",
-        "type": "2A",
+        "type": "4A",
         "desc":"Interfejs można porównać do kontraktu, który mówi jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działa tak samo z tym, że ona może mieć już część metod zaimplementowaną."
     },
     {
@@ -2446,8 +2534,8 @@ const questions = [
         "desc":""
     },
     {
-        "question":"W języku Java mamy operator == oraz funkcję Equals(). Na czym polega różnica między nimi w C#?",
-        "url":"",
+        "question":"W języku C# mamy operator == oraz funkcję Equals(). Na czym polega różnica między nimi?",
+        "url":"/iamges/equals.jpg",
         "a1": "operator == porównuje tylko referencje a Equals() także zawartość obiektu",
         "a2": "operator == porówuje zawartość obiektu a Equals() referencje",
         "a3": "obie metody porównania są identyczne",
@@ -3241,10 +3329,10 @@ const questions = [
     {
         "question":"Pojęcie statycznego polimorfizmu oznacza?",
         "url":"",
-        "a1": "Przeciążanie funkcji",
-        "a2": "Nadpisywanie funkcji",
-        "a3": "Dziedziczenie",
-        "a4": "Wielokrotne dziedziczenie",
+        "a1": "[rzeciążanie funkcji",
+        "a2": "nadpisywanie funkcji",
+        "a3": "dziedziczenie",
+        "a4": "wielokrotne dziedziczenie",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Chodzi o zwykłe przeciążanie funkcji (ta sama nazwa, różne argumenty)."
@@ -4576,28 +4664,6 @@ const questions = [
         "desc":"Dane obierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia."
     },
     {
-        "question":"Metodą protokołu HTTP/HTTPS nie jest?",
-        "url":"",
-        "a1": "REMOVE",
-        "a2": "DELETE",
-        "a3": "POST",
-        "a4": "PATCH",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Metodą protokołu HTTP/HTTPS nie jest?",
-        "url":"",
-        "a1": "MOVE",
-        "a2": "DELETE",
-        "a3": "POST",
-        "a4": "GET",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Metodą protokołu HTTP/HTTPS odpowiedzialną za pobieranie danych jest?",
         "url":"",
         "a1": "GET",
@@ -5195,28 +5261,6 @@ const questions = [
         "desc":"Indeksy oryginalnej tablicy są interpretowane jako podstawy systemów liczbowych. Jedynka jest parsowana do systemu o podstawie 0, 7 do systemu o podstawie 1 a 11 do systemu o podstawie 2. Cyfry 7 nie ma systemie liczbowym o podstawie 1."
     },
     {
-        "question":"JavaScript wchodzi w standard ECMAScript",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"TypeScript jest nadzbiorem JavaScript",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"TypeScript dodaje tylko i wyłącznie statycznie typowanie do języka JavaScript."
-    },
-    {
         "question":"JavaScript pozwala przypisać funkcję do zmiennej?",
         "url":"",
         "a1": "TAK",
@@ -5322,6 +5366,17 @@ const questions = [
         "a2": "var obj = {name: \"Sebastian\" };",
         "a3": "var obj = new Object();",
         "a4": "var obj = {};",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Pobranie długości tablicy w JavaScript wygląda następująco?",
+        "url":"",
+        "a1": "let size = tablica.length;",
+        "a2": "let size = tablica.length();",
+        "a3": "let size = tablica.count;",
+        "a4": "let size = tablica.size;",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -5870,6 +5925,17 @@ const questions = [
         "desc":"Najczęściej mamy do czynienia z implementacją CPython."
     },
     {
+        "question":"Czy w języku Python można pisać kod realizujący jakieś zadanie poza funkcją?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Podobnie jak w JavaScript program można pisać odrazu bez funkcji."
+    },
+    {
         "question":"Odpowiednikiem słowa kluczowgo \"this\" w Pythonie jest?",
         "url":"",
         "a1": "self",
@@ -5903,6 +5969,17 @@ const questions = [
         "desc":"List typu [] pozwala po zainicjowaniu modyfikować swoją zawartość."
     },
     {
+        "question":"W języku Python aby dodać element na koniec listy należy posłużyć się metodą?",
+        "url":"",
+        "a1": "append()",
+        "a2": "add()",
+        "a3": "push()",
+        "a4": "insert()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Wersja 3 języka python to tylko aktualizacja do wersji 2?",
         "url":"",
         "a1": "NIE",
@@ -5920,17 +5997,6 @@ const questions = [
         "a2": "__create__",
         "a3": "__self__",
         "a4": "taką jak nazwa klasy",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"W języku Python aby dodać element na koniec listy należy posłużyć się metodą?",
-        "url":"",
-        "a1": "append()",
-        "a2": "add()",
-        "a3": "push()",
-        "a4": "insert()",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -5958,6 +6024,61 @@ const questions = [
         "desc":""
     },
     {
+        "question":"W języku Python gdy definiowana klasa A dziedziczy z klasy B posługujemy się zapisem",
+        "url":"",
+        "a1": "class A(B)",
+        "a2": "class A: B",
+        "a3": "class A<B>",
+        "a4": "class A{B}",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python definicję klasy rozpoczynamy od słowa kluczowego",
+        "url":"",
+        "a1": "class",
+        "a2": "def",
+        "a3": "let",
+        "a4": "type",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python definicję funkcji rozpoczynamy od słowa kluczowego",
+        "url":"",
+        "a1": "def",
+        "a2": "class",
+        "a3": "let",
+        "a4": "type",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python aby dołączyć inny moduł należy posłużyć się słowem kluczowym",
+        "url":"",
+        "a1": "import",
+        "a2": "include",
+        "a3": "using",
+        "a4": "crate",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Pętlą niedostępną w języku Python jest?",
+        "url":"",
+        "a1": "for()",
+        "a2": "for..range()",
+        "a3": "while()",
+        "a4": "do while()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"W języku Python szybszą pętlą jest?",
         "url":"",
         "a1": "for x in range(...)",
@@ -5967,6 +6088,50 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Wbrew temu co mogło by się wydawać pętla for jest najszybsza. Zazwyczaj przyjmuje się mówić, że wywołanie funkcji jest wolne. W tym przypadku range() jest szybsze niż zwykłe inkrementowanie, ponieważ funkcja ta jest napisana w C jak cały Python."
+    },
+    {
+        "question":"W języku Python aby parsować string na int trzeba posłużyć się funkcją",
+        "url":"",
+        "a1": "int()",
+        "a2": "parseInt()",
+        "a3": "Int.Parse()",
+        "a4": "ParseInt()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python aby parsować string na float trzeba posłużyć się funkcją",
+        "url":"",
+        "a1": "float()",
+        "a2": "parseFloat()",
+        "a3": "Float.Parse()",
+        "a4": "ParseFloat()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python instrukcja warunkowa przybiera formę:",
+        "url":"",
+        "a1": "if..elif..else",
+        "a2": "if..else if..else",
+        "a3": "if..elseif..else",
+        "a4": "if..else..else",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python aby wewnątrz funkcji możliwe było zapisanie wartości do globalnej zmiennej należy oznaczyć ją w tejże funkcji słowem kluczowym:",
+        "url":"",
+        "a1": "global",
+        "a2": "static",
+        "a3": "extern",
+        "a4": "main",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jeżeli zapiszemy w funkcji do zmiennej \"a\", która jest globalna nie oznaczając jej słowem kluczowym \"global\" język utworzy zmienną lokalną o tej nazwie."
     },
     {
         "question":"Interpolacji stringów w języku python można dokonać składnią?",
@@ -6226,7 +6391,7 @@ const questions = [
     {
         "question":"Funkcja użytkownika wywoływana przez funkcję biblioteczną to?",
         "url":"",
-        "a1": "callback",
+        "a1": "wywołanie zwrotne - callback",
         "a2": "funkcja wirtualna",
         "a3": "funkcja abstrakcyjna",
         "a4": "funkcja rozszerzająca",
@@ -6239,8 +6404,8 @@ const questions = [
         "url":"",
         "a1": "trzeba posłuzyć się odpowiednim delegatem",
         "a2": "trzeba posłuzyć się odpowiednim wskaźnikiem",
-        "a3": "",
-        "a4": "",
+        "a3": "trzeba posłużyć się \"boxingiem\"",
+        "a4": "jest to nie możliwe",
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Np do metody FirstOrDefault() w Linq podajemy lambde, która jest predykatem (Predicate). "
@@ -6250,8 +6415,8 @@ const questions = [
         "url":"",
         "a1": "trzeba posłużyć się odpowiednim wskaźnikiem",
         "a2": "trzeba posłużyć się odpowiednim delegatem",
-        "a3": "poprzez referencje",
-        "a4": "poprzez wartość",
+        "a3": "trzeba posłużyć się odpowiednią referencja",
+        "a4": "to nie możliwe",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6321,6 +6486,104 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"32 to różnica między dużą i małą literą A. Można dzięki temu szybko zaimplementować metodę toLowerCase lub toUpperCase."
+    },{
+        "question":"Łapanie w C# za pomocą bloku \"catch\" wyjątku typu \"Exception\" to dobra praktyka?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Powinno się łapać precyzyjnie konkretny wyjątek np. \"ArgumentNullException\". Łapiąc \"Exception\" łapiemy jednym catchem wszystkie wyjątki z niego dziedziczące, a jak wiemy w C# wszystkie wyjątki dziedziczą z \"Exception\". Sytuacja ta spowoduje, że nie wiemy jaki wyjątek tak naprawdę został rzucowny."
+    },
+    {
+        "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
+        "url":"",
+        "a1": "Jira",
+        "a2": "MS-Project",
+        "a3": "Github",
+        "a4": "Git",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jira to narzędzie pod metodologię SCRUM. Pozwala dzielić projekt na etapy oraz zadania."
+    },
+    {
+        "question":"Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?",
+        "url":"",
+        "a1": "bezpieczeństwo",
+        "a2": "obsługa baz SQL",
+        "a3": "obsługa REST API",
+        "a4": "szyfrowanie haseł metodą SHA256",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach."
+    },
+    {
+        "question":"Jaki magazyn danych wybrać w przypadku jeżeli aplikacja musi działać na stanowisku z ograniczonym dostępem do sieci?",
+        "url":"",
+        "a1": "sqlite",
+        "a2": "lokalne pliki XML",
+        "a3": "lokalne pliki CSV",
+        "a4": "zwykłe pliki txt",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Baza sqlite to świetne narzędzi do lokalnego przechowywania danych. Bazuje na języku SQL a dane przechowuje na dysku w pliku *.db"
+    },
+    {
+        "question":"Powinno się unikać częstego komunikowania się z bazą danych?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie odpytujemy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych."
+    },
+    {
+        "question":"Powinno się unikać częstego komunikowania się z zewnętrznym API?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie odpytujemy API w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza lub serwera z API"
+    },
+    {
+        "question":"Biblioteka ORM czyli Object Relational Mapping jest wydajniejsza niż czyste zapytanie SQL?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"ORM wiele rzeczy ułatwia i automatyzuje, ale nigdy nie wiem jakie zapytanie wysłał pod spodem do bazy danych."
+    },
+    {
+        "question":"Powinno się unikać korzystania ze wskaźników?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Wskaźniki są głównym źródłem błędów i luk w oprogramowaniu. Nowoczesne języki takie jak RUST podchodzą do tematu pamięci bardzo rygorystycznie i ograniczają możliwości wskaźników do potrzebnego minimum."
+    },
+    {
+        "question":"Powinno się przekazywać parametry funkcji przez referencje jeżeli nie potrzebujemy kopii wartości?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jeżeli przekazujemy coś do funkcji a nie potrzebujemy by ta wykonała swoją kopię tej wartości to przekazujmy parametry przez referencję. Unikniemy wtedy zbędnych kopii w pamięci."
     },
     {
         "question":"Jednostka wykonująca kod to?",
@@ -6431,28 +6694,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Wątki wykonują zadania. Nie możemy odpytywać wątku o dane lub coś innego w dowolnym momencie. W najlepszym przypadku dostaniemy zły wynik, albo wynik nie pełny."
-    },
-    {
-        "question":"Każdy wątek a swoje ID?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Tak, jest to TID - Thread ID."
-    },
-    {
-        "question":"Każdy proces ma swoje ID?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Tak, jest to PID - Process ID."
     },
     {
         "question":"Jeżeli aplikacja A oraz B czytają/zapisuje dane na adresie 0xA to przeszkadzają sobie wzajemnie?",
@@ -6916,128 +7157,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Zabezpieczenie nadprądowe mówi się, że chroni sprzęt, a róznicówka chroni użytkownika."
-    },
-    //optymalizacja i dobre praktyki
-    {
-        "question":"Łapanie w C# za pomocą bloku \"catch\" wyjątku typu \"Exception\" to dobra praktyka?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Powinno się łapać precyzyjnie konkretny wyjątek np. \"ArgumentNullException\". Łapiąc \"Exception\" łapiemy jednym catchem wszystkie wyjątki z niego dziedziczące, a jak wiemy w C# wszystkie wyjątki dziedziczą z \"Exception\". Sytuacja ta spowoduje, że nie wiemy jaki wyjątek tak naprawdę został rzucowny."
-    },
-    {
-        "question":"Narzędziem często wykorzystywanym przez programistów do śledzenia zadań/prac nad projektem jest?",
-        "url":"",
-        "a1": "Jira",
-        "a2": "MS-Project",
-        "a3": "Github",
-        "a4": "Git",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Jira to narzędzie pod metodologię SCRUM. Pozwala dzielić projekt na etapy oraz zadania."
-    },
-    {
-        "question":"Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?",
-        "url":"",
-        "a1": "bezpieczeństwo",
-        "a2": "obsługa baz SQL",
-        "a3": "obsługa REST API",
-        "a4": "szyfrowanie haseł metodą SHA256",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach."
-    },
-    {
-        "question":"Jaki magazyn danych wybrać w przypadku jeżeli aplikacja musi działać na stanowisku z ograniczonym dostępem do sieci?",
-        "url":"",
-        "a1": "sqlite",
-        "a2": "lokalne pliki XML",
-        "a3": "lokalne pliki CSV",
-        "a4": "zwykłe pliki txt",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Baza sqlite to świetne narzędzi do lokalnego przechowywania danych. Bazuje na języku SQL a dane przechowuje na dysku w pliku *.db"
-    },
-    {
-        "question":"Powinno się unikać częstego komunikowania się z bazą danych?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Nie odpytujemy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych."
-    },
-    {
-        "question":"Powinno się unikać częstego komunikowania się z zewnętrznym API?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Nie odpytujemy API w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza lub serwera z API"
-    },
-    {
-        "question":"Skrót LTS oznacza?",
-        "url":"",
-        "a1": "Long Term Supported",
-        "a2": "Long Time Supported",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Powinno się stawiać na wersje frameworków/narzędzi/bibliotek oznaczonych jako wspierane przez długi okres."
-    },
-    {
-        "question":"Skrót RC oznacza?",
-        "url":"",
-        "a1": "Release Candidate",
-        "a2": "Renew Condition",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Kandydat do wypuszczenia jako stablina wersja. Jedna z ostatnich wersji beta przed wypuszczeniem softu."
-    },
-    {
-        "question":"Biblioteka ORM czyli Object Relational Mapping jest wydajniejsza niż czyste zapytanie SQL?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"ORM wiele rzeczy ułatwia i automatyzuje, ale nigdy nie wiem jakie zapytanie wysłał pod spodem do bazy danych."
-    },
-    {
-        "question":"Powinno się unikać korzystania ze wskaźników?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Wskaźniki są głównym źródłem błędów i luk w oprogramowaniu. Nowoczesne języki takie jak RUST podchodzą do tematu pamięci bardzo rygorystycznie i ograniczają możliwości wskaźników do potrzebnego minimum."
-    },
-    {
-        "question":"Powinno się przekazywać parametry funkcji przez referencje jeżeli nie potrzebujemy kopii wartości?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jeżeli przekazujemy coś do funkcji a nie potrzebujemy by ta wykonała swoją kopię tej wartości to przekazujmy parametry przez referencję. Unikniemy wtedy zbędnych kopii w pamięci."
     },
     //szyfry i kodowania
     {
