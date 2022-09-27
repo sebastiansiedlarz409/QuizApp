@@ -8,7 +8,7 @@ function Welcome(props){
             Ułatwią ci one przygotowanie się do owego egzamiu. Życzymy owocnej
             nauki :)
             </p>
-            <p>Ostatnia aktualizacja: 27.09.2022 19:45</p>
+            <p>Ostatnia aktualizacja: 27.09.2022 20:00</p>
         </div>
     );
 }

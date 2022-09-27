@@ -6123,6 +6123,28 @@ const questions = [
         "desc":""
     },
     {
+        "question":"W języku Python wyrażenie lambda przyjmuje formę:",
+        "url":"",
+        "a1": "func = lambda a, b: a + b",
+        "a2": "func = (a,b): a + b",
+        "a3": "func = (a,b) => a + b",
+        "a4": "func = lamda a, b => a + b",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python konstrukcja odpowiedzialna za wycinannie podłańcuchów łańcucha tekstowego to",
+        "url":"",
+        "a1": "operator[start:end]",
+        "a2": "substr(start:end)",
+        "a3": "operator (start:end)",
+        "a4": "substring(start:end)",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"W języku Python aby wewnątrz funkcji możliwe było zapisanie wartości do globalnej zmiennej należy oznaczyć ją w tejże funkcji słowem kluczowym:",
         "url":"",
         "a1": "global",
