@@ -375,6 +375,17 @@ const questions = [
         "desc":"std::cout, std::cin itd"
     },
     {
+        "question":"Typ \"string\" C++ znajduje się w namespace?",
+        "url":"",
+        "a1": "std",
+        "a2": "chrono",
+        "a3": "stp",
+        "a4": "system",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"std::cout, std::cin itd"
+    },
+    {
         "question":"Najnowszym wydanym standardem C++ jest?",
         "url":"",
         "a1": "C++2a",
@@ -509,13 +520,13 @@ const questions = [
     {
         "question":"Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?",
         "url":"",
-        "a1": "Console.Write(\"Hello world\");",
+        "a1": "print(\"Hello world\");",
         "a2": "printf(\"Hello world\");",
         "a3": "std::cout<<\"Hello world\";",
         "a4": "cout<<\"Hello world\";",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Console.Write to konstrukcja z języka C#"
+        "desc":"W C++ nie ma takiej funkcji jak \"print()\""
     },
     {
         "question":"Komentarze jednolinijkowe w C/C++ rozpoczynamy od?",
@@ -1145,6 +1156,17 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Słowo kluczowe \"static\" w C/C++?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "powoduje, że element klasy jest wspólny dla wszystkich obiektów i jest przypisany do klasy",
+        "a3": "powoduje, że zmienna lokalna zachowuje się jak zmienna globalna",
+        "a4": "powoduje, że element globalny (zmienna, funkcja) jest widoczna tylko w pliku gdzie została zdefiniowana",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Słowo kluczowe \"static\" ma trzy funkcje."
+    },
+    {
         "question":"Czy kod: \"int size = 10; int tablica[size];\" jest poprawny?",
         "url":"",
         "a1": "NIE",
@@ -1442,7 +1464,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"W C++ przepływne sterowania programu NIE można sterować instrukcją?",
+        "question":"W C++ przepływnem sterowania programu NIE można sterować instrukcją?",
         "url":"",
         "a1": "jump",
         "a2": "goto",
@@ -1461,7 +1483,73 @@ const questions = [
         "a4": "rand() % 99;",
         "tag": "NIEOFICJALNE",
         "type": "4A",
-        "desc":"Nie ma takiej instrukcji jak \"jump\" w C++."
+        "desc":"Funkcja \"rand()\" zwraca wartość od 0 od \"RAND_MAX\". Funkcja modulo ogranicza maksymalny przedział (łatwo sobie to wyobrazić jak ktoś rozumie modulo) a wartość dodawan przesuwa zakres o pewien offset."
+    },
+    {
+        "question":"W C++ string można zdefiniować za pomocą konstrukcji?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "std::string text = \"Ala ma kota\";",
+        "a3": "const char* text = \"Ala ma kota\";",
+        "a4": "char text[12] = \"Ala ma kota\";",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Oprócz typu \"string\", który na marginesie znajuje się w przestrzenii \"std\" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu."
+    },
+    {
+        "question":"W C++ string można zdefiniować za pomocą konstrukcji?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "std::string text = \"Ala ma kota\";",
+        "a3": "const char* text = \"Ala ma kota\";",
+        "a4": "char text[12] = {'A','l','a',' ','m','a',' ','k','o','t','a', 0};",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Oprócz typu \"string\", który na marginesie znajuje się w przestrzenii \"std\" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu."
+    },
+    {
+        "question":"Który z poniższych zapisów stringu nie jest stringiem C-style?",
+        "url":"",
+        "a1": "std::string text = \"Ala ma kota\";",
+        "a2": "char text[12] = {'A','l','a',' ','m','a',' ','k','o','t','a', 0};",
+        "a3": "const char* text = \"Ala ma kota\";",
+        "a4": "char text[12] = \"Ala ma kota\";",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Oprócz typu \"string\", który na marginesie znajuje się w przestrzenii \"std\" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu."
+    },
+    {
+        "question":"Która z poniższych konstrukcji nie pozwala zmodyfikować napisu np. poprzez podmianę elementu tablicy operatorem []?",
+        "url":"",
+        "a1": "const char* text = \"Ala ma kota\";",
+        "a2": "char text[12] = \"Ala ma kota\";",
+        "a3": "std::string text = \"Ala ma kota\";",
+        "a4": "char text[12] = {'A','l','a',' ','m','a',' ','k','o','t','a', 0};",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Stringi typu \"const char*\" są umieszczane w pamięci w sekcji tylko do odczytu. Jeżeli napiszemy cout<<\"Hello\"; to ten napis też jest typu \"const char*\"."
+    },
+    {
+        "question":"Długość stringu C-style pobieramy za pomocą funkcji?",
+        "url":"",
+        "a1": "strlen(wskaznik);",
+        "a2": "len(wskaznik);",
+        "a3": "length(wskaznik);",
+        "a4": "size(wskaznik);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja strlen zwraca długość stringa nie licząc tego 0 na końcu!"
+    },
+    {
+        "question":"Co to jest funkcja inline w C++?",
+        "url":"",
+        "a1": "funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania",
+        "a2": "funkcja jednolinijkowa",
+        "a3": "funkcja, która nic nie zwraca",
+        "a4": "funkcja optymalizowana mocniej niż ma to miejsce normalnie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Jest to funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania. Normalne wywołanie wiąże się ze skokiem, alokacją stosu itp. Małe funkcje można ustawić na inline."
     },
     //numeric systems
     {
