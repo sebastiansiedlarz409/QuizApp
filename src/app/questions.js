@@ -2547,26 +2547,15 @@ const questions = [
     {
         "question":"Najważniejszą cechą klasy abstrakcyjnej jest:",
         "url":"",
-        "a1": "Brak możliwości stworzenia obiektu tej klasy.",
-        "a2": "Brak możliwości dziedziczenia tej klasy.",
-        "a3": "Brak nazwy klasy.",
-        "a4": "Utrudnione kopiowanie obiektów tej klasy.",
+        "a1": "brak możliwości stworzenia obiektu tej klasy",
+        "a2": "brak możliwości dziedziczenia z tej klasy",
+        "a3": "brak możliwości hemetyzacji tej klasy",
+        "a4": "brak możliwości dziedziczenia przez tę klasę",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
     },
     //C#
-    {
-        "question":"Firmą odpowiedzialną za język C# jest",
-        "url":"",
-        "a1": "Microsoft",
-        "a2": "Google",
-        "a3": "Meta",
-        "a4": "Apple",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
     {
         "question":"Język C# jest podobny do języka?",
         "url":"/images/csharp.jpeg",
@@ -3151,17 +3140,6 @@ const questions = [
         "desc":"Lista to typ na wyższym poziomie abstrakcji. Oferuje bogatsze API niż zwykła tablica."
     },
     {
-        "question":"W C# ArrayList oraz tablica to to samo?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"ArrayList to lista typu object w C#. W C# wszystko dziedziczy z typu \"object\" więc możliwe jest wrzucenie do takiej listy wszystkiego. Obecnie lepiej używać kolekcji typu List<T>"
-    },
-    {
         "question":"Metoda LINQ First() działa tak samo jak FirstOrDefault()?",
         "url":"",
         "a1": "NIE",
@@ -3294,17 +3272,6 @@ const questions = [
         "desc":"Testy w C# nazywa się snake_casem. cammelCase jest słabym rozwiązaniem gdy nazwa składa się z dużej ilości słów."
     },
     {
-        "question":"Popularną klasą C# odpowiedzialną za operacje komunikacji z REST API jest?",
-        "url":"",
-        "a1": "HttpClient",
-        "a2": "Http",
-        "a3": "HttpOk",
-        "a4": "Socket",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"W C# jest to HttpClient."
-    },
-    {
         "question":"Aby użyć wskaźników w C# należy oznaczyć funkcję słowem kluczowym?",
         "url":"",
         "a1": "unsafe",
@@ -3329,7 +3296,7 @@ const questions = [
     {
         "question":"Pojęcie statycznego polimorfizmu oznacza?",
         "url":"",
-        "a1": "[rzeciążanie funkcji",
+        "a1": "przeciążanie funkcji",
         "a2": "nadpisywanie funkcji",
         "a3": "dziedziczenie",
         "a4": "wielokrotne dziedziczenie",
@@ -3369,28 +3336,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    {
-        "question":"Breakpoint pozwala?",
-        "url":"",
-        "a1": "zatrzymać program we wskazanym miejscu",
-        "a2": "zakończyć program we wskazanym miejscu",
-        "a3": "zakończyć nagle pętle",
-        "a4": "zakończyć nagle funkcję",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Adres w pamięci ma każdy?",
-        "url":"",
-        "a1": "bajt",
-        "a2": "bit",
-        "a3": "kilobajt",
-        "a4": "megabajt",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Każda komórka czyli bajt pamięci ma swój adres."
     },
     {
         "question":"C# obsługuje mechanizm null-safety?",
@@ -3503,17 +3448,6 @@ const questions = [
         "desc":"Powinno się pisać typ precyzyjnie. Ułatwia to później analizę kodu."
     },
     {
-        "question":"W C# występuje pojęcie przestrzeni nazw?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Zasada działania jest podobna do przestrzeni nazw z C++. Cały ten mechanizm ma zadanie czysto organizacyjne. No i pozwala używać wiele razy tych samych nazw."
-    },
-    {
         "question":"W C# wyjątek \"NullReferenceException\" oznacza, że?",
         "url":"",
         "a1": "zmienna referencyjna, na której wykonaliśmy operację jest nullem",
@@ -3535,7 +3469,7 @@ const questions = [
         "type": "4A",
         "desc":"Korzystając z funkcji, które dostarcza język lub jakaś biblioteka musimy wziąść pod uwagę, że ich parametry mogą przyjmować null lub nie."
     },
-    //WPF i XAMARIN
+    //WPF/XAMARIN/ASP.NET
     {
         "question":"Skrót \"WPF\" oznacza?",
         "url":"",
@@ -3546,17 +3480,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    {
-        "question":"Frameworkiem do tworzenia stron internetowych powiązanym z C# nie jest?",
-        "url":"",
-        "a1": "Flask",
-        "a2": "ASP.NET",
-        "a3": "Blazor",
-        "a4": "Razor",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Flask to framework na Pythonie."
     },
     {
         "question":"Xamarin pozwal tworzyć aplikację na?",
@@ -3890,6 +3813,17 @@ const questions = [
         "desc":""
     },
     {
+        "question":"Pobieranie zmian ze zdalnego repozytorium z poziomu konsoli GIT odbywa się poleceniem?",
+        "url":"",
+        "a1": "git pull origin nazwa_brancha",
+        "a2": "git fetch nazwa_brancha",
+        "a3": "git get origin nazwa_brancha",
+        "a4": "git sync push nazwa_brancha",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Cofanie zmian wprowadzonych w konretnym commicie odbywa się poleceniem?",
         "url":"",
         "a1": "git revert",
@@ -3932,84 +3866,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    //kompilacja i interpretacja
-    {
-        "question":"Język PHP jest językiem interpretowanym?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Język Python jest językiem interpretowanym?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Język C jest językiem kompilowanym?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"C to jeden z niskopoziomowych języków. Na jego bazie powstało wiele obecnie znanych języków."
-    },
-    {
-        "question":"Visual Studio jest kompilatorem?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"IDE to nie kompilator!"
-    },
-    {
-        "question":"Dev C++ jest kompilatorem?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"IDE to nie kompilator!"
-    },
-    {
-        "question":"Który z wymienionych programów nie jest kompilatorem?",
-        "url":"",
-        "a1": "gdb",
-        "a2": "g++",
-        "a3": "gcc",
-        "a4": "clang",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"GDB to debugger dołączany do zestawu razem z GCC oraz G++"
-    },
-    {
-        "question":"Który z wymienionych programów nie jest programem typu IDE?",
-        "url":"",
-        "a1": "Visual C++",
-        "a2": "Eclipse",
-        "a3": "Intelij",
-        "a4": "Code-Blocks",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"HXD to program typu hex editor."
     },
     //testy jednostkowe
     {
@@ -4057,12 +3913,12 @@ const questions = [
         "desc":"Arrange przygotowuje kod testowany, Act wykonuje testowaną akcję, Assert porównuje wynik z wartością oczekiwaną."
     },
     {
-        "question":"Frameworkiem do pisania testów jednostkowych w języku JAVA jest?",
+        "question":"Frameworkiem do pisania testów jednostkowych w języku C++ jest?",
         "url":"",
-        "a1": "JUnit",
-        "a2": "NUnit",
-        "a3": "XUnit",
-        "a4": "Google Tests",
+        "a1": "Google Tests",
+        "a2": "JUnit",
+        "a3": "NUnit",
+        "a4": "XUnit",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -4134,6 +3990,17 @@ const questions = [
         "desc":"Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się."
     },
     {
+        "question":"\"Mock\" tworzony jest w celu?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "wyłączenia cześci kodu znajdującego się w klasie, której atrapę tworzymy",
+        "a3": "zmiany zachowania pewnego kodu, który wykorzystuje jako zależność klasę, której atrapę tworzymy",
+        "a4": "wygenerowania pustej implementacji jakiegoś interfesju polimorficznego",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się."
+    },
+    {
         "question":"Nie powinno się testować automatycznie kontrolerów MVC?",
         "url":"",
         "a1": "TAK",
@@ -4143,6 +4010,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Metody kontrolera przyjmują żądanie, wywołują jakąś logike i zwracają status lub widok. Testujemy bezpośrednio logikę."
+    },
+    {
+        "question":"Nie powinno się testować funkcji podpinanych pod eventy/callbacki GUI?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Takie funkcję powinny tylko wywoływać logikę znajującą się w innych funkcjach. Powinniśmy testować te inne funkcje."
     },
     {
         "question":"Każda metoda klasy powinna być przetestowana automatycznie?",
@@ -4808,94 +4686,6 @@ const questions = [
     },
     //technologie webowe
     {
-        "question":"Technologią/Frameworkiem wykorzystywanym tylko w programowaniu webowym jest?",
-        "url":"",
-        "a1": "ASP.NET",
-        "a2": "React",
-        "a3": "Flutter",
-        "a4": "MAUI",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Technologia ASP.NET bazuje na języku?",
-        "url":"",
-        "a1": "C#",
-        "a2": "C++",
-        "a3": "C",
-        "a4": "Java",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Framework Spring bazuje na języku?",
-        "url":"",
-        "a1": "JAVA",
-        "a2": "C#",
-        "a3": "C++",
-        "a4": "Python",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Framework Django bazuje na języku?",
-        "url":"",
-        "a1": "Python",
-        "a2": "C#",
-        "a3": "C++",
-        "a4": "Java",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"React to framework bazujący na języku JavaScript/TypeScript?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Język PHP do pracy potrzebuje serwera?",
-        "url":"",
-        "a1": "Apache",
-        "a2": "IIS",
-        "a3": "Mysql",
-        "a4": ".Net",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Języka JavaScript można używać jako języka back-endowego dzięki?",
-        "url":"",
-        "a1": "NodeJS",
-        "a2": ".NET CORE",
-        "a3": "JIT",
-        "a4": "Web Assembly",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Bazą danych nierelacyjną jest?",
-        "url":"",
-        "a1": "MongoDB",
-        "a2": "MS-SQL",
-        "a3": "PostgreSQL",
-        "a4": "MySQL",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"W zapisie RGB każda składowa ma rozmiar jednego bajtu?",
         "url":"",
         "a1": "TAK",
@@ -4994,7 +4784,6 @@ const questions = [
         "type": "4A",
         "desc":"Solenie hasła polega na dodaniu do niego jakiegoś losowego ciągu znaków. Skomplikuje to hash uzyskany z funkcji skrótu przez co utrudni ataki typu słownikowego."
     },
-    //css and bootstrap
     {
         "question":"Selektor styli CSS zaczynający się od \".\" to?",
         "url":"",
@@ -5338,17 +5127,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Kod języka JavaScript zawsze wykonuje się po stronie klienta w przeglądarce",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"W czasach przed NodeJs tak było."
-    },
-    {
         "question":"W JS operatory \"===\" oraz \"==\" działają tak samo?",
         "url":"",
         "a1": "NIE",
@@ -5360,15 +5138,15 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Która linia kodu jest niepoprawna z punktu widzenia JavaScript?",
+        "question":"W JS pętle \"for in\" oraz \"for of\" działają tak samo?",
         "url":"",
-        "a1": "var obj = {name = \"Sebastian\" };",
-        "a2": "var obj = {name: \"Sebastian\" };",
-        "a3": "var obj = new Object();",
-        "a4": "var obj = {};",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
         "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
+        "type": "2A",
+        "desc":"Pętla \"for in\" zwraca indeks a \"for of\" zwraca wartośc z kolekcji."
     },
     {
         "question":"Pobranie długości tablicy w JavaScript wygląda następująco?",
@@ -5377,6 +5155,28 @@ const questions = [
         "a2": "let size = tablica.length();",
         "a3": "let size = tablica.count;",
         "a4": "let size = tablica.size;",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Funkcja \"Math.random()\" zwraca?",
+        "url":"",
+        "a1": "wartość z przedziału 0 do 1",
+        "a2": "wartość z przedziału 0 do +inf",
+        "a3": "wartość z przedziału 0 do RAND_MAX",
+        "a4": "wartość z przedziału 0 do 10",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Interpolacja stringa w języku JavaScript odbywa się za pomocą składni?",
+        "url":"",
+        "a1": "`Ala ma ${count} kotów`",
+        "a2": "'Ala ma ${count} kotów'",
+        "a3": "\"Ala ma ${count} kotów\"",
+        "a4": "w JS nie ma takiego mechanizmu",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -5435,6 +5235,28 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"Do czego słuzy React JSX?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "Pozwala umieszczać kod HTML wewnątrz kodu React/JS",
+        "a3": "Ułatwia wstawianie elementów HTMLowych za pomocą funkcji React",
+        "a4": "Pozwala wstawiać elementy HTML bez używania zwykłej składni JS DOM",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Warunkowe wstawianie componentów można zrealozować za pomocą?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "operatora trynarnego \"{ isOk ? <Good/> : <Bad/> }\"",
+        "a3": "operatora && \"{isOk && <Good/>\"",
+        "a4": "instrukcji if umieszczonej wewnątrz funkcji wywoływanej {returnComponent}",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
         "desc":""
     },
     //bazy danych
@@ -5549,17 +5371,6 @@ const questions = [
         "desc":"Przykład z brutto, netto i tara. Nie ma sensu trzymać w bazie wszystkich trzech wartości jak dwie da się wyliczyć na bazie trzeciej. Nie ma sensu trzymać w bazie daty urodzenia jeżeli da się ją wyciągnąć z numeru PESEL."
     },
     {
-        "question":"Krotka w bazach relacyjnych to",
-        "url":"",
-        "a1": "wiersz tabeli",
-        "a2": "kolumna tabeli",
-        "a3": "komórka tabeli",
-        "a4": "cała tabela",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Każda relacja w relacyjnych bazach danych wymaga klucza obcego?",
         "url":"",
         "a1": "TAK",
@@ -5571,7 +5382,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Filtorowanie w językach SQL odywa się za pomocą klauzuli",
+        "question":"Filtrowanie w językach SQL odywa się za pomocą klauzuli",
         "url":"",
         "a1": "where",
         "a2": "like",
@@ -5847,34 +5658,12 @@ const questions = [
         "desc":"Cudzysłowia pozwalają na umieszczanie w stringu dodatkowych specjalnych wartości."
     },
     {
-        "question":"Bezpieczniejszą metodą przesyłania fomularzy jest metoda?",
-        "url":"",
-        "a1": "POST",
-        "a2": "GET",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
         "question":"Instrukcja, która w PHP posłuży do napisania programu typu HelloWorld to?",
         "url":"",
         "a1": "echo",
         "a2": "print",
         "a3": "write",
         "a4": "put",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Która z poniższych stałych nie jest dostępna w PHP?",
-        "url":"",
-        "a1": "__DATE__",
-        "a2": "__FILE__",
-        "a3": "__LINE__",
-        "a4": "__CLASS__",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -5901,6 +5690,138 @@ const questions = [
         "type": "4A",
         "desc":""
     },
+    {
+        "question":"W php definicję funkcji poprzedzamy słowem kluczowym?",
+        "url":"",
+        "a1": "function",
+        "a2": "func",
+        "a3": "def",
+        "a4": "proc",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W php aby zdefiniować tablicę musimy użyc konstrukcji?",
+        "url":"",
+        "a1": "$t = array(1,2,3);",
+        "a2": "$t = {1,2,3};",
+        "a3": "$t = [1,2,3];",
+        "a4": "$t = (1,2,3);",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W php aby pobrać rozmiar tablicy użyjemy funkcji?",
+        "url":"",
+        "a1": "count();",
+        "a2": "size();",
+        "a3": "length();",
+        "a4": "len();",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W php aby zaimportować funkcjonalnośc jednego pliku do drugiego należy posłużyć się składnią?",
+        "url":"",
+        "a1": "include 'code.php';",
+        "a2": "include<code.php>;",
+        "a3": "include(code.php);",
+        "a4": "include {'code.php'};",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W php możliwe jest zaimportowanie skryptu z linku?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"W php aby otworzyć plik do odczytu należy posłużyć się składnią?",
+        "url":"",
+        "a1": "fopen(\"time.txt\",\"r\");",
+        "a2": "open(\"time.txt\",\"r\");",
+        "a3": "fopen(\"time.txt\");",
+        "a4": "open(\"time.txt\");",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Błędną nazwą zmiennej w języku PHP jest?",
+        "url":"",
+        "a1": "$click-counter",
+        "a2": "$click_counter",
+        "a3": "$clickCounter",
+        "a4": "$clickcounter",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Aby w PHP odnieść się do wartości formularza należy jako indeksu tablicy $_GET/$_POST użyć?",
+        "url":"",
+        "a1": "wartości atrybutu name danego inputa",
+        "a2": "wartości atrybutu class danego inputa",
+        "a3": "wartości atrybutu id danego inputa",
+        "a4": "wartości atrybutu index danego inputa",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Pętla foreach w PHP ma następującą składnie:?",
+        "url":"",
+        "a1": "foreach ($collection as $item)",
+        "a2": "foreach ($item as $collection)",
+        "a3": "foreach ($collection in $item)",
+        "a4": "foreach ($item in $collection)",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W PHP funkcje \"die()\" oraz \"exit()\" wykonują dokładnie to samo zadanie?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"W PHP funkcji \"rand()\" moża określic przedział losowania?",
+        "url":"",
+        "a1": "za pomocą dwóch opcjonalnych parametrów",
+        "a2": "za pomocą metody modulo-dodawanie znanej z C++",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"W PHP funkcje \"max()\" oraz \"min()\" przyjmują nieokreśloną ilość parametrów?",
+        "url":"",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"min(0, 1, 8, 150, 30, 20, -8, -200) lub min(0, 1, 8, 150, 30, 20)"
+    },
     //python
     {
         "question":"Rozszerzenie plików źródłowych języka Python to?",
@@ -5925,6 +5846,17 @@ const questions = [
         "desc":"Najczęściej mamy do czynienia z implementacją CPython."
     },
     {
+        "question":"Błędną nazwą zmiennej w języku Python jest?",
+        "url":"",
+        "a1": "click-counter",
+        "a2": "click_counter",
+        "a3": "_clickCounter",
+        "a4": "clickCounter",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Czy w języku Python można pisać kod realizujący jakieś zadanie poza funkcją?",
         "url":"",
         "a1": "TAK",
@@ -5945,6 +5877,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Chodzi o słowo kluczowe \"self\" przekazywane jako argument do każdej metody klasy. W C++ this jest też przekazywane jako pierwszy argument, ale nie widać tego w kodzie."
+    },
+    {
+        "question":"W pythonie każda funkcja musi przyjmować jako pierwszy argument \"self\"?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Jest tak tylko i wyłącznie w przypadku metod klasy."
     },
     {
         "question":"Kolekcja o nazwie \"tuple\" w Pythonie jest mutowalna?",
@@ -5991,12 +5934,34 @@ const questions = [
         "desc":"Python 2 jest już praktycznie martwy. Wersja trzecia wprowadza ogrom zmian."
     },
     {
+        "question":"W języku Python istnieje różnica między cudzysłowami a apostrofami?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
         "question":"Konstruktor klasy w języku Python ma nazwę?",
         "url":"",
         "a1": "__init__",
         "a2": "__create__",
         "a3": "__self__",
         "a4": "taką jak nazwa klasy",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Aby w języku Python wywołać konstruktor klasy bazowej należy użyć konstrukcji?",
+        "url":"",
+        "a1": "super().__init__()",
+        "a2": "base.__init__()",
+        "a3": "super().create()",
+        "a4": "base.create()",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6114,10 +6079,10 @@ const questions = [
     {
         "question":"W języku Python instrukcja warunkowa przybiera formę:",
         "url":"",
-        "a1": "if..elif..else",
-        "a2": "if..else if..else",
-        "a3": "if..elseif..else",
-        "a4": "if..else..else",
+        "a1": "if:..elif:..else:",
+        "a2": "if:..else if:..else:",
+        "a3": "if:..elseif:..else:",
+        "a4": "if:..else:..else:",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6145,6 +6110,61 @@ const questions = [
         "desc":""
     },
     {
+        "question":"W języku Python metoda na stringu pozwalająca usunąć białe znaki na obu końcach łańcucha to",
+        "url":"",
+        "a1": "strip()",
+        "a2": "trim()",
+        "a3": "cut()",
+        "a4": "slice()",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Która konstrukcja w języku Python to lista?",
+        "url":"",
+        "a1": "[1,2,3,4]",
+        "a2": "(1,2,3,4)",
+        "a3": "{1,2,3,4}",
+        "a4": "żadna z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Która konstrukcja w języku Python to takzwany tuple?",
+        "url":"",
+        "a1": "(1,2,3,4)",
+        "a2": "[1,2,3,4]",
+        "a3": "{1,2,3,4}",
+        "a4": "żadna z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Która konstrukcja w języku Python to zbiór?",
+        "url":"",
+        "a1": "{1,2,3,4}",
+        "a2": "(1,2,3,4)",
+        "a3": "[1,2,3,4]",
+        "a4": "żadna z wymienionych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"W języku Python kolekcje \"set\" oraz \"list\" są takie same?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"W zbiorze nie mogą występować duplikaty."
+    },
+    {
         "question":"W języku Python aby wewnątrz funkcji możliwe było zapisanie wartości do globalnej zmiennej należy oznaczyć ją w tejże funkcji słowem kluczowym:",
         "url":"",
         "a1": "global",
@@ -6165,6 +6185,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Jest to element języka eliminujący formatowanie stringów za pomocą ich konkatenacji ze zmiennymi."
+    },
+    {
+        "question":"W języku Python aby otworzyć plik należy posłużyć się konstrukcją",
+        "url":"",
+        "a1": "f = open(\"plik.txt\")",
+        "a2": "f = read(\"plik.txt\")",
+        "a3": "f = fopen(\"plik.txt\")",
+        "a4": "f = with(\"plik.txt\")",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Menedżerem pakietów dla języka Python jest",
+        "url":"",
+        "a1": "pip",
+        "a2": "cpython",
+        "a3": "jpython",
+        "a4": "nuget",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
     },
     //windows/linux cmd
     {
@@ -6256,7 +6298,7 @@ const questions = [
         "desc":"Spacja po cd jest istotna :)"
     },
     {
-        "question":"Polecenie wiersza poleceń Windows służące wyświetlenia aktualnej ścieżki to?",
+        "question":"Polecenie wiersza poleceń Windows służące do wyświetlenia aktualnej ścieżki to?",
         "url":"",
         "a1": "cd",
         "a2": "chdsk",
@@ -6267,7 +6309,7 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Polecenie wiersza poleceń Linux służące do cofania się w strukturze katalogów to?",
+        "question":"Polecenie wiersza poleceń Linux służące do wyświetlenia aktualnej ścieżki to?",
         "url":"",
         "a1": "pwd",
         "a2": "cd",
@@ -6386,28 +6428,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    {
-        "question":"Polecenie \"help\" wyświetla pomoc wiersza poleceń Windows?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Polecenie \"man\" wyświetla pomoc wiersza poleceń Linux?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"man - od manual np. \"man ls\""
     },
     //pytania ogólne
     {
@@ -6619,17 +6639,6 @@ const questions = [
         "desc":"Wątek jest jednostką wykonującą kod. Każdy program dostaje minimum jeden wątek. Każdy wątek ma swój context czyli stan procesora. Zamiana wątku na inny podmienia context na procesorze."
     },
     {
-        "question":"Synchronizacja wątków polega na?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "kontrolowaniu wymiany danych między wątkami",
-        "a3": "kontrolowaniu co i kiedy robi dany wątek",
-        "a4": "poczekaniu aż wątek zakończy działanie",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Jeżeli pracujemy na wielu wątkach, każdy z nich pracuje w swoim tempie. Jeżeli chcemy, żeby ze sobą gadły i wymieniały się danymi to musimy to zrobić w odpowiednim momencie. Nie chcemy pobrać z wątku wyniku, jeżeli wątek ten jest dopiero w połowie pętli."
-    },
-    {
         "question":"Które z poniższych stwierdzeń o procesie i wątku jest prawdziwe?",
         "url":"",
         "a1": "Proces to zbiór zwierający miminum jeden wątek",
@@ -6817,17 +6826,6 @@ const questions = [
         "desc":"System wszystko czyści. Wycieki są groźne tylko wtedy gdy proces działa ciągle np. w pętli. Tak czy inaczej zwalnianie pamięci jest wskazane."
     },
     {
-        "question":"Rodzajem bramki logicznej nie jest?",
-        "url":"",
-        "a1": "XAND",
-        "a2": "XOR",
-        "a3": "OR",
-        "a4": "AND",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Bramką logiczną, która wykonuje różnice symetryczą jest?",
         "url":"",
         "a1": "XOR",
@@ -6867,28 +6865,6 @@ const questions = [
         "a2": "OR",
         "a3": "AND",
         "a4": "NOR",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Prędkość taktowania wyrażamy w?",
-        "url":"",
-        "a1": "Hz",
-        "a2": "sekundach",
-        "a3": "bitach na sekunde",
-        "a4": "bajtach na sekunde",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Prędkość transmisji wyrażamy w?",
-        "url":"",
-        "a1": "bitach na sekunde",
-        "a2": "Hz",
-        "a3": "sekundach",
-        "a4": "bajtach na sekunde",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -7257,7 +7233,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Aby losowanie zwracało różne wyniki należy je poprawnie zainicjować za pomocą \"seed(time(NULL));\""
+        "desc":"Aby losowanie zwracało różne wyniki należy je poprawnie zainicjować za pomocą \"srand(time(NULL));\""
     },
     {
         "question":"Program na obrazku wywołany poleceniem \"program.exe ASD QWE\" wyświetli na ekranie napis?",
