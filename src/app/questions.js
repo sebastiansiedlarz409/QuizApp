@@ -3482,17 +3482,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Xamarin pozwal tworzyć aplikację na?",
-        "url":"",
-        "a1": "iOS oraz Androida",
-        "a2": "Androida oraz Windows Phone",
-        "a3": "iOS oraz Windows Phone",
-        "a4": "Tylko Windows Phone",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Do budowania układu siatki w WPF i Xamarin służy tag?",
         "url":"",
         "a1": "GRID",
@@ -3612,17 +3601,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
-    },
-    {
-        "question":"Ile rodzajów bindowania danych dostępne jest w XAML?",
-        "url":"",
-        "a1": "4",
-        "a2": "3",
-        "a3": "2",
-        "a4": "1",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Chodzi o: OneWay, TwoWay, OneWayToSource, OneTime"
     },
     //GIT
     {
@@ -5177,84 +5155,6 @@ const questions = [
         "a2": "'Ala ma ${count} kotów'",
         "a3": "\"Ala ma ${count} kotów\"",
         "a4": "w JS nie ma takiego mechanizmu",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    //REACT
-    {
-        "question":"Polecenie npm, które uruchamia serwer testowy oraz aplikację to",
-        "url":"",
-        "a1": "npm start",
-        "a2": "npm dev",
-        "a3": "npm serve",
-        "a4": "npm build",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Polecenie npm, które tworzy projekt React jest",
-        "url":"",
-        "a1": "npx create-react-app myReactApp",
-        "a2": "npm create-react-app myReactApp",
-        "a3": "npx create-react-app",
-        "a4": "pm create-react-app",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Domyślnym portem używanym przez React do otwarcia serwera jest?",
-        "url":"",
-        "a1": "3000",
-        "a2": "80",
-        "a3": "8080",
-        "a4": "5000",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"W React \"props\" służy do?",
-        "url":"",
-        "a1": "przekazwywania parametrów do komponentów potomnych",
-        "a2": "ustawiania stanu komponentów potomnych",
-        "a3": "ustawiania stanu rodzica przez komponent potomny",
-        "a4": "wszystkie pozostałe",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Nazwy komponentów React, muszą nazywać się z dużych liter?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Do czego słuzy React JSX?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "Pozwala umieszczać kod HTML wewnątrz kodu React/JS",
-        "a3": "Ułatwia wstawianie elementów HTMLowych za pomocą funkcji React",
-        "a4": "Pozwala wstawiać elementy HTML bez używania zwykłej składni JS DOM",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Warunkowe wstawianie componentów można zrealozować za pomocą?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "operatora trynarnego \"{ isOk ? <Good/> : <Bad/> }\"",
-        "a3": "operatora && \"{isOk && <Good/>\"",
-        "a4": "instrukcji if umieszczonej wewnątrz funkcji wywoływanej {returnComponent}",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -7368,6 +7268,39 @@ const questions = [
         "desc":"W momencie sprawdzenia warunku licznik będzie miał wartość 0 co daje fałsz."
     },
     {
+        "question":"W poniższym kodzie błąd powoduje?",
+        "url":"/images/dereferencevoidptr.png",
+        "a1": "próba wyłuskania wskaźnika typu void*",
+        "a2": "próba wyłuskania do innego typu zmiennej",
+        "a3": "niepoprawna kombinacja operator-operand",
+        "a4": "to, że wskaźnik może być wartością NULL",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"\"void\" to typ nie określony. Wskaźnik tego typu służy tylko do przechowywania adresu. Chcąc go wyłuskać należy wykonać castowanie na inny typ. W tym przypadku będzie to \"int*\"."
+    },
+    {
+        "question":"Czy w tym przypadku kod przetworzony przez preprocesor będzie zawierał wklejone oba pliki nagłówkowe?",
+        "url":"/images/ifdef.png",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie \"iostream\", jeżeli nie \"cstdio\"."
+    },
+    {
+        "question":"Poniższy fragment kodu pokazuje",
+        "url":"/images/ifdebug.png",
+        "a1": "wszyskie pozostałe",
+        "a2": "jak pozbyć szybko pozbyć się z kodu wynikowego elementów potrzebnych tylko w trakcie dewelopmentu",
+        "a3": "jak usunąć część kodu zmieniając jedno makro",
+        "a4": "jak podmienić/dodać fragment kodu pod pewnym warunkiem",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie \"iostream\", jeżeli nie \"cstdio\"."
+    },
+    {
         "question":"Jaką wartość zobaczymy na ekranie?",
         "url":"/images/macro.png",
         "a1": "5",
@@ -7434,7 +7367,7 @@ const questions = [
         "desc":"Klasa Point jest zależnością klasy MyApp. Jej obiekt jest wkomponowany w pole klasy MyApp."
     },
     {
-        "question":"Na obrazku dostrzec można?",
+        "question":"Na obrazku dostrzec można zastosowanie zasady?",
         "url":"/images/kompozycja.png",
         "a1": "dependency injection",
         "a2": "dependency inversion",
