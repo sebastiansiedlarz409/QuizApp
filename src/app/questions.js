@@ -6770,39 +6770,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Normy to dokumenty określające zasady postępowania, przepisy, wzory, wytyczne lub charakterystyki do powszechnego i wielokrotnego stosowania?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":""
-    },
-    {
-        "question":"Normy powinny być?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "oparte na podstawach naukowych oraz danych sprawdzonych pod względem słuszności technicznej",
-        "a3": "uwzględniać aktualny stan wiedzy oraz poziom techniki osiągnięty lub możliwy do osiągnięcia w najbliższym czasie",
-        "a4": "być możliwe do realizacji oraz absolutnie sprawdzalne",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Celem normalizacji krajowej jest?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "racjonalizacji produkcji i usług poprzez stosowanie uznanych reguł",
-        "a3": "usuwania barier technicznych w handlu i zapobiegania ich powstawaniu",
-        "a4": "zapewnienia jakości i niezawodności wyrobów, procesów i usług",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Celem normalizacji krajowej jest?",
         "url":"",
         "a1": "wszystkie pozostałe",
@@ -7279,10 +7246,10 @@ const questions = [
         "desc":"\"void\" to typ nie określony. Wskaźnik tego typu służy tylko do przechowywania adresu. Chcąc go wyłuskać należy wykonać castowanie na inny typ. W tym przypadku będzie to \"int*\"."
     },
     {
-        "question":"Czy w tym przypadku kod przetworzony przez preprocesor będzie zawierał wklejone oba pliki nagłówkowe?",
+        "question":"Poniższa konstrukcja pozwala warunkowo włączyć lub wyłączyć część kodu?",
         "url":"/images/ifdef.png",
-        "a1": "NIE",
-        "a2": "TAK",
+        "a1": "TAK",
+        "a2": "NIE",
         "a3": "",
         "a4": "",
         "tag": "NIEOFICJALNE",
@@ -7387,6 +7354,94 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Na obrazku widać klasyczne podejście do budowy wzorca singleton. Elementy charakterystyczne to prywatny konstruktor oraz statyczne pole na samego siebie."
+    },
+    {
+        "question":"Środowisko podkreśla \"Add\" na poniższym obrazku, ponieważ?",
+        "url":"/images/delegatereturnaction.png",
+        "a1": "delegat typu Action służy do przechowywania metod, które zwracają void",
+        "a2": "delegat typu Action służy do przechowywania metod, które zwracają bool",
+        "a3": "nie podano typu zwracanego w parametrze generycznym typu Action",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Do delegatu typu \"Action\" możemy przypisywać tylko metody, które zwracają void (nic nie zwracają). Wszyskie parametry generyczne dotyczą parametrów funkcji."
+    },
+    {
+        "question":"Środowisko podkreśla fragment kodu na poniższym obrazku, ponieważ?",
+        "url":"/images/delegatepredicateint.png",
+        "a1": "delegat typu Predicate służy do przechowywania metod, które zwracają bool",
+        "a2": "delegat typu Predicate służy do przechowywania metod, które zwracają void",
+        "a3": "nie podano typu zwracanego w parametrze generycznym typu Predicate",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Do delegatu typu \"Predicate\" możemy przypisywać tylko metody, które zwracają bool. Wszyskie parametry generyczne dotyczą parametrów funkcji."
+    },
+    {
+        "question":"Środowisko podkreśla \"Add\" na poniższym obrazku, ponieważ?",
+        "url":"/images/delegatefuncnotenoughparams.png",
+        "a1": "nie podano typu zwracanego w parametrze generycznym typu Func",
+        "a2": "delegat typu Func służy do przechowywania metod, które zwracają bool",
+        "a3": "delegat typu Func służy do przechowywania metod, które zwracają void",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Do delegatu typu \"Func\" możemy przypisywać tylko metody, które zwracają cokolwiek. Ostatni parametr generyczny odnosi się do typu zwracanego przypisywanej metody."
+    },
+    {
+        "question":"Podpowiedź środowiska mówi nam, że typ \"Task\" w konstruktorze przyjmuje?",
+        "url":"/images/taskparam.png",
+        "a1": "funkcję do wykonania, która nic nie zwraca i nie przyjmuje żadnych argumentów",
+        "a2": "funkcję do wykonania, która nic nie zwraca i przyjmuje dowolną ilość parametrów",
+        "a3": "funkcję do wykonania, która wraca bool i przyjmuje dowolną ilość parametrów",
+        "a4": "funkcję do wykonania, która wraca bool i nie przyjmuje żadnych argumentów",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Podpowiedź środowiska mówi nam, że metoda \"FirstOrDefault\" przyjmuje?",
+        "url":"/images/firstordefaultparam.png",
+        "a1": "funkcję do wykonania, która zwraca bool i przyjmuje jednego inta",
+        "a2": "funkcję do wykonania, która wraca inta, i przyjmuje jednego boola",
+        "a3": "funkcję do wykonania, która nic nie zwraca i przyjmuje inta oraz boola",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Funkcja ta przyjmuje w parametrze funkcję zwracającą bool, która przyjmuje inta (inta, ponieważ jest to lista intów). Cała metoda FirstOrDefault zwróci pierwszy int z listy, który z callbacka da prawdę."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/reflist.png",
+        "a1": "4",
+        "a2": "2",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Lista w C# to typ referencyjny. Więc instancja listy została przekazana do funkcji przez referencje."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/passbyvalue.png",
+        "a1": "2",
+        "a2": "4",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Typ int jest typem wartościowym. W momecie przekazania do funkcji tworzy ona sobie jego kopię."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/arraynocopy.png",
+        "a1": "7",
+        "a2": "1",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Tablica jest typem referencyjnym. Do \"tablica2\" przypisaliśmy kopię referencji(wskaźnika) a nie kopię zawartości. Mamy więc dwie zmienne z tym samym adresem."
     },
 ]
 
