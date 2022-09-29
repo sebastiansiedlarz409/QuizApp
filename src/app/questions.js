@@ -2799,28 +2799,6 @@ const questions = [
         "desc":"Action to delegat do funkcji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów."
     },
     {
-        "question":"Delegat C# \"Func<int, bool> DodatnieDelegat2 = (a) => a >= 0 ? true : false;\" jest poprawny?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Jako parametr spodziewamy się inta, zwracamy zaś typ logiczny bool."
-    },
-    {
-        "question":"Delegat C# \"Predicate<int> DodatnieDelegat = (a) => a >= 0 ? true : false;\" jest poprawny?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Predicate to typ delegatu, który przechowuje funkcję zwracającą bool czyli to samo co \"Func<...., bool>\"."
-    },
-    {
         "question":"W C# delegat \"Predicate<int>\" zwraca?",
         "url":"",
         "a1": "bool",
@@ -3338,17 +3316,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"C# obsługuje mechanizm null-safety?",
-        "url":"",
-        "a1": "TAK",
-        "a2": "NIE",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"NULL SAFETY zostało dodane do C# w jednej z nowszych iteracji tego języka. W całym tym mechaniźmie chodzi o to by poprawić świadomość programisty na temat tego czy dana zmienna może być nullem czy nie."
-    },
-    {
         "question":"Skrót LINQ oznacza?",
         "url":"",
         "a1": "Language Integrated Query",
@@ -3841,6 +3808,17 @@ const questions = [
         "a2": "git rebase \"nazwa\"",
         "a3": "git checkout \"nazwa\"",
         "a4": "git load \"nazwa\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Modyfikacji komentarza dodanego do ostatniego commita dokonać można za pomocą?",
+        "url":"",
+        "a1": "git commit --amend",
+        "a2": "git commit --modify",
+        "a3": "git commit -m",
+        "a4": "git commit --change",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6769,17 +6747,6 @@ const questions = [
         "type": "4A",
         "desc":""
     },
-    {
-        "question":"Celem normalizacji krajowej jest?",
-        "url":"",
-        "a1": "wszystkie pozostałe",
-        "a2": "zapewnienia ochrony życia, zdrowia, środowiska i interesu konsumentów oraz bezpieczeństwa pracy",
-        "a3": "poprawy funkcjonalności, kompatybilności i zamienności wyrobów, procesów i usług",
-        "a4": "ułatwiania porozumiewania się przez określanie terminów, definicji, oznaczeń i symboli do powszechnego stosowania",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
     //bhp
     {
         "question":"Natężenie dźwięku na stanowisku pracy w biurze nie może przekraczać?",
@@ -7442,6 +7409,94 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "2A",
         "desc":"Tablica jest typem referencyjnym. Do \"tablica2\" przypisaliśmy kopię referencji(wskaźnika) a nie kopię zawartości. Mamy więc dwie zmienne z tym samym adresem."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/linq1.png",
+        "a1": "4",
+        "a2": "3",
+        "a3": "5",
+        "a4": "0",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/linq2.png",
+        "a1": "0",
+        "a2": "1",
+        "a3": "2",
+        "a4": "wystąpi błąd",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/linq3.png",
+        "a1": "wystąpi błąd",
+        "a2": "0",
+        "a3": "1",
+        "a4": "2",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Metoda First() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia rzucany jest wyjątek."
+    },
+    {
+        "question":"Czy w wyniku działania poniższego kodu rzucony zostanie wyjątek \"NullReferenceException\"?",
+        "url":"/images/linq4.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Zmienna result otrzyma wartość \"null\". Próba wywołania właściwości \"Name\" skończy się podanym wyjątkiem."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/linq5.png",
+        "a1": "2",
+        "a2": "0",
+        "a3": "1",
+        "a4": "3",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Metoda Where() w przeciwieństwie do obu metod First() nie kończy się po znalezieniu pierwszego dopasowania. Zwraca ona IEnumerable<T> dlatego też należy użyć na wyniku ToList() aby pszypisać wynik do zmiennej typu Listy."
+    },
+    {
+        "question":"Poniższa konstrukcja wypisze wszystkie elementy kolekcji?",
+        "url":"/images/linq6.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"Poniższa konstrukcja pozwala sprawdzić czy element znajuje się w kolekcji?",
+        "url":"/images/linq7.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"W niniejszej konstrukji zastosowano sortowanie?",
+        "url":"/images/linq.png",
+        "a1": "rosnąco",
+        "a2": "malejąco",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Do sortowania malejąco służy OrderByDescending()"
     },
 ]
 
