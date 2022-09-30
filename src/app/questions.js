@@ -7498,6 +7498,61 @@ const questions = [
         "type": "2A",
         "desc":"Do sortowania malejąco służy OrderByDescending()"
     },
+    {
+        "question":"W obu klasach na rysunku zastosowano?",
+        "url":"/images/props.png",
+        "a1": "hermetyzację",
+        "a2": "polimorfizm",
+        "a3": "właściwości",
+        "a4": "dziedziczenie",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Klasa po prawej wykorzystuje do hermetyzacji właściwości, które są jak na ten moment unikalne dla C#. Oczywiście w klarmach od get i set można dorzucić więcej logiki niż tylko przypisanie."
+    },
+    {
+        "question":"Co wyświetli się na ekranie?",
+        "url":"/images/exceptions1.png",
+        "a1": "DivideByZeroException: Dzielisz przez zero! (3)",
+        "a2": "Exception: Dzielisz przez zero! (2)",
+        "a3": "0",
+        "a4": "program się nie skompiluje",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"W tym przypadku zostanie złapany bardziej precyzyjny wyjątek, ponieważ został wskazany wcześniej."
+    },
+    {
+        "question":"Dlaczego IDE podkreśla nazwę wyjatku?",
+        "url":"/images/exceptions2.png",
+        "a1": "Ponieważ wcześniejsza konstrukcja z \"Exception\" łapie już wszystko",
+        "a2": "Nazwa wyjątku jest błędna",
+        "a3": "Nie można używać wielu konstrukcji \"catch\" z jednym \"try\"",
+        "a4": "Wyjątek został źle zdefiniowany",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Łapanie \"Exception\" łapie wszystkie wyjątki z niego dziedziczące, a jak wiadomo w C# każdy wyjątek dziedziczy z \"Exception\"."
+    },
+    {
+        "question":"Dlaczego IDE podkreśla nazwę interfejsu?",
+        "url":"/images/interface.png",
+        "a1": "Ponieważ klasa dziedzicząca z intefejsu nie implementuje wszystkich jego składowych",
+        "a2": "Ponieważ metody wskazywane przez interfejs są prywatne",
+        "a3": "Ponieważ puste ciało metody nie jest uznawane za implementację",
+        "a4": "Żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wszystkie metody wymienione w interfejsie muszą zostać zaimplementowane choćby pustym ciałem."
+    },
+    {
+        "question":"Dlaczego IDE podkreśla nazwę klasy?",
+        "url":"/images/abstract.png",
+        "a1": "Ponieważ klasa dziedzicząca z klasy abstrakcyjnej nie implementuje wszystkich jego składowych",
+        "a2": "Ponieważ metody wskazywane przez klase abstrakcyjną nie są virtualne",
+        "a3": "Ponieważ puste ciało metody nie jest uznawane za implementację",
+        "a4": "Żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Wszystkie metody wymienione w klasie abstrakcyjnej muszą zostać zaimplementowane choćby pustym ciałem."
+    },
 ]
 
 export default questions;
