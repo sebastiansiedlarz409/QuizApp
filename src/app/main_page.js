@@ -12,7 +12,7 @@ function MainPage(props) {
   const [view, setView] = useState(0); //switch views
 
   for (let i = 0; i < questions.length; i++) {
-    questions[i]["id"] = i;
+    questions[i]["id"] = i+1;
   }
 
   const updateView = (v) => {

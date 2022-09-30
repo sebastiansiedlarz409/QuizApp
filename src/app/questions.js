@@ -177,6 +177,17 @@ const questions = [
         "desc":"FILO - First In Last Out. Taką strukturą jest stos."
     },
     {
+        "question":"Która struktura danych może być zaimplementowana przy wykorzystaniu jedynie wymienionych metod?",
+        "url":"/images/stos.png",
+        "a1": "Stos",
+        "a2": "Tablica",
+        "a3": "Kolejka FIFO",
+        "a4": "Drzewo Binarne",
+        "tag": "OFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
         "question":"Strukturą FIFO jest?",
         "url":"",
         "a1": "Kolejka",
@@ -1134,17 +1145,6 @@ const questions = [
         "desc":""
     },
     {
-        "question":"Operatorem unarnym jest?",
-        "url":"",
-        "a1": "~",
-        "a2": "%",
-        "a3": "<=",
-        "a4": "!=",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
         "question":"Słowo kluczowe \"static\" w C/C++?",
         "url":"",
         "a1": "wszystkie pozostałe",
@@ -1696,28 +1696,6 @@ const questions = [
         "desc":"Przesuwamy się o 4 bity w prawo."
     },
     {
-        "question":"Wartość wyrażenia 0b10110000<<2 to?",
-        "url":"",
-        "a1": "0b11000000",
-        "a2": "0b11000010",
-        "a3": "0b11000010",
-        "a4": "0b00001011",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Przesuwamy się o 2 bity w lewo. Bity są tracone chyba, że użyjemy większego typu"
-    },
-    {
-        "question":"Wartość wyrażenia 8>>1 to?",
-        "url":"",
-        "a1": "4",
-        "a2": "2",
-        "a3": "3",
-        "a4": "1",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Najlepiej zamienić sobie liczbę na system binarny i przesunąć o n bitów."
-    },
-    {
         "question":"Wartość wyrażenia 2<<3 to?",
         "url":"",
         "a1": "16",
@@ -1981,6 +1959,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Najlepiej wyobrazić sobie wykresy tych funkcji. Im bardziej płaski tym lepiej."
+    },
+    {
+        "question":"Który z wymienionych algorytmów działających na tablicy jednowymiarowej ma złożoność obliczeniową O(n^2)?",
+        "url":"",
+        "a1": "sortowanie bąbelkowe",
+        "a2": "wyszukiwanie binarne",
+        "a3": "sortowanie bąbelkowe",
+        "a4": "wypisywanie elementów",
+        "tag": "OFICJALNE",
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Bloczek z ilustracji to blok?",
@@ -3215,17 +3204,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"W C# jest to Task, w Dart Future, w JS Promise."
-    },
-    {
-        "question":"Język C# kompilowany jest w pierwszej kolejności do _ a dopiero później do kodu maszynowego?",
-        "url":"",
-        "a1": "Intermediate Language",
-        "a2": "Just In Time Runtime",
-        "a3": "Opcodes",
-        "a4": "Abstract Syntax Tree",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Wszystkie języki .NET (C#/F#/Visual Basic) są kompilowane do wspólnej postaci pośrdeniej a później do kodu maszynowego."
     },
     {
         "question":"Typy wartościowe można przekazać w formie referencji za pomocą?",
@@ -5137,6 +5115,28 @@ const questions = [
         "type": "4A",
         "desc":""
     },
+    {
+        "question":"Aplikacje Web wykonane we frameworku Angular lub bibliotece React i działające na domyślnych ustawieniach portów można uruchomić na lokalnym serwerze, wpisując w przeglądarce?",
+        "url":"",
+        "a1": "localhost:3000 (React) lub localhost:4200 (Angular)",
+        "a2": "localhost:8080 (React) lub localhost:8000 (Angular)",
+        "a3": "localhost:5001 (React) lub localhost:8080 (Angular)",
+        "a4": "localhost:8000 (React) lub localhost:49887 (Angular)",
+        "tag": "OFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Który z testów funkcji \"fun1\" zakończy się sukcesem?",
+        "url":"/images/jesttests.png",
+        "a1": "C",
+        "a2": "D",
+        "a3": "B",
+        "a4": "A",
+        "tag": "OFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
     //bazy danych
     {
         "question":"Co to jest DBMS",
@@ -5409,17 +5409,6 @@ const questions = [
         "a2": "delete",
         "a3": "remove",
         "a4": "erase",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Klauzula SQL służąca do modyfikowania struktury tabeli to?",
-        "url":"",
-        "a1": "alter",
-        "a2": "update",
-        "a3": "modify",
-        "a4": "change",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -6703,50 +6692,6 @@ const questions = [
         "type": "2A",
         "desc":"System wszystko czyści. Wycieki są groźne tylko wtedy gdy proces działa ciągle np. w pętli. Tak czy inaczej zwalnianie pamięci jest wskazane."
     },
-    {
-        "question":"Bramką logiczną, która wykonuje różnice symetryczą jest?",
-        "url":"",
-        "a1": "XOR",
-        "a2": "XNOR",
-        "a3": "NOT",
-        "a4": "OR",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Bramką logiczną, która ma tylko jedno wejście jest?",
-        "url":"",
-        "a1": "NOT",
-        "a2": "OR",
-        "a3": "AND",
-        "a4": "NAND",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Bramką logiczną na obrazku jest?",
-        "url":"/images/nand.png",
-        "a1": "NAND",
-        "a2": "OR",
-        "a3": "AND",
-        "a4": "NOR",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
-    {
-        "question":"Bramką logiczną na obrazku jest?",
-        "url":"/images/nor.png",
-        "a1": "NAND",
-        "a2": "OR",
-        "a3": "AND",
-        "a4": "NOR",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":""
-    },
     //bhp
     {
         "question":"Natężenie dźwięku na stanowisku pracy w biurze nie może przekraczać?",
@@ -6923,6 +6868,17 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Poza tym powienien mieć regulowaną wysokość i wyprofilowane oparcie."
+    },
+    {
+        "question":"Prawidłową i ergonomiczną pozycję pracy przy komputerze zapewni krzesło, którego",
+        "url":"",
+        "a1": "oparcie zapewnia lordozę w odcinku lędźwiowym",
+        "a2": "oparcie w odcinku szyi jest pochylone do przodu o 40stopni",
+        "a3": "podłokietniki są 30 cm wyżej niż blat",
+        "a4": "podłokietniki są 20 cm niżej niż blat",
+        "tag": "OFICJALNE",
+        "type": "4A",
+        "desc":""
     },
     {
         "question":"Informatykowi na stanowisku pracy nie wolno?",
@@ -7552,6 +7508,50 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Wszystkie metody wymienione w klasie abstrakcyjnej muszą zostać zaimplementowane choćby pustym ciałem."
+    },
+    {
+        "question":"Po wykonaniu poniższego kodu na ekranie pokaże się?",
+        "url":"/images/csharppoli.png",
+        "a1": "Base/ChildA/ChildB/ChildA/ChildB",
+        "a2": "Base/ChildA/ChildB/Base/Base",
+        "a3": "Base/ChildA/ChildB/Base/ChildB",
+        "a4": "Base/ChildA/ChildB/ChildA/Base",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zastosowano tutaj standardowy polimorfizm. Dzięki \"virtual\" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej)."
+    },
+    {
+        "question":"Po wykonaniu poniższego kodu na ekranie pokaże się?",
+        "url":"/images/csharppoli2.png",
+        "a1": "Base/ChildA/ChildB/",
+        "a2": "Base/Base/Base",
+        "a3": "Base/Base/ChildB",
+        "a4": "Base/ChildA/Base",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zastosowano tutaj standardowy polimorfizm. Dzięki \"virtual\" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej)."
+    },
+    {
+        "question":"Po wykonaniu poniższego kodu na ekranie pokaże się?",
+        "url":"/images/csharppoli3.png",
+        "a1": "Base/ChildA/ChildB/",
+        "a2": "Base/Base/Base",
+        "a3": "Base/Base/ChildB",
+        "a4": "Base/ChildA/Base",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zastosowano tutaj standardowy polimorfizm. Dzięki \"virtual\" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej)."
+    },
+    {
+        "question":"Wynikiem działania poniższego kodu będzie?",
+        "url":"/images/operatoroverload.png",
+        "a1": "[4;6]",
+        "a2": "[1;2]",
+        "a3": "[3;4]",
+        "a4": "wystąpi błąd",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Zastosowano tutaj standardowe przeciążenie operatora \"+\"."
     },
 ]
 
