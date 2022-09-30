@@ -42,18 +42,7 @@ const questions = [
         "a4": "",
         "tag": "NIEOFICJALNE",
         "type": "2A",
-        "desc":"Zazwyczaj typy są domyślnie \"signed\". Jeżeli chcemy \"unsigend\" musimy to napiać."
-    },
-    {
-        "question":"Funkcja main w C/C++ zawsze musi zwrócić wartość 0?",
-        "url":"",
-        "a1": "NIE",
-        "a2": "TAK",
-        "a3": "",
-        "a4": "",
-        "tag": "NIEOFICJALNE",
-        "type": "2A",
-        "desc":"Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powino zwracać coś innego."
+        "desc":"Zazwyczaj typy są domyślnie \"signed\". Jeżeli chcemy \"unsigned\" musimy to napiać."
     },
     {
         "question":"Czy typy decimal służy do zapisu liczb ułamkowych?",
@@ -138,17 +127,6 @@ const questions = [
         "a1": "%d",
         "a2": "%c",
         "a3": "%u",
-        "a4": "%f",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"Funkcja \"printf()\" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. \"printf(\"Wynik: %u\", wynik);\""
-    },
-    {
-        "question":"Aby wypisać liczbę całkowitą bez znaku za pomocą funkcji \"printf()\" należy posłużyć się specyfikatorem?",
-        "url":"",
-        "a1": "%u",
-        "a2": "%c",
-        "a3": "%d",
         "a4": "%f",
         "tag": "NIEOFICJALNE",
         "type": "4A",
@@ -254,6 +232,17 @@ const questions = [
         "desc":"Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej."
     },
     {
+        "question":"Funkcja main w C/C++ zawsze musi zwrócić wartość 0?",
+        "url":"",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powino zwracać coś innego."
+    },
+    {
         "question":"Jeżeli jako typ zwracany podamy \"void*\" oznacza to, że nic nie zwracamy?",
         "url":"",
         "a1": "NIE",
@@ -276,7 +265,7 @@ const questions = [
         "desc":"Void oznacza, że funkcja nic nie zwraca, ale nie wyklucza istnienia w jej ciele słowa kluczowego return"
     },
     {
-        "question":"Czy w C/C++ możliwe jest zwrócienie z funkcji wartości jeżeli ta funckja ma typ zwracany void?",
+        "question":"Czy w C/C++ możliwe jest zwrócienie z funkcji wartości jeżeli ta funkcja ma typ zwracany void?",
         "url":"",
         "a1": "TAK",
         "a2": "NIE",
@@ -395,17 +384,6 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"std::cout, std::cin itd"
-    },
-    {
-        "question":"Dynamicznie linkowana biblioteka ma rozszerzenie?",
-        "url":"",
-        "a1": ".dll",
-        "a2": ".lib",
-        "a3": ".exe",
-        "a4": ".elf",
-        "tag": "NIEOFICJALNE",
-        "type": "4A",
-        "desc":"DLL - dynamic link library, LIB - statycznie linkowana biblioteka czyli tak, której zawartość jest doklejana do pliku EXE."
     },
     {
         "question":"W programie C/C++ może znajdować się więcej niż jedna funkcja main?",
@@ -7552,6 +7530,28 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Zastosowano tutaj standardowe przeciążenie operatora \"+\"."
+    },
+    {
+        "question":"Dlaczego metoda \"PrintMe()\" podkreśla na czerwono pola \"x\" oraz \"y\"",
+        "url":"/images/static.png",
+        "a1": "nie można korzystać w składowych statycznych z elementów niestatycznych",
+        "a2": "zarówno \"x\" jak i \"y\" nie są zainicjowane domyślną wartością",
+        "a3": "zarówno \"x\" jak i \"y\" oznaczono jako prywatne",
+        "a4": "zarówno \"x\" jak i \"y\" powninno się poprzedzić słowem kluczowym \"this\"",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Elementy statycznie nie mogą używać elementów niestatycznych klasy (potrzebny jest obiekt). W drugą stronę relacja jest możliwa."
+    },
+    {
+        "question":"Poniższa klasa sugeruje budowę?",
+        "url":"/images/tree1.png",
+        "a1": "drzewa binarnego",
+        "a2": "kolejki",
+        "a3": "stosu",
+        "a4": "mapy",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Chodzi o drzewo. Każdy węzeł drzewa oprócz wartości posiada dwie referencje (w c++ były by to wskaźniki) na opcjonalne dzieci. Drzewo jest binarne bo każdy węzeł ma maksymalnie dwoje dzieci"
     },
 ]
 
