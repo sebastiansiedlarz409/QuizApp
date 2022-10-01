@@ -3092,6 +3092,17 @@ const questions = [
     desc: "",
   },
   {
+    question: "Windows Forms to to samo co WPF?",
+    url: "",
+    a1: "NIE",
+    a2: "TAK",
+    a3: "",
+    a4: "",
+    tag: "NIEOFICJALNE",
+    type: "2A",
+    desc: "Windows Forms to starsza technologia, jednak w ciąż mocno używana. Windows Forms opiera się o graficzny edytor a nie o język XAML.",
+  },
+  {
     question: "W WPF niedostępny jest layout typu?",
     url: "",
     a1: "TablePanel",
@@ -3188,6 +3199,29 @@ const questions = [
   },
   {
     question:
+      'Jakiego przełącznika należy użyć z poleceniem "git reset" aby cofnięte zmiany wylądowały na "stage"?',
+    url: "",
+    a1: "--soft",
+    a2: "--mixed",
+    a3: "--hard",
+    a4: "--medium",
+    tag: "NIEOFICJALNE",
+    type: "4A",
+    desc: 'Przełącznik "--hard" powoduje całkowitą utratę zmian. "--soft" zostawia zmiany jako "dodane na stage". "--mixed" zostawia zmiany jako "do dodania na stage".',
+  },
+  {
+    question: 'Polecenie "git rebase" oraz git merge" działają tak samo?',
+    url: "",
+    a1: "NIE",
+    a2: "TAK",
+    a3: "",
+    a4: "",
+    tag: "NIEOFICJALNE",
+    type: "2A",
+    desc: "Merge łączy gałęzie. Rebase pozwala zmienić commit na bazie którego został utworzony dany branch.",
+  },
+  {
+    question:
       "Plik służący do tworzenia listy plików/katalogów, które są ignorowane przez system kontroli wersji git jest?",
     url: "",
     a1: ".gitignore",
@@ -3232,6 +3266,18 @@ const questions = [
     tag: "NIEOFICJALNE",
     type: "4A",
     desc: 'Nie zaleca się używania "git add ." jeżeli w projekcie nie ma pliku ".gitignore".',
+  },
+  {
+    question:
+      'Aby w systemie git przeglądać historie commitów w formie list należy dodać do "git log"?',
+    url: "",
+    a1: "--oneline",
+    a2: "--verbose",
+    a3: "--overview",
+    a4: "--list",
+    tag: "NIEOFICJALNE",
+    type: "4A",
+    desc: "",
   },
   {
     question:
@@ -3388,6 +3434,18 @@ const questions = [
     a2: 'git rebase "nazwa"',
     a3: 'git checkout "nazwa"',
     a4: 'git load "nazwa"',
+    tag: "NIEOFICJALNE",
+    type: "4A",
+    desc: "",
+  },
+  {
+    question:
+      "Modyfikacji komentarza dodanego do ostatniego commita dokonać można za pomocą?",
+    url: "",
+    a1: "git commit --amend",
+    a2: "git commit --modify",
+    a3: "git commit -m",
+    a4: "git commit --change",
     tag: "NIEOFICJALNE",
     type: "4A",
     desc: "",
