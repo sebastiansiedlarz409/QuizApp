@@ -24,14 +24,14 @@ function RandomQuestionView(props) {
     );
   };
 
-  if(id === 0){
+  if (id === 0) {
     randomQuestion();
   }
 
   return (
     <div className="question_view">
       <center>
-      <div className="welcome_text">
+        <div className="welcome_text">
           <Welcome questions={props.questions}></Welcome>
         </div>
         <button className="button_style" onClick={() => randomQuestion()}>
@@ -52,24 +52,24 @@ function QuestionView(props) {
   const goQuestion = () => {
     let number = parseInt(prompt("Podaj numer pytania:"));
 
-    if(isNaN(number)){
+    if (isNaN(number)) {
       return 0;
     }
 
-    if(number>=props.questions.length){
-      number = props.questions.length-1;
+    if (number >= props.questions.length) {
+      number = props.questions.length - 1;
     }
 
     return number - id;
-  }
+  };
 
   const switchQuestion = (m) => {
-    let i = id+m;
-    if(i >= props.questions.length){
+    let i = id + m;
+    if (i >= props.questions.length) {
       i = 0;
     }
-    if(i < 0){
-      i = props.questions.length-1;
+    if (i < 0) {
+      i = props.questions.length - 1;
     }
     setId(i);
     setQuestion(props.questions[i]);
@@ -91,15 +91,28 @@ function QuestionView(props) {
         <div className="welcome_text">
           <Welcome questions={props.questions}></Welcome>
         </div>
-        <button className="button_style" onClick={() => switchQuestion(-1)}>
-          Poprzednie pytanie!
-        </button>
-        <button className="button_style" onClick={() => switchQuestion(goQuestion())}>
-          Idź do pytania
-        </button>
-        <button className="button_style" onClick={() => switchQuestion(1)}>
-          Następne pytanie!
-        </button>
+        <div className="switch_question_btns">
+          <button
+            id="prevBtn"
+            className="button_style"
+            onClick={() => switchQuestion(-1)}
+          >
+            {"<"}
+          </button>
+          <button
+            className="button_style"
+            onClick={() => switchQuestion(goQuestion())}
+          >
+            Idź do pytania
+          </button>
+          <button
+            id="nextBtn"
+            className="button_style"
+            onClick={() => switchQuestion(1)}
+          >
+            {">"}
+          </button>
+        </div>
       </center>
       <div className="question">
         <center>{returnQuestionItem()}</center>
@@ -108,7 +121,4 @@ function QuestionView(props) {
   );
 }
 
-export {
-  RandomQuestionView,
-  QuestionView
-}
+export { RandomQuestionView, QuestionView };
