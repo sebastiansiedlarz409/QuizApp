@@ -3956,6 +3956,17 @@ const questions = [
         "type": "2A",
         "desc":"Nie powinno się testować metod prywatnych bezpośrednio, co nie oznacza, że się nie da."
     },
+    {
+        "question":"Jakie elementy należy przetestować jednostkowo pisząc metodę dzielącą dwie liczby całkowite?",
+        "url":"",
+        "a1": "wszystkie pozostałe",
+        "a2": "zachowanie metody gdy dzielnik jest zerem",
+        "a3": "zachowanie metody gdy w wyniku operacji arytmetycznej zachodzi przepełnienie zmiennej",
+        "a4": "zachowanie metody dla wejścia zawierającego dwie proste liczby do podzielenia",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":"Powinno się testować jak najwięcej skrajnych przypadków oraz kilka standardowych."
+    },
     //wzorce i zasady programowania
     {
         "question":"Zasada, mówiąca o tym by unikać powtórzeń w kodzie to?",
@@ -5946,10 +5957,10 @@ const questions = [
     {
         "question":"W języku Python konstrukcja odpowiedzialna za wycinannie podłańcuchów łańcucha tekstowego to",
         "url":"",
-        "a1": "operator[start:end]",
-        "a2": "substr(start:end)",
+        "a1": "operator [start:end]",
+        "a2": "funkcja substr(start:end)",
         "a3": "operator (start:end)",
-        "a4": "substring(start:end)",
+        "a4": "funkcja substring(start:end)",
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":""
@@ -7552,6 +7563,105 @@ const questions = [
         "tag": "NIEOFICJALNE",
         "type": "4A",
         "desc":"Chodzi o drzewo. Każdy węzeł drzewa oprócz wartości posiada dwie referencje (w c++ były by to wskaźniki) na opcjonalne dzieci. Drzewo jest binarne bo każdy węzeł ma maksymalnie dwoje dzieci"
+    },
+    {
+        "question":"Czy w poniższej implementacji zastosowano zasadę wstrzykiwania zależności?",
+        "url":"/images/nodi.png",
+        "a1": "NIE",
+        "a2": "TAK",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Klasa \"MailSender\" jest wstawiona w pole klasy \"MailMessage\" na sztywno i nie da się jej zmienić z zewnątrz."
+    },
+    {
+        "question":"Czy w poniższej implementacji zastosowano zasadę wstrzykiwania zależności?",
+        "url":"/images/di.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Klasa \"MailSender\" jest wstawiona w pole klasy \"MailMessage\" przez konstruktor."
+    },
+    {
+        "question":"Poniższą funkcję można nazwać poprawnym testem jednostkowym?",
+        "url":"/images/unittest.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":""
+    },
+    {
+        "question":"Poniższa asercja zakończy się?",
+        "url":"/images/assertthrow.png",
+        "a1": "negatywnie",
+        "a2": "pozytywnie",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Asercja oczekuje rzucenia konkretnego wyjątku (\"DivideByZero\"), ale podaliśmy do funkcji poprawne dane, więc nie zostanie on rzucony. Test nie przejdzie."
+    },
+    {
+        "question":"Poniższa asercja zakończy się?",
+        "url":"/images/assertthrow2.png",
+        "a1": "pozytywnie",
+        "a2": "negatywnie",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Asercja oczekuje rzucenia konkretnego wyjątku (\"DivideByZero\"). Zgodnie z implementacją funkcji \"divide\" zostanie on rzucony, ponieważ b = 0"
+    },
+    {
+        "question":"Poniższe dwie asercje są równoznaczne?",
+        "url":"/images/assert.png",
+        "a1": "TAK",
+        "a2": "NIE",
+        "a3": "",
+        "a4": "",
+        "tag": "NIEOFICJALNE",
+        "type": "2A",
+        "desc":"Różnia się tylko zapisem. Chociaż w przypadku typów referencyjnych należy uważać tak samo jak z operatorem \"==\" oraz metodą \"Equals()\"."
+    },
+    {
+        "question":"Poniższy test zakończy się sukcesem gdy?",
+        "url":"/images/jest1.png",
+        "a1": "wynik dzielenia będzie wynosił 3",
+        "a2": "dzielenie wykona się bez błędów",
+        "a3": "operacja rzuci wyjątek",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Poniższy test zakończy się sukcesem gdy?",
+        "url":"/images/jest2.png",
+        "a1": "operacja rzuci wyjątek",
+        "a2": "wynik dzielenia będzie wynosił 3",
+        "a3": "dzielenie wykona się bez błędów",
+        "a4": "żadne z pozostałych",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
+    },
+    {
+        "question":"Aby test zakończył się sukcesem w miejsce \"x\" oraz \"y\" możemy wstawić odpowiednio?",
+        "url":"/images/jest3.png",
+        "a1": "'11223366111' oraz '11'",
+        "a2": "'2312376524' oraz '23'",
+        "a3": "'ABCDEF98765' oraz 'AB'",
+        "a4": "wszystkie pozostałe kombinację są ok",
+        "tag": "NIEOFICJALNE",
+        "type": "4A",
+        "desc":""
     },
 ]
 
