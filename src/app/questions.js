@@ -4844,17 +4844,6 @@ const questions = [
     desc: "",
   },
   {
-    question: "Wersja 3 języka python to tylko aktualizacja do wersji 2?",
-    url: "",
-    a1: "NIE",
-    a2: "TAK",
-    a3: "",
-    a4: "",
-    tag: "NIEOFICJALNE",
-    type: "2A",
-    desc: "Python 2 jest już praktycznie martwy. Wersja trzecia wprowadza ogrom zmian.",
-  },
-  {
     question:
       "W języku Python istnieje różnica między cudzysłowami a apostrofami?",
     url: "",
@@ -4888,17 +4877,6 @@ const questions = [
     tag: "NIEOFICJALNE",
     type: "4A",
     desc: "",
-  },
-  {
-    question: "W języku Python domyślna wartość typów referencyjnych to?",
-    url: "",
-    a1: "None",
-    a2: "Null",
-    a3: "null",
-    a4: "none",
-    tag: "NIEOFICJALNE",
-    type: "4A",
-    desc: '"None" to odpowiednik "null" z innych języków.',
   },
   {
     question:
@@ -4970,17 +4948,6 @@ const questions = [
     tag: "NIEOFICJALNE",
     type: "4A",
     desc: "",
-  },
-  {
-    question: "W języku Python szybszą pętlą jest?",
-    url: "",
-    a1: "for x in range(...)",
-    a2: "while",
-    a3: "do...while",
-    a4: "nie ma różnicy",
-    tag: "NIEOFICJALNE",
-    type: "4A",
-    desc: "Wbrew temu co mogło by się wydawać pętla for jest najszybsza. Zazwyczaj przyjmuje się mówić, że wywołanie funkcji jest wolne. W tym przypadku range() jest szybsze niż zwykłe inkrementowanie, ponieważ funkcja ta jest napisana w C jak cały Python.",
   },
   {
     question:
@@ -5064,22 +5031,11 @@ const questions = [
     desc: "",
   },
   {
-    question: "Która konstrukcja w języku Python to takzwany tuple?",
+    question: "Która konstrukcja w języku Python to tak zwany tuple?",
     url: "",
     a1: "(1,2,3,4)",
     a2: "[1,2,3,4]",
     a3: "{1,2,3,4}",
-    a4: "żadna z wymienionych",
-    tag: "NIEOFICJALNE",
-    type: "4A",
-    desc: "",
-  },
-  {
-    question: "Która konstrukcja w języku Python to zbiór?",
-    url: "",
-    a1: "{1,2,3,4}",
-    a2: "(1,2,3,4)",
-    a3: "[1,2,3,4]",
     a4: "żadna z wymienionych",
     tag: "NIEOFICJALNE",
     type: "4A",
