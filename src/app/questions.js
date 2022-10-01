@@ -1666,17 +1666,6 @@ const questions = [
     desc: "",
   },
   {
-    question: "Maksymalny rząd wierzchołka grafu na obrazku to?",
-    url: "/images/rzadgrafu.png",
-    a1: "3",
-    a2: "2",
-    a3: "1",
-    a4: "0",
-    tag: "NIEOFICJALNE",
-    type: "4A",
-    desc: "Jest to maksymalna ilość krawędzi wychodzących/wchodzących do wierzchołka.",
-  },
-  {
     question: "Czy graf na obrazku jest skierowany?",
     url: "/images/rzadgrafu.png",
     a1: "NIE",
@@ -1699,17 +1688,6 @@ const questions = [
     desc: "Strzałki na krawędziach mówią czy graf jest skierowany.",
   },
   {
-    question: "Czy graf na obrazku da się utworzyć cykl komiwojazera?",
-    url: "/images/graf2.svg",
-    a1: "NIE",
-    a2: "TAK",
-    a3: "",
-    a4: "",
-    tag: "NIEOFICJALNE",
-    type: "2A",
-    desc: "Cykl komiwojażera to przejście po każdym wierzchołku raz i powrót w to samo miejsce. Droga musi być jak najmniejsza. Jeżeli graf ma wierzchołki stopnia 1 to oczywiste jest, że nie da się wykonać takiego cyklu.",
-  },
-  {
     question: "Czy graf na obrazku jest drzewem?",
     url: "/images/notree.png",
     a1: "NIE",
@@ -1719,17 +1697,6 @@ const questions = [
     tag: "NIEOFICJALNE",
     type: "2A",
     desc: "Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.",
-  },
-  {
-    question: "Czy na obrazku kolorem czerwonym zaznaczono krawędź?",
-    url: "/images/edge.gif",
-    a1: "TAK",
-    a2: "NIE",
-    a3: "",
-    a4: "",
-    tag: "NIEOFICJALNE",
-    type: "2A",
-    desc: "Zaznaczono krawędź o wadze 1 łączącą wierzchołki 4 oraz 6.",
   },
   {
     question: "Czy graf na obrazku jest drzewem?",
@@ -1855,18 +1822,6 @@ const questions = [
     tag: "NIEOFICJALNE",
     type: "4A",
     desc: "",
-  },
-  {
-    question:
-      "Najpopularniejszym sposobem zapisu grafu w programie jest tablica 2D?",
-    url: "",
-    a1: "TAK",
-    a2: "NIE",
-    a3: "",
-    a4: "",
-    tag: "NIEOFICJALNE",
-    type: "2A",
-    desc: "Można zrobić listę obiektów typu (start, koniec, waga). Zależnie od algorytmu jedno albo drugie będzie wygodniejsze.",
   },
   //programowanie obiektowe
   {
