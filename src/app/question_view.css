@@ -34,6 +34,17 @@
   outline: 0;
 }
 
+.switch_question_btns {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+#prevBtn,
+#nextBtn {
+  min-width: min-content;
+}
+
 @media (min-width: 768px) {
   .button_style {
     font-size: 24px;
@@ -44,5 +55,9 @@
     margin: 60px 15vw;
     border-radius: 20px;
     box-shadow: 0 8px 10px rgb(0 0 0 / 0.15);
+  }
+
+  .switch_question_btns {
+    gap: 2em;
   }
 }
