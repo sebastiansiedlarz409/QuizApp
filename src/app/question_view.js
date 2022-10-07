@@ -59,6 +59,7 @@ function QuestionView(props) {
     if (number >= props.questions.length) {
       number = props.questions.length - 1;
     }
+    number--;
 
     return number - id;
   };
