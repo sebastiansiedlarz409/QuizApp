@@ -5,28 +5,28 @@ function QuestionItem(props) {
   let answer = -1;
 
   useEffect(() => {
-    document.getElementById(props.question.id + "A").style.border =
+    document.getElementById("A" + props.question.id).style.border =
       "5px solid transparent";
-    document.getElementById(props.question.id + "B").style.border =
+    document.getElementById("B" + props.question.id).style.border =
       "5px solid transparent";
-    document.getElementById(props.question.id + "C").style.border =
+    document.getElementById("C" + props.question.id).style.border =
       "5px solid transparent";
-    document.getElementById(props.question.id + "D").style.border =
+    document.getElementById("D" + props.question.id).style.border =
       "5px solid transparent";
-    document.getElementById(props.question.id + "DESC").style.display = "none";
+    document.getElementById("DESC" + props.question.id).style.display = "none";
 
     //check if ABCD or TF
     if (props.question.type === "2A") {
-      document.getElementById(props.question.id + "C").style.display = "none";
-      document.getElementById(props.question.id + "D").style.display = "none";
+      document.getElementById("C" + props.question.id).style.display = "none";
+      document.getElementById("D" + props.question.id).style.display = "none";
     }
 
     //hide image field if there is no link
     if (props.question.url.length === 0) {
-      document.getElementById(props.question.id + "IMG").style.display = "none";
+      document.getElementById("IMG" + props.question.id).style.display = "none";
     }
 
-    let ans = document.getElementById(props.question.id + "answers");
+    let ans = document.getElementById("answers" + props.question.id);
     for (let i = ans.children.length; i >= 0; i--) {
       ans.appendChild(ans.children[(Math.random() * i) | 0]);
     }
@@ -48,25 +48,25 @@ function QuestionItem(props) {
       return;
     }
 
-    document.getElementById(props.question.id + "A").style.backgroundColor =
+    document.getElementById("A" + props.question.id).style.backgroundColor =
       "rgb(255,255,255,0.3)";
-    document.getElementById(props.question.id + "A").style.border =
+    document.getElementById("A" + props.question.id).style.border =
       "5px solid green";
 
-    document.getElementById(props.question.id + "B").style.backgroundColor =
+    document.getElementById("B" + props.question.id).style.backgroundColor =
       "rgb(255,255,255,0.3)";
-    document.getElementById(props.question.id + "C").style.backgroundColor =
+    document.getElementById("C" + props.question.id).style.backgroundColor =
       "rgb(255,255,255,0.3)";
-    document.getElementById(props.question.id + "D").style.backgroundColor =
+    document.getElementById("D" + props.question.id).style.backgroundColor =
       "rgb(255,255,255,0.3)";
 
     document.getElementById(id).style.backgroundColor =
       positive === 0 ? "crimson" : "green";
 
     if (
-      document.getElementById(props.question.id + "DESC").innerHTML.length > 0
+      document.getElementById("DESC" + props.question.id).innerHTML.length > 0
     ) {
-      document.getElementById(props.question.id + "DESC").style.display =
+      document.getElementById("DESC" + props.question.id).style.display =
         "block";
     }
 
@@ -87,16 +87,16 @@ function QuestionItem(props) {
         ({props.question.id}) {props.question.question} ({props.question.tag})
       </h2>
       <img
-        id={props.question.id + "IMG"}
+        id={"IMG" + props.question.id}
         className="question_image"
         src={props.question.url}
         alt=""
       />
-      <div id={props.question.id + "answers"} className="question_answers">
+      <div id={"answers" + props.question.id} className="question_answers">
         <div
-          id={props.question.id + "A"}
+          id={"A" + props.question.id}
           className="answer"
-          onClick={() => mark(props.question.id + "A", 1)}
+          onClick={() => mark("A" + props.question.id, 1)}
         >
           <span className="answer_container">
             <button className="answer_button A">A</button>
@@ -104,9 +104,9 @@ function QuestionItem(props) {
           </span>
         </div>
         <div
-          id={props.question.id + "B"}
+          id={"B" + props.question.id}
           className="answer"
-          onClick={() => mark(props.question.id + "B", 0)}
+          onClick={() => mark("B" + props.question.id, 0)}
         >
           <span className="answer_container">
             <button className="answer_button B">B</button>
@@ -114,9 +114,9 @@ function QuestionItem(props) {
           </span>
         </div>
         <div
-          id={props.question.id + "C"}
+          id={"C" + props.question.id}
           className="answer"
-          onClick={() => mark(props.question.id + "C", 0)}
+          onClick={() => mark("C" + props.question.id, 0)}
         >
           <span className="answer_container">
             <button className="answer_button C">C</button>
@@ -124,9 +124,9 @@ function QuestionItem(props) {
           </span>
         </div>
         <div
-          id={props.question.id + "D"}
+          id={"D" + props.question.id}
           className="answer"
-          onClick={() => mark(props.question.id + "D", 0)}
+          onClick={() => mark("D" + props.question.id, 0)}
         >
           <span className="answer_container">
             <button className="answer_button D">D</button>
@@ -134,7 +134,7 @@ function QuestionItem(props) {
           </span>
         </div>
       </div>
-      <div id={props.question.id + "DESC"} className="question_description">
+      <div id={"DESC" + props.question.id} className="question_description">
         {props.question.desc}
       </div>
     </div>

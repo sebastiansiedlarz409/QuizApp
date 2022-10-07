@@ -1,7 +1,8 @@
 const questions = [
   //C/C++
   {
-    question: 'Jaki typ służy do przechowywania wartości TRUE/FALSE?',
+    question:
+      'Jaki typ służy do przechowywania wartości TRUE/FALSE?',
     url: '',
     a1: 'bool',
     a2: 'byte',
@@ -24,7 +25,8 @@ const questions = [
     desc: 'W pytaniu tym chodzi o zakresy typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255. Świadomość zakresów i tego, że są inne typy danych niż "int" dobrze świadczy o programiście.',
   },
   {
-    question: 'Czy typy float i double są identyczne?',
+    question:
+      'Czy typy float i double są identyczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -35,7 +37,8 @@ const questions = [
     desc: 'Typ "double" przechowuje dane w 8 bajtach a float tylko w 4bajtach.',
   },
   {
-    question: 'Czy typy "int" i "signed int" są identyczne?',
+    question:
+      'Czy typy "int" i "signed int" są identyczne?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -46,7 +49,8 @@ const questions = [
     desc: 'Zazwyczaj typy są domyślnie "signed". Jeżeli chcemy "unsigned" musimy to napiać.',
   },
   {
-    question: 'Rozmiar typu int w pamięci to?',
+    question:
+      'Rozmiar typu int w pamięci to?',
     url: '',
     a1: '4B',
     a2: '1B',
@@ -57,7 +61,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Rozmiar typu unsigned long long w pamięci to?',
+    question:
+      'Rozmiar typu unsigned long long w pamięci to?',
     url: '',
     a1: '8B',
     a2: '1B',
@@ -68,7 +73,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Rozmiar typu bool w pamięci to?',
+    question:
+      'Rozmiar typu bool w pamięci to?',
     url: '',
     a1: '1B',
     a2: '4B',
@@ -79,7 +85,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Czy pętle do..while oraz while są identyczne?',
+    question:
+      'Czy pętle do..while oraz while są identyczne?',
     url: '/images/dowhilewhile.png',
     a1: 'NIE',
     a2: 'TAK',
@@ -138,7 +145,8 @@ const questions = [
     desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
   },
   {
-    question: 'Strukturą FILO jest?',
+    question:
+      'Strukturą FILO jest?',
     url: '',
     a1: 'Stos',
     a2: 'Kolejka',
@@ -161,7 +169,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Strukturą FIFO jest?',
+    question:
+      'Strukturą FIFO jest?',
     url: '',
     a1: 'Kolejka',
     a2: 'Stos',
@@ -172,7 +181,8 @@ const questions = [
     desc: 'FIFO - First In First Out. Taką strukturą jest kolejka.',
   },
   {
-    question: 'Określenie kolekcji mianem FILO jest równoznaczne z określeniem jej jako LIFO',
+    question:
+      'Określenie kolekcji mianem FILO jest równoznaczne z określeniem jej jako LIFO',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -195,7 +205,8 @@ const questions = [
     desc: 'Struktura liniowa - kolekcja, w której dane przechowywane są jeden za drugim w pamięci. W liście każdy element jest gdzie idziej w pamięci (każdy posiada wskaźnik na poprzednika i następce dzięki czemu możliwe jest przesuwanie się po liście).',
   },
   {
-    question: 'Elementem języka, który pozwala definiować własne typy jest?',
+    question:
+      'Elementem języka, który pozwala definiować własne typy jest?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'klasa',
@@ -206,7 +217,8 @@ const questions = [
     desc: 'Zarówno klasa jak i struktura służy do definicji własnego typu złożonego, który składa się z typów prostych lub innych typów złożonych.',
   },
   {
-    question: 'Typ wyliczeniowy to?',
+    question:
+      'Typ wyliczeniowy to?',
     url: '',
     a1: 'enum',
     a2: 'list',
@@ -229,7 +241,8 @@ const questions = [
     desc: 'Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej.',
   },
   {
-    question: 'Funkcja main w C/C++ zawsze musi zwrócić wartość 0?',
+    question:
+      'Funkcja main w C/C++ zawsze musi zwrócić wartość 0?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -288,7 +301,8 @@ const questions = [
     desc: 'Może. Po słowie return nie pada żadna wartość/zmienna.',
   },
   {
-    question: 'W C++ każda zmienna domyslnie przekazywana jest przez wartość?',
+    question:
+      'W C++ każda zmienna domyslnie przekazywana jest przez wartość?',
     url: '/images/copy.jpg',
     a1: 'TAK',
     a2: 'NIE',
@@ -299,7 +313,8 @@ const questions = [
     desc: 'Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &.',
   },
   {
-    question: 'Wywołanie funkcji przez samą siebie to?',
+    question:
+      'Wywołanie funkcji przez samą siebie to?',
     url: '',
     a1: 'rekurencja',
     a2: 'iteracja',
@@ -310,7 +325,8 @@ const questions = [
     desc: 'W przypadku rekurencji ważne jest by kontrolować ilość zagłębień. Stosując rekurencje bardzo łatwo jest przekroczyć rozmiar stosu, ponieważ każda instancja funkcji alokuje tam swoje zmienne lokalne.',
   },
   {
-    question: 'Słowo kluczowe pomijające bieżącą iterację to?',
+    question:
+      'Słowo kluczowe pomijające bieżącą iterację to?',
     url: '',
     a1: 'continue',
     a2: 'break',
@@ -321,7 +337,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Słowo kluczowe przerywające pętle to?',
+    question:
+      'Słowo kluczowe przerywające pętle to?',
     url: '',
     a1: 'break',
     a2: 'continue',
@@ -332,7 +349,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Na obrazku widzimy?',
+    question:
+      'Na obrazku widzimy?',
     url: '/images/decl.png',
     a1: 'deklaracje funkcji',
     a2: 'definicję funkcji',
@@ -343,7 +361,8 @@ const questions = [
     desc: 'Deklaracja to poinformowanie kompilatora, że gdzieś będzie zdefiniowana dana funkcja/zmienna. Definicja zawiera już ciało lub przypisanie wartości w przypadku zmiennych.',
   },
   {
-    question: 'Adres w pamięci nazywany jest',
+    question:
+      'Adres w pamięci nazywany jest',
     url: '/images/ptr.png',
     a1: 'Wskaźnikiem',
     a2: 'Referencją',
@@ -354,7 +373,8 @@ const questions = [
     desc: 'Adres to po prostu liczba. Każdy bajt pamięci ma swój adres.',
   },
   {
-    question: 'Instrukcja C++ "cout" znajduje się w namespace?',
+    question:
+      'Instrukcja C++ "cout" znajduje się w namespace?',
     url: '',
     a1: 'std',
     a2: 'console',
@@ -365,7 +385,8 @@ const questions = [
     desc: 'std::cout, std::cin itd',
   },
   {
-    question: 'Instrukcja C++ "cin" znajduje się w namespace?',
+    question:
+      'Instrukcja C++ "cin" znajduje się w namespace?',
     url: '',
     a1: 'std',
     a2: 'console',
@@ -376,7 +397,8 @@ const questions = [
     desc: 'std::cout, std::cin itd',
   },
   {
-    question: 'Typ "string" C++ znajduje się w namespace?',
+    question:
+      'Typ "string" C++ znajduje się w namespace?',
     url: '',
     a1: 'std',
     a2: 'string',
@@ -399,7 +421,8 @@ const questions = [
     desc: 'Nie może. Możliwe jest jednak nazwanie funkcji wejściowej inaczej i wykorzystanie funkcji main do innego celu.',
   },
   {
-    question: 'Funkcja main w C/C++ przyjmuje jakieś parametry?',
+    question:
+      'Funkcja main w C/C++ przyjmuje jakieś parametry?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -410,7 +433,8 @@ const questions = [
     desc: 'Tak przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywan jest jako string w tej tablicy.',
   },
   {
-    question: 'Słowo kluczowe "this" w C/C++ jest wskaźnikiem?',
+    question:
+      'Słowo kluczowe "this" w C/C++ jest wskaźnikiem?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -421,7 +445,8 @@ const questions = [
     desc: 'Tak, a do wartości odwołujemy się operatorem "->" np. "this->name"',
   },
   {
-    question: 'Ile konstruktorów można umieścić w klasie C++?',
+    question:
+      'Ile konstruktorów można umieścić w klasie C++?',
     url: '',
     a1: 'dowolną ilość',
     a2: '1',
@@ -432,7 +457,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Ile destruktorów można umieścić w klasie C++?',
+    question:
+      'Ile destruktorów można umieścić w klasie C++?',
     url: '',
     a1: '1',
     a2: '2',
@@ -443,7 +469,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Czy destruktory mogą przyjmować parametry?',
+    question:
+      'Czy destruktory mogą przyjmować parametry?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -466,7 +493,8 @@ const questions = [
     desc: 'Pusty nawias oznacza nieokreśloną ilość parametrów. Możemy w takim przypadku podawać ich ile chcemy a później się do nich w odpowiedni sposób odwołać. Jeżeli w nawiasie jest "void" to nie ma parametrów np. void make(void){}',
   },
   {
-    question: 'W strukurze C/C++ wszystkie elementy są domyślnie prywatne?',
+    question:
+      'W strukurze C/C++ wszystkie elementy są domyślnie prywatne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -477,7 +505,8 @@ const questions = [
     desc: 'To jest jedyna różnica względem klas w C++. W C# różnice są dużo większe (!)',
   },
   {
-    question: 'W klasie C++ wszystkie elementy są domyślnie prywatne?',
+    question:
+      'W klasie C++ wszystkie elementy są domyślnie prywatne?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -488,7 +517,8 @@ const questions = [
     desc: 'To jest jedyna różnica względem struktur w C++. W C# różnice są dużo większe (!)',
   },
   {
-    question: 'W strukturze C++ wszystkie elementy są domyślnie prywatne?',
+    question:
+      'W strukturze C++ wszystkie elementy są domyślnie prywatne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -499,7 +529,8 @@ const questions = [
     desc: 'To jest jedyna różnica względem klas w C++. W C# różnice są dużo większe (!)',
   },
   {
-    question: 'Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?',
+    question:
+      'Jedyną błędną z punktu widzenia języka C++ konstrukcją jest?',
     url: '',
     a1: 'print("Hello world");',
     a2: 'printf("Hello world");',
@@ -510,7 +541,8 @@ const questions = [
     desc: 'W C++ nie ma takiej funkcji jak "print()"',
   },
   {
-    question: 'Komentarze jednolinijkowe w C/C++ rozpoczynamy od?',
+    question:
+      'Komentarze jednolinijkowe w C/C++ rozpoczynamy od?',
     url: '',
     a1: '//',
     a2: '/*',
@@ -569,7 +601,8 @@ const questions = [
     desc: 'Pojedynczy znak można umieścić między apostrofami. String tylko w cudzysłowiach.',
   },
   {
-    question: 'Klasa std::string przeciąża operator []?',
+    question:
+      'Klasa std::string przeciąża operator []?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -580,7 +613,8 @@ const questions = [
     desc: 'Tak. Zwraca on znak pod danym indeksem. Stringi to gdzieś pod spodem tablice znaków.',
   },
   {
-    question: 'Instrukcje ++a oraz a++ są równoznaczne?',
+    question:
+      'Instrukcje ++a oraz a++ są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -591,7 +625,8 @@ const questions = [
     desc: 'Jeżeli zrobimy b = a++ oraz b = ++a to zobaczymy różnice. W pierwszym przypakdu najpierw do b przypiszemy a, a potem zwiększymy a. W drugim najpierw następuje inkrementacja a później przypisanie.',
   },
   {
-    question: 'Słowo kluczowe "const" oznacza stałą?',
+    question:
+      'Słowo kluczowe "const" oznacza stałą?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -602,7 +637,8 @@ const questions = [
     desc: 'Kompilatory czasami w ramach optymalizacji same oznaczają zmienne jako stałe gdy zobaczą, że dany obiekt jest tylko czytany.',
   },
   {
-    question: 'Instrukcja "#define" służy do tworzenia makr preprocesora?',
+    question:
+      'Instrukcja "#define" służy do tworzenia makr preprocesora?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -613,7 +649,8 @@ const questions = [
     desc: 'Przed kompilacją w trakcie działania preprocesora wszystkie miejsca gdzie wykorzystaliśmy makro są podmieniane na jego wartość.',
   },
   {
-    question: 'Makra preprocesora działają w C/C++ tak samo jak stałe?',
+    question:
+      'Makra preprocesora działają w C/C++ tak samo jak stałe?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -624,7 +661,8 @@ const questions = [
     desc: 'Makro to nie jest zmienna/stała. Przykład: "#define PI 3.13". Wszystkie wystąpienia PI w kodzie zostaną podmienione na 3.14 jeszcze przed właściwą kompilacją.',
   },
   {
-    question: 'Operatory & oraz && są równoznaczne?',
+    question:
+      'Operatory & oraz && są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -635,7 +673,8 @@ const questions = [
     desc: 'Pierwszy to operator bitowy a drugi to operator logiczny.',
   },
   {
-    question: 'Operatory | oraz || są równoznaczne?',
+    question:
+      'Operatory | oraz || są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -646,7 +685,8 @@ const questions = [
     desc: 'Pierwszy to operator bitowy a drugi to operator logiczny.',
   },
   {
-    question: 'Operatory ^ oraz ~ są równoznaczne?',
+    question:
+      'Operatory ^ oraz ~ są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -657,7 +697,8 @@ const questions = [
     desc: 'Pierwszy to bitowa różnica symetryczna (XOR) a drugi to negacja (NOT).',
   },
   {
-    question: 'Operator ^ to operator potęgowania?',
+    question:
+      'Operator ^ to operator potęgowania?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -668,7 +709,8 @@ const questions = [
     desc: 'Jest to operator różnicy symetrycznej (bitowy XOR)',
   },
   {
-    question: 'Który operator wykonuje operację modulo?',
+    question:
+      'Który operator wykonuje operację modulo?',
     url: '',
     a1: '%',
     a2: '#',
@@ -679,7 +721,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Który operator wykonuje operację różnicy symetrycznej?',
+    question:
+      'Który operator wykonuje operację różnicy symetrycznej?',
     url: '',
     a1: '^',
     a2: '~',
@@ -690,7 +733,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem o najwyższym priorytecie w C++ jest',
+    question:
+      'Operatorem o najwyższym priorytecie w C++ jest',
     url: '',
     a1: 'operator castowania (type)',
     a2: 'operator dodawania +',
@@ -701,7 +745,8 @@ const questions = [
     desc: 'W internecie łatwo znaleźć tabelkę z kolejnością operatorów. Jest to mega istotne ze względu na kolejność wykonywanie działań. I nie chodzi tu tylko o proste operatory jak te arytmetyczne.',
   },
   {
-    question: 'Operatorem o najniższym priorytecie w C++ jest',
+    question:
+      'Operatorem o najniższym priorytecie w C++ jest',
     url: '',
     a1: ',',
     a2: '==',
@@ -712,7 +757,8 @@ const questions = [
     desc: 'Z wyżej wymienionej listy najważniejszy jest :: a przecinek jest najmniej ważny.',
   },
   {
-    question: 'Operatorem C++ nie jest',
+    question:
+      'Operatorem C++ nie jest',
     url: '',
     a1: 'extern',
     a2: 'new',
@@ -723,7 +769,8 @@ const questions = [
     desc: 'Wszystkie opcje to słowa kluczowe C++. Operatorem nie jest tylko "extern".',
   },
   {
-    question: 'Który rodzaj operatora wymaga trzech operandów?',
+    question:
+      'Który rodzaj operatora wymaga trzech operandów?',
     url: '',
     a1: 'trynarny',
     a2: 'binarny',
@@ -734,7 +781,8 @@ const questions = [
     desc: 'Jak sama nazwa wskazuje :) Przykład: "int a = b == 2 ? 1 : 4;"',
   },
   {
-    question: 'Operator indeksowania to?',
+    question:
+      'Operator indeksowania to?',
     url: '',
     a1: '[]',
     a2: '()',
@@ -745,7 +793,8 @@ const questions = [
     desc: 'W Javie często stosuje się metody do pobierania wartości z pod danego indeksu np. "kolekcja.get(2)".',
   },
   {
-    question: 'Operator statku kosmicznego to?',
+    question:
+      'Operator statku kosmicznego to?',
     url: '',
     a1: '<=>',
     a2: '==',
@@ -756,7 +805,8 @@ const questions = [
     desc: '"<=>" jest operatorem statku kosmiczengo. Został wprowadzony w C++20 i służy do porównywania obiektów klas.',
   },
   {
-    question: 'Pliki źródłowe języka C++ mają rozszerzenie?',
+    question:
+      'Pliki źródłowe języka C++ mają rozszerzenie?',
     url: '',
     a1: '.cc',
     a2: '.c',
@@ -767,7 +817,8 @@ const questions = [
     desc: 'Tak, *.cc to również rozszerzenie plików C++, ale i tak każdy pisze *.cpp',
   },
   {
-    question: 'Pliki źródłowe języka C mają rozszerzenie?',
+    question:
+      'Pliki źródłowe języka C mają rozszerzenie?',
     url: '',
     a1: '.c',
     a2: '.cc',
@@ -778,7 +829,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Pliki nagłówkowe języka C/C++ mają rozszerzenie?',
+    question:
+      'Pliki nagłówkowe języka C/C++ mają rozszerzenie?',
     url: '',
     a1: '.h',
     a2: '.cc',
@@ -789,7 +841,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Błędnym składniowo zapisem w C/C++ jest?',
+    question:
+      'Błędnym składniowo zapisem w C/C++ jest?',
     url: '',
     a1: 'for();',
     a2: 'for(;;);',
@@ -800,7 +853,8 @@ const questions = [
     desc: 'Pętla for wymaga w nawiasie minimum dwóch średników.',
   },
   {
-    question: 'Pętlą dostępną w C/C++ nie jest?',
+    question:
+      'Pętlą dostępną w C/C++ nie jest?',
     url: '',
     a1: 'foreach',
     a2: 'for',
@@ -811,7 +865,8 @@ const questions = [
     desc: 'Co nie oznacza, że nie ma w nim pętli o podobnym charakterze: "for(auto x in collection){}"',
   },
   {
-    question: 'Typem, który nie jest dostępny w C/C++ jest?',
+    question:
+      'Typem, który nie jest dostępny w C/C++ jest?',
     url: '',
     a1: 'number',
     a2: 'int',
@@ -822,7 +877,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Które słowo jest słowem kluczowym C/C++?',
+    question:
+      'Które słowo jest słowem kluczowym C/C++?',
     url: '',
     a1: 'switch',
     a2: 'ref',
@@ -833,7 +889,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Które słowo NIE jest słowem kluczowym C/C++?',
+    question:
+      'Które słowo NIE jest słowem kluczowym C/C++?',
     url: '',
     a1: 'peek',
     a2: 'if',
@@ -844,7 +901,8 @@ const questions = [
     desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
   },
   {
-    question: 'Kompilatorem języka C/C++ nie jest?',
+    question:
+      'Kompilatorem języka C/C++ nie jest?',
     url: '',
     a1: 'IL',
     a2: 'GCC',
@@ -855,7 +913,8 @@ const questions = [
     desc: 'IL to skrót od Intermediate Language czyli języka pośredniego dla C#/F#/Visual Basic. Pozostałe programy to kompilatory często używane pod spodem przez IDE.',
   },
   {
-    question: 'Język C++ jest nadzbiorem języka C?',
+    question:
+      'Język C++ jest nadzbiorem języka C?',
     url: '/images/ccpp.jpg',
     a1: 'TAK',
     a2: 'NIE',
@@ -866,7 +925,8 @@ const questions = [
     desc: 'Wszystkie elementy C są dostępne w C++.',
   },
   {
-    question: 'Wartość "nullptr" to dokładnie to samo co "NULL"?',
+    question:
+      'Wartość "nullptr" to dokładnie to samo co "NULL"?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -877,7 +937,8 @@ const questions = [
     desc: 'NULL to tak naprawdę liczba 0, nullptr to specjalny typ, który ma zastąpić NULL. Ma to znaczenie przy przeciążaniu funkcji, gdyż NULL może zostać potraktowany jako int a nie jako wskaźnik.',
   },
   {
-    question: 'Zapis "const char* a;" oraz "char* const a" są równoznaczne?',
+    question:
+      'Zapis "const char* a;" oraz "char* const a" są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -888,7 +949,8 @@ const questions = [
     desc: 'W pierwszym przypadku stała jest wartość, na którą wskazuje wskaźnik. W drugim stały jest adres w zmiennej wskaźnikowej.',
   },
   {
-    question: 'Wartość wyrażenia "!true" w C/C++ jest równoznaczna?',
+    question:
+      'Wartość wyrażenia "!true" w C/C++ jest równoznaczna?',
     url: '',
     a1: '0',
     a2: '1',
@@ -899,7 +961,8 @@ const questions = [
     desc: 'Negacja logiczna prawdy to fałsz.',
   },
   {
-    question: 'Ile razy wykona się pętla "while(999999)" w C/C++?',
+    question:
+      'Ile razy wykona się pętla "while(999999)" w C/C++?',
     url: '',
     a1: 'nieskończenie wiele',
     a2: 'ani razu',
@@ -910,7 +973,8 @@ const questions = [
     desc: 'Każda wartość inna niż false/0 to prawda. Pętla wykona się nieskończenie wiele razy. To to samo co while(true){}.',
   },
   {
-    question: 'Ile razy wykona się pętla "while(0)" w C/C++?',
+    question:
+      'Ile razy wykona się pętla "while(0)" w C/C++?',
     url: '',
     a1: 'ani razu',
     a2: 'nieskończenie wiele',
@@ -945,7 +1009,8 @@ const questions = [
     desc: 'Najpierw następuje inkrementacja a później przypisanie (kłania się kolejność operatorów).',
   },
   {
-    question: 'Struktura i unia w C/C++ to to samo?',
+    question:
+      'Struktura i unia w C/C++ to to samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -956,7 +1021,8 @@ const questions = [
     desc: 'Unia to struktura, która przyjmuje rozmiar największego elementu składowego. Pozostałe się na niego nakładają.',
   },
   {
-    question: 'Słowo kluczowe new alokuje pamięć w miejscu określanym mianem?',
+    question:
+      'Słowo kluczowe new alokuje pamięć w miejscu określanym mianem?',
     url: '',
     a1: 'sterty',
     a2: 'stosu',
@@ -967,7 +1033,8 @@ const questions = [
     desc: 'W kazdym języku alokujemy na stercie/heapie.',
   },
   {
-    question: 'Referencja to to samo co wskaźnik?',
+    question:
+      'Referencja to to samo co wskaźnik?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1002,7 +1069,8 @@ const questions = [
     desc: 'Istnieje w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: "int add(int a, int b);" wskaźnik: "int(addPtr*)(int,int) = add;"',
   },
   {
-    question: 'Operatorem pobrania adresu w C/C++ jest?',
+    question:
+      'Operatorem pobrania adresu w C/C++ jest?',
     url: '',
     a1: '&',
     a2: '&&',
@@ -1013,7 +1081,8 @@ const questions = [
     desc: 'Przykład: "int* a_ptr = &a;"',
   },
   {
-    question: 'Operatorem wyłuskania w C/C++ jest?',
+    question:
+      'Operatorem wyłuskania w C/C++ jest?',
     url: '',
     a1: '*',
     a2: '&',
@@ -1024,7 +1093,8 @@ const questions = [
     desc: 'Wyłuskanie to pobranie wartości, na którą wskazuje wskaźnik: "int a = *a_ptr;"',
   },
   {
-    question: 'Operatorem bitowym nie jest?',
+    question:
+      'Operatorem bitowym nie jest?',
     url: '',
     a1: '&&',
     a2: '&',
@@ -1035,7 +1105,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem logicznym nie jest?',
+    question:
+      'Operatorem logicznym nie jest?',
     url: '',
     a1: '&',
     a2: '&&',
@@ -1046,7 +1117,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem logicznym nie jest?',
+    question:
+      'Operatorem logicznym nie jest?',
     url: '',
     a1: '<<',
     a2: '<=',
@@ -1057,7 +1129,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem zasięgu jest?',
+    question:
+      'Operatorem zasięgu jest?',
     url: '',
     a1: '::',
     a2: '()',
@@ -1068,7 +1141,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem trynarnym jest?',
+    question:
+      'Operatorem trynarnym jest?',
     url: '',
     a1: '?:',
     a2: '::',
@@ -1079,7 +1153,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Operatorem unarnym jest?',
+    question:
+      'Operatorem unarnym jest?',
     url: '',
     a1: '!',
     a2: '>=',
@@ -1090,7 +1165,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Słowo kluczowe "static" w C/C++?',
+    question:
+      'Słowo kluczowe "static" w C/C++?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'powoduje, że element klasy jest wspólny dla wszystkich obiektów i jest przypisany do klasy',
@@ -1137,7 +1213,8 @@ const questions = [
     desc: 'Jeżeli nie zwolnimy pamięci dynamicznie alokowanej to następuje jej wyciek. Nie zawsze jest to groźne, ale zwalnianie pamięci powinno być obowiązkowym nawykiem.',
   },
   {
-    question: 'Czy kod: "int size = 10; int tablica[size];" jest poprawny?',
+    question:
+      'Czy kod: "int size = 10; int tablica[size];" jest poprawny?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1160,7 +1237,8 @@ const questions = [
     desc: 'Przy dynamicznej alokacji tablicy rozmiar może być zmienny. Próbujemy tu zdefiniować tablicę dynamiczną.',
   },
   {
-    question: 'W C++ tablica statyczna alokowana jest w następujący sposób?',
+    question:
+      'W C++ tablica statyczna alokowana jest w następujący sposób?',
     url: '',
     a1: 'int tablica[10];',
     a2: 'int* tablica = new int[10];',
@@ -1171,7 +1249,8 @@ const questions = [
     desc: 'Tablica statyczna nazywana jest statyczną, ponieważ ze względu na miejsce gdzie jest alokowana w pamięci jej rozmiar musi być znany w momencie kompilacji.',
   },
   {
-    question: 'W C++ tablica dynamiczna alokowana jest w następujący sposób?',
+    question:
+      'W C++ tablica dynamiczna alokowana jest w następujący sposób?',
     url: '',
     a2: 'int* tablica = new int[10];',
     a1: 'int tablica[10];',
@@ -1182,7 +1261,8 @@ const questions = [
     desc: 'Tablica dynamiczna alokowana jest na stercie. Tak zaalokowaną pamięć trzeba zwalniać.',
   },
   {
-    question: 'W C++ tablica dynamiczna zwalniana jest w następujący sposób?',
+    question:
+      'W C++ tablica dynamiczna zwalniana jest w następujący sposób?',
     url: '',
     a2: 'delete[] tablica;',
     a1: 'delete tablica;',
@@ -1205,7 +1285,8 @@ const questions = [
     desc: 'Za tablicą w pamięci coś się zapewne znajuje. Jest mała szansa na błąd, jeżeli trafimy na granicę strony pamięci.',
   },
   {
-    question: 'Do rzucania wyjątków w C++ służy słowo kluczowe?',
+    question:
+      'Do rzucania wyjątków w C++ służy słowo kluczowe?',
     url: '',
     a1: 'throw',
     a2: 'new',
@@ -1228,7 +1309,8 @@ const questions = [
     desc: 'W C++, C#, Javie służy do tego blok "try...catch...". W pythonie zamiast catch wystepuje except.',
   },
   {
-    question: 'Operacje powodujące wystąpienie wyjątku',
+    question:
+      'Operacje powodujące wystąpienie wyjątku',
     url: '',
     a1: 'powinny być umieszczone w bloku try',
     a2: 'powinny być umieszczone w bloku exception',
@@ -1263,7 +1345,8 @@ const questions = [
     desc: 'Kompilatory generują tylko pusty podstawowy konstruktor bez argumentów.',
   },
   {
-    question: 'Konstruktor posiada typ zwracany?',
+    question:
+      'Konstruktor posiada typ zwracany?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1310,7 +1393,8 @@ const questions = [
     desc: 'Tak, ponieważ po klamrze kończącej klasę możemy odrazu tworzyć jej instancje.',
   },
   {
-    question: 'C++ jest językiem interpretowanym?',
+    question:
+      'C++ jest językiem interpretowanym?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1321,7 +1405,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Komputer 32 bitowy może zaadresować tylko 4GB pamięci?',
+    question:
+      'Komputer 32 bitowy może zaadresować tylko 4GB pamięci?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -1332,7 +1417,8 @@ const questions = [
     desc: 'Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokadnie 4GB.',
   },
   {
-    question: 'Komputer 64 bitowy może przyjąć dowolną ilość ramu?',
+    question:
+      'Komputer 64 bitowy może przyjąć dowolną ilość ramu?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1343,7 +1429,8 @@ const questions = [
     desc: 'Komputery 64 bitowe też mają limit, jednak jest on tak duży, że ludzie zaczeli twierdzić, że go nie ma. W teorii możemy uzyskać 2 ^ 64 (potęga) bajtów.',
   },
   {
-    question: 'Pętla "while(file->EOF){}" będzie wykonywać się do momentu?',
+    question:
+      'Pętla "while(file->EOF){}" będzie wykonywać się do momentu?',
     url: '',
     a1: 'aż wskaźnik pozycji w pliku wskaże jego koniec',
     a2: 'aż wskaźnik pozycji w pliku wskaże jego początek',
@@ -1402,7 +1489,8 @@ const questions = [
     desc: 'Funkcja "rand()" zwraca wartość od 0 od "RAND_MAX". Funkcja modulo ogranicza maksymalny przedział (łatwo sobie to wyobrazić jak ktoś rozumie modulo) a wartość dodawan przesuwa zakres o pewien offset.',
   },
   {
-    question: 'W C++ string można zdefiniować za pomocą konstrukcji?',
+    question:
+      'W C++ string można zdefiniować za pomocą konstrukcji?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'std::string text = "Ala ma kota";',
@@ -1413,7 +1501,8 @@ const questions = [
     desc: 'Oprócz typu "string", który na marginesie znajuje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
   },
   {
-    question: 'W C++ string można zdefiniować za pomocą konstrukcji?',
+    question:
+      'W C++ string można zdefiniować za pomocą konstrukcji?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'std::string text = "Ala ma kota";',
@@ -1448,7 +1537,8 @@ const questions = [
     desc: 'Funkcja ta znajuje się w "cstring". Przypominamy, że pliki poprzedzone literką c pochodzą z języka C!',
   },
   {
-    question: 'Co to jest funkcja inline w C++?',
+    question:
+      'Co to jest funkcja inline w C++?',
     url: '',
     a1: 'funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania',
     a2: 'funkcja jednolinijkowa',
@@ -1459,7 +1549,8 @@ const questions = [
     desc: 'Jest to funkcja, która zostanie wklejona w miejsce wywołania zamiast normalnego wywołania. Normalne wywołanie wiąże się ze skokiem, alokacją stosu itp. Małe funkcje można ustawić na inline.',
   },
   {
-    question: 'W C++ funkcja biblioteki "cmath" służąca do potęgowania to?',
+    question:
+      'W C++ funkcja biblioteki "cmath" służąca do potęgowania to?',
     url: '',
     a1: 'pow(x,y);',
     a2: 'power(x,y);',
@@ -1507,7 +1598,8 @@ const questions = [
   },
   //numeric systems
   {
-    question: 'Liczba 0xAA to w systemie binarnym?',
+    question:
+      'Liczba 0xAA to w systemie binarnym?',
     url: '',
     a1: '0b10101010',
     a2: '0b11001100',
@@ -1518,7 +1610,8 @@ const questions = [
     desc: 'Każda cyfra w hex to nybel. Każdy nybel to 4 bity w systemie binarnym. 0xA == 0b1010 więc 0xAA to 0x10101010',
   },
   {
-    question: 'Liczba 0xFF to w systemie binarnym?',
+    question:
+      'Liczba 0xFF to w systemie binarnym?',
     url: '',
     a1: '0b11111111',
     a2: '0b11011101',
@@ -1529,7 +1622,8 @@ const questions = [
     desc: '0xFF to maksymalna wartość do zapisania w unsigned char/byte.',
   },
   {
-    question: 'Liczba 256 to w systemie szesnastkowym?',
+    question:
+      'Liczba 256 to w systemie szesnastkowym?',
     url: '',
     a1: '0xFF',
     a2: '0x0FF',
@@ -1540,7 +1634,8 @@ const questions = [
     desc: 'Przekraczamy maksymalną wartość unsigned bajtu (0xFF). Jeżeli typem jest unsigned bajt wpisanie do niego 256 da 0. Jeżeli jest to większy typ normalnie zobaczmy 0x100',
   },
   {
-    question: 'Liczba 0b10000000 to w systemie szesnastkowym?',
+    question:
+      'Liczba 0b10000000 to w systemie szesnastkowym?',
     url: '',
     a1: '0x80',
     a2: '0x7F',
@@ -1563,7 +1658,8 @@ const questions = [
     desc: 'Jeżeli bit najbardziej po prawej jest 1 to liczba jest nieparzysta.',
   },
   {
-    question: 'Wartość wyrażenia !5 to?',
+    question:
+      'Wartość wyrażenia !5 to?',
     url: '',
     a1: 'false',
     a2: 'undefined',
@@ -1586,7 +1682,8 @@ const questions = [
     desc: 'Prefix 0x służy do zapisu liczb szesnastkowych. Prefix 0b służy do zapisu liczb binarnych. Liczby w systemie ósemkowym poprzedza się poprostu cyfrą 0.',
   },
   {
-    question: 'Kodowanie liczb ujemnych odbywa się za pomocą metody',
+    question:
+      'Kodowanie liczb ujemnych odbywa się za pomocą metody',
     url: '',
     a1: 'Dopełnień do 2',
     a2: 'Dopełnień do 1',
@@ -1622,7 +1719,8 @@ const questions = [
     desc: 'Przez pojęcie głównych operacji rozumiemy zazwyczaj ilość iteracji lub przejść funkcji.',
   },
   {
-    question: 'Przykładem algorytmu typu dziel i zwyciężaj jest?',
+    question:
+      'Przykładem algorytmu typu dziel i zwyciężaj jest?',
     url: '',
     a1: 'quick-sort',
     a2: 'insert-sort',
@@ -1633,7 +1731,8 @@ const questions = [
     desc: 'Algorytm quick-sort dzieli zbiór danych na mniejsze części i je sortuje.',
   },
   {
-    question: 'Przykładem algorytmu zachłannego jest?',
+    question:
+      'Przykładem algorytmu zachłannego jest?',
     url: '',
     a1: 'alg. dijkstra',
     a2: 'insert-sort',
@@ -1644,7 +1743,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Czy graf na obrazku jest skierowany?',
+    question:
+      'Czy graf na obrazku jest skierowany?',
     url: '/images/rzadgrafu.png',
     a1: 'NIE',
     a2: 'TAK',
@@ -1655,7 +1755,8 @@ const questions = [
     desc: 'Strzałki na krawędziach mówią czy graf jest skierowany.',
   },
   {
-    question: 'Czy graf na obrazku jest skierowany?',
+    question:
+      'Czy graf na obrazku jest skierowany?',
     url: '/images/grag.svg',
     a1: 'TAK',
     a2: 'NIE',
@@ -1666,7 +1767,8 @@ const questions = [
     desc: 'Strzałki na krawędziach mówią czy graf jest skierowany.',
   },
   {
-    question: 'Czy graf na obrazku jest drzewem?',
+    question:
+      'Czy graf na obrazku jest drzewem?',
     url: '/images/notree.png',
     a1: 'NIE',
     a2: 'TAK',
@@ -1677,7 +1779,8 @@ const questions = [
     desc: 'Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
   },
   {
-    question: 'Czy graf na obrazku jest drzewem?',
+    question:
+      'Czy graf na obrazku jest drzewem?',
     url: '/images/tree.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -1688,7 +1791,8 @@ const questions = [
     desc: 'Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
   },
   {
-    question: 'Algorytmem grafowym nie jest?',
+    question:
+      'Algorytmem grafowym nie jest?',
     url: '',
     a1: 'Algorytm Węgierski',
     a2: 'Algorytm Dijkstry',
@@ -1747,7 +1851,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Bloczek z ilustracji to blok?',
+    question:
+      'Bloczek z ilustracji to blok?',
     url: '/images/warunek.png',
     a1: 'warunku',
     a2: 'operacji',
@@ -1758,7 +1863,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Algorytm można przedstawić za pomocą?',
+    question:
+      'Algorytm można przedstawić za pomocą?',
     url: '',
     a1: 'każdym z wymienionych sposobów',
     a2: 'opisem słownym',
@@ -1769,7 +1875,8 @@ const questions = [
     desc: 'Pseudokod to mnie lub bardziej podobna do rzeczywistego kodu forma zapisu.',
   },
   {
-    question: 'Co oznacza bloczek na obrazku?',
+    question:
+      'Co oznacza bloczek na obrazku?',
     url: '/images/warunek.png',
     a1: 'warunek logiczny',
     a2: 'wprowadzenie danych',
@@ -1780,7 +1887,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Rodzajem algorytmu nie jest?',
+    question:
+      'Rodzajem algorytmu nie jest?',
     url: '',
     a1: 'alg. kroczący',
     a2: 'alg. sekwencyjny',
@@ -1791,7 +1899,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Algorytm na obrazku to?',
+    question:
+      'Algorytm na obrazku to?',
     url: '/images/algsek.png',
     a1: 'alg. iteracyjny',
     a2: 'alg. sekwencyjny',
@@ -1815,7 +1924,8 @@ const questions = [
     desc: 'Na zewnątrz wystawiamy najmniejsze konieczne API klasy.',
   },
   {
-    question: 'Wielopostaciowość nazywana jest?',
+    question:
+      'Wielopostaciowość nazywana jest?',
     url: '',
     a1: 'polimorfizmem',
     a2: 'dziedziczeniem',
@@ -1826,7 +1936,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Zależnością klasy jest?',
+    question:
+      'Zależnością klasy jest?',
     url: '',
     a1: 'inna klasa w formie obiektu tej klasy',
     a2: 'każde pole klasy',
@@ -1849,7 +1960,8 @@ const questions = [
     desc: 'Metoda abstrakcyjna lub czysto wirtualna nie ma ciała. Musi być zatem zaimplementowana.',
   },
   {
-    question: 'Możliwe jest utworzenie obiektu klasy abstrakcyjnej?',
+    question:
+      'Możliwe jest utworzenie obiektu klasy abstrakcyjnej?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1860,7 +1972,8 @@ const questions = [
     desc: 'Nie można, ponieważ klasa taka ma metody bez ciała.',
   },
   {
-    question: 'Możliwe jest utworzenie obiektu interfejsu (C#)?',
+    question:
+      'Możliwe jest utworzenie obiektu interfejsu (C#)?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -1871,7 +1984,8 @@ const questions = [
     desc: 'Nie można, ponieważ interfejs jset odpowiednikiem klasy abstrakcyjnej.',
   },
   {
-    question: 'Można utworzyć referencje/wskaźnik typu klasy abstrakcyjnej?',
+    question:
+      'Można utworzyć referencje/wskaźnik typu klasy abstrakcyjnej?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -1882,7 +1996,8 @@ const questions = [
     desc: 'Mamy tu na mysli zmienną typu abstrakcyjnego, do której przypisywany jest obiekt normalnej klasy dziedziczącej z tej abstrakcyjnej.',
   },
   {
-    question: 'Z ilu klas może dziedziczyć klasa w C#/Java/Python?',
+    question:
+      'Z ilu klas może dziedziczyć klasa w C#/Java/Python?',
     url: '',
     a1: '1',
     a2: '2',
@@ -1893,7 +2008,8 @@ const questions = [
     desc: 'Dokładnie z jednej. Ma to znaczenie przy plimorfiźmie.',
   },
   {
-    question: 'Z ilu klas może dziedziczyć klasa w C++?',
+    question:
+      'Z ilu klas może dziedziczyć klasa w C++?',
     url: '',
     a1: 'dowolnej ilości',
     a2: '2',
@@ -1904,7 +2020,8 @@ const questions = [
     desc: 'W C++ można dziedziczyć z wielu klas, ale utrudnia to temat polimorfizmu.',
   },
   {
-    question: 'Przekazywanie zależności do klasy poprzez konstruktor nazywamy?',
+    question:
+      'Przekazywanie zależności do klasy poprzez konstruktor nazywamy?',
     url: '',
     a1: 'wstrzykiwaniem zależności',
     a2: 'odwracaniem zależności',
@@ -1915,7 +2032,8 @@ const questions = [
     desc: 'Jest to Dependency Injection.',
   },
   {
-    question: 'Obiekt klasy może być przekazany do funkcji przez (C++)?',
+    question:
+      'Obiekt klasy może być przekazany do funkcji przez (C++)?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'wartość',
@@ -1926,7 +2044,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Metoda ustawiająca prywatne pole to?',
+    question:
+      'Metoda ustawiająca prywatne pole to?',
     url: '',
     a1: 'setter',
     a2: 'getter',
@@ -1937,7 +2056,8 @@ const questions = [
     desc: 'W C# można do tego celu wykorzystać właściwość (konstrukcja z get i set)',
   },
   {
-    question: 'Metoda zwracająca prywatne pole to?',
+    question:
+      'Metoda zwracająca prywatne pole to?',
     url: '',
     a1: 'getter',
     a2: 'setter',
@@ -1948,7 +2068,8 @@ const questions = [
     desc: 'W C# można do tego celu wykorzystać właściwość (konstrukcja z get i set)',
   },
   {
-    question: 'Konstruktor?',
+    question:
+      'Konstruktor?',
     url: '',
     a1: 'w typowych przypadkach powinien być funkcją typu public',
     a2: 'może być funkcja wirtualną',
@@ -1959,7 +2080,8 @@ const questions = [
     desc: 'Możliwe jest utworznie konstruktora prywatnego chociaży w celu utworznia singletona.',
   },
   {
-    question: 'Jak nazywamy składniki, z których zbudowane są obiekty?',
+    question:
+      'Jak nazywamy składniki, z których zbudowane są obiekty?',
     url: '',
     a1: 'pola i metody',
     a2: 'klasy i metody',
@@ -1970,7 +2092,8 @@ const questions = [
     desc: 'W C# dochodzą nam jeszcze właściwości (get, set).',
   },
   {
-    question: 'Na czym polega hermetyzacja?',
+    question:
+      'Na czym polega hermetyzacja?',
     url: '',
     a1: 'Na zabezpieczeniu składników obiektu przez ich bezpośrednią modyfikacją',
     a2: 'Na zabezpieczeniu konstruktora klasy przed niepowołanym wywołaniem',
@@ -1981,7 +2104,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Na czym polega dziedziczenie w programowaniu obiektowym?',
+    question:
+      'Na czym polega dziedziczenie w programowaniu obiektowym?',
     url: '',
     a1: 'Na tworzeniu nowej klasy na podstawie jednej lub kilku już istniejących klas',
     a2: 'Na łączeniu obiektów',
@@ -1992,7 +2116,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Czy pole i właściwość w terminologi C# to to samo?',
+    question:
+      'Czy pole i właściwość w terminologi C# to to samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2015,7 +2140,8 @@ const questions = [
     desc: 'Interfejs można porównać do kontraktu, który mówi jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działa tak samo z tym, że ona może mieć już część metod zaimplementowaną.',
   },
   {
-    question: 'Programowanie strukturalne i funkcyjne to to samo?',
+    question:
+      'Programowanie strukturalne i funkcyjne to to samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2026,7 +2152,8 @@ const questions = [
     desc: 'Programowanie funkcyjne opiera się na traktowaniu funkcji jak obiektów.',
   },
   {
-    question: 'Obiekt to instancja klasy?',
+    question:
+      'Obiekt to instancja klasy?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2061,7 +2188,8 @@ const questions = [
     desc: 'To słowo kluczowe jest istotne z punktu widzenia polimorfizmu.',
   },
   {
-    question: 'Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?',
+    question:
+      'Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2072,7 +2200,8 @@ const questions = [
     desc: 'Ma dostęp do elementów publicznych oraz chronionych.',
   },
   {
-    question: 'Klasa dziedzicząca dziedziczy prywatne składowe klasy bazowej?',
+    question:
+      'Klasa dziedzicząca dziedziczy prywatne składowe klasy bazowej?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2083,7 +2212,8 @@ const questions = [
     desc: 'Elementy prywatne są dziedziczone, ale nie można się do nich bezpośrednio odwołać wewnątrz klasy dziedziczącej.',
   },
   {
-    question: 'Klasy oferują możliwość przeciążania wszystkich operatorów?',
+    question:
+      'Klasy oferują możliwość przeciążania wszystkich operatorów?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2094,7 +2224,8 @@ const questions = [
     desc: 'Nie da się przeciążyć operatora trynarnego ?:',
   },
   {
-    question: 'Gdy argumentem funkcji jest struktura/obiekt?',
+    question:
+      'Gdy argumentem funkcji jest struktura/obiekt?',
     url: '',
     a1: 'aby funkcja zmieniła oryginał, argumentem musi być wskaźnik do struktury/obiektu',
     a2: 'funkcja może zmienić oryginał struktury/obiektu',
@@ -2105,7 +2236,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Jaką klasę nazywamy abstrakcyjną?',
+    question:
+      'Jaką klasę nazywamy abstrakcyjną?',
     url: '',
     a1: 'Zawierająca przynajmniej jedną metodę czysto wirtualną',
     a2: 'Taką, która jest jednocześnie klasą bazową i pochodną',
@@ -2116,7 +2248,8 @@ const questions = [
     desc: 'Metoda czysto wirtualna to metoda bez implementacji/ciała.',
   },
   {
-    question: 'Metoda wirtualna…',
+    question:
+      'Metoda wirtualna…',
     url: '',
     a1: 'Może być przedefiniowana w klasie pochodnej',
     a2: 'Nie posiada definicji',
@@ -2127,7 +2260,8 @@ const questions = [
     desc: 'Metoda wirtualna to metoda, która może zostać nadpisana, ale nie musi.',
   },
   {
-    question: 'Metoda czysto wirtualna…',
+    question:
+      'Metoda czysto wirtualna…',
     url: '',
     a1: 'Nie posiada definicji',
     a2: 'Nie zwraca',
@@ -2150,7 +2284,8 @@ const questions = [
     desc: 'Jeżeli mamy do czynnienia ze wskaźnikiem to do jego składowych odwołujemy się za pomocą operatora "->"',
   },
   {
-    question: 'Na czym polega polimorfizm?',
+    question:
+      'Na czym polega polimorfizm?',
     url: '',
     a1: 'Wskaźnik/Referencję klasy bazowej można powiązać z obiektami klas pochodnych',
     a2: 'Konstruktor klasy bazowej staje się wirtualny',
@@ -2161,7 +2296,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Czy klasa pochodna dziedziczy z klasy bazowej konstruktor?',
+    question:
+      'Czy klasa pochodna dziedziczy z klasy bazowej konstruktor?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2172,7 +2308,8 @@ const questions = [
     desc: 'Konstruktory i destruktory nie są dziedziczone. Jednak klasa pochodna ma do nich dostęp (może je wywołać co jest zalecane).',
   },
   {
-    question: 'Czy klasa pochodna dziedziczy z klasy bazowej destruktor?',
+    question:
+      'Czy klasa pochodna dziedziczy z klasy bazowej destruktor?',
     url: '',
     a1: 'NIE',
     a2: 'TAk',
@@ -2231,7 +2368,8 @@ const questions = [
     desc: 'Tak. Przykład z cenami. Mamy prywatne pole cena brutto. Do niego mamy trzy gettery (netto, brutto, tara), które oprócz zwrócenia wykonują odpowiednie przeliczenie.',
   },
   {
-    question: 'Czy klasa może dziedziczyć sama z siebie?',
+    question:
+      'Czy klasa może dziedziczyć sama z siebie?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2242,7 +2380,8 @@ const questions = [
     desc: 'Oczywiście, że nie.',
   },
   {
-    question: 'Czy w C# interfejs może zawierać pola?',
+    question:
+      'Czy w C# interfejs może zawierać pola?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2253,7 +2392,8 @@ const questions = [
     desc: 'Nie może. W C# interfejs oprócz metod może zwierać właściwości.',
   },
   {
-    question: 'Czy słowo kluczowe this może mieć wartość NULL?',
+    question:
+      'Czy słowo kluczowe this może mieć wartość NULL?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2264,7 +2404,8 @@ const questions = [
     desc: 'Nie jest to możliwe.',
   },
   {
-    question: 'Czy słowa kluczowego "this" można użyć w metodzie statycznej?',
+    question:
+      'Czy słowa kluczowego "this" można użyć w metodzie statycznej?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2275,7 +2416,8 @@ const questions = [
     desc: 'Słowo kluczowe "this" odnosi się do danej instancji klasy. W przypadku statycznośc operujemy na elementach przypisanych do klasy a nie do obiektu. Nie ma więc mowy o this.',
   },
   {
-    question: 'Czy klasa może dziedziczyć sama z siebie?',
+    question:
+      'Czy klasa może dziedziczyć sama z siebie?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2286,7 +2428,8 @@ const questions = [
     desc: 'Oczywiście, że nie',
   },
   {
-    question: 'Ile pól zawiera klasa na obrazku?',
+    question:
+      'Ile pól zawiera klasa na obrazku?',
     url: '/images/classtemplate.png',
     a1: '4',
     a2: '2',
@@ -2297,7 +2440,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Językiem obsługującym wieloklasowe dziedziczenie jest?',
+    question:
+      'Językiem obsługującym wieloklasowe dziedziczenie jest?',
     url: '',
     a1: 'C++',
     a2: 'C',
@@ -2308,7 +2452,8 @@ const questions = [
     desc: 'Tylko C++ obsługuje wieloklasowe dziedziczenie.',
   },
   {
-    question: 'Cztery filary programowania obiektowego to?',
+    question:
+      'Cztery filary programowania obiektowego to?',
     url: '',
     a1: 'Dziedziczenie, Polimorfizm, Hermetyzacja, Abstrakcja',
     a2: 'Public, Protected, Private, Interfejs',
@@ -2331,7 +2476,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Najważniejszą cechą klasy abstrakcyjnej jest:',
+    question:
+      'Najważniejszą cechą klasy abstrakcyjnej jest:',
     url: '',
     a1: 'brak możliwości stworzenia obiektu tej klasy',
     a2: 'brak możliwości dziedziczenia z tej klasy',
@@ -2343,7 +2489,8 @@ const questions = [
   },
   //C#
   {
-    question: 'Język C# jest podobny do języka?',
+    question:
+      'Język C# jest podobny do języka?',
     url: '/images/csharp.jpeg',
     a1: 'Java',
     a2: 'Javascript',
@@ -2354,7 +2501,8 @@ const questions = [
     desc: 'C# to w wielu miejscach kopiuj wklej z Javy i odwrotnie.',
   },
   {
-    question: 'Każdy program napisany w C# musi mieć funkcję Main?',
+    question:
+      'Każdy program napisany w C# musi mieć funkcję Main?',
     url: '/images/csharp.jpeg',
     a1: 'Od .NET 6 nie każdy',
     a2: 'Od .NET 6 każdy',
@@ -2365,7 +2513,8 @@ const questions = [
     desc: 'W .NET 6 trochę na siłe uprościli zapis i nie ma już funkcji main. Plik bazowy wygląda jak np. skrypt w pytonie czy javascript.',
   },
   {
-    question: 'C# oferuje obsługę wskaźników?',
+    question:
+      'C# oferuje obsługę wskaźników?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2376,7 +2525,8 @@ const questions = [
     desc: 'Tak, ale kod taki trzeba oznaczyć słowem kluczowym "unsafe"',
   },
   {
-    question: 'W C# funkcja main jest statyczna?',
+    question:
+      'W C# funkcja main jest statyczna?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2411,7 +2561,8 @@ const questions = [
     desc: 'Garbage Collector liczy ile jest aktywnych referencji na dany obiekt w pamięci. Jeżeli nie ma żadnej to go usuwa.',
   },
   {
-    question: 'Plik źródłowy języka C# ma rozszerzenie?',
+    question:
+      'Plik źródłowy języka C# ma rozszerzenie?',
     url: '',
     a1: '.cs',
     a2: '.cc',
@@ -2422,7 +2573,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W C# "Console.Write()" wstawia enter na końcu?',
+    question:
+      'W C# "Console.Write()" wstawia enter na końcu?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2433,7 +2585,8 @@ const questions = [
     desc: 'Console.WriteLine() wstawia enter na końcu. Możemy jednak wrzucić do Write() string ze znakiem "\\n"',
   },
   {
-    question: 'W C# "Console.WriteLine()" wstawia enter na końcu?',
+    question:
+      'W C# "Console.WriteLine()" wstawia enter na końcu?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2444,7 +2597,8 @@ const questions = [
     desc: 'Console.WriteLine() wstawia enter na końcu. ',
   },
   {
-    question: 'W C# da się napisać metodę poza klasą?',
+    question:
+      'W C# da się napisać metodę poza klasą?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2455,7 +2609,8 @@ const questions = [
     desc: 'C# jest typowo obiektowym językiem. Nie da się napisać funkcji poza klasą.',
   },
   {
-    question: 'W C# da się napisać klasę w klasie?',
+    question:
+      'W C# da się napisać klasę w klasie?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2466,7 +2621,8 @@ const questions = [
     desc: 'Tak, możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej.',
   },
   {
-    question: 'Typem z języka C# niedostępnym w innych językach jest?',
+    question:
+      'Typem z języka C# niedostępnym w innych językach jest?',
     url: '',
     a1: 'IntPtr',
     a2: 'String',
@@ -2501,7 +2657,8 @@ const questions = [
     desc: 'Klasy definują typy referencyjne. Struktury definują typy wartościowe.',
   },
   {
-    question: 'Struktura definuje typ referencyjny w języku C#?',
+    question:
+      'Struktura definuje typ referencyjny w języku C#?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2512,7 +2669,8 @@ const questions = [
     desc: 'W C# struktury i klasy różnią się właśnie tym, że struktura definuje typ wartościowy a klasa referencyjny. Jeżeli zależy nam na przekazywaniu przez wartość to używamy struktur. Jeżeli chcemy referencje to klas.',
   },
   {
-    question: 'Klasa definuje typ referencyjny w języku C#?',
+    question:
+      'Klasa definuje typ referencyjny w języku C#?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2523,7 +2681,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Delegat w języku C# to?',
+    question:
+      'Delegat w języku C# to?',
     url: '',
     a1: 'specjalny typ do przechowywania referencji na funkcję',
     a2: 'specjalny typ do przechowywania typów prostych',
@@ -2534,7 +2693,8 @@ const questions = [
     desc: 'Delegat to mechaniz podobny do wskaźników na funkcję w C/C++.',
   },
   {
-    question: 'Delegaty w C# to mechanizm podobny do wskaźników na funkcję?',
+    question:
+      'Delegaty w C# to mechanizm podobny do wskaźników na funkcję?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2545,7 +2705,8 @@ const questions = [
     desc: 'Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję.',
   },
   {
-    question: 'Delegaty w C# to typy referencyjne?',
+    question:
+      'Delegaty w C# to typy referencyjne?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2556,7 +2717,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Typem delegata w C# NIE jest?',
+    question:
+      'Typem delegata w C# NIE jest?',
     url: '',
     a1: 'Task<T>',
     a2: 'Action<T>',
@@ -2567,7 +2729,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W C# delegat "Func<int, double, bool>" zwraca?',
+    question:
+      'W C# delegat "Func<int, double, bool>" zwraca?',
     url: '',
     a1: 'bool',
     a2: 'double',
@@ -2578,7 +2741,8 @@ const questions = [
     desc: 'Func to delegat do funkcji, które coś zwracają. Ostatni parametr generyczny mówi jaki to typ. Pozostałe typy to typy argumentów.',
   },
   {
-    question: 'W C# delegat "Action<string, int, int>" zwraca?',
+    question:
+      'W C# delegat "Action<string, int, int>" zwraca?',
     url: '',
     a1: 'nic',
     a2: 'bool',
@@ -2589,7 +2753,8 @@ const questions = [
     desc: 'Action to delegat do funkcji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów.',
   },
   {
-    question: 'W C# delegat "Predicate<int>" zwraca?',
+    question:
+      'W C# delegat "Predicate<int>" zwraca?',
     url: '',
     a1: 'bool',
     a2: 'double',
@@ -2612,7 +2777,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Istnieje w C# różnica między zmienną typu "var" a "dynamic"?',
+    question:
+      'Istnieje w C# różnica między zmienną typu "var" a "dynamic"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2623,7 +2789,8 @@ const questions = [
     desc: '"var" jest podmieniane na odpowiedni typ w momencie kompilacji. "dynamic" powala dynamicznie określić typ jak program już działa".',
   },
   {
-    question: 'Istnieje w C# różnica między zmienną typu "const" a "readonly"?',
+    question:
+      'Istnieje w C# różnica między zmienną typu "const" a "readonly"?',
     url: '/images/readonly',
     a1: 'TAK',
     a2: 'NIE',
@@ -2658,7 +2825,8 @@ const questions = [
     desc: 'Funkcji parsującej trzeba wskazać rodzaj separatora.',
   },
   {
-    question: 'Aby poznać długość stringa w C# należy posłużyć się?',
+    question:
+      'Aby poznać długość stringa w C# należy posłużyć się?',
     url: '',
     a1: '.Length',
     a2: '.Length()',
@@ -2669,7 +2837,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Konstrukcja alokująca tablicę w C# to?',
+    question:
+      'Konstrukcja alokująca tablicę w C# to?',
     url: '',
     a1: 'int[] tablica = new int[5];',
     a2: 'int tablica[] = new int[5];',
@@ -2680,7 +2849,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Konstrukcja alokująca tablicę 2D w C# to?',
+    question:
+      'Konstrukcja alokująca tablicę 2D w C# to?',
     url: '',
     a1: 'int[,] tablica2 = new int[5,2];',
     a2: 'int[][] tablica2 = new[5][2] int;',
@@ -2691,7 +2861,8 @@ const questions = [
     desc: '[,] konstrukcja jest poprawna w C#. W C++ była by to konstrukcja [][].',
   },
   {
-    question: 'Tablica postrzępiona w C# to?',
+    question:
+      'Tablica postrzępiona w C# to?',
     url: '',
     a1: 'Tablica 2D gdzie każda podtablica jest innego rozmiaru',
     a2: 'Tablica 2D gdzie każda podtablica jest równa',
@@ -2702,7 +2873,8 @@ const questions = [
     desc: 'Jeżeli podtablice tablicy dwuwymiarowej mają różne rozmiary to jest to tablica postrzępiona.',
   },
   {
-    question: 'String w C# jest typem referencyjnym?',
+    question:
+      'String w C# jest typem referencyjnym?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2713,7 +2885,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Rekord w C# to?',
+    question:
+      'Rekord w C# to?',
     url: '',
     a1: 'niemutowalny byt podobny do klasy, który przechowuje tylko dane we właściwościach',
     a2: 'byt podobny do klasy, który przechowuje tylko dane we właściwościach',
@@ -2724,7 +2897,8 @@ const questions = [
     desc: 'Rekordy to klasy na dane, których nie da się modyfikować po zainicjowaniu.',
   },
   {
-    question: 'Tablica w C# jest typem referencyjnym?',
+    question:
+      'Tablica w C# jest typem referencyjnym?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2735,7 +2909,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'List<T> w C# jest typem referencyjnym?',
+    question:
+      'List<T> w C# jest typem referencyjnym?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2746,7 +2921,8 @@ const questions = [
     desc: 'List to klasa a klasy definiują typy referencyjne.',
   },
   {
-    question: 'Enum w C# jest typem referencyjnym?',
+    question:
+      'Enum w C# jest typem referencyjnym?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2769,7 +2945,8 @@ const questions = [
     desc: 'Obiekt klasy zostanie zaalokowany za stercie, a obiekt struktury na stosie.',
   },
   {
-    question: 'W C# referencja na typ referencyjny i tak jest na stosie?',
+    question:
+      'W C# referencja na typ referencyjny i tak jest na stosie?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2876,7 +3053,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Klasa w C# służąca do tworznia stringów to?',
+    question:
+      'Klasa w C# służąca do tworznia stringów to?',
     url: '',
     a1: 'StringBuilder',
     a2: 'BuildString',
@@ -2887,7 +3065,8 @@ const questions = [
     desc: 'StringBuilder buduje string w bardziej optymalny sposób. Ma to duże znaczenie gdy np. doklejamy coś do stringa w pętli.',
   },
   {
-    question: 'Parametry generyczne umieszczamy zazwyczaj w?',
+    question:
+      'Parametry generyczne umieszczamy zazwyczaj w?',
     url: '',
     a1: '<>',
     a2: '()',
@@ -2898,7 +3077,8 @@ const questions = [
     desc: 'Parametrem generycznym jest zawsze typ. Np. "Func<int, int>"',
   },
   {
-    question: 'W C# interfejsy nazywa się zaczynając od litery I?',
+    question:
+      'W C# interfejsy nazywa się zaczynając od litery I?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2909,7 +3089,8 @@ const questions = [
     desc: 'Taką konwencję przyjeli programiści C#.',
   },
   {
-    question: 'W C# List<T> nie różni się niczym od zwykłej tablicy?',
+    question:
+      'W C# List<T> nie różni się niczym od zwykłej tablicy?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2920,7 +3101,8 @@ const questions = [
     desc: 'Lista to typ na wyższym poziomie abstrakcji. Oferuje bogatsze API niż zwykła tablica.',
   },
   {
-    question: 'Metoda LINQ First() działa tak samo jak FirstOrDefault()?',
+    question:
+      'Metoda LINQ First() działa tak samo jak FirstOrDefault()?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2931,7 +3113,8 @@ const questions = [
     desc: 'Jeżeli kolekcja typu T będzie pusta First() spowoduje błąd, a FirstOrDefault() zwróci domyślną wartość danego typu T czyli np. 0 dla int albo null dla typu referencyjnego.',
   },
   {
-    question: 'W C# List<T> to to samo co IEnumerable<T>?',
+    question:
+      'W C# List<T> to to samo co IEnumerable<T>?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2942,7 +3125,8 @@ const questions = [
     desc: 'List dziedziczy z interfejsu IEnumerable. Jeżeli posługujemy się referencją typu IEnumerable możliwe jest odłożenie w czasie pewnych operacji na kolecji.',
   },
   {
-    question: 'Do czego służy metoda ToString() w C#?',
+    question:
+      'Do czego służy metoda ToString() w C#?',
     url: '',
     a1: 'Zwrócenia reprezentacji tekstowej obiektu',
     a2: 'Parsowania obiektu na tekst',
@@ -2977,7 +3161,8 @@ const questions = [
     desc: '"a is {}" to odpowiednik "a != null"',
   },
   {
-    question: 'Słowo kluczowe służące do nadpisywania metod klasy bazowej to?',
+    question:
+      'Słowo kluczowe służące do nadpisywania metod klasy bazowej to?',
     url: '',
     a1: 'override',
     a2: 'virtual',
@@ -2988,7 +3173,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Słowo kluczowe języka C# "async" w nagłówku funkcji oznacza?',
+    question:
+      'Słowo kluczowe języka C# "async" w nagłówku funkcji oznacza?',
     url: '',
     a1: 'operację asynchroniczą',
     a2: 'operację synchroniczną',
@@ -2999,7 +3185,8 @@ const questions = [
     desc: 'Metoda taka jest asynchroniczna.',
   },
   {
-    question: 'Słowo kluczowe języka C# "await" automatycznie powoduje?',
+    question:
+      'Słowo kluczowe języka C# "await" automatycznie powoduje?',
     url: '',
     a1: 'że metoda staje się asynchroniczna',
     a2: 'że metoda w danym miejscu może się zakończyć',
@@ -3010,7 +3197,8 @@ const questions = [
     desc: 'Jeżeli w metodzie pada słowo kluczowe "await" to metoda staje się asynchroniczna. Trzeba ją oznaczyć jako metodę "async" albo popraostu zwrócić typ Task<T>.',
   },
   {
-    question: 'W C# typem zwracanym z metod asynchronicznych jest?',
+    question:
+      'W C# typem zwracanym z metod asynchronicznych jest?',
     url: '',
     a1: 'Task<T>',
     a2: 'Future<T>',
@@ -3021,7 +3209,8 @@ const questions = [
     desc: 'W C# jest to Task, w Dart Future, w JS Promise.',
   },
   {
-    question: 'Typy wartościowe można przekazać w formie referencji za pomocą?',
+    question:
+      'Typy wartościowe można przekazać w formie referencji za pomocą?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'słowa kluczowego "ref"',
@@ -3032,7 +3221,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W C# konwencja nazw stosuje zazwyczaj?',
+    question:
+      'W C# konwencja nazw stosuje zazwyczaj?',
     url: '',
     a1: 'odmiany cammelCase',
     a2: 'odmiany snake_case',
@@ -3055,7 +3245,8 @@ const questions = [
     desc: 'Najczęściej dopisuje się "unsafe" do nagłówka funkcji np. "public static unsafe void Main(){}"',
   },
   {
-    question: 'Klasą nadrzędną dla wyjątków w C# jest?',
+    question:
+      'Klasą nadrzędną dla wyjątków w C# jest?',
     url: '',
     a1: 'Exception',
     a2: 'Throwable',
@@ -3066,7 +3257,8 @@ const questions = [
     desc: 'Chcąc stworzyć własny wyjątek budujemy klasę dziedziczącą z Exceptions.',
   },
   {
-    question: 'Pojęcie statycznego polimorfizmu oznacza?',
+    question:
+      'Pojęcie statycznego polimorfizmu oznacza?',
     url: '',
     a1: 'przeciążanie funkcji',
     a2: 'nadpisywanie funkcji',
@@ -3077,7 +3269,8 @@ const questions = [
     desc: 'Chodzi o zwykłe przeciążanie funkcji (ta sama nazwa, różne argumenty).',
   },
   {
-    question: 'Słowo kluczowe służące do napisywania metod klasy bazowej to?',
+    question:
+      'Słowo kluczowe służące do napisywania metod klasy bazowej to?',
     url: '',
     a1: 'override',
     a2: 'virtual',
@@ -3088,7 +3281,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Referencja w porównaniu do wskaźnika?',
+    question:
+      'Referencja w porównaniu do wskaźnika?',
     url: '',
     a1: 'nie pozwala na arytmetykę na adresie',
     a2: 'pozwala na arytmetykę na adresie',
@@ -3099,7 +3293,8 @@ const questions = [
     desc: 'Referencja jest dużo bezpieczniejsza. Większość błędów bezpieczeństwa w oprogramowaniu wywodzi się z niepoprawnego użycia wskaźników lub innego niedopatrzenia z nimi związanego.',
   },
   {
-    question: 'Która pętla nie jest dostępna w C#?',
+    question:
+      'Która pętla nie jest dostępna w C#?',
     url: '',
     a1: 'for(auto el in collection){}',
     a2: 'foreach(var el in collection){}',
@@ -3110,7 +3305,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Skrót LINQ oznacza?',
+    question:
+      'Skrót LINQ oznacza?',
     url: '',
     a1: 'Language Integrated Query',
     a2: 'Link List Inner Query',
@@ -3121,7 +3317,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Metoda rozszerzająca to metoda?',
+    question:
+      'Metoda rozszerzająca to metoda?',
     url: '',
     a1: 'statyczna, która zachowuje się jakby była częścią obiektu',
     a2: 'zwykła metoda, która zachowuje się jakby była częścią obiektu',
@@ -3132,7 +3329,8 @@ const questions = [
     desc: 'Jest to metoda zdefiniowana w innej klasie jako statyczna, ale wyświetla się jako składowa klasy, którą rozszerza.',
   },
   {
-    question: 'Interpolacji stringów w C# można dokonać składnią?',
+    question:
+      'Interpolacji stringów w C# można dokonać składnią?',
     url: '',
     a1: '$"Ala ma {count} kotów!"',
     a2: 'f"Ala ma {count} kotów!"',
@@ -3143,7 +3341,8 @@ const questions = [
     desc: 'Jest to element języka eliminujący formatowanie stringów za pomocą ich konkatenacji ze zmiennymi.',
   },
   {
-    question: 'Na obrazku zaznaczono',
+    question:
+      'Na obrazku zaznaczono',
     url: '/images/attribute.png',
     a1: 'atrybuty',
     a2: 'modyfikatory',
@@ -3202,7 +3401,8 @@ const questions = [
     desc: 'Nie każda funkcja zrobi to za nas, a jeżeli tego nie zrobi to możemy spodziewać się wyjątku.',
   },
   {
-    question: 'Czy deklarowanie zmiennych jako "var" w C# to dobra praktyka?',
+    question:
+      'Czy deklarowanie zmiennych jako "var" w C# to dobra praktyka?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3213,7 +3413,8 @@ const questions = [
     desc: 'Powinno się pisać typ precyzyjnie. Ułatwia to później analizę kodu.',
   },
   {
-    question: 'W C# wyjątek "NullReferenceException" oznacza, że?',
+    question:
+      'W C# wyjątek "NullReferenceException" oznacza, że?',
     url: '',
     a1: 'zmienna referencyjna, na której wykonaliśmy operację jest nullem',
     a2: 'zmienna referencyjna, na której wykonujemy operacje jest typu, który nie przyjmuje wartości null',
@@ -3224,7 +3425,8 @@ const questions = [
     desc: 'Jeżeli do stringa przypiszemy null i sprawdzimy jego długość za pomocą .Length() to dostaniemy ten wyjątek. Jeżeli nam taki wyjątek leci to znaczy, że próbujemy wykonać jakąś akcje na wartości null.',
   },
   {
-    question: 'W C# wyjątek "ArgumentNullException" oznacza, że?',
+    question:
+      'W C# wyjątek "ArgumentNullException" oznacza, że?',
     url: '',
     a1: 'zmienna podana do funkcji jest nullem',
     a2: 'zmienna podana do funkcji jest typu, który może przyjąć null',
@@ -3236,7 +3438,8 @@ const questions = [
   },
   //WPF/XAMARIN/ASP.NET
   {
-    question: 'Skrót "WPF" oznacza?',
+    question:
+      'Skrót "WPF" oznacza?',
     url: '',
     a1: 'Windows Presentation Foundation',
     a2: 'Windows Power Framework',
@@ -3247,7 +3450,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Do budowania układu siatki w WPF i Xamarin służy tag?',
+    question:
+      'Do budowania układu siatki w WPF i Xamarin służy tag?',
     url: '',
     a1: 'GRID',
     a2: 'TABLE',
@@ -3282,7 +3486,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Windows Forms to to samo co WPF?',
+    question:
+      'Windows Forms to to samo co WPF?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3293,7 +3498,8 @@ const questions = [
     desc: 'Windows Forms to starsza technologia, jednak w ciąż mocno używana. Windows Forms opiera się o graficzny edytor a nie o język XAML.',
   },
   {
-    question: 'W WPF niedostępny jest layout typu?',
+    question:
+      'W WPF niedostępny jest layout typu?',
     url: '',
     a1: 'TablePanel',
     a2: 'StackPanel',
@@ -3304,7 +3510,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W WPF dostępnym typem layoutu jest?',
+    question:
+      'W WPF dostępnym typem layoutu jest?',
     url: '',
     a1: 'Wszystkie wymienione',
     a2: 'CanvasPanel',
@@ -3400,7 +3607,8 @@ const questions = [
     desc: 'Przełącznik "--hard" powoduje całkowitą utratę zmian. "--soft" zostawia zmiany jako "dodane na stage". "--mixed" zostawia zmiany jako "do dodania na stage".',
   },
   {
-    question: 'Polecenie "git rebase" oraz git merge" działają tak samo?',
+    question:
+      'Polecenie "git rebase" oraz git merge" działają tak samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3447,7 +3655,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu GIT dodające wszystkie pliki na stage to?',
+    question:
+      'Polecenie systemu GIT dodające wszystkie pliki na stage to?',
     url: '',
     a1: 'git add .',
     a2: 'git add *',
@@ -3482,7 +3691,8 @@ const questions = [
     desc: 'Ewentualnie polecenie "git diff" może nam pokazać precyzyjnie co i gdzie zostało zmienione.',
   },
   {
-    question: 'Inicjalizacja repozytorium lokalnego git odbywa się poleceniem?',
+    question:
+      'Inicjalizacja repozytorium lokalnego git odbywa się poleceniem?',
     url: '',
     a1: 'git init',
     a2: 'git start',
@@ -3493,7 +3703,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Commita w systemie GIT wykonujemu poleceniem?',
+    question:
+      'Commita w systemie GIT wykonujemu poleceniem?',
     url: '',
     a1: 'git commit -m "Message"',
     a2: 'git commit -log "Message"',
@@ -3504,7 +3715,8 @@ const questions = [
     desc: 'Jeżeli nie użyjemy przełącznika "-m" GIT użyje domyślnego edytora tekstu aby zapytać nas o komentarz.',
   },
   {
-    question: 'Nową gałąź w systemie GIT tworzymy poleceniem?',
+    question:
+      'Nową gałąź w systemie GIT tworzymy poleceniem?',
     url: '',
     a1: 'git branch "nazwa"',
     a2: 'git checkout "nazwa"',
@@ -3515,7 +3727,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Gałąź w systemie GIT usuwamy poleceniem?',
+    question:
+      'Gałąź w systemie GIT usuwamy poleceniem?',
     url: '',
     a1: 'git branch -d "nazwa"',
     a2: 'git delete "nazwa"',
@@ -3526,7 +3739,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Przełączanie gałęzi w systemie git odbywa się za pomocą?',
+    question:
+      'Przełączanie gałęzi w systemie git odbywa się za pomocą?',
     url: '',
     a1: 'git checkout "nazwa"',
     a2: 'git branch "nazwa"',
@@ -3537,7 +3751,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W git odnośnik do zdalnego repozytorium dodajemy poleceniem?',
+    question:
+      'W git odnośnik do zdalnego repozytorium dodajemy poleceniem?',
     url: '',
     a1: 'git remote add origin "link"',
     a2: 'git remote add "link"',
@@ -3548,7 +3763,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W git odnośnik do zdalnego repozytorium usuwamy poleceniem?',
+    question:
+      'W git odnośnik do zdalnego repozytorium usuwamy poleceniem?',
     url: '',
     a1: 'git remote remove origin',
     a2: 'git remote remove',
@@ -3595,7 +3811,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Portal GITHUB to to samo co GIT?',
+    question:
+      'Portal GITHUB to to samo co GIT?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3618,7 +3835,8 @@ const questions = [
     desc: 'Pojęcie "fork" oznacza stworznie własnej kopi projektu na bazie czyjegoś repozytorium na githubie.',
   },
   {
-    question: 'Aby połączyć gałęzie w GIT należy użyć polecenia?',
+    question:
+      'Aby połączyć gałęzie w GIT należy użyć polecenia?',
     url: '',
     a1: 'git merge "nazwa"',
     a2: 'git rebase "nazwa"',
@@ -3642,7 +3860,8 @@ const questions = [
   },
   //testy jednostkowe
   {
-    question: 'Testy jednostkowe to?',
+    question:
+      'Testy jednostkowe to?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'kod testujący inny kod',
@@ -3653,7 +3872,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Testy jednostkowe powinny być?',
+    question:
+      'Testy jednostkowe powinny być?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'szybkie',
@@ -3664,7 +3884,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Akronim FIRST oznacza?',
+    question:
+      'Akronim FIRST oznacza?',
     url: '',
     a1: 'Fast/Isolated/Repeatable/Self-validating/Timely',
     a2: 'Fast/Isolated/Recursive/Self-validating/Timely',
@@ -3687,7 +3908,8 @@ const questions = [
     desc: 'Arrange przygotowuje kod testowany, Act wykonuje testowaną akcję, Assert porównuje wynik z wartością oczekiwaną.',
   },
   {
-    question: 'Frameworkiem do pisania testów jednostkowych w języku C++ jest?',
+    question:
+      'Frameworkiem do pisania testów jednostkowych w języku C++ jest?',
     url: '',
     a1: 'Google Tests',
     a2: 'JUnit',
@@ -3698,7 +3920,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Frameworkiem do pisania testów jednostkowych w języku C# jest?',
+    question:
+      'Frameworkiem do pisania testów jednostkowych w języku C# jest?',
     url: '',
     a1: 'XUnit',
     a2: 'PyTest',
@@ -3721,7 +3944,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Błędnym stwierdzeniem o klasie Assert w języku C# jest to, że?',
+    question:
+      'Błędnym stwierdzeniem o klasie Assert w języku C# jest to, że?',
     url: '',
     a1: 'Refaktoryzuje kod',
     a2: 'Sprawdza prawdziwość danego wyrażenia',
@@ -3732,7 +3956,8 @@ const questions = [
     desc: 'Assert to zestaw metod porównujących/testujących.',
   },
   {
-    question: 'TDD (Test Driven Development) to?',
+    question:
+      'TDD (Test Driven Development) to?',
     url: '/images/TDD.png',
     a1: 'Metodologia pisania oprogramowania gdzie testy pisze się przed kodem testowanym',
     a2: 'Wzorzec projektowy',
@@ -3743,7 +3968,8 @@ const questions = [
     desc: 'TDD to takie na pierwszy rzut oka dziwne podejście, które polega na tym by najpierw wymyślić test do nieistniejącego kodu a późnej sam kod. Jak się tego poużywa to nabiera to więcej sensu.',
   },
   {
-    question: 'W TDD najpierw piszemy testy a później testowany kod?',
+    question:
+      'W TDD najpierw piszemy testy a później testowany kod?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -3754,7 +3980,8 @@ const questions = [
     desc: 'W TDD najpierw piszemy test do kodu, który nie istnieje a później sam kod. Nabiera to więcej sensu jak się w tym troche popisze :)',
   },
   {
-    question: '"Mock" to pojęcie określające?',
+    question:
+      '"Mock" to pojęcie określające?',
     url: '',
     a1: 'atrapę obiektu',
     a2: 'pewien rodzaj asercji',
@@ -3765,7 +3992,8 @@ const questions = [
     desc: 'Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się.',
   },
   {
-    question: '"Mock" tworzony jest w celu?',
+    question:
+      '"Mock" tworzony jest w celu?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'wyłączenia cześci kodu znajdującego się w klasie, której atrapę tworzymy',
@@ -3776,7 +4004,8 @@ const questions = [
     desc: 'Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się.',
   },
   {
-    question: 'Nie powinno się testować automatycznie kontrolerów MVC?',
+    question:
+      'Nie powinno się testować automatycznie kontrolerów MVC?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -3799,7 +4028,8 @@ const questions = [
     desc: 'Takie funkcję powinny tylko wywoływać logikę znajującą się w innych funkcjach. Powinniśmy testować te inne funkcje.',
   },
   {
-    question: 'Każda metoda klasy powinna być przetestowana automatycznie?',
+    question:
+      'Każda metoda klasy powinna być przetestowana automatycznie?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3810,7 +4040,8 @@ const questions = [
     desc: 'Im więcej testów tym lepiej. Ale nie testujemy prywatnych rzeczy oraz metod, które są trywialne.',
   },
   {
-    question: 'Da się przetestować bezpośrednio metody prywatne?',
+    question:
+      'Da się przetestować bezpośrednio metody prywatne?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -3822,7 +4053,8 @@ const questions = [
   },
   //wzorce i zasady programowania
   {
-    question: 'Zasada, mówiąca o tym by unikać powtórzeń w kodzie to?',
+    question:
+      'Zasada, mówiąca o tym by unikać powtórzeń w kodzie to?',
     url: '',
     a1: 'DRY',
     a2: 'KISS',
@@ -3857,7 +4089,8 @@ const questions = [
     desc: 'YAGNI - You Arent Gona Need It, KISS - Keep It Simple Stupid, DRY - Dont Repeat Yourself, SOLID - 5 zasad programowania',
   },
   {
-    question: 'Zbiór pięciu zasad dobrego kodu obiektowego to?',
+    question:
+      'Zbiór pięciu zasad dobrego kodu obiektowego to?',
     url: '',
     a1: 'SOLID',
     a2: 'FIRST',
@@ -3868,7 +4101,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Pierwsza zasada SOLID mówi o tym by?',
+    question:
+      'Pierwsza zasada SOLID mówi o tym by?',
     url: '',
     a1: 'każda metoda/klasa zajmowała się jedną konretną rzeczą',
     a2: 'referencje miały typ bazowy a nie typ pochodny',
@@ -3879,7 +4113,8 @@ const questions = [
     desc: 'Każda metoda powinna zajmować się jedną konretną rzeczą, na którą wskazuje jej nazwa. Podobnie sytuacja wygląda z całymi klasami.',
   },
   {
-    question: 'Druga zasada SOLID mówi o tym by?',
+    question:
+      'Druga zasada SOLID mówi o tym by?',
     url: '',
     a1: 'każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację',
     a2: 'każda metoda/klasa zajmowała się jedną konretną rzeczą',
@@ -3890,7 +4125,8 @@ const questions = [
     desc: 'Rozszerzając klasę/metodę o nowe funkcjonalności nie powinniśmy modyfikować istniejących już w niej elementów. Jeżeli musimy to zrobić to trzeba wziąźć pod uwagę fakt, że coś można było zrobić lepiej.',
   },
   {
-    question: 'Piąta zasada SOLID mówi o tym by?',
+    question:
+      'Piąta zasada SOLID mówi o tym by?',
     url: '',
     a1: 'interfejsy polimorficzne utrzymywać jak najmniejsze',
     a2: 'każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację',
@@ -3901,7 +4137,8 @@ const questions = [
     desc: 'Jeżeli klasa B dziedziczy z klasy A to obiekt powinniśmy trzymać w referencji typu A np. "A obj = new B()".',
   },
   {
-    question: 'Piąta zasada SOLID nazywana jest?',
+    question:
+      'Piąta zasada SOLID nazywana jest?',
     url: '',
     a1: 'dependency inversion',
     a2: 'dependency injection',
@@ -3924,7 +4161,8 @@ const questions = [
     desc: 'Single Responsiblity Principle - zasad pojedynczej odpowiedzialności',
   },
   {
-    question: 'We wzorcu MVC na akcje użytkownika reaguje?',
+    question:
+      'We wzorcu MVC na akcje użytkownika reaguje?',
     url: '',
     a1: 'kontroler',
     a2: 'widok',
@@ -3935,7 +4173,8 @@ const questions = [
     desc: 'Kontroler zajmuje się sterowaniem i przetwarzaniem żądań.',
   },
   {
-    question: 'Pochodną wzorca MVC jest?',
+    question:
+      'Pochodną wzorca MVC jest?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'MVVM Model View ViewModel',
@@ -3946,7 +4185,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Skrót SPA oznacza?',
+    question:
+      'Skrót SPA oznacza?',
     url: '',
     a1: 'Single-Page Application',
     a2: 'Simple-Page Application',
@@ -3957,7 +4197,8 @@ const questions = [
     desc: 'SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
   },
   {
-    question: 'Strona typu SPA bazuje na?',
+    question:
+      'Strona typu SPA bazuje na?',
     url: '',
     a1: 'przeładowywaniu pojedynczych elementów strony',
     a2: 'zakładkach i podstronach',
@@ -3968,7 +4209,8 @@ const questions = [
     desc: 'SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
   },
   {
-    question: 'Skrót ORM rozwija się?',
+    question:
+      'Skrót ORM rozwija się?',
     url: '',
     a1: 'Object Relational Mapping',
     a2: 'Object Reconstruct Mapping',
@@ -3979,7 +4221,8 @@ const questions = [
     desc: 'ORM to biblioteka, która mapuje tabele na klasy a rekordy na obiekty. W wyniku zapytania SELECT dostajemy listę obiektów odpowiedniej klasy.',
   },
   {
-    question: 'Przykładem biblioteki typu ORM nie jest?',
+    question:
+      'Przykładem biblioteki typu ORM nie jest?',
     url: '',
     a1: 'NSubstitude',
     a2: 'Entity Framework',
@@ -4002,7 +4245,8 @@ const questions = [
     desc: 'Najczęściej konstruktory, ale można również wstrzykiwać zależności przez setter lub pole (łamiemy zasadę hermetyzacji).',
   },
   {
-    question: 'Na obrazku klasa Repository jest dla klasy Server?',
+    question:
+      'Na obrazku klasa Repository jest dla klasy Server?',
     url: '/images/repo.png',
     a1: 'Zależnością miękką',
     a2: 'Zależnością twardą',
@@ -4013,7 +4257,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Na obrazku klasa RepositoryMock jest dla klasy Repository?',
+    question:
+      'Na obrazku klasa RepositoryMock jest dla klasy Repository?',
     url: '/images/repo.png',
     a1: 'Klasą pochodną',
     a2: 'Zależnością miękką',
@@ -4036,7 +4281,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'UML to skrót od?',
+    question:
+      'UML to skrót od?',
     url: '',
     a1: 'Unified Modeling Language',
     a2: 'Unified Mapping Language',
@@ -4047,7 +4293,8 @@ const questions = [
     desc: 'UML to standard wielu diagramów, które służą do projektowania i dokumentowania oprogramowania.',
   },
   {
-    question: 'Diagram UML przedstawiający relacje między klasami to',
+    question:
+      'Diagram UML przedstawiający relacje między klasami to',
     url: '',
     a1: 'Diagram klas',
     a2: 'Diagram ERD',
@@ -4070,7 +4317,8 @@ const questions = [
     desc: 'Diagram klas przedstawia relacje między klasami. Diagram sekwencji i aktywności opisuje działanie aplikacji.',
   },
   {
-    question: 'Diagram UML przedstawiający przepływ sterowania w klasach to',
+    question:
+      'Diagram UML przedstawiający przepływ sterowania w klasach to',
     url: '',
     a1: 'Diagram sekwencji',
     a2: 'Diagram ERD',
@@ -4081,7 +4329,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Diagram UML przedstawiający funkcjonalności projektu to',
+    question:
+      'Diagram UML przedstawiający funkcjonalności projektu to',
     url: '',
     a1: 'Diagram przypadków użycia',
     a2: 'Diagram ERD',
@@ -4092,7 +4341,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Diagram UML na ilustracji to?',
+    question:
+      'Diagram UML na ilustracji to?',
     url: '/images/usagediagram.png',
     a1: 'Diagram przypadków użycia',
     a2: 'Diagram ERD',
@@ -4103,7 +4353,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Diagram UML na ilustracji to?',
+    question:
+      'Diagram UML na ilustracji to?',
     url: '/images/sekdiagram.png',
     a1: 'Diagram sekwencji',
     a2: 'Diagram ERD',
@@ -4114,7 +4365,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W diagramie klas UML pola protected oznacza się symbolem?',
+    question:
+      'W diagramie klas UML pola protected oznacza się symbolem?',
     url: '',
     a1: '#',
     a2: '-',
@@ -4125,7 +4377,8 @@ const questions = [
     desc: '+ oznacza elementy publiczne, # elementy chronione, - elementy prywatne',
   },
   {
-    question: 'W diagramie klas UML pola private oznacza się symbolem?',
+    question:
+      'W diagramie klas UML pola private oznacza się symbolem?',
     url: '',
     a1: '-',
     a2: '#',
@@ -4136,7 +4389,8 @@ const questions = [
     desc: '+ oznacza elementy publiczne, # elementy chronione, - elementy prywatne',
   },
   {
-    question: 'W diagramie klas UML pola public oznacza się symbolem?',
+    question:
+      'W diagramie klas UML pola public oznacza się symbolem?',
     url: '',
     a1: '+',
     a2: '#',
@@ -4172,7 +4426,8 @@ const questions = [
   },
   //http rest ect
   {
-    question: 'Skrót HTTP rozwija się?',
+    question:
+      'Skrót HTTP rozwija się?',
     url: '',
     a1: 'Hypertext Transfer Protocol',
     a2: 'Hypermarkup Transfer Protocol',
@@ -4183,7 +4438,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Protokół HTTP pracuje na porcie?',
+    question:
+      'Protokół HTTP pracuje na porcie?',
     url: '',
     a1: '80',
     a2: '60',
@@ -4194,7 +4450,8 @@ const questions = [
     desc: 'HTTPS pracuje na 443',
   },
   {
-    question: 'Dane przekazywane do protokoły HTTP/HTTPS są w formacie?',
+    question:
+      'Dane przekazywane do protokoły HTTP/HTTPS są w formacie?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'JSON',
@@ -4253,7 +4510,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Kod sukcesu HTTP/HTTPS to?',
+    question:
+      'Kod sukcesu HTTP/HTTPS to?',
     url: '',
     a1: '200',
     a2: '300',
@@ -4264,7 +4522,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Kod "nie znaleziono" HTTP/HTTPS to?',
+    question:
+      'Kod "nie znaleziono" HTTP/HTTPS to?',
     url: '',
     a1: '404',
     a2: '202',
@@ -4275,7 +4534,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'JWT to skrót od?',
+    question:
+      'JWT to skrót od?',
     url: '',
     a1: 'JSON Web Token',
     a2: 'JavaScript Web Token',
@@ -4286,7 +4546,8 @@ const questions = [
     desc: 'JWT służy do autoryzacji/logowania do stron za pomocą REST API.',
   },
   {
-    question: 'API typu REST wymienia dane w formacie zwanym?',
+    question:
+      'API typu REST wymienia dane w formacie zwanym?',
     url: '',
     a1: 'JSON',
     a2: 'XML',
@@ -4297,7 +4558,8 @@ const questions = [
     desc: 'Chodzi o format JSON, który jest dużo lżejszy niż XML.',
   },
   {
-    question: 'REST to skrót od?',
+    question:
+      'REST to skrót od?',
     url: '',
     a1: 'Representational State Transfer',
     a2: 'Representational Schema Transfer',
@@ -4308,7 +4570,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Programem do testowania REST API jest?',
+    question:
+      'Programem do testowania REST API jest?',
     url: '',
     a1: 'Postman',
     a2: 'TeamViewer',
@@ -4319,7 +4582,8 @@ const questions = [
     desc: 'Postman to wygodne narzędzie do testowania API.',
   },
   {
-    question: 'Protokół HTTPS to HTTP stosujący szyfrowanie?',
+    question:
+      'Protokół HTTPS to HTTP stosujący szyfrowanie?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -4331,7 +4595,8 @@ const questions = [
   },
   //technologie webowe
   {
-    question: 'Wirus, który podszywa się pod legalny i bezpieczny program to?',
+    question:
+      'Wirus, który podszywa się pod legalny i bezpieczny program to?',
     url: '',
     a1: 'Koń trojański',
     a2: 'Robak',
@@ -4390,7 +4655,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Językiem typowo server-side jest?',
+    question:
+      'Językiem typowo server-side jest?',
     url: '',
     a1: 'PHP',
     a2: 'JavaScript',
@@ -4401,7 +4667,8 @@ const questions = [
     desc: 'PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, poniważ mamy XAMPA oraz UsbWebServer.',
   },
   {
-    question: 'Bootstrap to?',
+    question:
+      'Bootstrap to?',
     url: '',
     a1: 'framework z gotowymi stylami CSS',
     a2: 'framework do sprawniejszego manipulowania elementami drzewa DOM',
@@ -4412,7 +4679,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Bootstrap bazuje na selektorach?',
+    question:
+      'Bootstrap bazuje na selektorach?',
     url: '',
     a1: 'klasy',
     a2: 'id',
@@ -4423,7 +4691,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap kontenerem ze stałą szerokością jest?',
+    question:
+      'W BootStrap kontenerem ze stałą szerokością jest?',
     url: '',
     a1: '.container',
     a2: '.container-fixed',
@@ -4434,7 +4703,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap system siatki bazuje na _ kolumnach?',
+    question:
+      'W BootStrap system siatki bazuje na _ kolumnach?',
     url: '',
     a1: '12',
     a2: '16',
@@ -4457,7 +4727,8 @@ const questions = [
     desc: 'Chodzi o styl, gdzie co drugi wiersz ma delikatni mocniejszy cień.',
   },
   {
-    question: 'W BootStrap klasą nadającą tabeli obramowanie jest?',
+    question:
+      'W BootStrap klasą nadającą tabeli obramowanie jest?',
     url: '',
     a1: '.table-bordered',
     a2: '.table-bold',
@@ -4480,7 +4751,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap klasą tworzącą ciemny pasek nawigacyjny jest?',
+    question:
+      'W BootStrap klasą tworzącą ciemny pasek nawigacyjny jest?',
     url: '',
     a1: '.navbar-inverse',
     a2: '.navbar-dark',
@@ -4491,7 +4763,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap pluginem do tworzenia wyskakujących okienek jest?',
+    question:
+      'W BootStrap pluginem do tworzenia wyskakujących okienek jest?',
     url: '',
     a1: 'Modal',
     a2: 'MessageBox',
@@ -4502,7 +4775,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap klasa tworząca przycisk w kolorze czerwonym to?',
+    question:
+      'W BootStrap klasa tworząca przycisk w kolorze czerwonym to?',
     url: '',
     a1: 'btn-danger',
     a2: 'btn-warning',
@@ -4513,7 +4787,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap klasa tworząca przycisk z samym obramowaniem to?',
+    question:
+      'W BootStrap klasa tworząca przycisk z samym obramowaniem to?',
     url: '',
     a1: '.btn-outline-primary',
     a2: '.btn-primary-outline',
@@ -4524,7 +4799,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W BootStrap wymaga do działania biblioteki jQuery?',
+    question:
+      'W BootStrap wymaga do działania biblioteki jQuery?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -4560,7 +4836,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'JavaScript pozwala przypisać funkcję do zmiennej?',
+    question:
+      'JavaScript pozwala przypisać funkcję do zmiennej?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -4571,7 +4848,8 @@ const questions = [
     desc: 'Oczywiście np. w formie wyrażenia lambda.',
   },
   {
-    question: 'W JS typami prymitywnymi są',
+    question:
+      'W JS typami prymitywnymi są',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'String',
@@ -4582,7 +4860,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W JS operatory "===" oraz "==" działają tak samo?',
+    question:
+      'W JS operatory "===" oraz "==" działają tak samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -4593,7 +4872,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W JS pętle "for in" oraz "for of" działają tak samo?',
+    question:
+      'W JS pętle "for in" oraz "for of" działają tak samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -4604,7 +4884,8 @@ const questions = [
     desc: 'Pętla "for in" zwraca indeks a "for of" zwraca wartośc z kolekcji.',
   },
   {
-    question: 'Pobranie długości tablicy w JavaScript wygląda następująco?',
+    question:
+      'Pobranie długości tablicy w JavaScript wygląda następująco?',
     url: '',
     a1: 'let size = tablica.length;',
     a2: 'let size = tablica.length();',
@@ -4615,7 +4896,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Funkcja "Math.random()" zwraca?',
+    question:
+      'Funkcja "Math.random()" zwraca?',
     url: '',
     a1: 'wartość z przedziału 0 do 1',
     a2: 'wartość z przedziału 0 do +inf',
@@ -4650,7 +4932,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Który z testów funkcji "fun1" zakończy się sukcesem?',
+    question:
+      'Który z testów funkcji "fun1" zakończy się sukcesem?',
     url: '/images/jesttests.png',
     a1: 'C',
     a2: 'D',
@@ -4662,7 +4945,8 @@ const questions = [
   },
   //bazy danych
   {
-    question: 'Co to jest DBMS',
+    question:
+      'Co to jest DBMS',
     url: '',
     a1: 'system zarządzania bazą danych',
     a2: 'obiektowy język programowania',
@@ -4673,7 +4957,8 @@ const questions = [
     desc: 'DBMS - DataBase Management System, MySQL jest przykładem DBMS',
   },
   {
-    question: 'Krotka w bazach relacyjnych to',
+    question:
+      'Krotka w bazach relacyjnych to',
     url: '',
     a1: 'wiersz tabeli',
     a2: 'kolumna tabeli',
@@ -4684,7 +4969,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Atrybut w relacyjnych bazach danych to',
+    question:
+      'Atrybut w relacyjnych bazach danych to',
     url: '',
     a1: 'kolumna tabeli',
     a2: 'wiersz tabeli',
@@ -4719,7 +5005,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Klucz naturalny w bazach relacyjnych to',
+    question:
+      'Klucz naturalny w bazach relacyjnych to',
     url: '',
     a1: 'kolumna, która jest naturalnym atrybutem przechowywanej encji',
     a2: 'kolumna, która została dodana by jednoznacznie identyfikować rekord',
@@ -4730,7 +5017,8 @@ const questions = [
     desc: 'Kluczem sztucznym jest np. Id, ponieważ nie ma ono nic wspólnego z encją przechowywaną w tabeli. Kluczem naturanym będzie np. PESEL, ponieważ jest powiązany z przechowywaną encją (np. studentem) i jest unikalną wartością jednoznacznie identyfikującą rekord.',
   },
   {
-    question: 'Relacja wiele do wielu wymaga',
+    question:
+      'Relacja wiele do wielu wymaga',
     url: '',
     a1: 'trzeciej tabeli łączącej',
     a2: 'dwóch kluczy obcych',
@@ -4777,7 +5065,8 @@ const questions = [
     desc: 'Przykład z brutto, netto i tara. Nie ma sensu trzymać w bazie wszystkich trzech wartości jak dwie da się wyliczyć na bazie trzeciej. Nie ma sensu trzymać w bazie daty urodzenia jeżeli da się ją wyciągnąć z numeru PESEL.',
   },
   {
-    question: 'Każda relacja w relacyjnych bazach danych wymaga klucza obcego?',
+    question:
+      'Każda relacja w relacyjnych bazach danych wymaga klucza obcego?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -4788,7 +5077,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Procedura i funkcja to to samo?',
+    question:
+      'Procedura i funkcja to to samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -4799,7 +5089,8 @@ const questions = [
     desc: 'Procedura nie zwraca wartości.',
   },
   {
-    question: 'Tak zwane aplikacje CRUDowe to',
+    question:
+      'Tak zwane aplikacje CRUDowe to',
     url: '',
     a1: 'aplikacje skupiające się na dodawaniu/czytaniu/aktualizowaniu/usuwaniu danych z bazy',
     a2: 'aplikacje oparte na REST API',
@@ -4810,7 +5101,8 @@ const questions = [
     desc: 'Aplikacje crudowe to aplikacje, które nie wykonują za dużo logiki a jednynie zapisują i odczytują dane z bazy.',
   },
   {
-    question: 'ENUM oraz SET jako typy kolumn są równoznaczne?',
+    question:
+      'ENUM oraz SET jako typy kolumn są równoznaczne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -4821,7 +5113,8 @@ const questions = [
     desc: 'W przypadku enuma, musimy wybrać jedną konkretną wartość. W przypadku zbioru możemy do pola wstawić kilka opcji zdefiniowanych w zbiorze.',
   },
   {
-    question: 'Klauzula SQL służąca do modyfikowania struktury tabeli to?',
+    question:
+      'Klauzula SQL służąca do modyfikowania struktury tabeli to?',
     url: '',
     a1: 'alter',
     a2: 'update',
@@ -4832,7 +5125,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Klauzula SQL służąca do usuwania tabel to?',
+    question:
+      'Klauzula SQL służąca do usuwania tabel to?',
     url: '',
     a1: 'drop',
     a2: 'delete',
@@ -4843,7 +5137,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Klauzula "limit" w SQL przyjmuje do _ parametrów?',
+    question:
+      'Klauzula "limit" w SQL przyjmuje do _ parametrów?',
     url: '',
     a1: '2',
     a2: '3',
@@ -4854,7 +5149,8 @@ const questions = [
     desc: 'Wiele osób nie wie, że limit przyjmuje opcjonalny parametr, którym jest offset w tabeli. "limit 2, 6" oznacza weź 6 elementów, ale zacznij od trzeciego.',
   },
   {
-    question: 'W SQL sortowanie malejące oznaczamy?',
+    question:
+      'W SQL sortowanie malejące oznaczamy?',
     url: '',
     a1: 'ASC',
     a2: 'DESC',
@@ -4866,7 +5162,8 @@ const questions = [
   },
   //php
   {
-    question: 'Rozszerzenie plików PHP to?',
+    question:
+      'Rozszerzenie plików PHP to?',
     url: '',
     a1: '*.php',
     a2: '*.p',
@@ -4877,7 +5174,8 @@ const questions = [
     desc: '',
   },
   {
-    question: '"index.php" ma większy priorytet niż "index.html"?',
+    question:
+      '"index.php" ma większy priorytet niż "index.html"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -4888,7 +5186,8 @@ const questions = [
     desc: 'Pliki php mają większy priorytet.',
   },
   {
-    question: 'Operatorem konkatenacji w PHP jest?',
+    question:
+      'Operatorem konkatenacji w PHP jest?',
     url: '',
     a1: '.',
     a2: '+',
@@ -4899,7 +5198,8 @@ const questions = [
     desc: 'Może to być niespodzianka, ale łącznie stringów odbywa się za pomocą "."',
   },
   {
-    question: 'W php definicję funkcji poprzedzamy słowem kluczowym?',
+    question:
+      'W php definicję funkcji poprzedzamy słowem kluczowym?',
     url: '',
     a1: 'function',
     a2: 'func',
@@ -4910,7 +5210,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W php aby zdefiniować tablicę musimy użyc konstrukcji?',
+    question:
+      'W php aby zdefiniować tablicę musimy użyc konstrukcji?',
     url: '',
     a1: '$t = array(1,2,3);',
     a2: '$t = {1,2,3};',
@@ -4921,7 +5222,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W php aby pobrać rozmiar tablicy użyjemy funkcji?',
+    question:
+      'W php aby pobrać rozmiar tablicy użyjemy funkcji?',
     url: '',
     a1: 'count();',
     a2: 'size();',
@@ -4944,7 +5246,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Błędną nazwą zmiennej w języku PHP jest?',
+    question:
+      'Błędną nazwą zmiennej w języku PHP jest?',
     url: '',
     a1: '$click-counter',
     a2: '$click_counter',
@@ -4967,7 +5270,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Pętla foreach w PHP ma następującą składnie:?',
+    question:
+      'Pętla foreach w PHP ma następującą składnie:?',
     url: '',
     a1: 'foreach ($collection as $item)',
     a2: 'foreach ($item as $collection)',
@@ -4978,7 +5282,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W PHP funkcji "rand()" moża określic przedział losowania?',
+    question:
+      'W PHP funkcji "rand()" moża określic przedział losowania?',
     url: '',
     a1: 'za pomocą dwóch opcjonalnych parametrów',
     a2: 'za pomocą metody modulo-dodawanie znanej z C++',
@@ -4990,7 +5295,8 @@ const questions = [
   },
   //python
   {
-    question: 'Rozszerzenie plików źródłowych języka Python to?',
+    question:
+      'Rozszerzenie plików źródłowych języka Python to?',
     url: '',
     a1: '*.py',
     a2: '*.p',
@@ -5001,7 +5307,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Python bazuje na języku?',
+    question:
+      'Python bazuje na języku?',
     url: '',
     a1: 'C',
     a2: 'C++',
@@ -5012,7 +5319,8 @@ const questions = [
     desc: 'Najczęściej mamy do czynienia z implementacją CPython.',
   },
   {
-    question: 'Błędną nazwą zmiennej w języku Python jest?',
+    question:
+      'Błędną nazwą zmiennej w języku Python jest?',
     url: '',
     a1: 'click-counter',
     a2: 'click_counter',
@@ -5035,7 +5343,8 @@ const questions = [
     desc: 'Podobnie jak w JavaScript program można pisać odrazu bez funkcji.',
   },
   {
-    question: 'Odpowiednikiem słowa kluczowgo "this" w Pythonie jest?',
+    question:
+      'Odpowiednikiem słowa kluczowgo "this" w Pythonie jest?',
     url: '',
     a1: 'self',
     a2: 'me',
@@ -5058,7 +5367,8 @@ const questions = [
     desc: 'Jest tak tylko i wyłącznie w przypadku metod klasy.',
   },
   {
-    question: 'Kolekcja o nazwie "tuple" w Pythonie jest mutowalna?',
+    question:
+      'Kolekcja o nazwie "tuple" w Pythonie jest mutowalna?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -5069,7 +5379,8 @@ const questions = [
     desc: 'Tuple typu () nie pozwala po zainicjowaniu modyfikować swojej zawartości.',
   },
   {
-    question: 'Kolekcja o nazwie "list" w Pythonie jest mutowalna?',
+    question:
+      'Kolekcja o nazwie "list" w Pythonie jest mutowalna?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5104,7 +5415,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Konstruktor klasy w języku Python ma nazwę?',
+    question:
+      'Konstruktor klasy w języku Python ma nazwę?',
     url: '',
     a1: '__init__',
     a2: '__create__',
@@ -5187,7 +5499,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Pętlą niedostępną w języku Python jest?',
+    question:
+      'Pętlą niedostępną w języku Python jest?',
     url: '',
     a1: 'for()',
     a2: 'for..range()',
@@ -5222,7 +5535,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W języku Python instrukcja warunkowa przybiera formę:',
+    question:
+      'W języku Python instrukcja warunkowa przybiera formę:',
     url: '',
     a1: 'if:..elif:..else:',
     a2: 'if:..else if:..else:',
@@ -5233,7 +5547,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W języku Python wyrażenie lambda przyjmuje formę:',
+    question:
+      'W języku Python wyrażenie lambda przyjmuje formę:',
     url: '',
     a1: 'func = lambda a, b: a + b',
     a2: 'func = (a,b): a + b',
@@ -5268,7 +5583,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Która konstrukcja w języku Python to lista?',
+    question:
+      'Która konstrukcja w języku Python to lista?',
     url: '',
     a1: '[1,2,3,4]',
     a2: '(1,2,3,4)',
@@ -5279,7 +5595,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Która konstrukcja w języku Python to tak zwany tuple?',
+    question:
+      'Która konstrukcja w języku Python to tak zwany tuple?',
     url: '',
     a1: '(1,2,3,4)',
     a2: '[1,2,3,4]',
@@ -5290,7 +5607,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W języku Python domyślna wartość typów referencyjnych to?',
+    question:
+      'W języku Python domyślna wartość typów referencyjnych to?',
     url: '',
     a1: 'None',
     a2: 'Null',
@@ -5301,7 +5619,8 @@ const questions = [
     desc: '"None" to odpowiednik "null" z innych języków.',
   },
   {
-    question: 'W języku Python kolekcje "set" oraz "list" są takie same?',
+    question:
+      'W języku Python kolekcje "set" oraz "list" są takie same?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -5324,7 +5643,8 @@ const questions = [
     desc: 'Jeżeli zapiszemy w funkcji do zmiennej "a", która jest globalna nie oznaczając jej słowem kluczowym "global" język utworzy zmienną lokalną o tej nazwie.',
   },
   {
-    question: 'Interpolacji stringów w języku python można dokonać składnią?',
+    question:
+      'Interpolacji stringów w języku python można dokonać składnią?',
     url: '',
     a1: 'f"Ala ma {count} kotów!"',
     a2: '$"Ala ma {count} kotów!"',
@@ -5347,7 +5667,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Menedżerem pakietów dla języka Python jest',
+    question:
+      'Menedżerem pakietów dla języka Python jest',
     url: '',
     a1: 'pip',
     a2: 'cpython',
@@ -5527,7 +5848,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu linux pozwalające usunąć plik lub katalog to?',
+    question:
+      'Polecenie systemu linux pozwalające usunąć plik lub katalog to?',
     url: '',
     a1: 'rm',
     a2: 'remove',
@@ -5538,7 +5860,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu linux pozwalające zmienić nazwę pliku to?',
+    question:
+      'Polecenie systemu linux pozwalające zmienić nazwę pliku to?',
     url: '',
     a1: 'mv',
     a2: 'rm',
@@ -5549,7 +5872,8 @@ const questions = [
     desc: 'Jak zmienić nazwę pliku? Przenieść go w to samo miejsce pod inną nazwą.',
   },
   {
-    question: 'Polecenie systemu linux pozwalające przenieść plik to?',
+    question:
+      'Polecenie systemu linux pozwalające przenieść plik to?',
     url: '',
     a1: 'mv',
     a2: 'rm',
@@ -5560,7 +5884,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu windows pozwalające przenieść plik to?',
+    question:
+      'Polecenie systemu windows pozwalające przenieść plik to?',
     url: '',
     a1: 'move',
     a2: 'mv',
@@ -5571,7 +5896,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu linux pozwalające skopiować plik to?',
+    question:
+      'Polecenie systemu linux pozwalające skopiować plik to?',
     url: '',
     a1: 'cp',
     a2: 'rm',
@@ -5582,7 +5908,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Polecenie systemu windows pozwalające skopiować plik to?',
+    question:
+      'Polecenie systemu windows pozwalające skopiować plik to?',
     url: '',
     a1: 'copy',
     a2: 'rm',
@@ -5594,7 +5921,8 @@ const questions = [
   },
   //pytania ogólne
   {
-    question: 'Jak przekazać callback do funkcji w C#?',
+    question:
+      'Jak przekazać callback do funkcji w C#?',
     url: '',
     a1: 'trzeba posłuzyć się odpowiednim delegatem',
     a2: 'trzeba posłuzyć się odpowiednim wskaźnikiem',
@@ -5605,7 +5933,8 @@ const questions = [
     desc: 'Np do metody FirstOrDefault() w Linq podajemy lambde, która jest predykatem (Predicate). ',
   },
   {
-    question: 'Jak przekazać callback do funkcji w C/C++?',
+    question:
+      'Jak przekazać callback do funkcji w C/C++?',
     url: '',
     a1: 'trzeba posłużyć się odpowiednim wskaźnikiem',
     a2: 'trzeba posłużyć się odpowiednim delegatem',
@@ -5616,7 +5945,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Lambda jest dobrym narzędziem do tworzenia krótkich callbacków?',
+    question:
+      'Lambda jest dobrym narzędziem do tworzenia krótkich callbacków?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5627,7 +5957,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Znak "\\n" oznacza?',
+    question:
+      'Znak "\\n" oznacza?',
     url: '',
     a1: 'znak nowej linii',
     a2: 'znak powrotu kursora',
@@ -5638,7 +5969,8 @@ const questions = [
     desc: 'W teorii znak ten przenosi kursor w pionie linie niżej, ale nie cofa do początku wiersza. W praktyce zostało to uproszczone i znak ten wykonuje obie operacje.',
   },
   {
-    question: 'Znak "\\r" oznacza?',
+    question:
+      'Znak "\\r" oznacza?',
     url: '',
     a1: 'znak powrotu kursora',
     a2: 'znak nowej linii',
@@ -5673,7 +6005,8 @@ const questions = [
     desc: 'Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach.',
   },
   {
-    question: 'Powinno się unikać częstego komunikowania się z bazą danych?',
+    question:
+      'Powinno się unikać częstego komunikowania się z bazą danych?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5708,7 +6041,8 @@ const questions = [
     desc: 'ORM wiele rzeczy ułatwia i automatyzuje, ale nigdy nie wiem jakie zapytanie wysłał pod spodem do bazy danych.',
   },
   {
-    question: 'Powinno się unikać korzystania ze wskaźników?',
+    question:
+      'Powinno się unikać korzystania ze wskaźników?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5731,7 +6065,8 @@ const questions = [
     desc: 'Jeżeli przekazujemy coś do funkcji a nie potrzebujemy by ta wykonała swoją kopię tej wartości to przekazujmy parametry przez referencję. Unikniemy wtedy zbędnych kopii w pamięci.',
   },
   {
-    question: 'Jednostka wykonująca kod to?',
+    question:
+      'Jednostka wykonująca kod to?',
     url: '',
     a1: 'wątek',
     a2: 'proces',
@@ -5766,7 +6101,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Każdy program ma minimum jeden wątek?',
+    question:
+      'Każdy program ma minimum jeden wątek?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5777,7 +6113,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Tylko wątek główny programu może dotykać elementów UI?',
+    question:
+      'Tylko wątek główny programu może dotykać elementów UI?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -5812,7 +6149,8 @@ const questions = [
     desc: 'Wątek główny powinien czekać na zakończenie wątków pobocznych lub sam zlecić ich zabicie.',
   },
   {
-    question: 'Zrównoleglenie polega na?',
+    question:
+      'Zrównoleglenie polega na?',
     url: '',
     a1: 'podzieleniu zadania na części i wykonaniu każdej z nich na innym wątku',
     a2: 'podzieleniu zadania na części i wykonaniu każdej z nich w innym procesie',
@@ -5823,7 +6161,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Wymiana danych między watkami przebiega swobodnie?',
+    question:
+      'Wymiana danych między watkami przebiega swobodnie?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -5834,7 +6173,8 @@ const questions = [
     desc: 'Wątki wykonują zadania. Nie możemy odpytywać wątku o dane lub coś innego w dowolnym momencie. W najlepszym przypadku dostaniemy zły wynik, albo wynik nie pełny.',
   },
   {
-    question: 'Biblioteką języka C++ do tworzenia wątków jest?',
+    question:
+      'Biblioteką języka C++ do tworzenia wątków jest?',
     url: '',
     a1: 'std::thread',
     a2: 'Thread',
@@ -5845,7 +6185,8 @@ const questions = [
     desc: 'std::thread to banalna w użyciu biblioteka obiektowa do tworzenia wątków.',
   },
   {
-    question: 'Biblioteką języka C# do tworzenia wątków jest?',
+    question:
+      'Biblioteką języka C# do tworzenia wątków jest?',
     url: '',
     a1: 'Task',
     a2: 'std::thread',
@@ -5856,7 +6197,8 @@ const questions = [
     desc: 'Task<T> to typ, służący do tworzenia wątków w C#.',
   },
   {
-    question: 'Rejestr procesora to?',
+    question:
+      'Rejestr procesora to?',
     url: '',
     a1: 'komórka pamięci w procesorze',
     a2: 'cache procesora',
@@ -5867,7 +6209,8 @@ const questions = [
     desc: 'Rejestr to mała komórka pamięci w procesorze o rozmiarze np jednego inta. Jest to najszybsza pamięć w komputerze.',
   },
   {
-    question: 'Część procesora nazywana ALU to?',
+    question:
+      'Część procesora nazywana ALU to?',
     url: '',
     a1: 'jednostka arytmetyczno logiczna',
     a2: 'jednostka sterująca',
@@ -5878,7 +6221,8 @@ const questions = [
     desc: 'ALU - Arithmetic Logic Unit',
   },
   {
-    question: 'Część procesora nazywana CU to?',
+    question:
+      'Część procesora nazywana CU to?',
     url: '',
     a1: 'jednostka sterująca',
     a2: 'jednostka arytmetyczno logiczna',
@@ -5889,7 +6233,8 @@ const questions = [
     desc: 'CU - Control Unit',
   },
   {
-    question: 'Część procesora nazywana FPU to?',
+    question:
+      'Część procesora nazywana FPU to?',
     url: '',
     a1: 'kooprocesor',
     a2: 'jednostka sterująca',
@@ -5925,7 +6270,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Natężenie dźwięku na stanowisku pracy nie może przekraczać?',
+    question:
+      'Natężenie dźwięku na stanowisku pracy nie może przekraczać?',
     url: '',
     a1: '75 dB',
     a2: '55 dB',
@@ -5936,7 +6282,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Natężenie światła na stanowisku pracy powinno oscylować koło?',
+    question:
+      'Natężenie światła na stanowisku pracy powinno oscylować koło?',
     url: '',
     a1: '500 lx',
     a2: '400 lx',
@@ -5959,7 +6306,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Kategorią zagrożeń na stanowisku pracy nie są?',
+    question:
+      'Kategorią zagrożeń na stanowisku pracy nie są?',
     url: '',
     a1: 'zagrożenia biologiczne',
     a2: 'zagrożenia chemiczne',
@@ -6006,7 +6354,8 @@ const questions = [
     desc: 'W tej kategori mamy do czynienia jeszcze z porażeniem prądem, niedostatecznym oświetleniem, szkodliwym działaniem monitorów oraz skaleczeniem.',
   },
   {
-    question: 'Odległość twarzy od monitora powinna wynosić minimum?',
+    question:
+      'Odległość twarzy od monitora powinna wynosić minimum?',
     url: '',
     a1: '40cm',
     a2: '50cm',
@@ -6017,7 +6366,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Minimalna odległośc klawiatury od krawędzi blatu to?',
+    question:
+      'Minimalna odległośc klawiatury od krawędzi blatu to?',
     url: '',
     a1: '10cm',
     a2: '15cm',
@@ -6052,7 +6402,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Pracując przy komputerze należy?',
+    question:
+      'Pracując przy komputerze należy?',
     url: '',
     a1: 'robić przerwę 5 minut co godzinę',
     a2: 'robić przerwę 5 minut co dwie godziny',
@@ -6075,7 +6426,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Stół powinien spełniać warunek?',
+    question:
+      'Stół powinien spełniać warunek?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'wysokość stołu powinna pozwalać na swobodną pozycję z zachowaniem kąta prostego między ramieniem i przedramieniem',
@@ -6086,7 +6438,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Fotel powinien spełniać warunek?',
+    question:
+      'Fotel powinien spełniać warunek?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'powinien być stabilny z możliwością obrotu o 350 stopni',
@@ -6109,7 +6462,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Informatykowi na stanowisku pracy nie wolno?',
+    question:
+      'Informatykowi na stanowisku pracy nie wolno?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'spożywać posiłków',
@@ -6120,7 +6474,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Do środków ochrony zbiorowej zaliczamy?',
+    question:
+      'Do środków ochrony zbiorowej zaliczamy?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'oświetlenie',
@@ -6131,7 +6486,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Do środków ochrony indywidualnej zaliczamy?',
+    question:
+      'Do środków ochrony indywidualnej zaliczamy?',
     url: '',
     a1: 'środki ochrony głowy',
     a2: 'wszelkiego rodzaju klimatyzacje',
@@ -6142,7 +6498,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Do środków ochrony indywidualnej zaliczamy?',
+    question:
+      'Do środków ochrony indywidualnej zaliczamy?',
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'środki ochrony głowy',
@@ -6153,7 +6510,8 @@ const questions = [
     desc: 'Poza tym: środki ochrony twarzy i oczy oraz środki ochrony układu oddechowego.',
   },
   {
-    question: 'Zabezpieczenie różnicowoprądowe chroni?',
+    question:
+      'Zabezpieczenie różnicowoprądowe chroni?',
     url: '',
     a1: 'przed porażeniem prądem wykrywając różnice prądu wpływającego do obwodu i tego w nim płynącego',
     a2: 'przed nadmiernym wzrostem przepływającego w obwodzie prądu',
@@ -6165,7 +6523,8 @@ const questions = [
   },
   //szyfry i kodowania
   {
-    question: 'Wartość zakodowaną za pomocą "base64" da się odkodować?',
+    question:
+      'Wartość zakodowaną za pomocą "base64" da się odkodować?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -6176,7 +6535,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Które zdanie o funkcji skrótu jest nieprawdziwe?',
+    question:
+      'Które zdanie o funkcji skrótu jest nieprawdziwe?',
     url: '',
     a1: '"hash" uzyskany z funkcji skrótu jest odwracalny',
     a2: '"hash" uzyskany z funkcji skrótu jest nieodwracalny',
@@ -6187,7 +6547,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Funkcją skrótu nie jest?',
+    question:
+      'Funkcją skrótu nie jest?',
     url: '',
     a1: 'base64',
     a2: 'adler32',
@@ -6198,7 +6559,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Suma kontrolna to?',
+    question:
+      'Suma kontrolna to?',
     url: '',
     a1: 'wartość obliczana na bazie danych, służąca do oceny czy dane te nie zostały uszkodzone lub zmodyfikowane',
     a2: 'zwykła funkcja skrótu',
@@ -6209,7 +6571,8 @@ const questions = [
     desc: 'Suma kontrolna to specjalna wartość liczona z pewnej porcji danych. Służy do weryfikacji ich poprawności. Jeżeli transmitujemy coś np. przez bluetooth oprócz danych wysyłamy też do drugiego urządzenia sumę kontrolną tych danych. Drugie urządzenie liczy swoją sumę i porównuje ją z tą otrzymaną dzięki czemu wie czy dane zostały uszkodzone w drodze.',
   },
   {
-    question: 'Szyfr różni się od funkcji skrótu tym, iż?',
+    question:
+      'Szyfr różni się od funkcji skrótu tym, iż?',
     url: '',
     a1: 'da się go odwrócić',
     a2: 'nie da się go odwrócić',
@@ -6220,7 +6583,8 @@ const questions = [
     desc: 'Szyfr da się odwrócić. Szyfrogram to zaszyfrowana wiadomość.',
   },
   {
-    question: 'Podpis cyfrowy to?',
+    question:
+      'Podpis cyfrowy to?',
     url: '',
     a1: 'sposób potwierdzania autentyczności danych',
     a2: 'kolejna metodologia szyforwania danych',
@@ -6232,7 +6596,8 @@ const questions = [
   },
   //pytania do kody na obrazku
   {
-    question: 'Kod C++ na obrazku wyświetli na ekranie napis?',
+    question:
+      'Kod C++ na obrazku wyświetli na ekranie napis?',
     url: '/images/noseed.png',
     a1: 'Hello World',
     a2: 'Goodbye World',
@@ -6267,7 +6632,8 @@ const questions = [
     desc: 'Pod indeksem 0 tablicy argv znajduje się nazwa pliku wykonywalnego czyli "program.exe".',
   },
   {
-    question: 'IDE w poniższym fragmencie programu pokazuje błąd, ponieważ',
+    question:
+      'IDE w poniższym fragmencie programu pokazuje błąd, ponieważ',
     url: '/images/staticarrayvar.png',
     a1: 'size nie jest stałą',
     a2: 'nie da się zaalokować tak dużej tablicy',
@@ -6278,7 +6644,8 @@ const questions = [
     desc: 'Rozmiar podany podczas inicjalizacji tablicy statycznej musi być stałą.',
   },
   {
-    question: 'Na poniższym obrazku widzimy',
+    question:
+      'Na poniższym obrazku widzimy',
     url: '/images/alloc2darray.png',
     a1: 'proces alokowania tablicy 2D gdzie oba wymiary równe są "size"',
     a2: 'proces alokowania tablicy gdzie wymiar to "size"',
@@ -6289,7 +6656,8 @@ const questions = [
     desc: 'Alokujemy tutaj tablicę 2D, która w obu wymiarach ma ten sam rozmiar.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/ucharcircle1.png',
     a1: '0',
     a2: '256',
@@ -6300,7 +6668,8 @@ const questions = [
     desc: 'Przekraczamy zakres unsigned chara, więc następuje powrót na początek zakresu.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/ucharcircle2.png',
     a1: '255',
     a2: '-1',
@@ -6311,7 +6680,8 @@ const questions = [
     desc: 'Przekraczamy zakres unsigned chara, więc następuje powrót na koniec zakresu.',
   },
   {
-    question: 'Ile razy zobaczymy napis "Hello world!" na ekranie?',
+    question:
+      'Ile razy zobaczymy napis "Hello world!" na ekranie?',
     url: '/images/infinitewhile.png',
     a1: 'nieskończenie wiele, ponieważ pętla jest nieskończona',
     a2: '2',
@@ -6322,7 +6692,8 @@ const questions = [
     desc: 'Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
   },
   {
-    question: 'Ile razy zobaczymy napis "Hello world!" na ekranie?',
+    question:
+      'Ile razy zobaczymy napis "Hello world!" na ekranie?',
     url: '/images/nowhile.png',
     a1: 'ani razu',
     a2: 'nieskończenie wiele, ponieważ pętla jest nieskończona',
@@ -6333,7 +6704,8 @@ const questions = [
     desc: 'Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
   },
   {
-    question: 'Co zobaczymy na ekranie po wykonaniu poniższego programu?',
+    question:
+      'Co zobaczymy na ekranie po wykonaniu poniższego programu?',
     url: '/images/printcharfromint.png',
     a1: 'B',
     a2: '66',
@@ -6344,7 +6716,8 @@ const questions = [
     desc: 'Zgodnie z tablicą ASCII pod liczbę 66 podmapowany jest znak \'B\'. Specyfikator "%c" nakazuje interpretacje liczby jako znak.',
   },
   {
-    question: 'Ile razy zobaczymy napis "LOOP" na ekranie?',
+    question:
+      'Ile razy zobaczymy napis "LOOP" na ekranie?',
     url: '/images/infinitedowhile.png',
     a1: 'żadna z pozostałych opcji nie jest poprawna',
     a2: '0',
@@ -6355,7 +6728,8 @@ const questions = [
     desc: 'W momencie sprawdzenia warunku licznik będzie miał wartość -1. Następnie -2, -3 itd. Tylko 0 to logiczny fałsz.',
   },
   {
-    question: 'Ile razy zobaczymy napis "LOOP" na ekranie?',
+    question:
+      'Ile razy zobaczymy napis "LOOP" na ekranie?',
     url: '/images/dowhile.png',
     a1: '1',
     a2: '0',
@@ -6366,7 +6740,8 @@ const questions = [
     desc: 'W momencie sprawdzenia warunku licznik będzie miał wartość 0 co daje fałsz, ale pętla do while najpierw wykonuje iteracje a później sprawdza warunek. Pętla do while zawsze wykona się minimum raz.',
   },
   {
-    question: 'Ile razy zobaczymy napis "LOOP" na ekranie?',
+    question:
+      'Ile razy zobaczymy napis "LOOP" na ekranie?',
     url: '/images/while.png',
     a1: '0',
     a2: '1',
@@ -6377,7 +6752,8 @@ const questions = [
     desc: 'W momencie sprawdzenia warunku licznik będzie miał wartość 0 co daje fałsz.',
   },
   {
-    question: 'Zmienna "wynik" będzie miała wartość?',
+    question:
+      'Zmienna "wynik" będzie miała wartość?',
     url: '/images/strcmp.png',
     a1: '>0',
     a2: '<0',
@@ -6388,7 +6764,8 @@ const questions = [
     desc: 'Wynik jest równy 0 gdy stringi są równe. Wynik >0 jeżeli pierwszy różniący się znak ma większą wartość w pierwszym stringu. Przez wartość rozumiemy reprezentację liczbową danego znaku.',
   },
   {
-    question: 'Na ekranie zostanie wypisane?',
+    question:
+      'Na ekranie zostanie wypisane?',
     url: '/images/strlen.png',
     a1: '14',
     a2: '15',
@@ -6399,7 +6776,8 @@ const questions = [
     desc: 'Funkcja ta zwraca długość napisu pod wskaźnikiem, ale nie liczy do długości 0 znajującego sie na końcu stringa.',
   },
   {
-    question: 'W poniższym kodzie błąd powoduje?',
+    question:
+      'W poniższym kodzie błąd powoduje?',
     url: '/images/dereferencevoidptr.png',
     a1: 'próba wyłuskania wskaźnika typu void*',
     a2: 'próba wyłuskania do innego typu zmiennej',
@@ -6422,7 +6800,8 @@ const questions = [
     desc: 'Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
   },
   {
-    question: 'Poniższy fragment kodu pokazuje',
+    question:
+      'Poniższy fragment kodu pokazuje',
     url: '/images/ifdebug.png',
     a1: 'wszyskie pozostałe',
     a2: 'jak pozbyć szybko pozbyć się z kodu wynikowego elementów potrzebnych tylko w trakcie dewelopmentu',
@@ -6433,7 +6812,8 @@ const questions = [
     desc: 'Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
   },
   {
-    question: 'Jaką wartość zobaczymy na ekranie?',
+    question:
+      'Jaką wartość zobaczymy na ekranie?',
     url: '/images/macro.png',
     a1: '5',
     a2: '6',
@@ -6444,7 +6824,8 @@ const questions = [
     desc: 'Macro TO NIE FUNKCJA! Marco SUM(1,2) zostanie przed kompilacją podmienione na 1 + 2 co w konsekwencji da 1 + 2 * 2.',
   },
   {
-    question: 'Jaką wartość zobaczymy na ekranie?',
+    question:
+      'Jaką wartość zobaczymy na ekranie?',
     url: '/images/passtofunc.png',
     a1: '1 2 2',
     a2: '1 1 1',
@@ -6455,7 +6836,8 @@ const questions = [
     desc: 'Przekazywanie parametru do funkcji przez wartość, referencje i wskaźnik. Sposób na zwracanie wartości z funkcji bez słowa kluczowego "return".',
   },
   {
-    question: 'Jaką wartość zobaczymy na ekranie?',
+    question:
+      'Jaką wartość zobaczymy na ekranie?',
     url: '/images/lambda.png',
     a1: '10 20 99',
     a2: '0 0 99',
@@ -6466,7 +6848,8 @@ const questions = [
     desc: 'Nawias kwadratowy w lambdach języka C++ służy do przechwytywania zmiennych z otaczającego lambdę zakresu.',
   },
   {
-    question: 'Jaką wartość zobaczymy na ekranie?',
+    question:
+      'Jaką wartość zobaczymy na ekranie?',
     url: '/images/policpp.png',
     a1: 'BAZOWA/ChildA/ChildB/ChildA/ChildB',
     a2: 'BAZOWA/ChildA/ChildB/BAZOWA/BAZOWA',
@@ -6477,7 +6860,8 @@ const questions = [
     desc: 'Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
   },
   {
-    question: 'Jaką wartość zobaczymy na ekranie?',
+    question:
+      'Jaką wartość zobaczymy na ekranie?',
     url: '/images/policpp2.png',
     a1: 'ChildA/ChildB/ChildA',
     a2: 'BAZOWA/BAZOWA/BAZOWA',
@@ -6488,7 +6872,8 @@ const questions = [
     desc: 'Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
   },
   {
-    question: 'Na obrazku dostrzec można?',
+    question:
+      'Na obrazku dostrzec można?',
     url: '/images/kompozycja.png',
     a1: 'wzorzec kompozyt',
     a2: 'wzorzec fasada',
@@ -6499,7 +6884,8 @@ const questions = [
     desc: 'Klasa Point jest zależnością klasy MyApp. Jej obiekt jest wkomponowany w pole klasy MyApp.',
   },
   {
-    question: 'Na obrazku dostrzec można zastosowanie zasady?',
+    question:
+      'Na obrazku dostrzec można zastosowanie zasady?',
     url: '/images/kompozycja.png',
     a1: 'dependency injection',
     a2: 'dependency inversion',
@@ -6510,7 +6896,8 @@ const questions = [
     desc: 'Klasa Point jest zależnością klasy MyApp. Jej obiekt jest wkomponowany w pole klasy MyApp za pomocą dependency injection.',
   },
   {
-    question: 'Na obrazku dostrzec można?',
+    question:
+      'Na obrazku dostrzec można?',
     url: '/images/singleton.png',
     a1: 'wzorzec singleton',
     a2: 'wzorzec kompozyt',
@@ -6521,7 +6908,8 @@ const questions = [
     desc: 'Na obrazku widać klasyczne podejście do budowy wzorca singleton. Elementy charakterystyczne to prywatny konstruktor oraz statyczne pole na samego siebie.',
   },
   {
-    question: 'Środowisko podkreśla "Add" na poniższym obrazku, ponieważ?',
+    question:
+      'Środowisko podkreśla "Add" na poniższym obrazku, ponieważ?',
     url: '/images/delegatereturnaction.png',
     a1: 'delegat typu Action służy do przechowywania metod, które zwracają void',
     a2: 'delegat typu Action służy do przechowywania metod, które zwracają bool',
@@ -6544,7 +6932,8 @@ const questions = [
     desc: 'Do delegatu typu "Predicate" możemy przypisywać tylko metody, które zwracają bool. Wszyskie parametry generyczne dotyczą parametrów funkcji.',
   },
   {
-    question: 'Środowisko podkreśla "Add" na poniższym obrazku, ponieważ?',
+    question:
+      'Środowisko podkreśla "Add" na poniższym obrazku, ponieważ?',
     url: '/images/delegatefuncnotenoughparams.png',
     a1: 'nie podano typu zwracanego w parametrze generycznym typu Func',
     a2: 'delegat typu Func służy do przechowywania metod, które zwracają bool',
@@ -6579,7 +6968,8 @@ const questions = [
     desc: 'Funkcja ta przyjmuje w parametrze funkcję zwracającą bool, która przyjmuje inta (inta, ponieważ jest to lista intów). Cała metoda FirstOrDefault zwróci pierwszy int z listy, który z callbacka da prawdę.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/reflist.png',
     a1: '4',
     a2: '2',
@@ -6590,7 +6980,8 @@ const questions = [
     desc: 'Lista w C# to typ referencyjny. Więc instancja listy została przekazana do funkcji przez referencje.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/passbyvalue.png',
     a1: '2',
     a2: '4',
@@ -6601,7 +6992,8 @@ const questions = [
     desc: 'Typ int jest typem wartościowym. W momecie przekazania do funkcji tworzy ona sobie jego kopię.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/arraynocopy.png',
     a1: '7',
     a2: '1',
@@ -6612,7 +7004,8 @@ const questions = [
     desc: 'Tablica jest typem referencyjnym. Do "tablica2" przypisaliśmy kopię referencji(wskaźnika) a nie kopię zawartości. Mamy więc dwie zmienne z tym samym adresem.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/linq1.png',
     a1: '4',
     a2: '3',
@@ -6623,7 +7016,8 @@ const questions = [
     desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/linq2.png',
     a1: '0',
     a2: '1',
@@ -6634,7 +7028,8 @@ const questions = [
     desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/linq3.png',
     a1: 'wystąpi błąd',
     a2: '0',
@@ -6657,7 +7052,8 @@ const questions = [
     desc: 'Zmienna result otrzyma wartość "null". Próba wywołania właściwości "Name" skończy się podanym wyjątkiem.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/linq5.png',
     a1: '2',
     a2: '0',
@@ -6668,7 +7064,8 @@ const questions = [
     desc: 'Metoda Where() w przeciwieństwie do obu metod First() nie kończy się po znalezieniu pierwszego dopasowania. Zwraca ona IEnumerable<T> dlatego też należy użyć na wyniku ToList() aby pszypisać wynik do zmiennej typu Listy.',
   },
   {
-    question: 'Poniższa konstrukcja wypisze wszystkie elementy kolekcji?',
+    question:
+      'Poniższa konstrukcja wypisze wszystkie elementy kolekcji?',
     url: '/images/linq6.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -6691,7 +7088,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'W niniejszej konstrukji zastosowano sortowanie?',
+    question:
+      'W niniejszej konstrukji zastosowano sortowanie?',
     url: '/images/linq.png',
     a1: 'rosnąco',
     a2: 'malejąco',
@@ -6702,7 +7100,8 @@ const questions = [
     desc: 'Do sortowania malejąco służy OrderByDescending()',
   },
   {
-    question: 'Wartość zmiennej "liczba" po powrocie z funkcji "Inkrementuj()" będzie miała wartość?',
+    question:
+      'Wartość zmiennej "liczba" po powrocie z funkcji "Inkrementuj()" będzie miała wartość?',
     url: '/images/refkw.png',
     a1: '3',
     a2: '2',
@@ -6713,7 +7112,8 @@ const questions = [
     desc: 'Słowo kluczowe "ref" służy do typów wartościowych do funkcji na zasadzie referencji.',
   },
   {
-    question: 'W obu klasach na rysunku zastosowano?',
+    question:
+      'W obu klasach na rysunku zastosowano?',
     url: '/images/props.png',
     a1: 'hermetyzację',
     a2: 'polimorfizm',
@@ -6724,7 +7124,8 @@ const questions = [
     desc: 'Klasa po prawej wykorzystuje do hermetyzacji właściwości, które są jak na ten moment unikalne dla C#. Oczywiście w klarmach od get i set można dorzucić więcej logiki niż tylko przypisanie.',
   },
   {
-    question: 'Co wyświetli się na ekranie?',
+    question:
+      'Co wyświetli się na ekranie?',
     url: '/images/exceptions1.png',
     a1: 'DivideByZeroException: Dzielisz przez zero! (3)',
     a2: 'Exception: Dzielisz przez zero! (2)',
@@ -6735,7 +7136,8 @@ const questions = [
     desc: 'W tym przypadku zostanie złapany bardziej precyzyjny wyjątek, ponieważ został wskazany wcześniej.',
   },
   {
-    question: 'Dlaczego IDE podkreśla nazwę wyjatku?',
+    question:
+      'Dlaczego IDE podkreśla nazwę wyjatku?',
     url: '/images/exceptions2.png',
     a1: 'Ponieważ wcześniejsza konstrukcja z "Exception" łapie już wszystko',
     a2: 'Nazwa wyjątku jest błędna',
@@ -6746,7 +7148,8 @@ const questions = [
     desc: 'Łapanie "Exception" łapie wszystkie wyjątki z niego dziedziczące, a jak wiadomo w C# każdy wyjątek dziedziczy z "Exception".',
   },
   {
-    question: 'Dlaczego IDE podkreśla nazwę interfejsu?',
+    question:
+      'Dlaczego IDE podkreśla nazwę interfejsu?',
     url: '/images/interface.png',
     a1: 'Ponieważ klasa dziedzicząca z intefejsu nie implementuje wszystkich jego składowych',
     a2: 'Ponieważ metody wskazywane przez interfejs są prywatne',
@@ -6757,7 +7160,8 @@ const questions = [
     desc: 'Wszystkie metody wymienione w interfejsie muszą zostać zaimplementowane choćby pustym ciałem.',
   },
   {
-    question: 'Dlaczego IDE podkreśla nazwę klasy?',
+    question:
+      'Dlaczego IDE podkreśla nazwę klasy?',
     url: '/images/abstract.png',
     a1: 'Ponieważ klasa dziedzicząca z klasy abstrakcyjnej nie implementuje wszystkich jego składowych',
     a2: 'Ponieważ metody wskazywane przez klase abstrakcyjną nie są virtualne',
@@ -6768,7 +7172,8 @@ const questions = [
     desc: 'Wszystkie metody wymienione w klasie abstrakcyjnej muszą zostać zaimplementowane choćby pustym ciałem.',
   },
   {
-    question: 'Po wykonaniu poniższego kodu na ekranie pokaże się?',
+    question:
+      'Po wykonaniu poniższego kodu na ekranie pokaże się?',
     url: '/images/csharppoli.png',
     a1: 'Base/ChildA/ChildB/ChildA/ChildB',
     a2: 'Base/ChildA/ChildB/Base/Base',
@@ -6779,7 +7184,8 @@ const questions = [
     desc: 'Zastosowano tutaj standardowy polimorfizm. Dzięki "virtual" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej).',
   },
   {
-    question: 'Po wykonaniu poniższego kodu na ekranie pokaże się?',
+    question:
+      'Po wykonaniu poniższego kodu na ekranie pokaże się?',
     url: '/images/csharppoli2.png',
     a1: 'Base/ChildA/ChildB/',
     a2: 'Base/Base/Base',
@@ -6790,7 +7196,8 @@ const questions = [
     desc: 'Zastosowano tutaj standardowy polimorfizm. Dzięki "virtual" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej).',
   },
   {
-    question: 'Po wykonaniu poniższego kodu na ekranie pokaże się?',
+    question:
+      'Po wykonaniu poniższego kodu na ekranie pokaże się?',
     url: '/images/csharppoli3.png',
     a1: 'Base/ChildA/ChildB/',
     a2: 'Base/Base/Base',
@@ -6801,7 +7208,8 @@ const questions = [
     desc: 'Zastosowano tutaj standardowy polimorfizm. Dzięki "virtual" wywołanie metody zależy od typu obiektu a nie typu referencji (zmiennej).',
   },
   {
-    question: 'Wynikiem działania poniższego kodu będzie?',
+    question:
+      'Wynikiem działania poniższego kodu będzie?',
     url: '/images/operatoroverload.png',
     a1: '[4;6]',
     a2: '[1;2]',
@@ -6824,7 +7232,8 @@ const questions = [
     desc: 'Elementy statycznie nie mogą używać elementów niestatycznych klasy (potrzebny jest obiekt). W drugą stronę relacja jest możliwa.',
   },
   {
-    question: 'Poniższa klasa sugeruje budowę?',
+    question:
+      'Poniższa klasa sugeruje budowę?',
     url: '/images/tree1.png',
     a1: 'drzewa binarnego',
     a2: 'kolejki',
@@ -6859,7 +7268,8 @@ const questions = [
     desc: 'Klasa "MailSender" jest wstawiona w pole klasy "MailMessage" przez konstruktor.',
   },
   {
-    question: 'Poniższą funkcję można nazwać poprawnym testem jednostkowym?',
+    question:
+      'Poniższą funkcję można nazwać poprawnym testem jednostkowym?',
     url: '/images/unittest.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -6870,7 +7280,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Poniższa asercja zakończy się?',
+    question:
+      'Poniższa asercja zakończy się?',
     url: '/images/assertthrow.png',
     a1: 'negatywnie',
     a2: 'pozytywnie',
@@ -6881,7 +7292,8 @@ const questions = [
     desc: 'Asercja oczekuje rzucenia konkretnego wyjątku ("DivideByZero"), ale podaliśmy do funkcji poprawne dane, więc nie zostanie on rzucony. Test nie przejdzie.',
   },
   {
-    question: 'Poniższa asercja zakończy się?',
+    question:
+      'Poniższa asercja zakończy się?',
     url: '/images/assertthrow2.png',
     a1: 'pozytywnie',
     a2: 'negatywnie',
@@ -6892,7 +7304,8 @@ const questions = [
     desc: 'Asercja oczekuje rzucenia konkretnego wyjątku ("DivideByZero"). Zgodnie z implementacją funkcji "divide" zostanie on rzucony, ponieważ b = 0',
   },
   {
-    question: 'Poniższe dwie asercje są równoznaczne?',
+    question:
+      'Poniższe dwie asercje są równoznaczne?',
     url: '/images/assert.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -6903,7 +7316,8 @@ const questions = [
     desc: 'Różnia się tylko zapisem. Chociaż w przypadku typów referencyjnych należy uważać tak samo jak z operatorem "==" oraz metodą "Equals()".',
   },
   {
-    question: 'Poniższy test zakończy się sukcesem gdy?',
+    question:
+      'Poniższy test zakończy się sukcesem gdy?',
     url: '/images/jest1.png',
     a1: 'wynik dzielenia będzie wynosił 3',
     a2: 'dzielenie wykona się bez błędów',
@@ -6914,7 +7328,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Poniższy test zakończy się sukcesem gdy?',
+    question:
+      'Poniższy test zakończy się sukcesem gdy?',
     url: '/images/jest2.png',
     a1: 'operacja rzuci wyjątek',
     a2: 'wynik dzielenia będzie wynosił 3',
@@ -6949,7 +7364,8 @@ const questions = [
     desc: 'Visual Studio potrafi sam (po wciśnieciu tab po napisaniu += ) wygenerować pustą funkcje przypisywaną do zdarzenia. Funkcja ta zazwyczaj zawiera rzucenie wyjątku o braku implementacji.',
   },
   {
-    question: 'Zakładając, że na obrazku widzimy uproszczony diagram klas możemy powiedzieć, że?',
+    question:
+      'Zakładając, że na obrazku widzimy uproszczony diagram klas możemy powiedzieć, że?',
     url: '/images/zaleznosc.png',
     a1: 'klasa Dokument jest zależnością klasy Katalog',
     a2: 'klasa Katalog jest zależnością klasy Dokument',
@@ -6960,7 +7376,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Zakładając, że na obrazku widzimy uproszczony diagram klas możemy powiedzieć, że?',
+    question:
+      'Zakładając, że na obrazku widzimy uproszczony diagram klas możemy powiedzieć, że?',
     url: '/images/innerclass.png',
     a1: 'klasa Silnik jest klasą wewnętrzną klasy Samochód',
     a2: 'klasa Samochód jest klasą wewnętrzną klasy Silnik',
@@ -6971,7 +7388,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Dlaczego metoda "Point()" przedstawionej klasy nie ma typu zwracanego?',
+    question:
+      'Dlaczego metoda "Point()" przedstawionej klasy nie ma typu zwracanego?',
     url: '/images/umlclass.png',
     a1: 'ponieważ jest to konstruktor',
     a2: 'ponieważ jest to destruktor',
@@ -6982,7 +7400,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
+    question:
+      'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
     url: '/images/pythonnoglobal.png',
     a1: '2',
     a2: '3',
@@ -6993,7 +7412,8 @@ const questions = [
     desc: 'Aby wewnątrz funkcji języka Python odwołać się do zmiennej globalnej trzeba ją wcześniej w jej wnętrzu oznaczyć słowem kluczowym "global"',
   },
   {
-    question: 'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
+    question:
+      'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
     url: '/images/pythonglobal.png',
     a1: '3',
     a2: '2',
@@ -7004,7 +7424,8 @@ const questions = [
     desc: 'Aby wewnątrz funkcji języka Python odwołać się do zmiennej globalnej trzeba ją wcześniej w jej wnętrzu oznaczyć słowem kluczowym "global"',
   },
   {
-    question: 'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
+    question:
+      'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
     url: '/images/mutlist.png',
     a1: '[0,2,3]',
     a2: '[1,2,3]',
@@ -7015,7 +7436,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
+    question:
+      'Po wywołaniu, poniższego skryptu języka Python w konsoli otrzymamy?',
     url: '/images/tuplemut.png',
     a1: 'treść błędu o tym, że tuple jest tylko do odczytu',
     a2: '[0,2,3]',
@@ -7026,7 +7448,8 @@ const questions = [
     desc: 'Tuple to w Pythonie kontener read-only',
   },
   {
-    question: 'Dwie klasy języka Python przedstawione na obrazku mogą posłużyć do budowy?',
+    question:
+      'Dwie klasy języka Python przedstawione na obrazku mogą posłużyć do budowy?',
     url: '/images/pythontree.png',
     a1: 'drzewa',
     a2: 'listy',
@@ -7037,7 +7460,8 @@ const questions = [
     desc: 'Obie klasy to najprostsze implementacje węzłów drzewa z jednym oraz dwojgiem dzieci.',
   },
   {
-    question: 'Klasa języka Python przedstawiona na obrazku...',
+    question:
+      'Klasa języka Python przedstawiona na obrazku...',
     url: '/images/pythoninherit.png',
     a1: 'wszystkie pozostałe',
     a2: 'dziedziczy z klasy "Exception"',
@@ -7048,7 +7472,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Klasa języka Python przedstawiona na obrazku...',
+    question:
+      'Klasa języka Python przedstawiona na obrazku...',
     url: '/images/pythoninherit.png',
     a1: 'jest definicją własnego wyjątku',
     a2: 'pozwala rzucać w swoich metodach wyjątki klasy "Exception"',
@@ -7059,7 +7484,8 @@ const questions = [
     desc: '',
   },
   {
-    question: 'Które zdanie na temat poniższego skryptu języka Python jest nieprawdziwe',
+    question:
+      'Które zdanie na temat poniższego skryptu języka Python jest nieprawdziwe',
     url: '/images/pythonobject.png',
     a1: 'zmienna ast jest typu "string"',
     a2: 'zmienna parser jest typu "Parser"',
