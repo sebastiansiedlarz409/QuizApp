@@ -2502,18 +2502,6 @@ const questions = [
   },
   {
     question:
-      'Każdy program napisany w C# musi mieć funkcję Main?',
-    url: '/images/csharp.jpeg',
-    a1: 'Od .NET 6 nie każdy',
-    a2: 'Od .NET 6 każdy',
-    a3: 'Każdy oprócz programu webowego',
-    a4: 'Każdy oprócz programu konsolowego',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'W .NET 6 trochę na siłe uprościli zapis i nie ma już funkcji main. Plik bazowy wygląda jak np. skrypt w pytonie czy javascript.',
-  },
-  {
-    question:
       'C# oferuje obsługę wskaźników?',
     url: '',
     a1: 'TAK',
@@ -2725,7 +2713,7 @@ const questions = [
     a3: 'Func<T>',
     a4: 'Predicate<T>',
     tag: 'NIEOFICJALNE',
-    type: '2A',
+    type: '4A',
     desc: '',
   },
   {
@@ -2778,7 +2766,7 @@ const questions = [
   },
   {
     question:
-      'Istnieje w C# różnica między zmienną typu "var" a "dynamic"?',
+      'W C# "var" a "dynamic" oznacza dokładnie to samo?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2790,7 +2778,19 @@ const questions = [
   },
   {
     question:
-      'Istnieje w C# różnica między zmienną typu "const" a "readonly"?',
+      'W C# "const" oraz "readonly" oznacza dokładnie to samo?',
+    url: '/images/readonly',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Zmienna "readonly" może zostać podmieniona przez konstruktor. To słowo kluczowe stosuje się do pól przechowujących obiekty zależności klasy (obrazek).',
+  },
+  {
+    question:
+      'Czy C# możliwe jest zapisane do zmiennej "readonly"?',
     url: '/images/readonly',
     a1: 'TAK',
     a2: 'NIE',
@@ -7506,6 +7506,138 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Ostatnia linia kodu odpowiada funkcji substring z innych języków.',
+  },
+  {
+    question:
+      'Czy konstrukcja zapisana poniżej jest poprawna z punktu widzenia C#?',
+    url: '/images/nomutstring.png',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Stringi w C# są wartościami readonly.',
+  },
+  {
+    question:
+      'Czy konstrukcja zapisana poniżej jest poprawna z punktu widzenia C#?',
+    url: '/images/nomutstring2.png',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Stringi w C# są wartościami readonly.',
+  },
+  {
+    question:
+      'Czy implementacja zaprezentowana poniżej pozala wykonać kopię typu referencyjnego?',
+    url: '/images/refcpy.png',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartoścami. Jednak jest to tylko płytka kopia.',
+  },
+  {
+    question:
+      'Czy implementacja zaprezentowana poniżej pozala wykonać kopię typu referencyjnego?',
+    url: '/images/refcpy2.png',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartoścami, które też są kopiowane. Jest to kopia głęboka.',
+  },
+  {
+    question:
+      'Poniższy program wypisze na ekranie?',
+    url: '/images/dereferenceintptr.png',
+    a1: '3',
+    a2: '2',
+    a3: '1',
+    a4: '4',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Przesuwamy się w pamięci o (2*rozmiar inta) bajtów i wyłuskujemy wartość.',
+  },
+  {
+    question:
+      'Poniższy program wypisze na ekranie?',
+    url: '/images/sizeof.png',
+    a1: '1',
+    a2: '2',
+    a3: '8',
+    a4: '4',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zwracana jest ilość bajtów potrzebna do zapisana w pamięci wartości danego typu.',
+  },
+  {
+    question:
+      'Poniższy program wypisze na ekranie?',
+    url: '/images/sizeofstruct.png',
+    a1: '8',
+    a2: '16',
+    a3: '32',
+    a4: '24',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zwracana jest ilość bajtów potrzebna do zapisana w pamięci wartości danego typu. W przypadku tej struktury będzie to suma rozmiarów typów, z których składa się ta struktura.',
+  },
+  {
+    question:
+      'Ostatnim wypisanym elementem będzie?',
+    url: '/images/charloop.png',
+    a1: '127',
+    a2: '128',
+    a3: '1',
+    a4: '0',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zakres chara to -128 do 127. Po dodaniu do 127 liczby 1 zakres się "przekręca" i dostajemy -128.',
+  },
+  {
+    question:
+      'Ostatnim wypisanym elementem będzie?',
+    url: '/images/charloop2.png',
+    a1: '-128',
+    a2: '128',
+    a3: '127',
+    a4: '-127',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zakres chara to -128 do 127. Po dodaniu do 127 liczby 1 zakres się "przekręca" i dostajemy -128.',
+  },
+  {
+    question:
+      'Ostatnim wypisanym elementem będzie?',
+    url: '/images/charloop3.png',
+    a1: '-99',
+    a2: '-100',
+    a3: '-101',
+    a4: '1',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zakres chara to -128 do 127. Po dodaniu do 127 liczby 1 zakres się "przekręca" i dostajemy -128.',
+  },
+  {
+    question:
+      'Ostatnim wypisanym elementem będzie?',
+    url: '/images/charloop4.png',
+    a1: '-99',
+    a2: '-100',
+    a3: '-101',
+    a4: '1',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zakres chara to -128 do 127. Po dodaniu do 127 liczby 1 zakres się "przekręca" i dostajemy -128.',
   },
   {
     question:
