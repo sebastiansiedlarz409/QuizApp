@@ -27,7 +27,7 @@ const questions = [
   {
     question:
       'Czy typy float i double są identyczne?',
-    url: '',
+    url: '/images/floatdouble.jpg',
     a1: 'NIE',
     a2: 'TAK',
     a3: '',
@@ -146,7 +146,7 @@ const questions = [
   },
   {
     question:
-      'Strukturą FILO jest?',
+      'Strukturą typu FILO jest?',
     url: '',
     a1: 'Stos',
     a2: 'Kolejka',
@@ -190,7 +190,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'FIFO - First In Last Out. LIFO - Last In First Out.',
+    desc: 'FILO - First In Last Out. LIFO - Last In First Out.',
   },
   {
     question:
@@ -435,7 +435,7 @@ const questions = [
   {
     question:
       'Słowo kluczowe "this" w C/C++ jest wskaźnikiem?',
-    url: '',
+    url: '/images/this.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -1190,7 +1190,7 @@ const questions = [
   },
   {
     question:
-      'Dynamiczne stworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?',
+      'Dynamiczne tworzenie obiektu w C/C++ odbywa się za pomocą konstrukcji?',
     url: '/images/stackheap.jpg',
     a1: 'MyClass* myObj = new MyClass();',
     a2: 'MyClass myObj = new MyClass();',
@@ -1659,7 +1659,7 @@ const questions = [
   },
   {
     question:
-      'Wartość wyrażenia !5 to?',
+      'Wartość wyrażenia !5 w C++ to?',
     url: '',
     a1: 'false',
     a2: 'undefined',
@@ -1858,6 +1858,18 @@ const questions = [
     a2: 'operacji',
     a3: 'petli',
     a4: 'wejścia-wyjścia',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Bloczek z ilustracji to bok?',
+    url: '/images/ioblock.png',
+    a1: 'wejścia-wyjścia',
+    a2: 'warunku',
+    a3: 'operacji',
+    a4: 'petli',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -2779,7 +2791,7 @@ const questions = [
   {
     question:
       'W C# "const" oraz "readonly" oznacza dokładnie to samo?',
-    url: '/images/readonly',
+    url: '/images/readonly.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -2791,7 +2803,7 @@ const questions = [
   {
     question:
       'Czy C# możliwe jest zapisane do zmiennej "readonly"?',
-    url: '/images/readonly',
+    url: '/images/readonly.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -3620,7 +3632,7 @@ const questions = [
   },
   {
     question:
-      'Plik służący do tworzenia listy plików/katalogów, które są ignorowane przez system kontroli wersji git jest?',
+      'Listę plików/katalogów, które są ignorowane przez system kontroli wersji git należy umieścić w pliku?',
     url: '',
     a1: '.gitignore',
     a2: '.gitattribute',
@@ -7487,8 +7499,8 @@ const questions = [
     question:
       'Które zdanie na temat poniższego skryptu języka Python jest nieprawdziwe',
     url: '/images/pythonobject.png',
-    a1: 'zmienna ast jest typu "string"',
-    a2: 'zmienna parser jest typu "Parser"',
+    a1: 'zmienna "ast" jest typu "string"',
+    a2: 'zmienna "parser" jest typu "Parser"',
     a3: '"CodeSyntaxError" to nazwa wyjątku, który może zostać rzucony przez kod umieszczony w sekcji "try"',
     a4: 'zakomentowany fragment kodu wypisuje wiadomość, którą niesie łapany wyjątek',
     tag: 'NIEOFICJALNE',
@@ -7638,6 +7650,42 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Zakres chara to -128 do 127. Po dodaniu do 127 liczby 1 zakres się "przekręca" i dostajemy -128.',
+  },
+  {
+    question:
+      'W obu przypadkach zostanie wypisane to samo?',
+    url: '/images/csequals.png',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Operator porownuje adresy w referencji. Metodę Equals możemy przeciążyć i zaimplementować dowolnie.',
+  },
+  {
+    question:
+      'Ile razy w konsoli zobaczymy napis "ASD"?',
+    url: '/images/jsvar.png',
+    a1: '5',
+    a2: '3',
+    a3: '4',
+    a4: 'wystąpi błąd, ponieważ nie zainicjowaliśmy zmiennej i w drugiej pętli',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Ile razy w konsoli zobaczymy napis "ASD"?',
+    url: '/images/jslet.png',
+    a1: '3',
+    a2: '5',
+    a3: '4',
+    a4: 'wystąpi błąd, ponieważ nie zainicjowaliśmy zmiennej i w drugiej pętli',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
   },
   {
     question:
