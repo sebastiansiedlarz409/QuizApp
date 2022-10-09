@@ -583,7 +583,7 @@ const questions = [
     a1: 'find()',
     a2: 'rfind()',
     a3: 'compare()',
-    a4: 'filtr()',
+    a4: 'filter()',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -1951,7 +1951,7 @@ const questions = [
     question:
       'Zależnością klasy jest?',
     url: '',
-    a1: 'inna klasa w formie obiektu tej klasy',
+    a1: 'inna klasa',
     a2: 'każde pole klasy',
     a3: 'każda metoda klasy',
     a4: 'żadne z wymienionych',
@@ -2233,7 +2233,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie da się przeciążyć operatora trynarnego ?:',
+    desc: 'Nie da się przeciążyć operatora trynarnego ?: (C++). W C# lista nimożliwych do przeciążenia operatorów jest dłuższa i zawiera miedzyinnymi operatory z serii +=, -=, ...',
   },
   {
     question:
@@ -3090,6 +3090,30 @@ const questions = [
   },
   {
     question:
+      'Parametry generyczne służą do?',
+    url: '/images/genericsharp.png',
+    a1: 'wszystkie pozostałe',
+    a2: 'dynamicznego precyzowania typów stosowanych w metodzie/klasie',
+    a3: 'precyzowania jakiego typu elementy przechowuje kolekcja',
+    a4: 'określania typów argumentow w przypadku deklaracji delegata',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Parametrem generycznym jest zawsze typ. Np. "Func<int, int>"',
+  },
+  {
+    question:
+      '"Indexer" to konstrukcja języka C#, która?',
+    url: '/images/indexer.png',
+    a1: 'jest opowiednikiem przeciążonego operatora []',
+    a2: 'jest odpowiednikiem przeciążonego operatora (type)',
+    a3: 'jest odpowiednikiem przeciążonego operatora &',
+    a4: 'żadana z pozostałych',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Indexer to konstrukcja języka C# wyglądem i zachowaniem przypominająca właściwość. W przypadku innych języków można ją porównać do przeciążenia operatora [].',
+  },
+  {
+    question:
       'W C# interfejsy nazywa się zaczynając od litery I?',
     url: '',
     a1: 'TAK',
@@ -3150,6 +3174,18 @@ const questions = [
   },
   {
     question:
+      'Do czego służy metoda Equals() w C#?',
+    url: '',
+    a1: 'metoda ta zależnie od implementacji użytkownika sprawdza czy dwa obiekty danej klasy są równe',
+    a2: 'metoda ta sprawdza czy obiekt zajmuje w pamięci wskazaną ilość bajtów',
+    a3: 'metoda ta sprawdza czy adresy dwóch obiektów są równe',
+    a4: 'metoda ta sprawdza czy referencje dwóch obiektów są równe',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
       'Metoda klasy string, która sprawdza czy napis jest nullem lub jest pusty to?',
     url: '',
     a1: 'IsNullOrEmpty()',
@@ -3171,18 +3207,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '"a is {}" to odpowiednik "a != null"',
-  },
-  {
-    question:
-      'Słowo kluczowe służące do nadpisywania metod klasy bazowej to?',
-    url: '',
-    a1: 'override',
-    a2: 'virtual',
-    a3: 'extern',
-    a4: 'static',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
   },
   {
     question:
@@ -3330,6 +3354,30 @@ const questions = [
   },
   {
     question:
+      'Metodą LINQ, która zwraca wszystkie elementy kolekcji, dla których podany callback zwrócił prawdę to?',
+    url: '',
+    a1: 'Where()',
+    a2: 'Select()',
+    a3: 'ToList()',
+    a4: 'Filter()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Metody Linq First() oraz FirstOrDefault() działają identycznie?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'First() w przypadku braku dopasowania rzuca wyjątek. FirstOrDefault() w takim przypadku zwraca domyślną wartość dla danego typu przechowywanego w kolekcji.',
+  },
+  {
+    question:
       'Metoda rozszerzająca to metoda?',
     url: '',
     a1: 'statyczna, która zachowuje się jakby była częścią obiektu',
@@ -3378,6 +3426,42 @@ const questions = [
   },
   {
     question:
+      'W C# metoda klasy "File" stosowana do tworzenia plików nazywa się?',
+    url: '',
+    a1: 'Create()',
+    a2: 'CreateFile()',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'W C# metoda klasy "File" stosowana do usuwania plików nazywa się?',
+    url: '',
+    a1: 'Delete()',
+    a2: 'Remove()',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'W C# metody klasy File o nazwie "ReadAllLines()" oraz "ReadAllText()" działają tak samo?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Pierwsza zwraca tablicę z wierszami, druga cały plik w formie stringa.',
+  },
+  {
+    question:
       'W C# wyjątek "DirectoryNotFoundException" rzucany np. przez "File.Create()" oznacza?',
     url: '',
     a1: 'że nie można znaleźć katalogu, składowego scieżki',
@@ -3394,6 +3478,30 @@ const questions = [
     url: '',
     a1: 'TAK',
     a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'W C# metoda klasy "Directory" stosowana do usuwania katalogów nazywa się?',
+    url: '',
+    a1: 'Delete()',
+    a2: 'Remove()',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'W C# metoda klasy "Directory" stosowana do tworzenia katalogów nazywa się?',
+    url: '',
+    a1: 'CreateDirectory()',
+    a2: 'Create()',
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',
@@ -3469,6 +3577,66 @@ const questions = [
     a2: 'TABLE',
     a3: 'COLUMN',
     a4: 'ROW',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Do nadawania obramowania elementom w WPF służy tag?',
+    url: '',
+    a1: 'Border',
+    a2: 'Frame',
+    a3: 'Padding',
+    a4: 'nie istnieje taki tag',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W WPF tagiem budującym listę rozwijaną jest?',
+    url: '',
+    a1: 'ComboBox',
+    a2: 'ListView',
+    a3: 'SelectList',
+    a4: 'ScrollList',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W WPF właściwością tagów odpowiedzialnych za wszelkiego rodzaju listy, która pozwala zdefiniować listę elementów jest?',
+    url: '',
+    a1: 'ItemSource',
+    a2: 'ItemList',
+    a3: 'DataSource',
+    a4: 'Items',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Pierwszym argumentem funkcji MessageBox.Show() jest?',
+    url: '',
+    a1: 'treść komunikatu',
+    a2: 'tytuł okienka z komunikatem',
+    a3: 'referencja na rodzica',
+    a4: 'enum określający rodzaj przycisków dostępnych w okienku',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Trzecim argumentem funkcji MessageBox.Show() jest?',
+    url: '',
+    a1: 'enum określający rodzaj przycisków dostępnych w okienku',
+    a2: 'treść komunikatu',
+    a3: 'tytuł okienka z komunikatem',
+    a4: 'referencja na rodzica',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -3877,7 +4045,7 @@ const questions = [
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'kod testujący inny kod',
-    a3: 'kod werfikujący wynik działania metod',
+    a3: 'kod werfikujący wynik działania metod/funkcji',
     a4: 'kod wywołujący testowany kod w kontrolowanych warunkach',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -3905,7 +4073,7 @@ const questions = [
     a4: 'Fast/Isolated/Repeatable/Self-validating/Throwable',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '',
+    desc: 'Są to cechy jakie musi spełniać każdy test jednostkowy',
   },
   {
     question:
@@ -4062,6 +4230,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Nie powinno się testować metod prywatnych bezpośrednio, co nie oznacza, że się nie da.',
+  },
+  {
+    question:
+      'Test, który raz pzrechodzi pozytywnie a raz negatywnie to dobry test?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Wniosek się da z tego wyciągnąć, ale zachowanie takie jest sprzeczne z zasadami testowania.',
   },
   //wzorce i zasady programowania
   {
@@ -6009,6 +6189,18 @@ const questions = [
       'Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?',
     url: '',
     a1: 'bezpieczeństwo',
+    a2: 'obsługa baz SQL',
+    a3: 'obsługa REST API',
+    a4: 'szyfrowanie haseł metodą SHA256',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Wymagania niefunkcjonalne to np. bezpieczeństwo, schludny design, dostępność na wielu platformach.',
+  },
+  {
+    question:
+      'Które z poniższych wymagań projektu to wymaganie niefunkcjonalne?',
+    url: '',
+    a1: 'schludny wygląd',
     a2: 'obsługa baz SQL',
     a3: 'obsługa REST API',
     a4: 'szyfrowanie haseł metodą SHA256',
