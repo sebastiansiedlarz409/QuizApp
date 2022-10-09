@@ -1599,6 +1599,18 @@ const questions = [
   //numeric systems
   {
     question:
+      'Zapisane w kodzie szesnastkowym składowe RGB koloru #AA41FF po przekształceniu do kodu dziesiętnego wynoszą kolejno',
+    url: '',
+    a1: '170,65,255',
+    a2: '160,65,255',
+    a3: '160,64,255',
+    a4: '170,64,255',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
       'Liczba 0xAA to w systemie binarnym?',
     url: '',
     a1: '0b10101010',
@@ -2499,6 +2511,18 @@ const questions = [
     type: '4A',
     desc: '',
   },
+  {
+    question:
+      'Destruktory klas powinno się definiować jako virtualne',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Działa tu ta sama zasada co w przypadku polimorfizmu na normalnych metodach. Kompilator musi wiedzieć, który konstruktor wywołać jeżeli referencja/wskaźnik jest typu bazowego.',
+  },
   //C#
   {
     question:
@@ -2611,6 +2635,18 @@ const questions = [
   {
     question:
       'W C# da się napisać klasę w klasie?',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Tak, możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej.',
+  },
+  {
+    question:
+      'W C++ da się napisać klasę w klasie?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2995,7 +3031,7 @@ const questions = [
   {
     question:
       'Właściwość w C# to odpowiednik gettera i settera z innych języków?',
-    url: '',
+    url: '/images/set.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -3007,7 +3043,7 @@ const questions = [
   {
     question:
       'Jeżeli właściwość w C# ma tylko zadeklarowaną opcję get to jest tylko getterem?',
-    url: '',
+    url: '/images/get.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -3019,7 +3055,7 @@ const questions = [
   {
     question:
       'Jeżeli właściwość w C# ma tylko zadeklarowaną opcję set to jest tylko setterem?',
-    url: '',
+    url: '/images/set.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -3031,7 +3067,7 @@ const questions = [
   {
     question:
       'Jeżeli właściwość w C# ma słowo kluczowe "init" w miejscu "set" oznacza to, że może ona być użyta jako setter raz w czasie inicjalizacji?',
-    url: '',
+    url: '/images/init.png',
     a1: 'TAK',
     a2: 'NIE',
     a3: '',
@@ -3202,6 +3238,18 @@ const questions = [
     url: '',
     a1: 'false',
     a2: 'true',
+    a3: '0',
+    a4: 'kompilacja skończy się błędem',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '"a is {}" to odpowiednik "a != null"',
+  },
+  {
+    question:
+      'Gdy "a = new object()" instrukcja "Console.WriteLine(a is { });" wypisze?',
+    url: '',
+    a1: 'true',
+    a2: 'false',
     a3: '0',
     a4: 'kompilacja skończy się błędem',
     tag: 'NIEOFICJALNE',
@@ -4233,7 +4281,7 @@ const questions = [
   },
   {
     question:
-      'Test, który raz pzrechodzi pozytywnie a raz negatywnie to dobry test?',
+      'Test, który raz przechodzi pozytywnie a raz negatywnie to dobry test?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -5754,7 +5802,7 @@ const questions = [
     question:
       'W języku Python konstrukcja odpowiedzialna za wycinannie podłańcuchów łańcucha tekstowego to',
     url: '',
-    a1: 'operator[start:end]',
+    a1: 'operator [start:end]',
     a2: 'substr(start:end)',
     a3: 'operator (start:end)',
     a4: 'substring(start:end)',
@@ -6178,11 +6226,23 @@ const questions = [
     url: '',
     a1: 'ASCII',
     a2: 'UTF',
-    a3: 'ISO',
-    a4: 'PID',
+    a3: 'UNICODE',
+    a4: 'CRT',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Najbardziej podstawowy rodzaj kodowania znaków to ASCII. UTF to ogromne rozszerzenie zawierające znaki specjalne każdego języka oraz wiele innych symboli.',
+    desc: 'Najbardziej podstawowy rodzaj kodowania znaków to ASCII. UNICODE to ogromne rozszerzenie zawierające znaki specjalne każdego języka oraz wiele innych symboli.',
+  },
+  {
+    question:
+      'Poniższa tabelka przedstawia?',
+    url: '/images/ascii.gif',
+    a1: 'tabele ASCII',
+    a2: 'tabele UNICODE',
+    a3: 'tablice kodów base64',
+    a4: 'tablicę kodów base32',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Najbardziej podstawowy rodzaj kodowania znaków to ASCII. UNICODE to ogromne rozszerzenie zawierające znaki specjalne każdego języka oraz wiele innych symboli.',
   },
   {
     question:
@@ -7857,6 +7917,54 @@ const questions = [
   },
   {
     question:
+      'Po wykonaniu poniższego programu w języku C# na ekranie zobaczymy?',
+    url: '/images/doubleparse1.png',
+    a1: 'błąd',
+    a2: 'Goodbye World',
+    a3: 'Hello World',
+    a4: 'kompilacja się nie powiedzie',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Metoda parse domyślnie oczekuje przecinka jako sepratora części całkowitej i ułamkowej.',
+  },
+  {
+    question:
+      'Po wykonaniu poniższego programu w języku C# na ekranie zobaczymy?',
+    url: '/images/doubleparse2.png',
+    a1: 'Goodbye World',
+    a2: 'błąd',
+    a3: 'Hello World',
+    a4: 'kompilacja się nie powiedzie',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Metoda parse domyślnie oczekuje przecinka jako sepratora części całkowitej i ułamkowej.',
+  },
+  {
+    question:
+      'Po wykonaniu poniższego programu w języku C# na ekranie zobaczymy?',
+    url: '/images/trynary.png',
+    a1: '-1',
+    a2: '1',
+    a3: '0',
+    a4: '10',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zastosowano to bardzo użyteczny operator trynarny nazywany mini ifem.',
+  },
+  {
+    question:
+      'Po wykonaniu poniższego programu w języku Python na ekranie zobaczymy?',
+    url: '/images/trynaryp.png',
+    a1: '-1',
+    a2: '1',
+    a3: '0',
+    a4: '10',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Zastosowano to bardzo użyteczny operator trynarny nazywany mini ifem.',
+  },
+  {
+    question:
       'Ile razy w konsoli zobaczymy napis "ASD"?',
     url: '/images/jsvar.png',
     a1: '5',
@@ -7876,6 +7984,66 @@ const questions = [
     a3: '4',
     a4: 'wystąpi błąd, ponieważ nie zainicjowaliśmy zmiennej i w drugiej pętli',
     tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Która wartość zostanie wyświetlona w wyniku działania skryptu PHP?',
+    url: '/images/sumaphp.png',
+    a1: '15',
+    a2: '10',
+    a3: '5',
+    a4: '0',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Zapisana w PHP instrukcja spowoduje wypisanie typu',
+    url: '/images/gettypephp.png',
+    a1: 'double',
+    a2: 'string',
+    a3: 'boolean',
+    a4: 'integer',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Przedstawiona metoda jest implementacją algorytmu',
+    url: '/images/fun1php.png',
+    a1: 'odracającego napis',
+    a2: 'wszukującego znak w napisie',
+    a3: 'sprawdzającego czy napis jest palindromem',
+    a4: 'sortującego znaki w napisie względem kodów ASCII',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Rezultatem wykonania przedstawionego fragmentu kodu jest wypisanie liczb z przedziału od 2 do 20, które są',
+    url: '/images/pierwsze.png',
+    a1: 'pierwsze',
+    a2: 'parzyste',
+    a3: 'podzielnne przez wartość zmiennej "test"',
+    a4: 'podzielnne przez wartość zmiennej "check"',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W metodach klasy GoldCustomer są widoczne jedynie pola',
+    url: '/images/customerclass.png',
+    a1: 'GoldPoints, Name, Id',
+    a2: 'GoldPoints, Name',
+    a3: 'GoldPoints',
+    a4: 'GoldPoints, Name, Id, Age',
+    tag: 'OFICJALNE',
     type: '4A',
     desc: '',
   },
