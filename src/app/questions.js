@@ -5548,7 +5548,7 @@ const questions = [
   },
   {
     question:
-      'Python bazuje na języku?',
+      'Python został zaimplementowany w języku?',
     url: '',
     a1: 'C',
     a2: 'C++',
@@ -5572,6 +5572,90 @@ const questions = [
   },
   {
     question:
+      'Czy w języku Python typy danych są istotne?',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Oczywiście. To, że można ich nie precyzować to nie oznacza, że ich nie ma.',
+  },
+  {
+    question:
+      'Funkcją konwertującą int na string w języku Python jest?',
+    url: '',
+    a1: 'str()',
+    a2: 'to_string()',
+    a3: 'raw()',
+    a4: 'sttring()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W języku Python aby parsować string na int trzeba posłużyć się funkcją',
+    url: '',
+    a1: 'int()',
+    a2: 'parseInt()',
+    a3: 'Int.Parse()',
+    a4: 'ParseInt()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W języku Python aby parsować string na float trzeba posłużyć się funkcją',
+    url: '',
+    a1: 'float()',
+    a2: 'parseFloat()',
+    a3: 'Float.Parse()',
+    a4: 'ParseFloat()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Aby zamienić liczbę 0x10 na system dziesiętny w Pythonie należy posłużyć się konstrukcją ?',
+    url: '',
+    a1: 'int("10", 16)',
+    a2: 'int(10, 16)',
+    a3: 'int(10, 10)',
+    a4: 'int("10", 10)',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Pierwszy parametr funkcji "int()" to wartość w formie stringu, drugi to aktualna podstawa.',
+  },
+  {
+    question:
+      'Funkcja "float()" konwertuje wartość do liczby typu float. Która z poniższych konstrukcji jest poprawna?',
+    url: '',
+    a1: 'wszyskie pozostałe',
+    a2: 'float(2)',
+    a3: 'float(2.8)',
+    a4: 'float("2.8")',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Aby zamienić liczbę 10 na system ósemkowy w Pythonie należy posłużyć się konstrukcją ?',
+    url: '',
+    a1: 'oct(10)',
+    a2: 'hex(10)',
+    a3: 'bin(10)',
+    a4: 'dec(10)',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
       'Czy w języku Python można pisać kod realizujący jakieś zadanie poza funkcją?',
     url: '',
     a1: 'TAK',
@@ -5580,7 +5664,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Podobnie jak w JavaScript program można pisać odrazu bez funkcji.',
+    desc: 'Podobnie jak w JavaScript kod można pisać odrazu bez funkcji.',
   },
   {
     question:
@@ -5632,6 +5716,30 @@ const questions = [
   },
   {
     question:
+      'W języku Python aby sprawdzić długość kolekcji należy posłużyć się funkcją?',
+    url: '',
+    a1: 'len()',
+    a2: 'length()',
+    a3: 'size()',
+    a4: 'count()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W języku Python logiczne zaprzeczenie wykonujemy za pomocą?',
+    url: '',
+    a1: 'not',
+    a2: '!',
+    a3: '~',
+    a4: '\\',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'np. if 2 not in list: ...',
+  },
+  {
+    question:
       'W języku Python aby dodać element na koniec listy należy posłużyć się metodą?',
     url: '',
     a1: 'append()',
@@ -5652,6 +5760,54 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'Ile znaków wypisze "print(tekst[2:5])" w języku python zakładając, że string ma minimum 6 znaków?',
+    url: '',
+    a1: '3',
+    a2: '4',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Przedział jest prawostronnie otwarty.',
+  },
+  {
+    question:
+      'Konstrukcja języka Python "print("ASD"[-1:])" wypisze?',
+    url: '',
+    a1: 'D',
+    a2: 'S',
+    a3: 'A',
+    a4: 'program skończy się błędem',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Funkcja języka python, która konwertuje znaki w stringu na ich duże odpowiedniki to?',
+    url: '',
+    a1: 'string.upper()',
+    a2: 'string.toUpper()',
+    a3: 'string.toUpperCase()',
+    a4: 'żadana z pozostałych',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Funkcja języka python, która pozwala podzielić string na kawałki względem podanego sepratora to?',
+    url: '',
+    a1: 'string.split()',
+    a2: 'string.slice()',
+    a3: 'string.cut()',
+    a4: 'żadana z pozostałych',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
     desc: '',
   },
   {
@@ -5746,30 +5902,6 @@ const questions = [
     a2: 'for..range()',
     a3: 'while()',
     a4: 'do while()',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
-  },
-  {
-    question:
-      'W języku Python aby parsować string na int trzeba posłużyć się funkcją',
-    url: '',
-    a1: 'int()',
-    a2: 'parseInt()',
-    a3: 'Int.Parse()',
-    a4: 'ParseInt()',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
-  },
-  {
-    question:
-      'W języku Python aby parsować string na float trzeba posłużyć się funkcją',
-    url: '',
-    a1: 'float()',
-    a2: 'parseFloat()',
-    a3: 'Float.Parse()',
-    a4: 'ParseFloat()',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
