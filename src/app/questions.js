@@ -5151,9 +5151,12 @@ const questions = [
     question:
       'Interpolacja stringa w języku JavaScript odbywa się za pomocą składni?',
     url: '',
+    // eslint-disable-next-line
     a1: '`Ala ma ${count} kotów`',
+    // eslint-disable-next-line
     a2: '"Ala ma ${count} kotów"',
-    a3: '"Ala ma ${count} kotów"',
+    // eslint-disable-next-line
+    a3: '\'Ala ma ${count} kotów\'',
     a4: 'w JS nie ma takiego mechanizmu',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -7902,6 +7905,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Ostatnia linia kodu odpowiada funkcji substring z innych języków.',
+  },
+  {
+    question:
+      'Konstrukcja "with" przedstawiona na obrazku powoduje w tym wypadku',
+    url: '/images/with.png',
+    a1: 'że plik zostanie automatycznie zamknięty po wyjściu z niej',
+    a2: 'każda próba otwarcia pliku w innym programie nie powiedzie się',
+    a3: 'program sprawdzi czy plik nie jest używany w innym programie przed próbą otwarcia',
+    a4: 'plik zostanie otwarty w trybie readonly',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
   },
   {
     question:
