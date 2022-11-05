@@ -58,7 +58,7 @@ const questions = [
     a4: '8B',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '',
+    desc: 'Takie rzeczy zależą od architektury urządzenia. Na komputerach PC (x86) int ma 4 bajty.',
   },
   {
     question:
@@ -70,19 +70,7 @@ const questions = [
     a4: '4B',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '',
-  },
-  {
-    question:
-      'Rozmiar typu bool w pamięci to?',
-    url: '',
-    a1: '1B',
-    a2: '4B',
-    a3: '2B',
-    a4: '8B',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
+    desc: 'Takie rzeczy zależą od architektury urządzenia. Na komputerach PC (x86) int ma 8 bajtów.',
   },
   {
     question:
@@ -154,7 +142,7 @@ const questions = [
     a4: 'Sterta',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'FILO - First In Last Out. Taką strukturą jest stos.',
+    desc: 'FILO - First In Last Out. Taką strukturą jest stos. Chodzi tutaj o kolejność umieszczania danych w kolekcji oraz kolejność ich pobierania z niej.',
   },
   {
     question:
@@ -191,18 +179,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'FILO - First In Last Out. LIFO - Last In First Out.',
-  },
-  {
-    question:
-      'Strukturą liniową (elementy nie są jeden za drugim w pamięci) NIE jest?',
-    url: 'collections.png',
-    a1: 'Lista',
-    a2: 'Kolejka',
-    a3: 'Wektor',
-    a4: 'Sterta',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Struktura liniowa - kolekcja, w której dane przechowywane są jeden za drugim w pamięci. W liście każdy element jest gdzie idziej w pamięci (każdy posiada wskaźnik na poprzednika i następce dzięki czemu możliwe jest przesuwanie się po liście).',
   },
   {
     question:
@@ -286,7 +262,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli użyjemy referencji lub wskaźnika do przekazania argumentu to możliwe jest oddanie na zewnątrz policzonej wartości i to nie jednej.',
+    desc: 'Jeżeli przekażemy do funkcji parametr przez wskaźnik lub referencję i go zmodyfikujemy to zobaczymy zmiany po powrocie z funckji mimo, że nie użyliśmy "return"',
   },
   {
     question:
@@ -310,7 +286,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &.',
+    desc: 'Oznacza to, że funkcja tworzy sobię kopię tej wartości i na niej pracuje a nie na oryginale. Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &.',
   },
   {
     question:
@@ -590,7 +566,7 @@ const questions = [
   },
   {
     question:
-      'Łańcuch tekstowy w C/C++ może zostać umieszczony między apostrofami?',
+      'Łańcuch tekstowy (string) w C/C++ może zostać umieszczony między apostrofami?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -910,7 +886,7 @@ const questions = [
     a4: 'Clang',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'IL to skrót od Intermediate Language czyli języka pośredniego dla C#/F#/Visual Basic. Pozostałe programy to kompilatory często używane pod spodem przez IDE.',
+    desc: 'Kompilator to program, który zamienia napisany przez nas kod na plik exe/dll (formę zrozumiałą dla procesora). IL nie jest kompilatorem.',
   },
   {
     question:
@@ -1274,18 +1250,6 @@ const questions = [
   },
   {
     question:
-      'Co się stanie jeżeli odpytamy tablicę używając indeksu równego rozmiarowi tej tablicy?',
-    url: '',
-    a1: 'otrzymamy jakieś dane',
-    a2: 'wystąpi błąd kompilacji',
-    a3: 'wystąpi błąd runtime',
-    a4: 'nic się nie stanie',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Za tablicą w pamięci coś się zapewne znajuje. Jest mała szansa na błąd, jeżeli trafimy na granicę strony pamięci.',
-  },
-  {
-    question:
       'Do rzucania wyjątków w C++ służy słowo kluczowe?',
     url: '',
     a1: 'throw',
@@ -1358,7 +1322,7 @@ const questions = [
   },
   {
     question:
-      'Metoda oznaczona jako "friend" ma dostęp do prywatnych pól klasy?',
+      'Metoda oznaczona jako "friend" w C++ ma dostęp do prywatnych pól klasy?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2009,6 +1973,18 @@ const questions = [
   },
   {
     question:
+      'W C# interfejs i klasa abstrakcyjna działają w identyczny sposób?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Klasa może dziedziczyć z dokładnie z jednej klasy, ale za to z wielu interfejsów. Interfejsy nie mogą zawierać żadnej implemetnacji - tylko nagłówki. W klasie abstrakcyjnej możemy mieć pola oraz część metod w formie zaimplementowanej.',
+  },
+  {
+    question:
       'Można utworzyć referencje/wskaźnik typu klasy abstrakcyjnej?',
     url: '',
     a1: 'TAK',
@@ -2619,6 +2595,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Console.WriteLine() wstawia enter na końcu. ',
+  },
+  {
+    question:
+      'W C# "Console.ReadLine()" zwraca wartość w formie tekstowej?',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Funkcja ta ma typ zwracany "string". Dlatego jeżeli pobieramy od użytkownika liczby trzeba wartość parsować.',
   },
   {
     question:
@@ -6007,6 +5995,30 @@ const questions = [
   },
   {
     question:
+      'W języku Python aby zainicjować listę dziesięcioma wartościami 0 należy posłużyć się konstrukcją?',
+    url: '',
+    a1: 'wszystkie pozostałe',
+    a2: 'a = [0,0,0,0,0,0,0,0,0,0]',
+    a3: 'a = [0]*10',
+    a4: 'for i in range(0, 10): a.append(0)',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W języku Python pętla "for i in range(0, 10)" wykona się?',
+    url: '',
+    a1: '10 razy',
+    a2: '11 razy',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Range generuje przedział prawostronnie otwarty czyli [0, 10) w tym wypadku.',
+  },
+  {
+    question:
       'W języku Python aby wewnątrz funkcji możliwe było zapisanie wartości do globalnej zmiennej należy oznaczyć ją w tejże funkcji słowem kluczowym:',
     url: '',
     a1: 'global',
@@ -6907,18 +6919,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Poza tym: środki ochrony twarzy i oczy oraz środki ochrony układu oddechowego.',
-  },
-  {
-    question:
-      'Zabezpieczenie różnicowoprądowe chroni?',
-    url: '',
-    a1: 'przed porażeniem prądem wykrywając różnice prądu wpływającego do obwodu i tego w nim płynącego',
-    a2: 'przed nadmiernym wzrostem przepływającego w obwodzie prądu',
-    a3: '',
-    a4: '',
-    tag: 'NIEOFICJALNE',
-    type: '2A',
-    desc: 'Zabezpieczenie nadprądowe mówi się, że chroni sprzęt, a róznicówka chroni użytkownika.',
   },
   //szyfry i kodowania
   {
@@ -8190,6 +8190,42 @@ const questions = [
     a2: 'GoldPoints, Name',
     a3: 'GoldPoints',
     a4: 'GoldPoints, Name, Id, Age',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Które zdarzenie jest wygenerowane, gdy nieaktywne okno lub kontrolka zostaje kliknięta myszą?',
+    url: '',
+    a1: 'focus',
+    a2: 'keyup',
+    a3: 'validating',
+    a4: 'blur',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Mechanizm obietnic (ang. promises) w języku JavaScript ma na celu?',
+    url: '',
+    a1: 'obsłużyć funkcjonalność związaną z kodem asynchronicznym',
+    a2: 'zastąpić mechanizm dziedziczenia w programowaniu obiektowym',
+    a3: 'obsłużyć przechwytywanie błędów aplikacji',
+    a4: 'poprawić czytelność kodu synchronicznego',
+    tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Metoda poszukiwań w tablicach posortowanych, która polega na podzieleniu tablicy na kilka bloków i wyszukaniu liniowym tylko w tym bloku, w którym docelowy element może się znajdować, w języku angielskim nosi nazwę?',
+    url: '',
+    a1: 'Jump search',
+    a2: 'Ternary search',
+    a3: 'Binary search',
+    a4: 'Exponential search',
     tag: 'OFICJALNE',
     type: '4A',
     desc: '',
