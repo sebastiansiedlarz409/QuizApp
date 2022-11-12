@@ -3,10 +3,12 @@ import "./main_page.css";
 import NavBar from "./nav_bar.js";
 import TestView from "./test_view";
 import { QuestionView, RandomQuestionView } from "./question_view";
+import DocumentView from "./document_view";
 
 import React, { useState } from "react";
 
 import questions from "./questions.js";
+import files from "./files.js";
 
 function MainPage(props) {
   const [view, setView] = useState(0); //switch views
@@ -28,6 +30,9 @@ function MainPage(props) {
     }
     else if (view === 2) {
       return <TestView questions={questions}></TestView>;
+    }
+    else if(view === 3){
+      return <DocumentView questions={questions} files={files}></DocumentView>;
     }
   };
 
