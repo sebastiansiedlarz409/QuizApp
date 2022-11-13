@@ -50,27 +50,15 @@ const questions = [
   },
   {
     question:
-      'Rozmiar typu int w pamięci to?',
+      'Czy typy "int" i "unsigned int" są identyczne?',
     url: '',
-    a1: '4B',
-    a2: '1B',
-    a3: '2B',
-    a4: '8B',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
     tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Takie rzeczy zależą od architektury urządzenia. Na komputerach PC (x86) int ma 4 bajty.',
-  },
-  {
-    question:
-      'Rozmiar typu unsigned long long w pamięci to?',
-    url: '',
-    a1: '8B',
-    a2: '1B',
-    a3: '2B',
-    a4: '4B',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Takie rzeczy zależą od architektury urządzenia. Na komputerach PC (x86) int ma 8 bajtów.',
+    type: '2A',
+    desc: 'Zazwyczaj typy są domyślnie "signed". Jeżeli chcemy "unsigned" musimy to napiać.',
   },
   {
     question:
@@ -86,55 +74,19 @@ const questions = [
   },
   {
     question:
-      'Aby wypisać znak za pomocą funkcji "printf()" należy posłużyć się specyfikatorem?',
+      'Aby wypisać odpowiednio string, znak, liczbę całkowitą ze znakiem oraz liczbę zmiennoprzecinkową za pomocą funkcji "printf()" należy posłużyć się ciągiem formatującym?',
     url: '',
-    a1: '%c',
-    a2: '%u',
-    a3: '%d',
-    a4: '%f',
+    a1: '%s %c %d %f',
+    a2: '%f %c %s %u',
+    a3: '%d %u %f %c',
+    a4: '%c %s %u %x',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
   },
   {
     question:
-      'Aby wypisać string za pomocą funkcji "printf()" należy posłużyć się specyfikatorem?',
-    url: '',
-    a1: '%s',
-    a2: '%u',
-    a3: '%d',
-    a4: '%c',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
-  },
-  {
-    question:
-      'Aby wypisać liczbę całkowitą ze znakiem za pomocą funkcji "printf()" należy posłużyć się specyfikatorem?',
-    url: '',
-    a1: '%d',
-    a2: '%c',
-    a3: '%u',
-    a4: '%f',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
-  },
-  {
-    question:
-      'Aby wypisać liczbę zmiennoprzecinkową za pomocą funkcji "printf()" należy posłużyć się specyfikatorem?',
-    url: '',
-    a1: '%f',
-    a2: '%u',
-    a3: '%d',
-    a4: '%c',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
-  },
-  {
-    question:
-      'Strukturą typu FILO jest?',
+      'Strukturą danych typu FILO (First In Last Out) jest?',
     url: '',
     a1: 'Stos',
     a2: 'Kolejka',
@@ -150,7 +102,7 @@ const questions = [
     url: '/images/stos.png',
     a1: 'Stos',
     a2: 'Tablica',
-    a3: 'Kolejka FIFO',
+    a3: 'Kolejka FIFO (First In First Out)',
     a4: 'Drzewo Binarne',
     tag: 'OFICJALNE',
     type: '4A',
@@ -158,7 +110,7 @@ const questions = [
   },
   {
     question:
-      'Strukturą FIFO jest?',
+      'Strukturą danych FIFO (First In First Out) jest?',
     url: '',
     a1: 'Kolejka',
     a2: 'Stos',
@@ -187,14 +139,14 @@ const questions = [
     a1: 'wszystkie pozostałe',
     a2: 'klasa',
     a3: 'struktura',
-    a4: 'typ wyliczeniowy',
+    a4: 'typ wyliczeniowy enum',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Zarówno klasa jak i struktura służy do definicji własnego typu złożonego, który składa się z typów prostych lub innych typów złożonych.',
   },
   {
     question:
-      'Typ wyliczeniowy to?',
+      'Słowo kluczowe służące do definiowania typu wyliczeniowego w większości popularnych języków to?',
     url: '',
     a1: 'enum',
     a2: 'list',
@@ -254,7 +206,7 @@ const questions = [
   },
   {
     question:
-      'Czy w C/C++ możliwe jest zwrócenie z funkcji wartości jeżeli ta funkcja ma typ zwracany void?',
+      'Czy w C/C++ możliwe jest zwrócenie z funkcji wartości jeżeli ta funkcja ma typ zwracany "void"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -274,7 +226,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Może. Po słowie return nie pada żadna wartość/zmienna.',
+    desc: 'Można. Po słowie return nie pada żadna wartość/zmienna.',
   },
   {
     question:
@@ -386,7 +338,7 @@ const questions = [
   },
   {
     question:
-      'W programie C/C++ może znajdować się więcej niż jedna funkcja main?',
+      'Program napisany w C/C++ może zawierać więcej niż jedną funkcję "main"?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -406,7 +358,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Tak przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywan jest jako string w tej tablicy.',
+    desc: 'Tak, przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywan jest jako string w tej tablicy.',
   },
   {
     question:
@@ -491,18 +443,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'To jest jedyna różnica względem struktur w C++. W C# różnice są dużo większe (!)',
-  },
-  {
-    question:
-      'W strukturze C++ wszystkie elementy są domyślnie prywatne?',
-    url: '',
-    a1: 'NIE',
-    a2: 'TAK',
-    a3: '',
-    a4: '',
-    tag: 'NIEOFICJALNE',
-    type: '2A',
-    desc: 'To jest jedyna różnica względem klas w C++. W C# różnice są dużo większe (!)',
   },
   {
     question:
@@ -710,30 +650,6 @@ const questions = [
   },
   {
     question:
-      'Operatorem o najwyższym priorytecie w C++ jest',
-    url: '',
-    a1: 'operator castowania (type)',
-    a2: 'operator dodawania +',
-    a3: 'operator statku kosmiczengo <=>',
-    a4: 'operator tryanrny ?:',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'W internecie łatwo znaleźć tabelkę z kolejnością operatorów. Jest to mega istotne ze względu na kolejność wykonywanie działań. I nie chodzi tu tylko o proste operatory jak te arytmetyczne.',
-  },
-  {
-    question:
-      'Operatorem o najniższym priorytecie w C++ jest',
-    url: '',
-    a1: ',',
-    a2: '==',
-    a3: '::',
-    a4: 'new',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Z wyżej wymienionej listy najważniejszy jest :: a przecinek jest najmniej ważny.',
-  },
-  {
-    question:
       'Operatorem C++ nie jest',
     url: '',
     a1: 'extern',
@@ -872,6 +788,18 @@ const questions = [
     a2: 'if',
     a3: 'extern',
     a4: 'volatile',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
+  },
+  {
+    question:
+      'Które słowo NIE jest słowem kluczowym C/C++?',
+    url: '',
+    a1: 'lambda',
+    a2: 'class',
+    a3: 'goto',
+    a4: 'constexpr',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
@@ -1985,7 +1913,7 @@ const questions = [
   },
   {
     question:
-      'Można utworzyć referencje/wskaźnik typu klasy abstrakcyjnej?',
+      'Można utworzyć referencje/wskaźnik/zmienną typu klasy abstrakcyjnej?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2177,7 +2105,7 @@ const questions = [
   },
   {
     question:
-      'Słowo kluczowe "virtual" oznacza metodę jako zależną od typu obiektu a nie typu referencji?',
+      'Słowo kluczowe "virtual" oznacza metodę jako zależną od typu obiektu a nie typu referencji/wskaźnika/zmiennej?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2702,7 +2630,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: '',
+    desc: 'W materiałach znajduje się cały PDF na ten temat.',
   },
   {
     question:
@@ -2714,7 +2642,7 @@ const questions = [
     a4: 'specjalny typ pełniący rolę wskaźnika do poruszania się po pliku',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Delegat to mechaniz podobny do wskaźników na funkcję w C/C++.',
+    desc: 'Delegat to mechaniz podobny do wskaźników na funkcję w C/C++. W materiałach znajuje się PDF na ten temat.',
   },
   {
     question:
@@ -2726,7 +2654,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję.',
+    desc: 'Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję. W materiałach znajuje się PDF na ten temat.',
   },
   {
     question:
@@ -2738,7 +2666,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: '',
+    desc: 'W materiałach znajuje się PDF na ten temat.',
   },
   {
     question:
@@ -2750,7 +2678,7 @@ const questions = [
     a4: 'Predicate<T>',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '',
+    desc: 'W materiałach znajuje się PDF na ten temat.',
   },
   {
     question:
@@ -2768,7 +2696,7 @@ const questions = [
     question:
       'W C# delegat "Action<string, int, int>" zwraca?',
     url: '',
-    a1: 'nic',
+    a1: 'void',
     a2: 'bool',
     a3: 'int',
     a4: 'string',
@@ -5299,8 +5227,20 @@ const questions = [
       'Operatorem, który służy do warunkowego renderowania elementów w React jest?',
     url: '',
     a1: '&&',
-    a2: '?:',
+    a2: '?',
     a3: '??',
+    a4: '||',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Operatorem, który służy do warunkowego renderowania elementów w React jest?',
+    url: '',
+    a1: '?:',
+    a2: '?',
+    a3: '$',
     a4: '||',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -5348,6 +5288,66 @@ const questions = [
     url: '/images/react3.png',
     a1: 'cofnie style do domyślnej wersji',
     a2: 'style zostaną nietknięte',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'Po wykonaniu poniższego kodu na ekranie pojawi się napis?',
+    url: '/images/react6.png',
+    a1: 'React is 10 times...',
+    a2: 'React is 5 + 5 times...',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
+      'Komponenty klasowe React są zoobowiązane do posiadania metody?',
+    url: '',
+    a1: 'render()',
+    a2: 'return()',
+    a3: 'onAppear()',
+    a4: 'onLoad()',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Mechanizm wykorzystywany do renderowania elementów JSX w React to?',
+    url: '',
+    a1: 'Babel',
+    a2: 'JSX Runtime',
+    a3: 'JSX Compiler',
+    a4: 'Paper',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Kod na obrazku wypisze?',
+    url: '/images/react7.png',
+    a1: '{make: \'Ford\', model: \'Mustang\'}',
+    a2: '{{make: \'Ford\', model: \'Mustang\'}}',
+    a3: '{car: \'Ford\', car: \'Mustang\'}}',
+    a4: '{car: {make: \'Ford\', model: \'Mustang\'}}',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Każde definicja komponentu funkcyjnego React musi zaczynać się od słowa kluczowego "function"?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',

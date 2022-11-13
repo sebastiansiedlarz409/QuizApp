@@ -9,7 +9,7 @@ function NavBar(props) {
         <span className="nav_bar_title">
           <img src={logo} alt="logo" />
         </span>
-        <span className="nav_bar_item" style={{color:"gold"}} onClick={() => props.setView(3)}>
+        <span className="nav_bar_item" style={{color:"darkgoldenrod"}} onClick={() => props.setView(3)}>
           MATERIAŁY
         </span>
         <span className="nav_bar_item" onClick={() => props.setView(0)}>
