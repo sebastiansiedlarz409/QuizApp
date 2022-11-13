@@ -5,21 +5,6 @@ let files = [
         filename:'DiagramyUML.pdf'
     },
     {
-        title:'[C/C++] Podstawy typów liczbowych/Przeliczanie systemów liczbowych',
-        url:'/files/SystemyLiczbowe_TypyNumeryczne.pdf',
-        filename:'SystemyLiczbowe_TypyNumeryczne.pdf'
-    },
-    {
-        title:'[C/C++] Wskaźniki/Tablice/Stringi',
-        url:'/files/Wskaźniki.pdf',
-        filename:'Wskaźniki.pdf'
-    },
-    {
-        title:'[C#] Podstawy programowania obiektowego',
-        url:'/files/ProgramowanieObiektoweCSharp.pdf',
-        filename:'ProgramowanieObiektoweCSharp.pdf'
-    },
-    {
         title:'[Inżynieria oprogramowania/C#] Wzorce projektowe',
         url:'/files/WzorceProjektowe.pdf',
         filename:'WzorceProjektowe.pdf'
@@ -30,14 +15,14 @@ let files = [
         filename:'Testy.pdf'
     },
     {
-        title:'[C#] Co nieco o mniej popularnych typach danych',
-        url:'/files/Types.pdf',
-        filename:'Types.pdf'
+        title:'[C/C++] Podstawy typów liczbowych/Przeliczanie systemów liczbowych',
+        url:'/files/SystemyLiczbowe_TypyNumeryczne.pdf',
+        filename:'SystemyLiczbowe_TypyNumeryczne.pdf'
     },
     {
-        title:'[C#] Typy wartościowe vs typy referencyjne',
-        url:'/files/TypyWartoscioweTypeReferencyjne.pdf',
-        filename:'TypyWartoscioweTypeReferencyjne.pdf'
+        title:'[C/C++] Wskaźniki/Tablice/Stringi',
+        url:'/files/Wskaźniki.pdf',
+        filename:'Wskaźniki.pdf'
     },
     {
         title:'[C/C++] Klasy, Struktury oraz Unie',
@@ -50,19 +35,34 @@ let files = [
         filename:'Kolekcje.pdf'
     },
     {
+        title:'[C#] Podstawy programowania obiektowego',
+        url:'/files/ProgramowanieObiektoweCSharp.pdf',
+        filename:'ProgramowanieObiektoweCSharp.pdf'
+    },
+    {
+        title:'[C#] Co nieco o mniej popularnych typach danych',
+        url:'/files/Types.pdf',
+        filename:'Types.pdf'
+    },
+    {
+        title:'[C#] Typy wartościowe vs typy referencyjne',
+        url:'/files/TypyWartoscioweTypeReferencyjne.pdf',
+        filename:'TypyWartoscioweTypeReferencyjne.pdf'
+    },
+    {
         title:'[C#] Biblioteka LINQ',
         url:'/files/LINQ.pdf',
         filename:'LINQ.pdf'
     },
     {
-        title:'[Algorytmika] Algorytmy sortujące/Algorytmy grafowe',
-        url:'/files/Algorytmy.pdf',
-        filename:'Algorytmy.pdf'
-    },
-    {
         title:'[C#] Zaawansowne programowanie obiektowe',
         url:'/files/ZaawansowaneProgramowanieObiektoweCSharp.pdf',
         filename:'ZaawansowaneProgramowanieObiektoweCSharp.pdf'
+    },
+    {
+        title:'[Algorytmika] Algorytmy sortujące/Algorytmy grafowe',
+        url:'/files/Algorytmy.pdf',
+        filename:'Algorytmy.pdf'
     },
 ];
 

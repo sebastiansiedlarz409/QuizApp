@@ -16,9 +16,11 @@ function DocumentView(props) {
         </div>
       </center>
       <hr />
-      <ul className="list">
-        {items}
-      </ul>
+      <center>
+        <ul className="list">
+          {items}
+        </ul>
+      </center>
     </div>
   );
 }

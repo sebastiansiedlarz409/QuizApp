@@ -6,13 +6,16 @@
 }
 
 .list{
-  margin-top: 40px;
-  text-align: center;
+  width: 70%;
+  margin-top: 50px;
 }
 
 .list_item{
-  margin-bottom: 10px;
-  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  list-style-type: "\1F44D";
+  text-align: left;
 }
 
 .file{
