@@ -60,6 +60,31 @@ let files = [
         filename:'ZaawansowaneProgramowanieObiektoweCSharp.pdf'
     },
     {
+        title:'[C#] Delegaty - zmienne przechowujące funkcje',
+        url:'/files/Delegaty.pdf',
+        filename:'Delegaty.pdf'
+    },
+    {
+        title:'[React] Struktura projektu, komponenty, stan',
+        url:'/files/react1.pdf',
+        filename:'react1.pdf'
+    },
+    {
+        title:'[React] Dynamiczne generowanie komponentów, callbacki',
+        url:'/files/react2.pdf',
+        filename:'react2.pdf'
+    },
+    {
+        title:'[React] Hooki w komponentach funkcyjnych',
+        url:'/files/react3.pdf',
+        filename:'react3.pdf'
+    },
+    {
+        title:'[GIT] Podstawy systemu konstroli wersji GIT',
+        url:'/files/GIT.pdf',
+        filename:'GIT.pdf'
+    },
+    {
         title:'[Algorytmika] Algorytmy sortujące/Algorytmy grafowe',
         url:'/files/Algorytmy.pdf',
         filename:'Algorytmy.pdf'

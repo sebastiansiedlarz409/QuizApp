@@ -79,7 +79,7 @@ function TestView(props) {
       if (i === questions.length - 1) {
         test.push(
           <button key={props.questions.length} className="button_style">
-            <a href="#top">Do Góry</a>
+            <a href="#top" className="up">Do Góry</a>
           </button>
         );
       }
