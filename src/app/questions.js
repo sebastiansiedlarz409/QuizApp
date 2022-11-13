@@ -5174,6 +5174,18 @@ const questions = [
     type: '4A',
     desc: '',
   },
+  {
+    question:
+      'Pisząc w technologii React by nadać klasę elementowi należy posłużyć się atrybutem',
+    url: '',
+    a1: 'className',
+    a2: 'class',
+    a3: 'classes',
+    a4: 'elementClass',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
   //bazy danych
   {
     question:
