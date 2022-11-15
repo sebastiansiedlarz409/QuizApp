@@ -2,7 +2,7 @@ import './welcome.css';
 
 function Welcome(props){
     return(
-        <div class="welcome">
+        <div className="welcome">
             <h1>Witaj przyszły programisto!</h1>
             <p>
                 Ta strona została utworzona z myślą o osobach zdających egzamin
@@ -13,7 +13,7 @@ function Welcome(props){
             <p>
                 W zakładce <b>MATERIAŁY</b> znajdują się luźne notatki na różne tematy, które moga się przydać :)
             </p>
-            <p>Ostatnia aktualizacja: 13.11.2022 18:00</p>
+            <p>Ostatnia aktualizacja: 15.11.2022 15:00</p>
         </div>
     );
 }
