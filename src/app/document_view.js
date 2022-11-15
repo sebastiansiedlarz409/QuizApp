@@ -5,7 +5,7 @@ function DocumentView(props) {
   let items=[];
 
   for(let i = 0;i<props.files.length;i++){
-    items.push(<li className="list_item" key={i}><a className="file" href={props.files[i]["url"]} target="_blank">{props.files[i]["title"]}</a></li>)
+    items.push(<li className="list_item" key={i}><a className="file" href={props.files[i]["url"]} target="_blank" rel="noreferrer">{props.files[i]["title"]}</a></li>)
   }
 
   return (
