@@ -15,6 +15,11 @@ let files = [
         filename:'Testy.pdf'
     },
     {
+        title:'[C/C++/C#/Python/Javascript] Interpolacja stringów',
+        url:'/files/InterpolacjaStringa.pdf',
+        filename:'InterpolacjaStringa.pdf'
+    },
+    {
         title:'[C/C++] Podstawy typów liczbowych/Przeliczanie systemów liczbowych',
         url:'/files/SystemyLiczbowe_TypyNumeryczne.pdf',
         filename:'SystemyLiczbowe_TypyNumeryczne.pdf'
