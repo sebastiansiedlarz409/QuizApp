@@ -13,7 +13,7 @@ function NavBar(props) {
           MATERIAŁY
         </span>
         <span className="nav_bar_item" onClick={() => props.setView(0)}>
-          LOSOWE PYTANIE
+          LOSOWE P.
         </span>
         <span className="nav_bar_item" onClick={() => props.setView(1)}>
           WSZYSTKIE

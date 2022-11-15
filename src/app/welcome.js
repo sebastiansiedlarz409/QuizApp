@@ -1,6 +1,8 @@
+import './welcome.css';
+
 function Welcome(props){
     return(
-        <div>
+        <div class="welcome">
             <h1>Witaj przyszły programisto!</h1>
             <p>
                 Ta strona została utworzona z myślą o osobach zdających egzamin
