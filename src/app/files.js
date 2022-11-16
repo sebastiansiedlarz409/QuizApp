@@ -72,8 +72,12 @@ let files = [
         url:'/files/GIT.pdf',
     },
     {
-        title:'[Algorytmika] Algorytmy sortujące/Algorytmy grafowe',
+        title:'[Teoria] Algorytmy sortujące/Algorytmy grafowe',
         url:'/files/Algorytmy.pdf',
+    },
+    {
+        title:'[Teoria] Podstawy teorii programowania równoległego',
+        url:'/files/ProgramowanieRównolegle.pdf',
     },
 ];
 

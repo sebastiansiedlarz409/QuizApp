@@ -1961,18 +1961,6 @@ const questions = [
   },
   {
     question:
-      'Obiekt klasy może być przekazany do funkcji przez (C++)?',
-    url: '',
-    a1: 'wszystkie pozostałe',
-    a2: 'wartość',
-    a3: 'referencje',
-    a4: 'wskaźnik',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
-  },
-  {
-    question:
       'Metoda ustawiająca prywatne pole to?',
     url: '',
     a1: 'setter',
@@ -2066,18 +2054,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Interfejs można porównać do kontraktu, który mówi jakie metody musi zaimplementować klasa dziedzicząca. Klasa abstrakcyjna działa tak samo z tym, że ona może mieć już część metod zaimplementowaną.',
-  },
-  {
-    question:
-      'Programowanie strukturalne i funkcyjne to to samo?',
-    url: '',
-    a1: 'NIE',
-    a2: 'TAK',
-    a3: '',
-    a4: '',
-    tag: 'NIEOFICJALNE',
-    type: '2A',
-    desc: 'Programowanie funkcyjne opiera się na traktowaniu funkcji jak obiektów.',
   },
   {
     question:
@@ -2538,6 +2514,18 @@ const questions = [
   },
   {
     question:
+      'W C# funkcja decimal.Parse() zadziała tak samo jeżeli podamy do niej string zawierający liczbę z przecinkiem oraz liczbę z kropką?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Funkcja ta domyślnie oczekuje od nas liczby z przecinkiem. Jeżeli nasza liczba ułamkowa jest zapisana za pomocą kropki należy to wskazać programowi w drugim parametrze.',
+  },
+  {
+    question:
       'W C# da się napisać metodę poza klasą?',
     url: '',
     a1: 'NIE',
@@ -2732,8 +2720,8 @@ const questions = [
     question:
       'W C# "var" a "dynamic" oznacza dokładnie to samo?',
     url: '',
-    a1: 'TAK',
-    a2: 'NIE',
+    a1: 'NIE',
+    a2: 'TAK',
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',
@@ -2744,8 +2732,8 @@ const questions = [
     question:
       'W C# "const" oraz "readonly" oznacza dokładnie to samo?',
     url: '/images/readonly.png',
-    a1: 'TAK',
-    a2: 'NIE',
+    a1: 'NIE',
+    a2: 'TAK',
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',
@@ -4926,6 +4914,18 @@ const questions = [
     a2: 'MessageBox',
     a3: 'Window',
     a4: 'Popup',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W BootStrap klasa konwertująca napis na jego odpowiednik dużymi literami to?',
+    url: '',
+    a1: 'text-uppercase',
+    a2: 'uppercase',
+    a3: 'text-capitalize',
+    a4: 'ucase',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
