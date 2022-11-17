@@ -28,6 +28,10 @@ let files = [
         url:'/files/KlasyStrukturyUnie.pdf',
     },
     {
+        title:'[C/C++] Preprocesor',
+        url:'/files/Preprocesor.pdf',
+    },
+    {
         title:'[C++/C#] Kolekcje danych',
         url:'/files/Kolekcje.pdf',
     },
