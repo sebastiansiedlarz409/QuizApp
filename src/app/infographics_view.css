@@ -1,0 +1,17 @@
+.info_list{
+    width: 70%;
+    margin-top: 50px;
+}
+
+.info_list_item{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    list-style-type: "\1F44D";
+    text-align: left;
+}
+
+.graphic_file{
+    color: black !important;
+    font-size: 24px;
+}
