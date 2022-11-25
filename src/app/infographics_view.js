@@ -6,7 +6,11 @@ function InfoGraphicsView(props){
     let items = []
 
     for(let i = 0;i<props.infographics.length;i++){
-        items.push(<li className="info_list_item" key={i}><a className="graphic_file" href={props.infographics[i]["url"]} target="_blank" rel="noreferrer">{props.infographics[i]["title"]}</a></li>)
+        items.push(
+            <li className="info_list_item" key={i}>
+                <a className="graphic_file" href={props.infographics[i]["url"]} target="_blank" rel="noreferrer">{props.infographics[i]["title"]}</a>
+            </li>
+        )
     }
     
 

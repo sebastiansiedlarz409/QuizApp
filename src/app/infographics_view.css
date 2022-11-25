@@ -5,7 +5,9 @@
 
 .info_list_item{
     margin: 10px;
+    margin-left: 0px;
     padding: 10px;
+    padding-left: 5px;
     border-radius: 20px;
     list-style-type: "\1F44D";
     text-align: left;
@@ -14,4 +16,14 @@
 .graphic_file{
     color: black !important;
     font-size: 24px;
+}
+
+@media (min-width: 768px) {
+    .info_list_item{
+        margin: 15px;
+        padding: 10px;
+        border-radius: 20px;
+        list-style-type: "\1F44D";
+        text-align: left;
+    }
 }
