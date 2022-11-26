@@ -83,6 +83,10 @@ let files = [
         title:'[Teoria] Podstawy teorii programowania równoległego',
         url:'/files/ProgramowanieRównolegle.pdf',
     },
+    {
+        title:'[Teoria] Postaci normalne w relacyjnych bazach danych',
+        url:'/files/PostaciNormalne.pdf',
+    },
 ];
 
 export default files;

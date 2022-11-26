@@ -23,6 +23,10 @@ let infographics = [
         title: '[Operatory] Przesunięcia bitowe',
         url: '/images/info_shifts.png'
     },
+    {
+        title: '[Struktury] Struktury FILO oraz FIFO',
+        url: '/images/info_filo_fifo.png'
+    },
 ]
 
 export default infographics;
