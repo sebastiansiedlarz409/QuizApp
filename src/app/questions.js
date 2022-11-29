@@ -17,12 +17,12 @@ const questions = [
       'Jaki typ służy do przechowywania wartości całkowitych z zakresu 0 do 255?',
     url: '',
     a1: 'unsigned char',
-    a2: 'unsigend short',
+    a2: 'unsigned short',
     a3: 'char',
     a4: 'short',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'W pytaniu tym chodzi o zakresy typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255. Świadomość zakresów i tego, że są inne typy danych niż "int" dobrze świadczy o programiście.',
+    desc: 'W pytaniu tym chodzi o zakres typów całkowitych w C/C++. Typ char przechowuje liczby w zakresie -128 do 127 a unsigned char w zakresie 0 do 255. Świadomość zakresów i tego, że są inne typy danych niż "int" dobrze świadczy o programiście.',
   },
   {
     question:
@@ -58,7 +58,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Zazwyczaj typy są domyślnie "signed". Jeżeli chcemy "unsigned" musimy to napiać.',
+    desc: 'Zazwyczaj typy są domyślnie "signed". Jeżeli chcemy "unsigned" musimy to napisać.',
   },
   {
     question:
@@ -82,7 +82,7 @@ const questions = [
     a4: '%c %s %u %x',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwal ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwwszym parametrze np. "printf("Wynik: %u", wynik);"',
+    desc: 'Funkcja "printf()" to odpowiednik std::cout z języka C. Pozwala ona wypisywać tekst na ekranie według ciągu formatującego podanego w pierwszym parametrze np. "printf("Wynik: %u", wynik);"',
   },
   {
     question:
@@ -154,11 +154,11 @@ const questions = [
     a4: 'dictionary',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej.',
+    desc: 'Enum to typ wyliczeniowy w praktycznie każdym stosowanym dzisiaj języku. Pozwala ograniczyć możliwe do wpisania wartości np. do zmiennej.',
   },
   {
     question:
-      'Elementem języka, który pozwala określić skończony zestaw wartości możliwy do przypisania zmienej jest?',
+      'Elementem języka, który pozwala określić skończony zestaw wartości możliwy do przypisania zmiennej jest?',
     url: '',
     a1: 'enum',
     a2: 'set',
@@ -166,7 +166,7 @@ const questions = [
     a4: 'makro',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Enum to typ wyliczeniowy w praktycznie każym stosowanym dzisiaj języku. Pozwal ograniczyć możliwe do wpisania wartości np. do zmiennej.',
+    desc: 'Enum to typ wyliczeniowy w praktycznie każdym stosowanym dzisiaj języku. Pozwala ograniczyć możliwe do wpisania wartości np. do zmiennej.',
   },
   {
     question:
@@ -178,7 +178,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powino zwracać coś innego.',
+    desc: 'Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powinno zwracać coś innego.',
   },
   {
     question:
@@ -230,7 +230,7 @@ const questions = [
   },
   {
     question:
-      'W C++ każda zmienna domyslnie przekazywana jest przez wartość?',
+      'W C++ każda zmienna domyślnie przekazywana jest przez wartość?',
     url: '/images/copy.jpg',
     a1: 'TAK',
     a2: 'NIE',
@@ -238,7 +238,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Oznacza to, że funkcja tworzy sobię kopię tej wartości i na niej pracuje a nie na oryginale. Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopi musimy użyć wskaźnika lub referencji &.',
+    desc: 'Oznacza to, że funkcja tworzy sobie kopię tej wartości i na niej pracuje a nie na oryginale. Jeżeli chcemy uzyskać efekt typu referencyjnego i uniknąć kopii musimy użyć wskaźnika lub referencji &.',
   },
   {
     question:
@@ -254,7 +254,7 @@ const questions = [
   },
   {
     question:
-      'Słowo kluczowe pomijające bieżącą iterację to?',
+      'Słowo kluczowe, które pozwala pominąć bieżącą iterację to?',
     url: '',
     a1: 'continue',
     a2: 'break',
@@ -358,7 +358,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Tak, przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywan jest jako string w tej tablicy.',
+    desc: 'Tak, przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywany jest jako string w tej tablicy.',
   },
   {
     question:
@@ -422,7 +422,7 @@ const questions = [
   },
   {
     question:
-      'W strukurze C/C++ wszystkie elementy są domyślnie prywatne?',
+      'W strukturze C/C++ wszystkie elementy są domyślnie prywatne?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -494,7 +494,7 @@ const questions = [
   },
   {
     question:
-      'Metodą klasy std::string zwracającą indeks pierwszego wystąpienia połańcucha w łańcuchu tekstowym jest?',
+      'Metodą klasy std::string zwracającą indeks pierwszego wystąpienia podłańcucha w łańcuchu tekstowym jest?',
     url: '',
     a1: 'find()',
     a2: 'rfind()',
@@ -514,7 +514,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Pojedynczy znak można umieścić między apostrofami. String tylko w cudzysłowiach.',
+    desc: 'Pojedynczy znak można umieścić między apostrofami. String tylko w cudzysłowach.',
   },
   {
     question:
@@ -538,7 +538,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli zrobimy b = a++ oraz b = ++a to zobaczymy różnice. W pierwszym przypakdu najpierw do b przypiszemy a, a potem zwiększymy a. W drugim najpierw następuje inkrementacja a później przypisanie.',
+    desc: 'Jeżeli zrobimy b = a++ oraz b = ++a to zobaczymy różnice. W pierwszym przypadku najpierw do b przypiszemy a, a potem zwiększymy a. W drugim najpierw następuje inkrementacja a później przypisanie.',
   },
   {
     question:
@@ -694,7 +694,7 @@ const questions = [
     a4: '><',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '"<=>" jest operatorem statku kosmiczengo. Został wprowadzony w C++20 i służy do porównywania obiektów klas.',
+    desc: '"<=>" jest operatorem statku kosmicznego. Został wprowadzony w C++20 i służy do porównywania obiektów klas.',
   },
   {
     question:
@@ -790,7 +790,7 @@ const questions = [
     a4: 'volatile',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
+    desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizować operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
   },
   {
     question:
@@ -802,7 +802,7 @@ const questions = [
     a4: 'constexpr',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizowała operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
+    desc: '"volatile" to słowo kluczowe umieszczane przy definicji zmiennej. Mówi ono kompilatorowi by nie optymalizować operacji na tej zmiennej, a zostawił je tak jak zostały napisane.',
   },
   {
     question:
@@ -946,7 +946,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Referencja to wskaźnik z okrojonymi możliwościami. Jest bezpieczniejsza, ponieważ nie da się na niej wykonywać działaj arytmetycznych',
+    desc: 'Referencja to wskaźnik z okrojonymi możliwościami. Jest bezpieczniejsza, ponieważ nie da się na niej wykonywać działań arytmetycznych',
   },
   {
     question:
@@ -1270,7 +1270,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Referencja powoduje, że nie jest tworzona zbędna kopia obiektu, a "cons"t informuje, że nie musimy się martwić o to, że obiekt kopiowany zostanie przypadkiem zmodyfikowany.',
+    desc: 'Referencja powoduje, że nie jest tworzona zbędna kopia obiektu, a "const" informuje, że nie musimy się martwić o to, że obiekt kopiowany zostanie przypadkiem zmodyfikowany.',
   },
   {
     question:
@@ -1282,7 +1282,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Tak, ponieważ po klamrze kończącej klasę możemy odrazu tworzyć jej instancje.',
+    desc: 'Tak, ponieważ po klamrze kończącej klasę możemy od razu tworzyć jej instancje.',
   },
   {
     question:
@@ -1306,7 +1306,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokadnie 4GB.',
+    desc: 'Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokładnie 4GB.',
   },
   {
     question:
@@ -1318,7 +1318,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Komputery 64 bitowe też mają limit, jednak jest on tak duży, że ludzie zaczeli twierdzić, że go nie ma. W teorii możemy uzyskać 2 ^ 64 (potęga) bajtów.',
+    desc: 'Komputery 64 bitowe też mają limit, jednak jest on tak duży, że ludzie zaczęli twierdzić, że go nie ma. W teorii możemy uzyskać 2 ^ 64 (potęga) bajtów.',
   },
   {
     question:
@@ -1390,7 +1390,7 @@ const questions = [
     a4: 'char text[12] = "Ala ma kota";',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Oprócz typu "string", który na marginesie znajuje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
+    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
   },
   {
     question:
@@ -1402,7 +1402,7 @@ const questions = [
     a4: 'char text[12] = {\'A\',\'l\',\'a\',\' \',\'m\',\'a\',\' \',\'k\',\'o\',\'t\',\'a\', 0};',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Oprócz typu "string", który na marginesie znajuje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
+    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
   },
   {
     question:
@@ -1426,7 +1426,7 @@ const questions = [
     a4: 'cstdio',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Funkcja ta znajuje się w "cstring". Przypominamy, że pliki poprzedzone literką c pochodzą z języka C!',
+    desc: 'Funkcja ta znajduje się w "cstring". Przypominamy, że pliki poprzedzone literą c pochodzą z języka C!',
   },
   {
     question:
@@ -1486,7 +1486,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: '"ceil" zaokrągla do najbliższej liczby całkowitej w góre natomiast "floor" zaokrągla do najbliższej liczby całkowitej mniejszej niż podana wartość.',
+    desc: '"ceil" zaokrągla do najbliższej liczby całkowitej wgóre natomiast "floor" zaokrągla do najbliższej liczby całkowitej mniejszej niż podana wartość.',
   },
   //numeric systems
   {
@@ -1607,12 +1607,12 @@ const questions = [
     a4: 'U2',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'IEEE 1284 to standard starego złącza LPT. IEEE 1394 to standard starego złącza FireWire. U2 to system usupełnień do 2 służący do zapisu liczb ujemnych.',
+    desc: 'IEEE 1284 to standard starego złącza LPT. IEEE 1394 to standard starego złącza FireWire. U2 to system uzupełnień do 2 służący do zapisu liczb ujemnych.',
   },
   //algorytmy
   {
     question:
-      'Złożość obliczeniowa to ilość głównych operacji do wykonania względem ilości danych wejściowych?',
+      'Złożoność obliczeniowa to ilość głównych operacji do wykonania względem ilości danych wejściowych?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -1680,7 +1680,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
+    desc: 'Drzewo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
   },
   {
     question:
@@ -1692,7 +1692,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Drzwo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
+    desc: 'Drzewo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
   },
   {
     question:
@@ -1711,7 +1711,7 @@ const questions = [
       'Przedstawiając algorytm za pomocą bloków, blok start/stop narysujemy w kształcie?',
     url: '',
     a1: 'elipsy',
-    a2: 'prostokątu',
+    a2: 'prostokąta',
     a3: 'równoległoboku',
     a4: 'trójkąta',
     tag: 'NIEOFICJALNE',
@@ -1788,7 +1788,7 @@ const questions = [
     a4: 'schematem blokowym',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Pseudokod to mnie lub bardziej podobna do rzeczywistego kodu forma zapisu.',
+    desc: 'Pseudokod to mniej lub bardziej podobna do rzeczywistego kodu forma zapisu.',
   },
   {
     question:
@@ -1829,7 +1829,7 @@ const questions = [
   //programowanie obiektowe
   {
     question:
-      'Zasadą programowania obiektowego, która mówi by trzymać jak najwięcej elementów klasy jako prywatne jest?',
+      'Zasadą programowania obiektowego, która mówi aby trzymać jak najwięcej elementów klasy jako prywatne jest?',
     url: '',
     a1: 'Hermetyzacja',
     a2: 'Abstrakcja',
@@ -1897,7 +1897,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie można, ponieważ interfejs jset odpowiednikiem klasy abstrakcyjnej.',
+    desc: 'Nie można, ponieważ interfejs jest odpowiednikiem klasy abstrakcyjnej.',
   },
   {
     question:
@@ -1909,7 +1909,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Klasa może dziedziczyć z dokładnie z jednej klasy, ale za to z wielu interfejsów. Interfejsy nie mogą zawierać żadnej implemetnacji - tylko nagłówki. W klasie abstrakcyjnej możemy mieć pola oraz część metod w formie zaimplementowanej.',
+    desc: 'Klasa może dziedziczyć z dokładnie z jednej klasy, ale za to z wielu interfejsów. Interfejsy nie mogą zawierać żadnej implementacji - tylko nagłówki. W klasie abstrakcyjnej możemy mieć pola oraz część metod w formie zaimplementowanej.',
   },
   {
     question:
@@ -2033,7 +2033,7 @@ const questions = [
   },
   {
     question:
-      'Czy pole i właściwość w terminologi C# to to samo?',
+      'Czy pole i właściwość w terminologii C# to to samo?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2041,7 +2041,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Właściwości to konstrukcje z get/set. Pełnią one role getterów i setterów na pola.',
+    desc: 'Właściwości to konstrukcje z get/set. Pełnią one rolę getterów i setterów na pola.',
   },
   {
     question:
@@ -2093,7 +2093,7 @@ const questions = [
   },
   {
     question:
-      'Klasa pochodna ma dostęp do wszytkich elementów klasy bazowej?',
+      'Klasa pochodna ma dostęp do wszystkich elementów klasy bazowej?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2125,7 +2125,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie da się przeciążyć operatora trynarnego ?: (C++). W C# lista nimożliwych do przeciążenia operatorów jest dłuższa i zawiera miedzyinnymi operatory z serii +=, -=, ...',
+    desc: 'Nie da się przeciążyć operatora trynarnego ?: (C++). W C# lista niemożliwych do przeciążenia operatorów jest dłuższa i zawiera miedzy innymi operatory z serii +=, -=, ...',
   },
   {
     question:
@@ -2173,7 +2173,7 @@ const questions = [
     a4: 'Zawsze korzysta z rekurencji',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Jest to metoda abstrakcyjna bez ciała. Metoda wirtualana może mieć ciało, które będzie nadpisane bądź nie.',
+    desc: 'Jest to metoda abstrakcyjna bez ciała. Metoda wirtualna może mieć ciało, które będzie nadpisane bądź nie.',
   },
   {
     question:
@@ -2185,7 +2185,7 @@ const questions = [
     a4: 'metoda.wskaźnik();',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Jeżeli mamy do czynnienia ze wskaźnikiem to do jego składowych odwołujemy się za pomocą operatora "->"',
+    desc: 'Jeżeli mamy do czynienia ze wskaźnikiem to do jego składowych odwołujemy się za pomocą operatora "->"',
   },
   {
     question:
@@ -2293,7 +2293,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie może. W C# interfejs oprócz metod może zwierać właściwości.',
+    desc: 'Nie może. W C# interfejs oprócz metod może zawierać właściwości.',
   },
   {
     question:
@@ -2370,9 +2370,9 @@ const questions = [
   {
     question:
       'W języku C# mamy operator == oraz funkcję Equals(). Na czym polega różnica między nimi?',
-    url: '/iamges/equals.jpg',
+    url: '/images/equals.jpg',
     a1: 'operator == porównuje tylko referencje a Equals() także zawartość obiektu',
-    a2: 'operator == porówuje zawartość obiektu a Equals() referencje',
+    a2: 'operator == porównuje zawartość obiektu a Equals() referencje',
     a3: 'obie metody porównania są identyczne',
     a4: 'wszystkie pozostałe',
     tag: 'NIEOFICJALNE',
@@ -2385,7 +2385,7 @@ const questions = [
     url: '',
     a1: 'brak możliwości stworzenia obiektu tej klasy',
     a2: 'brak możliwości dziedziczenia z tej klasy',
-    a3: 'brak możliwości hemetyzacji tej klasy',
+    a3: 'brak możliwości hermetyzacji tej klasy',
     a4: 'brak możliwości dziedziczenia przez tę klasę',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -2514,7 +2514,7 @@ const questions = [
   },
   {
     question:
-      'W C# funkcja decimal.Parse() zadziała tak samo jeżeli podamy do niej string zawierający liczbę z przecinkiem oraz liczbę z kropką?',
+      'W C# funkcja decimal.Parse() działa tak samo jeżeli podamy do niej string zawierający liczbę z przecinkiem oraz liczbę z kropką?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2594,11 +2594,11 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Klasy definują typy referencyjne. Struktury definują typy wartościowe.',
+    desc: 'Klasy definiują typy referencyjne. Struktury definiują typy wartościowe.',
   },
   {
     question:
-      'Struktura definuje typ referencyjny w języku C#?',
+      'Struktura definiuje typ referencyjny w języku C#?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -2606,11 +2606,11 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'W C# struktury i klasy różnią się właśnie tym, że struktura definuje typ wartościowy a klasa referencyjny. Jeżeli zależy nam na przekazywaniu przez wartość to używamy struktur. Jeżeli chcemy referencje to klas.',
+    desc: 'W C# struktury i klasy różnią się właśnie tym, że struktura definiuje typ wartościowy a klasa referencyjny. Jeżeli zależy nam na przekazywaniu przez wartość to używamy struktur. Jeżeli chcemy referencje to klas.',
   },
   {
     question:
-      'Klasa definuje typ referencyjny w języku C#?',
+      'Klasa definiuje typ referencyjny w języku C#?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2626,11 +2626,11 @@ const questions = [
     url: '',
     a1: 'specjalny typ do przechowywania referencji na funkcję',
     a2: 'specjalny typ do przechowywania typów prostych',
-    a3: 'sepcjalny typ pełniący rolę iteratora po kolekcji',
+    a3: 'specjalny typ pełniący rolę iteratora po kolekcji',
     a4: 'specjalny typ pełniący rolę wskaźnika do poruszania się po pliku',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Delegat to mechaniz podobny do wskaźników na funkcję w C/C++. W materiałach znajuje się PDF na ten temat.',
+    desc: 'Delegat to mechanizm podobny do wskaźników na funkcję w C/C++. W materiałach znajduje się PDF na ten temat.',
   },
   {
     question:
@@ -2642,7 +2642,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję. W materiałach znajuje się PDF na ten temat.',
+    desc: 'Delegat to konstrukcja do przechowywania referencji na funkcje. Mechanizm ten jest podobny do wskaźników na funkcję. W materiałach znajduje się PDF na ten temat.',
   },
   {
     question:
@@ -2654,7 +2654,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'W materiałach znajuje się PDF na ten temat.',
+    desc: 'W materiałach znajduje się PDF na ten temat.',
   },
   {
     question:
@@ -2666,7 +2666,7 @@ const questions = [
     a4: 'Predicate<T>',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'W materiałach znajuje się PDF na ten temat.',
+    desc: 'W materiałach znajduje się PDF na ten temat.',
   },
   {
     question:
@@ -2690,7 +2690,7 @@ const questions = [
     a4: 'string',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Action to delegat do funkcji, które nic nie zwracają (void). Wszytskie typy w nawiasie <> to typy argumentów.',
+    desc: 'Action to delegat do funkcji, które nic nie zwracają (void). Wszystkie typy w nawiasie <> to typy argumentów.',
   },
   {
     question:
@@ -2954,7 +2954,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli w dymku z podowiedzią widzimy tylko get to jest to tylko getter.',
+    desc: 'Jeżeli w dymku z podpowiedzią widzimy tylko get to jest to tylko getter.',
   },
   {
     question:
@@ -2966,7 +2966,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli w dymku z podowiedzią widzimy tylko set to jest to tylko setter.',
+    desc: 'Jeżeli w dymku z podpowiedzią widzimy tylko set to jest to tylko setter.',
   },
   {
     question:
@@ -2982,7 +2982,7 @@ const questions = [
   },
   {
     question:
-      'Mechanizm pozwalający programowi czytać inforamcje o samym sobie to?',
+      'Mechanizm pozwalający programowi czytać informacje o samym sobie to?',
     url: '',
     a1: 'Refleksja',
     a2: 'Lustro',
@@ -2990,7 +2990,7 @@ const questions = [
     a4: 'Instancjonowanie',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Reflekcje pozwalają na wiele jak np. czytanie prywatnych pól, czytanie listy plików w projekcie itp.',
+    desc: 'Refleksje pozwalają na wiele jak np. czytanie prywatnych pól, czytanie listy plików w projekcie itp.',
   },
   {
     question:
@@ -3006,7 +3006,7 @@ const questions = [
   },
   {
     question:
-      'Klasa w C# służąca do tworznia stringów to?',
+      'Klasa w C# służąca do tworzenia stringów to?',
     url: '',
     a1: 'StringBuilder',
     a2: 'BuildString',
@@ -3035,7 +3035,7 @@ const questions = [
     a1: 'wszystkie pozostałe',
     a2: 'dynamicznego precyzowania typów stosowanych w metodzie/klasie',
     a3: 'precyzowania jakiego typu elementy przechowuje kolekcja',
-    a4: 'określania typów argumentow w przypadku deklaracji delegata',
+    a4: 'określania typów argumentów w przypadku deklaracji delegata',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Parametrem generycznym jest zawsze typ. Np. "Func<int, int>"',
@@ -3044,10 +3044,10 @@ const questions = [
     question:
       '"Indexer" to konstrukcja języka C#, która?',
     url: '/images/indexer.png',
-    a1: 'jest opowiednikiem przeciążonego operatora []',
+    a1: 'jest odpowiednikiem przeciążonego operatora []',
     a2: 'jest odpowiednikiem przeciążonego operatora (type)',
     a3: 'jest odpowiednikiem przeciążonego operatora &',
-    a4: 'żadana z pozostałych',
+    a4: 'żadna z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Indexer to konstrukcja języka C# wyglądem i zachowaniem przypominająca właściwość. W przypadku innych języków można ją porównać do przeciążenia operatora [].',
@@ -3062,7 +3062,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Taką konwencję przyjeli programiści C#.',
+    desc: 'Taką konwencję przyjęli programiści C#.',
   },
   {
     question:
@@ -3143,7 +3143,7 @@ const questions = [
     a1: 'false',
     a2: 'true',
     a3: '0',
-    a4: 'kompilacja skończy się błędem',
+    a4: 'kompilacja zakończy się błędem',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '"a is {}" to odpowiednik "a != null"',
@@ -3155,7 +3155,7 @@ const questions = [
     a1: 'true',
     a2: 'false',
     a3: '0',
-    a4: 'kompilacja skończy się błędem',
+    a4: 'kompilacja zakończy się błędem',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '"a is {}" to odpowiednik "a != null"',
@@ -3258,7 +3258,7 @@ const questions = [
   },
   {
     question:
-      'Słowo kluczowe służące do napisywania metod klasy bazowej to?',
+      'Słowo kluczowe służące do nadpisywania metod klasy bazowej to?',
     url: '',
     a1: 'override',
     a2: 'virtual',
@@ -3416,7 +3416,7 @@ const questions = [
     question:
       'W C# wyjątek "DirectoryNotFoundException" rzucany np. przez "File.Create()" oznacza?',
     url: '',
-    a1: 'że nie można znaleźć katalogu, składowego scieżki',
+    a1: 'że nie można znaleźć katalogu, składowego ścieżki',
     a2: 'ścieżka jest w niepoprawnym formacie',
     a3: 'ścieżka jest nullem',
     a4: 'plik już istnieje',
@@ -3494,7 +3494,7 @@ const questions = [
     a4: 'zmienna referencyjna właśnie została ustawiona na null',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Jeżeli do stringa przypiszemy null i sprawdzimy jego długość za pomocą .Length() to dostaniemy ten wyjątek. Jeżeli nam taki wyjątek leci to znaczy, że próbujemy wykonać jakąś akcje na wartości null.',
+    desc: 'Jeżeli do stringa przypiszemy null i sprawdzimy jego długość za pomocą .Length() to dostaniemy ten wyjątek. Jeżeli nam taki wyjątek leci to znaczy, że próbujemy wykonać jakąś akcję na wartości null.',
   },
   {
     question:
@@ -3627,7 +3627,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Windows Forms to starsza technologia, jednak w ciąż mocno używana. Windows Forms opiera się o graficzny edytor a nie o język XAML.',
+    desc: 'Windows Forms to starsza technologia, jednak wciąż mocno używana. Windows Forms opiera się o graficzny edytor a nie o język XAML.',
   },
   {
     question:
@@ -3776,7 +3776,7 @@ const questions = [
   },
   {
     question:
-      'Aby w systemie git przeglądać historie commitów należy posłużyć się poleceniem?',
+      'Aby w systemie git przeglądać historię commitów należy posłużyć się poleceniem?',
     url: '',
     a1: 'git log',
     a2: 'git status',
@@ -3800,7 +3800,7 @@ const questions = [
   },
   {
     question:
-      'Aby w systemie git przeglądać historie commitów w formie list należy dodać do "git log"?',
+      'Aby w systemie git przeglądać historię commitów w formie list należy dodać do "git log"?',
     url: '',
     a1: '--oneline',
     a2: '--verbose',
@@ -3836,7 +3836,7 @@ const questions = [
   },
   {
     question:
-      'Commita w systemie GIT wykonujemu poleceniem?',
+      'Commita w systemie GIT wykonujemy poleceniem?',
     url: '',
     a1: 'git commit -m "Message"',
     a2: 'git commit -log "Message"',
@@ -3932,7 +3932,7 @@ const questions = [
   },
   {
     question:
-      'Cofanie zmian wprowadzonych w konretnym commicie odbywa się poleceniem?',
+      'Cofanie zmian wprowadzonych w konkretnym commicie odbywa się poleceniem?',
     url: '',
     a1: 'git revert',
     a2: 'git restore',
@@ -3952,11 +3952,11 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'GITHUB to portal do przechowywania repozytoriów. Dzięki portalą takim jak GITHUB możliwa jest współpraca wielu programistów poprzez GIT.',
+    desc: 'GITHUB to portal do przechowywania repozytoriów. Dzięki portalu takim jak GITHUB możliwa jest współpraca wielu programistów poprzez GIT.',
   },
   {
     question:
-      'Pojęcie "fork" oznacza w terminologi GIT połączenie dwóch gałęzi?',
+      'Pojęcie "fork" oznacza w terminologii GIT połączenie dwóch gałęzi?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -3964,7 +3964,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Pojęcie "fork" oznacza stworznie własnej kopi projektu na bazie czyjegoś repozytorium na githubie.',
+    desc: 'Pojęcie "fork" oznacza stworzenie własnej kopii projektu na bazie czyjegoś repozytorium na githubie.',
   },
   {
     question:
@@ -3997,7 +3997,7 @@ const questions = [
     url: '',
     a1: 'wszystkie wymienione',
     a2: 'kod testujący inny kod',
-    a3: 'kod werfikujący wynik działania metod/funkcji',
+    a3: 'kod weryfikujący wynik działania metod/funkcji',
     a4: 'kod wywołujący testowany kod w kontrolowanych warunkach',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -4034,7 +4034,7 @@ const questions = [
     a1: 'arrange/act/assert',
     a2: 'assert/arrange/act',
     a3: 'assert/act/arrange',
-    a4: 'act/assery/arrange',
+    a4: 'act/assert/arrange',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Arrange przygotowuje kod testowany, Act wykonuje testowaną akcję, Assert porównuje wynik z wartością oczekiwaną.',
@@ -4065,7 +4065,7 @@ const questions = [
   },
   {
     question:
-      'Modułem umożliwiającym testy w jezyku JavaScript i środowisku NodeJS jest?',
+      'Modułem umożliwiającym testy w języku JavaScript i środowisku NodeJS jest?',
     url: '',
     a1: 'jest',
     a2: 'jtest',
@@ -4097,7 +4097,7 @@ const questions = [
     a4: 'Żadne z wymienionych',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'TDD to takie na pierwszy rzut oka dziwne podejście, które polega na tym by najpierw wymyślić test do nieistniejącego kodu a późnej sam kod. Jak się tego poużywa to nabiera to więcej sensu.',
+    desc: 'TDD to takie na pierwszy rzut oka dziwne podejście, które polega na tym by najpierw wymyślić test do nie istniejącego kodu a później sam kod. Jak się tego używa to nabiera to więcej sensu.',
   },
   {
     question:
@@ -4109,7 +4109,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'W TDD najpierw piszemy test do kodu, który nie istnieje a później sam kod. Nabiera to więcej sensu jak się w tym troche popisze :)',
+    desc: 'W TDD najpierw piszemy test do kodu, który nie istnieje a później sam kod. Nabiera to więcej sensu jak się w tym trochę popisze :)',
   },
   {
     question:
@@ -4128,9 +4128,9 @@ const questions = [
       '"Mock" tworzony jest w celu?',
     url: '',
     a1: 'wszystkie pozostałe',
-    a2: 'wyłączenia cześci kodu znajdującego się w klasie, której atrapę tworzymy',
+    a2: 'wyłączenia części kodu znajdującego się w klasie, której atrapę tworzymy',
     a3: 'zmiany zachowania pewnego kodu, który wykorzystuje jako zależność klasę, której atrapę tworzymy',
-    a4: 'wygenerowania pustej implementacji jakiegoś interfesju polimorficznego',
+    a4: 'wygenerowania pustej implementacji jakiegoś interfejsu polimorficznego',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Atrapa obiektu, służy do pomijania pewnych funkcjonalności. Jeżeli klasa A korzysta z klasy B w formie zależności w czasie testu możemy podrzucić do A atrapę B by część kodu znajdująca się w klasie B nie wykonała się.',
@@ -4145,7 +4145,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Metody kontrolera przyjmują żądanie, wywołują jakąś logike i zwracają status lub widok. Testujemy bezpośrednio logikę.',
+    desc: 'Metody kontrolera przyjmują żądanie, wywołują jakąś logikę i zwracają status lub widok. Testujemy bezpośrednio logikę.',
   },
   {
     question:
@@ -4157,7 +4157,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Takie funkcję powinny tylko wywoływać logikę znajującą się w innych funkcjach. Powinniśmy testować te inne funkcje.',
+    desc: 'Takie funkcję powinny tylko wywoływać logikę znajdującą się w innych funkcjach. Powinniśmy testować te inne funkcje.',
   },
   {
     question:
@@ -4248,25 +4248,25 @@ const questions = [
     question:
       'Pierwsza zasada SOLID mówi o tym by?',
     url: '',
-    a1: 'każda metoda/klasa zajmowała się jedną konretną rzeczą',
+    a1: 'każda metoda/klasa zajmowała się jedną konkretną rzeczą',
     a2: 'referencje miały typ bazowy a nie typ pochodny',
     a3: 'każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację',
     a4: 'interfejsy polimorficzne utrzymywać jak najmniejsze',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Każda metoda powinna zajmować się jedną konretną rzeczą, na którą wskazuje jej nazwa. Podobnie sytuacja wygląda z całymi klasami.',
+    desc: 'Każda metoda powinna zajmować się jedną konkretną rzeczą, na którą wskazuje jej nazwa. Podobnie sytuacja wygląda z całymi klasami.',
   },
   {
     question:
       'Druga zasada SOLID mówi o tym by?',
     url: '',
     a1: 'każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację',
-    a2: 'każda metoda/klasa zajmowała się jedną konretną rzeczą',
+    a2: 'każda metoda/klasa zajmowała się jedną konkretną rzeczą',
     a3: 'referencje miały typ bazowy a nie typ pochodny',
     a4: 'interfejsy polimorficzne utrzymywać jak najmniejsze',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Rozszerzając klasę/metodę o nowe funkcjonalności nie powinniśmy modyfikować istniejących już w niej elementów. Jeżeli musimy to zrobić to trzeba wziąźć pod uwagę fakt, że coś można było zrobić lepiej.',
+    desc: 'Rozszerzając klasę/metodę o nowe funkcjonalności nie powinniśmy modyfikować istniejących już w niej elementów. Jeżeli musimy to zrobić to trzeba wziąć pod uwagę fakt, że coś można było zrobić lepiej.',
   },
   {
     question:
@@ -4274,7 +4274,7 @@ const questions = [
     url: '',
     a1: 'interfejsy polimorficzne utrzymywać jak najmniejsze',
     a2: 'każda klasa/metoda była otwarta na rozszerzenie a zamknięta na modyfikację',
-    a3: 'każda metoda/klasa zajmowała się jedną konretną rzeczą',
+    a3: 'każda metoda/klasa zajmowała się jedną konkretną rzeczą',
     a4: 'referencje miały typ bazowy a nie typ pochodny',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -4306,7 +4306,7 @@ const questions = [
   },
   {
     question:
-      'We wzorcu MVC na akcje użytkownika reaguje?',
+      'We wzorcu MVC na akcję użytkownika reaguje?',
     url: '',
     a1: 'kontroler',
     a2: 'widok',
@@ -4338,7 +4338,7 @@ const questions = [
     a4: 'Super-Pure Application',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
+    desc: 'SPA wczytuje całą stronę do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
   },
   {
     question:
@@ -4350,7 +4350,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'SPA wczytuje całą strone do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
+    desc: 'SPA wczytuje całą stronę do przeglądarki a później tylko odświeża swoje bloki komunikując się najczęściej z REST API.',
   },
   {
     question:
@@ -4546,7 +4546,7 @@ const questions = [
   },
   {
     question:
-      'Języki, w których programista definuje co chce uzyskać to języki?',
+      'Języki, w których programista definiuje co chce uzyskać to języki?',
     url: '',
     a1: 'deklaratywne',
     a2: 'imperatywne',
@@ -4558,7 +4558,7 @@ const questions = [
   },
   {
     question:
-      'Języki, w których programista definuje jak chce uzyskać wynik to języki?',
+      'Języki, w których programista definiuje jak chce uzyskać wynik to języki?',
     url: '',
     a1: 'imperatywne',
     a2: 'deklaratywne',
@@ -4603,7 +4603,7 @@ const questions = [
     a4: 'zwykłego tekstu',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Dane obierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia.',
+    desc: 'Dane odbierane i wysyłane przez HTTP to zawsze tekst. Co w tym tekście jest to inna kwestia.',
   },
   {
     question:
@@ -4752,7 +4752,7 @@ const questions = [
   },
   {
     question:
-      'Atakiem na strony internetowe polegającym na ociążeniu serwera dużą ilością zapytań jest',
+      'Atakiem na strony internetowe polegającym na obciążeniu serwera dużą ilością zapytań jest',
     url: '',
     a1: 'DDoS',
     a2: 'XSS',
@@ -4772,7 +4772,7 @@ const questions = [
     a4: 'Session poisoning',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Jeżeli nie filtrujemy odpowiednio danych wejsciowych ktoś może podać w formularzu kod JavaScript, który w pewnych sytuacjach/zależnie od logiki aplikacji może coś zrobić.',
+    desc: 'Jeżeli nie filtrujemy odpowiednio danych wejściowych ktoś może podać w formularzu kod JavaScript, który w pewnych sytuacjach/zależnie od logiki aplikacji może coś zrobić.',
   },
   {
     question:
@@ -4808,7 +4808,7 @@ const questions = [
     a4: 'CSS',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, poniważ mamy XAMPA oraz UsbWebServer.',
+    desc: 'PHP da się uruchomić tylko z pomocą serwera APACHE. Oczywiście nie potrzebujemy fizycznego serwera, ponieważ mamy XAMPA oraz UsbWebServer.',
   },
   {
     question:
@@ -5037,7 +5037,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Pętla "for in" zwraca indeks a "for of" zwraca wartośc z kolekcji.',
+    desc: 'Pętla "for in" zwraca indeks a "for of" zwraca wartość z kolekcji.',
   },
   {
     question:
@@ -5308,7 +5308,7 @@ const questions = [
   },
   {
     question:
-      'Komponenty klasowe React są zoobowiązane do posiadania metody?',
+      'Komponenty klasowe React są zobowiązane do posiadania metody?',
     url: '',
     a1: 'render()',
     a2: 'return()',
@@ -5356,7 +5356,7 @@ const questions = [
   },
   {
     question:
-      'W poniższym kodzie React oba onClick\'i zadziałają tak samo?',
+      'W poniższym kodzie React oba onClick\'i działają tak samo?',
     url: '/images/react5.png',
     a1: 'NIE',
     a2: 'TAK',
@@ -5364,7 +5364,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Pierwszy zapis jest poprawny, ponieważ przypisujemy do zdarzenia referencję na funkcję. W drugim przypadku odrazu ją wywołujemy dlatego też w konsoli zobaczymy wypisywany ciąg tuż po wyrenderowaniu komponentu.',
+    desc: 'Pierwszy zapis jest poprawny, ponieważ przypisujemy do zdarzenia referencję na funkcję. W drugim przypadku od razu ją wywołujemy dlatego też w konsoli zobaczymy wypisywany ciąg tuż po wyrenderowaniu komponentu.',
   },
   //bazy danych
   {
@@ -5373,7 +5373,7 @@ const questions = [
     url: '',
     a1: 'system zarządzania bazą danych',
     a2: 'obiektowy język programowania',
-    a3: 'kaskadowy arkusz styli',
+    a3: 'kaskadowy arkusz stylów',
     a4: 'strukturalny język zapytań do bazy danych',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -5437,7 +5437,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Kluczem sztucznym jest np. Id, ponieważ nie ma ono nic wspólnego z encją przechowywaną w tabeli. Kluczem naturanym będzie np. PESEL, ponieważ jest powiązany z przechowywaną encją (np. studentem) i jest unikalną wartością jednoznacznie identyfikującą rekord.',
+    desc: 'Kluczem sztucznym jest np. Id, ponieważ nie ma ono nic wspólnego z encją przechowywaną w tabeli. Kluczem naturalnym będzie np. PESEL, ponieważ jest powiązany z przechowywaną encją (np. studentem) i jest unikalną wartością jednoznacznie identyfikującą rekord.',
   },
   {
     question:
@@ -5453,7 +5453,7 @@ const questions = [
   },
   {
     question:
-      'O tym, że każda komórka tabeli w bazie relacyjnej musi przchowywać jedną wartość mówi',
+      'O tym, że każda komórka tabeli w bazie relacyjnej musi przechowywać jedną wartość mówi',
     url: '',
     a1: 'Pierwsza postać normalna',
     a2: 'Druga postać normalna',
@@ -5461,7 +5461,7 @@ const questions = [
     a4: 'Czwarta postać normalna',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Przykład: Mamy tabele Oceny. Kolumna Ocena przechowuje zawsze jedną ocene, a nie oceny po przecinku. Jeżeli uczeń dostał koleją ocene to pojawia się nowy rekord w tabeli.',
+    desc: 'Przykład: Mamy tabele Oceny. Kolumna Ocena przechowuje zawsze jedną ocenę, a nie oceny po przecinku. Jeżeli uczeń dostał kolejną ocenę to pojawia się nowy rekord w tabeli.',
   },
   {
     question:
@@ -5518,10 +5518,10 @@ const questions = [
     a1: 'aplikacje skupiające się na dodawaniu/czytaniu/aktualizowaniu/usuwaniu danych z bazy',
     a2: 'aplikacje oparte na REST API',
     a3: 'aplikacje typowo frontendowe',
-    a4: 'aplikacje tworzące strukture bazy danych',
+    a4: 'aplikacje tworzące strukturę bazy danych',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Aplikacje crudowe to aplikacje, które nie wykonują za dużo logiki a jednynie zapisują i odczytują dane z bazy.',
+    desc: 'Aplikacje crudowe to aplikacje, które nie wykonują za dużo logiki a jedynie zapisują i odczytują dane z bazy.',
   },
   {
     question:
@@ -5634,7 +5634,7 @@ const questions = [
   },
   {
     question:
-      'W php aby zdefiniować tablicę musimy użyc konstrukcji?',
+      'W php aby zdefiniować tablicę musimy użyć konstrukcji?',
     url: '',
     a1: '$t = array(1,2,3);',
     a2: '$t = {1,2,3};',
@@ -5706,7 +5706,7 @@ const questions = [
   },
   {
     question:
-      'W PHP funkcji "rand()" moża określic przedział losowania?',
+      'W PHP funkcji "rand()" można określić przedział losowania?',
     url: '',
     a1: 'za pomocą dwóch opcjonalnych parametrów',
     a2: 'za pomocą metody modulo-dodawanie znanej z C++',
@@ -5772,7 +5772,7 @@ const questions = [
     a1: 'str()',
     a2: 'to_string()',
     a3: 'raw()',
-    a4: 'sttring()',
+    a4: 'string()',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -5817,7 +5817,7 @@ const questions = [
     question:
       'Funkcja "float()" konwertuje wartość do liczby typu float. Która z poniższych konstrukcji jest poprawna?',
     url: '',
-    a1: 'wszyskie pozostałe',
+    a1: 'Wszystkie pozostałe',
     a2: 'float(2)',
     a3: 'float(2.8)',
     a4: 'float("2.8")',
@@ -5847,11 +5847,11 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Podobnie jak w JavaScript kod można pisać odrazu bez funkcji.',
+    desc: 'Podobnie jak w JavaScript kod można pisać od razu bez funkcji.',
   },
   {
     question:
-      'Odpowiednikiem słowa kluczowgo "this" w Pythonie jest?',
+      'Odpowiednikiem słowa kluczowego "this" w Pythonie jest?',
     url: '',
     a1: 'self',
     a2: 'me',
@@ -5964,7 +5964,7 @@ const questions = [
     a1: 'D',
     a2: 'S',
     a3: 'A',
-    a4: 'program skończy się błędem',
+    a4: 'program zakończy się błędem',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -5976,19 +5976,19 @@ const questions = [
     a1: 'string.upper()',
     a2: 'string.toUpper()',
     a3: 'string.toUpperCase()',
-    a4: 'żadana z pozostałych',
+    a4: 'żadna z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
   },
   {
     question:
-      'Funkcja języka python, która pozwala podzielić string na kawałki względem podanego sepratora to?',
+      'Funkcja języka python, która pozwala podzielić string na kawałki względem podanego separatora to?',
     url: '',
     a1: 'string.split()',
     a2: 'string.slice()',
     a3: 'string.cut()',
-    a4: 'żadana z pozostałych',
+    a4: 'żadna z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -6108,14 +6108,14 @@ const questions = [
     a1: 'func = lambda a, b: a + b',
     a2: 'func = (a,b): a + b',
     a3: 'func = (a,b) => a + b',
-    a4: 'func = lamda a, b => a + b',
+    a4: 'func = lambda a, b => a + b',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
   },
   {
     question:
-      'W języku Python konstrukcja odpowiedzialna za wycinannie podłańcuchów łańcucha tekstowego to',
+      'W języku Python konstrukcja odpowiedzialna za wycinanie podłańcuchów łańcucha tekstowego to',
     url: '',
     a1: 'operator [start:end]',
     a2: 'substr(start:end)',
@@ -6356,7 +6356,7 @@ const questions = [
   },
   {
     question:
-      'Polecenie wiersza poleceń Windows służące do wyświetlenia aktualnej ścieżki to?',
+      'Polecenie wiersza poleceń Windows służące do wyświetlania aktualnej ścieżki to?',
     url: '',
     a1: 'cd',
     a2: 'chdsk',
@@ -6368,7 +6368,7 @@ const questions = [
   },
   {
     question:
-      'Polecenie wiersza poleceń Linux służące do wyświetlenia aktualnej ścieżki to?',
+      'Polecenie wiersza poleceń Linux służące do wyświetlania aktualnej ścieżki to?',
     url: '',
     a1: 'pwd',
     a2: 'cd',
@@ -6503,8 +6503,8 @@ const questions = [
     question:
       'Jak przekazać callback do funkcji w C#?',
     url: '',
-    a1: 'trzeba posłuzyć się odpowiednim delegatem',
-    a2: 'trzeba posłuzyć się odpowiednim wskaźnikiem',
+    a1: 'trzeba posłużyć się odpowiednim delegatem',
+    a2: 'trzeba posłużyć się odpowiednim wskaźnikiem',
     a3: 'trzeba posłużyć się "boxingiem"',
     a4: 'jest to nie możliwe',
     tag: 'NIEOFICJALNE',
@@ -6617,7 +6617,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie odpytujemy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych.',
+    desc: 'Nie pytamy bazy danych w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza/bazy danych.',
   },
   {
     question:
@@ -6629,7 +6629,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie odpytujemy API w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza lub serwera z API',
+    desc: 'Nie pytamy API w pętli. Lepiej zrobić to raz a dobrze. Unikniemy w ten sposób problemów z wydajnością i przeciążania łącza lub serwera z API',
   },
   {
     question:
@@ -6683,7 +6683,7 @@ const questions = [
     question:
       'Które z poniższych stwierdzeń o procesie i wątku jest prawdziwe?',
     url: '',
-    a1: 'Proces to zbiór zwierający miminum jeden wątek',
+    a1: 'Proces to zbiór zawierający minimum jeden wątek',
     a2: 'Watek to zbiór zawierający minimum jeden proces',
     a3: '',
     a4: '',
@@ -6693,7 +6693,7 @@ const questions = [
   },
   {
     question:
-      'Programista może programowo otworzyć wiele wątków w trakcie trawania programu?',
+      'Programista może programowo otworzyć wiele wątków w trakcie trwania programu?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -6765,7 +6765,7 @@ const questions = [
   },
   {
     question:
-      'Wymiana danych między watkami przebiega swobodnie?',
+      'Wymiana danych między wątkami przebiega swobodnie?',
     url: '',
     a1: 'NIE',
     a2: 'TAK',
@@ -6942,7 +6942,7 @@ const questions = [
     a4: 'porażenie prądem',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'W tej kategori mamy do czynienia głównie ze stresem i przemęczeniem.',
+    desc: 'W tej kategori mamy do czynienia głównie ze stresem i przemęczeniem.'
   },
   {
     question:
@@ -6970,7 +6970,7 @@ const questions = [
   },
   {
     question:
-      'Minimalna odległośc klawiatury od krawędzi blatu to?',
+      'Minimalna odległość klawiatury od krawędzi blatu to?',
     url: '',
     a1: '10cm',
     a2: '15cm',
@@ -6982,7 +6982,7 @@ const questions = [
   },
   {
     question:
-      'Wilgotoność przy stanowisku komputerowym nie może być niższa niż?',
+      'Wilgotność przy stanowisku komputerowym nie może być niższa niż?',
     url: '',
     a1: '40%',
     a2: '50%',
@@ -7050,7 +7050,7 @@ const questions = [
     a4: 'powinien posiadać podłokietniki',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Poza tym powienien mieć regulowaną wysokość i wyprofilowane oparcie.',
+    desc: 'Poza tym powinien mieć regulowaną wysokość i wyprofilowane oparcie.',
   },
   {
     question:
@@ -7093,9 +7093,9 @@ const questions = [
       'Do środków ochrony indywidualnej zaliczamy?',
     url: '',
     a1: 'środki ochrony głowy',
-    a2: 'wszelkiego rodzaju klimatyzacje',
+    a2: 'wszelkiego rodzaju klimatyzację',
     a3: 'oddymianie',
-    a4: 'wentylacje',
+    a4: 'wentylację',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -7131,7 +7131,7 @@ const questions = [
     url: '',
     a1: '"hash" uzyskany z funkcji skrótu jest odwracalny',
     a2: '"hash" uzyskany z funkcji skrótu jest nieodwracalny',
-    a3: 'wynik funkcji skrótu to takzwany "hash"',
+    a3: 'wynik funkcji skrótu to tak zwany "hash"',
     a4: 'funkcja skrótu przypisuje dowolnie dużej wartości krótką wartość o stałym rozmiarze',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -7178,12 +7178,12 @@ const questions = [
       'Podpis cyfrowy to?',
     url: '',
     a1: 'sposób potwierdzania autentyczności danych',
-    a2: 'kolejna metodologia szyforwania danych',
-    a3: 'forma sumy konstrolnej',
+    a2: 'kolejna metodologia szyfrowania danych',
+    a3: 'forma sumy kontrolnej',
     a4: 'specjalny certyfikat przyznany konkretnym danym',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Podpis cyfrowy bazuje na szyfrowaniu asymetrycznym. Autor danych szyfruje dane swoim własnym kluczem prywatnym, który jest tajny. Odbioraca szyfruje dokument kluczem publicznym i porównuje zaszyfrowane dane.',
+    desc: 'Podpis cyfrowy bazuje na szyfrowaniu asymetrycznym. Autor danych szyfruje dane swoim własnym kluczem prywatnym, który jest tajny. Odbiorca szyfruje dokument kluczem publicznym i porównuje zaszyfrowane dane.',
   },
   //pytania do kody na obrazku
   {
@@ -7280,7 +7280,7 @@ const questions = [
     a4: 'ani razu',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
+    desc: 'Każda wartość inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
   },
   {
     question:
@@ -7292,7 +7292,7 @@ const questions = [
     a4: '1',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Każda wartośc inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
+    desc: 'Każda wartość inna niż 0 lub false jest równoznaczna prawdzie w C/C++.',
   },
   {
     question:
@@ -7388,19 +7388,19 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
+    desc: 'Działa tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
   },
   {
     question:
       'Poniższy fragment kodu pokazuje',
     url: '/images/ifdebug.png',
-    a1: 'wszyskie pozostałe',
+    a1: 'Wszystkie pozostałe',
     a2: 'jak pozbyć szybko pozbyć się z kodu wynikowego elementów potrzebnych tylko w trakcie dewelopmentu',
     a3: 'jak usunąć część kodu zmieniając jedno makro',
     a4: 'jak podmienić/dodać fragment kodu pod pewnym warunkiem',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Zadziała tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
+    desc: 'Działa tu zasada znana z normalnych instrukcji warunkowych. W tym przypadku użyliśmy makra kompilatora. Jeżeli będzie ono zdefiniowane dołączony zostanie "iostream", jeżeli nie "cstdio".',
   },
   {
     question:
@@ -7448,7 +7448,7 @@ const questions = [
     a4: 'BAZOWA/ChildA/ChildB/BAZOWA/ChildB',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
+    desc: 'Mamy tu do czynienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
   },
   {
     question:
@@ -7460,7 +7460,7 @@ const questions = [
     a4: 'BAZOWA/ChildA/ChildB',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Mamy tu do czynnienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
+    desc: 'Mamy tu do czynienia z polimorfizmem w C++. Słowo kluczowe "virtual" mówi programowi, że ma wybrać metodę do wykonania na bazie typu po prawej stronie operatora "new".',
   },
   {
     question:
@@ -7508,7 +7508,7 @@ const questions = [
     a4: 'żadne z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Do delegatu typu "Action" możemy przypisywać tylko metody, które zwracają void (nic nie zwracają). Wszyskie parametry generyczne dotyczą parametrów funkcji.',
+    desc: 'Do delegatu typu "Action" możemy przypisywać tylko metody, które zwracają void (nic nie zwracają). Wszystkie parametry generyczne dotyczą parametrów funkcji.',
   },
   {
     question:
@@ -7520,7 +7520,7 @@ const questions = [
     a4: 'żadne z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Do delegatu typu "Predicate" możemy przypisywać tylko metody, które zwracają bool. Wszyskie parametry generyczne dotyczą parametrów funkcji.',
+    desc: 'Do delegatu typu "Predicate" możemy przypisywać tylko metody, które zwracają bool. Wszystkie parametry generyczne dotyczą parametrów funkcji.',
   },
   {
     question:
@@ -7568,7 +7568,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Lista w C# to typ referencyjny. Więc instancja listy została przekazana do funkcji przez referencje.',
+    desc: 'Lista w C# to typ referencyjny. Więc instancja listy została przekazana do funkcji przez referencję.',
   },
   {
     question:
@@ -7580,7 +7580,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Typ int jest typem wartościowym. W momecie przekazania do funkcji tworzy ona sobie jego kopię.',
+    desc: 'Typ int jest typem wartościowym. W momencie przekazania do funkcji tworzy ona sobie jego kopię.',
   },
   {
     question:
@@ -7628,7 +7628,7 @@ const questions = [
     a4: '2',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda First() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia rzucany jest wyjątek.',
+    desc: 'Metoda First() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeśli kolekcja jest pusta lub żaden element nie spełnia rzucany jest wyjątek.',
   },
   {
     question:
@@ -7640,7 +7640,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Zmienna result otrzyma wartość "null". Próba wywołania właściwości "Name" skończy się podanym wyjątkiem.',
+    desc: 'Zmienna result otrzyma wartość "null". Próba wywołania właściwości "Name" zakończy się podanym wyjątkiem.',
   },
   {
     question:
@@ -7652,7 +7652,7 @@ const questions = [
     a4: '3',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda Where() w przeciwieństwie do obu metod First() nie kończy się po znalezieniu pierwszego dopasowania. Zwraca ona IEnumerable<T> dlatego też należy użyć na wyniku ToList() aby pszypisać wynik do zmiennej typu Listy.',
+    desc: 'Metoda Where() w przeciwieństwie do obu metod First() nie kończy się po znalezieniu pierwszego dopasowania. Zwraca ona IEnumerable<T> dlatego też należy użyć na wyniku ToList() aby przypisać wynik do zmiennej typu Listy.',
   },
   {
     question:
@@ -7668,7 +7668,7 @@ const questions = [
   },
   {
     question:
-      'Poniższa konstrukcja pozwala sprawdzić czy element znajuje się w kolekcji?',
+      'Poniższa konstrukcja pozwala sprawdzić czy element znajduje się w kolekcji?',
     url: '/images/linq7.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -7680,7 +7680,7 @@ const questions = [
   },
   {
     question:
-      'W niniejszej konstrukji zastosowano sortowanie?',
+      'W niniejszej konstrukcji zastosowano sortowanie?',
     url: '/images/linq.png',
     a1: 'rosnąco',
     a2: 'malejąco',
@@ -7712,7 +7712,7 @@ const questions = [
     a4: 'dziedziczenie',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Klasa po prawej wykorzystuje do hermetyzacji właściwości, które są jak na ten moment unikalne dla C#. Oczywiście w klarmach od get i set można dorzucić więcej logiki niż tylko przypisanie.',
+    desc: 'Klasa po prawej wykorzystuje do hermetyzacji właściwości, które są jak na ten moment unikalne dla C#. Oczywiście w klamrach od get i set można dorzucić więcej logiki niż tylko przypisanie.',
   },
   {
     question:
@@ -7728,7 +7728,7 @@ const questions = [
   },
   {
     question:
-      'Dlaczego IDE podkreśla nazwę wyjatku?',
+      'Dlaczego IDE podkreśla nazwę wyjątku?',
     url: '/images/exceptions2.png',
     a1: 'Ponieważ wcześniejsza konstrukcja z "Exception" łapie już wszystko',
     a2: 'Nazwa wyjątku jest błędna',
@@ -7817,7 +7817,7 @@ const questions = [
     a1: 'nie można korzystać w składowych statycznych z elementów niestatycznych',
     a2: 'zarówno "x" jak i "y" nie są zainicjowane domyślną wartością',
     a3: 'zarówno "x" jak i "y" oznaczono jako prywatne',
-    a4: 'zarówno "x" jak i "y" powninno się poprzedzić słowem kluczowym "this"',
+    a4: 'zarówno "x" jak i "y" powinno się poprzedzić słowem kluczowym "this"',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Elementy statycznie nie mogą używać elementów niestatycznych klasy (potrzebny jest obiekt). W drugą stronę relacja jest możliwa.',
@@ -7904,7 +7904,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Różnia się tylko zapisem. Chociaż w przypadku typów referencyjnych należy uważać tak samo jak z operatorem "==" oraz metodą "Equals()".',
+    desc: 'Różnią się tylko zapisem. Chociaż w przypadku typów referencyjnych należy uważać tak samo jak z operatorem "==" oraz metodą "Equals()".',
   },
   {
     question:
@@ -7944,15 +7944,15 @@ const questions = [
   },
   {
     question:
-      'Co się stanie w momencie wciśniecia przycisku PrintBtn?',
+      'Co się stanie w momencie wciśnięcia przycisku PrintBtn?',
     url: '/images/throwcallback.png',
     a1: 'zostanie rzucony wyjątek "NotImplementedException"',
-    a2: 'nie stanie sie nic',
+    a2: 'nie stanie się nic',
     a3: 'program zacznie drukować pierwszy element listy "listItems"',
     a4: 'wyświetli się komunikat z błędem',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Visual Studio potrafi sam (po wciśnieciu tab po napisaniu += ) wygenerować pustą funkcje przypisywaną do zdarzenia. Funkcja ta zazwyczaj zawiera rzucenie wyjątku o braku implementacji.',
+    desc: 'Visual Studio potrafi sam (po wciśnięciu tab po napisaniu += ) wygenerować pustą funkcje przypisywaną do zdarzenia. Funkcja ta zazwyczaj zawiera rzucenie wyjątku o braku implementacji.',
   },
   {
     question:
@@ -7996,7 +7996,7 @@ const questions = [
     url: '/images/pythonnoglobal.png',
     a1: '2',
     a2: '3',
-    a3: 'wyjatek o braku definicji zmiennej "liczba"',
+    a3: 'wyjątek o braku definicji zmiennej "liczba"',
     a4: '0',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -8008,7 +8008,7 @@ const questions = [
     url: '/images/pythonglobal.png',
     a1: '3',
     a2: '2',
-    a3: 'wyjatek o braku definicji zmiennej "liczba"',
+    a3: 'wyjątek o braku definicji zmiennej "liczba"',
     a4: '0',
     tag: 'NIEOFICJALNE',
     type: '4A',
@@ -8136,7 +8136,7 @@ const questions = [
   },
   {
     question:
-      'Czy implementacja zaprezentowana poniżej pozala wykonać kopię typu referencyjnego?',
+      'Czy implementacja zaprezentowana poniżej pozwala wykonać kopię typu referencyjnego?',
     url: '/images/refcpy.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -8144,11 +8144,11 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartoścami. Jednak jest to tylko płytka kopia.',
+    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartościami. Jednak jest to tylko płytka kopia.',
   },
   {
     question:
-      'Czy implementacja zaprezentowana poniżej pozala wykonać kopię typu referencyjnego?',
+      'Czy implementacja zaprezentowana poniżej pozwala wykonać kopię typu referencyjnego?',
     url: '/images/refcpy2.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -8156,7 +8156,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartoścami, które też są kopiowane. Jest to kopia głęboka.',
+    desc: 'Klasa posiada metodę kopiującą, która alokuje nowy obiekt z takimi samymi wartościami, które też są kopiowane. Jest to kopia głęboka.',
   },
   {
     question:
@@ -8180,7 +8180,7 @@ const questions = [
     a4: '4',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Zwracana jest ilość bajtów potrzebna do zapisana w pamięci wartości danego typu.',
+    desc: 'Zwracana jest ilość bajtów potrzebna do zapisania w pamięci wartości danego typu.',
   },
   {
     question:
@@ -8192,7 +8192,7 @@ const questions = [
     a4: '24',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Zwracana jest ilość bajtów potrzebna do zapisana w pamięci wartości danego typu. W przypadku tej struktury będzie to suma rozmiarów typów, z których składa się ta struktura.',
+    desc: 'Zwracana jest ilość bajtów potrzebna do zapisania w pamięci wartości danego typu. W przypadku tej struktury będzie to suma rozmiarów typów, z których składa się ta struktura.',
   },
   {
     question:
@@ -8428,7 +8428,7 @@ const questions = [
     url: '/images/manifest.png',
     a1: 'plik "AnroidManifest.xml" systemu Android',
     a2: 'plik "Info.plist" z uprawnieniami iOS',
-    a3: 'plik zasobów styli dla systemu Android',
+    a3: 'plik zasobów stylów dla systemu Android',
     a4: 'żadne z pozostałych',
     tag: 'NIEOFICJALNE',
     type: '4A',
