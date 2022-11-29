@@ -27,6 +27,22 @@ let infographics = [
         title: '[Struktury] Struktury FILO oraz FIFO',
         url: '/images/info_filo_fifo.png'
     },
+    {
+        title: '[C#/Java/Python] Typy wartościowe vs typy referencyjne',
+        url: '/images/info_reftype.png'
+    },
+    {
+        title: '[C/C++] Wskaźniki/Stringi/Tablice',
+        url: '/images/info_pointer.png'
+    },
+    {
+        title: '[C/C++] Wskaźniki na funkcje',
+        url: '/images/info_funcptr.png'
+    },
+    {
+        title: '[C++/C#] Prywatne składowe klasy - czy są tak naprawde prywatne?',
+        url: '/images/info_private.png'
+    },
 ]
 
 export default infographics;

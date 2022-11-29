@@ -106,7 +106,7 @@ const questions = [
     a4: 'Drzewo Binarne',
     tag: 'OFICJALNE',
     type: '4A',
-    desc: '',
+    desc: 'Jest to pytanie oficjalne. Tak naprawdę poprawnych odpowiedzi mogło by być wiele, ponieważ kto nam broni nazwać metodę dodającą do kolejki wartość w ten sam sposób jak w przypadku stosu.',
   },
   {
     question:
@@ -130,7 +130,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'FILO - First In Last Out. LIFO - Last In First Out.',
+    desc: 'FILO - First In Last Out. LIFO - Last In First Out. Odwrotny zapis.',
   },
   {
     question:
@@ -218,7 +218,7 @@ const questions = [
   },
   {
     question:
-      'Czy w funkcji zwracającej "void" można użyć słowa kluczowego return?',
+      'Czy w funkcji zwracającej "void" można użyć słowa kluczowego "return"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -1693,18 +1693,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Drzewo to graf, w którym nie ma cyklu. Wymogiem jest również to by z każdego wierzchołka dało się dojść do każdego innego.',
-  },
-  {
-    question:
-      'Algorytmem grafowym nie jest?',
-    url: '',
-    a1: 'Algorytm Węgierski',
-    a2: 'Algorytm Dijkstry',
-    a3: 'Algorytm Kruskala',
-    a4: 'Algorytm Prima',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Algorytm Węgierski służy do gospodarowania zadaniami i pracownikami.',
   },
   {
     question:
