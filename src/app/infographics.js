@@ -43,6 +43,10 @@ let infographics = [
         title: '[C++/C#] Prywatne składowe klasy - czy są tak naprawde prywatne?',
         url: '/images/info_private.png'
     },
+    {
+        title: '[C/C++] Swap dwóch zmiennych bez tworzenia trzeciej',
+        url: '/images/info_switch_value.png'
+    },
 ]
 
 export default infographics;
