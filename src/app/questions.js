@@ -934,7 +934,7 @@ const questions = [
     a4: 'zbioru',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'W kazdym języku alokujemy na stercie/heapie.',
+    desc: 'W każdym języku alokujemy na stercie/heapie.',
   },
   {
     question:
@@ -983,6 +983,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Przykład: "int* a_ptr = &a;"',
+  },
+  {
+    question:
+      'Aby pobrać adres tablicy w C/C++ należy posłużyć się operatorem?',
+    url: '',
+    a1: 'żadnym z pozostałych',
+    a2: '&',
+    a3: '|',
+    a4: '*',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Nie jest konieczenie użycie operatora "&", ponieważ nazwa tablicy jest wskaźnikiem sama w sobie. Podobnie jest z adresem funkcji.',
   },
   {
     question:
@@ -1262,7 +1274,7 @@ const questions = [
   },
   {
     question:
-      'Konstruktor kopiujący powinien przyjmować obiekt kopiowany jako referencje na stałą "const T&"?',
+      'Konstruktor kopiujący powinien przyjmować obiekt, który chcemy skopiować w formie referencji typu "const T&"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -1390,7 +1402,7 @@ const questions = [
     a4: 'char text[12] = "Ala ma kota";',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
+    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, aby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
   },
   {
     question:
@@ -1402,7 +1414,7 @@ const questions = [
     a4: 'char text[12] = {\'A\',\'l\',\'a\',\' \',\'m\',\'a\',\' \',\'k\',\'o\',\'t\',\'a\', 0};',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, żeby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
+    desc: 'Oprócz typu "string", który na marginesie znajduje się w przestrzenii "std" w C++ można używać składni C. String to tablica znaków zakończona 0, aby program wiedział gdzie kończy się string. Obie konstrukcje powyżej dodają 0 automatycznie. Wersja ze wskaźnikiem nie pozwala modyfikować stringu.',
   },
   {
     question:
@@ -1486,7 +1498,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: '"ceil" zaokrągla do najbliższej liczby całkowitej wgóre natomiast "floor" zaokrągla do najbliższej liczby całkowitej mniejszej niż podana wartość.',
+    desc: '"ceil" zaokrągla do najbliższej liczby całkowitej w góre natomiast "floor" zaokrągla do najbliższej liczby całkowitej mniejszej niż podana wartość.',
   },
   //numeric systems
   {
@@ -1583,7 +1595,7 @@ const questions = [
     a4: 'BIN',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Prefix 0x służy do zapisu liczb szesnastkowych. Prefix 0b służy do zapisu liczb binarnych. Liczby w systemie ósemkowym poprzedza się poprostu cyfrą 0.',
+    desc: 'Prefix 0x służy do zapisu liczb szesnastkowych. Prefix 0b służy do zapisu liczb binarnych. Liczby w systemie ósemkowym poprzedza się po prostu cyfrą 0.',
   },
   {
     question:
@@ -1909,7 +1921,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Mamy tu na mysli zmienną typu abstrakcyjnego, do której przypisywany jest obiekt normalnej klasy dziedziczącej z tej abstrakcyjnej.',
+    desc: 'Mamy tu na myśli zmienną typu abstrakcyjnego, do której przypisywany jest obiekt normalnej klasy dziedziczącej z tej abstrakcyjnej.',
   },
   {
     question:
@@ -1921,7 +1933,7 @@ const questions = [
     a4: '0',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Dokładnie z jednej. Ma to znaczenie przy plimorfiźmie.',
+    desc: 'Dokładnie z jednej. Ma to znaczenie przy polimorfiźmie.',
   },
   {
     question:
@@ -1981,7 +1993,7 @@ const questions = [
     a4: 'a dostęp tylko do danych prywatnych',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Możliwe jest utworznie konstruktora prywatnego chociaży w celu utworznia singletona.',
+    desc: 'Możliwe jest utworzenie konstruktora prywatnego chociażby w celu utworzenia singletona.',
   },
   {
     question:
@@ -2113,7 +2125,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Nie da się przeciążyć operatora trynarnego ?: (C++). W C# lista niemożliwych do przeciążenia operatorów jest dłuższa i zawiera miedzy innymi operatory z serii +=, -=, ...',
+    desc: 'Nie da się przeciążyć operatora trynarnego ?: (C++). W C# lista niemożliwych do przeciążenia operatorów jest dłuższa i zawiera między innymi operatory z serii +=, -=, ...',
   },
   {
     question:
@@ -2225,7 +2237,7 @@ const questions = [
   },
   {
     question:
-      'Czy elementy niestatyczne klasy mają dostęp do elementów statycznych?',
+      'Czy elementy nie statyczne klasy mają dostęp do elementów statycznych?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -2305,7 +2317,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Słowo kluczowe "this" odnosi się do danej instancji klasy. W przypadku statycznośc operujemy na elementach przypisanych do klasy a nie do obiektu. Nie ma więc mowy o this.',
+    desc: 'Słowo kluczowe "this" odnosi się do danej instancji klasy. W przypadku statyczność operujemy na elementach przypisanych do klasy a nie do obiektu. Nie ma więc mowy o this.',
   },
   {
     question:
@@ -2910,7 +2922,7 @@ const questions = [
   },
   {
     question:
-      'Boxing to proces sztuczengo opakowania typu wartościowego w typ referencyjny?',
+      'Boxing to proces sztucznego opakowania typu wartościowego w typ referencyjny?',
     url: '/images/boxing.png',
     a1: 'TAK',
     a2: 'NIE',
@@ -3086,7 +3098,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'List dziedziczy z interfejsu IEnumerable. Jeżeli posługujemy się referencją typu IEnumerable możliwe jest odłożenie w czasie pewnych operacji na kolecji.',
+    desc: 'List dziedziczy z interfejsu IEnumerable. Jeżeli posługujemy się referencją typu IEnumerable możliwe jest odłożenie w czasie pewnych operacji na kolekcji.',
   },
   {
     question:
@@ -3170,7 +3182,7 @@ const questions = [
     a4: 'że metoda staje się synchroniczną',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Jeżeli w metodzie pada słowo kluczowe "await" to metoda staje się asynchroniczna. Trzeba ją oznaczyć jako metodę "async" albo popraostu zwrócić typ Task<T>.',
+    desc: 'Jeżeli w metodzie pada słowo kluczowe "await" to metoda staje się asynchroniczna. Trzeba ją oznaczyć jako metodę "async" albo po prostu zwrócić typ Task<T>.',
   },
   {
     question:
@@ -3218,7 +3230,7 @@ const questions = [
     a4: 'static',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Najczęściej dopisuje się "unsafe" do nagłówka funkcji np. "public static unsafe void Main(){}"',
+    desc: 'Najczęściej dodaje się "unsafe" do nagłówka funkcji np. "public static unsafe void Main(){}"',
   },
   {
     question:
@@ -3679,7 +3691,7 @@ const questions = [
   },
   {
     question:
-      'Aby w WPF można było połączyć wierwsze siatki należy posłużyć się atrybutem "Grid.RowSpan"?',
+      'Aby w WPF można było połączyć wiersze siatki należy posłużyć się atrybutem "Grid.RowSpan"?',
     url: '',
     a1: 'TAK',
     a2: 'NIE',
@@ -4366,7 +4378,7 @@ const questions = [
   },
   {
     question:
-      'Zasada "dependency injection" mówi, żeby zależności wstrzykiwać z zewnątrz przez?',
+      'Zasada "dependency injection" mówi, aby zależności wstrzykiwać z zewnątrz przez?',
     url: '',
     a1: 'wszystkie pozostałe',
     a2: 'konstruktor',
@@ -7352,7 +7364,7 @@ const questions = [
     a4: '0',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Funkcja ta zwraca długość napisu pod wskaźnikiem, ale nie liczy do długości 0 znajującego sie na końcu stringa.',
+    desc: 'Funkcja ta zwraca długość napisu pod wskaźnikiem, ale nie liczy do długości 0 znajdującego się na końcu stringa.',
   },
   {
     question:
@@ -7592,7 +7604,7 @@ const questions = [
     a4: '0',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
+    desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żaden element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
   },
   {
     question:
@@ -7604,7 +7616,7 @@ const questions = [
     a4: 'wystąpi błąd',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żadane element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
+    desc: 'Metoda FirstOrDefault() biblioteki LINQ zwraca pierwszy element kolekcji, który z podanego callbacka zwraca prawdę. Jeżeli kolekcja jest pusta lub żaden element nie spełnia wymogów zwracana jest domyślna wartość danego typu.',
   },
   {
     question:
@@ -8252,7 +8264,7 @@ const questions = [
     a4: 'kompilacja się nie powiedzie',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda parse domyślnie oczekuje przecinka jako sepratora części całkowitej i ułamkowej.',
+    desc: 'Metoda parse domyślnie oczekuje przecinka jako separatora części całkowitej i ułamkowej.',
   },
   {
     question:
@@ -8264,7 +8276,7 @@ const questions = [
     a4: 'kompilacja się nie powiedzie',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Metoda parse domyślnie oczekuje przecinka jako sepratora części całkowitej i ułamkowej.',
+    desc: 'Metoda parse domyślnie oczekuje przecinka jako separatora części całkowitej i ułamkowej.',
   },
   {
     question:
@@ -8356,8 +8368,8 @@ const questions = [
     url: '/images/pierwsze.png',
     a1: 'pierwsze',
     a2: 'parzyste',
-    a3: 'podzielnne przez wartość zmiennej "test"',
-    a4: 'podzielnne przez wartość zmiennej "check"',
+    a3: 'podzielne przez wartość zmiennej "test"',
+    a4: 'podzielne przez wartość zmiennej "check"',
     tag: 'OFICJALNE',
     type: '4A',
     desc: '',

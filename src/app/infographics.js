@@ -47,6 +47,10 @@ let infographics = [
         title: '[C/C++] Swap dwóch zmiennych bez tworzenia trzeciej',
         url: '/images/info_switch_value.png'
     },
+    {
+        title: '[Konsola] Struktura plików i katalogów w konsoli',
+        url: '/images/info_console.png'
+    },
 ]
 
 export default infographics;
