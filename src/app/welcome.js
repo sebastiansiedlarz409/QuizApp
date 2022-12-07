@@ -13,7 +13,7 @@ function Welcome(props){
             <p>
                 W zakładce <b>MATERIAŁY</b> znajdują się luźne notatki na różne tematy, które moga się przydać :)
             </p>
-            <p>Ostatnia aktualizacja: 06.12.2022 15:30</p>
+            <p>Ostatnia aktualizacja: 07.12.2022 19:00</p>
         </div>
     );
 }

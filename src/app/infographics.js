@@ -51,6 +51,14 @@ let infographics = [
         title: '[Konsola] Struktura plików i katalogów w konsoli',
         url: '/images/info_console.png'
     },
+    {
+        title: '[C#] Enkapsulacja z właściwościami',
+        url: '/images/info_props.png'
+    },
+    {
+        title: '[C#] Odwracanie zależności oraz ich wstrzykiwanie',
+        url: '/images/info_di.png'
+    },
 ]
 
 export default infographics;
