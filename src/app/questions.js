@@ -26,6 +26,18 @@ const questions = [
   },
   {
     question:
+      'Pojęcie "variable lifetime" oraz "variable scope" zawsze oznaczają to samo?',
+    url: '/images/floatdouble.jpg',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Zmienna może cały czas egzystować w pamięci, ale być niedostępna do użycia w danej chwili. Polecam poczytać o statycznych zmiennych w funkcjach.',
+  },
+  {
+    question:
       'Czy typy float i double są identyczne?',
     url: '/images/floatdouble.jpg',
     a1: 'NIE',
@@ -167,6 +179,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Enum to typ wyliczeniowy w praktycznie każdym stosowanym dzisiaj języku. Pozwala ograniczyć możliwe do wpisania wartości np. do zmiennej.',
+  },
+  {
+    question:
+      'Elementem języka C++, który pozwala określić skończony zestaw wartości możliwy do przypisania zmiennej jest?',
+    url: '',
+    a1: 'enum class',
+    a2: 'set',
+    a3: 'tuple',
+    a4: 'select',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: 'Enum Class to typ wyliczeniowy typowy dla C++. Różni się on od podstawowego Enum.',
   },
   {
     question:
@@ -358,7 +382,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Tak, przyjmuje dokładnie dwa. Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywany jest jako string w tej tablicy.',
+    desc: 'Tak, przyjmuje dokładnie dwa (ale można zostawić pusty nawias). Liczbę całkowitą z ilością argumentów programu int argc i tablicę stringów w formie char** argv. Co to za parametry? Wywołując program z cmd po spacji możemy podać jakieś argumenty. Każdy zapisywany jest jako string w tej tablicy.',
   },
   {
     question:
@@ -782,6 +806,18 @@ const questions = [
   },
   {
     question:
+      'Które słowo jest słowem kluczowym C/C++?',
+    url: '',
+    a1: 'typename',
+    a2: 'msr',
+    a3: 'where',
+    a4: 'like',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
       'Które słowo NIE jest słowem kluczowym C/C++?',
     url: '',
     a1: 'peek',
@@ -971,6 +1007,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Istnieje w C/C++ coś takiego jak wskaźnik na funkcję. Funkcja: "int add(int a, int b);" wskaźnik: "int(addPtr*)(int,int) = add;"',
+  },
+  {
+    question:
+      'Funkcja main w C/C++ przyjmuje dwa argumenty. Pierwszym z nich jest liczba całkowita określająca ilość parametrów przekazanych do pliku exe z konsolii + 1?',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '+1 ponieważ pierwszym parametrem jest ścieżka do tego exeka',
   },
   {
     question:

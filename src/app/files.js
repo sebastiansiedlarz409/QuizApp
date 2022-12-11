@@ -87,6 +87,14 @@ let files = [
         title:'[Teoria] Postaci normalne w relacyjnych bazach danych',
         url:'/files/PostaciNormalne.pdf',
     },
+    {
+        title:'[C++/C#] Typ wyliczeniowy',
+        url:'/files/Enum.pdf',
+    },
+    {
+        title:'[C++/C#] Szablony',
+        url:'/files/Szablony.pdf',
+    },
 ];
 
 export default files;

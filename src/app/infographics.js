@@ -59,6 +59,14 @@ let infographics = [
         title: '[C#] Odwracanie zależności oraz ich wstrzykiwanie',
         url: '/images/info_di.png'
     },
+    {
+        title: '[C++] Statyczna zmienna lokalna',
+        url: '/images/info_staticlocal.png'
+    },
+    {
+        title: '[C++] Parametry funkcji main',
+        url: '/images/info_mainparam.png'
+    },
 ]
 
 export default infographics;
