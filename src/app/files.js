@@ -59,18 +59,18 @@ let files = [
         title:'[C#] Delegaty - zmienne przechowujące funkcje',
         url:'/files/Delegaty.pdf',
     },
-    {
-        title:'[React] Struktura projektu, komponenty, stan',
-        url:'/files/react1.pdf',
-    },
-    {
-        title:'[React] Dynamiczne generowanie komponentów, callbacki',
-        url:'/files/react2.pdf',
-    },
-    {
-        title:'[React] Hooki w komponentach funkcyjnych',
-        url:'/files/react3.pdf',
-    },
+    // {
+    //     title:'[React] Struktura projektu, komponenty, stan',
+    //     url:'/files/react1.pdf',
+    // },
+    // {
+    //     title:'[React] Dynamiczne generowanie komponentów, callbacki',
+    //     url:'/files/react2.pdf',
+    // },
+    // {
+    //     title:'[React] Hooki w komponentach funkcyjnych',
+    //     url:'/files/react3.pdf',
+    // },
     {
         title:'[GIT] Podstawy systemu konstroli wersji GIT',
         url:'/files/GIT.pdf',
