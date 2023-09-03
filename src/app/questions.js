@@ -26,18 +26,6 @@ const questions = [
   },
   {
     question:
-      'Pojęcie "variable lifetime" oraz "variable scope" zawsze oznaczają to samo?',
-    url: '/images/floatdouble.jpg',
-    a1: 'NIE',
-    a2: 'TAK',
-    a3: '',
-    a4: '',
-    tag: 'NIEOFICJALNE',
-    type: '2A',
-    desc: 'Zmienna może cały czas egzystować w pamięci, ale być niedostępna do użycia w danej chwili. Polecam poczytać o statycznych zmiennych w funkcjach.',
-  },
-  {
-    question:
       'Czy typy float i double są identyczne?',
     url: '/images/floatdouble.jpg',
     a1: 'NIE',
@@ -190,7 +178,7 @@ const questions = [
     a4: 'select',
     tag: 'NIEOFICJALNE',
     type: '4A',
-    desc: 'Enum Class to typ wyliczeniowy typowy dla C++. Różni się on od podstawowego Enum.',
+    desc: 'Enum Class to typ wyliczeniowy typowy dla C++. Różni się on od podstawowego Enum. Więcej w materiałach.',
   },
   {
     question:
@@ -203,6 +191,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Nie musi. Przyjeło się, że 0 oznacza sukces czyli poprawne wykonanie programu. Przerwanie programy wcześniej z jakiegoś powodu powinno zwracać coś innego.',
+  },
+  {
+    question:
+      'W C++ konstrukcje enum oraz enum class działają identycznie?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Różnica jest bardzo duża. Enum jest mapowany na liczbę przez co np. A::Option1==B::Option1 da prawdę mimo, że A i B to różne enumy (0 == 0). W przypadku enum class porównanie takie nie zadziała już na etapie kompilacji bo A i B są różnymi typami. Więcej w materiałach.',
   },
   {
     question:
@@ -238,7 +238,7 @@ const questions = [
     a4: '',
     tag: 'NIEOFICJALNE',
     type: '2A',
-    desc: 'Jeżeli przekażemy do funkcji parametr przez wskaźnik lub referencję i go zmodyfikujemy to zobaczymy zmiany po powrocie z funckji mimo, że nie użyliśmy "return"',
+    desc: 'Jeżeli przekażemy do funkcji parametr przez wskaźnik lub referencję i go zmodyfikujemy to zobaczymy zmiany po powrocie z funckji mimo, że nie użyliśmy "return".',
   },
   {
     question:
@@ -479,18 +479,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'W C++ nie ma takiej funkcji jak "print()"',
-  },
-  {
-    question:
-      'Komentarze jednolinijkowe w C/C++ rozpoczynamy od?',
-    url: '',
-    a1: '//',
-    a2: '/*',
-    a3: '\\\\',
-    a4: '#',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: '',
   },
   {
     question:
@@ -842,18 +830,6 @@ const questions = [
   },
   {
     question:
-      'Kompilatorem języka C/C++ nie jest?',
-    url: '',
-    a1: 'IL',
-    a2: 'GCC',
-    a3: 'Visual C++',
-    a4: 'Clang',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Kompilator to program, który zamienia napisany przez nas kod na plik exe/dll (formę zrozumiałą dla procesora). IL nie jest kompilatorem.',
-  },
-  {
-    question:
       'Język C++ jest nadzbiorem języka C?',
     url: '/images/ccpp.jpg',
     a1: 'TAK',
@@ -959,18 +935,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Unia to struktura, która przyjmuje rozmiar największego elementu składowego. Pozostałe się na niego nakładają.',
-  },
-  {
-    question:
-      'Słowo kluczowe new alokuje pamięć w miejscu określanym mianem?',
-    url: '',
-    a1: 'sterty',
-    a2: 'stosu',
-    a3: 'mapy',
-    a4: 'zbioru',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'W każdym języku alokujemy na stercie/heapie.',
   },
   {
     question:
@@ -1358,18 +1322,6 @@ const questions = [
   },
   {
     question:
-      'Komputer 32 bitowy może zaadresować tylko 4GB pamięci?',
-    url: '',
-    a1: 'TAK',
-    a2: 'NIE',
-    a3: '',
-    a4: '',
-    tag: 'NIEOFICJALNE',
-    type: '2A',
-    desc: 'Na 32 bitach jesteśmy w stanie zakodować 2 do 32 adresów. Jest ich dokładnie 4GB.',
-  },
-  {
-    question:
       'Komputer 64 bitowy może przyjąć dowolną ilość ramu?',
     url: '',
     a1: 'NIE',
@@ -1475,18 +1427,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: 'Stringi typu "const char*" są umieszczane w pamięci w sekcji tylko do odczytu. Jeżeli napiszemy cout<<"Hello"; to ten napis też jest typu "const char*".',
-  },
-  {
-    question:
-      'Aby użyć funkcji "strlen()" do pobrania długości c-style string należy dołączyć?',
-    url: '',
-    a1: 'cstring',
-    a2: 'string',
-    a3: 'cstdlib',
-    a4: 'cstdio',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'Funkcja ta znajduje się w "cstring". Przypominamy, że pliki poprzedzone literą c pochodzą z języka C!',
   },
   {
     question:
@@ -2607,18 +2547,6 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Tak, możliwe jest pisanie klas w klasie. Klasy takie są dostępne tylko wewnątrz klasy nadrzędnej.',
-  },
-  {
-    question:
-      'Typem z języka C# niedostępnym w innych językach jest?',
-    url: '',
-    a1: 'IntPtr',
-    a2: 'String',
-    a3: 'List',
-    a4: 'StringBuilder',
-    tag: 'NIEOFICJALNE',
-    type: '4A',
-    desc: 'IntPtr to typ wskaźników w C#',
   },
   {
     question:
@@ -5682,6 +5610,30 @@ const questions = [
   },
   {
     question:
+      'W php odwołując się do pola klasy musimy użyć konstrukcji?',
+    url: '',
+    a1: '$this->...',
+    a2: '$self->...',
+    a3: '$self.',
+    a4: '$this.',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W php słowa kluczowe this oraz self są równoznaczne?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'self odnosi się do składowych statycznych klasy',
+  },
+  {
+    question:
       'W php aby zdefiniować tablicę musimy użyć konstrukcji?',
     url: '',
     a1: '$t = array(1,2,3);',
@@ -5724,6 +5676,18 @@ const questions = [
     a2: '$click_counter',
     a3: '$clickCounter',
     a4: '$clickcounter',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'Do zmiennych statycznych w PHP odwołujemy się za pomocą operatora?',
+    url: '',
+    a1: '::',
+    a2: '.',
+    a3: '->',
+    a4: '@',
     tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
@@ -8587,6 +8551,31 @@ const questions = [
     a3: 'kubełkowego',
     a4: 'bąbelkowego',
     tag: 'OFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  //google dev tools
+  {
+    question:
+      'W konsoli google chrome aby odwołać się do obecnie zaznaczonego elementu należy posłużyć się konstrukcją?',
+    url: '',
+    a1: '$0',
+    a2: '$this',
+    a3: '$selected',
+    a4: '$0',
+    tag: 'NIEOFICJALNE',
+    type: '4A',
+    desc: '',
+  },
+  {
+    question:
+      'W konsoli google chrome aby zobaczyć jakie eventy wykonują się na danym elemencie nalezy posłużyć się funkcją?',
+    url: '',
+    a1: 'monitorEvents()',
+    a2: 'events()',
+    a3: 'see()',
+    a4: 'monitorElement()',
+    tag: 'NIEOFICJALNE',
     type: '4A',
     desc: '',
   },
