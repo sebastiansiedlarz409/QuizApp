@@ -12,8 +12,10 @@ function Welcome(props){
             </p>
             <p>
                 W zakładce <b>MATERIAŁY</b> znajdują się luźne notatki na różne tematy, które moga się przydać :)
+                <br />
+                Natomiast zakładka <b>INFO GRAFIKI</b> zwiera obrazki tłumaczące pewne rzeczy tak szybko i w tak skróconej formie jak to tylko możliwe.
             </p>
-            <p>Ostatnia aktualizacja: 15.04.2023 12:00</p>
+            <p>Ostatnia aktualizacja: 03.09.2023 19:00</p>
         </div>
     );
 }

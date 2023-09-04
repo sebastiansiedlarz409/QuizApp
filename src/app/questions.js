@@ -5959,6 +5959,18 @@ const questions = [
   },
   {
     question:
+      'W języku PHP istnieje różnica między cudzysłowami a apostrofami?',
+    url: '',
+    a1: 'TAK',
+    a2: 'NIE',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: '',
+  },
+  {
+    question:
       'Ile znaków wypisze "print(tekst[2:5])" w języku python zakładając, że string ma minimum 6 znaków?',
     url: '',
     a1: '3',
@@ -6220,6 +6232,18 @@ const questions = [
     tag: 'NIEOFICJALNE',
     type: '2A',
     desc: 'Range generuje przedział prawostronnie otwarty czyli [0, 10) w tym wypadku.',
+  },
+  {
+    question:
+      'W języku metody __repr__() oraz __str__() służą temu samemu celowi?',
+    url: '',
+    a1: 'NIE',
+    a2: 'TAK',
+    a3: '',
+    a4: '',
+    tag: 'NIEOFICJALNE',
+    type: '2A',
+    desc: 'Obie metody mogą służyć do tego samego. Obie zwracają tekstową reprezentacje obiektu. __str__() zwraca powinno zwracać reprezentacje użyteczną dla użytkownika natomiast __repr__() reprezentacje przydatną programiście.',
   },
   {
     question:
