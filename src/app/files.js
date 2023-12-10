@@ -1,5 +1,21 @@
 let files = [
     {
+        title: '[C#/C++] Dziedziczenie vs kompozycja',
+        url: '/files/DziedziczenieVsKompozycja.pdf'
+    },
+    {
+        title: '[C#] Interfejsy',
+        url: '/files/Interfejs.pdf'
+    },
+    {
+        title: '[C/C++] Zamiana zmiennych wartościami bez używania trzeciej zmiennej (także stringów)',
+        url: '/files/ObracanieZmiennych.pdf'
+    },
+    {
+        title: '[C/C++] Stringi C-style',
+        url: '/files/StringiCStyle.pdf'
+    },
+    {
         title: '[Inżynieria wsteczna] Inżynieria wsteczna i asembler - ale to fajne cz1',
         url: '/files/MiniReverseCraft.pdf'
     },
