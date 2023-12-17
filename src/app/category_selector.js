@@ -33,9 +33,9 @@ function CategorySelector(props){
     let returnCategories = () =>{
         let cat = [];
         for(let i = 0;i<Object.keys(categories).length;i++){
-            if(cookies.inf04Categories){
+            if(cookies.inf04Categories || cookies.inf04Categories === ""){
                 let cats = cookies.inf04Categories.split(",");
-                
+                console.log(cookies.inf04Categories);
                 if(cats.includes(Object.keys(categories)[i])){
                     cat.push(
                         <div className="category-list">
@@ -62,8 +62,6 @@ function CategorySelector(props){
                 );
             }
         }
-        console.log(categories.length);
-        console.log(cat);
         return cat;
     }
 
@@ -71,6 +69,7 @@ function CategorySelector(props){
         <div id="top" className="test_view">
         <center>
             <h2>Zaznacz interesujące Cię kategorie:</h2>
+            <h5>Jeżeli żaden box nie jest zaznaczony jest to równoznaczne z zaznaczeniem wszystkich!</h5>
             <div>
                 <div className="category_selector">{returnCategories()}</div>
             </div>

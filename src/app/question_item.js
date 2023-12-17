@@ -84,7 +84,7 @@ function QuestionItem(props) {
   return (
     <div className="question_item">
       <h2 className="question_content">
-        ({props.question.id}) {props.question.question} ({props.question.tag})
+        ({props.question.id}) [{props.question.cat}] {props.question.question} ({props.question.tag})
       </h2>
       <img
         id={"IMG" + props.question.id}
