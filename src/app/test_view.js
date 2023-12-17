@@ -11,6 +11,7 @@ function TestView(props) {
 
   //this is use to refresh test
   const [questions, setQuestions] = useState([]);
+  const [actualqc, setActualQC] = useState(40); //actual question count
 
   //answers returned from each child
   let answers = [];
@@ -28,18 +29,18 @@ function TestView(props) {
     answers.push(answer);
 
     //if every question is answered return result
-    if (answers.length === question_count) {
+    if (answers.length === actualqc) {
       count = 0;
-      for (let i = 0; i < question_count; i++) {
+      for (let i = 0; i < actualqc; i++) {
         if (answers[i] === true) {
           count++;
         }
       }
-      result = (count / question_count) * 100;
+      result = (count / actualqc) * 100;
       resultSetResult({
         result: result.toFixed(2),
         count: count,
-        questions: question_count,
+        questions: actualqc,
       });
       ref.current?.scrollIntoView({ behavior: "smooth" });
     }
@@ -60,7 +61,12 @@ function TestView(props) {
 
       resultSetResult(null);
       setQuestions(q);
+
+      if(q.length >= props.questions.length){
+        break;
+      }
     }
+    setActualQC(q.length);
   };
 
   //return list of questions
