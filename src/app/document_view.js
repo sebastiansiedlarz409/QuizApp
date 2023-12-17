@@ -12,7 +12,7 @@ function DocumentView(props) {
     <div className="document_view">
       <center>
         <div className="welcome_text">
-          <Welcome questions={props.questions}></Welcome>
+          <Welcome questions={props.total}></Welcome>
         </div>
       </center>
       <hr />

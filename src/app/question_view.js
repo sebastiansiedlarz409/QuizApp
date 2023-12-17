@@ -32,7 +32,7 @@ function RandomQuestionView(props) {
     <div className="question_view">
       <center>
         <div className="welcome_text">
-          <Welcome questions={props.questions}></Welcome>
+          <Welcome questions={props.total}></Welcome>
         </div>
         <button className="button_style" onClick={() => randomQuestion()}>
           Losuj inne pytanie!
@@ -90,7 +90,7 @@ function QuestionView(props) {
     <div className="question_view">
       <center>
         <div className="welcome_text">
-          <Welcome questions={props.questions}></Welcome>
+          <Welcome questions={props.total}></Welcome>
         </div>
         <div className="switch_question_btns">
           <button

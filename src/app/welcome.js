@@ -5,17 +5,13 @@ function Welcome(props){
         <div className="welcome">
             <h1>Witaj programisto!</h1>
             <p>
-                Ta strona została utworzona z myślą o osobach zdających egzamin INF04.
-                Zawiera ona quiz pod ten egzamin, ale pytania spokojnie trafią także do uczniów/studentów na wyższym poziomie. 
-                Liczba pytań w bazie to <b>{props.questions.length}</b>.<br />
-            </p>
-            <p>
-                W zakładce <b>MATERIAŁY</b> znajdują się luźne notatki na różne tematy, które moga się przydać każdemu :)
-                <br />
-                Natomiast zakładka <b>INFO GRAFIKI</b> zwiera obrazki tłumaczące pewne rzeczy tak szybko i w tak skróconej formie jak to tylko możliwe.
+                Strona powstała z myślą o osobach zdających egzamin INF04. Zawiera ona quiz oraz inne przydatne materiały. 
+                Dla uczniów i studentów na wyższym poziome, materiały te także powinny być użyteczne. 
+                Liczba pytań w bazie to <b>{props.questions}</b>.<br />
             </p>
             <p>Życzymy owocnej nauki i zachęcamy do korzystania/polecania!</p>
-            <p>Ostatnia aktualizacja: 03.12.2023</p>
+            <p className="warning">Strona przeniesiona na adres <a href="https://inf04.com">inf04.com</a>. Adres <a href="https://quiz.server122133.nazwa.pl">server122133</a> wygaśnie w połowie stycznia.</p>
+            <p>Ostatnia aktualizacja: 17.12.2023</p>
         </div>
     );
 }

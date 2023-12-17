@@ -99,7 +99,7 @@ function TestView(props) {
     <div id="top" className="test_view">
       <center ref={ref}>
         <div className="welcome_text">
-          <Welcome questions={props.questions}></Welcome>
+          <Welcome questions={props.total}></Welcome>
         </div>
         <button
           className="button_style"

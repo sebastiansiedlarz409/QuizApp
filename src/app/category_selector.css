@@ -1,0 +1,47 @@
+.button_style {
+align-items: center;
+background-color: #f18805;
+border: 0;
+border-radius: 8px;
+box-sizing: border-box;
+color: #ffffff;
+display: flex;
+font-family: Phantomsans, sans-serif;
+font-size: 20px;
+justify-content: center;
+line-height: 1em;
+max-width: 100%;
+min-width: 140px;
+padding: 19px 24px;
+text-decoration: none;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+white-space: nowrap;
+cursor: pointer;
+margin-top: 20px;
+}
+
+.button_style:active,
+.button_style:hover {
+outline: 0;
+}
+
+.category_selector{
+    width: 50%;
+    margin:auto;
+    margin-top:10px;
+    text-align: center;
+}
+
+.category_selector span{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.category-list{
+    font-size: 1.4em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-align: left;
+}

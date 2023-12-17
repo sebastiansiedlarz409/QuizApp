@@ -24,6 +24,9 @@ function NavBar(props) {
         <span className="nav_bar_item" onClick={() => props.setView(2)}>
           TEST
         </span>
+        <span className="nav_bar_item" onClick={() => props.setView(5)}>
+          USTAWIENIA
+        </span>
       </div>
     </div>
   );

@@ -7,12 +7,15 @@ import DocumentView from "./document_view";
 import InfoGraphicsView from "./infographics_view";
 
 import React, { useState } from "react";
-
+import { CookiesProvider, useCookies } from "react-cookie";
 import questions from "./questions.js";
 import files from "./files.js";
 import infographics from "./infographics";
+import CategorySelector from "./category_selector.js";
 
 function MainPage(props) {
+  const [cookies, setCookie] = useCookies(["inf04Categories"]);
+
   const [view, setView] = useState(0); //switch views
 
   for (let i = 0; i < questions.length; i++) {
@@ -24,20 +27,36 @@ function MainPage(props) {
   };
 
   const returnView = () => {
+    let filteredQuestions = [];
+    if(cookies.inf04Categories){
+      let cats = cookies.inf04Categories.split(",");
+      for(let i = 0;i<questions.length;i++){
+        if(cats.includes(questions[i].cat)){
+          filteredQuestions.push(questions[i]);
+        }
+      }
+    }
+    else{
+      filteredQuestions = questions;
+    }
+
     if (view === 0) {
-      return <RandomQuestionView questions={questions}></RandomQuestionView>;
+      return <RandomQuestionView total={questions.length} questions={filteredQuestions}></RandomQuestionView>;
     } 
     else if (view === 1){
-      return <QuestionView questions={questions}></QuestionView>;
+      return <QuestionView total={questions.length} questions={filteredQuestions}></QuestionView>;
     }
     else if (view === 2) {
-      return <TestView questions={questions}></TestView>;
+      return <TestView total={questions.length} questions={filteredQuestions}></TestView>;
     }
     else if(view === 3){
-      return <DocumentView questions={questions} files={files}></DocumentView>;
+      return <DocumentView total={questions.length} questions={filteredQuestions} files={files}></DocumentView>;
     }
     else if(view === 4){
-      return <InfoGraphicsView questions={questions} infographics={infographics}></InfoGraphicsView>;
+      return <InfoGraphicsView total={questions.length} questions={filteredQuestions} infographics={infographics}></InfoGraphicsView>;
+    }
+    else if(view === 5){
+      return <CategorySelector total={questions.length} questions={questions}></CategorySelector>;
     }
   };
 
