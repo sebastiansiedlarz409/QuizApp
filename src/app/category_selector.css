@@ -45,3 +45,31 @@ outline: 0;
     margin-bottom: 4px;
     text-align: left;
 }
+
+.category-list input{
+    height: 20px;
+    width: 20px;
+    margin-right:8px;
+}
+
+@media (max-width: 768px) {
+    .category_selector{
+        width: 90%;
+        margin:auto;
+        margin-top:10px;
+        text-align: center;
+    }
+
+    .category-list{
+        font-size: 1.4em;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        text-align: left;
+    }
+
+    .category-list input{
+        height: 40px;
+        width: 40px;
+        margin-right:8px;
+    }
+}
