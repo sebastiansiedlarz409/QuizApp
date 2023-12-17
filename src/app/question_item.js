@@ -7,12 +7,20 @@ function QuestionItem(props) {
   useEffect(() => {
     document.getElementById("A" + props.question.id).style.border =
       "5px solid transparent";
+    document.getElementById("A" + props.question.id).style.backgroundColor =
+      "white";
     document.getElementById("B" + props.question.id).style.border =
       "5px solid transparent";
+    document.getElementById("B" + props.question.id).style.backgroundColor =
+        "white";
     document.getElementById("C" + props.question.id).style.border =
       "5px solid transparent";
+    document.getElementById("C" + props.question.id).style.backgroundColor =
+        "white";
     document.getElementById("D" + props.question.id).style.border =
       "5px solid transparent";
+    document.getElementById("D" + props.question.id).style.backgroundColor =
+        "white";
     document.getElementById("DESC" + props.question.id).style.display = "none";
 
     //check if ABCD or TF

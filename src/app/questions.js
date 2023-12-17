@@ -2388,7 +2388,7 @@ const questions = [
     cat:'Obiektowe',
     url: '',
     a1: 'NIE',
-    a2: 'TAk',
+    a2: 'TAK',
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',
@@ -2587,7 +2587,7 @@ const questions = [
     a3: '',
     a4: '',
     tag: 'NIEOFICJALNE',
-    type: '4A',
+    type: '2A',
     desc: 'Działa tu ta sama zasada co w przypadku polimorfizmu na normalnych metodach. Kompilator musi wiedzieć, który konstruktor wywołać jeżeli referencja/wskaźnik jest typu bazowego.',
   },
   //C#
