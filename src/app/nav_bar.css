@@ -9,9 +9,26 @@
   width: auto;
   height: inherit;
   margin: 0 3vw;
+  display: none;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav_bar_menu_mobile{
+  width: auto;
+  height: inherit;
+  margin: 0 3vw;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.nav_bar_menu_mobile_rows{
+  height:100%;
+}
+
+.nav_bar_menu_mobile_row{
+  height:50%;
 }
 
 .nav_bar_title {
@@ -30,7 +47,8 @@
 .nav_bar_item {
   color: #615551;
   padding: 38px 7px;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 700;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   position: relative;
@@ -74,7 +92,22 @@
   }
 
   .nav_bar_menu {
+    width: auto;
+    height: inherit;
+    margin: 0 3vw;
     margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .nav_bar_menu_mobile{
+    width: auto;
+    height: inherit;
+    margin: 0 3vw;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 

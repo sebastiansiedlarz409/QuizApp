@@ -10,7 +10,7 @@ function Welcome(props){
                 Liczba pytań w bazie to <b>{props.questions}</b>.<br />
             </p>
             <p>Życzymy owocnej nauki i zachęcamy do korzystania/polecania!</p>
-            <p className="warning">Strona przeniesiona na adres <a href="https://inf04.com">inf04.com</a>. Adres <a href="https://quiz.server122133.nazwa.pl">server122133</a> wygaśnie w połowie stycznia.</p>
+            <p className="warning">Zakładka <strong>Ustawienia</strong> pozwala wyłączyć niechciane kategorie ;)</p>
             <p>Ostatnia aktualizacja: 17.12.2023</p>
         </div>
     );
