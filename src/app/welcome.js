@@ -19,7 +19,7 @@ function Welcome(props){
             </p>
             <p>Życzymy owocnej nauki i zachęcamy do korzystania/polecania!</p>
             <p className="warning">Zakładka <strong>Ustawienia</strong> pozwala wyłączyć niechciane kategorie ;)</p>
-            <p>Ostatnia aktualizacja: 17.12.2023</p>
+            <p>Ostatnia aktualizacja: 27.12.2023</p>
         </div>
     );
 }
