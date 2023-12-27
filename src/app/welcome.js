@@ -1,8 +1,14 @@
 import './welcome.css';
 
 function Welcome(props){
+    const hide_welcome = ()=>{
+        let welcome = document.querySelector(".welcome");
+        if(welcome) welcome.style.display="none";
+    }
+
     return(
         <div className="welcome">
+            <div className="welcome_hide" onClick={() => hide_welcome()}>X</div>
             <h1>Witaj programisto!</h1>
             <p>
                 Strona powstała z myślą o osobach zdających egzamin INF04. Zawiera ona quiz oraz inne przydatne materiały. 
