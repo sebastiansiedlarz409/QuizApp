@@ -1,5 +1,6 @@
 import "./document_view.css";
 import Welcome from "./welcome";
+import React from 'react';
 
 function DocumentView(props) {
   let items=[];

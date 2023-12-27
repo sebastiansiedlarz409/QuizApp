@@ -1,0 +1,11 @@
+.contact_field{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.contact_field_input{
+    width: 100%;
+    font-size: 18px;
+    border: 2px solid #615551;
+    border-radius: 3px;
+}

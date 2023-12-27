@@ -67,17 +67,17 @@ function CategorySelector(props){
 
     return(
         <div id="top" className="test_view">
-        <center>
-            <h2>Zaznacz interesujące Cię kategorie:</h2>
-            <h5>Jeżeli żaden box nie jest zaznaczony jest to równoznaczne z zaznaczeniem wszystkich!</h5>
-            <div>
-                <div className="category_selector">{returnCategories()}</div>
-            </div>
-            <button className="button_style" onClick={() => save()}>
-                Zapisz zmiany
-            </button>
-        </center>
-      </div>
+            <center>
+                <h2>Zaznacz interesujące Cię kategorie:</h2>
+                <h5>Jeżeli żaden box nie jest zaznaczony jest to równoznaczne z zaznaczeniem wszystkich!</h5>
+                <div>
+                    <div className="category_selector">{returnCategories()}</div>
+                </div>
+                <button className="button_style" onClick={() => save()}>
+                    Zapisz zmiany
+                </button>
+            </center>
+        </div>
     );
 }
 

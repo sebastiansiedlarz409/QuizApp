@@ -1,6 +1,8 @@
 import "./nav_bar.css";
 
 import logo from "./logo.png";
+import React from 'react';
+
 
 function NavBar(props) {
   const toggle_mobile_menu = () => {
@@ -34,6 +36,9 @@ function NavBar(props) {
         <span className="nav_bar_item" onClick={() => props.setView(5)}>
           USTAWIENIA
         </span>
+        <span className="nav_bar_item" onClick={() => props.setView(6)}>
+          KONTAKT
+        </span>
       </div>
       <div className="nav_bar_menu_mobile">
         <span className="nav_bar_title">
@@ -59,6 +64,9 @@ function NavBar(props) {
           </div>
           <div className="nav_bar_item" onClick={() => props.setView(5)}>
             USTAWIENIA
+          </div>
+          <div className="nav_bar_item" onClick={() => props.setView(6)}>
+            KONTAKT
           </div>
         </div>
     </div>

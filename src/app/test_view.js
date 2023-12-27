@@ -43,6 +43,7 @@ function TestView(props) {
         questions: actualqc,
       });
       ref.current?.scrollIntoView({ behavior: "smooth" });
+      return;
     }
   };
 

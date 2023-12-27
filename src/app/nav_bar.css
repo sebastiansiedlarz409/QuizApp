@@ -80,7 +80,7 @@
   width: 100%;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 990px) {
   .nav_bar {
     color: #615551;
     background-color: #f9f5f3;

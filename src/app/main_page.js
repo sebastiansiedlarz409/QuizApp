@@ -5,6 +5,7 @@ import TestView from "./test_view";
 import { QuestionView, RandomQuestionView } from "./question_view";
 import DocumentView from "./document_view";
 import InfoGraphicsView from "./infographics_view";
+import Contact from "./contact.js";
 
 import React, { useState } from "react";
 import { CookiesProvider, useCookies } from "react-cookie";
@@ -57,6 +58,9 @@ function MainPage(props) {
     }
     else if(view === 5){
       return <CategorySelector total={questions.length} questions={questions}></CategorySelector>;
+    }
+    else if(view === 6){
+      return <Contact total={questions.length} questions={questions}></Contact>;
     }
   };
 

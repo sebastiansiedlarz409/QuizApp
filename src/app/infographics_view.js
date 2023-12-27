@@ -1,6 +1,7 @@
 import './infographics_view.css'
 
 import Welcome from "./welcome";
+import React from 'react';
 
 function InfoGraphicsView(props){
     let items = []

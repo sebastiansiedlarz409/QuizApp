@@ -1,5 +1,7 @@
 import './welcome.css';
 
+import React from 'react';
+
 function Welcome(props){
     const hide_welcome = ()=>{
         let welcome = document.querySelector(".welcome");
